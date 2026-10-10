@@ -50,3 +50,17 @@ next-env.d.ts
 # clerk configuration (can include secrets)
 /.clerk/
 .cozeproj/reduction
+
+# ===== 内部文档（不入库）=====
+# 计划书 / 规划书 / 赛事材料等内部工作文档，仅保留在本地
+*计划书*
+*规划书*
+*任务规划*
+*任务书*
+*梳理*
+*比赛*
+*赛事*
+*日志*
+*.log
+_removed_from_repo/
+/内部文档/
