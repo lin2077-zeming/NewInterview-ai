@@ -1,0 +1,3547 @@
+[
+  {
+    "id": "leet-1",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "146. LRU缓存机制",
+    "content": "力扣 146. LRU缓存机制（腾讯 后端开发工程师高频题，出现 32 次）",
+    "tags": [
+      "哈希表"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-2",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "206. 反转链表",
+    "content": "力扣 206. 反转链表（腾讯 后端开发工程师高频题，出现 30 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-3",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "21. 合并两个有序链表",
+    "content": "力扣 21. 合并两个有序链表（腾讯 后端开发工程师高频题，出现 18 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-4",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "8. 字符串转换整数",
+    "content": "力扣 8. 字符串转换整数（腾讯 后端开发工程师高频题，出现 13 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-5",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "53. 最大子序和",
+    "content": "力扣 53. 最大子序和（腾讯 后端开发工程师高频题，出现 12 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-6",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "460. LFU缓存",
+    "content": "力扣 460. LFU缓存（腾讯 后端开发工程师高频题，出现 12 次）",
+    "tags": [
+      "哈希表"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-7",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "215. 数组中的第K个最大元素",
+    "content": "力扣 215. 数组中的第K个最大元素（腾讯 后端开发工程师高频题，出现 10 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-8",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "3. 无重复字符的最长子串",
+    "content": "力扣 3. 无重复字符的最长子串（腾讯 后端开发工程师高频题，出现 10 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-9",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "704. 二分查找",
+    "content": "力扣 704. 二分查找（腾讯 后端开发工程师高频题，出现 10 次）",
+    "tags": [
+      "搜索"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-10",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "415. 字符串相加",
+    "content": "力扣 415. 字符串相加（腾讯 后端开发工程师高频题，出现 10 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-11",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "160. 相交链表",
+    "content": "力扣 160. 相交链表（腾讯 后端开发工程师高频题，出现 8 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-12",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "141. 环形链表",
+    "content": "力扣 141. 环形链表（腾讯 后端开发工程师高频题，出现 8 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-13",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "151. 翻转字符串里的单词",
+    "content": "力扣 151. 翻转字符串里的单词（腾讯 后端开发工程师高频题，出现 8 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-14",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "4. 寻找两个正序数组的中位数",
+    "content": "力扣 4. 寻找两个正序数组的中位数（腾讯 后端开发工程师高频题，出现 7 次）",
+    "tags": [
+      "数组",
+      "位运算"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-15",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "42. 接雨水",
+    "content": "力扣 42. 接雨水（腾讯 后端开发工程师高频题，出现 7 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-16",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "102. 二叉树的层序遍历",
+    "content": "力扣 102. 二叉树的层序遍历（腾讯 后端开发工程师高频题，出现 7 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-17",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "300. 最长上升子序列",
+    "content": "力扣 300. 最长上升子序列（腾讯 后端开发工程师高频题，出现 6 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-18",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "110. 平衡二叉树",
+    "content": "力扣 110. 平衡二叉树（腾讯 后端开发工程师高频题，出现 6 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-19",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "2. 两数相加",
+    "content": "力扣 2. 两数相加（腾讯 后端开发工程师高频题，出现 6 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-20",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "70. 爬楼梯",
+    "content": "力扣 70. 爬楼梯（腾讯 后端开发工程师高频题，出现 6 次）",
+    "tags": [
+      "动态规划"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-21",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "5. 最长回文子串",
+    "content": "力扣 5. 最长回文子串（腾讯 后端开发工程师高频题，出现 6 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-22",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "15. 三数之和",
+    "content": "力扣 15. 三数之和（腾讯 后端开发工程师高频题，出现 6 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-23",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "1. 两数之和",
+    "content": "力扣 1. 两数之和（腾讯 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-24",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "239. 滑动窗口最大值",
+    "content": "力扣 239. 滑动窗口最大值（腾讯 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "滑动窗口"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-25",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "136. 只出现一次的数字",
+    "content": "力扣 136. 只出现一次的数字（腾讯 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-26",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "25. K 个一组翻转链表",
+    "content": "力扣 25. K 个一组翻转链表（腾讯 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "链表",
+      "哈希表"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-27",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "232. 用栈实现队列",
+    "content": "力扣 232. 用栈实现队列（腾讯 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "栈/队列"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-28",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "155. 最小栈",
+    "content": "力扣 155. 最小栈（腾讯 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "栈/队列"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-29",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "104. 二叉树的最大深度",
+    "content": "力扣 104. 二叉树的最大深度（腾讯 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-30",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "322. 零钱兑换",
+    "content": "力扣 322. 零钱兑换（腾讯 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-31",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "236. 二叉树的最近公共祖先",
+    "content": "力扣 236. 二叉树的最近公共祖先（腾讯 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-32",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "9. 回文数",
+    "content": "力扣 9. 回文数（腾讯 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-33",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "142. 环形链表 II",
+    "content": "力扣 142. 环形链表 II（腾讯 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-34",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "54. 螺旋矩阵",
+    "content": "力扣 54. 螺旋矩阵（腾讯 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-35",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "20. 有效的括号",
+    "content": "力扣 20. 有效的括号（腾讯 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-36",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "33. 搜索旋转排序数组",
+    "content": "力扣 33. 搜索旋转排序数组（腾讯 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "数组",
+      "搜索"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-37",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "46. 全排列",
+    "content": "力扣 46. 全排列（腾讯 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "图/回溯"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-38",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "88. 合并两个有序数组",
+    "content": "力扣 88. 合并两个有序数组（腾讯 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-39",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "200. 岛屿数量",
+    "content": "力扣 200. 岛屿数量（腾讯 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "图/回溯"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-40",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "121. 买卖股票的最佳时机",
+    "content": "力扣 121. 买卖股票的最佳时机（腾讯 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "动态规划"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-41",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "128. 最长连续序列",
+    "content": "力扣 128. 最长连续序列（腾讯 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-42",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "72. 编辑距离",
+    "content": "力扣 72. 编辑距离（腾讯 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-43",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "76. 最小覆盖子串",
+    "content": "力扣 76. 最小覆盖子串（腾讯 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-44",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "84. 柱状图中最大的矩形",
+    "content": "力扣 84. 柱状图中最大的矩形（腾讯 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "图/回溯"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-45",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "295. 数据流的中位数",
+    "content": "力扣 295. 数据流的中位数（腾讯 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "位运算"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-46",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "23. 合并K个排序链表",
+    "content": "力扣 23. 合并K个排序链表（腾讯 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "链表",
+      "搜索"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-47",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "31. 下一个排列",
+    "content": "力扣 31. 下一个排列（腾讯 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-48",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "19. 删除链表的倒数第N个节点",
+    "content": "力扣 19. 删除链表的倒数第N个节点（腾讯 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "链表",
+      "二叉树"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-49",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "11. 盛最多水的容器",
+    "content": "力扣 11. 盛最多水的容器（腾讯 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-50",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "48. 旋转图像",
+    "content": "力扣 48. 旋转图像（腾讯 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "图/回溯"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-51",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "78. 子集",
+    "content": "力扣 78. 子集（腾讯 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "图/回溯"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-52",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "56. 合并区间",
+    "content": "力扣 56. 合并区间（腾讯 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-53",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "62. 不同路径",
+    "content": "力扣 62. 不同路径（腾讯 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "动态规划"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-54",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "98. 验证二叉搜索树",
+    "content": "力扣 98. 验证二叉搜索树（腾讯 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "二叉树",
+      "搜索"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-55",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "101. 对称二叉树",
+    "content": "力扣 101. 对称二叉树（腾讯 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-56",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "114. 二叉树展开为链表",
+    "content": "力扣 114. 二叉树展开为链表（腾讯 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "链表",
+      "二叉树"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-57",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "139. 单词拆分",
+    "content": "力扣 139. 单词拆分（腾讯 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-58",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "152. 乘积最大子数组",
+    "content": "力扣 152. 乘积最大子数组（腾讯 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-59",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "198. 打家劫舍",
+    "content": "力扣 198. 打家劫舍（腾讯 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-60",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "207. 课程表",
+    "content": "力扣 207. 课程表（腾讯 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-61",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "221. 最大正方形",
+    "content": "力扣 221. 最大正方形（腾讯 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-62",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "234. 回文链表",
+    "content": "力扣 234. 回文链表（腾讯 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "链表",
+      "字符串"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-63",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "279. 完全平方数",
+    "content": "力扣 279. 完全平方数（腾讯 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-64",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "287. 寻找重复数",
+    "content": "力扣 287. 寻找重复数（腾讯 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-65",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "347. 前K个高频元素",
+    "content": "力扣 347. 前K个高频元素（腾讯 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "哈希表"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-66",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "394. 字符串解码",
+    "content": "力扣 394. 字符串解码（腾讯 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-67",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "416. 分割等和子集",
+    "content": "力扣 416. 分割等和子集（腾讯 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "图/回溯"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-68",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "438. 找到字符串中所有字母异位词",
+    "content": "力扣 438. 找到字符串中所有字母异位词（腾讯 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "字符串",
+      "位运算"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-69",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "494. 目标和",
+    "content": "力扣 494. 目标和（腾讯 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-70",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "543. 二叉树的直径",
+    "content": "力扣 543. 二叉树的直径（腾讯 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-71",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "560. 和为K的子数组",
+    "content": "力扣 560. 和为K的子数组（腾讯 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-72",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "617. 合并二叉树",
+    "content": "力扣 617. 合并二叉树（腾讯 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "腾讯",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-73",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "215. 数组中的第K个最大元素",
+    "content": "力扣 215. 数组中的第K个最大元素（阿里巴巴 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "阿里巴巴",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-74",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "145. 二叉树的后序遍历",
+    "content": "力扣 145. 二叉树的后序遍历（阿里巴巴 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "阿里巴巴",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-75",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "1. 两数之和",
+    "content": "力扣 1. 两数之和（阿里巴巴 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "阿里巴巴",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-76",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "232. 用栈实现队列",
+    "content": "力扣 232. 用栈实现队列（阿里巴巴 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "栈/队列"
+    ],
+    "company": "阿里巴巴",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-77",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "88. 合并两个有序数组",
+    "content": "力扣 88. 合并两个有序数组（阿里巴巴 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "阿里巴巴",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-78",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "15. 三数之和",
+    "content": "力扣 15. 三数之和（阿里巴巴 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "阿里巴巴",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-79",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "5. 最长回文子串",
+    "content": "力扣 5. 最长回文子串（阿里巴巴 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "阿里巴巴",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-80",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "72. 编辑距离",
+    "content": "力扣 72. 编辑距离（阿里巴巴 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "阿里巴巴",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-81",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "543. 二叉树的直径",
+    "content": "力扣 543. 二叉树的直径（阿里巴巴 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "阿里巴巴",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-82",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "144. 二叉树的前序遍历",
+    "content": "力扣 144. 二叉树的前序遍历（阿里巴巴 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "阿里巴巴",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-83",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "94. 二叉树的中序遍历",
+    "content": "力扣 94. 二叉树的中序遍历（阿里巴巴 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "阿里巴巴",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-84",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "2. 两数相加",
+    "content": "力扣 2. 两数相加（阿里巴巴 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "阿里巴巴",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-85",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "70. 爬楼梯",
+    "content": "力扣 70. 爬楼梯（阿里巴巴 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "动态规划"
+    ],
+    "company": "阿里巴巴",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-86",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "509. 斐波那契数",
+    "content": "力扣 509. 斐波那契数（阿里巴巴 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "阿里巴巴",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-87",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "21. 合并两个有序链表",
+    "content": "力扣 21. 合并两个有序链表（阿里巴巴 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "阿里巴巴",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-88",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "46. 全排列",
+    "content": "力扣 46. 全排列（阿里巴巴 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "图/回溯"
+    ],
+    "company": "阿里巴巴",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-89",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "82. 删除排序链表中的重复元素 II",
+    "content": "力扣 82. 删除排序链表中的重复元素 II（阿里巴巴 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "链表",
+      "搜索"
+    ],
+    "company": "阿里巴巴",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-90",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "53. 最大子序和",
+    "content": "力扣 53. 最大子序和（阿里巴巴 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "阿里巴巴",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-91",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "344. 反转字符串",
+    "content": "力扣 344. 反转字符串（阿里巴巴 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "阿里巴巴",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-92",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "136. 只出现一次的数字",
+    "content": "力扣 136. 只出现一次的数字（阿里巴巴 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "阿里巴巴",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-93",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "349. 两个数组的交集",
+    "content": "力扣 349. 两个数组的交集（阿里巴巴 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "阿里巴巴",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-94",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "225. 用队列实现栈",
+    "content": "力扣 225. 用队列实现栈（阿里巴巴 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "栈/队列"
+    ],
+    "company": "阿里巴巴",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-95",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "415. 字符串相加",
+    "content": "力扣 415. 字符串相加（阿里巴巴 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "阿里巴巴",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-96",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "102. 二叉树的层序遍历",
+    "content": "力扣 102. 二叉树的层序遍历（百度 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-97",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "206. 反转链表",
+    "content": "力扣 206. 反转链表（百度 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-98",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "94. 二叉树的中序遍历",
+    "content": "力扣 94. 二叉树的中序遍历（百度 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-99",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "199. 二叉树的右视图",
+    "content": "力扣 199. 二叉树的右视图（百度 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "二叉树",
+      "图/回溯"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-100",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "4. 寻找两个正序数组的中位数",
+    "content": "力扣 4. 寻找两个正序数组的中位数（百度 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "数组",
+      "位运算"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-101",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "146. LRU缓存机制",
+    "content": "力扣 146. LRU缓存机制（百度 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "哈希表"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-102",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "142. 环形链表 II",
+    "content": "力扣 142. 环形链表 II（百度 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-103",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "268. 缺失数字",
+    "content": "力扣 268. 缺失数字（百度 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-104",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "160. 相交链表",
+    "content": "力扣 160. 相交链表（百度 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-105",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "62. 不同路径",
+    "content": "力扣 62. 不同路径（百度 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "动态规划"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-106",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "349. 两个数组的交集",
+    "content": "力扣 349. 两个数组的交集（百度 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-107",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "19. 删除链表的倒数第N个节点",
+    "content": "力扣 19. 删除链表的倒数第N个节点（百度 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "链表",
+      "二叉树"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-108",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "104. 二叉树的最大深度",
+    "content": "力扣 104. 二叉树的最大深度（百度 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-109",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "20. 有效的括号",
+    "content": "力扣 20. 有效的括号（百度 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-110",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "69. x 的平方根",
+    "content": "力扣 69. x 的平方根（百度 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-111",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "215. 数组中的第K个最大元素",
+    "content": "力扣 215. 数组中的第K个最大元素（百度 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-112",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "88. 合并两个有序数组",
+    "content": "力扣 88. 合并两个有序数组（百度 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-113",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "3. 无重复字符的最长子串",
+    "content": "力扣 3. 无重复字符的最长子串（百度 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-114",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "121. 买卖股票的最佳时机",
+    "content": "力扣 121. 买卖股票的最佳时机（百度 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "动态规划"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-115",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "236. 二叉树的最近公共祖先",
+    "content": "力扣 236. 二叉树的最近公共祖先（百度 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-116",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "110. 平衡二叉树",
+    "content": "力扣 110. 平衡二叉树（百度 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-117",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "55. 跳跃游戏",
+    "content": "力扣 55. 跳跃游戏（百度 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-118",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "15. 三数之和",
+    "content": "力扣 15. 三数之和（百度 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-119",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "217. 存在重复元素",
+    "content": "力扣 217. 存在重复元素（百度 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-120",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "5. 最长回文子串",
+    "content": "力扣 5. 最长回文子串（百度 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-121",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "46. 全排列",
+    "content": "力扣 46. 全排列（百度 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "图/回溯"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-122",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "72. 编辑距离",
+    "content": "力扣 72. 编辑距离（百度 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-123",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "151. 翻转字符串里的单词",
+    "content": "力扣 151. 翻转字符串里的单词（百度 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-124",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "9. 回文数",
+    "content": "力扣 9. 回文数（百度 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-125",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "25. K 个一组翻转链表",
+    "content": "力扣 25. K 个一组翻转链表（百度 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "链表",
+      "哈希表"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-126",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "141. 环形链表",
+    "content": "力扣 141. 环形链表（百度 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-127",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "148. 排序链表",
+    "content": "力扣 148. 排序链表（百度 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "链表",
+      "搜索"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-128",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "287. 寻找重复数",
+    "content": "力扣 287. 寻找重复数（百度 后端开发工程师高频题，出现 1 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "百度",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-129",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "206. 反转链表",
+    "content": "力扣 206. 反转链表（字节跳动 后端开发工程师高频题，出现 28 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-130",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "146. LRU缓存机制",
+    "content": "力扣 146. LRU缓存机制（字节跳动 后端开发工程师高频题，出现 25 次）",
+    "tags": [
+      "哈希表"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-131",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "3. 无重复字符的最长子串",
+    "content": "力扣 3. 无重复字符的最长子串（字节跳动 后端开发工程师高频题，出现 20 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-132",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "215. 数组中的第K个最大元素",
+    "content": "力扣 215. 数组中的第K个最大元素（字节跳动 后端开发工程师高频题，出现 18 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-133",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "25. K 个一组翻转链表",
+    "content": "力扣 25. K 个一组翻转链表（字节跳动 后端开发工程师高频题，出现 15 次）",
+    "tags": [
+      "链表",
+      "哈希表"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-134",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "15. 三数之和",
+    "content": "力扣 15. 三数之和（字节跳动 后端开发工程师高频题，出现 14 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-135",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "121. 买卖股票的最佳时机",
+    "content": "力扣 121. 买卖股票的最佳时机（字节跳动 后端开发工程师高频题，出现 13 次）",
+    "tags": [
+      "动态规划"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-136",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "1. 两数之和",
+    "content": "力扣 1. 两数之和（字节跳动 后端开发工程师高频题，出现 12 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-137",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "53. 最大子序和",
+    "content": "力扣 53. 最大子序和（字节跳动 后端开发工程师高频题，出现 11 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-138",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "103. 二叉树的锯齿形层次遍历",
+    "content": "力扣 103. 二叉树的锯齿形层次遍历（字节跳动 后端开发工程师高频题，出现 10 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-139",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "236. 二叉树的最近公共祖先",
+    "content": "力扣 236. 二叉树的最近公共祖先（字节跳动 后端开发工程师高频题，出现 10 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-140",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "42. 接雨水",
+    "content": "力扣 42. 接雨水（字节跳动 后端开发工程师高频题，出现 10 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-141",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "160. 相交链表",
+    "content": "力扣 160. 相交链表（字节跳动 后端开发工程师高频题，出现 10 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-142",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "21. 合并两个有序链表",
+    "content": "力扣 21. 合并两个有序链表（字节跳动 后端开发工程师高频题，出现 10 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-143",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "33. 搜索旋转排序数组",
+    "content": "力扣 33. 搜索旋转排序数组（字节跳动 后端开发工程师高频题，出现 9 次）",
+    "tags": [
+      "数组",
+      "搜索"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-144",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "200. 岛屿数量",
+    "content": "力扣 200. 岛屿数量（字节跳动 后端开发工程师高频题，出现 8 次）",
+    "tags": [
+      "图/回溯"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-145",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "88. 合并两个有序数组",
+    "content": "力扣 88. 合并两个有序数组（字节跳动 后端开发工程师高频题，出现 8 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-146",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "199. 二叉树的右视图",
+    "content": "力扣 199. 二叉树的右视图（字节跳动 后端开发工程师高频题，出现 8 次）",
+    "tags": [
+      "二叉树",
+      "图/回溯"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-147",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "92. 反转链表 II",
+    "content": "力扣 92. 反转链表 II（字节跳动 后端开发工程师高频题，出现 8 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-148",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "141. 环形链表",
+    "content": "力扣 141. 环形链表（字节跳动 后端开发工程师高频题，出现 8 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-149",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "102. 二叉树的层序遍历",
+    "content": "力扣 102. 二叉树的层序遍历（字节跳动 后端开发工程师高频题，出现 7 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-150",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "300. 最长递增子序列",
+    "content": "力扣 300. 最长递增子序列（字节跳动 后端开发工程师高频题，出现 7 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-151",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "31. 下一个排列",
+    "content": "力扣 31. 下一个排列（字节跳动 后端开发工程师高频题，出现 7 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-152",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "5. 最长回文子串",
+    "content": "力扣 5. 最长回文子串（字节跳动 后端开发工程师高频题，出现 7 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-153",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "20. 有效的括号",
+    "content": "力扣 20. 有效的括号（字节跳动 后端开发工程师高频题，出现 6 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-154",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "23. 合并K个升序链表",
+    "content": "力扣 23. 合并K个升序链表（字节跳动 后端开发工程师高频题，出现 6 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-155",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "143. 重排链表",
+    "content": "力扣 143. 重排链表（字节跳动 后端开发工程师高频题，出现 6 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-156",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "56. 合并区间",
+    "content": "力扣 56. 合并区间（字节跳动 后端开发工程师高频题，出现 6 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-157",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "69. x 的平方根",
+    "content": "力扣 69. x 的平方根（字节跳动 后端开发工程师高频题，出现 6 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-158",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "2. 两数相加",
+    "content": "力扣 2. 两数相加（字节跳动 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-159",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "54. 螺旋矩阵",
+    "content": "力扣 54. 螺旋矩阵（字节跳动 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-160",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "142. 环形链表 II",
+    "content": "力扣 142. 环形链表 II（字节跳动 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-161",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "41. 缺失的第一个正数",
+    "content": "力扣 41. 缺失的第一个正数（字节跳动 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-162",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "104. 二叉树的最大深度",
+    "content": "力扣 104. 二叉树的最大深度（字节跳动 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-163",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "148. 排序链表",
+    "content": "力扣 148. 排序链表（字节跳动 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "链表",
+      "搜索"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-164",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "46. 全排列",
+    "content": "力扣 46. 全排列（字节跳动 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "图/回溯"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-165",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "322. 零钱兑换",
+    "content": "力扣 322. 零钱兑换（字节跳动 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-166",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "124. 二叉树中的最大路径和",
+    "content": "力扣 124. 二叉树中的最大路径和（字节跳动 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "二叉树",
+      "动态规划"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-167",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "110. 平衡二叉树",
+    "content": "力扣 110. 平衡二叉树（字节跳动 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-168",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "76. 最小覆盖子串",
+    "content": "力扣 76. 最小覆盖子串（字节跳动 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-169",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "72. 编辑距离",
+    "content": "力扣 72. 编辑距离（字节跳动 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-170",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "128. 最长连续序列",
+    "content": "力扣 128. 最长连续序列（字节跳动 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-171",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "155. 最小栈",
+    "content": "力扣 155. 最小栈（字节跳动 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "栈/队列"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-172",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "232. 用栈实现队列",
+    "content": "力扣 232. 用栈实现队列（字节跳动 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "栈/队列"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-173",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "162. 寻找峰值",
+    "content": "力扣 162. 寻找峰值（字节跳动 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-174",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "152. 乘积最大子数组",
+    "content": "力扣 152. 乘积最大子数组（字节跳动 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-175",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "101. 对称二叉树",
+    "content": "力扣 101. 对称二叉树（字节跳动 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-176",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "98. 验证二叉搜索树",
+    "content": "力扣 98. 验证二叉搜索树（字节跳动 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "二叉树",
+      "搜索"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-177",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "70. 爬楼梯",
+    "content": "力扣 70. 爬楼梯（字节跳动 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "动态规划"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-178",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "239. 滑动窗口最大值",
+    "content": "力扣 239. 滑动窗口最大值（字节跳动 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "滑动窗口"
+    ],
+    "company": "字节跳动",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-179",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "206. 反转链表",
+    "content": "力扣 206. 反转链表（美团 后端开发工程师高频题，出现 12 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-180",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "88. 合并两个有序数组",
+    "content": "力扣 88. 合并两个有序数组（美团 后端开发工程师高频题，出现 10 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-181",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "141. 环形链表",
+    "content": "力扣 141. 环形链表（美团 后端开发工程师高频题，出现 8 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-182",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "21. 合并两个有序链表",
+    "content": "力扣 21. 合并两个有序链表（美团 后端开发工程师高频题，出现 8 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-183",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "53. 最大子序和",
+    "content": "力扣 53. 最大子序和（美团 后端开发工程师高频题，出现 7 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-184",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "236. 二叉树的最近公共祖先",
+    "content": "力扣 236. 二叉树的最近公共祖先（美团 后端开发工程师高频题，出现 7 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-185",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "3. 无重复字符的最长子串",
+    "content": "力扣 3. 无重复字符的最长子串（美团 后端开发工程师高频题，出现 7 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-186",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "146. LRU缓存机制",
+    "content": "力扣 146. LRU缓存机制（美团 后端开发工程师高频题，出现 7 次）",
+    "tags": [
+      "哈希表"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-187",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "215. 数组中的第K个最大元素",
+    "content": "力扣 215. 数组中的第K个最大元素（美团 后端开发工程师高频题，出现 6 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-188",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "1. 两数之和",
+    "content": "力扣 1. 两数之和（美团 后端开发工程师高频题，出现 6 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-189",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "102. 二叉树的层序遍历",
+    "content": "力扣 102. 二叉树的层序遍历（美团 后端开发工程师高频题，出现 6 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-190",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "25. K 个一组翻转链表",
+    "content": "力扣 25. K 个一组翻转链表（美团 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "链表",
+      "哈希表"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-191",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "15. 三数之和",
+    "content": "力扣 15. 三数之和（美团 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-192",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "143. 重排链表",
+    "content": "力扣 143. 重排链表（美团 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-193",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "160. 相交链表",
+    "content": "力扣 160. 相交链表（美团 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-194",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "415. 字符串相加",
+    "content": "力扣 415. 字符串相加（美团 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-195",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "46. 全排列",
+    "content": "力扣 46. 全排列（美团 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "图/回溯"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-196",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "56. 合并区间",
+    "content": "力扣 56. 合并区间（美团 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-197",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "121. 买卖股票的最佳时机",
+    "content": "力扣 121. 买卖股票的最佳时机（美团 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "动态规划"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-198",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "54. 螺旋矩阵",
+    "content": "力扣 54. 螺旋矩阵（美团 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-199",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "92. 反转链表 II",
+    "content": "力扣 92. 反转链表 II（美团 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-200",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "5. 最长回文子串",
+    "content": "力扣 5. 最长回文子串（美团 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-201",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "33. 搜索旋转排序数组",
+    "content": "力扣 33. 搜索旋转排序数组（美团 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "数组",
+      "搜索"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-202",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "94. 二叉树的中序遍历",
+    "content": "力扣 94. 二叉树的中序遍历（美团 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-203",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "104. 二叉树的最大深度",
+    "content": "力扣 104. 二叉树的最大深度（美团 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-204",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "70. 爬楼梯",
+    "content": "力扣 70. 爬楼梯（美团 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "动态规划"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-205",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "200. 岛屿数量",
+    "content": "力扣 200. 岛屿数量（美团 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "图/回溯"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-206",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "300. 最长递增子序列",
+    "content": "力扣 300. 最长递增子序列（美团 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-207",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "43. 字符串相乘",
+    "content": "力扣 43. 字符串相乘（美团 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-208",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "42. 接雨水",
+    "content": "力扣 42. 接雨水（美团 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-209",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "20. 有效的括号",
+    "content": "力扣 20. 有效的括号（美团 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-210",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "98. 验证二叉搜索树",
+    "content": "力扣 98. 验证二叉搜索树（美团 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "二叉树",
+      "搜索"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-211",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "105. 从前序与中序遍历构造二叉树",
+    "content": "力扣 105. 从前序与中序遍历构造二叉树（美团 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-212",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "151. 翻转字符串中的单词",
+    "content": "力扣 151. 翻转字符串中的单词（美团 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-213",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "128. 最长连续序列",
+    "content": "力扣 128. 最长连续序列（美团 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-214",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "142. 环形链表 II",
+    "content": "力扣 142. 环形链表 II（美团 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-215",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "232. 用栈实现队列",
+    "content": "力扣 232. 用栈实现队列（美团 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "栈/队列"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-216",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "2. 两数相加",
+    "content": "力扣 2. 两数相加（美团 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-217",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "136. 只出现一次的数字",
+    "content": "力扣 136. 只出现一次的数字（美团 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-218",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "19. 删除链表的倒数第N个节点",
+    "content": "力扣 19. 删除链表的倒数第N个节点（美团 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "链表",
+      "二叉树"
+    ],
+    "company": "美团",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-219",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "206. 反转链表",
+    "content": "力扣 206. 反转链表（华为 后端开发工程师高频题，出现 8 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-220",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "3. 无重复字符的最长子串",
+    "content": "力扣 3. 无重复字符的最长子串（华为 后端开发工程师高频题，出现 6 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-221",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "146. LRU缓存机制",
+    "content": "力扣 146. LRU缓存机制（华为 后端开发工程师高频题，出现 6 次）",
+    "tags": [
+      "哈希表"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-222",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "215. 数组中的第K个最大元素",
+    "content": "力扣 215. 数组中的第K个最大元素（华为 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-223",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "15. 三数之和",
+    "content": "力扣 15. 三数之和（华为 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-224",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "121. 买卖股票的最佳时机",
+    "content": "力扣 121. 买卖股票的最佳时机（华为 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "动态规划"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-225",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "1. 两数之和",
+    "content": "力扣 1. 两数之和（华为 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-226",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "53. 最大子序和",
+    "content": "力扣 53. 最大子序和（华为 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-227",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "20. 有效的括号",
+    "content": "力扣 20. 有效的括号（华为 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-228",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "141. 环形链表",
+    "content": "力扣 141. 环形链表（华为 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-229",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "232. 用栈实现队列",
+    "content": "力扣 232. 用栈实现队列（华为 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "栈/队列"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-230",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "25. K 个一组翻转链表",
+    "content": "力扣 25. K 个一组翻转链表（华为 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "链表",
+      "哈希表"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-231",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "102. 二叉树的层序遍历",
+    "content": "力扣 102. 二叉树的层序遍历（华为 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-232",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "104. 二叉树的最大深度",
+    "content": "力扣 104. 二叉树的最大深度（华为 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-233",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "70. 爬楼梯",
+    "content": "力扣 70. 爬楼梯（华为 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "动态规划"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-234",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "88. 合并两个有序数组",
+    "content": "力扣 88. 合并两个有序数组（华为 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-235",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "21. 合并两个有序链表",
+    "content": "力扣 21. 合并两个有序链表（华为 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-236",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "46. 全排列",
+    "content": "力扣 46. 全排列（华为 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "图/回溯"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-237",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "155. 最小栈",
+    "content": "力扣 155. 最小栈（华为 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "栈/队列"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-238",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "42. 接雨水",
+    "content": "力扣 42. 接雨水（华为 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-239",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "236. 二叉树的最近公共祖先",
+    "content": "力扣 236. 二叉树的最近公共祖先（华为 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-240",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "94. 二叉树的中序遍历",
+    "content": "力扣 94. 二叉树的中序遍历（华为 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-241",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "110. 平衡二叉树",
+    "content": "力扣 110. 平衡二叉树（华为 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-242",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "62. 不同路径",
+    "content": "力扣 62. 不同路径（华为 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "动态规划"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-243",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "300. 最长递增子序列",
+    "content": "力扣 300. 最长递增子序列（华为 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-244",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "128. 最长连续序列",
+    "content": "力扣 128. 最长连续序列（华为 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-245",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "200. 岛屿数量",
+    "content": "力扣 200. 岛屿数量（华为 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "图/回溯"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-246",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "33. 搜索旋转排序数组",
+    "content": "力扣 33. 搜索旋转排序数组（华为 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "数组",
+      "搜索"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-247",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "160. 相交链表",
+    "content": "力扣 160. 相交链表（华为 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-248",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "136. 只出现一次的数字",
+    "content": "力扣 136. 只出现一次的数字（华为 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "华为",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-249",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "206. 反转链表",
+    "content": "力扣 206. 反转链表（京东 后端开发工程师高频题，出现 6 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-250",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "88. 合并两个有序数组",
+    "content": "力扣 88. 合并两个有序数组（京东 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-251",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "141. 环形链表",
+    "content": "力扣 141. 环形链表（京东 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-252",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "1. 两数之和",
+    "content": "力扣 1. 两数之和（京东 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-253",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "53. 最大子序和",
+    "content": "力扣 53. 最大子序和（京东 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-254",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "3. 无重复字符的最长子串",
+    "content": "力扣 3. 无重复字符的最长子串（京东 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-255",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "146. LRU缓存机制",
+    "content": "力扣 146. LRU缓存机制（京东 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "哈希表"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-256",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "21. 合并两个有序链表",
+    "content": "力扣 21. 合并两个有序链表（京东 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-257",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "215. 数组中的第K个最大元素",
+    "content": "力扣 215. 数组中的第K个最大元素（京东 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-258",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "15. 三数之和",
+    "content": "力扣 15. 三数之和（京东 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-259",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "20. 有效的括号",
+    "content": "力扣 20. 有效的括号（京东 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-260",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "236. 二叉树的最近公共祖先",
+    "content": "力扣 236. 二叉树的最近公共祖先（京东 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-261",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "102. 二叉树的层序遍历",
+    "content": "力扣 102. 二叉树的层序遍历（京东 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-262",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "70. 爬楼梯",
+    "content": "力扣 70. 爬楼梯（京东 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "动态规划"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-263",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "25. K 个一组翻转链表",
+    "content": "力扣 25. K 个一组翻转链表（京东 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "链表",
+      "哈希表"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-264",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "46. 全排列",
+    "content": "力扣 46. 全排列（京东 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "图/回溯"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-265",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "104. 二叉树的最大深度",
+    "content": "力扣 104. 二叉树的最大深度（京东 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-266",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "121. 买卖股票的最佳时机",
+    "content": "力扣 121. 买卖股票的最佳时机（京东 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "动态规划"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-267",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "145. 二叉树的后序遍历",
+    "content": "力扣 145. 二叉树的后序遍历（京东 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-268",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "94. 二叉树的中序遍历",
+    "content": "力扣 94. 二叉树的中序遍历（京东 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-269",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "42. 接雨水",
+    "content": "力扣 42. 接雨水（京东 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-270",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "160. 相交链表",
+    "content": "力扣 160. 相交链表（京东 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-271",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "142. 环形链表 II",
+    "content": "力扣 142. 环形链表 II（京东 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-272",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "155. 最小栈",
+    "content": "力扣 155. 最小栈（京东 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "栈/队列"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-273",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "232. 用栈实现队列",
+    "content": "力扣 232. 用栈实现队列（京东 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "栈/队列"
+    ],
+    "company": "京东",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-274",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "206. 反转链表",
+    "content": "力扣 206. 反转链表（网易 后端开发工程师高频题，出现 5 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "网易",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-275",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "146. LRU缓存机制",
+    "content": "力扣 146. LRU缓存机制（网易 后端开发工程师高频题，出现 4 次）",
+    "tags": [
+      "哈希表"
+    ],
+    "company": "网易",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-276",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "3. 无重复字符的最长子串",
+    "content": "力扣 3. 无重复字符的最长子串（网易 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "字符串"
+    ],
+    "company": "网易",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-277",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "215. 数组中的第K个最大元素",
+    "content": "力扣 215. 数组中的第K个最大元素（网易 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "网易",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-278",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "1. 两数之和",
+    "content": "力扣 1. 两数之和（网易 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "网易",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-279",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "53. 最大子序和",
+    "content": "力扣 53. 最大子序和（网易 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "网易",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-280",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "20. 有效的括号",
+    "content": "力扣 20. 有效的括号（网易 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "网易",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-281",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "141. 环形链表",
+    "content": "力扣 141. 环形链表（网易 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "网易",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-282",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "21. 合并两个有序链表",
+    "content": "力扣 21. 合并两个有序链表（网易 后端开发工程师高频题，出现 3 次）",
+    "tags": [
+      "链表"
+    ],
+    "company": "网易",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-283",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "88. 合并两个有序数组",
+    "content": "力扣 88. 合并两个有序数组（网易 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "数组"
+    ],
+    "company": "网易",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-284",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "15. 三数之和",
+    "content": "力扣 15. 三数之和（网易 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "算法"
+    ],
+    "company": "网易",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-285",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "104. 二叉树的最大深度",
+    "content": "力扣 104. 二叉树的最大深度（网易 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "网易",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-286",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "102. 二叉树的层序遍历",
+    "content": "力扣 102. 二叉树的层序遍历（网易 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "网易",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-287",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "121. 买卖股票的最佳时机",
+    "content": "力扣 121. 买卖股票的最佳时机（网易 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "动态规划"
+    ],
+    "company": "网易",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-288",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "46. 全排列",
+    "content": "力扣 46. 全排列（网易 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "图/回溯"
+    ],
+    "company": "网易",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-289",
+    "stage": "algorithm",
+    "difficulty": "easy",
+    "title": "70. 爬楼梯",
+    "content": "力扣 70. 爬楼梯（网易 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "动态规划"
+    ],
+    "company": "网易",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-290",
+    "stage": "algorithm",
+    "difficulty": "hard",
+    "title": "25. K 个一组翻转链表",
+    "content": "力扣 25. K 个一组翻转链表（网易 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "链表",
+      "哈希表"
+    ],
+    "company": "网易",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-291",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "236. 二叉树的最近公共祖先",
+    "content": "力扣 236. 二叉树的最近公共祖先（网易 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "二叉树"
+    ],
+    "company": "网易",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-292",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "232. 用栈实现队列",
+    "content": "力扣 232. 用栈实现队列（网易 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "栈/队列"
+    ],
+    "company": "网易",
+    "role": "后端开发工程师"
+  },
+  {
+    "id": "leet-293",
+    "stage": "algorithm",
+    "difficulty": "medium",
+    "title": "155. 最小栈",
+    "content": "力扣 155. 最小栈（网易 后端开发工程师高频题，出现 2 次）",
+    "tags": [
+      "栈/队列"
+    ],
+    "company": "网易",
+    "role": "后端开发工程师"
+  }
+]
