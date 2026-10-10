@@ -44,11 +44,12 @@ export function ResumeUploader({ onUpload, disabled = false, fileName }: ResumeU
         选择文件
         <input
           type="file"
-          accept=".pdf,.doc,.docx,.txt,.md"
+          accept=".pdf,.docx,.txt,.md"
           className="hidden"
           disabled={disabled}
           onChange={(e) => {
             handleFile(e.target.files?.[0]);
+            e.target.value = "";
           }}
         />
       </label>

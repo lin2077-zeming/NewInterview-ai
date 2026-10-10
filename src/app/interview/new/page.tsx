@@ -205,7 +205,7 @@ export default function NewInterviewPage() {
             <CardHeader>
               <CardTitle>简历（可选）</CardTitle>
               <CardDescription>
-                支持 txt、md 等纯文本简历；其他格式会记录文件名，并由面试官追问补充
+                支持 PDF、DOCX、TXT、MD，解析出的简历内容会交由面试官参考追问
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -218,7 +218,7 @@ export default function NewInterviewPage() {
                   选择文件
                   <input
                     type="file"
-                    accept=".txt,.md,.markdown,text/plain,text/markdown"
+                    accept=".pdf,.docx,.txt,.md"
                     className="hidden"
                     onChange={(e) => setResumeFile(e.target.files?.[0] ?? null)}
                   />
@@ -385,7 +385,7 @@ function MobileNewInterview({
           <div className="rounded-lg border-2 border-dashed p-5 text-center">
             <Upload className="mx-auto mb-2 h-8 w-8 text-muted-foreground" />
             <p className="mb-3 text-sm text-muted-foreground">
-              {resumeFile ? resumeFile.name : "可选上传简历文本"}
+              {resumeFile ? resumeFile.name : "可选上传简历（PDF/DOCX/TXT/MD）"}
             </p>
             <button
               type="button"
@@ -397,7 +397,7 @@ function MobileNewInterview({
             <input
               ref={resumeInputRef}
               type="file"
-              accept=".txt,.md,.markdown,text/plain,text/markdown"
+              accept=".pdf,.docx,.txt,.md"
               className="sr-only"
               onChange={(event) => onResumeFileChange(event.target.files?.[0] ?? null)}
             />

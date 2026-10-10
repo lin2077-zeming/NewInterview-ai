@@ -1,4 +1,5 @@
 import type { CareerUserProfile } from "@/types";
+import { uploadResumeFile } from "@/lib/upload-client";
 
 const INTERVIEW_CONTEXT_KEY_PREFIX = "zhijing-opc-interview-context";
 const MAX_RESUME_TEXT_LENGTH = 8000;
@@ -43,24 +44,26 @@ export async function buildResumeSummaryFromFile(file: File | null) {
     return undefined;
   }
 
-  const readable =
-    file.type.startsWith("text/") ||
-    /\.(txt|md|markdown|csv|json)$/i.test(file.name);
+  try {
+    // PDF / DOCX 交由服务端解析（浏览器端 file.text() 只能拿到乱码）
+    const { rawText, fileName, fileType, pages } = await uploadResumeFile(file);
+    const text = rawText.trim();
 
-  if (!readable) {
-    return `用户上传了简历文件「${file.name}」，但当前环境只能读取 txt、md 等纯文本文件。可在面试中要求候选人补充项目、经历和技能细节。`;
+    if (!text) {
+      return `用户上传了简历文件「${fileName}」，但文件内容为空。`;
+    }
+
+    const meta = pages ? `${fileType.toUpperCase()} · ${pages} 页` : fileType.toUpperCase();
+
+    return [
+      `简历文件：${fileName}（${meta}）`,
+      "简历原文节选：",
+      text.slice(0, MAX_RESUME_TEXT_LENGTH),
+    ].join("\n");
+  } catch (error) {
+    const reason = error instanceof Error ? error.message : "解析失败";
+    return `用户上传了简历文件「${file.name}」，但解析失败（${reason}）。可在面试中要求候选人补充项目、经历和技能细节。`;
   }
-
-  const rawText = (await file.text()).trim();
-  if (!rawText) {
-    return `用户上传了简历文件「${file.name}」，但文件内容为空。`;
-  }
-
-  return [
-    `简历文件：${file.name}`,
-    "简历原文节选：",
-    rawText.slice(0, MAX_RESUME_TEXT_LENGTH),
-  ].join("\n");
 }
 
 export function buildCandidateProfileSummary(profile: CareerUserProfile) {

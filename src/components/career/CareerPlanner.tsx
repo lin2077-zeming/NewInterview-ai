@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
-import { AlertCircle, Clock3, Loader2, Target, Trash2, Upload } from "lucide-react";
+import { AlertCircle, Clock3, FileText, Loader2, Target, Trash2, Upload } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ResumePreview } from "@/components/resume/ResumePreview";
@@ -21,6 +21,7 @@ import {
   saveCareerAnalysis,
   type SavedCareerAnalysis,
 } from "@/lib/career-analysis-history";
+import { uploadResumeFile } from "@/lib/upload-client";
 import type {
   CareerDiagnosis,
   CareerUserProfile,
@@ -56,6 +57,8 @@ export function CareerPlanner() {
   const [isReading, setIsReading] = useState(false);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [error, setError] = useState("");
+  const [warnings, setWarnings] = useState<string[]>([]);
+  const [parseInfo, setParseInfo] = useState<{ fileType: string; pages?: number } | null>(null);
 
   const selectedRoleLabel = useMemo(
     () => TARGET_ROLES.find((role) => role.value === targetRole)?.label ?? "目标岗位",
@@ -78,18 +81,20 @@ export function CareerPlanner() {
 
   async function handleUpload(file: File) {
     setError("");
+    setWarnings([]);
+    setParseInfo(null);
     setAnalysis(null);
     setIsReading(true);
     try {
-      const text = await readResumeFile(file);
-      if (!text.trim()) {
-        throw new Error("未读取到简历文字，请上传 txt、md 或内容可复制的简历文件。");
+      // 交由服务端解析：PDF / DOCX 需专用解析器，浏览器端直接读会得到乱码
+      const result = await uploadResumeFile(file);
+      if (!isResumeLike(result.rawText)) {
+        throw new Error("这份文件不像简历，请上传包含教育经历、项目经历、技能栈或工作经历的简历。");
       }
-      if (!isResumeLike(text)) {
-        throw new Error("这份文件不像简历，请上传包含教育经历、项目经历、技能栈或工作经历的简历文本。");
-      }
-      setFileName(file.name);
-      setResumeText(text);
+      setFileName(result.fileName);
+      setResumeText(result.rawText);
+      setWarnings(result.warnings ?? []);
+      setParseInfo({ fileType: result.fileType, pages: result.pages });
     } catch (err) {
       setFileName("");
       setResumeText("");
@@ -189,16 +194,35 @@ export function CareerPlanner() {
           <CardHeader>
             <Upload className="h-8 w-8 text-primary mb-2" />
             <CardTitle>上传简历</CardTitle>
-            <CardDescription>支持 txt、md 和内容可复制的简历文件，系统会提取技能与项目经历</CardDescription>
+            <CardDescription>支持 PDF、DOCX、TXT、MD，系统会提取技能与项目经历</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <ResumeUploader onUpload={handleUpload} disabled={isReading || isAnalyzing} fileName={fileName} />
             {isReading ? (
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Loader2 className="h-4 w-4 animate-spin" />
-                 正在读取简历内容
+                 正在解析简历内容
               </div>
             ) : null}
+            {parseInfo && !isReading ? (
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <FileText className="h-4 w-4" />
+                <span>
+                  已解析 {parseInfo.fileType.toUpperCase()} 简历
+                  {parseInfo.pages ? ` · 共 ${parseInfo.pages} 页` : ""}
+                  {` · ${resumeText.replace(/\s/g, "").length} 字`}
+                </span>
+              </div>
+            ) : null}
+            {warnings.map((warning) => (
+              <div
+                key={warning}
+                className="flex items-start gap-2 rounded-lg border border-amber-500/30 bg-amber-500/5 p-3 text-sm text-amber-700"
+              >
+                <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
+                <span>{warning}</span>
+              </div>
+            ))}
           </CardContent>
         </Card>
 
@@ -339,15 +363,6 @@ function ListBlock({ title, items }: { title: string; items: string[] }) {
       </ul>
     </div>
   );
-}
-
-async function readResumeFile(file: File) {
-  const ext = file.name.split(".").pop()?.toLowerCase();
-  if (ext === "pdf" || ext === "doc" || ext === "docx") {
-    const text = await file.text();
-    return text.replace(/[^\u4e00-\u9fa5a-zA-Z0-9\s.,;:()（）+\-#/]/g, " ");
-  }
-  return file.text();
 }
 
 function isResumeLike(rawText: string) {
