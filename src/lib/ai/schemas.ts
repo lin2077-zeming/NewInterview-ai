@@ -102,3 +102,33 @@ export const learningPathOutputSchema = z.object({
   steps: z.array(learningStepSchema).describe("学习路径步骤"),
   totalDuration: z.string().describe("总预计耗时"),
 });
+
+// ========== 简历诊断（可执行的修改清单）==========
+
+export const resumeFixSchema = z.object({
+  category: z
+    .enum([
+      "quantify",
+      "keyword",
+      "vague",
+      "structure",
+      "wording",
+      "contact",
+      "consistency",
+      "other",
+    ])
+    .describe("问题类型：quantify=缺量化结果, keyword=缺岗位关键词, vague=描述空泛, structure=结构问题, wording=表述用词, contact=联系方式, consistency=格式不统一"),
+  severity: z.enum(["high", "medium", "low"]).describe("严重度，high 表示直接导致被筛掉"),
+  section: z.string().describe("问题所在的简历段落，如「项目经历 · 第 2 段」"),
+  original: z.string().describe("**必须逐字引用简历中的原句**，不得改写或概括；确实无原文可引用时填「（简历中未出现）」"),
+  issue: z.string().describe("一句话说明这句话的问题是什么"),
+  why: z.string().describe("为什么这是问题（从招聘方/初筛视角解释）"),
+  suggestion: z.string().describe("**直接给出改后的句子**，要能原样替换进简历；不得只写「建议补充量化」这类空泛指令"),
+});
+
+export const resumeDiagnosisSchema = z.object({
+  score: z.number().min(0).max(100).describe("简历可投递度评分"),
+  verdict: z.string().describe("一句话结论：这份简历现在能否通过初筛"),
+  summary: z.string().describe("2-4 句总评"),
+  fixes: z.array(resumeFixSchema).describe("修改清单，至少 8 条，按严重度从高到低排列"),
+});

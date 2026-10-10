@@ -111,6 +111,55 @@ export interface ParsedResume {
   rawText: string;
 }
 
+// ========== 简历诊断（可执行的修改清单）==========
+
+/** 问题类型 */
+export type ResumeFixCategory =
+  | "quantify" // 缺少量化结果
+  | "keyword" // 缺目标岗位关键词
+  | "vague" // 描述空泛 / 职责堆砌
+  | "structure" // 结构或信息层级问题
+  | "wording" // 表述与用词
+  | "contact" // 联系方式问题
+  | "consistency" // 错别字 / 格式不统一
+  | "other";
+
+export type ResumeFixSeverity = "high" | "medium" | "low";
+
+/**
+ * 一条可执行的简历修改建议。
+ * 硬性要求：必须引用简历中的**原句**，并给出**改后原句**，否则视为无效建议。
+ */
+export interface ResumeFix {
+  id: string;
+  category: ResumeFixCategory;
+  severity: ResumeFixSeverity;
+  /** 简历中位于哪一段，如"项目经历 / 第二段" */
+  section: string;
+  /** 简历里的原句 */
+  original: string;
+  /** 问题是什么 */
+  issue: string;
+  /** 为什么是问题（招聘方视角） */
+  why: string;
+  /** 建议改法：直接给出改后的句子 */
+  suggestion: string;
+}
+
+export interface ResumeDiagnosis {
+  /** 简历可投递度 0-100 */
+  score: number;
+  /** 一句话结论：现在这份简历能不能过初筛 */
+  verdict: string;
+  /** 总评，2-4 句 */
+  summary: string;
+  /** 按严重度降序排列的修改清单 */
+  fixes: ResumeFix[];
+  targetRole?: string;
+  source: "ai" | "fallback";
+  createdAt: string;
+}
+
 // ========== 职业规划相关 ==========
 
 export interface CareerUserProfile {

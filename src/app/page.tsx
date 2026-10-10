@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mic, BarChart3, RefreshCw, Briefcase, GraduationCap, MessageSquare } from "lucide-react";
+import { Mic, BarChart3, RefreshCw, Briefcase, GraduationCap, MessageSquare, FileSearch } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -21,6 +21,12 @@ export default function HomePage() {
               <Button size="lg" className="gap-2 px-8 py-6 text-base rounded-xl shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all hover:scale-105">
                 <Mic className="h-5 w-5" />
                 开始面试
+              </Button>
+            </Link>
+            <Link href="/resume">
+              <Button size="lg" variant="outline" className="gap-2 px-6 py-6 text-base rounded-xl glass hover:scale-105 transition-all">
+                <FileSearch className="h-5 w-5" />
+                简历诊断
               </Button>
             </Link>
             <Link href="/career">
@@ -77,6 +83,17 @@ export default function HomePage() {
                 <CardTitle className="text-lg">复盘报告</CardTitle>
                 <CardDescription>
                   面试后自动生成多维度评分报告，逐题分析优缺点，给出改进计划和示范回答
+                </CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="group glass border-0 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <CardHeader>
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                  <FileSearch className="h-6 w-6 text-primary" />
+                </div>
+                <CardTitle className="text-lg">简历修改清单</CardTitle>
+                <CardDescription>
+                  上传 PDF/DOCX 简历，逐条给出「原句 → 问题 → 为什么 → 改后原句」，可直接复制替换
                 </CardDescription>
               </CardHeader>
             </Card>
