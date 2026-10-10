@@ -1,5 +1,17 @@
 import { NextResponse } from "next/server";
 import { getReview } from "@/lib/ai/actions";
+import { NotFoundError } from "@/lib/errors";
+
+/** 越权一律当作"不存在"，不泄露该面试 ID 是否有效 */
+function toErrorResponse(error: unknown, fallback: string) {
+  if (error instanceof NotFoundError) {
+    return NextResponse.json({ error: error.message }, { status: 404 });
+  }
+  return NextResponse.json(
+    { error: error instanceof Error ? error.message : fallback },
+    { status: 500 }
+  );
+}
 
 export async function GET(
   req: Request,
@@ -16,10 +28,7 @@ export async function GET(
     return NextResponse.json({ report });
   } catch (error) {
     console.error("获取复盘报告失败:", error);
-    return NextResponse.json(
-      { error: error instanceof Error ? error.message : "获取复盘报告失败" },
-      { status: 500 }
-    );
+    return toErrorResponse(error, "获取复盘报告失败");
   }
 }
 
@@ -39,9 +48,6 @@ export async function POST(
     return NextResponse.json({ report });
   } catch (error) {
     console.error("生成复盘报告失败:", error);
-    return NextResponse.json(
-      { error: error instanceof Error ? error.message : "生成复盘报告失败" },
-      { status: 500 }
-    );
+    return toErrorResponse(error, "生成复盘报告失败");
   }
 }

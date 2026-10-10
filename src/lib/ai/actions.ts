@@ -2,10 +2,11 @@
 
 import { randomUUID } from "crypto";
 import { generateObject, generateText } from "ai";
-import { and, eq, desc } from "drizzle-orm";
-import { db } from "@/lib/db";
+import { and, eq, desc, inArray } from "drizzle-orm";
+import { db, ready } from "@/lib/db";
 import { COMPANY_FLOWS } from "@/config/interview-stages";
 import {
+  sessions,
   resumes,
   interviews,
   messages,
@@ -13,6 +14,9 @@ import {
   learningPaths,
 } from "@/lib/db/schema";
 import { analysisModel } from "@/lib/ai/client";
+import { ensureSessionId, getSessionId } from "@/lib/session";
+import { NotFoundError } from "@/lib/errors";
+import { maskPii } from "@/lib/privacy";
 import { getCareerAdvisorSystemPrompt } from "@/lib/ai/prompts/career-advisor";
 import { getReviewerSystemPrompt } from "@/lib/ai/prompts/reviewer";
 import {
@@ -29,12 +33,45 @@ import type {
   ReviewReport,
 } from "@/types";
 
+/**
+ * 校验某场面试属于当前会话。
+ * 不通过时抛 NotFoundError —— 对外表现为 404，避免暴露面试 ID 是否存在。
+ */
+async function assertInterviewOwner(interviewId: string, sessionId: string): Promise<void> {
+  const rows = await db
+    .select({ id: interviews.id })
+    .from(interviews)
+    .where(and(eq(interviews.id, interviewId), eq(interviews.sessionId, sessionId)))
+    .limit(1);
+
+  if (rows.length === 0) {
+    throw new NotFoundError("面试不存在或无权访问。");
+  }
+}
+
+/** 登记会话（首次写入时落库） */
+async function touchSession(sessionId: string): Promise<void> {
+  const now = new Date();
+  const existing = await db
+    .select({ id: sessions.id })
+    .from(sessions)
+    .where(eq(sessions.id, sessionId))
+    .limit(1);
+
+  if (existing.length === 0) {
+    await db.insert(sessions).values({ id: sessionId, createdAt: now, lastSeenAt: now });
+  }
+}
+
 // ========== 面试会话 ==========
 
 export async function createInterview(
-  config: InterviewConfig,
-  userId?: string
+  config: InterviewConfig
 ): Promise<{ interviewId: string }> {
+  await ready();
+  const sessionId = await ensureSessionId();
+  await touchSession(sessionId);
+
   const id = randomUUID();
   const flow = COMPANY_FLOWS[config.company] ?? COMPANY_FLOWS.bytedance;
   const stageIndex = Math.min(
@@ -45,7 +82,7 @@ export async function createInterview(
 
   await db.insert(interviews).values({
     id,
-    userId: userId || "anonymous",
+    sessionId,
     role: config.role,
     companyType: config.company,
     mode: config.mode,
@@ -68,6 +105,12 @@ export async function saveMessage(data: {
   score?: number;
   feedback?: string;
 }): Promise<void> {
+  await ready();
+  const sessionId = await getSessionId();
+  if (!sessionId) throw new NotFoundError();
+
+  await assertInterviewOwner(data.interviewId, sessionId);
+
   await db.insert(messages).values({
     id: randomUUID(),
     interviewId: data.interviewId,
@@ -82,6 +125,12 @@ export async function saveMessage(data: {
 }
 
 export async function getMessages(interviewId: string, stage?: string) {
+  await ready();
+  const sessionId = await getSessionId();
+  if (!sessionId) throw new NotFoundError();
+
+  await assertInterviewOwner(interviewId, sessionId);
+
   const whereClause = stage
     ? and(eq(messages.interviewId, interviewId), eq(messages.stage, stage))
     : eq(messages.interviewId, interviewId);
@@ -98,6 +147,11 @@ export async function updateInterviewStage(
   stage: string,
   status?: string
 ): Promise<void> {
+  await ready();
+  const sessionId = await getSessionId();
+  if (!sessionId) throw new NotFoundError();
+
+  await assertInterviewOwner(interviewId, sessionId);
   const updateData: Record<string, unknown> = { currentStage: stage };
   if (status) {
     updateData.status = status;
@@ -112,7 +166,7 @@ export async function updateInterviewStage(
 
 export async function analyzeResume(
   resumeText: string,
-  userId?: string
+  options: { persist?: boolean } = {}
 ): Promise<ParsedResume> {
   const result = await generateObject({
     model: analysisModel,
@@ -126,12 +180,16 @@ ${resumeText}`,
 
   const parsed = result.object;
 
-  if (userId) {
-    const id = randomUUID();
+  if (options.persist) {
+    await ready();
+    const sessionId = await ensureSessionId();
+    await touchSession(sessionId);
+
     await db.insert(resumes).values({
-      id,
-      userId,
-      rawText: resumeText,
+      id: randomUUID(),
+      sessionId,
+      // 手机号 / 邮箱 / 身份证对分析没有价值，落库前脱敏
+      rawText: maskPii(resumeText),
       parsedSkills: JSON.stringify(parsed.skills),
       parsedExperience: JSON.stringify(parsed.experience),
       education: parsed.education,
@@ -168,7 +226,6 @@ export async function analyzeSkillGap(
 // ========== 学习路径生成 ==========
 
 export async function generateLearningPath(
-  userId: string,
   targetRole: string,
   skillGap: SkillGap
 ): Promise<LearningPath> {
@@ -186,11 +243,15 @@ export async function generateLearningPath(
 请设计3-4个阶段的学习计划，每个阶段2-4周，推荐具体学习资源。`,
   });
 
+  await ready();
+  const sessionId = await ensureSessionId();
+  await touchSession(sessionId);
+
   const id = randomUUID();
 
   await db.insert(learningPaths).values({
     id,
-    userId,
+    sessionId,
     targetRole,
     gapAnalysis: JSON.stringify(skillGap),
     steps: JSON.stringify(result.object.steps),
@@ -199,7 +260,7 @@ export async function generateLearningPath(
 
   return {
     id,
-    userId,
+    userId: sessionId,
     targetRole,
     gapAnalysis: skillGap,
     steps: result.object.steps.map((s) => ({
@@ -211,18 +272,21 @@ export async function generateLearningPath(
 }
 
 export async function getLearningPath(pathId: string) {
+  await ready();
+  const sessionId = await getSessionId();
+  if (!sessionId) return null;
+
   const rows = await db
     .select()
     .from(learningPaths)
-    .where(eq(learningPaths.id, pathId));
+    .where(and(eq(learningPaths.id, pathId), eq(learningPaths.sessionId, sessionId)));
 
   const row = rows[0];
-
   if (!row) return null;
 
   return {
     id: row.id,
-    userId: row.userId,
+    userId: row.sessionId ?? "",
     targetRole: row.targetRole,
     gapAnalysis: JSON.parse(row.gapAnalysis) as SkillGap,
     steps: JSON.parse(row.steps || "[]"),
@@ -236,6 +300,8 @@ export async function generateReview(
   interviewId: string,
   stage?: string,
 ): Promise<ReviewReport> {
+  await ready();
+  // getMessages 内部已校验该面试属于当前会话，越权会抛 NotFoundError
   const messageList = await getMessages(interviewId, stage);
   const interviewRows = await db
     .select()
@@ -355,6 +421,13 @@ passDecision 只能是 strong_pass、pass、borderline、fail。resources 必须
 }
 
 export async function getReview(interviewId: string) {
+  await ready();
+  const sessionId = await getSessionId();
+  if (!sessionId) return null;
+
+  // 先确认这场面试属于当前会话，否则一律当作不存在
+  await assertInterviewOwner(interviewId, sessionId);
+
   const rows = await db
     .select()
     .from(reviews)
@@ -466,10 +539,92 @@ function derivePassAssessment(report: Pick<
   };
 }
 
-export async function getUserInterviews(userId: string) {
+/** 当前会话的面试列表 */
+export async function getSessionInterviews() {
+  await ready();
+  const sessionId = await getSessionId();
+  if (!sessionId) return [];
+
   return db
     .select()
     .from(interviews)
-    .where(eq(interviews.userId, userId))
+    .where(eq(interviews.sessionId, sessionId))
     .orderBy(desc(interviews.createdAt));
+}
+
+// ========== 数据删除（隐私）==========
+
+export interface DeletionSummary {
+  interviews: number;
+  messages: number;
+  reviews: number;
+  resumes: number;
+  learningPaths: number;
+  sessions: number;
+}
+
+/**
+ * 删除当前会话的全部数据。
+ *
+ * 逐表显式删除而不是依赖外键级联 —— SQLite 需要开启 PRAGMA foreign_keys 才生效，
+ * 这里不假设它已开启。
+ */
+export async function deleteSessionData(): Promise<DeletionSummary> {
+  await ready();
+  const sessionId = await getSessionId();
+
+  const summary: DeletionSummary = {
+    interviews: 0,
+    messages: 0,
+    reviews: 0,
+    resumes: 0,
+    learningPaths: 0,
+    sessions: 0,
+  };
+
+  if (!sessionId) return summary;
+
+  const ownedInterviews = await db
+    .select({ id: interviews.id })
+    .from(interviews)
+    .where(eq(interviews.sessionId, sessionId));
+  const interviewIds = ownedInterviews.map((row) => row.id);
+
+  if (interviewIds.length > 0) {
+    const removedReviews = await db
+      .delete(reviews)
+      .where(inArray(reviews.interviewId, interviewIds))
+      .returning({ id: reviews.id });
+    const removedMessages = await db
+      .delete(messages)
+      .where(inArray(messages.interviewId, interviewIds))
+      .returning({ id: messages.id });
+
+    summary.reviews = removedReviews.length;
+    summary.messages = removedMessages.length;
+  }
+
+  const removedInterviews = await db
+    .delete(interviews)
+    .where(eq(interviews.sessionId, sessionId))
+    .returning({ id: interviews.id });
+  const removedResumes = await db
+    .delete(resumes)
+    .where(eq(resumes.sessionId, sessionId))
+    .returning({ id: resumes.id });
+  const removedPaths = await db
+    .delete(learningPaths)
+    .where(eq(learningPaths.sessionId, sessionId))
+    .returning({ id: learningPaths.id });
+  const removedSessions = await db
+    .delete(sessions)
+    .where(eq(sessions.id, sessionId))
+    .returning({ id: sessions.id });
+
+  summary.interviews = removedInterviews.length;
+  summary.resumes = removedResumes.length;
+  summary.learningPaths = removedPaths.length;
+  summary.sessions = removedSessions.length;
+
+  return summary;
 }

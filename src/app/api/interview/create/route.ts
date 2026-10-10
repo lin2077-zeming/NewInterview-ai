@@ -4,10 +4,8 @@ import { createInterview } from "@/lib/ai/actions";
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const { config, userId } = body as {
-      config: Parameters<typeof createInterview>[0];
-      userId?: string;
-    };
+    // 归属由服务端会话决定，不再接受客户端传入的 userId
+    const { config } = body as { config: Parameters<typeof createInterview>[0] };
 
     if (!config || !config.role || !config.company) {
       return NextResponse.json(
@@ -16,7 +14,7 @@ export async function POST(req: Request) {
       );
     }
 
-    const result = await createInterview(config, userId);
+    const result = await createInterview(config);
     return NextResponse.json(result);
   } catch (error) {
     console.error("创建面试失败:", error);

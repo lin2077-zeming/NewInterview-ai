@@ -36,6 +36,8 @@ export default function StudioPage() {
   const [events, setEvents] = useState<OpcEvent[]>([]);
   const [team, setTeam] = useState<OpcTeam>({ size: 1 });
   const [ready, setReady] = useState(false);
+  const [deleting, setDeleting] = useState(false);
+  const [deleteResult, setDeleteResult] = useState("");
 
   useEffect(() => {
     const timer = window.setTimeout(() => {
@@ -58,6 +60,33 @@ export default function StudioPage() {
   function handleClear() {
     clearOpcEvents();
     setEvents([]);
+  }
+
+  async function handleDeleteData() {
+    const confirmed = window.confirm(
+      "将删除当前匿名会话的全部数据：面试记录、对话、复盘报告、简历、学习路径，以及本机度量记录。\n\n此操作不可恢复，确定继续？"
+    );
+    if (!confirmed) return;
+
+    setDeleting(true);
+    setDeleteResult("");
+    try {
+      const response = await fetch("/api/me/data", { method: "DELETE" });
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(data?.error || "删除失败，请稍后重试。");
+      }
+      clearOpcEvents();
+      setEvents([]);
+      const d = data.deleted ?? {};
+      setDeleteResult(
+        `已删除：面试 ${d.interviews ?? 0} 场 · 对话 ${d.messages ?? 0} 条 · 复盘 ${d.reviews ?? 0} 份 · 简历 ${d.resumes ?? 0} 份 · 学习路径 ${d.learningPaths ?? 0} 条`
+      );
+    } catch (err) {
+      setDeleteResult(err instanceof Error ? err.message : "删除失败，请稍后重试。");
+    } finally {
+      setDeleting(false);
+    }
   }
 
   if (!ready) {
@@ -281,30 +310,53 @@ export default function StudioPage() {
           <CardTitle>运营设置</CardTitle>
           <CardDescription>团队规模会影响「一人 / 小团队」这一项的评分</CardDescription>
         </CardHeader>
-        <CardContent className="flex flex-wrap items-end justify-between gap-4">
-          <div className="space-y-2">
-            <p className="text-sm font-medium">团队人数（含本人）</p>
-            <div className="flex gap-2">
-              {TEAM_SIZES.map((size) => (
-                <button
-                  key={size}
-                  type="button"
-                  onClick={() => handleTeamSize(size)}
-                  className={
-                    team.size === size
-                      ? "h-9 w-9 rounded-lg border border-primary/40 bg-primary/10 text-sm font-medium text-primary"
-                      : "h-9 w-9 rounded-lg border text-sm text-muted-foreground transition-colors hover:bg-muted"
-                  }
-                >
-                  {size}
-                </button>
-              ))}
+        <CardContent className="space-y-4">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div className="space-y-2">
+              <p className="text-sm font-medium">团队人数（含本人）</p>
+              <div className="flex gap-2">
+                {TEAM_SIZES.map((size) => (
+                  <button
+                    key={size}
+                    type="button"
+                    onClick={() => handleTeamSize(size)}
+                    className={
+                      team.size === size
+                        ? "h-9 w-9 rounded-lg border border-primary/40 bg-primary/10 text-sm font-medium text-primary"
+                        : "h-9 w-9 rounded-lg border text-sm text-muted-foreground transition-colors hover:bg-muted"
+                    }
+                  >
+                    {size}
+                  </button>
+                ))}
+              </div>
             </div>
+            <Button variant="outline" onClick={handleClear} disabled={events.length === 0}>
+              <Trash2 className="h-4 w-4" />
+              清空度量数据
+            </Button>
           </div>
-          <Button variant="outline" onClick={handleClear} disabled={events.length === 0}>
-            <Trash2 className="h-4 w-4" />
-            清空度量数据
-          </Button>
+
+          <div className="flex flex-wrap items-end justify-between gap-4 border-t pt-4">
+            <div className="space-y-1">
+              <p className="text-sm font-medium">隐私：删除我的全部数据</p>
+              <p className="text-xs leading-5 text-muted-foreground">
+                本项目不要求注册，每位访客有一个独立的匿名会话，数据彼此隔离。
+                <br />
+                点击右侧按钮会删除当前会话的全部内容，并重置匿名会话。
+              </p>
+            </div>
+            <Button variant="outline" onClick={handleDeleteData} disabled={deleting}>
+              <Trash2 className="h-4 w-4" />
+              {deleting ? "正在删除…" : "删除我的全部数据"}
+            </Button>
+          </div>
+
+          {deleteResult ? (
+            <p className="rounded-lg border border-destructive/30 bg-destructive/5 p-3 text-xs text-destructive">
+              {deleteResult}
+            </p>
+          ) : null}
         </CardContent>
       </Card>
 

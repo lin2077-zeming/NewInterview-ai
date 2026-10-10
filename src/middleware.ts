@@ -1,10 +1,31 @@
-import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
+import { NextResponse, type NextRequest } from "next/server";
 
-// Coze 沙箱部署：无 Clerk 密钥时直接放行所有请求
-// Clerk 仅用于需要持久化的页面，核心面试功能不需要认证
+/**
+ * 会话中间件。
+ *
+ * 不阻断任何请求（演示不需要登录门槛），只做一件事：
+ * 为还没有匿名会话的访客签发一个 httpOnly cookie。
+ * 服务端据此隔离每位访客的数据。
+ */
+
+const SESSION_COOKIE = "zhijing_session";
+const SESSION_MAX_AGE = 60 * 60 * 24 * 180;
+
 export function middleware(request: NextRequest) {
-  return NextResponse.next();
+  const response = NextResponse.next();
+
+  const existing = request.cookies.get(SESSION_COOKIE)?.value;
+  if (!existing) {
+    response.cookies.set(SESSION_COOKIE, crypto.randomUUID(), {
+      httpOnly: true,
+      sameSite: "lax",
+      path: "/",
+      maxAge: SESSION_MAX_AGE,
+      secure: process.env.NODE_ENV === "production",
+    });
+  }
+
+  return response;
 }
 
 export const config = {

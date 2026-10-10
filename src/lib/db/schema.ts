@@ -1,7 +1,20 @@
 import { sqliteTable, text, integer } from "drizzle-orm/sqlite-core";
 
+/**
+ * 匿名会话。
+ *
+ * 不要求注册登录，但每位访客有一个独立会话 ID，
+ * 业务表通过 `sessionId` 归属到会话，实现数据隔离。
+ */
+export const sessions = sqliteTable("sessions", {
+  id: text("id").primaryKey(),
+  createdAt: integer("created_at", { mode: "timestamp" }).notNull(),
+  lastSeenAt: integer("last_seen_at", { mode: "timestamp" }).notNull(),
+});
+
 export const resumes = sqliteTable("resumes", {
   id: text("id").primaryKey(),
+  sessionId: text("session_id"),
   userId: text("user_id"),
   rawText: text("raw_text").notNull(),
   parsedSkills: text("parsed_skills"),
@@ -13,6 +26,7 @@ export const resumes = sqliteTable("resumes", {
 
 export const interviews = sqliteTable("interviews", {
   id: text("id").primaryKey(),
+  sessionId: text("session_id"),
   userId: text("user_id"),
   resumeId: text("resume_id").references(() => resumes.id),
   role: text("role").notNull(),
@@ -55,6 +69,7 @@ export const reviews = sqliteTable("reviews", {
 
 export const learningPaths = sqliteTable("learning_paths", {
   id: text("id").primaryKey(),
+  sessionId: text("session_id"),
   userId: text("user_id"),
   targetRole: text("target_role").notNull(),
   gapAnalysis: text("gap_analysis").notNull(),
