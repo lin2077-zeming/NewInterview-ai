@@ -1,5 +1,6 @@
 import { generateObject } from "ai";
-import { analysisModel } from "@/lib/ai/client";
+import { estimateCost, type UsageCost } from "@/lib/ai/cost";
+import { withModelFallback } from "@/lib/ai/generate";
 import { buildQuestionChainUserPrompt, getQuestionChainSystemPrompt } from "@/lib/ai/prompts/question-chain";
 import { questionChainSchema } from "@/lib/ai/schemas";
 import { COMPANY_FLOWS } from "@/config/interview-stages";
@@ -95,26 +96,33 @@ export function buildFallbackQuestionChain(roleInput?: string, companyKey?: stri
   };
 }
 
+export interface AiChainResult {
+  chain: QuestionChain;
+  usage: UsageCost;
+}
+
 export async function generateQuestionChainWithAI(input: {
   role?: string;
   company?: string;
   level?: string;
-}): Promise<QuestionChain | null> {
+}): Promise<AiChainResult | null> {
   const roleKey = resolveRoleKey(input.role);
   const roleLabel = getRoleLabel(roleKey);
   const company = input.company ? COMPANY_FLOWS[input.company] : undefined;
 
-  const { object } = await generateObject({
-    model: analysisModel,
-    system: getQuestionChainSystemPrompt(),
-    schema: questionChainSchema,
-    prompt: buildQuestionChainUserPrompt({
-      roleLabel,
-      companyName: company?.name,
-      companyStyle: company?.style,
-      level: input.level,
-    }),
-  });
+  const { object, usage } = await withModelFallback((model) =>
+    generateObject({
+      model,
+      system: getQuestionChainSystemPrompt(),
+      schema: questionChainSchema,
+      prompt: buildQuestionChainUserPrompt({
+        roleLabel,
+        companyName: company?.name,
+        companyStyle: company?.style,
+        level: input.level,
+      }),
+    })
+  );
 
   const dimensions: QuestionChainDimension[] = object.dimensions
     .map((dimension) => ({
@@ -130,12 +138,15 @@ export async function generateQuestionChainWithAI(input: {
   if (dimensions.length < 4) return null;
 
   return {
-    role: roleKey,
-    roleLabel,
-    company: company?.name,
-    intro: object.intro,
-    dimensions,
-    source: "ai",
-    createdAt: new Date().toISOString(),
+    chain: {
+      role: roleKey,
+      roleLabel,
+      company: company?.name,
+      intro: object.intro,
+      dimensions,
+      source: "ai",
+      createdAt: new Date().toISOString(),
+    },
+    usage: estimateCost(usage),
   };
 }

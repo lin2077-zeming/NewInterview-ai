@@ -8,6 +8,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ResumeUploader } from "@/components/resume/ResumeUploader";
 import { ResumeFixList } from "@/components/resume/ResumeFixList";
 import { uploadResumeFile } from "@/lib/upload-client";
+import { recordOpcEvent } from "@/lib/opc-metrics";
+import type { UsageCost } from "@/lib/ai/cost";
 import {
   clearResumeDiagnosis,
   loadResumeDiagnosis,
@@ -16,6 +18,8 @@ import {
   type SavedResumeDiagnosis,
 } from "@/lib/resume-diagnosis-store";
 import type { ResumeDiagnosis } from "@/types";
+
+type AiUsage = Pick<UsageCost, "inputTokens" | "outputTokens" | "cost">;
 
 const TARGET_ROLES = [
   { value: "", label: "不指定（按通用技术岗标准）" },
@@ -78,20 +82,34 @@ export default function ResumePage() {
       return;
     }
     setIsDiagnosing(true);
+    const startedAt = performance.now();
     try {
       const response = await fetch("/api/resume/diagnose", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ rawText, targetRole: targetRole || undefined, fileName }),
       });
+      const durationMs = performance.now() - startedAt;
       const data = await response.json();
       if (!response.ok) {
         throw new Error(data?.error || "诊断失败，请稍后重试。");
       }
-      const diagnosis = data as ResumeDiagnosis;
+      const { usage, ...diagnosisData } = data as ResumeDiagnosis & { usage?: AiUsage };
+      const diagnosis = diagnosisData as ResumeDiagnosis;
       setResult(diagnosis);
       const saved = saveResumeDiagnosis({ diagnosis, fileName, targetRole });
       setAcceptedIds(saved.acceptedIds);
+
+      // 记录一次交付，用于 OPC 度量看板
+      recordOpcEvent({
+        kind: "resume_diagnose",
+        durationMs,
+        source: diagnosis.source,
+        usage,
+        units: diagnosis.fixes.length,
+        label: `${fileName || "粘贴的简历"} · ${diagnosis.fixes.length} 条建议`,
+        score: diagnosis.score,
+      });
     } catch (err) {
       setError(err instanceof Error ? err.message : "诊断失败，请稍后重试。");
     } finally {

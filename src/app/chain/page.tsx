@@ -7,12 +7,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { QuestionChainTree } from "@/components/interview/QuestionChainTree";
 import { COMPANY_FLOWS } from "@/config/interview-stages";
 import { ROLE_LABELS } from "@/config/question-chains";
-import {
-  clearQuestionChain,
-  loadQuestionChain,
-  saveQuestionChain,
-} from "@/lib/question-chain-store";
+import { recordOpcEvent } from "@/lib/opc-metrics";
+import { clearQuestionChain, loadQuestionChain, saveQuestionChain } from "@/lib/question-chain-store";
+import type { UsageCost } from "@/lib/ai/cost";
 import type { QuestionChain } from "@/types";
+
+type AiUsage = Pick<UsageCost, "inputTokens" | "outputTokens" | "cost">;
 
 const LEVELS = ["校招 / 实习", "社招 1-3 年", "资深 / 3 年以上"];
 
@@ -47,20 +47,38 @@ export default function ChainPage() {
   async function handleGenerate() {
     setError("");
     setLoading(true);
+    const startedAt = performance.now();
     try {
       const response = await fetch("/api/interview/chain", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ role, company: company || undefined, level }),
       });
+      const durationMs = performance.now() - startedAt;
       const data = await response.json();
       if (!response.ok) {
         throw new Error(data?.error || "追问链生成失败，请稍后重试。");
       }
-      const next = data as QuestionChain;
+      const { usage, ...chainData } = data as QuestionChain & { usage?: AiUsage };
+      const next = chainData as QuestionChain;
       setChain(next);
       setCompanyKey(company || undefined);
       saveQuestionChain({ chain: next, companyKey: company || undefined });
+
+      // 记录一次交付，用于 OPC 度量看板
+      const nodeCount = next.dimensions.reduce(
+        (sum, dimension) =>
+          sum + dimension.tracks.reduce((count, track) => count + track.nodes.length, 0),
+        0
+      );
+      recordOpcEvent({
+        kind: "chain_generate",
+        durationMs,
+        source: next.source,
+        usage,
+        units: nodeCount,
+        label: `${next.roleLabel} · ${next.dimensions.length} 维度 / ${nodeCount} 节点`,
+      });
     } catch (err) {
       setError(err instanceof Error ? err.message : "追问链生成失败，请稍后重试。");
     } finally {

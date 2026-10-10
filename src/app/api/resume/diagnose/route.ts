@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { ZERO_USAGE } from "@/lib/ai/cost";
 import {
   buildFallbackDiagnosis,
   diagnoseResumeWithAI,
@@ -42,7 +43,11 @@ export async function POST(req: Request) {
     try {
       const ai = await withTimeout(diagnoseResumeWithAI(rawText, body.targetRole), 40000);
       if (ai) {
-        return NextResponse.json({ ...ai, fileName: body.fileName });
+        return NextResponse.json({
+          ...ai.diagnosis,
+          usage: ai.usage,
+          fileName: body.fileName,
+        });
       }
     } catch (error) {
       console.warn(
@@ -51,7 +56,11 @@ export async function POST(req: Request) {
       );
     }
 
-    return NextResponse.json({ ...buildFallbackDiagnosis(rawText, body.targetRole), fileName: body.fileName });
+    return NextResponse.json({
+      ...buildFallbackDiagnosis(rawText, body.targetRole),
+      usage: ZERO_USAGE,
+      fileName: body.fileName,
+    });
   } catch (error) {
     console.error("[resume/diagnose] 诊断异常:", error);
     return NextResponse.json({ error: "简历诊断失败，请稍后重试。" }, { status: 500 });

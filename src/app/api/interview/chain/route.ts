@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { ZERO_USAGE } from "@/lib/ai/cost";
 import { buildFallbackQuestionChain, generateQuestionChainWithAI } from "@/lib/ai/question-chain";
 import { withTimeout } from "@/lib/async-utils";
 
@@ -26,7 +27,7 @@ export async function POST(req: Request) {
     try {
       const ai = await withTimeout(generateQuestionChainWithAI(body), 45000);
       if (ai) {
-        return NextResponse.json(ai);
+        return NextResponse.json({ ...ai.chain, usage: ai.usage });
       }
     } catch (error) {
       console.warn(
@@ -35,7 +36,10 @@ export async function POST(req: Request) {
       );
     }
 
-    return NextResponse.json(buildFallbackQuestionChain(body.role, body.company));
+    return NextResponse.json({
+      ...buildFallbackQuestionChain(body.role, body.company),
+      usage: ZERO_USAGE,
+    });
   } catch (error) {
     console.error("[interview/chain] 生成异常:", error);
     return NextResponse.json({ error: "追问链生成失败，请稍后重试。" }, { status: 500 });

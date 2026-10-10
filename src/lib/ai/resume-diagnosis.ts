@@ -1,5 +1,6 @@
 import { generateObject } from "ai";
-import { analysisModel } from "@/lib/ai/client";
+import { estimateCost, type UsageCost } from "@/lib/ai/cost";
+import { withModelFallback } from "@/lib/ai/generate";
 import { getResumeDoctorSystemPrompt } from "@/lib/ai/prompts/resume-doctor";
 import { resumeDiagnosisSchema } from "@/lib/ai/schemas";
 import { CATEGORY_LABELS } from "@/lib/resume-fix-labels";
@@ -453,17 +454,23 @@ export function buildFallbackDiagnosis(
 
 // ========== AI 诊断 ==========
 
+export interface AiDiagnosisResult {
+  diagnosis: ResumeDiagnosis;
+  usage: UsageCost;
+}
+
 export async function diagnoseResumeWithAI(
   rawText: string,
   targetRole?: string
-): Promise<ResumeDiagnosis | null> {
+): Promise<AiDiagnosisResult | null> {
   const roleName = targetRole ? ROLE_LABELS[targetRole] ?? targetRole : "未指定（按通用技术岗标准评判）";
 
-  const { object } = await generateObject({
-    model: analysisModel,
-    system: getResumeDoctorSystemPrompt(),
-    schema: resumeDiagnosisSchema,
-    prompt: `请对下面这份简历做逐条诊断。
+  const { object, usage } = await withModelFallback((model) =>
+    generateObject({
+      model,
+      system: getResumeDoctorSystemPrompt(),
+      schema: resumeDiagnosisSchema,
+      prompt: `请对下面这份简历做逐条诊断。
 
 目标岗位：${roleName}
 
@@ -477,7 +484,8 @@ ${rawText.slice(0, 8000)}
 - 每条的 original 必须是简历中**原样出现过**的句子（截取一句即可，不可改写）；确实无原文时写「（简历中未出现）」
 - 每条的 suggestion 必须是**可直接替换进简历的成品句子**，不是修改方向
 - section 要指明所在段落，例如「项目经历 · 第 2 段」`,
-  });
+    })
+  );
 
   const fixes = object.fixes
     .filter((fix) => fix.original.trim().length > 0 && fix.suggestion.trim().length > 0)
@@ -487,12 +495,15 @@ ${rawText.slice(0, 8000)}
   if (fixes.length === 0) return null;
 
   return {
-    score: object.score,
-    verdict: object.verdict,
-    summary: object.summary,
-    fixes,
-    targetRole: targetRole ? ROLE_LABELS[targetRole] ?? targetRole : undefined,
-    source: "ai",
-    createdAt: new Date().toISOString(),
+    diagnosis: {
+      score: object.score,
+      verdict: object.verdict,
+      summary: object.summary,
+      fixes,
+      targetRole: targetRole ? ROLE_LABELS[targetRole] ?? targetRole : undefined,
+      source: "ai",
+      createdAt: new Date().toISOString(),
+    },
+    usage: estimateCost(usage),
   };
 }
