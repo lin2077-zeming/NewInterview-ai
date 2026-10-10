@@ -10,6 +10,9 @@
 !.yarn/releases
 !.yarn/versions
 
+# 包管理器统一为 pnpm（部署脚本亦使用 pnpm），忽略 npm 生成的锁文件
+/package-lock.json
+
 # testing
 /coverage
 
