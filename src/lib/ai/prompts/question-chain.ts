@@ -43,20 +43,35 @@ export function getQuestionChainSystemPrompt() {
 
 export function buildQuestionChainUserPrompt(input: {
   roleLabel: string;
+  roleDescription?: string;
+  roleSkills?: string[];
   companyName?: string;
   companyStyle?: string;
   level?: string;
 }) {
-  const { roleLabel, companyName, companyStyle, level } = input;
+  const { roleLabel, roleDescription, roleSkills, companyName, companyStyle, level } = input;
+
+  const hasProfile = Boolean(roleDescription) || Boolean(roleSkills?.length);
 
   return `请为下面的面试场景生成追问链。
 
 目标岗位：${roleLabel}
+${roleDescription ? `\n岗位描述（**追问链必须贴合这段描述**）：\n${roleDescription}\n` : ""}
+${
+  roleSkills?.length
+    ? `\n该岗位的核心技能要求：${roleSkills.join("、")}\n请确保 4-6 个考察维度覆盖这些技能，不要跑题到无关方向。\n`
+    : ""
+}
 面试公司：${companyName ?? "通用互联网公司"}
 ${companyStyle ? `该公司面试风格：${companyStyle}` : ""}
 候选人层次：${level ?? "校招 / 实习"}
 
 ${companyStyle ? "追问链的风格要贴合这家公司的面试特点。" : ""}
+${
+  hasProfile
+    ? "注意：这是一个非互联网技术岗也可能出现的岗位，请严格依据上面的岗位描述来设计考察维度，不要默认套用后端/编程方向的考察点。"
+    : ""
+}
 
 再次确认输出要求：
 - 4-6 个考察维度，每个维度 1-2 条追问链，每条链 3 层递进

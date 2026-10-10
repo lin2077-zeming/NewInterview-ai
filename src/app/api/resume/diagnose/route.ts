@@ -57,7 +57,7 @@ export async function POST(req: Request) {
     }
 
     return NextResponse.json({
-      ...buildFallbackDiagnosis(rawText, body.targetRole),
+      ...(await buildFallbackDiagnosis(rawText, body.targetRole)),
       usage: ZERO_USAGE,
       fileName: body.fileName,
     });

@@ -73,6 +73,19 @@ const CREATE_STATEMENTS = [
   `CREATE INDEX IF NOT EXISTS idx_interviews_session ON interviews(session_id)`,
   `CREATE INDEX IF NOT EXISTS idx_resumes_session ON resumes(session_id)`,
   `CREATE INDEX IF NOT EXISTS idx_learning_paths_session ON learning_paths(session_id)`,
+  `CREATE TABLE IF NOT EXISTS job_roles (
+    id TEXT PRIMARY KEY,
+    key TEXT NOT NULL UNIQUE,
+    label TEXT NOT NULL,
+    category TEXT,
+    description TEXT NOT NULL,
+    skills TEXT NOT NULL,
+    enabled INTEGER NOT NULL DEFAULT 1,
+    sort_order INTEGER NOT NULL DEFAULT 100,
+    created_at INTEGER NOT NULL,
+    updated_at INTEGER NOT NULL
+  )`,
+  `CREATE INDEX IF NOT EXISTS idx_job_roles_enabled ON job_roles(enabled)`,
 ];
 
 /**

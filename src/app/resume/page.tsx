@@ -9,6 +9,7 @@ import { ResumeUploader } from "@/components/resume/ResumeUploader";
 import { ResumeFixList } from "@/components/resume/ResumeFixList";
 import { uploadResumeFile } from "@/lib/upload-client";
 import { recordOpcEvent } from "@/lib/opc-metrics";
+import { useJobRoles } from "@/hooks/use-job-roles";
 import type { UsageCost } from "@/lib/ai/cost";
 import {
   clearResumeDiagnosis,
@@ -21,18 +22,8 @@ import type { ResumeDiagnosis } from "@/types";
 
 type AiUsage = Pick<UsageCost, "inputTokens" | "outputTokens" | "cost">;
 
-const TARGET_ROLES = [
-  { value: "", label: "不指定（按通用技术岗标准）" },
-  { value: "frontend", label: "前端开发工程师" },
-  { value: "backend", label: "后端开发工程师" },
-  { value: "fullstack", label: "全栈开发工程师" },
-  { value: "algorithm", label: "算法工程师" },
-  { value: "data", label: "数据分析师" },
-  { value: "test", label: "测试开发工程师" },
-  { value: "product", label: "产品经理" },
-];
-
 export default function ResumePage() {
+  const { roles, loading: rolesLoading } = useJobRoles();
   const [fileName, setFileName] = useState("");
   const [rawText, setRawText] = useState("");
   const [targetRole, setTargetRole] = useState("frontend");
@@ -206,12 +197,14 @@ export default function ResumePage() {
               id="resume-target-role"
               value={targetRole}
               onChange={(event) => setTargetRole(event.target.value)}
-              disabled={isDiagnosing}
+              disabled={isDiagnosing || rolesLoading}
               className="h-9 w-full rounded-lg border border-input bg-background px-3 text-sm outline-none focus-visible:border-ring"
             >
-              {TARGET_ROLES.map((role) => (
-                <option key={role.value} value={role.value}>
+              <option value="">不指定（按通用技术岗标准）</option>
+              {roles.map((role) => (
+                <option key={role.key} value={role.key}>
                   {role.label}
+                  {role.source === "admin" ? "（自定义）" : ""}
                 </option>
               ))}
             </select>

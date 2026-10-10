@@ -37,7 +37,7 @@ export async function POST(req: Request) {
     }
 
     return NextResponse.json({
-      ...buildFallbackQuestionChain(body.role, body.company),
+      ...(await buildFallbackQuestionChain(body.role, body.company)),
       usage: ZERO_USAGE,
     });
   } catch (error) {

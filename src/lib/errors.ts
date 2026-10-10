@@ -12,3 +12,19 @@ export class NotFoundError extends Error {
     this.name = "NotFoundError";
   }
 }
+
+/** 岗位录入校验失败，调用方转成 400 并把原因回给用户 */
+export class RoleValidationError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = "RoleValidationError";
+  }
+}
+
+/** 管理员令牌缺失或错误 */
+export class AdminAuthError extends Error {
+  constructor(message = "管理员令牌无效。") {
+    super(message);
+    this.name = "AdminAuthError";
+  }
+}

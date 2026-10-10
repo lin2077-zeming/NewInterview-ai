@@ -76,3 +76,26 @@ export const learningPaths = sqliteTable("learning_paths", {
   steps: text("steps"),
   createdAt: integer("created_at", { mode: "timestamp" }).notNull(),
 });
+
+/**
+ * 岗位。
+ *
+ * 内置岗位（8 个）仍由代码配置提供，保持现状不动；
+ * 本表只存管理员新增的岗位 —— 录入元信息（描述 + 技能要求），
+ * 面试风格与追问链由 AI 按描述实时生成。
+ */
+export const jobRoles = sqliteTable("job_roles", {
+  id: text("id").primaryKey(),
+  /** 稳定标识，入库后不可修改（历史数据依赖它） */
+  key: text("key").notNull().unique(),
+  label: text("label").notNull(),
+  category: text("category"),
+  /** 岗位描述：AI 生成面试内容的唯一依据 */
+  description: text("description").notNull(),
+  /** 技能要求，JSON 字符串数组 */
+  skills: text("skills").notNull(),
+  enabled: integer("enabled", { mode: "boolean" }).notNull().default(true),
+  sortOrder: integer("sort_order").notNull().default(100),
+  createdAt: integer("created_at", { mode: "timestamp" }).notNull(),
+  updatedAt: integer("updated_at", { mode: "timestamp" }).notNull(),
+});

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { QuestionChainTree } from "@/components/interview/QuestionChainTree";
 import { COMPANY_FLOWS } from "@/config/interview-stages";
-import { ROLE_LABELS } from "@/config/question-chains";
+import { useJobRoles } from "@/hooks/use-job-roles";
 import { recordOpcEvent } from "@/lib/opc-metrics";
 import { clearQuestionChain, loadQuestionChain, saveQuestionChain } from "@/lib/question-chain-store";
 import type { UsageCost } from "@/lib/ai/cost";
@@ -21,9 +21,8 @@ const COMPANY_OPTIONS = [
   ...Object.entries(COMPANY_FLOWS).map(([key, flow]) => ({ key, name: flow.name })),
 ];
 
-const ROLE_OPTIONS = Object.entries(ROLE_LABELS).map(([key, label]) => ({ key, label }));
-
 export default function ChainPage() {
+  const { roles, loading: rolesLoading, error: rolesError } = useJobRoles();
   const [role, setRole] = useState("frontend");
   const [company, setCompany] = useState("");
   const [level, setLevel] = useState(LEVELS[0]);
@@ -119,15 +118,29 @@ export default function ChainPage() {
                 id="chain-role"
                 value={role}
                 onChange={(event) => setRole(event.target.value)}
-                disabled={loading}
+                disabled={loading || rolesLoading}
                 className="h-9 w-full rounded-lg border border-input bg-background px-3 text-sm outline-none focus-visible:border-ring"
               >
-                {ROLE_OPTIONS.map((option) => (
+                {roles.map((option) => (
                   <option key={option.key} value={option.key}>
                     {option.label}
+                    {option.source === "admin" ? "（自定义）" : ""}
                   </option>
                 ))}
               </select>
+              {rolesError ? (
+                <p className="text-xs text-destructive">{rolesError}</p>
+              ) : null}
+              {(() => {
+                const selected = roles.find((item) => item.key === role);
+                if (!selected || selected.hasOfflineContent) return null;
+                return (
+                  <p className="text-xs leading-5 text-muted-foreground">
+                    该岗位为自定义岗位，暂无人工整理的离线追问链。配置 AI 密钥可获得贴合岗位的定制追问；
+                    否则将按岗位技能要求生成通用追问。
+                  </p>
+                );
+              })()}
             </div>
 
             <div className="space-y-2">

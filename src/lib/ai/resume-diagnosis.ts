@@ -4,6 +4,7 @@ import { withModelFallback } from "@/lib/ai/generate";
 import { getResumeDoctorSystemPrompt } from "@/lib/ai/prompts/resume-doctor";
 import { resumeDiagnosisSchema } from "@/lib/ai/schemas";
 import { CATEGORY_LABELS } from "@/lib/resume-fix-labels";
+import { findJobRole } from "@/lib/roles";
 import type { ResumeDiagnosis, ResumeFix, ResumeFixCategory, ResumeFixSeverity } from "@/types";
 
 export const ROLE_LABELS: Record<string, string> = {
@@ -110,10 +111,15 @@ const SEVERITY_ORDER: Record<ResumeFixSeverity, number> = { high: 0, medium: 1, 
  * 用途有二：① 未配置 API Key 时的降级模式；② AI 输出异常时的兜底。
  * 不编造任何数字 —— 涉及量化时给出带占位符的成品句式，由用户填入真实数据。
  */
-export function buildFallbackDiagnosis(
+export async function buildFallbackDiagnosis(
   rawText: string,
   targetRole?: string
-): ResumeDiagnosis {
+): Promise<ResumeDiagnosis> {
+  const role = await findJobRole(targetRole).catch(() => null);
+  const roleName = role?.label ?? (targetRole ? ROLE_LABELS[targetRole] ?? targetRole : undefined);
+  const requiredSkills = role ? ROLE_REQUIREMENTS[role.key] ?? role.skills : undefined;
+  const roleKey = role?.key ?? targetRole ?? "";
+
   const lines = rawText.split("\n").map((l) => l.trim()).filter(Boolean);
   const fixes: ResumeFix[] = [];
   let currentSection = "简历正文";
@@ -190,10 +196,9 @@ export function buildFallbackDiagnosis(
   }
 
   // C. 岗位关键词缺口
-  if (targetRole && ROLE_REQUIREMENTS[targetRole]) {
-    const required = ROLE_REQUIREMENTS[targetRole];
+  if (requiredSkills && requiredSkills.length > 0) {
     const lower = rawText.toLowerCase();
-    const missing = required.filter((skill) => !lower.includes(skill.toLowerCase()));
+    const missing = requiredSkills.filter((skill) => !lower.includes(skill.toLowerCase()));
     if (missing.length > 0) {
       fixes.push(
         makeFix(
@@ -201,7 +206,7 @@ export function buildFallbackDiagnosis(
           missing.length >= 4 ? "high" : "medium",
           "技能 / 整体",
           "（简历中未出现）",
-          `缺少目标岗位 ${ROLE_LABELS[targetRole] ?? targetRole} 的 ${missing.length} 个高频关键词：${missing.join("、")}`,
+          `缺少目标岗位 ${roleName ?? roleKey} 的 ${missing.length} 个高频关键词：${missing.join("、")}`,
           "不少公司用关键词做第一轮机器筛选，缺少关键词会在进入人工评审前就被过滤。",
           `在技能区补上：${missing.join("、")}（只写你确实用过或能答上来的，不要虚报）`
         )
@@ -372,7 +377,7 @@ export function buildFallbackDiagnosis(
         "（简历中未出现）",
         "没有写明求职意向",
         "HR 拿到简历第一眼要看的就是「你想做什么」，缺失会降低匹配判断效率。",
-        `在姓名下方加一行：求职意向：${targetRole ? ROLE_LABELS[targetRole] ?? targetRole : "（填写目标岗位）"}`
+        `在姓名下方加一行：求职意向：${roleName ?? "（填写目标岗位）"}`
       )
     );
   }
@@ -446,7 +451,7 @@ export function buildFallbackDiagnosis(
     verdict,
     summary,
     fixes: result,
-    targetRole: targetRole ? ROLE_LABELS[targetRole] ?? targetRole : undefined,
+    targetRole: roleName,
     source: "fallback",
     createdAt: new Date().toISOString(),
   };
@@ -463,7 +468,18 @@ export async function diagnoseResumeWithAI(
   rawText: string,
   targetRole?: string
 ): Promise<AiDiagnosisResult | null> {
-  const roleName = targetRole ? ROLE_LABELS[targetRole] ?? targetRole : "未指定（按通用技术岗标准评判）";
+  const role = await findJobRole(targetRole).catch(() => null);
+  const roleName =
+    role?.label ??
+    (targetRole ? ROLE_LABELS[targetRole] ?? targetRole : "未指定（按通用技术岗标准评判）");
+
+  // 自定义岗位没有内置关键词表，用岗位自身的技能要求与描述来约束诊断方向
+  const roleContext = [
+    role?.description ? `岗位描述：${role.description}` : "",
+    role?.skills.length ? `该岗位的核心技能要求：${role.skills.join("、")}` : "",
+  ]
+    .filter(Boolean)
+    .join("\n");
 
   const { object, usage } = await withModelFallback((model) =>
     generateObject({
@@ -473,7 +489,7 @@ export async function diagnoseResumeWithAI(
       prompt: `请对下面这份简历做逐条诊断。
 
 目标岗位：${roleName}
-
+${roleContext ? `\n${roleContext}\n` : ""}
 简历全文：
 """
 ${rawText.slice(0, 8000)}
@@ -500,7 +516,7 @@ ${rawText.slice(0, 8000)}
       verdict: object.verdict,
       summary: object.summary,
       fixes,
-      targetRole: targetRole ? ROLE_LABELS[targetRole] ?? targetRole : undefined,
+      targetRole: roleName,
       source: "ai",
       createdAt: new Date().toISOString(),
     },
