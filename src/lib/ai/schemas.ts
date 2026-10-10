@@ -132,3 +132,41 @@ export const resumeDiagnosisSchema = z.object({
   summary: z.string().describe("2-4 句总评"),
   fixes: z.array(resumeFixSchema).describe("修改清单，至少 8 条，按严重度从高到低排列"),
 });
+
+// ========== 岗位追问链 ==========
+
+export const questionChainNodeSchema = z.object({
+  question: z.string().describe("面试官的原话问法，要像真人说话，不要写成考题腔"),
+  focus: z.string().describe("这一问在考察什么"),
+  passingBar: z.string().describe("及格线：答到什么程度算过关，要具体"),
+  redFlags: z
+    .array(z.string())
+    .min(1)
+    .max(2)
+    .describe("1-2 条常见错误回答（危险信号），要具体到「很多人会这样答」"),
+});
+
+export const questionChainTrackSchema = z.object({
+  topic: z.string().describe("这条追问链聚焦的具体主题，如「React 渲染机制」"),
+  nodes: z
+    .array(questionChainNodeSchema)
+    .min(2)
+    .max(3)
+    .describe("3 层递进：首问 → 深挖 → 边界/反例。后一层必须承接前一层"),
+});
+
+export const questionChainDimensionSchema = z.object({
+  name: z.string().describe("考察维度名称"),
+  why: z.string().describe("为什么这个岗位要考这个维度"),
+  weight: z.enum(["高", "中", "低"]).describe("该维度的重要度"),
+  tracks: z.array(questionChainTrackSchema).min(1).max(2).describe("该维度下 1-2 条追问链"),
+});
+
+export const questionChainSchema = z.object({
+  intro: z.string().describe("30-60 字总述：这个岗位的面试会怎么考，最该准备什么"),
+  dimensions: z
+    .array(questionChainDimensionSchema)
+    .min(4)
+    .max(6)
+    .describe("4-6 个考察维度，按重要度排序"),
+});

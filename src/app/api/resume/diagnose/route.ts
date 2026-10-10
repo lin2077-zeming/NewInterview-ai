@@ -3,8 +3,8 @@ import {
   buildFallbackDiagnosis,
   diagnoseResumeWithAI,
   isResumeLike,
-  withTimeout,
 } from "@/lib/ai/resume-diagnosis";
+import { withTimeout } from "@/lib/async-utils";
 
 export const runtime = "nodejs";
 

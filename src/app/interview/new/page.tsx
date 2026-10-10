@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -34,6 +34,16 @@ export default function NewInterviewPage() {
   const [resumeFile, setResumeFile] = useState<File | null>(null);
   const [loading, setLoading] = useState(false);
   const flow = COMPANY_FLOWS[company] ?? COMPANY_FLOWS.bytedance;
+
+  // 支持从「岗位追问链」等页面带参数跳转，预填岗位与公司
+  // 用 window.location 而非 useSearchParams，避免影响静态预渲染
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const roleParam = params.get("role");
+    const companyParam = params.get("company");
+    if (roleParam && ROLES.includes(roleParam)) setRole(roleParam);
+    if (companyParam && COMPANY_FLOWS[companyParam]) setCompany(companyParam);
+  }, []);
 
   const handleStart = async () => {
     if (!role) return;

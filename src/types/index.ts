@@ -214,6 +214,50 @@ export interface LearningPath {
   createdAt: Date;
 }
 
+// ========== 岗位追问链 ==========
+
+/** 追问链上的一个节点（一层追问） */
+export interface QuestionChainNode {
+  /** 第几层追问：1 = 首问，2 = 深挖，3 = 边界/反例 */
+  level: 1 | 2 | 3;
+  /** 面试官会怎么问 */
+  question: string;
+  /** 这一问在考察什么 */
+  focus: string;
+  /** 及格线：答到什么程度算过关 */
+  passingBar: string;
+  /** 常见错误回答（危险信号） */
+  redFlags: string[];
+}
+
+/** 一条完整追问链（同一主题下 3 层递进） */
+export interface QuestionChainTrack {
+  /** 这条链的主题，如「React 渲染机制」 */
+  topic: string;
+  nodes: QuestionChainNode[];
+}
+
+/** 一个考察维度，可包含多条追问链 */
+export interface QuestionChainDimension {
+  name: string;
+  /** 为什么这个岗位要考这个维度 */
+  why: string;
+  weight: "高" | "中" | "低";
+  tracks: QuestionChainTrack[];
+}
+
+export interface QuestionChain {
+  /** 岗位 key，如 frontend */
+  role: string;
+  roleLabel: string;
+  company?: string;
+  /** 一句话总述：这个岗位的面试会怎么考 */
+  intro: string;
+  dimensions: QuestionChainDimension[];
+  source: "ai" | "fallback";
+  createdAt: string;
+}
+
 // ========== 大厂流程配置 ==========
 
 export interface StageConfig {
