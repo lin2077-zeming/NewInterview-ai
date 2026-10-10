@@ -153,7 +153,7 @@ export async function generateQuestionChainWithAI(input: {
 
   const company = input.company ? COMPANY_FLOWS[input.company] : undefined;
 
-  const { object, usage } = await withModelFallback((model) =>
+  const { value, servedBy } = await withModelFallback((model) =>
     generateObject({
       model,
       system: getQuestionChainSystemPrompt(),
@@ -168,6 +168,8 @@ export async function generateQuestionChainWithAI(input: {
       }),
     })
   );
+
+  const { object, usage } = value;
 
   const dimensions: QuestionChainDimension[] = object.dimensions
     .map((dimension) => ({
@@ -192,6 +194,6 @@ export async function generateQuestionChainWithAI(input: {
       source: "ai",
       createdAt: new Date().toISOString(),
     },
-    usage: estimateCost(usage),
+    usage: estimateCost(usage, servedBy),
   };
 }

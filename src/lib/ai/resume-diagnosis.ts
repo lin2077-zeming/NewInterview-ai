@@ -481,7 +481,7 @@ export async function diagnoseResumeWithAI(
     .filter(Boolean)
     .join("\n");
 
-  const { object, usage } = await withModelFallback((model) =>
+  const { value, servedBy } = await withModelFallback((model) =>
     generateObject({
       model,
       system: getResumeDoctorSystemPrompt(),
@@ -503,6 +503,8 @@ ${rawText.slice(0, 8000)}
     })
   );
 
+  const { object, usage } = value;
+
   const fixes = object.fixes
     .filter((fix) => fix.original.trim().length > 0 && fix.suggestion.trim().length > 0)
     .map((fix) => ({ ...fix, id: crypto.randomUUID() }))
@@ -520,6 +522,6 @@ ${rawText.slice(0, 8000)}
       source: "ai",
       createdAt: new Date().toISOString(),
     },
-    usage: estimateCost(usage),
+    usage: estimateCost(usage, servedBy),
   };
 }

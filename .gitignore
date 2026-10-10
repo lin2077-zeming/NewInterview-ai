@@ -67,3 +67,4 @@ next-env.d.ts
 *.log
 _removed_from_repo/
 /内部文档/
+.next_broken_*
