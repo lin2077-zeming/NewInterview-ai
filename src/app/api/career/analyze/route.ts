@@ -2,6 +2,7 @@ import { generateText } from "ai";
 import { NextResponse } from "next/server";
 import { analysisModel } from "@/lib/ai/client";
 import { getCareerAdvisorSystemPrompt } from "@/lib/ai/prompts/career-advisor";
+import { admitAiCall } from "@/lib/rate-limit";
 import type { CareerDiagnosis, CareerUserProfile, LearningPath, ParsedResume, SkillGap } from "@/types";
 
 const ROLE_REQUIREMENTS: Record<string, string[]> = {
@@ -101,6 +102,9 @@ interface AnalyzeCareerResponse {
 
 export async function POST(req: Request) {
   try {
+    const admission = await admitAiCall(req);
+    if (!admission.ok) return admission.response;
+
     const body = (await req.json()) as AnalyzeCareerRequest;
     const rawText = body.rawText?.trim();
     const targetRole = body.targetRole || "frontend";

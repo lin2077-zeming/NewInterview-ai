@@ -1,8 +1,12 @@
 import { NextResponse } from "next/server";
 import { createInterview } from "@/lib/ai/actions";
+import { admitAiCall } from "@/lib/rate-limit";
 
 export async function POST(req: Request) {
   try {
+    const admission = await admitAiCall(req);
+    if (!admission.ok) return admission.response;
+
     const body = await req.json();
     // 归属由服务端会话决定，不再接受客户端传入的 userId
     const { config } = body as { config: Parameters<typeof createInterview>[0] };

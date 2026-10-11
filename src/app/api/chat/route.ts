@@ -10,6 +10,7 @@ import { getInterviewerSystemPrompt } from "@/lib/ai/prompts/interviewer";
 import { getIntervieweeSystemPrompt } from "@/lib/ai/prompts/interviewee";
 import { COMPANY_FLOWS } from "@/config/interview-stages";
 import { saveMessage, updateInterviewStage } from "@/lib/ai/actions";
+import { admitAiCall } from "@/lib/rate-limit";
 
 const INIT_TRIGGER = "__INTERVIEW_START__";
 const START_PROMPT = "请开始本轮面试，先向候选人提出第一个问题。";
@@ -49,6 +50,9 @@ function toModelInputMessages(messages: UIMessage[]) {
 
 export async function POST(req: Request) {
   try {
+    const admission = await admitAiCall(req);
+    if (!admission.ok) return admission.response;
+
     const { messages = [], config, mode, interviewId } = (await req.json()) as {
       messages?: UIMessage[];
       config: {

@@ -153,20 +153,22 @@ export async function generateQuestionChainWithAI(input: {
 
   const company = input.company ? COMPANY_FLOWS[input.company] : undefined;
 
-  const { value, servedBy } = await withModelFallback((model) =>
-    generateObject({
-      model,
-      system: getQuestionChainSystemPrompt(),
-      schema: questionChainSchema,
-      prompt: buildQuestionChainUserPrompt({
-        roleLabel: role.label,
-        roleDescription: role.description,
-        roleSkills: role.skills,
-        companyName: company?.name,
-        companyStyle: company?.style,
-        level: input.level,
+  const { value, servedBy } = await withModelFallback(
+    (model) =>
+      generateObject({
+        model,
+        system: getQuestionChainSystemPrompt(),
+        schema: questionChainSchema,
+        prompt: buildQuestionChainUserPrompt({
+          roleLabel: role.label,
+          roleDescription: role.description,
+          roleSkills: role.skills,
+          companyName: company?.name,
+          companyStyle: company?.style,
+          level: input.level,
+        }),
       }),
-    })
+    { kind: "chain_generate" }
   );
 
   const { object, usage } = value;

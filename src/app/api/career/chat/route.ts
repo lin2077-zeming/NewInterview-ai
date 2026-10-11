@@ -1,6 +1,10 @@
 import { createStreamResponse } from "@/lib/ai/sse-stream";
+import { admitAiCall } from "@/lib/rate-limit";
 
 export async function POST(request: Request) {
+  const admission = await admitAiCall(request);
+  if (!admission.ok) return admission.response;
+
   const { message, context } = await request.json();
 
   if (!message) {

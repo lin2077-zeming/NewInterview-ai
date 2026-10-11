@@ -1,4 +1,4 @@
-import { sqliteTable, text, integer } from "drizzle-orm/sqlite-core";
+import { sqliteTable, text, integer, real } from "drizzle-orm/sqlite-core";
 
 /**
  * 匿名会话。
@@ -98,4 +98,32 @@ export const jobRoles = sqliteTable("job_roles", {
   sortOrder: integer("sort_order").notNull().default(100),
   createdAt: integer("created_at", { mode: "timestamp" }).notNull(),
   updatedAt: integer("updated_at", { mode: "timestamp" }).notNull(),
+});
+
+/**
+ * LLM 调用成本流水。
+ *
+ * 每完成一次 AI 调用记一条：谁调用（会话）、调什么（kind）、
+ * 由哪条链路完成（主/备用，单价不同）、消耗多少 token、估算多少钱。
+ *
+ * 这张表同时支撑三件事：
+ * - **成本论证**：OPC 赛道要举证「低成本」，得有真实流水而不是估算口径
+ * - **限流**：会话维度的滑动窗口直接查这里，服务重启也不丢
+ * - **日预算**：汇总当日开销做告警阈值
+ */
+export const costLogs = sqliteTable("cost_logs", {
+  id: text("id").primaryKey(),
+  sessionId: text("session_id"),
+  /** 调用来源，如 resume_diagnose / chain_generate */
+  kind: text("kind").notNull(),
+  /** 实际使用的模型名 */
+  model: text("model").notNull(),
+  /** 实际完成请求的链路：primary / fallback */
+  channel: text("channel").notNull(),
+  inputTokens: integer("input_tokens").notNull().default(0),
+  outputTokens: integer("output_tokens").notNull().default(0),
+  /** 估算成本（元） */
+  cost: real("cost").notNull().default(0),
+  durationMs: integer("duration_ms").notNull().default(0),
+  createdAt: integer("created_at", { mode: "timestamp" }).notNull(),
 });

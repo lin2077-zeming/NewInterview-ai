@@ -6,6 +6,7 @@ import {
   isResumeLike,
 } from "@/lib/ai/resume-diagnosis";
 import { withTimeout } from "@/lib/async-utils";
+import { admitAiCall } from "@/lib/rate-limit";
 
 export const runtime = "nodejs";
 
@@ -23,6 +24,9 @@ interface DiagnoseRequest {
  */
 export async function POST(req: Request) {
   try {
+    const admission = await admitAiCall(req);
+    if (!admission.ok) return admission.response;
+
     const body = (await req.json()) as DiagnoseRequest;
     const rawText = body.rawText?.trim();
 

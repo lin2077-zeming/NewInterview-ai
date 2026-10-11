@@ -481,12 +481,13 @@ export async function diagnoseResumeWithAI(
     .filter(Boolean)
     .join("\n");
 
-  const { value, servedBy } = await withModelFallback((model) =>
-    generateObject({
-      model,
-      system: getResumeDoctorSystemPrompt(),
-      schema: resumeDiagnosisSchema,
-      prompt: `请对下面这份简历做逐条诊断。
+  const { value, servedBy } = await withModelFallback(
+    (model) =>
+      generateObject({
+        model,
+        system: getResumeDoctorSystemPrompt(),
+        schema: resumeDiagnosisSchema,
+        prompt: `请对下面这份简历做逐条诊断。
 
 目标岗位：${roleName}
 ${roleContext ? `\n${roleContext}\n` : ""}
@@ -500,7 +501,8 @@ ${rawText.slice(0, 8000)}
 - 每条的 original 必须是简历中**原样出现过**的句子（截取一句即可，不可改写）；确实无原文时写「（简历中未出现）」
 - 每条的 suggestion 必须是**可直接替换进简历的成品句子**，不是修改方向
 - section 要指明所在段落，例如「项目经历 · 第 2 段」`,
-    })
+      }),
+    { kind: "resume_diagnose" }
   );
 
   const { object, usage } = value;

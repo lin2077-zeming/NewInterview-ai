@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { ZERO_USAGE } from "@/lib/ai/cost";
 import { buildFallbackQuestionChain, generateQuestionChainWithAI } from "@/lib/ai/question-chain";
 import { withTimeout } from "@/lib/async-utils";
+import { admitAiCall } from "@/lib/rate-limit";
 
 export const runtime = "nodejs";
 
@@ -22,6 +23,9 @@ interface ChainRequest {
  */
 export async function POST(req: Request) {
   try {
+    const admission = await admitAiCall(req);
+    if (!admission.ok) return admission.response;
+
     const body = (await req.json().catch(() => ({}))) as ChainRequest;
 
     try {

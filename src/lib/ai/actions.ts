@@ -12,6 +12,7 @@ import {
   messages,
   reviews,
   learningPaths,
+  costLogs,
 } from "@/lib/db/schema";
 import { analysisModel } from "@/lib/ai/client";
 import { ensureSessionId, getSessionId } from "@/lib/session";
@@ -561,6 +562,8 @@ export interface DeletionSummary {
   resumes: number;
   learningPaths: number;
   sessions: number;
+  /** 成本流水（调用记录也是个人数据，一并删除） */
+  costLogs: number;
 }
 
 /**
@@ -580,6 +583,7 @@ export async function deleteSessionData(): Promise<DeletionSummary> {
     resumes: 0,
     learningPaths: 0,
     sessions: 0,
+    costLogs: 0,
   };
 
   if (!sessionId) return summary;
@@ -620,11 +624,16 @@ export async function deleteSessionData(): Promise<DeletionSummary> {
     .delete(sessions)
     .where(eq(sessions.id, sessionId))
     .returning({ id: sessions.id });
+  const removedCostLogs = await db
+    .delete(costLogs)
+    .where(eq(costLogs.sessionId, sessionId))
+    .returning({ id: costLogs.id });
 
   summary.interviews = removedInterviews.length;
   summary.resumes = removedResumes.length;
   summary.learningPaths = removedPaths.length;
   summary.sessions = removedSessions.length;
+  summary.costLogs = removedCostLogs.length;
 
   return summary;
 }

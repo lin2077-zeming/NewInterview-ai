@@ -86,6 +86,21 @@ const CREATE_STATEMENTS = [
     updated_at INTEGER NOT NULL
   )`,
   `CREATE INDEX IF NOT EXISTS idx_job_roles_enabled ON job_roles(enabled)`,
+  `CREATE TABLE IF NOT EXISTS cost_logs (
+    id TEXT PRIMARY KEY,
+    session_id TEXT,
+    kind TEXT NOT NULL,
+    model TEXT NOT NULL,
+    channel TEXT NOT NULL,
+    input_tokens INTEGER NOT NULL DEFAULT 0,
+    output_tokens INTEGER NOT NULL DEFAULT 0,
+    cost REAL NOT NULL DEFAULT 0,
+    duration_ms INTEGER NOT NULL DEFAULT 0,
+    created_at INTEGER NOT NULL
+  )`,
+  // 限流按 (会话, 时间窗口) 查、预算按时间查，两个索引各服务一类查询
+  `CREATE INDEX IF NOT EXISTS idx_cost_logs_session_time ON cost_logs(session_id, created_at)`,
+  `CREATE INDEX IF NOT EXISTS idx_cost_logs_time ON cost_logs(created_at)`,
 ];
 
 /**

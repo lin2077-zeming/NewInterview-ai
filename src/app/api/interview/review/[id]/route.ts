@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { getReview } from "@/lib/ai/actions";
 import { NotFoundError } from "@/lib/errors";
+import { admitAiCall } from "@/lib/rate-limit";
 
 /** 越权一律当作"不存在"，不泄露该面试 ID 是否有效 */
 function toErrorResponse(error: unknown, fallback: string) {
@@ -37,6 +38,10 @@ export async function POST(
   { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    // 复盘报告由 AI 生成，属于要计费的重调用 —— GET（读已有报告）不限流
+    const admission = await admitAiCall(req);
+    if (!admission.ok) return admission.response;
+
     const { id } = await params;
     let stage: string | undefined;
     try {
