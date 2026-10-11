@@ -2,14 +2,20 @@ import { randomUUID } from "crypto";
 import { desc, eq } from "drizzle-orm";
 import { db, ready } from "@/lib/db";
 import { jobRoles } from "@/lib/db/schema";
-import { ROLE_DIMENSIONS, ROLE_LABELS } from "@/config/question-chains";
+import {
+  getRoleDimensions,
+  listRoleCategoryViews,
+  listRoleViews,
+} from "@/lib/job-roles/loader";
+import type { RoleCategoryView, RoleDimension } from "@/lib/job-roles/types";
 import { RoleValidationError } from "@/lib/errors";
 
 /**
  * 岗位数据访问。
  *
  * 两级来源：
- * - `builtin`：代码里已有的 8 个岗位（含手写的追问链与技能要求），保持现状不动
+ * - `builtin`：来自 `data/roles/**`（64 个子类，11 个大类）。
+ *   **这是唯一数据源** —— 代码里不再有第二份岗位清单（改造前有 4 份且已分叉）。
  * - `admin`  ：管理员通过管理端新增的岗位，只存元信息（描述 + 技能要求），
  *              面试内容由 AI 按描述实时生成
  *
@@ -20,13 +26,24 @@ export interface JobRole {
   key: string;
   label: string;
   category?: string;
-  /** 岗位描述 —— AI 生成面试内容的依据（内置岗位暂无，用 label 兜底） */
+  /** 一级大类 id（两级分类用，如 `cs-it`） */
+  categoryId?: string;
+  /** 大类显示名，如「计算机与信息技术」 */
+  categoryLabel?: string;
+  /** 岗位别称，用于搜索与匹配 */
+  aliases?: string[];
+  /** 岗位描述 —— AI 生成面试内容的依据 */
   description?: string;
   skills: string[];
   enabled: boolean;
   source: "builtin" | "admin";
   /**
-   * 是否具备离线兜底内容（手写追问链）。
+   * 离线追问链维度（来自 JSON 内容文件）。
+   * 有它就能在没有 AI 密钥时给出人工整理过的追问链。
+   */
+  dimensions?: RoleDimension[];
+  /**
+   * 是否具备离线兜底内容。
    * 为 false 时，无 API Key 的环境下只能降级为按技能生成的通用追问。
    */
   hasOfflineContent: boolean;
@@ -34,43 +51,26 @@ export interface JobRole {
   id?: string;
 }
 
-/** 内置岗位的技能要求（描述由 label 兜底） */
-const BUILTIN_SKILLS: Record<string, string[]> = {
-  backend: ["编程基础", "数据结构与算法", "数据库与索引", "缓存", "并发", "系统设计"],
-  frontend: ["JavaScript / TypeScript", "框架原理", "工程化", "性能优化", "浏览器机制"],
-  fullstack: ["前后端打通", "接口设计", "数据库", "部署与运维", "工程化"],
-  algorithm: ["机器学习基础", "特征工程", "实验设计与评估", "模型工程落地"],
-  data: ["SQL", "指标体系", "统计分析", "AB 实验", "业务归因"],
-  test: ["测试策略", "用例设计", "自动化测试", "缺陷定位", "性能测试"],
-  ops: ["Linux 与网络", "CI/CD", "监控告警", "故障排查", "容器与云原生"],
-  product: ["需求洞察", "优先级判断", "方案设计", "数据分析", "跨团队协作"],
-};
-
-const BUILTIN_CATEGORY: Record<string, string> = {
-  backend: "技术",
-  frontend: "技术",
-  fullstack: "技术",
-  algorithm: "技术",
-  data: "数据",
-  test: "技术",
-  ops: "技术",
-  product: "产品",
-};
-
 const MAX_SKILLS = 20;
 const MIN_DESCRIPTION = 20;
 const MAX_DESCRIPTION = 2000;
 const KEY_PATTERN = /^[a-z0-9][a-z0-9-]{1,39}$/;
 
+/** 内置岗位 = data/roles/** 里的全部子类 */
 function builtinRoles(): JobRole[] {
-  return Object.entries(ROLE_LABELS).map(([key, label]) => ({
-    key,
-    label,
-    category: BUILTIN_CATEGORY[key],
-    skills: BUILTIN_SKILLS[key] ?? [],
+  return listRoleViews().map((view) => ({
+    key: view.id,
+    label: view.label,
+    category: view.categoryLabel,
+    categoryId: view.categoryId,
+    categoryLabel: view.categoryLabel,
+    aliases: view.aliases,
+    description: view.description,
+    skills: view.skills,
     enabled: true,
     source: "builtin" as const,
-    hasOfflineContent: Boolean(ROLE_DIMENSIONS[key]),
+    dimensions: getRoleDimensions(view.id),
+    hasOfflineContent: view.hasOfflineContent,
   }));
 }
 
@@ -87,6 +87,8 @@ function rowToRole(row: typeof jobRoles.$inferSelect): JobRole {
     key: row.key,
     label: row.label,
     category: row.category ?? undefined,
+    categoryId: "custom",
+    categoryLabel: "自定义岗位",
     description: row.description,
     skills,
     enabled: row.enabled,
@@ -117,18 +119,65 @@ export async function listJobRoles(options: { includeDisabled?: boolean } = {}):
   return [...admin, ...builtin];
 }
 
-/** 按 key 或中文标签查找（内置与自定义都支持） */
+/**
+ * 旧的一级岗位 key → 新体系子类 id。
+ *
+ * 改造前岗位 key 是扁平的（backend / frontend / …），
+ * 现在变成 `cs-it.backend`。历史链接与 `?role=` 预填仍可能带旧 key，
+ * 这里做一次兼容映射，避免老链接失效。
+ */
+const LEGACY_KEY_MAP: Record<string, string> = {
+  backend: "cs-it.backend",
+  frontend: "cs-it.frontend",
+  fullstack: "cs-it.fullstack",
+  algorithm: "cs-it.algorithm",
+  data: "cs-it.data-analysis",
+  test: "cs-it.test-dev",
+  ops: "cs-it.devops",
+  product: "cs-it.product-manager",
+};
+
+/** 按 key / 中文标签 / 别称查找（内置与自定义都支持） */
 export async function findJobRole(keyOrLabel?: string): Promise<JobRole | null> {
   if (!keyOrLabel) return null;
   const target = keyOrLabel.trim();
   if (!target) return null;
 
   const all = await listJobRoles({ includeDisabled: true });
+  const normalized = LEGACY_KEY_MAP[target] ?? target;
+
   return (
-    all.find((role) => role.key === target) ??
+    all.find((role) => role.key === normalized) ??
     all.find((role) => role.label === target) ??
+    all.find((role) => role.aliases?.includes(target)) ??
     null
   );
+}
+
+/**
+ * 两级分类视图：大类 → 子类。
+ * 内置 64 个子类来自 JSON，管理员新增的挂在「自定义岗位」大类下。
+ */
+export async function listJobRoleCategories(): Promise<RoleCategoryView[]> {
+  const admin = await adminRoles(false).catch((error) => {
+    console.error("[roles] 读取自定义岗位失败:", error);
+    return [] as JobRole[];
+  });
+
+  const customViews = admin.map((role) => ({
+    id: role.key,
+    categoryId: "custom",
+    categoryLabel: "自定义岗位",
+    label: role.label,
+    aliases: [] as string[],
+    skills: role.skills,
+    description: role.description,
+    completeness: "skeleton" as const,
+    hasOfflineContent: false,
+    isCustom: true,
+  }));
+
+  return listRoleCategoryViews(customViews);
 }
 
 // ==================== 校验 ====================

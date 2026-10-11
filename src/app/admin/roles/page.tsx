@@ -49,6 +49,8 @@ export default function AdminRolesPage() {
 
   useEffect(() => {
     const saved = window.localStorage.getItem(TOKEN_KEY) ?? "";
+    // localStorage 只能在客户端读取，必须在挂载后同步一次 —— 该规则的公认例外
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setToken(saved);
   }, []);
 
@@ -84,6 +86,8 @@ export default function AdminRolesPage() {
   }, [authorizedFetch, token]);
 
   useEffect(() => {
+    // loadRoles 内部会先置 loading 再发请求，属于「挂载后拉数据」的标准写法
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (token) void loadRoles();
   }, [token, loadRoles]);
 

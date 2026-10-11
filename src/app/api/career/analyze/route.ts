@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import { analysisModel } from "@/lib/ai/client";
 import { getCareerAdvisorSystemPrompt } from "@/lib/ai/prompts/career-advisor";
 import { admitAiCall } from "@/lib/rate-limit";
+import { findRoleSync } from "@/lib/job-roles/loader";
 import type { CareerDiagnosis, CareerUserProfile, LearningPath, ParsedResume, SkillGap } from "@/types";
 
 const ROLE_REQUIREMENTS: Record<string, string[]> = {
@@ -13,13 +14,35 @@ const ROLE_REQUIREMENTS: Record<string, string[]> = {
   product: ["用户研究", "需求分析", "原型设计", "数据分析", "竞品分析", "项目管理", "沟通表达"],
 };
 
-const ROLE_LABELS: Record<string, string> = {
-  frontend: "前端开发工程师",
-  backend: "后端开发工程师",
-  fullstack: "全栈开发工程师",
-  algorithm: "算法工程师",
-  product: "产品经理",
+/**
+ * 岗位名与技能要求统一从岗位数据加载层取（数据源 `data/roles/**`）。
+ * 这里原先还存着一份 ROLE_LABELS 副本，与 `config/question-chains.ts`、`lib/roles.ts`、
+ * `lib/ai/resume-diagnosis.ts` 各一份且已开始分叉 —— 现在只留唯一数据源。
+ *
+ * `ROLE_REQUIREMENTS` 保留为**兜底**：它是按技能关键词做缺口检测用的词表，
+ * 与岗位技能要求口径不同，当岗位没有技能要求时才回落到它。
+ */
+const LEGACY_ROLE_KEYS: Record<string, string> = {
+  backend: "cs-it.backend",
+  frontend: "cs-it.frontend",
+  fullstack: "cs-it.fullstack",
+  algorithm: "cs-it.algorithm",
+  data: "cs-it.data-analysis",
+  test: "cs-it.test-dev",
+  ops: "cs-it.devops",
+  product: "cs-it.product-manager",
 };
+
+function roleLabel(targetRole: string): string {
+  const found = findRoleSync(LEGACY_ROLE_KEYS[targetRole] ?? targetRole);
+  return found?.label ?? targetRole;
+}
+
+function roleSkills(targetRole: string): string[] {
+  const found = findRoleSync(LEGACY_ROLE_KEYS[targetRole] ?? targetRole);
+  if (found && found.skills.length > 0) return found.skills;
+  return ROLE_REQUIREMENTS[targetRole] ?? ROLE_REQUIREMENTS.frontend;
+}
 
 const SKILL_KEYWORDS = [
   "HTML",
@@ -144,7 +167,7 @@ async function generateWithAI(
   targetRole: string,
   userProfile: CareerUserProfile
 ): Promise<AnalyzeCareerResponse | null> {
-  const roleName = ROLE_LABELS[targetRole] ?? targetRole;
+  const roleName = roleLabel(targetRole);
   const { text } = await generateText({
     model: analysisModel,
     system: getCareerAdvisorSystemPrompt(),
@@ -225,7 +248,7 @@ ${rawText.slice(0, 6000)}
     path: {
       id: crypto.randomUUID(),
       userId: "demo-user",
-      targetRole: typeof path?.targetRole === "string" ? path.targetRole : ROLE_LABELS[targetRole] ?? targetRole,
+      targetRole: typeof path?.targetRole === "string" ? path.targetRole : roleLabel(targetRole),
       gapAnalysis: gap,
       steps,
       createdAt: new Date(),
@@ -239,9 +262,9 @@ function buildFallbackAnalysis(
   targetRole: string,
   userProfile: CareerUserProfile
 ): AnalyzeCareerResponse {
-  const roleName = ROLE_LABELS[targetRole] ?? targetRole;
+  const roleName = roleLabel(targetRole);
   const currentSkills = extractSkills(rawText);
-  const requiredSkills = ROLE_REQUIREMENTS[targetRole] ?? ROLE_REQUIREMENTS.frontend;
+  const requiredSkills = roleSkills(targetRole);
   const currentSet = new Set(currentSkills.map((skill) => skill.toLowerCase()));
   const missingSkills = requiredSkills.filter((skill) => !currentSet.has(skill.toLowerCase()));
   const matchRate = Math.round(((requiredSkills.length - missingSkills.length) / requiredSkills.length) * 100);
@@ -415,7 +438,7 @@ function parseJson(text: string): Record<string, unknown> | null {
 
 function normalizeGap(gap: unknown, targetRole: string, currentSkills: string[]): SkillGap {
   const gapObject = asRecord(gap);
-  const requiredSkills = stringArray(gapObject?.requiredSkills) ?? ROLE_REQUIREMENTS[targetRole] ?? ROLE_REQUIREMENTS.frontend;
+  const requiredSkills = stringArray(gapObject?.requiredSkills) ?? roleSkills(targetRole);
   const normalizedCurrent = stringArray(gapObject?.currentSkills) ?? currentSkills;
   const currentSet = new Set(normalizedCurrent.map((skill) => skill.toLowerCase()));
   const missingSkills =

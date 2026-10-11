@@ -15,7 +15,9 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Upload } from "lucide-react";
-import { COMPANY_FLOWS, ROLES } from "@/config/interview-stages";
+import { RolePicker } from "@/components/roles/RolePicker";
+import { COMPANY_FLOWS } from "@/config/interview-stages";
+import { useRoleTaxonomy } from "@/hooks/use-role-taxonomy";
 import { loadCareerProfile } from "@/lib/career-profile";
 import {
   buildCandidateProfileSummary,
@@ -41,7 +43,10 @@ export default function NewInterviewPage() {
     const params = new URLSearchParams(window.location.search);
     const roleParam = params.get("role");
     const companyParam = params.get("company");
-    if (roleParam && ROLES.includes(roleParam)) setRole(roleParam);
+    // URL 参数只能在客户端读取（服务端渲染时 window 不存在），
+    // 因此必须放到 effect 里 —— 这是该规则公认的例外场景。
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    if (roleParam) setRole(roleParam);
     if (companyParam && COMPANY_FLOWS[companyParam]) setCompany(companyParam);
   }, []);
 
@@ -149,20 +154,16 @@ export default function NewInterviewPage() {
                     </SelectContent>
                   </Select>
                 </div>
-                <div>
+                <div className="sm:col-span-2">
                   <Label>岗位</Label>
-                  <Select value={role} onValueChange={(v) => v && setRole(v)}>
-                    <SelectTrigger className="mt-1.5">
-                      <SelectValue>{role || "选择目标岗位"}</SelectValue>
-                    </SelectTrigger>
-                    <SelectContent>
-                      {ROLES.map((r) => (
-                        <SelectItem key={r} value={r}>
-                          {r}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
+                  <div className="mt-1.5">
+                    <RolePicker
+                      value={role}
+                      onChange={setRole}
+                      idPrefix="new-interview"
+                      valueMode="label"
+                    />
+                  </div>
                 </div>
               </div>
               <div>
@@ -299,6 +300,11 @@ function MobileNewInterview({
   const flow = COMPANY_FLOWS[company] ?? COMPANY_FLOWS.bytedance;
   const selectedStage = flow.stages[stageIndex] ?? flow.stages[0];
 
+  // 两级岗位选择：先大类、再细分小类（64 个岗位塞一级下拉不可用）
+  const { categories } = useRoleTaxonomy();
+  const [mobileCategoryId, setMobileCategoryId] = useState("");
+  const mobileCategory = categories.find((category) => category.id === mobileCategoryId);
+
   return (
     <div className="min-h-[calc(100dvh-3.5rem)] overflow-x-hidden px-4 py-5 pb-[calc(2rem+env(safe-area-inset-bottom))] lg:hidden">
       <div className="mb-5 text-center">
@@ -340,16 +346,37 @@ function MobileNewInterview({
 
           <MobileLabel className="mt-4">岗位</MobileLabel>
           <div className="grid gap-2">
-            {ROLES.map((item) => (
+            {categories.map((category) => (
               <MobileChoiceButton
-                key={item}
-                selected={role === item}
-                onClick={() => onRoleChange(item)}
+                key={category.id}
+                selected={mobileCategoryId === category.id}
+                onClick={() =>
+                  setMobileCategoryId((prev) => (prev === category.id ? "" : category.id))
+                }
               >
-                {item}
+                {category.label}（{category.subcategories.length}）
               </MobileChoiceButton>
             ))}
           </div>
+
+          {mobileCategory ? (
+            <>
+              <MobileLabel className="mt-3">细分岗位</MobileLabel>
+              <div className="grid gap-2">
+                {mobileCategory.subcategories.map((item) => (
+                  <MobileChoiceButton
+                    key={item.id}
+                    selected={role === item.label}
+                    onClick={() => onRoleChange(item.label)}
+                  >
+                    {item.label}
+                  </MobileChoiceButton>
+                ))}
+              </div>
+            </>
+          ) : (
+            <p className="mt-2 text-xs text-muted-foreground">先选一级大类，再选细分岗位</p>
+          )}
 
           <MobileLabel className="mt-4">面试部分</MobileLabel>
           <div className="grid gap-2">

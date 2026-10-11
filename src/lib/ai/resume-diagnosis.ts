@@ -7,25 +7,12 @@ import { CATEGORY_LABELS } from "@/lib/resume-fix-labels";
 import { findJobRole } from "@/lib/roles";
 import type { ResumeDiagnosis, ResumeFix, ResumeFixCategory, ResumeFixSeverity } from "@/types";
 
-export const ROLE_LABELS: Record<string, string> = {
-  frontend: "前端开发工程师",
-  backend: "后端开发工程师",
-  fullstack: "全栈开发工程师",
-  algorithm: "算法工程师",
-  product: "产品经理",
-  data: "数据分析师",
-  test: "测试开发工程师",
-};
-
-export const ROLE_REQUIREMENTS: Record<string, string[]> = {
-  frontend: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "工程化", "性能优化"],
-  backend: ["Java", "Spring Boot", "MySQL", "Redis", "消息队列", "系统设计", "Linux", "Docker"],
-  fullstack: ["TypeScript", "React", "Next.js", "Node.js", "数据库", "API 设计", "部署", "工程化"],
-  algorithm: ["Python", "数据结构", "算法", "机器学习", "深度学习", "PyTorch", "SQL", "模型评估"],
-  product: ["用户研究", "需求分析", "原型设计", "数据分析", "竞品分析", "项目管理", "沟通表达"],
-  data: ["SQL", "Python", "指标体系", "统计分析", "实验设计", "数据可视化", "业务归因"],
-  test: ["测试策略", "自动化测试", "用例设计", "缺陷定位", "性能测试", "CI/CD"],
-};
+/**
+ * 岗位信息一律来自 `findJobRole()`（数据源为 `data/roles/**`）。
+ * 这里原先还存着一份 ROLE_LABELS / ROLE_REQUIREMENTS 副本，
+ * 与 `config/question-chains.ts`、`lib/roles.ts`、`api/career/analyze` 各存一份且已开始分叉 ——
+ * 改造后只留唯一数据源，不再有第二份。
+ */
 
 const RESUME_SIGNALS = [
   "简历", "教育", "学历", "本科", "硕士", "博士", "大学", "学院", "专业",
@@ -116,8 +103,9 @@ export async function buildFallbackDiagnosis(
   targetRole?: string
 ): Promise<ResumeDiagnosis> {
   const role = await findJobRole(targetRole).catch(() => null);
-  const roleName = role?.label ?? (targetRole ? ROLE_LABELS[targetRole] ?? targetRole : undefined);
-  const requiredSkills = role ? ROLE_REQUIREMENTS[role.key] ?? role.skills : undefined;
+  // findJobRole 已兼容旧 key 与中文标签，这里直接用它的结果即可
+  const roleName = role?.label ?? targetRole;
+  const requiredSkills = role?.skills;
   const roleKey = role?.key ?? targetRole ?? "";
 
   const lines = rawText.split("\n").map((l) => l.trim()).filter(Boolean);
@@ -469,11 +457,9 @@ export async function diagnoseResumeWithAI(
   targetRole?: string
 ): Promise<AiDiagnosisResult | null> {
   const role = await findJobRole(targetRole).catch(() => null);
-  const roleName =
-    role?.label ??
-    (targetRole ? ROLE_LABELS[targetRole] ?? targetRole : "未指定（按通用技术岗标准评判）");
+  const roleName = role?.label ?? targetRole ?? "未指定（按通用岗位标准评判）";
 
-  // 自定义岗位没有内置关键词表，用岗位自身的技能要求与描述来约束诊断方向
+  // 岗位描述与技能要求是约束诊断方向的唯一依据（覆盖 64 个子类）
   const roleContext = [
     role?.description ? `岗位描述：${role.description}` : "",
     role?.skills.length ? `该岗位的核心技能要求：${role.skills.join("、")}` : "",

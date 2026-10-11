@@ -6320,6 +6320,7 @@
   "meta": {
     "version": 2,
     "updatedAt": "2026-10-11",
-    "completeness": "full"
+    "completeness": "full",
+    "dimensionSource": "project-authored"
   }
 }

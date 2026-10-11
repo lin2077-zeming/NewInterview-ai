@@ -262,15 +262,8 @@ export const COMPANY_FLOWS: Record<string, CompanyFlow> = {
   },
 };
 
-export const ROLES = [
-  "后端开发工程师",
-  "前端开发工程师",
-  "全栈开发工程师",
-  "算法工程师",
-  "数据分析师",
-  "产品经理",
-  "测试开发工程师",
-  "运维开发工程师",
-];
+// 岗位清单已迁到 data/roles/**（64 个子类，11 个大类）。
+// 这里不再保留第二份 —— 原先的 ROLES 数组与 question-chains.ts、lib/roles.ts、
+// resume-diagnosis.ts、career/analyze 各存一份，正是"分类混乱"的根源。
 
 export const DEFAULT_COMPANY = "bytedance";

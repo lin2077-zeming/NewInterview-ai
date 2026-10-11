@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ResumeUploader } from "@/components/resume/ResumeUploader";
 import { ResumeFixList } from "@/components/resume/ResumeFixList";
+import { RolePicker } from "@/components/roles/RolePicker";
 import { uploadResumeFile } from "@/lib/upload-client";
 import { recordOpcEvent } from "@/lib/opc-metrics";
-import { useJobRoles } from "@/hooks/use-job-roles";
 import type { UsageCost } from "@/lib/ai/cost";
 import {
   clearResumeDiagnosis,
@@ -23,10 +23,10 @@ import type { ResumeDiagnosis } from "@/types";
 type AiUsage = Pick<UsageCost, "inputTokens" | "outputTokens" | "cost">;
 
 export default function ResumePage() {
-  const { roles, loading: rolesLoading } = useJobRoles();
   const [fileName, setFileName] = useState("");
   const [rawText, setRawText] = useState("");
-  const [targetRole, setTargetRole] = useState("frontend");
+  // 默认「不指定」：不预选任何专业方向，避免对非计算机用户产生偏差
+  const [targetRole, setTargetRole] = useState("");
   const [isReading, setIsReading] = useState(false);
   const [isDiagnosing, setIsDiagnosing] = useState(false);
   const [error, setError] = useState("");
@@ -190,24 +190,14 @@ export default function ResumePage() {
             <CardDescription>指定岗位后，会额外检查岗位关键词缺口</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
-            <label className="block text-sm font-medium" htmlFor="resume-target-role">
-              目标岗位
-            </label>
-            <select
-              id="resume-target-role"
+            <RolePicker
               value={targetRole}
-              onChange={(event) => setTargetRole(event.target.value)}
-              disabled={isDiagnosing || rolesLoading}
-              className="h-9 w-full rounded-lg border border-input bg-background px-3 text-sm outline-none focus-visible:border-ring"
-            >
-              <option value="">不指定（按通用技术岗标准）</option>
-              {roles.map((role) => (
-                <option key={role.key} value={role.key}>
-                  {role.label}
-                  {role.source === "admin" ? "（自定义）" : ""}
-                </option>
-              ))}
-            </select>
+              onChange={setTargetRole}
+              disabled={isDiagnosing || isReading}
+              idPrefix="resume"
+              allowEmpty
+              emptyLabel="不指定（按通用标准）"
+            />
             <Button className="w-full" onClick={handleDiagnose} disabled={isReading || isDiagnosing}>
               {isDiagnosing ? (
                 <>

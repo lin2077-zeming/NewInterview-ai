@@ -5,8 +5,8 @@ import { AlertCircle, Loader2, RotateCcw, Sparkles, Waypoints } from "lucide-rea
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { QuestionChainTree } from "@/components/interview/QuestionChainTree";
+import { RolePicker } from "@/components/roles/RolePicker";
 import { COMPANY_FLOWS } from "@/config/interview-stages";
-import { useJobRoles } from "@/hooks/use-job-roles";
 import { recordOpcEvent } from "@/lib/opc-metrics";
 import { clearQuestionChain, loadQuestionChain, saveQuestionChain } from "@/lib/question-chain-store";
 import type { UsageCost } from "@/lib/ai/cost";
@@ -22,8 +22,8 @@ const COMPANY_OPTIONS = [
 ];
 
 export default function ChainPage() {
-  const { roles, loading: rolesLoading, error: rolesError } = useJobRoles();
-  const [role, setRole] = useState("frontend");
+  // 默认不预选岗位：这类工具要覆盖所有专业，预选一个计算机岗位是有偏的
+  const [role, setRole] = useState("");
   const [company, setCompany] = useState("");
   const [level, setLevel] = useState(LEVELS[0]);
   const [loading, setLoading] = useState(false);
@@ -110,38 +110,12 @@ export default function ChainPage() {
             <CardDescription>追问链会按岗位的真实考察重点生成</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
-            <div className="space-y-2">
-              <label className="block text-sm font-medium" htmlFor="chain-role">
-                岗位
-              </label>
-              <select
-                id="chain-role"
-                value={role}
-                onChange={(event) => setRole(event.target.value)}
-                disabled={loading || rolesLoading}
-                className="h-9 w-full rounded-lg border border-input bg-background px-3 text-sm outline-none focus-visible:border-ring"
-              >
-                {roles.map((option) => (
-                  <option key={option.key} value={option.key}>
-                    {option.label}
-                    {option.source === "admin" ? "（自定义）" : ""}
-                  </option>
-                ))}
-              </select>
-              {rolesError ? (
-                <p className="text-xs text-destructive">{rolesError}</p>
-              ) : null}
-              {(() => {
-                const selected = roles.find((item) => item.key === role);
-                if (!selected || selected.hasOfflineContent) return null;
-                return (
-                  <p className="text-xs leading-5 text-muted-foreground">
-                    该岗位为自定义岗位，暂无人工整理的离线追问链。配置 AI 密钥可获得贴合岗位的定制追问；
-                    否则将按岗位技能要求生成通用追问。
-                  </p>
-                );
-              })()}
-            </div>
+            <RolePicker
+              value={role}
+              onChange={setRole}
+              disabled={loading}
+              idPrefix="chain"
+            />
 
             <div className="space-y-2">
               <label className="block text-sm font-medium" htmlFor="chain-level">
@@ -184,7 +158,7 @@ export default function ChainPage() {
                 </option>
               ))}
             </select>
-            <Button className="w-full" onClick={handleGenerate} disabled={loading}>
+            <Button className="w-full" onClick={handleGenerate} disabled={loading || !role}>
               {loading ? (
                 <>
                   <Loader2 className="h-4 w-4 animate-spin" />

@@ -4,7 +4,6 @@ import { withModelFallback } from "@/lib/ai/generate";
 import { buildQuestionChainUserPrompt, getQuestionChainSystemPrompt } from "@/lib/ai/prompts/question-chain";
 import { questionChainSchema } from "@/lib/ai/schemas";
 import { COMPANY_FLOWS } from "@/config/interview-stages";
-import { ROLE_DIMENSIONS } from "@/config/question-chains";
 import { findJobRole, type JobRole } from "@/lib/roles";
 import type { QuestionChain, QuestionChainDimension, QuestionChainTrack } from "@/types";
 
@@ -94,8 +93,9 @@ export async function buildFallbackQuestionChain(
       hasOfflineContent: false,
     };
 
-  const seeded = ROLE_DIMENSIONS[role.key];
-  const isBuiltinContent = role.source === "builtin" && Array.isArray(seeded);
+  // 离线维度来自 data/roles/** 的内容文件（loader 已挂在 JobRole.dimensions 上）
+  const seeded = found?.dimensions;
+  const isBuiltinContent = Array.isArray(seeded) && seeded.length > 0;
 
   const dimensions: QuestionChainDimension[] = isBuiltinContent
     ? seeded.map((seed) => ({
