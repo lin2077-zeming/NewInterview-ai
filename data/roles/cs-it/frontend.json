@@ -1,0 +1,375 @@
+{
+  "id": "cs-it.frontend",
+  "categoryId": "cs-it",
+  "label": "前端开发工程师",
+  "aliases": [
+    "Web 前端",
+    "H5 开发"
+  ],
+  "summary": "负责网站、小程序、H5等前端界面开发，与设计师、后端协作，实现交互效果并优化性能。",
+  "description": "前端开发工程师主要负责将设计稿转化为可交互的网页或应用界面，服务对象包括终端用户、产品经理、设计师和后端工程师。日常工作包括：使用HTML、CSS、JavaScript及主流框架（如React、Vue）开发页面；与后端对接API实现数据渲染；优化页面加载速度、兼容性和用户体验；参与需求评审和技术方案设计。需要具备扎实的编码能力、对浏览器原理和网络协议的理解、组件化思维，以及良好的团队沟通和问题解决能力。",
+  "skills": [
+    "HTML/CSS/JavaScript",
+    "主流框架使用",
+    "浏览器与网络",
+    "工程化与构建",
+    "性能优化",
+    "沟通与协作"
+  ],
+  "dimensions": [
+    {
+      "name": "JavaScript核心原理",
+      "why": "考察对语言本质的理解，决定代码质量和解决复杂问题的能力。",
+      "weight": "高",
+      "probes": [
+        {
+          "q": "你平时写JS，说说原型链是用来干嘛的？",
+          "bar": "能说出原型链是实现继承的机制，并举例说明属性查找过程。",
+          "red": "只回答‘不知道’或‘用来继承’，无法举例。"
+        },
+        {
+          "q": "闭包是什么？你在项目里哪些地方用到了闭包？",
+          "bar": "能解释闭包定义（函数访问外部变量），并举实际例子如防抖、模块封装。",
+          "red": "只能背定义，说不出应用场景。"
+        },
+        {
+          "q": "如果让你实现一个事件总线，你会怎么设计？",
+          "bar": "能说出发布订阅模式，用对象存储事件和回调，考虑once和off。",
+          "red": "没有思路，或者只能说出用数组存回调但无法处理取消。"
+        }
+      ]
+    },
+    {
+      "name": "框架与组件化",
+      "why": "主流框架是开发效率的基础，考察实际应用和原理理解。",
+      "weight": "高",
+      "probes": [
+        {
+          "q": "你用得最熟的框架是哪个？说说它的响应式原理。",
+          "bar": "Vue能说出Object.defineProperty或Proxy，React能说出setState和虚拟DOM。",
+          "red": "只会用API，说不清数据变化如何触发视图更新。"
+        },
+        {
+          "q": "组件之间通信，你一般怎么处理？父子、兄弟、跨层级分别说说。",
+          "bar": "父子用props/emit，兄弟用父组件中转或状态管理，跨层级用provide/inject或Context。",
+          "red": "只知道props，其他场景没有方案。"
+        },
+        {
+          "q": "如果让你设计一个可复用的表单组件，你会怎么抽象？",
+          "bar": "能说出受控组件、校验逻辑抽离、slot/children扩展、v-model或受控属性。",
+          "red": "只能写死具体表单，没有抽象思路。"
+        }
+      ]
+    },
+    {
+      "name": "浏览器与网络基础",
+      "why": "前端运行在浏览器中，理解渲染和网络是性能优化的前提。",
+      "weight": "中",
+      "probes": [
+        {
+          "q": "从输入URL到页面展示，中间发生了什么？",
+          "bar": "能说出DNS解析、TCP握手、HTTP请求、响应、解析HTML、构建DOM、渲染。",
+          "red": "只说出‘发送请求、返回页面’，遗漏关键步骤。"
+        },
+        {
+          "q": "你了解浏览器缓存吗？强缓存和协商缓存分别怎么用？",
+          "bar": "能说出Cache-Control/Expires和ETag/Last-Modified，并说明优先级。",
+          "red": "混淆两者，或者不知道如何设置。"
+        },
+        {
+          "q": "跨域问题你是怎么解决的？说说CORS的简单请求和预检请求。",
+          "bar": "能说出CORS、代理、JSONP，并解释预检请求触发条件。",
+          "red": "只知道用代理，说不清CORS机制。"
+        }
+      ]
+    },
+    {
+      "name": "工程化与性能优化",
+      "why": "现代前端开发离不开构建工具和性能意识，考察项目实战能力。",
+      "weight": "中",
+      "probes": [
+        {
+          "q": "你们项目用的是什么构建工具？说说它的配置和优化点。",
+          "bar": "能说出Webpack/Vite的基本配置，如loader、plugin、分包、热更新。",
+          "red": "只会用脚手架默认配置，没改过。"
+        },
+        {
+          "q": "首屏加载慢，你会从哪些方面排查和优化？",
+          "bar": "能说出资源压缩、懒加载、CDN、SSR、预加载等，并知道用Lighthouse分析。",
+          "red": "只能说出‘压缩图片’，没有系统思路。"
+        },
+        {
+          "q": "如果让你搭建一个新项目，你会怎么选型和设计目录结构？",
+          "bar": "能根据业务选框架，考虑路由、状态管理、代码规范、CI/CD。",
+          "red": "没有整体规划，只说‘用Vue-cli创建’。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "cs-it.frontend-q01",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "数组去重",
+      "content": "给定一个数组，写一个函数去除重复元素，返回新数组。要求至少写出两种方法，并说明时间复杂度和适用场景。",
+      "tags": [
+        "JavaScript",
+        "算法",
+        "数组"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量生成草稿（DeepSeek）",
+        "collectedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q02",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "实现深拷贝",
+      "content": "手写一个深拷贝函数，考虑对象、数组、Date、RegExp等类型，并处理循环引用。",
+      "tags": [
+        "JavaScript",
+        "手写题",
+        "深拷贝"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量生成草稿（DeepSeek）",
+        "collectedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q03",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "防抖与节流",
+      "content": "解释防抖和节流的区别，并分别实现一个debounce和throttle函数，支持立即执行选项。",
+      "tags": [
+        "JavaScript",
+        "性能",
+        "手写题"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量生成草稿（DeepSeek）",
+        "collectedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q04",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "项目难点与解决",
+      "content": "请挑一个你参与过的前端项目，说说你遇到的最大技术难点是什么，你是怎么解决的？最后效果如何？",
+      "tags": [
+        "项目经验",
+        "问题解决",
+        "技术难点"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量生成草稿（DeepSeek）",
+        "collectedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q05",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "项目中的协作",
+      "content": "在之前的项目或实习中，你是如何与后端、设计师协作的？有没有遇到沟通不畅的情况，怎么处理的？",
+      "tags": [
+        "团队协作",
+        "沟通",
+        "项目管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量生成草稿（DeepSeek）",
+        "collectedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q06",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "性能优化方案",
+      "content": "假设你负责一个电商大促页面，首屏加载超过5秒，用户流失严重。请给出完整的性能优化方案，并说明优先级和预期收益。",
+      "tags": [
+        "性能优化",
+        "场景题",
+        "综合能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量生成草稿（DeepSeek）",
+        "collectedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q07",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "技术选型",
+      "content": "团队要开发一个后台管理系统，你会推荐使用什么技术栈？为什么？如果团队有人坚持用jQuery，你如何说服？",
+      "tags": [
+        "技术选型",
+        "沟通",
+        "框架"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量生成草稿（DeepSeek）",
+        "collectedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q08",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "职业规划",
+      "content": "你为什么选择前端方向？未来3-5年的职业规划是什么？",
+      "tags": [
+        "求职动机",
+        "职业规划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量生成草稿（DeepSeek）",
+        "collectedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q09",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "学习习惯",
+      "content": "前端技术更新很快，你平时通过什么方式学习新技术？最近在学什么？",
+      "tags": [
+        "学习能力",
+        "技术热情"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量生成草稿（DeepSeek）",
+        "collectedAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q10",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "团队冲突",
+      "content": "如果你和同事在技术方案上产生分歧，你会怎么处理？请举一个实际例子。",
+      "tags": [
+        "团队协作",
+        "冲突处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量生成草稿（DeepSeek）",
+        "collectedAt": "2026-10-11"
+      }
+    }
+  ],
+  "companies": [
+    {
+      "name": "阿里巴巴",
+      "hiringStyle": "重视基础原理和项目深度，面试轮次多，常考察算法和系统设计。",
+      "stages": [
+        "简历筛选",
+        "在线笔试",
+        "技术一面",
+        "技术二面",
+        "交叉面",
+        "HR面"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量生成草稿（DeepSeek）",
+        "collectedAt": "2026-10-11"
+      }
+    },
+    {
+      "name": "腾讯",
+      "hiringStyle": "注重计算机基础和编码能力，面试官喜欢追问项目细节和实现原理。",
+      "stages": [
+        "在线笔试",
+        "初试",
+        "复试",
+        "HR面"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量生成草稿（DeepSeek）",
+        "collectedAt": "2026-10-11"
+      }
+    },
+    {
+      "name": "字节跳动",
+      "hiringStyle": "算法题难度较高，重视工程化思维和性能优化经验。",
+      "stages": [
+        "简历筛选",
+        "在线笔试",
+        "技术一面",
+        "技术二面",
+        "三面",
+        "HR面"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量生成草稿（DeepSeek）",
+        "collectedAt": "2026-10-11"
+      }
+    },
+    {
+      "name": "美团",
+      "hiringStyle": "关注业务场景下的技术应用，面试中常结合具体业务提问。",
+      "stages": [
+        "在线笔试",
+        "技术一面",
+        "技术二面",
+        "HR面"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量生成草稿（DeepSeek）",
+        "collectedAt": "2026-10-11"
+      }
+    },
+    {
+      "name": "百度",
+      "hiringStyle": "重视基础知识和算法，面试风格严谨，喜欢考察编码规范。",
+      "stages": [
+        "在线笔试",
+        "技术一面",
+        "技术二面",
+        "经理面",
+        "HR面"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量生成草稿（DeepSeek）",
+        "collectedAt": "2026-10-11"
+      }
+    }
+  ],
+  "interviewReports": [
+    {
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 汇总的常见考察点（非真实面经）",
+        "collectedAt": "2026-10-11"
+      },
+      "summary": "前端开发工程师面试通常重点考察JavaScript核心原理、主流框架使用、浏览器与网络基础、工程化与性能优化四大维度。技术面会通过手写代码题检验基础，通过项目深挖考察实践能力，并常结合场景题评估解决问题思路。HR面则关注求职动机、学习能力和团队协作。建议准备时夯实基础，梳理项目亮点，并熟悉常见性能优化手段。"
+    }
+  ],
+  "meta": {
+    "version": 1,
+    "updatedAt": "2026-10-11",
+    "completeness": "full"
+  }
+}
