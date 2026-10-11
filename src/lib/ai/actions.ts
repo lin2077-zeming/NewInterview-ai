@@ -74,7 +74,7 @@ export async function createInterview(
   await touchSession(sessionId);
 
   const id = randomUUID();
-  const flow = COMPANY_FLOWS[config.company] ?? COMPANY_FLOWS.bytedance;
+  const flow = COMPANY_FLOWS[config.company] ?? COMPANY_FLOWS.generic;
   const stageIndex = Math.min(
     Math.max(config.stageIndex ?? 0, 0),
     flow.stages.length - 1

@@ -1,7 +1,6 @@
 import { z } from "zod";
 import { tool } from "ai";
-import { INTERVIEW_QUESTIONS, type InterviewQuestion } from "@/config/interview-questions";
-import { getRemoteQuestions } from "@/lib/ai/question-fetcher";
+import { buildQuestionPool, type PoolQuestion } from "@/lib/ai/question-pool";
 
 function shuffle<T>(arr: T[]): T[] {
   for (let i = arr.length - 1; i > 0; i--) {
@@ -11,15 +10,23 @@ function shuffle<T>(arr: T[]): T[] {
   return arr;
 }
 
-async function searchQuestions(params: {
-  stage: string;
-  company?: string;
-  difficulty?: string;
-  tags?: string[];
-  limit?: number;
-}) {
-  const remote = await getRemoteQuestions();
-  let results: InterviewQuestion[] = [...INTERVIEW_QUESTIONS, ...remote];
+/**
+ * 从该岗位的题目池里检索。
+ *
+ * `roleId` 决定题目池：岗位自己的题库优先，非技术岗位**不回落到旧题库**
+ * （旧题库全是后端/算法向，给教师护士出题会直接串岗）。
+ */
+async function searchQuestions(
+  params: {
+    stage: string;
+    company?: string;
+    difficulty?: string;
+    tags?: string[];
+    limit?: number;
+  },
+  roleId?: string
+) {
+  let results: PoolQuestion[] = await buildQuestionPool(roleId);
 
   if (params.stage && params.stage !== "any") {
     results = results.filter((q) => q.stage === params.stage);
@@ -83,77 +90,102 @@ export const searchInterviewKnowledgeSchema = z.object({
   limit: z.number().min(1).max(10).optional().describe("返回题目数量，默认5"),
 });
 
-export const interviewTools = {
-  searchInterviewKnowledge: tool({
-    description:
-      "从海量真实面试题库中检索题目。在开始新面试或需要新题目时调用。返回题目标题、完整题目内容、难度、标签和来源公司。优先使用和当前公司匹配的题目。",
-    inputSchema: searchInterviewKnowledgeSchema,
-    execute: async (params) => {
-      const questions = await searchQuestions(params);
-      const total = (await searchQuestions({ ...params, limit: 99 })).length;
-      return {
-        questions,
-        total,
-        hint: "请从中选择 1-2 道最适合当前候选人的题目。出题时保持原题目核心，可结合候选人背景微调难度和措辞。",
-      };
-    },
-  }),
-  advanceStage: tool({
-    description:
-      "当当前阶段面试考察充分、可以结束时，调用此工具生成阶段总结。传入 nextStage 指定下一个阶段 ID，或传入 'completed' 表示整场面试结束。调用后会返回阶段总结信息，你可以在对话中告知候选人。",
-    inputSchema: advanceStageSchema,
-    execute: async ({ nextStage, summary }, { messages }) => {
-      if (nextStage === "completed") {
-        let evalCount = 0;
-        for (const msg of messages) {
-          if (msg.role !== "assistant") continue;
-          const content = msg.content;
-          if (typeof content === "string") continue;
-          for (const part of content) {
-            const p = part as { type: string; toolName?: string };
-            if (p.type === "tool-call" && p.toolName === "evaluateAnswer") {
-              evalCount++;
-            }
-          }
-        }
-        const MIN_EVALUATIONS = 5;
-        if (evalCount < MIN_EVALUATIONS) {
+/**
+ * 构建面试工具集。
+ *
+ * 做成工厂而不是常量，是因为**排题必须知道当前岗位**：
+ * 同一个 `searchInterviewKnowledge` 调用，给教师岗和给后端岗要取完全不同的题。
+ * 工具入参是模型生成的，岗位不能交给模型传（它可能编），只能由服务端注入。
+ */
+export function createInterviewTools(options: { roleId?: string } = {}) {
+  const { roleId } = options;
+
+  return {
+    searchInterviewKnowledge: tool({
+      description:
+        "从当前岗位的题库中检索题目。在开始新面试或需要新题目时调用。返回题目标题、完整题目内容、难度、标签和来源公司。优先使用和当前公司匹配的题目。",
+      inputSchema: searchInterviewKnowledgeSchema,
+      execute: async (params) => {
+        const questions = await searchQuestions(params, roleId);
+        const total = (await searchQuestions({ ...params, limit: 99 }, roleId)).length;
+
+        // 岗位没有现成题库时不硬凑：告诉模型自己按岗位描述出题，
+        // 免得它把题目池为空误解成"系统故障"
+        if (total === 0) {
           return {
-            advanced: false,
-            fromStage: "未推进",
-            toStage: "未改变",
-            summary,
-            note: `⚠️ 当前至少需要完成 ${MIN_EVALUATIONS} 轮问答才能结束面试（目前已评估 ${evalCount} 题，还差 ${MIN_EVALUATIONS - evalCount} 题）。请继续提问或从题库选题深入考察。`,
+            questions: [],
+            total: 0,
+            hint: "该岗位暂无预置题库。请依据岗位描述与该岗位的真实考察重点，自行设计贴合岗位的面试题。",
           };
         }
-      }
-      return {
-        advanced: true,
-        fromStage: "已推进",
-        toStage: nextStage,
-        summary,
-        note: nextStage === "completed"
-          ? "整场面试已全部结束。请在对话中总结整场表现，并提示候选人点击【结束面试】按钮查看复盘报告。"
-          : `本轮面试考察充分。请在对话中总结本轮表现，并提示候选人点击【结束面试】按钮查看本轮复盘。`,
-      };
-    },
-  }),
-  evaluateAnswer: tool({
-    description:
-      "在候选人回答完每个问题后，对该回答进行即时评分。每题必须调用一次。返回值包含评分结果和建议的下一步行动（suggestedAction）。你必须根据 suggestedAction 自主决定是写代码、问思路、深挖、换题还是换话题。",
-    inputSchema: evaluateAnswerSchema,
-    execute: async ({ score, dimension, brief, suggestedAction }) => ({
-      score,
-      dimension,
-      evaluation: brief,
-      suggestedAction,
-      guidance: {
-        ask_code: "让候选人用指定语言写出完整代码实现",
-        ask_approach: "让候选人口述思路、伪代码或设计要点，暂不写代码",
-        dig_deeper: "同一道题继续深挖——追问边界条件/底层原理/线上场景/复杂度优化",
-        move_on: "此题已考察充分，从题库选一道和当前阶段匹配的新题继续面试",
-        new_topic: "当前方向已覆盖，从题库选一道完全不同方向的新题拓宽面试广度",
-      }[suggestedAction],
+
+        return {
+          questions,
+          total,
+          hint: "请从中选择 1-2 道最适合当前候选人的题目。出题时保持原题目核心，可结合候选人背景微调难度和措辞。",
+        };
+      },
     }),
-  }),
-};
+    advanceStage: tool({
+      description:
+        "当当前阶段面试考察充分、可以结束时，调用此工具生成阶段总结。传入 nextStage 指定下一个阶段 ID，或传入 'completed' 表示整场面试结束。调用后会返回阶段总结信息，你可以在对话中告知候选人。",
+      inputSchema: advanceStageSchema,
+      execute: async ({ nextStage, summary }, { messages }) => {
+        if (nextStage === "completed") {
+          let evalCount = 0;
+          for (const msg of messages) {
+            if (msg.role !== "assistant") continue;
+            const content = msg.content;
+            if (typeof content === "string") continue;
+            for (const part of content) {
+              const p = part as { type: string; toolName?: string };
+              if (p.type === "tool-call" && p.toolName === "evaluateAnswer") {
+                evalCount++;
+              }
+            }
+          }
+          const MIN_EVALUATIONS = 5;
+          if (evalCount < MIN_EVALUATIONS) {
+            return {
+              advanced: false,
+              fromStage: "未推进",
+              toStage: "未改变",
+              summary,
+              note: `⚠️ 当前至少需要完成 ${MIN_EVALUATIONS} 轮问答才能结束面试（目前已评估 ${evalCount} 题，还差 ${MIN_EVALUATIONS - evalCount} 题）。请继续提问或从题库选题深入考察。`,
+            };
+          }
+        }
+        return {
+          advanced: true,
+          fromStage: "已推进",
+          toStage: nextStage,
+          summary,
+          note: nextStage === "completed"
+            ? "整场面试已全部结束。请在对话中总结整场表现，并提示候选人点击【结束面试】按钮查看复盘报告。"
+            : `本轮面试考察充分。请在对话中总结本轮表现，并提示候选人点击【结束面试】按钮查看本轮复盘。`,
+        };
+      },
+    }),
+    evaluateAnswer: tool({
+      description:
+        "在候选人回答完每个问题后，对该回答进行即时评分。每题必须调用一次。返回值包含评分结果和建议的下一步行动（suggestedAction）。你必须根据 suggestedAction 自主决定是写代码、问思路、深挖、换题还是换话题。",
+      inputSchema: evaluateAnswerSchema,
+      execute: async ({ score, dimension, brief, suggestedAction }) => ({
+        score,
+        dimension,
+        evaluation: brief,
+        suggestedAction,
+        guidance: {
+          ask_code: "让候选人用指定语言写出完整代码实现",
+          ask_approach: "让候选人口述思路、伪代码或设计要点，暂不写代码",
+          dig_deeper: "同一道题继续深挖——追问边界条件/底层原理/线上场景/复杂度优化",
+          move_on: "此题已考察充分，从题库选一道和当前阶段匹配的新题继续面试",
+          new_topic: "当前方向已覆盖，从题库选一道完全不同方向的新题拓宽面试广度",
+        }[suggestedAction],
+      }),
+    }),
+  };
+}
+
+/** 未指定岗位时的工具集（走旧题库兜底） */
+export const interviewTools = createInterviewTools();

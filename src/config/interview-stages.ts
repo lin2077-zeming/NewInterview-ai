@@ -1,6 +1,55 @@
 import type { CompanyFlow } from "@/types";
 
+/**
+ * 通用流程：不限行业与公司。
+ *
+ * 存在的意义：原来的 8 个流程全是互联网公司（字节 / 阿里 / 腾讯…），
+ * 阶段名也叫「算法面」「项目深挖面」。教师、护士、会计这些岗位被迫选一家
+ * 互联网公司、进一个叫「算法面」的环节，显然是错的。
+ *
+ * 阶段 id 仍沿用 algorithm/project/cross/hr —— 与题库的题型字段对齐；
+ * 但显示名改成岗位中立的说法（algorithm 在这个语境下是「专业能力」而非「算法」）。
+ */
+export const GENERIC_FLOW: CompanyFlow = {
+  name: "通用（按岗位考察）",
+  style:
+    "不限行业与公司的通用面试流程。考察重点完全由目标岗位决定，适合非互联网、非计算机方向的岗位。",
+  stages: [
+    {
+      id: "algorithm",
+      name: "专业能力面",
+      duration: 40,
+      focus: "岗位核心专业能力",
+      topics: "围绕该岗位的核心技能与实务问题，判断是否具备上岗所需的专业基础",
+    },
+    {
+      id: "project",
+      name: "经历深挖面",
+      duration: 40,
+      focus: "项目 / 实习 / 实践经历",
+      topics: "深挖简历中的经历：你具体做了什么、怎么做的、结果如何、遇到什么困难",
+    },
+    {
+      id: "cross",
+      name: "综合应变面",
+      duration: 25,
+      focus: "综合素养与场景应变",
+      topics: "跨领域协作、突发情况处理、沟通表达与临场应对",
+    },
+    {
+      id: "hr",
+      name: "HR 面",
+      duration: 20,
+      focus: "求职动机与职业规划",
+      topics: "求职动机、职业规划、团队协作、期望薪资",
+    },
+  ],
+  stressAvailable: ["algorithm", "project"],
+};
+
 export const COMPANY_FLOWS: Record<string, CompanyFlow> = {
+  // 通用流程排在最前：非技术岗位不必再被迫选一家互联网公司
+  generic: GENERIC_FLOW,
   bytedance: {
     name: "字节跳动",
     style: "重视算法基础与工程落地能力，喜欢追问边界条件和性能优化。面试节奏快，问题深，期待候选人能举一反三。关注候选人是否具备Owner意识和数据驱动思维。",

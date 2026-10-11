@@ -5,7 +5,8 @@ import {
   type UIMessage,
 } from "ai";
 import { interviewModel } from "@/lib/ai/client";
-import { interviewTools } from "@/lib/ai/interview-flow";
+import { createInterviewTools } from "@/lib/ai/interview-flow";
+import { findJobRole } from "@/lib/roles";
 import { getInterviewerSystemPrompt } from "@/lib/ai/prompts/interviewer";
 import { getIntervieweeSystemPrompt } from "@/lib/ai/prompts/interviewee";
 import { COMPANY_FLOWS } from "@/config/interview-stages";
@@ -68,7 +69,7 @@ export async function POST(req: Request) {
       interviewId?: string;
     };
 
-    const company = COMPANY_FLOWS[config?.company ?? "bytedance"] ?? COMPANY_FLOWS.bytedance;
+    const company = COMPANY_FLOWS[config?.company ?? "generic"] ?? COMPANY_FLOWS.generic;
     const currentStageIndex = config?.currentStage ?? 0;
     const stage = company.stages[currentStageIndex] ?? company.stages[0];
 
@@ -119,7 +120,11 @@ export async function POST(req: Request) {
             totalStages: company.stages.length,
           });
 
-    const tools = mode === "normal" ? interviewTools : undefined;
+    // 排题必须按当前岗位取题库：给教师岗出后端题就是串岗。
+    // 岗位由服务端按中文名解析（工具入参由模型生成，不能让它决定岗位）。
+    const roleRecord = await findJobRole(config?.role).catch(() => null);
+    const tools =
+      mode === "normal" ? createInterviewTools({ roleId: roleRecord?.key }) : undefined;
     const modelMessages = await convertToModelMessages(toModelInputMessages(messages), {
       tools,
       ignoreIncompleteToolCalls: true,

@@ -16,8 +16,10 @@ type AiUsage = Pick<UsageCost, "inputTokens" | "outputTokens" | "cost">;
 
 const LEVELS = ["校招 / 实习", "社招 1-3 年", "资深 / 3 年以上"];
 
+// 直接用公司流程表（其中 generic = 不限公司，按岗位考察）。
+// 原先额外硬编码的「通用互联网公司」与 generic 重复，且仍然带「互联网」限定。
 const COMPANY_OPTIONS = [
-  { key: "", name: "通用互联网公司" },
+  { key: "", name: "不限定公司" },
   ...Object.entries(COMPANY_FLOWS).map(([key, flow]) => ({ key, name: flow.name })),
 ];
 

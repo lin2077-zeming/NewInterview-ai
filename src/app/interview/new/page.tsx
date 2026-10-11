@@ -29,13 +29,14 @@ import type { InterviewMode } from "@/types";
 export default function NewInterviewPage() {
   const router = useRouter();
   const [mode, setMode] = useState<InterviewMode>("normal");
-  const [company, setCompany] = useState("bytedance");
+  // 默认通用流程：岗位覆盖所有专业，预选一家互联网公司是有偏的
+  const [company, setCompany] = useState("generic");
   const [role, setRole] = useState("");
   const [stageIndex, setStageIndex] = useState(0);
   const [stressMode, setStressMode] = useState(false);
   const [resumeFile, setResumeFile] = useState<File | null>(null);
   const [loading, setLoading] = useState(false);
-  const flow = COMPANY_FLOWS[company] ?? COMPANY_FLOWS.bytedance;
+  const flow = COMPANY_FLOWS[company] ?? COMPANY_FLOWS.generic;
 
   // 支持从「岗位追问链」等页面带参数跳转，预填岗位与公司
   // 用 window.location 而非 useSearchParams，避免影响静态预渲染
@@ -297,7 +298,7 @@ function MobileNewInterview({
   onStart: () => void;
 }) {
   const resumeInputRef = useRef<HTMLInputElement>(null);
-  const flow = COMPANY_FLOWS[company] ?? COMPANY_FLOWS.bytedance;
+  const flow = COMPANY_FLOWS[company] ?? COMPANY_FLOWS.generic;
   const selectedStage = flow.stages[stageIndex] ?? flow.stages[0];
 
   // 两级岗位选择：先大类、再细分小类（64 个岗位塞一级下拉不可用）

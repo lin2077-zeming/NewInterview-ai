@@ -1,6 +1,13 @@
 import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { join } from "node:path";
-import type { RoleCategoryView, RoleContent, RoleDimension, RoleOptionView, Taxonomy } from "@/lib/job-roles/types";
+import type {
+  RoleCategoryView,
+  RoleContent,
+  RoleDimension,
+  RoleOptionView,
+  RoleQuestion,
+  Taxonomy,
+} from "@/lib/job-roles/types";
 
 /**
  * 岗位数据加载层 —— 岗位体系的**唯一数据源**。
@@ -104,6 +111,28 @@ export function getRoleContent(id: string): RoleContent | undefined {
 export function getRoleDimensions(id: string): RoleDimension[] | undefined {
   const dims = getRoleContent(id)?.dimensions;
   return dims && dims.length > 0 ? dims : undefined;
+}
+
+/** 某个子类的题库；没有内容文件时返回空数组 */
+export function getRoleQuestions(id: string): RoleQuestion[] {
+  return getRoleContent(id)?.questions ?? [];
+}
+
+/**
+ * 全部子类的题目，带上所属岗位。
+ *
+ * 面试排题要跨岗位检索（先按角色筛、再按阶段/难度/标签筛），
+ * 所以这里返回的是「题目 + 它属于哪个岗位」的合并池。
+ */
+export function listAllRoleQuestions(): Array<RoleQuestion & { roleId: string }> {
+  const { contents } = load();
+  const out: Array<RoleQuestion & { roleId: string }> = [];
+  for (const content of contents.values()) {
+    for (const question of content.questions) {
+      out.push({ ...question, roleId: content.id });
+    }
+  }
+  return out;
 }
 
 /** 展平的岗位视图（含完全没内容文件的子类，便于前端提示"暂无内容"） */

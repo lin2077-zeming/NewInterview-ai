@@ -62,7 +62,7 @@ export default function InterviewPage() {
   const exitGuardKeyRef = useRef<string | null>(null);
   const isDesktop = useMediaQuery("(min-width: 1024px)");
 
-  const flow = COMPANY_FLOWS[company] ?? COMPANY_FLOWS.bytedance;
+  const flow = COMPANY_FLOWS[company] ?? COMPANY_FLOWS.generic;
   const requestedStageIndex = Number(searchParams.get("stage") ?? 0);
   const currentStageIndex = Number.isFinite(requestedStageIndex)
     ? Math.min(Math.max(requestedStageIndex, 0), flow.stages.length - 1)
