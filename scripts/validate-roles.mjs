@@ -142,8 +142,13 @@ function checkSources(file) {
   }
   for (const [i, r] of (content.interviewReports ?? []).entries()) {
     checkSource(file.id, `interviewReports[${i}]`, r.source);
-    if (r.source?.type === "ai-generated") {
-      warn(file.id, `interviewReports[${i}] 是 AI 生成内容，不得作为真实面经展示`);
+    // AI 生成的内容必须自我披露：来源名里要出现「AI」字样。
+    // 这条不只是格式要求 —— 把 AI 汇总的考察点包装成"真实面经"是诚信问题。
+    if (r.source?.type === "ai-generated" && !/AI/i.test(r.source.name ?? "")) {
+      err(
+        file.id,
+        `interviewReports[${i}] 是 AI 生成但来源名未披露（source.name 需含「AI」，当前「${r.source.name}」）`
+      );
     }
   }
 }
