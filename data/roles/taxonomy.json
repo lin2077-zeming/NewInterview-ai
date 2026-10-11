@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-11",
+  "note": "岗位分类索引。按「就业方向」划分而非学科门类 —— 用户选的是岗位，不是学位。子项内容见 data/roles/<categoryId>/<subId>.json。",
+  "categories": [
+    {
+      "id": "cs-it",
+      "label": "计算机与信息技术",
+      "summary": "软件开发、数据与算法、运维安全、产品与设计",
+      "subcategories": [
+        { "id": "backend", "label": "后端开发工程师", "aliases": ["服务端开发", "Java 开发工程师"] },
+        { "id": "frontend", "label": "前端开发工程师", "aliases": ["Web 前端", "H5 开发"] },
+        { "id": "fullstack", "label": "全栈开发工程师", "aliases": ["全栈工程师"] },
+        { "id": "algorithm", "label": "算法工程师", "aliases": ["AI 工程师", "机器学习工程师"] },
+        { "id": "data-analysis", "label": "数据分析师", "aliases": ["业务数据分析", "BI 工程师"] },
+        { "id": "test-dev", "label": "测试开发工程师", "aliases": ["QA", "质量保障工程师"] },
+        { "id": "devops", "label": "运维开发工程师", "aliases": ["DevOps", "SRE"] },
+        { "id": "security", "label": "网络安全工程师", "aliases": ["安全工程师", "渗透测试"] },
+        { "id": "client", "label": "客户端开发工程师", "aliases": ["iOS 开发", "Android 开发"] },
+        { "id": "product-manager", "label": "产品经理", "aliases": ["PM", "产品策划"] },
+        { "id": "ui-ux", "label": "UI / UX 设计师", "aliases": ["交互设计师", "视觉设计师"] }
+      ]
+    },
+    {
+      "id": "ee-telecom",
+      "label": "电子与通信",
+      "summary": "硬件电路、通信网络、芯片设计、嵌入式与自动化",
+      "subcategories": [
+        { "id": "electronics", "label": "电子工程师", "aliases": ["硬件工程师", "电路设计"] },
+        { "id": "telecom", "label": "通信工程师", "aliases": ["通信网络工程师", "无线工程师"] },
+        { "id": "ic-design", "label": "集成电路设计工程师", "aliases": ["芯片设计", "数字 IC"] },
+        { "id": "embedded", "label": "嵌入式开发工程师", "aliases": ["单片机开发", "固件工程师"] },
+        { "id": "automation", "label": "自动化与控制工程师", "aliases": ["控制工程师", "PLC 工程师"] }
+      ]
+    },
+    {
+      "id": "mech-mfg",
+      "label": "机械与制造",
+      "summary": "机械设计、车辆、材料、工业工程与智能制造",
+      "subcategories": [
+        { "id": "mechanical-design", "label": "机械设计工程师", "aliases": ["结构设计", "机械工程师"] },
+        { "id": "vehicle", "label": "车辆工程工程师", "aliases": ["汽车工程师", "整车开发"] },
+        { "id": "materials", "label": "材料工程师", "aliases": ["材料研发", "工艺材料"] },
+        { "id": "industrial-engineering", "label": "工业工程师", "aliases": ["IE", "精益生产"] },
+        { "id": "smart-manufacturing", "label": "智能制造与工艺工程师", "aliases": ["工艺工程师", "产线自动化"] }
+      ]
+    },
+    {
+      "id": "finance-econ",
+      "label": "金融与经济",
+      "summary": "银行证券、投研资管、财会审计、风控保险与经济研究",
+      "subcategories": [
+        { "id": "banking", "label": "银行（柜面 / 客户经理）", "aliases": ["银行柜员", "对公客户经理"] },
+        { "id": "securities-research", "label": "证券与投研", "aliases": ["行业研究员", "券商分析师"] },
+        { "id": "fund-asset", "label": "基金与资产管理", "aliases": ["基金运营", "投资经理助理"] },
+        { "id": "accounting-audit", "label": "会计与审计", "aliases": ["财务专员", "审计助理"] },
+        { "id": "risk-management", "label": "风险管理", "aliases": ["风控专员", "信用风险"] },
+        { "id": "insurance", "label": "保险", "aliases": ["保险精算", "核保理赔"] },
+        { "id": "economic-research", "label": "经济分析与研究", "aliases": ["宏观研究", "经济分析师"] }
+      ]
+    },
+    {
+      "id": "med-life",
+      "label": "医药与生命科学",
+      "summary": "临床、护理、药学、生物医药、器械与公共卫生",
+      "subcategories": [
+        { "id": "clinical", "label": "临床医学", "aliases": ["住院医师", "临床医生"] },
+        { "id": "nursing", "label": "护理", "aliases": ["护士", "护理师"] },
+        { "id": "pharmacy", "label": "药学", "aliases": ["临床药师", "药品注册"] },
+        { "id": "biotech-pharma", "label": "生物技术与制药研发", "aliases": ["生物研发", "药物研发"] },
+        { "id": "medical-device", "label": "医疗器械", "aliases": ["器械研发", "临床工程师"] },
+        { "id": "public-health", "label": "公共卫生", "aliases": ["疾控", "流行病学"] }
+      ]
+    },
+    {
+      "id": "edu-research",
+      "label": "教育与科研",
+      "summary": "中小学教师、高校科研、教培、教育技术与科研助理",
+      "subcategories": [
+        { "id": "k12-teacher", "label": "中小学教师", "aliases": ["任课教师", "学科教师"] },
+        { "id": "university-research", "label": "高校教师与科研", "aliases": ["高校教职", "科研岗"] },
+        { "id": "training-institution", "label": "教育机构（教培）", "aliases": ["课程讲师", "教学管理"] },
+        { "id": "edtech", "label": "教育技术与教研", "aliases": ["教研员", "在线教育产品"] },
+        { "id": "research-assistant", "label": "科研助理", "aliases": ["实验室助理", "RA"] }
+      ]
+    },
+    {
+      "id": "law-public",
+      "label": "法律与公共管理",
+      "summary": "律师法务、合规风控、公职行政与公共政策",
+      "subcategories": [
+        { "id": "lawyer-legal", "label": "律师与法务", "aliases": ["执业律师", "企业法务"] },
+        { "id": "compliance", "label": "合规与风控", "aliases": ["合规专员", "内控"] },
+        { "id": "civil-servant", "label": "公务员与事业单位", "aliases": ["公考", "事业编"] },
+        { "id": "administration", "label": "行政管理", "aliases": ["行政专员", "综合管理"] },
+        { "id": "public-policy", "label": "公共政策研究", "aliases": ["政策研究", "智库"] }
+      ]
+    },
+    {
+      "id": "civil-arch",
+      "label": "建筑与土木工程",
+      "summary": "建筑设计、土木施工、市政、造价与房地产",
+      "subcategories": [
+        { "id": "architecture", "label": "建筑师", "aliases": ["建筑设计", "方案设计"] },
+        { "id": "civil-engineering", "label": "土木工程师", "aliases": ["施工管理", "结构工程"] },
+        { "id": "municipal", "label": "市政与给排水工程师", "aliases": ["市政工程", "给排水设计"] },
+        { "id": "cost-engineering", "label": "工程造价", "aliases": ["造价员", "预算工程师"] },
+        { "id": "real-estate", "label": "房地产开发与经营", "aliases": ["地产开发", "项目运营"] }
+      ]
+    },
+    {
+      "id": "media-culture",
+      "label": "文化与传媒",
+      "summary": "新闻采编、广告文案、新媒体、出版与设计",
+      "subcategories": [
+        { "id": "journalism", "label": "新闻记者与编辑", "aliases": ["采编", "内容记者"] },
+        { "id": "advertising-copy", "label": "广告与文案策划", "aliases": ["文案", "创意策划"] },
+        { "id": "new-media-ops", "label": "新媒体运营", "aliases": ["社媒运营", "内容运营"] },
+        { "id": "publishing", "label": "编辑出版", "aliases": ["图书编辑", "校对"] },
+        { "id": "visual-design", "label": "视觉与平面设计", "aliases": ["平面设计", "品牌设计"] }
+      ]
+    },
+    {
+      "id": "energy-chem",
+      "label": "能源化工与电气",
+      "summary": "电气工程、能源动力、化工、环境与安全",
+      "subcategories": [
+        { "id": "electrical", "label": "电气工程师", "aliases": ["强电工程师", "电力系统"] },
+        { "id": "energy-power", "label": "能源与动力工程师", "aliases": ["热能与动力", "新能源"] },
+        { "id": "chemical-engineering", "label": "化学工程师", "aliases": ["化工工艺", "化工研发"] },
+        { "id": "environmental", "label": "环境工程师", "aliases": ["环保工程", "环评"] },
+        { "id": "safety-engineering", "label": "安全工程师", "aliases": ["安全生产", "EHS"] }
+      ]
+    },
+    {
+      "id": "business-hr",
+      "label": "商务与人力服务",
+      "summary": "市场营销、人力资源、供应链、客服与销售",
+      "subcategories": [
+        { "id": "marketing", "label": "市场营销", "aliases": ["市场专员", "品牌营销"] },
+        { "id": "human-resources", "label": "人力资源", "aliases": ["HR", "招聘专员"] },
+        { "id": "supply-chain", "label": "供应链与物流", "aliases": ["采购", "物流管理"] },
+        { "id": "customer-service", "label": "客户服务", "aliases": ["客服专员", "客户成功"] },
+        { "id": "sales", "label": "销售", "aliases": ["大客户销售", "渠道销售"] }
+      ]
+    }
+  ],
+  "contentPriority": {
+    "note": "4 天工期的分档：以下 4 个大类做满内容（题目 + 公司 + 面经），其余先出元信息与 4 维考察维度骨架",
+    "fullContentCategories": ["cs-it", "finance-econ", "law-public", "edu-research"]
+  }
+}
