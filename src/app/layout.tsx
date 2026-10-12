@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/layout/Navbar";
 import { OfflineNotice } from "@/components/layout/OfflineNotice";
+import { StudioEntry } from "@/components/layout/StudioEntry";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -43,6 +44,8 @@ export default function RootLayout({
           {/* 未配置 AI 密钥时出现，说清还能用什么 */}
           <OfflineNotice />
           <main className="flex-1">{children}</main>
+          {/* OPC 运营看板是评委核验用的内部工具，只在右下角留小入口 */}
+          <StudioEntry />
         </ThemeProvider>
       </body>
     </html>

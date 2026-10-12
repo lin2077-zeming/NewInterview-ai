@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mic, BarChart3, RefreshCw, Briefcase, GraduationCap, MessageSquare, FileSearch, Waypoints, Gauge, BookOpen } from "lucide-react";
+import { Mic, BarChart3, RefreshCw, Briefcase, GraduationCap, MessageSquare, FileSearch, Waypoints, BookOpen } from "lucide-react";
 import { FEATURE_STUDENT_PATH } from "@/config/features";
 
 export default function HomePage() {
@@ -40,12 +40,6 @@ export default function HomePage() {
               <Button size="lg" variant="outline" className="gap-2 px-6 py-6 text-base rounded-xl glass hover:scale-105 transition-all">
                 <BookOpen className="h-5 w-5" />
                 题库练习（无需 AI）
-              </Button>
-            </Link>
-            <Link href="/studio">
-              <Button size="lg" variant="outline" className="gap-2 px-6 py-6 text-base rounded-xl glass hover:scale-105 transition-all">
-                <Gauge className="h-5 w-5" />
-                OPC 运营看板
               </Button>
             </Link>
             <Link href="/career">
@@ -106,17 +100,6 @@ export default function HomePage() {
                 <CardTitle className="text-lg">复盘报告</CardTitle>
                 <CardDescription>
                   面试后自动生成多维度评分报告，逐题分析优缺点，给出改进计划和示范回答
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="group glass border-0 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-              <CardHeader>
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                  <Gauge className="h-6 w-6 text-primary" />
-                </div>
-                <CardTitle className="text-lg">OPC 运营看板</CardTitle>
-                <CardDescription>
-                  实时记录交付成本、耗时、AI 完成占比与迭代轮次 —— 用数字回答「一个人能不能运营起来」
                 </CardDescription>
               </CardHeader>
             </Card>

@@ -194,8 +194,56 @@ console.log("\n3. 求职规划 · 两级选岗（回归：曾只支持 5 个计�
   expect("切换大类清空子类", (await page.$eval("#career-sub", (e) => e.value)) === "");
 }
 
-// ========== 4. 题库练习：无 AI 也能用 ==========
-console.log("\n4. 题库练习（离线模式的主要载体）");
+// ========== 4. OPC 看板：右下角入口 + 口令门 ==========
+console.log("\n4. OPC 运营看板（内部工具）");
+{
+  const PASSWORD = process.env.STUDIO_PASSWORD?.trim() || "Mind@123";
+
+  await page.goto(`${BASE}/`, { waitUntil: "networkidle", timeout: 60000 });
+  await page.waitForTimeout(600);
+
+  const entry = page.locator('a[aria-label="OPC 运营看板"]');
+  expect("首页有右下角入口", (await entry.count()) === 1);
+
+  const box = await entry.boundingBox();
+  const vp = page.viewportSize();
+  expect(
+    "入口位于右下角",
+    Boolean(box) && vp.width - (box.x + box.width) < 60 && vp.height - (box.y + box.height) < 60,
+    box ? `右下角 ${Math.round(vp.width - box.x - box.width)}px / ${Math.round(vp.height - box.y - box.height)}px` : "找不到元素"
+  );
+
+  const heroBtns = await page.$$eval("section:first-of-type a button", (els) =>
+    els.map((e) => e.textContent.trim())
+  );
+  expect("主入口列表里没有看板", !heroBtns.some((t) => t.includes("运营看板")));
+
+  // 未登录 → 口令门
+  await page.goto(`${BASE}/studio`, { waitUntil: "networkidle", timeout: 60000 });
+  await page.waitForTimeout(500);
+  expect("直接访问被口令门拦住", (await page.textContent("body")).includes("访问口令"));
+
+  // 错误口令
+  await page.fill("#studio-password", "wrong-password");
+  await page.click('button:has-text("进入看板")');
+  await page.waitForTimeout(1200);
+  expect("错误口令被拒绝", (await page.textContent("body")).includes("口令不正确"));
+
+  // 上面这一步是**故意**用错口令，浏览器必然会为那次 401 记一条控制台错误。
+  // 那是预期的，不是缺陷 —— 清掉它，免得污染后面的「零控制台错误」门禁。
+  consoleErrors.length = 0;
+
+  // 正确口令
+  await page.fill("#studio-password", PASSWORD);
+  await page.click('button:has-text("进入看板")');
+  await page.waitForTimeout(3500);
+  const unlocked = await page.textContent("body");
+  expect("正确口令进入看板", unlocked.includes("运营设置") || unlocked.includes("岗位数据"));
+  expect("口令门已消失", !unlocked.includes("进入看板"));
+}
+
+// ========== 5. 题库练习：无 AI 也能用 ==========
+console.log("\n5. 题库练习（离线模式的主要载体）");
 {
   await page.goto(`${BASE}/practice`, { waitUntil: "networkidle", timeout: 60000 });
   await page.waitForFunction(

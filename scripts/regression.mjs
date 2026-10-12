@@ -599,6 +599,59 @@ async function checkFeatureFlags() {
   expect("其他模块入口不受影响", missing.length === 0, missing.join(" / ") || "全部在位");
 }
 
+// ==================== 8. OPC 看板口令门 ====================
+
+async function checkStudioGate() {
+  group("8. OPC 运营看板口令门（内部工具，不该对用户开放）");
+
+  // 口令来源与实现保持一致：环境变量优先，否则用内置默认值
+  const PASSWORD = process.env.STUDIO_PASSWORD?.trim() || "Mind@123";
+
+  const client = createClient();
+  const home = await (await client.request("/")).text();
+  // 注意：右下角入口元素的 aria-label/title 里也含「OPC 运营看板」这几个字，
+  // 所以不能拿整页 HTML 搜词来判断「首页入口」有没有移除 —— 那样永远会命中。
+  // 改成数链接：首页指向 /studio 的链接应当**只剩右下角那一个**。
+  const studioLinks = (home.match(/href="\/studio"/g) ?? []).length;
+  expect(
+    "首页指向看板的链接只剩右下角入口（1 个）",
+    studioLinks === 1,
+    `找到 ${studioLinks} 个`
+  );
+  expect("右下角入口带无障碍标签", home.includes('aria-label="OPC 运营看板"'));
+  // 精确的「主入口列表里没有看板」由 ui-check 用 DOM 断言，HTTP 层不做（解析 HTML 太脆）
+
+  // 未登录：应看到口令门，且看不到看板内容
+  const before = await (await client.request("/studio")).text();
+  expect("未登录访问 /studio 显示口令门", before.includes("访问口令"));
+  expect(
+    "未登录时不泄露看板内容",
+    !before.includes("运营设置") && !before.includes("团队人数")
+  );
+
+  // 错误口令
+  const wrong = await client.postJson("/api/studio/auth", { password: "definitely-wrong" });
+  expect("错误口令返回 401", wrong.status === 401, `HTTP ${wrong.status}`);
+
+  // 正确口令
+  const ok = await client.postJson("/api/studio/auth", { password: PASSWORD });
+  expect("正确口令通过校验", ok.status === 200, `HTTP ${ok.status}`);
+
+  // 已解锁：口令门应消失（curl 看不到水合后的看板内容，只断言"门不在了"）
+  const after = await (await client.request("/studio")).text();
+  expect(
+    "解锁后不再显示口令门",
+    !after.includes("进入看板"),
+    after.includes("进入看板") ? "仍在门外" : "已解锁"
+  );
+
+  // 退出
+  const out = await client.json("/api/studio/auth", { method: "DELETE" });
+  expect("可以主动退出", out.status === 200, `HTTP ${out.status}`);
+  const afterOut = await (await client.request("/studio")).text();
+  expect("退出后重新回到口令门", afterOut.includes("访问口令"));
+}
+
 // ==================== 主流程 ====================
 
 console.log("职镜 OPC · 端到端回归");
@@ -627,6 +680,7 @@ if (!serverUp) {
   await checkAiFeatures(knownRoles);
   await checkOfflineCapability();
   await checkFeatureFlags();
+  await checkStudioGate();
 }
 
 // ---------- 汇总 ----------
