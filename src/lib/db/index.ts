@@ -101,6 +101,20 @@ const CREATE_STATEMENTS = [
   // 限流按 (会话, 时间窗口) 查、预算按时间查，两个索引各服务一类查询
   `CREATE INDEX IF NOT EXISTS idx_cost_logs_session_time ON cost_logs(session_id, created_at)`,
   `CREATE INDEX IF NOT EXISTS idx_cost_logs_time ON cost_logs(created_at)`,
+  `CREATE TABLE IF NOT EXISTS iterations (
+    id TEXT PRIMARY KEY,
+    session_id TEXT,
+    participant TEXT NOT NULL,
+    participant_role TEXT,
+    tried_modules TEXT,
+    verdict TEXT NOT NULL,
+    valuable TEXT,
+    improvable TEXT,
+    would_reuse INTEGER,
+    metrics TEXT,
+    created_at INTEGER NOT NULL
+  )`,
+  `CREATE INDEX IF NOT EXISTS idx_iterations_time ON iterations(created_at)`,
 ];
 
 /**

@@ -127,3 +127,37 @@ export const costLogs = sqliteTable("cost_logs", {
   durationMs: integer("duration_ms").notNull().default(0),
   createdAt: integer("created_at", { mode: "timestamp" }).notNull(),
 });
+
+/**
+ * 迭代记录（真实试用反馈）。
+ *
+ * 存在的意义：产品迭代不能只有"我觉得应该改"，得有真实用户的原话。
+ * 这张表存的是**试用者本人填写**的反馈，不是我们编的 ——
+ * 赛事材料里的"应用成效"必须以这里的数据为准。
+ *
+ * 隐私约束：
+ * - 只存**化名 / 编号**，不存真名、不存联系方式
+ * - 后台读取需管理员令牌（这是别人的数据，不能公开）
+ * - 跟随「删除我的数据」一并清除
+ */
+export const iterations = sqliteTable("iterations", {
+  id: text("id").primaryKey(),
+  sessionId: text("session_id"),
+  /** 试用者化名或编号，如「同学 A」 */
+  participant: text("participant").notNull(),
+  /** 试用者背景，如「大四 · 计算机」「研一 · 教育学」 */
+  participantRole: text("participant_role"),
+  /** 体验过的模块，JSON 字符串数组 */
+  triedModules: text("tried_modules"),
+  /** 总体评价：good / ok / poor */
+  verdict: text("verdict").notNull(),
+  /** 最有价值的一点 */
+  valuable: text("valuable"),
+  /** 最需要改进的一点 */
+  improvable: text("improvable"),
+  /** 是否愿意继续使用 */
+  wouldReuse: integer("would_reuse", { mode: "boolean" }),
+  /** 该次试用采集到的量化快照（耗时/条数/成本…），JSON */
+  metrics: text("metrics"),
+  createdAt: integer("created_at", { mode: "timestamp" }).notNull(),
+});

@@ -18,6 +18,7 @@ import { analysisModel } from "@/lib/ai/client";
 import { ensureSessionId, getSessionId } from "@/lib/session";
 import { NotFoundError } from "@/lib/errors";
 import { maskPii } from "@/lib/privacy";
+import { deleteFeedbackBySession } from "@/lib/feedback";
 import { getCareerAdvisorSystemPrompt } from "@/lib/ai/prompts/career-advisor";
 import { getReviewerSystemPrompt } from "@/lib/ai/prompts/reviewer";
 import {
@@ -564,6 +565,8 @@ export interface DeletionSummary {
   sessions: number;
   /** 成本流水（调用记录也是个人数据，一并删除） */
   costLogs: number;
+  /** 试用反馈（含化名与主观评价，属个人数据） */
+  feedback: number;
 }
 
 /**
@@ -584,6 +587,7 @@ export async function deleteSessionData(): Promise<DeletionSummary> {
     learningPaths: 0,
     sessions: 0,
     costLogs: 0,
+    feedback: 0,
   };
 
   if (!sessionId) return summary;
@@ -634,6 +638,7 @@ export async function deleteSessionData(): Promise<DeletionSummary> {
   summary.learningPaths = removedPaths.length;
   summary.sessions = removedSessions.length;
   summary.costLogs = removedCostLogs.length;
+  summary.feedback = await deleteFeedbackBySession(sessionId);
 
   return summary;
 }

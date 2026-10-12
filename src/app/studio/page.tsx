@@ -12,6 +12,7 @@ import {
   TrendingUp,
   UserRound,
   Users,
+  MessageSquareQuote,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -336,10 +337,18 @@ export default function StudioPage() {
                 ))}
               </div>
             </div>
-            <Button variant="outline" onClick={handleClear} disabled={events.length === 0}>
-              <Trash2 className="h-4 w-4" />
-              清空度量数据
-            </Button>
+            <div className="flex flex-wrap gap-2">
+              <Link href="/feedback">
+                <Button variant="outline">
+                  <MessageSquareQuote className="h-4 w-4" />
+                  收集试用反馈
+                </Button>
+              </Link>
+              <Button variant="outline" onClick={handleClear} disabled={events.length === 0}>
+                <Trash2 className="h-4 w-4" />
+                清空度量数据
+              </Button>
+            </div>
           </div>
 
           <div className="flex flex-wrap items-end justify-between gap-4 border-t pt-4">

@@ -1,0 +1,191 @@
+{
+  "base": "http://127.0.0.1:5000",
+  "startedAt": "2026-10-12T02:52:30.654Z",
+  "runs": 3,
+  "turnsPerRun": 5,
+  "problems": [],
+  "metrics": {
+    "totalCost": 0.2931,
+    "avgDiagnoseMs": 18513,
+    "avgDiagnoseFixes": 13,
+    "avgChainMs": 23654,
+    "avgChatTurnMs": 2126,
+    "pendingBacklogMs": 0,
+    "aiSourceCount": 3,
+    "fallbackSourceCount": 0,
+    "totalDeliveries": 9
+  },
+  "rawRuns": [
+    {
+      "run": 1,
+      "steps": [
+        {
+          "step": "首页加载",
+          "ms": 104,
+          "status": 200,
+          "bytes": 75938
+        },
+        {
+          "step": "看板/岗位数据",
+          "ms": 33,
+          "subcategories": 64,
+          "version": 2
+        },
+        {
+          "step": "简历诊断",
+          "ms": 15600,
+          "status": 200,
+          "source": "ai",
+          "fixes": 12,
+          "inputTokens": 1698,
+          "outputTokens": 2489,
+          "cost": 0.0412
+        },
+        {
+          "step": "岗位追问链",
+          "ms": 19160,
+          "status": 200,
+          "source": "ai",
+          "dimensions": 4,
+          "tracks": 4,
+          "inputTokens": 1714,
+          "outputTokens": 2272,
+          "cost": 0.0384
+        },
+        {
+          "step": "创建面试",
+          "ms": 2500,
+          "ok": true
+        },
+        {
+          "step": "面试多轮问答",
+          "turns": 5,
+          "totalMs": 10459,
+          "avgMs": 2092,
+          "gotQuestion": true
+        },
+        {
+          "step": "复盘报告",
+          "ms": 15945,
+          "status": 200,
+          "ok": true,
+          "overallScore": 28
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "steps": [
+        {
+          "step": "首页加载",
+          "ms": 2789,
+          "status": 200,
+          "bytes": 75938
+        },
+        {
+          "step": "看板/岗位数据",
+          "ms": 387,
+          "subcategories": 64,
+          "version": 2
+        },
+        {
+          "step": "简历诊断",
+          "ms": 22109,
+          "status": 200,
+          "source": "ai",
+          "fixes": 14,
+          "inputTokens": 1698,
+          "outputTokens": 3390,
+          "cost": 0.0534
+        },
+        {
+          "step": "岗位追问链",
+          "ms": 26176,
+          "status": 200,
+          "source": "ai",
+          "dimensions": 4,
+          "tracks": 8,
+          "inputTokens": 1714,
+          "outputTokens": 3604,
+          "cost": 0.0564
+        },
+        {
+          "step": "创建面试",
+          "ms": 497,
+          "ok": true
+        },
+        {
+          "step": "面试多轮问答",
+          "turns": 5,
+          "totalMs": 10599,
+          "avgMs": 2120,
+          "gotQuestion": true
+        },
+        {
+          "step": "复盘报告",
+          "ms": 25611,
+          "status": 200,
+          "ok": true,
+          "overallScore": 23
+        }
+      ]
+    },
+    {
+      "run": 3,
+      "steps": [
+        {
+          "step": "首页加载",
+          "ms": 433,
+          "status": 200,
+          "bytes": 75938
+        },
+        {
+          "step": "看板/岗位数据",
+          "ms": 117,
+          "subcategories": 64,
+          "version": 2
+        },
+        {
+          "step": "简历诊断",
+          "ms": 17831,
+          "status": 200,
+          "source": "ai",
+          "fixes": 13,
+          "inputTokens": 1698,
+          "outputTokens": 2875,
+          "cost": 0.0465
+        },
+        {
+          "step": "岗位追问链",
+          "ms": 25625,
+          "status": 200,
+          "source": "ai",
+          "dimensions": 4,
+          "tracks": 8,
+          "inputTokens": 1714,
+          "outputTokens": 3665,
+          "cost": 0.0572
+        },
+        {
+          "step": "创建面试",
+          "ms": 115,
+          "ok": true
+        },
+        {
+          "step": "面试多轮问答",
+          "turns": 5,
+          "totalMs": 10832,
+          "avgMs": 2166,
+          "gotQuestion": true
+        },
+        {
+          "step": "复盘报告",
+          "ms": 18776,
+          "status": 200,
+          "ok": true,
+          "overallScore": 18
+        }
+      ]
+    }
+  ]
+}

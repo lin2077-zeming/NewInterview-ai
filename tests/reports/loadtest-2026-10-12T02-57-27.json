@@ -1,0 +1,191 @@
+{
+  "base": "http://127.0.0.1:5000",
+  "startedAt": "2026-10-12T02:57:27.831Z",
+  "runs": 3,
+  "turnsPerRun": 5,
+  "problems": [],
+  "metrics": {
+    "totalCost": 0.283,
+    "avgDiagnoseMs": 16739,
+    "avgDiagnoseFixes": 13,
+    "avgChainMs": 22016,
+    "avgChatTurnMs": 1945,
+    "roleDataMs": 90,
+    "aiSourceCount": 3,
+    "fallbackSourceCount": 0,
+    "totalDeliveries": 9
+  },
+  "rawRuns": [
+    {
+      "run": 1,
+      "steps": [
+        {
+          "step": "首页加载",
+          "ms": 120,
+          "status": 200,
+          "bytes": 75938
+        },
+        {
+          "step": "看板/岗位数据",
+          "ms": 244,
+          "subcategories": 64,
+          "version": 2
+        },
+        {
+          "step": "简历诊断",
+          "ms": 16814,
+          "status": 200,
+          "source": "ai",
+          "fixes": 13,
+          "inputTokens": 1698,
+          "outputTokens": 2696,
+          "cost": 0.044
+        },
+        {
+          "step": "岗位追问链",
+          "ms": 17107,
+          "status": 200,
+          "source": "ai",
+          "dimensions": 4,
+          "tracks": 4,
+          "inputTokens": 1714,
+          "outputTokens": 2353,
+          "cost": 0.0395
+        },
+        {
+          "step": "创建面试",
+          "ms": 168,
+          "ok": true
+        },
+        {
+          "step": "面试多轮问答",
+          "turns": 5,
+          "totalMs": 6876,
+          "avgMs": 1375,
+          "gotQuestion": true
+        },
+        {
+          "step": "复盘报告",
+          "ms": 15106,
+          "status": 200,
+          "ok": true,
+          "overallScore": 28
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "steps": [
+        {
+          "step": "首页加载",
+          "ms": 137,
+          "status": 200,
+          "bytes": 75938
+        },
+        {
+          "step": "看板/岗位数据",
+          "ms": 13,
+          "subcategories": 64,
+          "version": 2
+        },
+        {
+          "step": "简历诊断",
+          "ms": 18420,
+          "status": 200,
+          "source": "ai",
+          "fixes": 14,
+          "inputTokens": 1698,
+          "outputTokens": 2996,
+          "cost": 0.0481
+        },
+        {
+          "step": "岗位追问链",
+          "ms": 23658,
+          "status": 200,
+          "source": "ai",
+          "dimensions": 4,
+          "tracks": 8,
+          "inputTokens": 1714,
+          "outputTokens": 3509,
+          "cost": 0.0551
+        },
+        {
+          "step": "创建面试",
+          "ms": 110,
+          "ok": true
+        },
+        {
+          "step": "面试多轮问答",
+          "turns": 5,
+          "totalMs": 13041,
+          "avgMs": 2608,
+          "gotQuestion": true
+        },
+        {
+          "step": "复盘报告",
+          "ms": 17317,
+          "status": 200,
+          "ok": true,
+          "overallScore": 28
+        }
+      ]
+    },
+    {
+      "run": 3,
+      "steps": [
+        {
+          "step": "首页加载",
+          "ms": 114,
+          "status": 200,
+          "bytes": 75938
+        },
+        {
+          "step": "看板/岗位数据",
+          "ms": 13,
+          "subcategories": 64,
+          "version": 2
+        },
+        {
+          "step": "简历诊断",
+          "ms": 14984,
+          "status": 200,
+          "source": "ai",
+          "fixes": 12,
+          "inputTokens": 1698,
+          "outputTokens": 2410,
+          "cost": 0.0402
+        },
+        {
+          "step": "岗位追问链",
+          "ms": 25284,
+          "status": 200,
+          "source": "ai",
+          "dimensions": 4,
+          "tracks": 8,
+          "inputTokens": 1714,
+          "outputTokens": 3582,
+          "cost": 0.0561
+        },
+        {
+          "step": "创建面试",
+          "ms": 124,
+          "ok": true
+        },
+        {
+          "step": "面试多轮问答",
+          "turns": 5,
+          "totalMs": 9264,
+          "avgMs": 1853,
+          "gotQuestion": true
+        },
+        {
+          "step": "复盘报告",
+          "ms": 16368,
+          "status": 200,
+          "ok": true,
+          "overallScore": 18
+        }
+      ]
+    }
+  ]
+}
