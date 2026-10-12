@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mic, BarChart3, RefreshCw, Briefcase, GraduationCap, MessageSquare, FileSearch, Waypoints, Gauge, BookOpen } from "lucide-react";
+import { FEATURE_STUDENT_PATH } from "@/config/features";
 
 export default function HomePage() {
   return (
@@ -53,12 +54,16 @@ export default function HomePage() {
                 求职规划
               </Button>
             </Link>
-            <Link href="/student">
-              <Button size="lg" variant="outline" className="gap-2 px-6 py-6 text-base rounded-xl glass hover:scale-105 transition-all">
-                <GraduationCap className="h-5 w-5" />
-                大学生学习路径规划
-              </Button>
-            </Link>
+            {/* 「大学生学习路径规划」暂时隐藏：该模块是专门为计算机专业设计的，
+                尚未适配新的岗位体系。开关见 src/config/features.ts，代码完整保留 */}
+            {FEATURE_STUDENT_PATH ? (
+              <Link href="/student">
+                <Button size="lg" variant="outline" className="gap-2 px-6 py-6 text-base rounded-xl glass hover:scale-105 transition-all">
+                  <GraduationCap className="h-5 w-5" />
+                  大学生学习路径规划
+                </Button>
+              </Link>
+            ) : null}
           </div>
         </div>
       </section>

@@ -562,6 +562,43 @@ async function checkOfflineCapability() {
   }
 }
 
+// ==================== 7. 功能开关一致性 ====================
+
+async function checkFeatureFlags() {
+  group("7. 功能开关一致性");
+
+  const { FEATURE_STUDENT_PATH } = await import(
+    `file:///${join(ROOT, "src/config/features.ts").replace(/\\/g, "/")}`
+  );
+
+  const client = createClient();
+  const student = await client.json("/student");
+  const home = await client.request("/");
+  const homeHtml = await home.text();
+
+  // 断言"开关状态"与"实际表现"一致 —— 而不是硬编码"必须是 404"。
+  // 这样以后把功能开回来，回归不会误报失败。
+  if (FEATURE_STUDENT_PATH) {
+    expect("开关为开 → /student 可访问", student.status === 200, `HTTP ${student.status}`);
+    expect("开关为开 → 首页有入口", homeHtml.includes("/student"));
+  } else {
+    expect(
+      "开关为关 → /student 不可访问（404）",
+      student.status === 404,
+      `HTTP ${student.status}`
+    );
+    expect(
+      "开关为关 → 首页无入口",
+      !homeHtml.includes("/student") && !homeHtml.includes("大学生学习路径规划")
+    );
+  }
+
+  // 无论开关如何，其余入口都必须还在
+  const others = ["开始面试", "简历诊断", "题库练习（无需 AI）", "求职规划"];
+  const missing = others.filter((k) => !homeHtml.includes(k));
+  expect("其他模块入口不受影响", missing.length === 0, missing.join(" / ") || "全部在位");
+}
+
 // ==================== 主流程 ====================
 
 console.log("职镜 OPC · 端到端回归");
@@ -589,6 +626,7 @@ if (!serverUp) {
   await checkSessionIsolation();
   await checkAiFeatures(knownRoles);
   await checkOfflineCapability();
+  await checkFeatureFlags();
 }
 
 // ---------- 汇总 ----------
