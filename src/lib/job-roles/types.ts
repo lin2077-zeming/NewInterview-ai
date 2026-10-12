@@ -132,6 +132,36 @@ export interface Taxonomy {
   };
 }
 
+// ==================== 远程热更新 ====================
+
+/**
+ * 岗位数据包：远程热更新的传输单位。
+ *
+ * 用**单个数据包**而不是逐个文件拉，是为了原子替换 ——
+ * 否则更新到一半时，岗位列表可能半新半旧。
+ */
+export interface RoleBundle {
+  version: number;
+  updatedAt: string;
+  taxonomy: Taxonomy;
+  /** 子类 id → 内容 */
+  contents: Record<string, RoleContent>;
+}
+
+/** 当前生效数据的来源与版本，用于排查「线上跑的是哪一版」 */
+export interface RoleDataMeta {
+  version: number;
+  updatedAt: string;
+  /** local = 随代码发布的 data/roles/**；remote = 热更新拉下来的数据包 */
+  source: "local" | "remote";
+  /** 最近一次尝试检查远程的时间（成功失败都算） */
+  lastCheckedAt: string | null;
+  /** 最近一次成功换成远程数据的时间 */
+  lastRefreshAt: string | null;
+  lastError: string | null;
+  subcategoryCount: number;
+}
+
 // ==================== 运行时视图 ====================
 
 /**

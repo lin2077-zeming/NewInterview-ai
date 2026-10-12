@@ -54,6 +54,10 @@ next-env.d.ts
 /.clerk/
 .cozeproj/reduction
 
+# ===== 岗位数据包（派生产物，不入库）=====
+# 由 `pnpm roles:bundle` 从 data/roles/** 生成，入库会与源数据漂移
+/data/roles-bundle.json
+
 # ===== 内部文档（不入库）=====
 # 计划书 / 规划书 / 赛事材料等内部工作文档，仅保留在本地
 *计划书*

@@ -1,8 +1,10 @@
 import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { join } from "node:path";
 import type {
+  RoleBundle,
   RoleCategoryView,
   RoleContent,
+  RoleDataMeta,
   RoleDimension,
   RoleOptionView,
   RoleQuestion,
@@ -26,6 +28,7 @@ interface LoadedData {
   taxonomy: Taxonomy;
   /** `<categoryId>.<subId>` → 内容 */
   contents: Map<string, RoleContent>;
+  meta: RoleDataMeta;
 }
 
 let cache: LoadedData | null = null;
@@ -39,14 +42,31 @@ function readJson<T>(path: string): T | null {
   }
 }
 
+function emptyMeta(error: string | null = null): RoleDataMeta {
+  return {
+    version: 0,
+    updatedAt: "",
+    source: "local",
+    lastCheckedAt: null,
+    lastRefreshAt: null,
+    lastError: error,
+    subcategoryCount: 0,
+  };
+}
+
 function load(): LoadedData {
   if (cache) return cache;
 
   const taxonomyPath = join(ROLES_DIR, "taxonomy.json");
   const taxonomy = readJson<Taxonomy>(taxonomyPath);
   if (!taxonomy) {
-    console.error(`[job-roles] 未找到分类索引 ${taxonomyPath}，岗位列表将为空`);
-    cache = { taxonomy: { version: 0, updatedAt: "", categories: [] }, contents: new Map() };
+    const message = `未找到分类索引 ${taxonomyPath}，岗位列表将为空`;
+    console.error(`[job-roles] ${message}`);
+    cache = {
+      taxonomy: { version: 0, updatedAt: "", categories: [] },
+      contents: new Map(),
+      meta: emptyMeta(message),
+    };
     return cache;
   }
 
@@ -65,16 +85,63 @@ function load(): LoadedData {
   }
 
   console.log(
-    `[job-roles] 载入 ${taxonomy.categories.length} 个大类 / ${contents.size} 个子类`
+    `[job-roles] 载入 ${taxonomy.categories.length} 个大类 / ${contents.size} 个子类（本地 v${taxonomy.version}）`
   );
 
-  cache = { taxonomy, contents };
+  cache = {
+    taxonomy,
+    contents,
+    meta: {
+      version: Number(taxonomy.version) || 0,
+      updatedAt: taxonomy.updatedAt ?? "",
+      source: "local",
+      lastCheckedAt: null,
+      lastRefreshAt: null,
+      lastError: null,
+      subcategoryCount: contents.size,
+    },
+  };
   return cache;
 }
 
-/** 远程热更新后调用（I-31） */
+/** 丢弃缓存，下次访问重新读盘（本地数据被改后的重载入口） */
 export function clearRoleCache(): void {
   cache = null;
+}
+
+/**
+ * 应用远程数据包。
+ *
+ * 传 `null` 表示「这次检查没拿到可用数据」—— 只更新检查时间戳，
+ * 保持当前生效的数据不变（回退本地或沿用上一次成功的远程版本）。
+ *
+ * 数据包在校验层已保证合法，这里不再重复校验。
+ */
+export function applyBundle(bundle: RoleBundle | null, error: string | null = null): void {
+  const current = load();
+  const now = new Date().toISOString();
+
+  if (!bundle) {
+    current.meta = { ...current.meta, lastCheckedAt: now, lastError: error };
+    return;
+  }
+
+  current.taxonomy = bundle.taxonomy;
+  current.contents = new Map(Object.entries(bundle.contents));
+  current.meta = {
+    version: Number(bundle.version) || 0,
+    updatedAt: bundle.updatedAt,
+    source: "remote",
+    lastCheckedAt: now,
+    lastRefreshAt: now,
+    lastError: null,
+    subcategoryCount: current.contents.size,
+  };
+}
+
+/** 当前生效数据的来源与版本 */
+export function getRoleDataMeta(): RoleDataMeta {
+  return { ...load().meta };
 }
 
 /**

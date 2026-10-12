@@ -16,6 +16,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { OpcRadar, OpcScoreTrend } from "@/components/studio/OpcCharts";
+import { RoleDataVersion } from "@/components/studio/RoleDataVersion";
 import {
   KIND_META,
   clearOpcEvents,
@@ -304,6 +305,10 @@ export default function StudioPage() {
           </Card>
         </>
       )}
+
+      <div className="grid gap-4 md:grid-cols-2">
+        <RoleDataVersion />
+      </div>
 
       <Card>
         <CardHeader>
