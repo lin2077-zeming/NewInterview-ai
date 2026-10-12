@@ -56,14 +56,24 @@ export function RolePicker({
   const inferredCategoryId = value ? findCategoryIdOf(value) : "";
   const categoryId = inferredCategoryId || pickedCategoryId;
 
+  /**
+   * 是否处于「不指定」状态。
+   *
+   * 必须是**用户显式控制的状态**，不能从 `value === ""` 推导 ——
+   * 那样会让默认值为空的调用方（如简历诊断）一进页面就锁死在"不指定"，
+   * 下拉被禁用，用户根本没法改选具体岗位。这个 bug 真出现过。
+   *
+   * 额外加 `value === ""` 是为了兜住"外部预填了岗位但用户之前勾过不指定"的情况。
+   */
+  const [unspecifiedChecked, setUnspecifiedChecked] = useState(allowEmpty);
+  const unspecified = allowEmpty && unspecifiedChecked && value === "";
+
   const currentCategory = useMemo(
     () => categories.find((category) => category.id === categoryId),
     [categories, categoryId]
   );
 
   const selected = resolveRole(value);
-  /** 勾了「不指定」时，两个下拉都不可用 */
-  const unspecified = allowEmpty && value === "" && categoryId === "";
 
   const optionValue = (role: { id: string; label: string }) =>
     valueMode === "label" ? role.label : role.id;
@@ -74,13 +84,18 @@ export function RolePicker({
         <label className="flex items-center gap-2 text-xs text-muted-foreground">
           <input
             type="checkbox"
-            checked={value === ""}
+            checked={unspecifiedChecked}
             disabled={disabled}
             onChange={(event) => {
-              if (event.target.checked) {
+              const checked = event.target.checked;
+              setUnspecifiedChecked(checked);
+              if (checked) {
+                // 勾上「不指定」：清掉已选岗位与大类
                 onChange("");
                 setPickedCategoryId("");
               }
+              // 取消勾选时**什么都不清**，只是把下拉解锁，让用户去选岗位。
+              // 这里必须有取消分支 —— 少了它下拉永远解不开。
             }}
             className="h-3.5 w-3.5"
           />
@@ -103,6 +118,7 @@ export function RolePicker({
             onChange={(event) => {
               const next = event.target.value;
               setPickedCategoryId(next);
+              setUnspecifiedChecked(false);
               // 换了大类就清空小类，避免留下不属于该大类的岗位
               onChange("");
             }}
