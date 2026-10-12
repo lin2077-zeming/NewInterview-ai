@@ -441,6 +441,77 @@ async function checkAiFeatures(knownRoles) {
   }
 }
 
+
+// ==================== 6. 离线能力（I-13） ====================
+
+async function checkOfflineCapability() {
+  group("6. 离线能力（题库练习 / AI 状态）");
+
+  const client = createClient();
+
+  // AI 状态：在线离线都要能取到
+  {
+    const { status, data } = await client.json("/api/ai-status");
+    expect("GET /api/ai-status 返回 200", status === 200, `HTTP ${status}`);
+    expect("返回 mode 字段（online / offline）", ["online", "offline"].includes(data?.mode), data?.mode);
+    expect("不泄露密钥信息", !JSON.stringify(data ?? {}).toLowerCase().includes("sk-"), "无密钥泄漏");
+  }
+
+  // 题库练习：**不依赖 AI**，这条是降级模式的核心能力
+  {
+    const { status, data } = await client.json(
+      "/api/practice/questions?role=edu-research.k12-teacher"
+    );
+    expect("题库练习接口可用", status === 200, `HTTP ${status}`);
+    expect("返回该岗位的题目", (data?.questions ?? []).length > 0, `${(data?.questions ?? []).length} 题`);
+    expect("返回 4 个考察维度", (data?.dimensions ?? []).length === 4,
+      (data?.dimensions ?? []).map((d) => d.name).join(" / "));
+    expect("题目带题型与难度", Boolean(data?.questions?.[0]?.stage && data?.questions?.[0]?.difficulty));
+  }
+
+  // 参数校验
+  {
+    const bad = await client.json("/api/practice/questions");
+    expect("缺少 role 参数返回 400", bad.status === 400, `HTTP ${bad.status}`);
+
+    const missing = await client.json("/api/practice/questions?role=cs-it.not-exist");
+    expect("不存在的岗位返回 404", missing.status === 404, `HTTP ${missing.status}`);
+  }
+
+  // 题型筛选
+  {
+    const { data } = await client.json(
+      "/api/practice/questions?role=cs-it.backend&stage=algorithm&difficulty=easy"
+    );
+    const allMatch = (data?.questions ?? []).every(
+      (q) => q.stage === "algorithm" && q.difficulty === "easy"
+    );
+    expect("题型 + 难度筛选生效", (data?.questions ?? []).length > 0 && allMatch,
+      `${(data?.questions ?? []).length} 题符合条件`);
+  }
+
+  // 最关键的一条：**每个岗位都有离线内容**，这是降级模式能成立的前提
+  {
+    const roles = await client.json("/api/roles");
+    const all = (roles.data?.categories ?? []).flatMap((c) => c.subcategories);
+    const builtin = all.filter((r) => !r.isCustom);
+    let missing = [];
+    for (const role of builtin) {
+      const res = await client.json(`/api/practice/questions?role=${encodeURIComponent(role.id)}`);
+      const count = (res.data?.questions ?? []).length;
+      const dims = (res.data?.dimensions ?? []).length;
+      if (res.status !== 200 || count === 0 || dims === 0) {
+        missing.push(`${role.id}(题${count}/维${dims})`);
+      }
+    }
+    expect(
+      `全部 ${builtin.length} 个内置岗位都有离线内容`,
+      missing.length === 0,
+      missing.length === 0 ? "逐岗位校验通过" : `缺失: ${missing.slice(0, 5).join(", ")}`
+    );
+  }
+}
+
 // ==================== 主流程 ====================
 
 console.log("职镜 OPC · 端到端回归");
@@ -467,6 +538,7 @@ if (!serverUp) {
   await checkResumeParsing();
   await checkSessionIsolation();
   await checkAiFeatures(knownRoles);
+  await checkOfflineCapability();
 }
 
 // ---------- 汇总 ----------

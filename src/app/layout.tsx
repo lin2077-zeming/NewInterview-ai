@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/layout/Navbar";
+import { OfflineNotice } from "@/components/layout/OfflineNotice";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -39,6 +40,8 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <ThemeProvider>
           <Navbar />
+          {/* 未配置 AI 密钥时出现，说清还能用什么 */}
+          <OfflineNotice />
           <main className="flex-1">{children}</main>
         </ThemeProvider>
       </body>

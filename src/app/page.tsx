@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mic, BarChart3, RefreshCw, Briefcase, GraduationCap, MessageSquare, FileSearch, Waypoints, Gauge } from "lucide-react";
+import { Mic, BarChart3, RefreshCw, Briefcase, GraduationCap, MessageSquare, FileSearch, Waypoints, Gauge, BookOpen } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -33,6 +33,12 @@ export default function HomePage() {
               <Button size="lg" variant="outline" className="gap-2 px-6 py-6 text-base rounded-xl glass hover:scale-105 transition-all">
                 <Waypoints className="h-5 w-5" />
                 岗位追问链
+              </Button>
+            </Link>
+            <Link href="/practice">
+              <Button size="lg" variant="outline" className="gap-2 px-6 py-6 text-base rounded-xl glass hover:scale-105 transition-all">
+                <BookOpen className="h-5 w-5" />
+                题库练习（无需 AI）
               </Button>
             </Link>
             <Link href="/studio">

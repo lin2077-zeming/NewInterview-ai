@@ -4,6 +4,8 @@ import {
   stepCountIs,
   type UIMessage,
 } from "ai";
+import { NextResponse } from "next/server";
+import { isAiConfigured } from "@/lib/ai/availability";
 import { interviewModel } from "@/lib/ai/client";
 import { createInterviewTools } from "@/lib/ai/interview-flow";
 import { findJobRole } from "@/lib/roles";
@@ -53,6 +55,19 @@ export async function POST(req: Request) {
   try {
     const admission = await admitAiCall(req);
     if (!admission.ok) return admission.response;
+
+    // 无密钥时不要"先失败再降级"：面试对话本身没有离线替代品，
+    // 直接说清原因并指向题库练习，比抛一堆网络错误有用得多。
+    if (!isAiConfigured()) {
+      return NextResponse.json(
+        {
+          error: "当前为离线模式：未配置 AI 密钥，无法进行 AI 模拟面试。",
+          hint: "可以先使用「题库练习」按岗位刷题 —— 它不需要 AI，功能完全可用。",
+          offline: true,
+        },
+        { status: 503 }
+      );
+    }
 
     const { messages = [], config, mode, interviewId } = (await req.json()) as {
       messages?: UIMessage[];

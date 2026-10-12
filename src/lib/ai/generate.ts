@@ -6,8 +6,10 @@ import {
   fallbackModelLabel,
   type ChatModel,
 } from "@/lib/ai/client";
+import { isAiConfigured } from "@/lib/ai/availability";
 import { estimateCost, type PriceChannel } from "@/lib/ai/cost";
 import { logCost } from "@/lib/ai/cost-log";
+import { AiUnavailableError } from "@/lib/errors";
 import { getSessionId } from "@/lib/session";
 
 export interface ModelResult<T> {
@@ -29,6 +31,13 @@ export async function withModelFallback<T extends { usage?: LanguageModelUsage }
   run: (model: ChatModel) => Promise<T>,
   options: { kind: string }
 ): Promise<ModelResult<T>> {
+  // 主动检测：没配密钥就直接抛，让调用方的离线分支立刻接管。
+  // 不这样做的话每个请求都要先等一次网络失败（十几秒），
+  // 而且日志里全是"调用失败"，真正的原因（没配密钥）反而看不出来。
+  if (!isAiConfigured()) {
+    throw new AiUnavailableError();
+  }
+
   const startedAt = Date.now();
 
   const finish = async (value: T, servedBy: PriceChannel): Promise<ModelResult<T>> => {
