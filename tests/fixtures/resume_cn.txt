@@ -1,0 +1,19 @@
+林泽明
+前端开发工程师 | 13800138000 | lin@example.com | github.com/lin2077-zeming
+
+教育经历
+2022.09 - 2026.06  中山大学  软件工程  本科  绩点 3.7/4.0
+
+项目经历
+校园二手交易平台  前端负责人  2024.03 - 2024.09
+- 使用 React 18 + TypeScript 重构商品列表，首屏加载从 2.4s 降到 0.9s
+- 设计基于 IntersectionObserver 的虚拟列表，支撑 5000+ 条商品流畅滚动
+- 主导接入 WebSocket 实时议价，日活提升 35%
+
+技能栈
+JavaScript / TypeScript / React / Next.js / Node.js / MySQL / Redis / Docker / Linux
+数据结构与算法：熟悉动态规划、二叉树、图论
+
+实习经历
+2024.07 - 2024.09  某科技公司  前端开发实习生
+- 参与中台组件库建设，沉淀 12 个通用组件，被 3 条业务线接入

@@ -473,6 +473,10 @@ export async function diagnoseResumeWithAI(
         model,
         system: getResumeDoctorSystemPrompt(),
         schema: resumeDiagnosisSchema,
+        // 诊断清单动辄十几条，每条含原句/问题/原因/改后句，输出体积偏大。
+        // request-guard 的默认上限 4096 有被截断的风险（截断 → JSON 非法 → 无辜降级），
+        // 这里显式放宽。放宽不会增加成本 —— 只有真正生成才计费。
+        maxOutputTokens: 8000,
         prompt: `请对下面这份简历做逐条诊断。
 
 目标岗位：${roleName}

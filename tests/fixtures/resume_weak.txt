@@ -1,0 +1,19 @@
+张小明
+男 | 21岁 | 13800138000 | xiaoming@example.com
+
+教育经历
+中山大学 软件工程 本科
+
+项目经历
+校园二手交易平台
+- 负责前端页面开发
+- 参与需求讨论和评审
+- 使用 React 完成商品列表和详情页
+- 优化了页面加载性能
+- 帮助同学解决了一个兼容性问题
+
+技能
+JavaScript、TypeScript、React、Vue、Node.js、Java、Python、MySQL、Redis、Docker、Linux、Git、HTML、CSS、Webpack、Vite、Nginx
+
+自我评价
+学习能力强，认真负责，有责任心，团队合作意识强，能吃苦耐劳。

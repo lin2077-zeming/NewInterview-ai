@@ -168,5 +168,7 @@ export const questionChainSchema = z.object({
     .array(questionChainDimensionSchema)
     .min(4)
     .max(6)
-    .describe("4-6 个考察维度，按重要度排序"),
+    .describe(
+      "4-6 个考察维度，按重要度排序。若用户消息中给出了该岗位已整理的维度，优先沿用其名称与顺序"
+    ),
 });

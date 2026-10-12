@@ -10,7 +10,9 @@
     "roles:validate": "node --experimental-strip-types scripts/validate-roles.mjs",
     "roles:validate:strict": "node --experimental-strip-types scripts/validate-roles.mjs --strict",
     "roles:bundle": "node --experimental-strip-types scripts/build-roles-bundle.mjs",
-    "roles:generate": "node --experimental-strip-types scripts/generate-roles.mjs"
+    "roles:generate": "node --experimental-strip-types scripts/generate-roles.mjs",
+    "regression": "node --experimental-strip-types scripts/regression.mjs",
+    "regression:offline": "node --experimental-strip-types scripts/regression.mjs --offline"
   },
   "dependencies": {
     "@ai-sdk/deepseek": "^2.0.35",

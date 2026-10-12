@@ -159,6 +159,10 @@ export async function generateQuestionChainWithAI(input: {
         model,
         system: getQuestionChainSystemPrompt(),
         schema: questionChainSchema,
+        // 追问链的输出体积天然偏大（4-6 维度 × 1-2 条链 × 3 层节点），
+        // request-guard 的默认上限 4096 会把 JSON 截断成非法结构，
+        // 表现为偶发 "could not parse the response" 然后无辜降级。这里显式放宽。
+        maxOutputTokens: 8000,
         prompt: buildQuestionChainUserPrompt({
           roleLabel: role.label,
           roleDescription: role.description,
@@ -166,6 +170,10 @@ export async function generateQuestionChainWithAI(input: {
           companyName: company?.name,
           companyStyle: company?.style,
           level: input.level,
+          // 把该岗位已整理的 4 个维度交给模型**沿用并深化**。
+          // 不给的话模型会自己另起一套，人工整理的维度就白费了，
+          // 而且同一岗位会出现"离线 4 维度、在线 6 维度"的不一致。
+          seedDimensions: role.dimensions?.map((d) => ({ name: d.name, why: d.why })),
         }),
       }),
     { kind: "chain_generate" }
@@ -173,18 +181,60 @@ export async function generateQuestionChainWithAI(input: {
 
   const { object, usage } = value;
 
-  const dimensions: QuestionChainDimension[] = object.dimensions
-    .map((dimension) => ({
-      name: dimension.name,
-      why: dimension.why,
-      weight: dimension.weight,
-      tracks: dimension.tracks
-        .filter((track) => track.nodes.length > 0)
-        .map((track) => toTrack(track.topic, track.nodes)),
-    }))
-    .filter((dimension) => dimension.tracks.length > 0);
+  /** 把模型返回的一个维度转成出参格式 */
+  const toDimension = (dimension: (typeof object.dimensions)[number]): QuestionChainDimension => ({
+    name: dimension.name,
+    why: dimension.why,
+    weight: dimension.weight,
+    tracks: dimension.tracks
+      .filter((track) => track.nodes.length > 0)
+      .map((track) => toTrack(track.topic, track.nodes)),
+  });
 
-  if (dimensions.length < 4) return null;
+  /**
+   * 维度对齐。
+   *
+   * 为什么要在代码里对齐，而不是靠 schema 约束模型输出 4 个：
+   * 实测把 schema 收紧成 length(4) 后，模型只要多输出一个维度就**整体校验失败**，
+   * 直接触发降级 —— 为了一个数量约束把 AI 路径搞坏是不划算的。
+   *
+   * 这里改成：schema 放宽（4-6），由代码**始终按人工整理的维度输出**，
+   * 模型只负责深化每个维度下的追问。这样：
+   * - 离线与在线两条路径的维度永远一致
+   * - 人工整理的维度不会被模型另起一套覆盖掉
+   * - 模型多输出/少输出都不会导致失败
+   */
+  const seeds = role.dimensions ?? [];
+  let dimensions: QuestionChainDimension[];
+
+  if (seeds.length > 0) {
+    const used = new Set<number>();
+    const picked = object.dimensions
+      .map(toDimension)
+      .filter((d) => d.tracks.length > 0);
+
+    dimensions = seeds.map((seed) => {
+      // 先按名称匹配，匹配不上再按顺序取一个没用过的
+      let idx = picked.findIndex((d, j) => !used.has(j) && d.name === seed.name);
+      if (idx < 0) idx = picked.findIndex((_, j) => !used.has(j));
+      if (idx < 0) return null;
+      used.add(idx);
+
+      // 名称 / why / 权重一律用人工整理的版本，追问内容用模型深化的版本
+      return {
+        name: seed.name,
+        why: seed.why,
+        weight: seed.weight,
+        tracks: picked[idx].tracks,
+      };
+    }).filter((d): d is QuestionChainDimension => d !== null);
+  } else {
+    dimensions = object.dimensions
+      .map(toDimension)
+      .filter((dimension) => dimension.tracks.length > 0);
+  }
+
+  if (dimensions.length === 0) return null;
 
   return {
     chain: {
