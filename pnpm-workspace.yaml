@@ -1,0 +1,17 @@
+# pnpm 设置。
+#
+# 1) onlyBuiltDependencies —— 允许这些依赖执行 postinstall 构建脚本。
+#    pnpm 10+ 默认拦截，pnpm 11+ 甚至因此让 install 以退出码 1 失败。
+# 2) strictDepBuilds: false —— 万一上面的名单没覆盖到（依赖升级新增了带
+#    构建脚本的包），退化成**警告**而不是让 install 直接失败。
+#    实测这些包的构建脚本即使不跑，pnpm build / dev 也完全正常
+#    （运行时用的是预编译的 @libsql/client，不是 better-sqlite3）。
+onlyBuiltDependencies:
+  - "@clerk/shared"
+  - better-sqlite3
+  - esbuild
+  - msw
+  - sharp
+  - unrs-resolver
+
+strictDepBuilds: false

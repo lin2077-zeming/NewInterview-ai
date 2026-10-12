@@ -2,7 +2,6 @@
   "name": "zhijing-opc",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@12.10.1",
   "engines": {
     "node": ">=20.9.0",
     "pnpm": ">=9"
@@ -62,15 +61,5 @@
     "eslint-config-next": "16.2.6",
     "tailwindcss": "^4",
     "typescript": "^5"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@clerk/shared",
-      "better-sqlite3",
-      "esbuild",
-      "msw",
-      "sharp",
-      "unrs-resolver"
-    ]
   }
 }
