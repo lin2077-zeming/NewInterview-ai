@@ -164,8 +164,38 @@ console.log("\n2. 岗位追问链");
   expect("切换大类会清空子类选择", (await page.$eval("#chain-sub", (e) => e.value)) === "");
 }
 
-// ========== 3. 题库练习：无 AI 也能用 ==========
-console.log("\n3. 题库练习（离线模式的主要载体）");
+// ========== 3. 求职规划：岗位体系已换成两级分类 ==========
+console.log("\n3. 求职规划 · 两级选岗（回归：曾只支持 5 个计算机岗位）");
+{
+  await page.goto(`${BASE}/career`, { waitUntil: "networkidle", timeout: 60000 });
+  await page.waitForFunction(
+    () => document.querySelectorAll("#career-category option").length > 5,
+    { timeout: 30000 }
+  );
+
+  const catCount = (await page.$$eval("#career-category option", (els) => els.length)) - 1;
+  expect("一级大类 ≥ 11（不再是 5 个计算机岗位）", catCount >= 11, `${catCount} 个大类`);
+  expect("默认不预选岗位", (await page.$eval("#career-sub", (e) => e.value)) === "");
+
+  const analyzeBtn = 'button:has-text("分析")';
+  expect("未选岗位时禁止分析", await page.$eval(analyzeBtn, (e) => e.disabled));
+
+  await page.selectOption("#career-category", "edu-research");
+  await page.waitForTimeout(300);
+  await page.selectOption("#career-sub", "edu-research.k12-teacher");
+  await page.waitForTimeout(300);
+
+  const btnText = (await page.textContent(analyzeBtn)).trim();
+  expect("按钮文案带出所选岗位名", btnText.includes("中小学教师"), btnText);
+  expect("选中岗位后允许分析", !(await page.$eval(analyzeBtn, (e) => e.disabled)));
+
+  await page.selectOption("#career-category", "finance-econ");
+  await page.waitForTimeout(300);
+  expect("切换大类清空子类", (await page.$eval("#career-sub", (e) => e.value)) === "");
+}
+
+// ========== 4. 题库练习：无 AI 也能用 ==========
+console.log("\n4. 题库练习（离线模式的主要载体）");
 {
   await page.goto(`${BASE}/practice`, { waitUntil: "networkidle", timeout: 60000 });
   await page.waitForFunction(

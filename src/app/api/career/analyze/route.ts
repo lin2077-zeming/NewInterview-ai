@@ -6,21 +6,13 @@ import { admitAiCall } from "@/lib/rate-limit";
 import { findRoleSync } from "@/lib/job-roles/loader";
 import type { CareerDiagnosis, CareerUserProfile, LearningPath, ParsedResume, SkillGap } from "@/types";
 
-const ROLE_REQUIREMENTS: Record<string, string[]> = {
-  frontend: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "工程化", "性能优化"],
-  backend: ["Java", "Spring Boot", "MySQL", "Redis", "消息队列", "系统设计", "Linux", "Docker"],
-  fullstack: ["TypeScript", "React", "Next.js", "Node.js", "数据库", "API 设计", "部署", "工程化"],
-  algorithm: ["Python", "数据结构", "算法", "机器学习", "深度学习", "PyTorch", "SQL", "模型评估"],
-  product: ["用户研究", "需求分析", "原型设计", "数据分析", "竞品分析", "项目管理", "沟通表达"],
-};
-
 /**
  * 岗位名与技能要求统一从岗位数据加载层取（数据源 `data/roles/**`）。
  * 这里原先还存着一份 ROLE_LABELS 副本，与 `config/question-chains.ts`、`lib/roles.ts`、
  * `lib/ai/resume-diagnosis.ts` 各一份且已开始分叉 —— 现在只留唯一数据源。
  *
- * `ROLE_REQUIREMENTS` 保留为**兜底**：它是按技能关键词做缺口检测用的词表，
- * 与岗位技能要求口径不同，当岗位没有技能要求时才回落到它。
+ * 岗位技能要求一律来自 `data/roles/**`。**不再保留"兜底到前端岗"的词表** ——
+ * 把非计算机岗位当成前端岗来分析，比"没有依据"更糟。
  */
 const LEGACY_ROLE_KEYS: Record<string, string> = {
   backend: "cs-it.backend",
@@ -40,8 +32,8 @@ function roleLabel(targetRole: string): string {
 
 function roleSkills(targetRole: string): string[] {
   const found = findRoleSync(LEGACY_ROLE_KEYS[targetRole] ?? targetRole);
-  if (found && found.skills.length > 0) return found.skills;
-  return ROLE_REQUIREMENTS[targetRole] ?? ROLE_REQUIREMENTS.frontend;
+  // 岗位解析不出来就返回空数组，**不回落到前端岗**
+  return found?.skills ?? [];
 }
 
 const SKILL_KEYWORDS = [
@@ -130,7 +122,7 @@ export async function POST(req: Request) {
 
     const body = (await req.json()) as AnalyzeCareerRequest;
     const rawText = body.rawText?.trim();
-    const targetRole = body.targetRole || "frontend";
+    const targetRole = body.targetRole || "";
     const userProfile = body.userProfile;
 
     if (!rawText) {
@@ -144,7 +136,7 @@ export async function POST(req: Request) {
       );
     }
 
-    if (!isResumeLike(rawText)) {
+    if (!isResumeLike(rawText, roleSkills(targetRole))) {
       return NextResponse.json(
         { error: "这份文件不像简历，请上传包含教育经历、项目经历、技能栈或工作经历的简历文本。" },
         { status: 400 }
@@ -263,11 +255,13 @@ function buildFallbackAnalysis(
   userProfile: CareerUserProfile
 ): AnalyzeCareerResponse {
   const roleName = roleLabel(targetRole);
-  const currentSkills = extractSkills(rawText);
   const requiredSkills = roleSkills(targetRole);
+  const currentSkills = extractSkills(rawText, requiredSkills);
   const currentSet = new Set(currentSkills.map((skill) => skill.toLowerCase()));
   const missingSkills = requiredSkills.filter((skill) => !currentSet.has(skill.toLowerCase()));
-  const matchRate = Math.round(((requiredSkills.length - missingSkills.length) / requiredSkills.length) * 100);
+  const matchRate = requiredSkills.length > 0
+    ? Math.round(((requiredSkills.length - missingSkills.length) / requiredSkills.length) * 100)
+    : 0;
   const focusSkills = missingSkills.length > 0 ? missingSkills : requiredSkills.slice(0, 3);
   const gap = { currentSkills, requiredSkills, missingSkills, matchRate };
 
@@ -393,19 +387,29 @@ function buildCoreProblem(profile: CareerUserProfile, missingSkills: string[], r
   return `你已经具备部分 ${roleName} 相关基础，关键是把简历能力、真实状态和岗位要求对齐到可验证的项目成果。`;
 }
 
-function extractSkills(rawText: string) {
+/**
+ * 从简历文本里提取技能。
+ *
+ * `hints` 是目标岗位的技能要求 —— 必须带上：教师、会计、护士的简历
+ * 在只有计算机关键词的词表里会一个技能都匹配不到，技能缺口分析就失去意义了。
+ */
+function extractSkills(rawText: string, hints: string[] = []) {
   const lowerText = rawText.toLowerCase();
-  const skills = SKILL_KEYWORDS.filter((skill) => lowerText.includes(skill.toLowerCase()));
+  const pool = [...new Set([...hints, ...SKILL_KEYWORDS])].filter(Boolean);
+  const skills = pool.filter((skill) => lowerText.includes(skill.toLowerCase()));
   return skills.length > 0 ? skills : ["沟通表达", "项目经历", "学习能力"];
 }
 
-function isResumeLike(rawText: string) {
+function isResumeLike(rawText: string, hints: string[] = []) {
   const normalizedText = rawText.toLowerCase();
   const cleanLength = normalizedText.replace(/\s/g, "").length;
   const signalCount = RESUME_SIGNAL_KEYWORDS.filter((keyword) =>
     normalizedText.includes(keyword.toLowerCase())
   ).length;
-  const skillCount = SKILL_KEYWORDS.filter((skill) =>
+  // 技能命中同样带上目标岗位的词 —— 否则非计算机简历可能因为
+  // "没命中任何计算机技能"而被误判成不是简历
+  const hintPool = [...new Set([...hints, ...SKILL_KEYWORDS])].filter(Boolean);
+  const skillCount = hintPool.filter((skill) =>
     normalizedText.includes(skill.toLowerCase())
   ).length;
   const hasContactSignal = /[\w.-]+@[\w.-]+\.\w+|1[3-9]\d{9}/.test(rawText);

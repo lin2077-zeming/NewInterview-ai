@@ -10,6 +10,8 @@ import { ResumeUploader } from "@/components/resume/ResumeUploader";
 import { SkillGapChart } from "@/components/career/SkillGapChart";
 import { LearningPath } from "@/components/career/LearningPath";
 import { CareerExportButtons } from "@/components/career/CareerExportButtons";
+import { RolePicker } from "@/components/roles/RolePicker";
+import { useRoleTaxonomy } from "@/hooks/use-role-taxonomy";
 import {
   EMPTY_CAREER_PROFILE,
   isCareerProfileComplete,
@@ -38,20 +40,13 @@ interface CareerAnalysis {
   source: "ai" | "fallback";
 }
 
-const TARGET_ROLES = [
-  { value: "frontend", label: "前端开发工程师" },
-  { value: "backend", label: "后端开发工程师" },
-  { value: "fullstack", label: "全栈开发工程师" },
-  { value: "algorithm", label: "算法工程师" },
-  { value: "product", label: "产品经理" },
-];
-
 export function CareerPlanner() {
   const router = useRouter();
   const [userProfile, setUserProfile] = useState<CareerUserProfile>(EMPTY_CAREER_PROFILE);
   const [fileName, setFileName] = useState("");
   const [resumeText, setResumeText] = useState("");
-  const [targetRole, setTargetRole] = useState("frontend");
+  // 默认不预选：岗位体系覆盖 11 大类 / 64 个岗位，预选一个计算机岗位是有偏的
+  const [targetRole, setTargetRole] = useState("");
   const [analysis, setAnalysis] = useState<CareerAnalysis | null>(null);
   const [savedAnalysis, setSavedAnalysis] = useState<SavedCareerAnalysis | null>(null);
   const [isReading, setIsReading] = useState(false);
@@ -60,9 +55,11 @@ export function CareerPlanner() {
   const [warnings, setWarnings] = useState<string[]>([]);
   const [parseInfo, setParseInfo] = useState<{ fileType: string; pages?: number } | null>(null);
 
+  // 岗位名一律从 data/roles 的岗位数据解析 —— 不再维护第二份岗位清单
+  const { resolveRole } = useRoleTaxonomy();
   const selectedRoleLabel = useMemo(
-    () => TARGET_ROLES.find((role) => role.value === targetRole)?.label ?? "目标岗位",
-    [targetRole]
+    () => resolveRole(targetRole)?.label ?? "目标岗位",
+    [targetRole, resolveRole]
   );
 
   const profileComplete = useMemo(() => isCareerProfileComplete(userProfile), [userProfile]);
@@ -237,23 +234,17 @@ export function CareerPlanner() {
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
-            <label className="block text-sm font-medium" htmlFor="target-role">
-              目标岗位
-            </label>
-            <select
-              id="target-role"
+            <RolePicker
               value={targetRole}
-              onChange={(event) => setTargetRole(event.target.value)}
-              className="h-9 w-full rounded-lg border border-input bg-background px-3 text-sm outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
+              onChange={setTargetRole}
               disabled={isAnalyzing}
+              idPrefix="career"
+            />
+            <Button
+              className="w-full"
+              onClick={handleAnalyze}
+              disabled={isReading || isAnalyzing || !targetRole}
             >
-              {TARGET_ROLES.map((role) => (
-                <option key={role.value} value={role.value}>
-                  {role.label}
-                </option>
-              ))}
-            </select>
-            <Button className="w-full" onClick={handleAnalyze} disabled={isReading || isAnalyzing}>
               {isAnalyzing ? (
                 <>
                   <Loader2 className="h-4 w-4 animate-spin" />

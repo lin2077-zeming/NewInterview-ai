@@ -406,6 +406,56 @@ async function checkAiFeatures(knownRoles) {
     }
   }
 
+  // --- 求职规划：非计算机岗位不该算成计算机技能 ---
+  {
+    const client = createClient();
+    const TEACHER_RESUME = [
+      "李小明",
+      "教育背景：华南师范大学 小学教育专业 本科 2022-2026",
+      "实习经历：2025年3-6月在广州市某小学实习，担任三年级数学实习教师",
+      "技能：普通话二级甲等、教师资格证（小学）、熟练使用希沃白板",
+      "荣誉：校级师范生教学技能大赛二等奖",
+      "项目：参与小学数学校本课程开发，负责教学设计部分",
+      "邮箱：lixiaoming@example.com",
+    ].join("\n");
+
+    const PROFILE = {
+      educationStage: "本科在读",
+      major: "小学教育",
+      experienceLevel: "有实习经历",
+      currentStatus: "大四正在求职",
+      targetTimeline: "3-6个月",
+      preference: "一线城市公办小学",
+      dailyStudyTime: "每天2小时",
+      selfRatedStrengths: "教学设计与课堂表达",
+      painPoints: "不确定自己的技能差距在哪",
+      constraints: "需要兼顾毕业设计",
+    };
+
+    const { status, data } = await client.postJson("/api/career/analyze", {
+      rawText: TEACHER_RESUME,
+      targetRole: "edu-research.k12-teacher",
+      fileName: "teacher.txt",
+      userProfile: PROFILE,
+    });
+
+    if (isRateLimited(status, data)) {
+      skip("求职规划（教师岗）", "撞上限流");
+    } else if (!expect("求职规划返回 200", status === 200, `HTTP ${status} ${data?.error ?? ""}`)) {
+      // 已记录
+    } else {
+      const required = data.gap?.requiredSkills ?? [];
+      expect("给出目标岗位的技能要求", required.length > 0, `${required.length} 项`);
+
+      const CS_ONLY = ["React", "Vue", "JavaScript", "Java", "Spring Boot", "MySQL", "Redis", "PyTorch", "Next.js"];
+      const leaks = required.filter((s) => CS_ONLY.some((c) => s.includes(c)));
+      expect("教师岗技能要求零计算机泄漏", leaks.length === 0, leaks.join(" / ") || "无泄漏");
+
+      const current = data.gap?.currentSkills ?? [];
+      expect("从教师简历里提取出了教师相关技能", current.length > 0, current.slice(0, 3).join(" / "));
+    }
+  }
+
   // --- 面试排题不串岗 ---
   {
     const client = createClient();
