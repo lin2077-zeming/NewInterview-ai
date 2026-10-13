@@ -15,6 +15,7 @@
  * 用户根本没法选具体岗位。这类 bug 只能靠真实浏览器点出来。
  */
 
+import { readFileSync } from "node:fs";
 const argv = process.argv.slice(2);
 function argValue(name) {
   const i = argv.indexOf(name);
@@ -82,6 +83,31 @@ try {
 }
 
 const page = await browser.newPage({ viewport: { width: 1280, height: 1000 } });
+
+// 反馈数据基线（见文末的污染护栏）
+let feedbackCountBefore = null;
+{
+  const token =
+    process.env.ADMIN_TOKEN?.trim() ||
+    (() => {
+      try {
+        const line = readFileSync(".env.local", "utf8")
+          .split(/\r?\n/)
+          .find((l) => l.startsWith("ADMIN_TOKEN="));
+        return line ? line.slice("ADMIN_TOKEN=".length).trim() : null;
+      } catch {
+        return null;
+      }
+    })();
+  if (token) {
+    try {
+      const r = await fetch(`${BASE}/api/feedback`, { headers: { authorization: `Bearer ${token}` } });
+      if (r.ok) feedbackCountBefore = (await r.json())?.summary?.total ?? null;
+    } catch {
+      // 取不到就跳过护栏
+    }
+  }
+}
 const consoleErrors = [];
 page.on("pageerror", (e) => consoleErrors.push(`pageerror: ${e.message}`));
 page.on("console", (m) => {
@@ -264,7 +290,62 @@ console.log("\n5. 题库练习（离线模式的主要载体）");
   expect("每题可展开自测参考", toggles.length > 0, `${toggles.length} 个可展开`);
 }
 
-// ========== 6. 结果页快捷反馈条（需 --ai，会调 AI）==========
+// ========== 6. 全局返回键 ==========
+console.log("\n6. 全局返回键");
+{
+  const backBtn = 'button[aria-label="返回上一页"]';
+
+  await page.goto(`${BASE}/`, { waitUntil: "networkidle", timeout: 60000 });
+  await page.waitForTimeout(500);
+  expect("首页不显示返回键（无处可返回）", (await page.locator(backBtn).count()) === 0);
+  expect(
+    "logo 带「返回首页」提示（原先没有任何提示说明它能点）",
+    (await page.locator('a[aria-label="返回首页"]').count()) === 1
+  );
+
+  const subPages = [
+    ["/resume", "简历诊断"], ["/chain", "岗位追问链"], ["/practice", "题库练习"],
+    ["/career", "求职规划"], ["/feedback", "试用反馈"], ["/profile", "个人信息"],
+  ];
+  let missing = [];
+  for (const [path, name] of subPages) {
+    await page.goto(BASE + path, { waitUntil: "networkidle", timeout: 60000 });
+    await page.waitForTimeout(350);
+    if ((await page.locator(backBtn).count()) === 0) missing.push(name);
+  }
+  expect("各子页面都有返回键", missing.length === 0, missing.join(" / ") || `${subPages.length} 个页面全有`);
+
+  // 关键路径：从结果页进反馈表后，返回应回到**来源页**而不是首页
+  await page.goto(`${BASE}/`, { waitUntil: "networkidle", timeout: 60000 });
+  await page.evaluate(() => sessionStorage.removeItem("zhijing-nav-stack"));
+  await page.goto(`${BASE}/resume`, { waitUntil: "networkidle", timeout: 60000 });
+  await page.waitForTimeout(400);
+  await page.goto(`${BASE}/feedback?module=简历诊断`, { waitUntil: "networkidle", timeout: 60000 });
+  await page.waitForTimeout(700);
+
+  await page.click(backBtn);
+  await page.waitForTimeout(1400);
+  expect("从反馈页返回到真实来源页", new URL(page.url()).pathname === "/resume", page.url().replace(BASE, ""));
+
+  await page.click(backBtn);
+  await page.waitForTimeout(1400);
+  expect("继续返回回到首页", new URL(page.url()).pathname === "/");
+
+  // 无来路时（直接打开链接）回首页兜底，而不是原地不动
+  {
+    const ctx2 = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+    const p2 = await ctx2.newPage();
+    await p2.goto(`${BASE}/feedback`, { waitUntil: "networkidle", timeout: 60000 });
+    await p2.waitForTimeout(500);
+    expect("直接打开的子页面也有返回键", (await p2.locator(backBtn).count()) > 0);
+    await p2.click(backBtn);
+    await p2.waitForTimeout(1400);
+    expect("无来路时回首页兜底", new URL(p2.url()).pathname === "/");
+    await ctx2.close();
+  }
+}
+
+// ========== 7. 结果页快捷反馈条（需 --ai，会调 AI）==========
 //
 // 这一组要真的生成 AI 结果才能验证"反馈条出现在结果旁边"，
 // 因此**默认跳过**：它既慢又要花钱，不该拖累常规检查。
@@ -273,7 +354,7 @@ console.log("\n5. 题库练习（离线模式的主要载体）");
 // 刻意只验证"是否出现"，**不点击提交** —— 点了会在 iterations 表里留下
 // 一条非真实用户的记录，而那张表的数据要用于赛事材料，不能被测试污染。
 if (argv.includes("--ai")) {
-  console.log("\n6. 结果页快捷反馈条（--ai）");
+  console.log("\n7. 结果页快捷反馈条（--ai）");
 
   const RESUME_TEXT = [
     "张三",
@@ -409,6 +490,52 @@ if (argv.includes("--ai")) {
       expect("面试复盘 · 反馈条位于报告内容之后", order.prompt > order.title && order.title >= 0,
         `标题@${order.title} 反馈@${order.prompt}`);
     }
+  }
+}
+
+// ========== 反馈数据污染护栏 ==========
+//
+// `iterations` 表的数据要用于赛事材料，**不得混入测试产生的记录**。
+// 这个检查在运行前后各读一次样本数，涨了就判定失败 —— 比靠人记得清理可靠。
+//
+// 需要 ADMIN_TOKEN（读环境变量，或从 .env.local 兜底读）。
+// 拿不到令牌就跳过并说明，不阻塞检查。
+{
+  const readToken = () => {
+    if (process.env.ADMIN_TOKEN?.trim()) return process.env.ADMIN_TOKEN.trim();
+    try {
+      const raw = readFileSync(".env.local", "utf8");
+      const line = raw.split(/\r?\n/).find((l) => l.startsWith("ADMIN_TOKEN="));
+      return line ? line.slice("ADMIN_TOKEN=".length).trim() : null;
+    } catch {
+      return null;
+    }
+  };
+
+  const token = readToken();
+  const countFeedback = async () => {
+    if (!token) return null;
+    try {
+      const r = await fetch(`${BASE}/api/feedback`, { headers: { authorization: `Bearer ${token}` } });
+      if (!r.ok) return null;
+      return (await r.json())?.summary?.total ?? null;
+    } catch {
+      return null;
+    }
+  };
+
+  const after = await countFeedback();
+  if (after === null) {
+    console.log("\n反馈数据护栏：SKIP（未取到 ADMIN_TOKEN，无法读取样本数）");
+  } else if (feedbackCountBefore === null) {
+    console.log(`\n反馈数据护栏：本次运行前未能读取，当前样本数 ${after}`);
+  } else {
+    const grew = after - feedbackCountBefore;
+    expect(
+      "本次检查未污染真实反馈数据",
+      grew === 0,
+      grew === 0 ? `样本数保持 ${after}` : `❌ 增加了 ${grew} 条（${feedbackCountBefore} → ${after}）`
+    );
   }
 }
 
