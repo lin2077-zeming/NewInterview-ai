@@ -66,7 +66,7 @@ export default function HomePage() {
       <section className="py-20 px-4 bg-muted/30">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-3">为什么选择 职镜 OPC</h2>
+            <h2 className="text-3xl font-bold mb-3">为什么选择 职镜</h2>
             <p className="text-muted-foreground">全流程 AI 驱动的面试训练与职业规划平台</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">

@@ -14,7 +14,7 @@ export function Navbar() {
       <div className="w-full flex items-center justify-between h-14 px-6">
         <Link href="/" className="flex items-center gap-2 font-semibold text-lg group">
           <GraduationCap className="h-6 w-6 text-primary transition-transform group-hover:scale-110" />
-          <span className="gradient-text">职镜 OPC</span>
+          <span className="gradient-text">职镜</span>
         </Link>
         <nav className="flex items-center gap-1">
           <Button

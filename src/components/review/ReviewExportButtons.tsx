@@ -17,7 +17,7 @@ function generateMarkdown(report: ReviewReport): string {
   const l: string[] = [];
   l.push(`# 面试复盘报告`);
   l.push("");
-  l.push(`> 由 职镜 OPC 生成`);
+  l.push(`> 由 职镜 生成`);
   l.push("");
   l.push(`## 综合评分`);
   l.push("");
@@ -96,7 +96,7 @@ async function generateDocx(report: ReviewReport): Promise<Blob> {
 
   children.push(
     new Paragraph({
-      children: [new TextRun({ text: "由 职镜 OPC 生成", italics: true, color: "888888", size: 20 })],
+      children: [new TextRun({ text: "由 职镜 生成", italics: true, color: "888888", size: 20 })],
       alignment: AlignmentType.CENTER,
       spacing: { after: 400 },
     })

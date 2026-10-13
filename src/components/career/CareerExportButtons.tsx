@@ -25,7 +25,7 @@ function generateMarkdown(data: CareerExportData): string {
   const l: string[] = [];
   l.push(`# ${data.roleLabel} — 求职规划报告`);
   l.push("");
-  l.push(`> 由 职镜 OPC 生成`);
+  l.push(`> 由 职镜 生成`);
   l.push("");
 
   l.push("## 简历解析");
@@ -100,7 +100,7 @@ async function generateDocx(data: CareerExportData): Promise<Blob> {
   const children: Paragraph[] = [];
 
   children.push(new Paragraph({ text: `${data.roleLabel} — 求职规划报告`, heading: HeadingLevel.TITLE, alignment: AlignmentType.CENTER, spacing: { after: 200 } }));
-  children.push(new Paragraph({ children: [new TextRun({ text: "由 职镜 OPC 生成", italics: true, color: "888888", size: 20 })], alignment: AlignmentType.CENTER, spacing: { after: 400 } }));
+  children.push(new Paragraph({ children: [new TextRun({ text: "由 职镜 生成", italics: true, color: "888888", size: 20 })], alignment: AlignmentType.CENTER, spacing: { after: 400 } }));
 
   children.push(new Paragraph({ text: "简历解析", heading: HeadingLevel.HEADING_1, spacing: { after: 200 } }));
   if (data.resume.skills.length > 0) {

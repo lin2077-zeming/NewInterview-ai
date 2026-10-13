@@ -17,7 +17,7 @@ import { computeOpcMetrics, formatCost, loadOpcEvents } from "@/lib/opc-metrics"
  * 后台读取需管理员令牌；跟随「删除我的数据」一并清除。
  */
 
-const MODULES = ["简历诊断", "岗位追问链", "AI 面试陪练", "面试复盘", "题库练习", "OPC 运营看板"];
+const MODULES = ["简历诊断", "岗位追问链", "AI 面试陪练", "面试复盘", "题库练习"];
 
 const VERDICTS: Array<{ value: string; label: string; hint: string }> = [
   { value: "good", label: "很有用", hint: "会推荐给同学" },

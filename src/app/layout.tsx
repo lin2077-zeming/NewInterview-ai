@@ -6,7 +6,7 @@ import { StudioEntry } from "@/components/layout/StudioEntry";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "职镜 OPC - AI 模拟面试",
+  title: "职镜 - AI 求职训练工作台",
   description: "模拟大厂真实面试 × 反转视角训练 × 深度复盘报告",
 };
 

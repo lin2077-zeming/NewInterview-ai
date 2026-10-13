@@ -331,7 +331,7 @@ function buildFallbackAnalysis(
           description: "按 STAR 法则重写项目介绍，准备高频题、追问题和量化成果。",
           resources: [
             { name: "Cracking the Coding Interview", url: "https://www.crackingthecodinginterview.com/", type: "book" },
-            { name: "职镜 OPC 模拟面试", url: "/interview/new", type: "project" },
+            { name: "职镜模拟面试", url: "/interview/new", type: "project" },
           ],
           estimatedDuration: "1-2 周",
         },
