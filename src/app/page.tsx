@@ -136,28 +136,38 @@ export default function HomePage() {
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card className="group glass border-0 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-              <CardHeader>
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                  <GraduationCap className="h-6 w-6 text-primary" />
-                </div>
-                <CardTitle className="text-lg">大学生学习路径</CardTitle>
-                <CardDescription>
-                  针对计算机专业大学生，AI 生成 4 阶段学习路线图，推荐课程、书籍与实践项目
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="group glass border-0 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-              <CardHeader>
-                <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                  <MessageSquare className="h-6 w-6 text-accent-foreground" />
-                </div>
-                <CardTitle className="text-lg">AI 职业顾问</CardTitle>
-                <CardDescription>
-                  实时对话 AI 职业规划师，解答职业困惑，分析行业趋势，获取个性化建议
-                </CardDescription>
-              </CardHeader>
-            </Card>
+            {/*
+              * 「大学生学习路径」与「AI 职业顾问」两张卡片随功能开关一起隐藏。
+              * 这两个特性的实现在 /student 页面内（AI 职业顾问是页面里的对话组件，
+              * 不是独立功能），该模块因只覆盖计算机专业、来不及适配新岗位体系而被关闭。
+              * 用开关联动而不是直接删：以后模块开回来时卡片会自动恢复，不会漏。
+              */}
+            {FEATURE_STUDENT_PATH ? (
+              <>
+                <Card className="group glass border-0 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                  <CardHeader>
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                      <GraduationCap className="h-6 w-6 text-primary" />
+                    </div>
+                    <CardTitle className="text-lg">大学生学习路径</CardTitle>
+                    <CardDescription>
+                      针对计算机专业大学生，AI 生成 4 阶段学习路线图，推荐课程、书籍与实践项目
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+                <Card className="group glass border-0 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                  <CardHeader>
+                    <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                      <MessageSquare className="h-6 w-6 text-accent-foreground" />
+                    </div>
+                    <CardTitle className="text-lg">AI 职业顾问</CardTitle>
+                    <CardDescription>
+                      实时对话 AI 职业规划师，解答职业困惑，分析行业趋势，获取个性化建议
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              </>
+            ) : null}
           </div>
         </div>
       </section>

@@ -593,10 +593,30 @@ async function checkFeatureFlags() {
     );
   }
 
+  // 功能卡片区也要跟开关一致 —— 卡片宣传了打不开的功能，比没入口更糟
+  // （用户会以为产品坏了）。「AI 职业顾问」的实现就在 /student 页面里，同属该模块。
+  const STUDENT_CARDS = ["大学生学习路径", "AI 职业顾问"];
+  if (FEATURE_STUDENT_PATH) {
+    const absent = STUDENT_CARDS.filter((c) => !homeHtml.includes(c));
+    expect("开关为开 → 功能卡片在位", absent.length === 0, absent.join(" / ") || "两张都在");
+  } else {
+    const leaked = STUDENT_CARDS.filter((c) => homeHtml.includes(c));
+    expect(
+      "开关为关 → 功能卡片不出现",
+      leaked.length === 0,
+      leaked.length ? `仍有: ${leaked.join(" / ")}` : "两张均已移除"
+    );
+  }
+
   // 无论开关如何，其余入口都必须还在
   const others = ["开始面试", "简历诊断", "题库练习（无需 AI）", "求职规划"];
   const missing = others.filter((k) => !homeHtml.includes(k));
   expect("其他模块入口不受影响", missing.length === 0, missing.join(" / ") || "全部在位");
+
+  // 保留的 6 张功能卡片（不该被误删）
+  const KEPT_CARDS = ["大厂面试流程", "反转视角", "复盘报告", "岗位追问链", "简历修改清单", "求职路径"];
+  const lost = KEPT_CARDS.filter((c) => !homeHtml.includes(c));
+  expect("其余功能卡片未被误删", lost.length === 0, lost.join(" / ") || "6 张全在");
 }
 
 // ==================== 8. OPC 看板口令门 ====================
