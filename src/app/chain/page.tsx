@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { QuestionChainTree } from "@/components/interview/QuestionChainTree";
 import { RolePicker } from "@/components/roles/RolePicker";
+import { FeedbackPrompt } from "@/components/feedback/FeedbackPrompt";
 import { COMPANY_FLOWS } from "@/config/interview-stages";
 import { recordOpcEvent } from "@/lib/opc-metrics";
 import { clearQuestionChain, loadQuestionChain, saveQuestionChain } from "@/lib/question-chain-store";
@@ -214,6 +215,8 @@ export default function ChainPage() {
           </Card>
 
           <QuestionChainTree chain={chain} companyKey={companyKey} />
+
+          <FeedbackPrompt module="岗位追问链" />
 
           {chain.source === "fallback" ? (
             <p className="text-xs text-muted-foreground">

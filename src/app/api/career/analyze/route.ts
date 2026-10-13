@@ -225,7 +225,7 @@ ${rawText.slice(0, 6000)}
   const gap = normalizeGap(parsed.gap, targetRole, fallback.resume.skills.map((skill) => skill.name));
   const skills = Array.isArray(resume?.skills) ? resume.skills as ParsedResume["skills"] : fallback.resume.skills;
   const experience = Array.isArray(resume?.experience) ? resume.experience as ParsedResume["experience"] : fallback.resume.experience;
-  const steps = Array.isArray(path?.steps) && path.steps.length > 0 ? path.steps as LearningPath["steps"] : fallback.path.steps;
+  const steps = normalizeSteps(path?.steps, fallback.path.steps);
   const diagnosis = normalizeDiagnosis(diagnosisObject, fallback.diagnosis);
 
   return {
@@ -438,6 +438,52 @@ function parseJson(text: string): Record<string, unknown> | null {
       return null;
     }
   }
+}
+
+/**
+ * 学习资源的合法类型。
+ *
+ * 类型定义里写的是联合类型，但 AI 返回的是**未校验的 JSON** ——
+ * 只要它给出 `"video"` / `"article"` 这类意外值，渲染层的
+ * `iconMap[type]` 就是 undefined，React 会抛 "Element type is invalid"
+ * 并把**整个页面**打崩（实测复现过，页面直接变成 "This page couldn't load"）。
+ *
+ * 所以在这里做一次规范化：不认识就归到 `project`，至少不会崩。
+ */
+const RESOURCE_TYPES = ["course", "book", "project"] as const;
+
+function normalizeSteps(input: unknown, fallback: LearningPath["steps"]): LearningPath["steps"] {
+  if (!Array.isArray(input) || input.length === 0) return fallback;
+
+  const steps = input.map((raw, index) => {
+    const step = asRecord(raw);
+    const resources = Array.isArray(step?.resources)
+      ? step.resources.map((item) => {
+          const resource = asRecord(item);
+          const rawType = typeof resource?.type === "string" ? resource.type : "";
+          return {
+            name: typeof resource?.name === "string" && resource.name ? resource.name : "学习资料",
+            url: typeof resource?.url === "string" && resource.url ? resource.url : "#",
+            type: (RESOURCE_TYPES as readonly string[]).includes(rawType)
+              ? (rawType as LearningPath["steps"][number]["resources"][number]["type"])
+              : ("project" as const),
+          };
+        })
+      : [];
+
+    return {
+      order: typeof step?.order === "number" ? step.order : index + 1,
+      title: typeof step?.title === "string" && step.title ? step.title : `阶段 ${index + 1}`,
+      description: typeof step?.description === "string" ? step.description : "",
+      resources,
+      estimatedDuration:
+        typeof step?.estimatedDuration === "string" && step.estimatedDuration
+          ? step.estimatedDuration
+          : "时长待定",
+    };
+  });
+
+  return steps.length > 0 ? steps : fallback;
 }
 
 function normalizeGap(gap: unknown, targetRole: string, currentSkills: string[]): SkillGap {

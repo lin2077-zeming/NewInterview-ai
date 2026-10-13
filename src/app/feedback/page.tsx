@@ -6,6 +6,7 @@ import { CheckCircle2, Loader2, MessageSquareQuote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { computeOpcMetrics, formatCost, loadOpcEvents } from "@/lib/opc-metrics";
+import { FEEDBACK_MODULES, isFeedbackModule } from "@/config/feedback-modules";
 
 /**
  * 试用反馈表。
@@ -17,7 +18,8 @@ import { computeOpcMetrics, formatCost, loadOpcEvents } from "@/lib/opc-metrics"
  * 后台读取需管理员令牌；跟随「删除我的数据」一并清除。
  */
 
-const MODULES = ["简历诊断", "岗位追问链", "AI 面试陪练", "面试复盘", "题库练习"];
+// 场景清单来自共享数据源，避免与结果页的快捷反馈条各写一份而分叉
+const MODULES = FEEDBACK_MODULES;
 
 const VERDICTS: Array<{ value: string; label: string; hint: string }> = [
   { value: "good", label: "很有用", hint: "会推荐给同学" },
@@ -54,6 +56,24 @@ export default function FeedbackPage() {
     // 提交成功后滚到顶部，让用户看到成功提示
     if (done) window.scrollTo({ top: 0, behavior: "smooth" });
   }, [done]);
+
+  /**
+   * 结果页快捷反馈会带 `?module=xxx` 过来，这里预勾选对应模块 ——
+   * 用户从「补充细节 →」点进来时不用再自己找是哪个场景。
+   *
+   * 用 window.location 而不是 useSearchParams：后者会把整页推到客户端渲染、
+   * 还要额外包 Suspense，为一个 query 参数不值得。
+   */
+  useEffect(() => {
+    const from = new URLSearchParams(window.location.search).get("module");
+    if (!from || !isFeedbackModule(from)) return;
+    // 这里用 effect 而不是在 useState 初始化时读 window，是有原因的：
+    // 首屏必须与服务端渲染结果一致，之后再补上 URL 里的参数，
+    // 否则 SSR 渲染 [] 而客户端渲染 [module]，会触发 hydration 不匹配。
+    // 「挂载后同步外部状态」正是 effect 的适用场景，该规则在此不适用。
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setTriedModules((prev) => (prev.includes(from) ? prev : [...prev, from]));
+  }, []);
 
   function toggleModule(name: string) {
     setTriedModules((prev) =>

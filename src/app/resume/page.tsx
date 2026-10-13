@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ResumeUploader } from "@/components/resume/ResumeUploader";
 import { ResumeFixList } from "@/components/resume/ResumeFixList";
+import { FeedbackPrompt } from "@/components/feedback/FeedbackPrompt";
 import { RolePicker } from "@/components/roles/RolePicker";
 import { uploadResumeFile } from "@/lib/upload-client";
 import { recordOpcEvent } from "@/lib/opc-metrics";
@@ -268,6 +269,10 @@ export default function ResumePage() {
           </Card>
 
           <ResumeFixList fixes={result.fixes} acceptedIds={acceptedIds} onToggle={toggleAccepted} />
+
+          {/* 快捷反馈：紧贴 AI 输出之后。只有 result 存在时才渲染，因此
+              加载中 / 报错 / 空结果都不会出现 */}
+          <FeedbackPrompt module="简历诊断" />
 
           {result.source === "fallback" ? (
             <p className="text-xs text-muted-foreground">

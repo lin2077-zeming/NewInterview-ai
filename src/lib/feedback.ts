@@ -20,6 +20,15 @@ export const VERDICT_LABELS: Record<Verdict, string> = {
 };
 
 export interface FeedbackInput {
+  /**
+   * 反馈来源。
+   * - `form`（默认）：完整表单，必须填化名/编号
+   * - `inline`：结果页的快捷反馈（👍/👎），不要求填化名
+   *
+   * 区分开来是为了**不削弱表单的校验**：快捷反馈是降低门槛，
+   * 不是把"必须填化名"这条规则整体干掉。
+   */
+  source?: unknown;
   participant?: unknown;
   participantRole?: unknown;
   triedModules?: unknown;
@@ -57,10 +66,18 @@ function text(value: unknown, max: number): string | undefined {
   return trimmed.slice(0, max);
 }
 
+/** 结果页快捷反馈不填化名时的占位值 —— 仍然不收集真名 */
+const INLINE_PARTICIPANT = "匿名（结果页快捷反馈）";
+
 export async function submitFeedback(input: FeedbackInput): Promise<FeedbackRecord> {
-  const participant = text(input.participant, 30);
+  const inline = input.source === "inline";
+
+  let participant = text(input.participant, 30);
   if (!participant) {
-    throw new FeedbackValidationError("请填写一个化名或编号（不用真名，用于区分不同试用者）。");
+    if (!inline) {
+      throw new FeedbackValidationError("请填写一个化名或编号（不用真名，用于区分不同试用者）。");
+    }
+    participant = INLINE_PARTICIPANT;
   }
 
   const verdict = String(input.verdict ?? "");

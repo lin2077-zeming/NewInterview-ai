@@ -264,6 +264,154 @@ console.log("\n5. 题库练习（离线模式的主要载体）");
   expect("每题可展开自测参考", toggles.length > 0, `${toggles.length} 个可展开`);
 }
 
+// ========== 6. 结果页快捷反馈条（需 --ai，会调 AI）==========
+//
+// 这一组要真的生成 AI 结果才能验证"反馈条出现在结果旁边"，
+// 因此**默认跳过**：它既慢又要花钱，不该拖累常规检查。
+// 开启方式：pnpm ui-check -- --ai
+//
+// 刻意只验证"是否出现"，**不点击提交** —— 点了会在 iterations 表里留下
+// 一条非真实用户的记录，而那张表的数据要用于赛事材料，不能被测试污染。
+if (argv.includes("--ai")) {
+  console.log("\n6. 结果页快捷反馈条（--ai）");
+
+  const RESUME_TEXT = [
+    "张三",
+    "教育背景：中山大学 计算机科学与技术 本科 2022-2026",
+    "实习经历：2025年暑期在某互联网公司实习，参与订单系统后端开发",
+    "项目经历：使用 Java 与 Spring Boot 开发校园二手交易平台后端，熟悉 MySQL 索引与 Redis 缓存",
+    "技能：Java、Spring Boot、MySQL、Redis、Docker、Git",
+    "邮箱：zhangsan@example.com",
+  ].join("\n");
+
+  const promptShown = async () => {
+    const el = page.locator("text=这份结果对你有帮助吗？");
+    return (await el.count()) > 0 && (await el.first().isVisible());
+  };
+
+  // --- 简历诊断 ---
+  {
+    await page.goto(`${BASE}/resume`, { waitUntil: "networkidle", timeout: 60000 });
+    await page.waitForFunction(() => document.querySelectorAll("#resume-category option").length > 5, { timeout: 30000 });
+    expect("简历诊断 · 出结果前不显示反馈条", !(await promptShown()));
+
+    await page.click('button:has-text("直接把简历文字粘贴进来")');
+    await page.waitForTimeout(300);
+    await page.fill("textarea", RESUME_TEXT);
+    await page.click('button:has-text("生成修改清单")');
+    await page.waitForSelector("text=诊断结论", { timeout: 120000 });
+    await page.waitForTimeout(1000);
+    expect("简历诊断 · 出结果后显示反馈条", await promptShown());
+  }
+
+  // --- 岗位追问链 ---
+  // 等待条件用结果树里的层级标签：页面说明文字里也有「及格线」，会误判
+  {
+    await page.goto(`${BASE}/chain`, { waitUntil: "networkidle", timeout: 60000 });
+    await page.waitForFunction(() => document.querySelectorAll("#chain-category option").length > 5, { timeout: 30000 });
+    expect("岗位追问链 · 出结果前不显示反馈条", !(await promptShown()));
+
+    await page.selectOption("#chain-category", "finance-econ");
+    await page.waitForTimeout(300);
+    await page.selectOption("#chain-sub", "finance-econ.accounting-audit");
+    await page.waitForTimeout(300);
+    await page.click('button:has-text("生成追问链")');
+    await page.waitForSelector("text=边界 · 反例", { timeout: 120000 });
+    await page.waitForTimeout(1000);
+    expect("岗位追问链 · 出结果后显示反馈条", await promptShown());
+  }
+
+  // --- 求职规划 ---
+  {
+    await page.goto(`${BASE}/`, { waitUntil: "networkidle", timeout: 60000 });
+    await page.evaluate((p) => localStorage.setItem("zhijing-opc-career-profile", JSON.stringify(p)), {
+      educationStage: "本科在读", major: "计算机科学与技术", experienceLevel: "有实习经历",
+      currentStatus: "大四正在求职", targetTimeline: "3-6个月", targetCity: "广州",
+      preference: "互联网公司", dailyStudyTime: "每天3小时", selfRatedStrengths: "编程与调试",
+      painPoints: "不清楚技能差距", constraints: "要兼顾毕业设计",
+    });
+    await page.goto(`${BASE}/career`, { waitUntil: "networkidle", timeout: 60000 });
+    await page.waitForFunction(() => document.querySelectorAll("#career-category option").length > 5, { timeout: 30000 });
+    expect("求职规划 · 出结果前不显示反馈条", !(await promptShown()));
+
+    await page.setInputFiles('input[type="file"]', "tests/fixtures/resume_weak.txt");
+    await page.waitForTimeout(2500);
+    await page.selectOption("#career-category", "cs-it");
+    await page.waitForTimeout(300);
+    await page.selectOption("#career-sub", "cs-it.backend");
+    await page.waitForTimeout(300);
+    await page.click('button:has-text("分析")');
+    await page.waitForSelector("text=分析结果", { timeout: 150000 });
+    await page.waitForTimeout(1200);
+    expect("求职规划 · 出结果后显示反馈条", await promptShown());
+    // 这条曾经真的崩过整页：AI 返回的资源 type 意外时 ResourceCard 抛
+    // "Element type is invalid"，页面变成 "This page couldn't load"
+    expect("求职规划 · 页面未崩溃", !(await page.textContent("body")).includes("This page couldn"));
+  }
+
+  // --- 面试复盘 ---
+  // 复盘页需要先有一场面试，所以先用接口造数据（create → 5 轮问答 → 生成复盘），
+  // 再用浏览器验证位置。这一段最贵（约 7 次 AI 调用），但复盘页版式最复杂，
+  // 反馈条的位置最容易出问题，值得覆盖。
+  {
+    await page.goto(`${BASE}/`, { waitUntil: "domcontentloaded", timeout: 60000 });
+    const setup = await page.evaluate(async (base) => {
+      const post = async (url, body) => {
+        const r = await fetch(base + url, {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify(body),
+        });
+        return { status: r.status, data: await r.json().catch(() => null) };
+      };
+      const created = await post("/api/interview/create", {
+        config: { role: "后端开发工程师", company: "generic", mode: "normal", stressMode: false, stageIndex: 0 },
+      });
+      const id = created.data?.interviewId;
+      if (!id) return { error: `创建面试失败 HTTP ${created.status}` };
+
+      const messages = [{ id: "m1", role: "user", parts: [{ type: "text", text: "请开始面试" }] }];
+      for (let t = 1; t <= 5; t++) {
+        const r = await fetch(base + "/api/chat", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({
+            messages,
+            config: { role: "后端开发工程师", company: "generic", currentStage: 0 },
+            mode: "normal",
+            interviewId: id,
+          }),
+        });
+        if (!r.ok) break;
+        const text = await r.text();
+        const delta = [...text.matchAll(/"delta":"((?:[^"\\]|\\.)*)"/g)].map((m) => m[1].replace(/\\n/g, "\n"));
+        const assistant = delta.join("").slice(0, 400);
+        messages.push({ id: `a${t}`, role: "assistant", parts: [{ type: "text", text: assistant }] });
+        messages.push({ id: `u${t + 1}`, role: "user", parts: [{ type: "text", text: "我会先梳理需求边界，再设计表结构与接口，注意索引与缓存一致性。" }] });
+      }
+      const review = await post(`/api/interview/review/${id}`, {});
+      return { id, hasReport: Boolean(review.data?.report), reviewStatus: review.status };
+    }, BASE);
+
+    if (!setup.id || !setup.hasReport) {
+      expect("面试复盘 · 复盘报告已生成（前置条件）", false, JSON.stringify(setup));
+    } else {
+      await page.goto(`${BASE}/interview/review/${setup.id}`, { waitUntil: "networkidle", timeout: 90000 });
+      await page.waitForTimeout(2000);
+
+      const shown = await promptShown();
+      expect("面试复盘 · 显示反馈条", shown);
+
+      const order = await page.evaluate(() => {
+        const body = document.body.innerText;
+        return { title: body.indexOf("复盘报告"), prompt: body.indexOf("这份结果对你有帮助吗") };
+      });
+      expect("面试复盘 · 反馈条位于报告内容之后", order.prompt > order.title && order.title >= 0,
+        `标题@${order.title} 反馈@${order.prompt}`);
+    }
+  }
+}
+
 console.log(`\n${"─".repeat(52)}`);
 const passed = results.filter((r) => r.ok).length;
 const failed = results.filter((r) => !r.ok).length;

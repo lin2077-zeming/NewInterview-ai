@@ -11,6 +11,7 @@ import { SkillGapChart } from "@/components/career/SkillGapChart";
 import { LearningPath } from "@/components/career/LearningPath";
 import { CareerExportButtons } from "@/components/career/CareerExportButtons";
 import { RolePicker } from "@/components/roles/RolePicker";
+import { FeedbackPrompt } from "@/components/feedback/FeedbackPrompt";
 import { useRoleTaxonomy } from "@/hooks/use-role-taxonomy";
 import {
   EMPTY_CAREER_PROFILE,
@@ -334,6 +335,10 @@ export function CareerPlanner() {
               <LearningPath steps={analysis.path.steps} />
             </CardContent>
           </Card>
+
+          <div className="lg:col-span-2">
+            <FeedbackPrompt module="求职规划" />
+          </div>
         </div>
         </div>
       ) : null}

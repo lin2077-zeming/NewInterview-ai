@@ -25,6 +25,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ReviewExportButtons } from "@/components/review/ReviewExportButtons";
+import { FeedbackPrompt } from "@/components/feedback/FeedbackPrompt";
 import type { DimensionScores, ReviewReport } from "@/types";
 
 export default function ReviewPage() {
@@ -331,6 +332,10 @@ export default function ReviewPage() {
           ))}
         </CardContent>
       </Card>
+
+      {/* 快捷反馈：放在复盘报告全部内容之后、继续/返回按钮之前。
+          此时用户已经读完报告，正是判断"有没有用"的时刻 */}
+      <FeedbackPrompt module="面试复盘" className="mt-8" />
 
       {/* 继续 / 返回按钮 */}
       <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">

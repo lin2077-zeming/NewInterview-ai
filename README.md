@@ -186,6 +186,7 @@ ANALYSIS_MODEL=deepseek-flash
 pnpm regression          # 端到端回归：数据校验 / 接口 / 简历解析 / 会话隔离 / AI 功能
 pnpm regression:offline  # 同上但跳过要调 AI 的用例（快，不花钱）
 pnpm ui-check            # 浏览器交互检查（两级选岗、离线入口、看板口令门等）
+pnpm ui-check -- --ai    # 同上，并验证结果页反馈条（要调 AI，较慢且计费）
 pnpm loadtest            # 全链路压测与取数（会真实调用 AI 并产生费用）
 pnpm roles:validate      # 岗位数据 54 项校验规则
 ```
@@ -193,6 +194,8 @@ pnpm roles:validate      # 岗位数据 54 项校验规则
 > `ui-check` 依赖 Playwright。它不是项目依赖（体积大、要下浏览器），
 > 所以脚本做成了**能用就跑、不能用自动跳过**，不会阻塞主回归。
 > `regression` 与 `ui-check` 都需要服务先跑起来（`pnpm dev`）。
+> `--ai` 那组刻意**只验证反馈条是否出现、不点击提交** ——
+> 点了会在 `iterations` 表留下非真实用户的记录，而那张表要用于赛事材料。
 
 ## 岗位数据（`data/roles/**`）
 
