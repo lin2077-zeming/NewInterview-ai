@@ -48,6 +48,17 @@ function writeStack(stack: string[]) {
   }
 }
 
+/**
+ * 某些路由的「逻辑上级」不是导航轨迹里的上一页，而是语义上的父页面。
+ *
+ * 典型：面试复盘（/interview/review/[id]）是面试的**终点**，它的上级是
+ * 「创建新面试」（/interview/new），而不是已经结束的面试对话页。
+ * 否则返回键会把用户重新拽进一场已经结束的面试。
+ */
+const PARENT_OVERRIDES: { match: (path: string) => boolean; parent: string }[] = [
+  { match: (path) => /^\/interview\/review\//.test(path), parent: "/interview/new" },
+];
+
 export function BackButton() {
   const pathname = usePathname();
   const router = useRouter();
@@ -63,6 +74,17 @@ export function BackButton() {
   }, [pathname]);
 
   const handleBack = useCallback(() => {
+    // 语义上级覆盖：复盘 → 创建新面试（见 PARENT_OVERRIDES）
+    const override = PARENT_OVERRIDES.find((item) => item.match(pathname));
+    if (override) {
+      const stack = readStack();
+      const idx = stack.lastIndexOf(override.parent);
+      // 轨迹收敛到该父页面，后面的中间页（面试页、复盘页）一并清掉
+      writeStack(idx >= 0 ? stack.slice(0, idx + 1) : [override.parent]);
+      router.push(override.parent);
+      return;
+    }
+
     const stack = readStack();
     // 先把当前页从轨迹里去掉，剩下的最后一层就是来源页
     const trimmed = stack[stack.length - 1] === pathname ? stack.slice(0, -1) : stack;

@@ -143,7 +143,10 @@ export default function InterviewPage() {
       stage: String(currentStageIndex),
       stageId: flow.stages[currentStageIndex]?.id ?? "",
     });
-    router.push(`/interview/review/${interviewId}?${reviewParams.toString()}`);
+    // 复盘是本次面试的终点：用 replace 而非 push，让复盘页在导航历史里
+    // **顶替**面试页。这样左上角返回键会直接回到「创建新面试」，
+    // 而不是重新进入这场已经结束的面试。
+    router.replace(`/interview/review/${interviewId}?${reviewParams.toString()}`);
   }, [interviewId, mode, role, company, currentStageIndex, flow.stages, router]);
 
   const handleToggleMode = useCallback(() => {

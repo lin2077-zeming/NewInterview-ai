@@ -352,7 +352,11 @@ export default function ReviewPage() {
             <Button
               variant="outline"
               size="lg"
-              onClick={() => router.back()}
+              onClick={() =>
+                router.push(
+                  `/interview/${id}?mode=${isReversed ? "reversed" : "normal"}&role=${encodeURIComponent(roleText)}&company=${encodeURIComponent(companyText)}&stage=${stageIndex}`
+                )
+              }
               className="gap-2"
             >
               <ArrowLeft className="h-4 w-4" />

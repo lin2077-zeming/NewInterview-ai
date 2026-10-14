@@ -489,6 +489,15 @@ if (argv.includes("--ai")) {
       });
       expect("面试复盘 · 反馈条位于报告内容之后", order.prompt > order.title && order.title >= 0,
         `标题@${order.title} 反馈@${order.prompt}`);
+
+      // 复盘是面试终点：返回键应回到「创建新面试」，而不是重新进入已结束的面试
+      await page.click('button[aria-label="返回上一页"]');
+      await page.waitForTimeout(1500);
+      expect(
+        "面试复盘 · 返回键回到创建新面试",
+        new URL(page.url()).pathname === "/interview/new",
+        page.url().replace(BASE, "")
+      );
     }
   }
 }
