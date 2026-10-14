@@ -710,6 +710,54 @@ async function checkReviewHistory() {
   // 带真实数据的隔离验证需要调 AI 生成复盘，放在 ui-check --ai 里做
 }
 
+// ==================== 10. 代码编辑器显示规则 ====================
+
+async function checkCodeEditorRule() {
+  group("10. 代码编辑器显示规则");
+
+  const { GENERIC_FLOW, COMPANY_FLOWS } = await import(
+    `file:///${join(ROOT, "src/config/interview-stages.ts").replace(/\\/g, "/")}`
+  );
+
+  // 规则来自阶段配置的 requiresCode 字段。
+  // 原先按 `id === "algorithm"` 判断 —— 而通用流程的第一个环节 id 也是
+  // algorithm（叫「专业能力面」），导致任何岗位进面试都会冒出代码编辑器。
+  const genericAlgorithm = GENERIC_FLOW.stages.find((s) => s.id === "algorithm");
+  expect(
+    "通用流程 · 专业能力面不要求写代码",
+    genericAlgorithm?.requiresCode !== true,
+    `requiresCode=${genericAlgorithm?.requiresCode}`
+  );
+
+  // 注意：COMPANY_FLOWS 里也含 generic（通用流程与公司流程放在同一张表里），
+  // 这里只检查**真正的公司流程**，通用流程单独断言
+  const companyKeys = Object.keys(COMPANY_FLOWS).filter((key) => key !== "generic");
+  const missing = companyKeys.filter(
+    (key) => COMPANY_FLOWS[key].stages.find((s) => s.id === "algorithm")?.requiresCode !== true
+  );
+  expect(
+    "公司流程 · 算法面均要求写代码",
+    missing.length === 0,
+    missing.join(" / ") || `${companyKeys.length} 个公司流程全部正确`
+  );
+
+  // 反向检查：非算法环节不该被标成需要写代码（防止标错导致到处冒编辑器）
+  const wrongStages = [];
+  for (const key of companyKeys) {
+    for (const stage of COMPANY_FLOWS[key].stages) {
+      if (stage.id !== "algorithm" && stage.requiresCode) wrongStages.push(`${key}.${stage.id}`);
+    }
+  }
+  expect("非算法环节不要求写代码", wrongStages.length === 0, wrongStages.join(" / ") || "无");
+
+  // 非计算机岗位走通用流程时，全程都不该出现编辑器
+  expect(
+    "通用流程各环节均不要求写代码",
+    GENERIC_FLOW.stages.every((s) => !s.requiresCode),
+    GENERIC_FLOW.stages.filter((s) => s.requiresCode).map((s) => s.name).join(" / ") || "全部不要求"
+  );
+}
+
 // ==================== 主流程 ====================
 
 console.log("职镜 OPC · 端到端回归");
@@ -740,6 +788,7 @@ if (!serverUp) {
   await checkFeatureFlags();
   await checkStudioGate();
   await checkReviewHistory();
+  await checkCodeEditorRule();
 }
 
 // ---------- 汇总 ----------

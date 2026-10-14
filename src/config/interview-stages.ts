@@ -18,6 +18,8 @@ export const GENERIC_FLOW: CompanyFlow = {
     {
       id: "algorithm",
       name: "专业能力面",
+      // 通用流程面向非计算机岗位，这里的"专业能力"不是写代码
+      requiresCode: false,
       duration: 40,
       focus: "岗位核心专业能力",
       topics: "围绕该岗位的核心技能与实务问题，判断是否具备上岗所需的专业基础",
@@ -56,6 +58,7 @@ export const COMPANY_FLOWS: Record<string, CompanyFlow> = {
     stages: [
       {
         id: "algorithm",
+        requiresCode: true,
         name: "算法面",
         duration: 45,
         focus: "数据结构与算法",
@@ -84,6 +87,7 @@ export const COMPANY_FLOWS: Record<string, CompanyFlow> = {
     stages: [
       {
         id: "algorithm",
+        requiresCode: true,
         name: "算法面",
         duration: 45,
         focus: "算法与编程能力",
@@ -119,6 +123,7 @@ export const COMPANY_FLOWS: Record<string, CompanyFlow> = {
     stages: [
       {
         id: "algorithm",
+        requiresCode: true,
         name: "算法面",
         duration: 45,
         focus: "算法与编程基础",
@@ -154,6 +159,7 @@ export const COMPANY_FLOWS: Record<string, CompanyFlow> = {
     stages: [
       {
         id: "algorithm",
+        requiresCode: true,
         name: "算法面",
         duration: 45,
         focus: "算法与数据结构",
@@ -182,6 +188,7 @@ export const COMPANY_FLOWS: Record<string, CompanyFlow> = {
     stages: [
       {
         id: "algorithm",
+        requiresCode: true,
         name: "机试/算法面",
         duration: 60,
         focus: "编程基础与算法",
@@ -217,6 +224,7 @@ export const COMPANY_FLOWS: Record<string, CompanyFlow> = {
     stages: [
       {
         id: "algorithm",
+        requiresCode: true,
         name: "算法面",
         duration: 45,
         focus: "算法与编程能力",
@@ -252,6 +260,7 @@ export const COMPANY_FLOWS: Record<string, CompanyFlow> = {
     stages: [
       {
         id: "algorithm",
+        requiresCode: true,
         name: "算法面",
         duration: 45,
         focus: "算法与数据结构",
@@ -280,6 +289,7 @@ export const COMPANY_FLOWS: Record<string, CompanyFlow> = {
     stages: [
       {
         id: "algorithm",
+        requiresCode: true,
         name: "算法面",
         duration: 45,
         focus: "算法与编程能力",

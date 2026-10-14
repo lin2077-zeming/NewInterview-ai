@@ -266,6 +266,15 @@ export interface StageConfig {
   duration: number;
   focus: string;
   topics: string;
+  /**
+   * 该环节是否需要「写代码」，决定面试页是否展开右侧代码编辑器。
+   *
+   * 为什么不看 `id === "algorithm"`：阶段 id 是对齐题库题型字段的**通用键**，
+   * 不代表语义。例如通用流程的第一个环节 id 也是 `algorithm`，
+   * 但它叫「专业能力面」—— 教师、会计、市场营销岗位在这里并不写代码。
+   * 靠 id 判断会让所有岗位的第一个环节都冒出代码编辑器。
+   */
+  requiresCode?: boolean;
 }
 
 export interface CompanyFlow {

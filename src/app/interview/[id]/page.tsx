@@ -67,7 +67,12 @@ export default function InterviewPage() {
     ? Math.min(Math.max(requestedStageIndex, 0), flow.stages.length - 1)
     : 0;
   const currentStage = flow.stages[currentStageIndex];
-  const codeEditorVisible = currentStage?.id === "algorithm";
+  // 是否展开代码编辑器：由**阶段配置显式声明**，而不是靠阶段 id 猜。
+  // 阶段 id（algorithm/project/cross/hr）是对齐题库题型的通用键，
+  // 通用流程的第一个环节 id 同样是 "algorithm" 但叫「专业能力面」，
+  // 教师、会计、市场营销等岗位在这里并不写代码 —— 原先按 id 判断，
+  // 导致任何岗位进入面试都会冒出代码编辑器。
+  const codeEditorVisible = Boolean(currentStage?.requiresCode);
   const stageDurationSeconds = (currentStage?.duration ?? 45) * 60;
 
   const handleCodeSubmit = useCallback((code: string, language: string) => {
