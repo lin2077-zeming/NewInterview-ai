@@ -315,6 +315,8 @@ function MessageBubble({
 
   return (
     <div
+      data-testid="chat-message"
+      data-role={isInterviewer ? "interviewer" : "candidate"}
       className={cn(
         "flex gap-3 max-w-[85%]",
         isInterviewer ? "mr-auto" : "ml-auto flex-row-reverse"

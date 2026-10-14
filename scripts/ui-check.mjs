@@ -351,6 +351,29 @@ console.log("\n6. 全局返回键（固定路径）");
       // 面试页有持续连接，networkidle 永远不会满足，用 domcontentloaded
       await pI.goto(`${BASE}/interview/${created}`, { waitUntil: "domcontentloaded", timeout: 60000 });
       await pI.waitForTimeout(2500);
+      // 面试底栏：模式切换按钮已移除；压力面文案说明开启后的效果
+      const interviewText = await pI.evaluate(() => document.body.innerText);
+      expect("面试底栏已无「切换为候选人」", !interviewText.includes("切换为候选人"));
+      expect("面试底栏已无「切换为面试官」", !interviewText.includes("切换为面试官"));
+      expect(
+        "压力面按钮文案为「后续 AI 面试官会更主动追问」",
+        interviewText.includes("后续 AI 面试官会更主动追问")
+      );
+
+      // 切压力面不能重挂载对话区（key 里带 mode/stressMode 会整棵卸载重建 → 对话丢失）
+      // 在对话输入框上做个标记，切换后标记应仍在：节点没被重建即证明未重挂载
+      await pI.evaluate(() => {
+        const el = document.querySelector("#chat-input");
+        if (el) el.dataset.remountProbe = "alive";
+      });
+      await pI.click('button:has-text("后续 AI 面试官会更主动追问")');
+      await pI.waitForTimeout(1800);
+      const survived = await pI.evaluate(
+        () => document.querySelector("#chat-input")?.dataset.remountProbe === "alive"
+      );
+      expect("切换压力面未重挂载对话区（会话内容不会丢）", survived, survived ? "节点存活" : "❌ 被重建");
+      expect("切换后按钮进入开启态", (await pI.evaluate(() => document.body.innerText)).includes("已开启"));
+
       await pI.click(backBtn);
       await pI.waitForTimeout(1200);
       expect("面试进行中 → 创建新面试", new URL(pI.url()).pathname === "/interview/new", pI.url().replace(BASE, ""));

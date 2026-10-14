@@ -43,9 +43,8 @@ export default function InterviewPage() {
   const interviewId = params.id as string;
   const [interviewContext] = useState(() => loadInterviewContext(interviewId));
 
-  const [mode, setMode] = useState<InterviewMode>(
-    (searchParams.get("mode") as InterviewMode) || "normal"
-  );
+  // 视角在创建面试时选定，进行中不再提供切换 → 只读，不需要 setter
+  const mode = (searchParams.get("mode") as InterviewMode) || "normal";
   const company = searchParams.get("company") || "bytedance";
   const role = searchParams.get("role") || "后端开发工程师";
   const [stressMode, setStressMode] = useState(
@@ -149,9 +148,6 @@ export default function InterviewPage() {
     router.replace(`/interview/review/${interviewId}?${reviewParams.toString()}`);
   }, [interviewId, mode, role, company, currentStageIndex, flow.stages, router]);
 
-  const handleToggleMode = useCallback(() => {
-    setMode((current) => (current === "normal" ? "reversed" : "normal"));
-  }, []);
 
   const handleToggleStress = useCallback(() => {
     setStressMode((prev) => !prev);
@@ -267,7 +263,6 @@ export default function InterviewPage() {
         durationSeconds={stageDurationSeconds}
         timerPaused={showEndDialog}
         onTimerExpire={handleTimerExpire}
-        onToggleMode={handleToggleMode}
         onToggleStress={handleToggleStress}
         onEndInterview={handleEndInterview}
         showEndDialog={showEndDialog}
@@ -324,7 +319,13 @@ export default function InterviewPage() {
           </div>
         </div>
 
-        <div className="flex-1 overflow-hidden" key={`${mode}-${stressMode}-${currentStageIndex}`}>
+        {/*
+          * ⚠️ key 里**不能放 mode / stressMode**：ChatPanel 用 useChat 把对话
+          * 存在组件内存里，key 一变整棵子树卸载重建 → 对话全部丢失，
+          * 而且重挂载会重新触发开场白，看起来像"又开了一场新面试"。
+          * 只保留 stage —— 换阶段时重置才是合理的。
+          */}
+        <div className="flex-1 overflow-hidden" key={`stage-${currentStageIndex}`}>
           <ChatPanel
             ref={chatPanelRef}
             interviewId={interviewId}
@@ -335,9 +336,7 @@ export default function InterviewPage() {
 
         <div className="border-t px-4 py-2 shrink-0">
           <InterviewControls
-            mode={mode}
             stressMode={stressMode}
-            onToggleMode={handleToggleMode}
             onToggleStress={handleToggleStress}
             onEndInterview={handleEndInterview}
           />
@@ -427,7 +426,6 @@ function MobileInterviewWorkspace({
   durationSeconds,
   timerPaused,
   onTimerExpire,
-  onToggleMode,
   onToggleStress,
   onEndInterview,
   showEndDialog,
@@ -455,7 +453,6 @@ function MobileInterviewWorkspace({
   durationSeconds: number;
   timerPaused: boolean;
   onTimerExpire: () => void;
-  onToggleMode: () => void;
   onToggleStress: () => void;
   onEndInterview: () => void;
   showEndDialog: boolean;
@@ -547,15 +544,13 @@ function MobileInterviewWorkspace({
       </div>
 
       <div className="shrink-0 border-t bg-background p-2 pb-[calc(0.5rem+env(safe-area-inset-bottom))]">
-        <div className="grid grid-cols-3 gap-2">
-          <MobileActionButton onClick={onToggleMode}>
-            {mode === "normal" ? "面试官" : "候选人"}
-          </MobileActionButton>
+        {/* 模式切换已移除（视角在创建面试时选定）；压力面文案说明开启后的效果 */}
+        <div className="grid grid-cols-2 gap-2">
           <MobileActionButton active={stressMode} onClick={onToggleStress}>
-            压力面
+            {stressMode ? "已开启：AI 会更主动追问" : "后续 AI 面试官会更主动追问"}
           </MobileActionButton>
           <MobileActionButton danger onClick={onEndInterview}>
-            结束
+            结束面试
           </MobileActionButton>
         </div>
       </div>
@@ -1016,7 +1011,7 @@ function MobileActionButton({
     <button
       type="button"
       onClick={onClick}
-      className={`h-9 select-none rounded-lg text-xs font-medium touch-manipulation ${
+      className={`min-h-9 select-none rounded-lg px-2 py-1.5 text-xs font-medium leading-tight touch-manipulation ${
         danger
           ? "bg-destructive/10 text-destructive"
           : active
