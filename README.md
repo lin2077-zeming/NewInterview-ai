@@ -93,7 +93,7 @@
 
 - 端到端回归 `pnpm regression`：**42 项通过 / 0 失败**
 - 界面交互检查 `pnpm ui-check`：**27 项通过 / 0 失败**
-- 岗位数据校验：**54 项规则**，每次提交前自动跑
+- 岗位数据校验：自动检查结构、必填字段、考察维度（每岗 4 个）、来源标注
 
 ---
 
@@ -188,7 +188,7 @@ pnpm regression:offline  # 同上但跳过要调 AI 的用例（快，不花钱�
 pnpm ui-check            # 浏览器交互检查（两级选岗、离线入口、看板口令门等）
 pnpm ui-check -- --ai    # 同上，并验证结果页反馈条（要调 AI，较慢且计费）
 pnpm loadtest            # 全链路压测与取数（会真实调用 AI 并产生费用）
-pnpm roles:validate      # 岗位数据 54 项校验规则
+pnpm roles:validate      # 岗位数据校验（结构/字段/维度/来源标注）
 ```
 
 > `ui-check` 依赖 Playwright。它不是项目依赖（体积大、要下浏览器），
