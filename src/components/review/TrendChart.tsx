@@ -27,20 +27,20 @@ export function TrendChart({ data }: TrendChartProps) {
     <div className="w-full h-64">
       <ResponsiveContainer width="100%" height="100%">
         <LineChart data={data} margin={{ top: 8, right: 8, bottom: 8, left: 0 }}>
-          <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
+          <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
           <XAxis
             dataKey="label"
-            tick={{ fontSize: 12, fill: "hsl(var(--muted-foreground))" }}
+            tick={{ fontSize: 12, fill: "var(--muted-foreground)" }}
           />
           <YAxis
             domain={[0, 10]}
-            tick={{ fontSize: 12, fill: "hsl(var(--muted-foreground))" }}
+            tick={{ fontSize: 12, fill: "var(--muted-foreground)" }}
             tickCount={6}
           />
           <Tooltip
             contentStyle={{
-              backgroundColor: "hsl(var(--background))",
-              border: "1px solid hsl(var(--border))",
+              backgroundColor: "var(--background)",
+              border: "1px solid var(--border)",
               borderRadius: "8px",
               fontSize: "13px",
             }}
@@ -49,9 +49,9 @@ export function TrendChart({ data }: TrendChartProps) {
             type="monotone"
             dataKey="score"
             name="评分"
-            stroke="hsl(var(--primary))"
+            stroke="var(--primary)"
             strokeWidth={2}
-            dot={{ fill: "hsl(var(--primary))", strokeWidth: 2, r: 4 }}
+            dot={{ fill: "var(--primary)", strokeWidth: 2, r: 4 }}
             activeDot={{ r: 6 }}
           />
         </LineChart>

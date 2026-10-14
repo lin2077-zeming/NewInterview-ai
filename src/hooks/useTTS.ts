@@ -51,11 +51,23 @@ function readStoredVoice() {
   }
 }
 
+/**
+ * 语音排序：普通话（zh-CN）优先，其余中文（粤语 zh-HK、繁体 zh-TW）次之，非中文最后。
+ *
+ * 原先只判断"以 zh 开头"，Windows 的语音列表里粤语（zh-HK）排在前面时
+ * 就会被当成默认语音——对目标用户（求职学生）来说朗读出来是粤语，不可接受。
+ */
+function voiceRank(voice: SpeechSynthesisVoice): number {
+  const lang = voice.lang.toLowerCase().replace("_", "-");
+  if (lang === "zh-cn" || lang.startsWith("zh-cn")) return 0; // 普通话
+  if (lang.startsWith("zh")) return 1; // 其他中文（粤语/繁体等）
+  return 2;
+}
+
 function sortVoices(voices: SpeechSynthesisVoice[]) {
   return [...voices].sort((a, b) => {
-    const aZh = a.lang.toLowerCase().startsWith("zh") ? 0 : 1;
-    const bZh = b.lang.toLowerCase().startsWith("zh") ? 0 : 1;
-    if (aZh !== bZh) return aZh - bZh;
+    const rankDiff = voiceRank(a) - voiceRank(b);
+    if (rankDiff !== 0) return rankDiff;
     return a.name.localeCompare(b.name);
   });
 }
@@ -100,8 +112,10 @@ function createStore() {
       if (selected) return selected;
     }
 
+    // 默认语音：优先普通话（zh-CN），其次任意中文，最后才随便选一个
     return (
-      voices.find((voice) => voice.lang.toLowerCase().startsWith("zh")) ??
+      voices.find((voice) => voiceRank(voice) === 0) ??
+      voices.find((voice) => voiceRank(voice) === 1) ??
       voices[0] ??
       null
     );

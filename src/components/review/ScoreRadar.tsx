@@ -42,22 +42,22 @@ export function ScoreRadar({ scores }: ScoreRadarProps) {
     <div className="w-full aspect-square max-w-sm mx-auto">
       <ResponsiveContainer width="100%" height="100%">
         <RadarChart data={data} cx="50%" cy="50%" outerRadius="70%">
-          <PolarGrid stroke="hsl(var(--border))" />
+          <PolarGrid stroke="var(--border)" />
           <PolarAngleAxis
             dataKey="dimension"
-            tick={{ fontSize: 13, fill: "hsl(var(--foreground))" }}
+            tick={{ fontSize: 13, fill: "var(--foreground)" }}
           />
           <PolarRadiusAxis
             angle={90}
             domain={[0, 100]}
-            tick={{ fontSize: 10, fill: "hsl(var(--muted-foreground))" }}
+            tick={{ fontSize: 10, fill: "var(--muted-foreground)" }}
             tickCount={6}
           />
           <Radar
             name="评分"
             dataKey="score"
-            stroke="hsl(var(--primary))"
-            fill="hsl(var(--primary))"
+            stroke="var(--primary)"
+            fill="var(--primary)"
             fillOpacity={0.2}
           />
         </RadarChart>

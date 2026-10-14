@@ -310,30 +310,9 @@ export default function FeedbackPage() {
         </CardContent>
       </Card>
 
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-base">本次试用自动记录的量化数据</CardTitle>
-          <CardDescription>
-            由系统自动采集，不用你填。会随反馈一起存下来，用于统计
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          {metrics.交付次数 === 0 ? (
-            <p className="text-sm text-muted-foreground">
-              本次会话还没有可统计的交付记录 —— 先试用几个功能再来填，数据会更有参考价值。
-            </p>
-          ) : (
-            <dl className="grid gap-2 text-sm sm:grid-cols-2">
-              {Object.entries(metrics).map(([k, v]) => (
-                <div key={k} className="flex justify-between gap-4 border-b pb-1.5">
-                  <dt className="text-muted-foreground">{k}</dt>
-                  <dd className="font-medium">{String(v)}</dd>
-                </div>
-              ))}
-            </dl>
-          )}
-        </CardContent>
-      </Card>
+      {/* 量化快照（交付次数/耗时/成本等）原先在这里整块展示给用户，
+          但那是内部运营数据，不该让试用者看到——已改为不渲染，
+          提交时仍随反馈静默附带，供 OPC 取数使用。 */}
 
       {error ? <p className="text-sm text-destructive">{error}</p> : null}
 
