@@ -290,59 +290,110 @@ console.log("\n5. 题库练习（离线模式的主要载体）");
   expect("每题可展开自测参考", toggles.length > 0, `${toggles.length} 个可展开`);
 }
 
-// ========== 6. 全局返回键 ==========
-console.log("\n6. 全局返回键");
+// ========== 6. 全局返回键（固定路径，不跟随浏览历史）==========
+console.log("\n6. 全局返回键（固定路径）");
 {
-  const backBtn = 'button[aria-label="返回上一页"]';
+  const backBtn = 'button[data-testid="nav-back"]';
 
   await page.goto(`${BASE}/`, { waitUntil: "networkidle", timeout: 60000 });
   await page.waitForTimeout(500);
   expect("首页不显示返回键（无处可返回）", (await page.locator(backBtn).count()) === 0);
   expect(
-    "logo 带「返回首页」提示（原先没有任何提示说明它能点）",
+    "logo 带「返回首页」提示",
     (await page.locator('a[aria-label="返回首页"]').count()) === 1
   );
 
-  const subPages = [
+  // ── 模块页 → 主界面 ──
+  const toHome = [
     ["/resume", "简历诊断"], ["/chain", "岗位追问链"], ["/practice", "题库练习"],
-    ["/career", "求职规划"], ["/feedback", "试用反馈"], ["/profile", "个人信息"],
+    ["/career", "求职规划"], ["/studio", "运营看板"], ["/interview/new", "创建新面试"],
+    ["/feedback", "试用反馈"], ["/profile", "个人信息"],
   ];
-  let missing = [];
-  for (const [path, name] of subPages) {
+  let wrong = [];
+  for (const [path, name] of toHome) {
     await page.goto(BASE + path, { waitUntil: "networkidle", timeout: 60000 });
-    await page.waitForTimeout(350);
-    if ((await page.locator(backBtn).count()) === 0) missing.push(name);
+    await page.waitForTimeout(400);
+    const btn = page.locator(backBtn);
+    if ((await btn.count()) === 0) {
+      wrong.push(`${name}(无按钮)`);
+      continue;
+    }
+    await btn.click();
+    await page.waitForTimeout(1200);
+    if (new URL(page.url()).pathname !== "/") wrong.push(`${name}→${new URL(page.url()).pathname}`);
   }
-  expect("各子页面都有返回键", missing.length === 0, missing.join(" / ") || `${subPages.length} 个页面全有`);
+  expect(
+    "模块页返回键均回主界面",
+    wrong.length === 0,
+    wrong.join(" / ") || `${toHome.length} 个页面全部正确`
+  );
 
-  // 关键路径：从结果页进反馈表后，返回应回到**来源页**而不是首页
+  // ── 面试线 → 创建新面试 ──
+  {
+    const ctxI = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+    const pI = await ctxI.newPage();
+    // 造一场面试，拿到「面试进行中」页面
+    await pI.goto(`${BASE}/`, { waitUntil: "domcontentloaded", timeout: 60000 });
+    const created = await pI.evaluate(async (base) => {
+      const r = await fetch(base + "/api/interview/create", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          config: { role: "后端开发工程师", company: "generic", mode: "normal", stressMode: false, stageIndex: 0 },
+        }),
+      });
+      return (await r.json().catch(() => ({})))?.interviewId ?? null;
+    }, BASE);
+
+    if (!created) {
+      expect("面试线返回键：可创建面试（前置条件）", false, "创建失败");
+    } else {
+      // 面试页有持续连接，networkidle 永远不会满足，用 domcontentloaded
+      await pI.goto(`${BASE}/interview/${created}`, { waitUntil: "domcontentloaded", timeout: 60000 });
+      await pI.waitForTimeout(2500);
+      await pI.click(backBtn);
+      await pI.waitForTimeout(1200);
+      expect("面试进行中 → 创建新面试", new URL(pI.url()).pathname === "/interview/new", pI.url().replace(BASE, ""));
+    }
+
+    await pI.goto(`${BASE}/interview/reviews`, { waitUntil: "networkidle", timeout: 60000 });
+    await pI.waitForTimeout(600);
+    await pI.click(backBtn);
+    await pI.waitForTimeout(1200);
+    expect("历史复盘列表 → 创建新面试", new URL(pI.url()).pathname === "/interview/new", pI.url().replace(BASE, ""));
+
+    await ctxI.close();
+  }
+
+  // ── 关键：返回目标与"来路"无关（这正是本次改动的目的）──
+  // 先绕去简历诊断，再进反馈表；旧的"跟随历史"会回简历诊断，固定路径应回主界面
   await page.goto(`${BASE}/`, { waitUntil: "networkidle", timeout: 60000 });
-  await page.evaluate(() => sessionStorage.removeItem("zhijing-nav-stack"));
   await page.goto(`${BASE}/resume`, { waitUntil: "networkidle", timeout: 60000 });
+  await page.waitForTimeout(400);
+  await page.goto(`${BASE}/profile`, { waitUntil: "networkidle", timeout: 60000 });
   await page.waitForTimeout(400);
   await page.goto(`${BASE}/feedback?module=简历诊断`, { waitUntil: "networkidle", timeout: 60000 });
   await page.waitForTimeout(700);
-
   await page.click(backBtn);
-  await page.waitForTimeout(1400);
-  expect("从反馈页返回到真实来源页", new URL(page.url()).pathname === "/resume", page.url().replace(BASE, ""));
+  await page.waitForTimeout(1200);
+  expect(
+    "返回目标与来路无关：反馈页 → 主界面（不是简历诊断/个人信息）",
+    new URL(page.url()).pathname === "/",
+    page.url().replace(BASE, "")
+  );
 
-  await page.click(backBtn);
-  await page.waitForTimeout(1400);
-  expect("继续返回回到首页", new URL(page.url()).pathname === "/");
+  // ── 按钮文案应写明目的地 ──
+  await page.goto(`${BASE}/practice`, { waitUntil: "networkidle", timeout: 60000 });
+  await page.waitForTimeout(500);
+  const practiceLabel = await page.locator(backBtn).getAttribute("aria-label");
+  expect("返回键写明目的地", practiceLabel === "返回主界面", practiceLabel ?? "(空)");
 
-  // 无来路时（直接打开链接）回首页兜底，而不是原地不动
-  {
-    const ctx2 = await browser.newContext({ viewport: { width: 1280, height: 900 } });
-    const p2 = await ctx2.newPage();
-    await p2.goto(`${BASE}/feedback`, { waitUntil: "networkidle", timeout: 60000 });
-    await p2.waitForTimeout(500);
-    expect("直接打开的子页面也有返回键", (await p2.locator(backBtn).count()) > 0);
-    await p2.click(backBtn);
-    await p2.waitForTimeout(1400);
-    expect("无来路时回首页兜底", new URL(p2.url()).pathname === "/");
-    await ctx2.close();
-  }
+  await page.goto(`${BASE}/interview/new`, { waitUntil: "networkidle", timeout: 60000 });
+  await page.waitForTimeout(500);
+  expect(
+    "创建新面试的返回键指向主界面",
+    (await page.locator(backBtn).getAttribute("aria-label")) === "返回主界面"
+  );
 }
 
 // ========== 7. 结果页快捷反馈条（需 --ai，会调 AI）==========
@@ -496,7 +547,7 @@ if (argv.includes("--ai")) {
         `标题@${order.title} 反馈@${order.prompt}`);
 
       // 复盘是面试终点：返回键应回到「创建新面试」，而不是重新进入已结束的面试
-      await page.click('button[aria-label="返回上一页"]');
+      await page.click('button[data-testid="nav-back"]');
       await page.waitForTimeout(1500);
       expect(
         "面试复盘 · 返回键回到创建新面试",
