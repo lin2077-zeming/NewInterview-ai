@@ -471,7 +471,12 @@ if (argv.includes("--ai")) {
         messages.push({ id: `u${t + 1}`, role: "user", parts: [{ type: "text", text: "我会先梳理需求边界，再设计表结构与接口，注意索引与缓存一致性。" }] });
       }
       const review = await post(`/api/interview/review/${id}`, {});
-      return { id, hasReport: Boolean(review.data?.report), reviewStatus: review.status };
+      return {
+        id,
+        hasReport: Boolean(review.data?.report),
+        reviewStatus: review.status,
+        role: "后端开发工程师",
+      };
     }, BASE);
 
     if (!setup.id || !setup.hasReport) {
@@ -498,6 +503,26 @@ if (argv.includes("--ai")) {
         new URL(page.url()).pathname === "/interview/new",
         page.url().replace(BASE, "")
       );
+
+      // 历史列表：本会话已有复盘，应能看到自己那份
+      await page.goto(`${BASE}/interview/reviews`, { waitUntil: "networkidle", timeout: 60000 });
+      await page.waitForTimeout(800);
+      const mine = await page.evaluate(() => document.body.innerText);
+      expect("复盘历史 · 本会话能看到自己的报告", mine.includes(setup.role), mine.includes("共 1 份报告") ? "共 1 份" : "");
+
+      // 用户隔离：另开一个全新会话（独立 cookie），**不该看到上面那份报告**。
+      // 复用已有数据、不额外调 AI。
+      const ctxB = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+      const pB = await ctxB.newPage();
+      await pB.goto(`${BASE}/interview/reviews`, { waitUntil: "networkidle", timeout: 60000 });
+      await pB.waitForTimeout(700);
+      const other = await pB.evaluate(() => document.body.innerText);
+      expect(
+        "复盘历史 · 另一会话看不到本会话的报告（用户隔离）",
+        !other.includes(setup.role),
+        other.includes(setup.role) ? "❌ 越权可见" : "隔离正常"
+      );
+      await ctxB.close();
     }
   }
 }

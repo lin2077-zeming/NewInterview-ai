@@ -4,17 +4,7 @@ import { useState, useEffect } from "react";
 import { useParams, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import {
-  AlertTriangle,
-  ArrowRight,
-  ArrowLeft,
-  CheckCircle2,
-  CircleX,
-  ClipboardList,
-  RefreshCw,
-  Target,
-  TrendingUp,
-} from "lucide-react";
+import { AlertTriangle, ArrowLeft, ArrowRight, CheckCircle2, CircleX, ClipboardList, History, RefreshCw, Target, TrendingUp } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -337,8 +327,20 @@ export default function ReviewPage() {
           此时用户已经读完报告，正是判断"有没有用"的时刻 */}
       <FeedbackPrompt module="面试复盘" className="mt-8" />
 
+      {/* 历史入口：看完这一份，自然想找之前那几份 */}
+      <div className="mt-8 text-center">
+        <Link
+          href="/interview/reviews"
+          className="inline-flex items-center gap-1.5 text-sm text-muted-foreground underline-offset-4 transition-colors hover:text-primary hover:underline"
+        >
+          <History className="h-4 w-4" />
+          查看全部历史复盘报告
+          <ArrowRight className="h-3.5 w-3.5" />
+        </Link>
+      </div>
+
       {/* 继续 / 返回按钮 */}
-      <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
         {nextStage && nextStage !== "completed" ? (
           <>
             <Link

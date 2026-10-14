@@ -672,6 +672,44 @@ async function checkStudioGate() {
   expect("退出后重新回到口令门", afterOut.includes("访问口令"));
 }
 
+// ==================== 9. 复盘历史与用户隔离 ====================
+
+async function checkReviewHistory() {
+  group("9. 复盘历史（含用户隔离）");
+
+  // 两个独立客户端 = 两个独立会话（各自独立的 cookie jar）
+  const a = createClient();
+  const b = createClient();
+
+  const pageA = await a.request("/interview/reviews");
+  const htmlA = await pageA.text();
+  expect("复盘历史页可访问", pageA.status === 200, `HTTP ${pageA.status}`);
+
+  const pageB = await b.request("/interview/reviews");
+  const htmlB = await pageB.text();
+  expect("另一会话也可访问", pageB.status === 200, `HTTP ${pageB.status}`);
+
+  // 新会话（本次请求前没产出过任何复盘）应当看到空状态，
+  // 而不是别人的报告 —— 这是最基础的隔离检查
+  const emptyA = htmlA.includes("还没有复盘报告");
+  const emptyB = htmlB.includes("还没有复盘报告");
+  expect(
+    "空会话看到空状态（不泄漏他人报告）",
+    emptyA && emptyB,
+    `A=${emptyA ? "空" : "有数据"} B=${emptyB ? "空" : "有数据"}`
+  );
+
+  // 列表页提供"开始面试"入口，不是死胡同
+  expect("空状态提供继续练习的入口", htmlA.includes("开始一场面试"));
+
+  // 创建面试页要有历史入口（可发现性）
+  const newPage = await a.request("/interview/new");
+  const newHtml = await newPage.text();
+  expect("创建面试页有历史复盘入口", newHtml.includes("查看历史复盘报告"));
+
+  // 带真实数据的隔离验证需要调 AI 生成复盘，放在 ui-check --ai 里做
+}
+
 // ==================== 主流程 ====================
 
 console.log("职镜 OPC · 端到端回归");
@@ -701,6 +739,7 @@ if (!serverUp) {
   await checkOfflineCapability();
   await checkFeatureFlags();
   await checkStudioGate();
+  await checkReviewHistory();
 }
 
 // ---------- 汇总 ----------

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -14,7 +15,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Upload } from "lucide-react";
+import { ArrowRight, History, Upload } from "lucide-react";
 import { RolePicker } from "@/components/roles/RolePicker";
 import { COMPANY_FLOWS } from "@/config/interview-stages";
 import { useRoleTaxonomy } from "@/hooks/use-role-taxonomy";
@@ -102,6 +103,16 @@ export default function NewInterviewPage() {
       <div className="text-center mb-10">
         <h1 className="text-3xl font-extrabold gradient-text mb-2">创建新面试</h1>
         <p className="text-muted-foreground">配置你的 AI 模拟面试环境</p>
+        {/* 复盘报告的历史入口：放在这里因为这是"面试"这条线的起点，
+            练完想看上次的报告时，第一反应就是回到这个页面 */}
+        <Link
+          href="/interview/reviews"
+          className="mt-3 inline-flex items-center gap-1.5 text-sm text-muted-foreground underline-offset-4 transition-colors hover:text-primary hover:underline"
+        >
+          <History className="h-4 w-4" />
+          查看历史复盘报告
+          <ArrowRight className="h-3.5 w-3.5" />
+        </Link>
       </div>
 
       <div className="flex flex-col lg:flex-row gap-6">
@@ -311,6 +322,14 @@ function MobileNewInterview({
       <div className="mb-5 text-center">
         <h1 className="text-2xl font-extrabold gradient-text">创建新面试</h1>
         <p className="mt-2 text-sm text-muted-foreground">配置你的 AI 模拟面试环境</p>
+        <Link
+          href="/interview/reviews"
+          className="mt-3 inline-flex items-center gap-1.5 text-sm text-muted-foreground underline-offset-4 transition-colors hover:text-primary hover:underline"
+        >
+          <History className="h-4 w-4" />
+          查看历史复盘报告
+          <ArrowRight className="h-3.5 w-3.5" />
+        </Link>
       </div>
 
       <div className="space-y-4">
