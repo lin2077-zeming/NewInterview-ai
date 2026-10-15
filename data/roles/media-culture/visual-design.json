@@ -723,6 +723,74 @@
         "name": "AI 批量扩写（参考公开面经题型）",
         "collectedAt": "2026-10-15"
       }
+    },
+    {
+      "id": "media-culture.visual-design-q037",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "高饱和与品牌克制如何取舍",
+      "content": "需求方要求主视觉用高饱和渐变加粗黑体，但品牌手册明确调性为安静、克制。你需要在 30 分钟内给出两版方向并说明取舍。请口述：你会如何调整色彩、字体和留白，既满足传播冲击力，又不破坏品牌识别？会用什么文件规范交付？",
+      "tags": [
+        "版式与色彩",
+        "品牌调性",
+        "设计决策"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q038",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "代表性项目全流程复盘",
+      "content": "请挑一个你最有代表性的设计项目，从接需求到最终落地完整讲一遍：你如何确定视觉方向？中途推翻过哪些方案，为什么？交付印刷或上线前，你如何检查字体转曲、色彩模式、出血与命名规范？如果成品出现明显色差，你会怎么追溯和补救？",
+      "tags": [
+        "项目复盘",
+        "设计流程",
+        "印刷落地"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q039",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "促销信息强插品牌KV",
+      "content": "市场部在距发布 2 小时时要求在已定稿的品牌 KV 上加“全场 8 折”大标签，文案不肯删字，印刷厂又催文件。品牌规范里主视觉禁止叠加高饱和促销元素。你会先找谁沟通、怎么给出替代方案，并保证按时交付？请还原你的处理顺序。",
+      "tags": [
+        "跨部门沟通",
+        "紧急改稿",
+        "品牌规范"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "审美输入与职业规划",
+      "content": "你平时通过哪些渠道保持审美输入？如果未来两年你希望从执行型设计师成长为能主导品牌视觉方向的人，你计划补齐哪些能力？当某个流行风格与客户品牌调性不符时，你会怎么坚持或调整自己的判断？",
+      "tags": [
+        "职业规划",
+        "审美积累",
+        "设计判断"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [

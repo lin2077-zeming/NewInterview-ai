@@ -709,6 +709,74 @@
         "name": "AI 批量扩写（参考公开面经题型）",
         "collectedAt": "2026-10-15"
       }
+    },
+    {
+      "id": "media-culture.new-media-ops-q037",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "跨平台防晒霜内容策划",
+      "content": "假设你负责一个美妆品牌的小红书和抖音账号，现在要推广一款新的防晒霜。请分别说明你会如何为这两个平台策划内容？包括选题方向、内容形式、以及如何利用平台特性提升曝光和转化。请给出具体的执行思路。",
+      "tags": [
+        "内容策划",
+        "平台理解",
+        "美妆运营"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q038",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "同一主题跨平台改编经历",
+      "content": "请举例说明你曾如何将同一个内容主题，根据不同平台（如微信、抖音、小红书）的特性进行差异化改编？请具体描述改编思路、执行过程以及各平台的数据反馈。如果没有直接经验，可以分享你观察到的优秀案例并说明你会如何借鉴。",
+      "tags": [
+        "经历深挖",
+        "平台适配",
+        "内容改编"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q039",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "直播前物料出错应急处理",
+      "content": "你负责一个新品发布会的社交媒体直播。开始前1小时，发现合作设计师提供的海报有错别字且品牌LOGO颜色不对。设计师已下班联系不上，直播物料已排期无法更改。你会如何处理？请说明行动步骤和沟通策略。",
+      "tags": [
+        "应急处理",
+        "跨部门沟通",
+        "直播运营"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "求职动机与岗位匹配",
+      "content": "你为什么想从事新媒体运营？你认为自己最匹配这个岗位的一个特质是什么？请结合具体经历说明。另外，你希望在前三个月达成什么目标？",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "岗位匹配"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [

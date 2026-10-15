@@ -719,6 +719,74 @@
         "name": "AI 批量扩写（参考公开面经题型）",
         "collectedAt": "2026-10-15"
       }
+    },
+    {
+      "id": "med-life.medical-device-q037",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "适用标准与测试方案",
+      "content": "你正在开发一款便携式输液泵，需满足GB 9706.1和IEC 60601-1等标准。请描述你如何根据产品预期用途和风险分析，确定适用的安全标准清单，并设计电气安全、环境试验和软件验证的测试方案。若标准更新，你如何评估对项目的影响？",
+      "tags": [
+        "法规标准",
+        "测试验证",
+        "风险管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.medical-device-q038",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "设计验证失败处理",
+      "content": "请分享一个你参与过的医疗器械研发项目。在哪个阶段遇到了设计验证测试不通过？你如何分析根本原因、制定整改措施并重新验证？最终是否影响注册进度？请具体说明你的角色和决策过程，以及从中学到了什么。",
+      "tags": [
+        "设计验证",
+        "根本原因",
+        "项目经历"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.medical-device-q039",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "临床试用反馈处理",
+      "content": "作为临床工程师，你被派往医院支持新设备试用。临床医生反馈设备某功能不符合实际使用习惯，要求立即修改。你如何处理这个反馈，既要安抚医生情绪，又要遵循公司变更流程和法规要求？请说明你的沟通步骤和决策依据。",
+      "tags": [
+        "临床支持",
+        "需求沟通",
+        "法规符合"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.medical-device-q040",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "法规学习与职业发展",
+      "content": "医疗器械法规更新频繁，例如NMPA不断发布新的指导原则。你如何保持对法规和技术的持续学习？请举例说明你最近学习的一项新法规或技术，以及如何将其应用到实际工作中，并谈谈你未来3年的职业规划。",
+      "tags": [
+        "学习能力",
+        "法规更新",
+        "职业规划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [

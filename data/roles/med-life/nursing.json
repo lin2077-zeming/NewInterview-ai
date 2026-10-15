@@ -667,6 +667,125 @@
         "name": "AI 批量扩写（参考公开面经题型）",
         "collectedAt": "2026-10-15"
       }
+    },
+    {
+      "id": "med-life.nursing-q034",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "导尿术无菌操作要点",
+      "content": "患者术后尿潴留，医嘱予留置导尿。请口述从核对医嘱、评估患者到完成固定的关键步骤，重点说明消毒顺序、无菌区域维护、气囊注水量和预防尿路感染的措施。若患者烦躁不配合，你如何处理？",
+      "tags": [
+        "导尿术",
+        "无菌操作",
+        "患者安全"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q035",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "输液反应应急处理",
+      "content": "夜班巡视发现一位输注抗生素的患者突发寒战、高热、胸闷，输液袋内液体略浑浊。请按时间顺序说明你的判断、立即处置、上报和记录，并说明如何保留输液器与剩余药液。若患者随后血压下降，你如何配合抢救？",
+      "tags": [
+        "输液反应",
+        "应急处理",
+        "病情观察"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q036",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "复杂患者护理程序复盘",
+      "content": "请结合你实习或工作中独立护理过的一位病情较复杂患者，说明你如何完成护理评估、提出主要护理诊断、制定并实施计划、评价效果。重点讲一个你通过观察发现病情变化的细节，以及当时如何与医生沟通。",
+      "tags": [
+        "护理程序",
+        "经历深挖",
+        "病情观察"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q037",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "急救经历细节复盘",
+      "content": "你简历提到参与过急救或危重患者抢救。请还原一次具体经历：当时患者情况、你的角色、执行了哪些医嘱、如何记录和交接？如果重来一次，你认为哪个环节可以改进？请给出可验证的细节。",
+      "tags": [
+        "急救经历",
+        "团队协作",
+        "反思改进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q038",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "家属录像冲突处理",
+      "content": "患者家属因等待时间过长在护士站情绪激动并拿出手机录像。你当时正为其他患者输液，无法立即离开。你会如何回应家属、保障手头患者安全并寻求支援？事后如何跟进？",
+      "tags": [
+        "护患沟通",
+        "冲突处理",
+        "应急协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q039",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "批量伤员人力协调",
+      "content": "病区附近突发批量伤员，护士长安排你临时协调支援，但本病区仍有两位危重患者需持续监护。你如何快速评估人力、分配任务、上报护理部并做好交接，确保两边安全？",
+      "tags": [
+        "团队协作",
+        "应急调配",
+        "沟通协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "慎独精神与独立值班",
+      "content": "护理工作有许多无人监督的环节。请谈谈你对慎独精神的理解，并举一个你坚持规范操作或主动补位的例子；如果没有真实经历，请说明今后在夜班独立值班时如何约束自己。",
+      "tags": [
+        "职业素养",
+        "慎独精神",
+        "责任心"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [

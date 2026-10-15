@@ -719,6 +719,74 @@
         "name": "AI 批量扩写（参考公开面经题型）",
         "collectedAt": "2026-10-15"
       }
+    },
+    {
+      "id": "media-culture.publishing-q037",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "编校错误识别与核实",
+      "content": "下面是一段待出版书稿的推荐语：‘经过编辑老师再三审读，本书终于付梓出版，其内容详实、观点新颖，深受广大读者所喜爱。’请指出其中至少三处编校问题，说明修改依据，并谈谈遇到史实或引文疑问时你会如何核实。",
+      "tags": [
+        "校对功底",
+        "编辑规范",
+        "事实核查"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q038",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "选题策划与市场判断",
+      "content": "请分享一个你参与策划或评估的图书选题。需说明：目标读者是谁、分析了哪些竞品、如何判断市场容量、建议首印数及理由，以及上市后的实际数据与复盘结论。若未参与过，请选一个你熟悉的品类做模拟论证。",
+      "tags": [
+        "选题策划",
+        "竞品分析",
+        "数据复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q039",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "印刷前作者大改协调",
+      "content": "你负责的图书已进入三校，作者突然要求调整章节结构并更换封面风格，但距下厂印刷仅剩5天，排版、设计和营销排期均已锁定。请说明你会如何与作者、设计、排版及营销沟通，并给出具体推进方案。",
+      "tags": [
+        "跨部门沟通",
+        "进度管理",
+        "冲突解决"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "枯燥编校中的职业动力",
+      "content": "编辑工作常需连续数周处理同一书稿的琐碎校对，且成长周期较长。请结合你过去坚持完成一件枯燥但重要的事的经历，谈谈你为什么选择编辑出版，以及未来三年你打算如何提升自己的专业能力。",
+      "tags": [
+        "职业动机",
+        "抗压细致",
+        "成长规划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [

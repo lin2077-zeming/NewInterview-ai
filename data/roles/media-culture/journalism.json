@@ -736,6 +736,57 @@
         "name": "AI 批量扩写（参考公开面经题型）",
         "collectedAt": "2026-10-15"
       }
+    },
+    {
+      "id": "media-culture.journalism-q038",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "三条线索的取舍",
+      "content": "值班时你同时收到三条线索：某小区疑似燃气泄漏、一位明星的离婚声明、市监局即将发布儿童玩具抽检结果。距截稿仅剩两小时，你会如何判断哪条最值得跟进？请写出你的选题评估维度和具体操作步骤。",
+      "tags": [
+        "新闻敏感",
+        "选题策划",
+        "价值判断"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q039",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "一次艰难的采访突破",
+      "content": "请回忆一次你实际进行的采访：采访对象最初拒绝或回避关键问题，你如何调整策略、建立信任并拿到核心信息？事后你如何交叉核实？如果对方否认说过的话，你保留了哪些证据？",
+      "tags": [
+        "采访突破",
+        "事实核查",
+        "经历深挖"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q040",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "标题党与内容的平衡",
+      "content": "一篇深度调查报道阅读量低迷，运营同事建议改用《惊！某知名企业竟干出这种事》的标题。作为编辑，你会如何与运营沟通？请从新闻伦理、传播效果和读者信任三个角度说明你的处理方案。",
+      "tags": [
+        "新闻伦理",
+        "标题党",
+        "跨部门沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [

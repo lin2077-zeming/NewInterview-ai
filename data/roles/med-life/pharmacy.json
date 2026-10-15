@@ -740,6 +740,57 @@
         "name": "AI 批量扩写（参考公开面经题型）",
         "collectedAt": "2026-10-15"
       }
+    },
+    {
+      "id": "med-life.pharmacy-q038",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "莫西沙星处方审核风险",
+      "content": "医师为一名社区获得性肺炎患者开具莫西沙星片，患者同时服用胺碘酮和华法林，血钾3.2 mmol/L。你作为临床药师，审核处方时需指出哪些主要风险？请从QT间期、药物相互作用、电解质监测及替代方案说明处理思路。",
+      "tags": [
+        "处方审核",
+        "药物相互作用",
+        "用药监护"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q039",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "注册或临床项目深挖",
+      "content": "请结合你参与过的一次药品注册申报或临床药学项目，说明从立项到递交/用药监护的关键节点。你在资料撰写或TDM方案设计中遇到的最大专业分歧是什么，如何用文献或法规依据推动团队达成一致？最终如何验证效果？",
+      "tags": [
+        "注册申报",
+        "项目经历",
+        "文献检索"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q040",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "超说明书用药沟通",
+      "content": "查房时医生坚持为老年患者超说明书使用某药，家属也要求尽快用药。作为临床药师，你如何在有限时间内沟通？请说明你会先核实哪些药学与法规信息、如何向医生和家属分别表达风险，并给出可执行的替代建议。",
+      "tags": [
+        "超说明书用药",
+        "医患沟通",
+        "风险沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [

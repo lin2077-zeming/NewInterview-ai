@@ -716,6 +716,74 @@
         "name": "AI 批量扩写（参考公开面经题型）",
         "collectedAt": "2026-10-15"
       }
+    },
+    {
+      "id": "media-culture.advertising-copy-q037",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "品牌调性文案创作",
+      "content": "情境：某国产护肤品牌要推出一款针对熬夜人群的精华，品牌调性是“温和、科学、不贩卖焦虑”。请现场为该产品写一句主标题（20字内）和一句朋友圈文案（50字内），并说明每个关键词的选择理由。追问：如果目标人群换成学生党，调性会怎么调整？",
+      "tags": [
+        "文案撰写",
+        "品牌调性",
+        "消费者洞察"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q038",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "传播项目全流程复盘",
+      "content": "请挑一个你参与过的传播活动或内容项目，详细说明从用户洞察到文案产出再到落地的全过程。追问：你当时的核心洞察是什么？文案初稿与终稿差异在哪、为什么改？上线后点击率/转化率等数据如何，你根据反馈做了哪些优化？",
+      "tags": [
+        "项目复盘",
+        "创意洞察",
+        "数据优化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q039",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "多方冲突下的文案落地",
+      "content": "距离新品发布会还有3小时，设计说你的文案占位太多，运营要求在标题加“震惊”蹭热点，客户临时希望突出另一个卖点。你作为文案负责人，会如何沟通并推进落地？请现场模拟你与其中一方的对话。",
+      "tags": [
+        "跨部门沟通",
+        "冲突处理",
+        "项目落地"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "文案日常与预期落差",
+      "content": "你平时通过哪些渠道积累文案素材和灵感？如果入职后发现日常工作多是写产品详情页、改稿件，与你想做的“大创意”有落差，你会如何调整心态和行动？",
+      "tags": [
+        "求职动机",
+        "学习习惯",
+        "职业规划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
