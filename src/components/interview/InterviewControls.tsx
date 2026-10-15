@@ -32,12 +32,12 @@ export function InterviewControls({
         className="gap-1"
         title={
           stressMode
-            ? "已开启：后续 AI 面试官会更主动追问。再点一次可关闭"
-            : "开启后，后续 AI 面试官会更主动追问"
+            ? "已开启压力面：AI 面试官会更主动追问。再点一次可关闭"
+            : "开启压力面后，AI 面试官会更主动追问"
         }
       >
         <AlertTriangle className="h-4 w-4" />
-        {stressMode ? "已开启：AI 会更主动追问" : "后续 AI 面试官会更主动追问"}
+        {stressMode ? "已开启压力面" : "开启压力面"}
       </Button>
       <Separator orientation="vertical" className="h-6" />
       <Button

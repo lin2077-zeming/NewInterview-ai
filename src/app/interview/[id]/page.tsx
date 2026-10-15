@@ -552,7 +552,7 @@ function MobileInterviewWorkspace({
         {/* 模式切换已移除（视角在创建面试时选定）；压力面文案说明开启后的效果 */}
         <div className="grid grid-cols-2 gap-2">
           <MobileActionButton active={stressMode} onClick={onToggleStress}>
-            {stressMode ? "已开启：AI 会更主动追问" : "后续 AI 面试官会更主动追问"}
+            {stressMode ? "已开启压力面" : "开启压力面"}
           </MobileActionButton>
           <MobileActionButton danger onClick={onEndInterview}>
             结束面试

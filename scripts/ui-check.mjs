@@ -356,8 +356,8 @@ console.log("\n6. 全局返回键（固定路径）");
       expect("面试底栏已无「切换为候选人」", !interviewText.includes("切换为候选人"));
       expect("面试底栏已无「切换为面试官」", !interviewText.includes("切换为面试官"));
       expect(
-        "压力面按钮文案为「后续 AI 面试官会更主动追问」",
-        interviewText.includes("后续 AI 面试官会更主动追问")
+        "压力面按钮文案为「开启压力面」",
+        interviewText.includes("开启压力面")
       );
 
       // 切压力面不能重挂载对话区（key 里带 mode/stressMode 会整棵卸载重建 → 对话丢失）
@@ -366,13 +366,13 @@ console.log("\n6. 全局返回键（固定路径）");
         const el = document.querySelector("#chat-input");
         if (el) el.dataset.remountProbe = "alive";
       });
-      await pI.click('button:has-text("后续 AI 面试官会更主动追问")');
+      await pI.click('button:has-text("开启压力面")');
       await pI.waitForTimeout(1800);
       const survived = await pI.evaluate(
         () => document.querySelector("#chat-input")?.dataset.remountProbe === "alive"
       );
       expect("切换压力面未重挂载对话区（会话内容不会丢）", survived, survived ? "节点存活" : "❌ 被重建");
-      expect("切换后按钮进入开启态", (await pI.evaluate(() => document.body.innerText)).includes("已开启"));
+      expect("切换后按钮进入开启态", (await pI.evaluate(() => document.body.innerText)).includes("已开启压力面"));
 
       await pI.click(backBtn);
       await pI.waitForTimeout(1200);
