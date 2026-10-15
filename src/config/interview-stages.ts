@@ -49,6 +49,26 @@ export const GENERIC_FLOW: CompanyFlow = {
   stressAvailable: ["algorithm", "project"],
 };
 
+/** 计算机与互联网大类。公司预设流程（算法面/技术一面…）只对这个方向成立 */
+export const CS_ROLE_CATEGORY_ID = "cs-it";
+
+/**
+ * 按**岗位方向**解析本次面试的轮次流程。
+ *
+ * 公司流程（字节/腾讯/百度…）当初是按技术岗预设的，轮次名是
+ * 「算法面 / 技术一面 / 技术二面 / HR 面」。但用户可能选的是市场营销、
+ * 教师这类岗位 —— 他们不会经历"算法面"。原实现只看 company，
+ * 于是选了腾讯就锁死技术向轮次，与岗位无关。
+ *
+ * 规则：**只有计算机方向的岗位才使用该公司的专属轮次**；
+ * 其他方向一律走岗位中立的通用流程（公司仍会影响提问风格，
+ * 只是轮次名不再锁死技术向）。岗位未选定时同样用通用轮次兜底。
+ */
+export function resolveInterviewFlow(company: string, roleCategoryId: string): CompanyFlow {
+  if (roleCategoryId !== CS_ROLE_CATEGORY_ID) return GENERIC_FLOW;
+  return COMPANY_FLOWS[company] ?? GENERIC_FLOW;
+}
+
 export const COMPANY_FLOWS: Record<string, CompanyFlow> = {
   // 通用流程排在最前：非技术岗位不必再被迫选一家互联网公司
   generic: GENERIC_FLOW,

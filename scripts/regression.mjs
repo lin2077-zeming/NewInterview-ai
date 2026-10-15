@@ -710,10 +710,10 @@ async function checkReviewHistory() {
   // 带真实数据的隔离验证需要调 AI 生成复盘，放在 ui-check --ai 里做
 }
 
-// ==================== 10. 代码编辑器显示规则 ====================
+// ==================== 10. 面试轮次与代码编辑器规则 ====================
 
 async function checkCodeEditorRule() {
-  group("10. 代码编辑器显示规则");
+  group("10. 面试轮次与代码编辑器规则");
 
   const { GENERIC_FLOW, COMPANY_FLOWS } = await import(
     `file:///${join(ROOT, "src/config/interview-stages.ts").replace(/\\/g, "/")}`
@@ -755,6 +755,40 @@ async function checkCodeEditorRule() {
     "通用流程各环节均不要求写代码",
     GENERIC_FLOW.stages.every((s) => !s.requiresCode),
     GENERIC_FLOW.stages.filter((s) => s.requiresCode).map((s) => s.name).join(" / ") || "全部不要求"
+  );
+
+  // ── 轮次流程要按**岗位方向**解析，不能只看公司（原 bug：选腾讯就锁死技术向轮次）──
+  const { resolveInterviewFlow, CS_ROLE_CATEGORY_ID } = await import(
+    `file:///${join(ROOT, "src/config/interview-stages.ts").replace(/\\/g, "/")}`
+  );
+  const { GENERIC_FLOW: GENERIC2, COMPANY_FLOWS: FLOWS2 } = await import(
+    `file:///${join(ROOT, "src/config/interview-stages.ts").replace(/\\/g, "/")}`
+  );
+
+  const csFlow = resolveInterviewFlow("tencent", CS_ROLE_CATEGORY_ID);
+  expect(
+    "计算机岗位用该公司专属轮次",
+    csFlow.stages[0]?.name === FLOWS2.tencent.stages[0]?.name,
+    `${csFlow.stages[0]?.name}`
+  );
+
+  const nonCsFlow = resolveInterviewFlow("tencent", "ee-telecom");
+  const isGeneric = nonCsFlow.stages.every(
+    (stage, i) => stage.name === GENERIC2.stages[i]?.name
+  );
+  expect("非计算机岗位改用通用轮次（不锁死技术向）", isGeneric, nonCsFlow.stages.map((s) => s.name).join(" / "));
+
+  const noRoleFlow = resolveInterviewFlow("tencent", "");
+  expect(
+    "岗位未选定时用通用轮次兜底",
+    noRoleFlow.stages.every((stage, i) => stage.name === GENERIC2.stages[i]?.name)
+  );
+
+  // 关键：公司相同、岗位方向不同 → 轮次必须不同
+  expect(
+    "同一公司下，计算机与非计算机岗位轮次不同",
+    csFlow.stages[0]?.name !== nonCsFlow.stages[0]?.name,
+    `${csFlow.stages[0]?.name} vs ${nonCsFlow.stages[0]?.name}`
   );
 }
 

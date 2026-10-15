@@ -43,33 +43,65 @@ export function normalizeRoleId(idOrLegacy: string): string {
 }
 
 /**
+ * 模块级缓存与并发去重。
+ *
+ * 岗位体系在一次会话里是静态的，但 `/api/roles` 有约 90KB。
+ * 同一页面里桌面与移动两套布局各挂一次本 hook，就会把 90KB 拉两遍；
+ * 而且两个组件在**同一轮渲染**里挂载，各自的 effect 几乎同时执行，
+ * 只靠"成功后写缓存"挡不住 —— 所以还要用进行中的 Promise 去重。
+ */
+let taxonomyCache: RoleCategory[] | null = null;
+let taxonomyInFlight: Promise<RoleCategory[]> | null = null;
+
+function loadTaxonomy(): Promise<RoleCategory[]> {
+  if (taxonomyCache) return Promise.resolve(taxonomyCache);
+  if (!taxonomyInFlight) {
+    taxonomyInFlight = fetch("/api/roles", { cache: "no-store" })
+      .then(async (response) => {
+        const data = await response.json();
+        if (!response.ok) throw new Error(data?.error || "读取岗位列表失败");
+        const next = (data.categories ?? []) as RoleCategory[];
+        taxonomyCache = next;
+        return next;
+      })
+      .catch((err) => {
+        taxonomyInFlight = null; // 失败不缓存，允许下次重试
+        throw err;
+      });
+  }
+  return taxonomyInFlight;
+}
+
+/**
  * 拉取两级岗位分类（一级大类 → 细分小类）。
  *
  * 前端不再 import 岗位配置 —— 岗位数据源是 `data/roles/**`，
  * 经 `/api/roles` 提供，这样新增岗位不需要改前端代码。
  */
 export function useRoleTaxonomy() {
-  const [categories, setCategories] = useState<RoleCategory[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [categories, setCategories] = useState<RoleCategory[]>(() => taxonomyCache ?? []);
+  const [loading, setLoading] = useState(!taxonomyCache);
   const [error, setError] = useState("");
 
   useEffect(() => {
+    // 已有缓存：useState 初始化时就已经取到了，这里直接不发请求
+    //（也就不需要再 setState —— 那样反而会触发一次级联渲染）
+    if (taxonomyCache) return;
+
     let cancelled = false;
 
-    (async () => {
-      try {
-        const response = await fetch("/api/roles", { cache: "no-store" });
-        const data = await response.json();
-        if (!response.ok) throw new Error(data?.error || "读取岗位列表失败");
-        if (!cancelled) setCategories((data.categories ?? []) as RoleCategory[]);
-      } catch (err) {
+    loadTaxonomy()
+      .then((next) => {
+        if (!cancelled) setCategories(next);
+      })
+      .catch((err) => {
         if (!cancelled) {
           setError(err instanceof Error ? err.message : "读取岗位列表失败");
         }
-      } finally {
+      })
+      .finally(() => {
         if (!cancelled) setLoading(false);
-      }
-    })();
+      });
 
     return () => {
       cancelled = true;

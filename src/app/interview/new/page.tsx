@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/select";
 import { ArrowRight, History, Upload } from "lucide-react";
 import { RolePicker } from "@/components/roles/RolePicker";
-import { COMPANY_FLOWS } from "@/config/interview-stages";
+import { COMPANY_FLOWS, resolveInterviewFlow, CS_ROLE_CATEGORY_ID } from "@/config/interview-stages";
 import { useRoleTaxonomy } from "@/hooks/use-role-taxonomy";
 import { loadCareerProfile } from "@/lib/career-profile";
 import {
@@ -25,7 +25,7 @@ import {
   buildResumeSummaryFromFile,
   saveInterviewContext,
 } from "@/lib/interview-context";
-import type { InterviewMode } from "@/types";
+import type { CompanyFlow, InterviewMode } from "@/types";
 
 export default function NewInterviewPage() {
   const router = useRouter();
@@ -37,7 +37,24 @@ export default function NewInterviewPage() {
   const [stressMode, setStressMode] = useState(false);
   const [resumeFile, setResumeFile] = useState<File | null>(null);
   const [loading, setLoading] = useState(false);
-  const flow = COMPANY_FLOWS[company] ?? COMPANY_FLOWS.generic;
+
+  // 轮次流程要同时看**公司**和**岗位方向**：公司预设流程是按技术岗定的
+  //（算法面/技术一面…），非计算机岗位套用这些轮次是不对的。详见 resolveInterviewFlow
+  const { findCategoryIdOf } = useRoleTaxonomy();
+  const roleCategoryId = role ? findCategoryIdOf(role) : "";
+  const flow = resolveInterviewFlow(company, roleCategoryId);
+
+  // 流程变短时（如从 4 轮的腾讯切到 3 轮的公司）索引会越界，这里兜一道
+  const activeStageIndex = Math.min(stageIndex, Math.max(flow.stages.length - 1, 0));
+
+  /**
+   * 切换岗位时重置轮次。
+   * 不同流程的轮次含义不同（技术一面 ≠ 经历深挖面），沿用旧索引会指到别的环节。
+   */
+  function handleRoleChange(nextRole: string) {
+    setRole(nextRole);
+    setStageIndex(0);
+  }
 
   // 支持从「岗位追问链」等页面带参数跳转，预填岗位与公司
   // 用 window.location 而非 useSearchParams，避免影响静态预渲染
@@ -61,7 +78,7 @@ export default function NewInterviewPage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          config: { role, company, mode, stressMode, stageIndex },
+          config: { role, company, mode, stressMode, stageIndex: activeStageIndex },
         }),
       });
       if (!res.ok) {
@@ -83,7 +100,7 @@ export default function NewInterviewPage() {
         mode,
         role,
         company,
-        stage: String(stageIndex),
+        stage: String(activeStageIndex),
         stress: String(stressMode),
         profile: candidateProfileSummary ? "1" : "0",
         resume: resumeSummary ? "1" : "0",
@@ -171,7 +188,7 @@ export default function NewInterviewPage() {
                   <div className="mt-1.5">
                     <RolePicker
                       value={role}
-                      onChange={setRole}
+                      onChange={handleRoleChange}
                       idPrefix="new-interview"
                       valueMode="label"
                     />
@@ -181,11 +198,11 @@ export default function NewInterviewPage() {
               <div>
                 <Label>面试部分</Label>
                 <Select
-                  value={String(stageIndex)}
+                  value={String(activeStageIndex)}
                   onValueChange={(v) => v && setStageIndex(Number(v))}
                 >
                   <SelectTrigger className="mt-1.5">
-                    <SelectValue>{flow.stages[stageIndex]?.name || "选择本次面试部分"}</SelectValue>
+                    <SelectValue>{flow.stages[activeStageIndex]?.name || "选择本次面试部分"}</SelectValue>
                   </SelectTrigger>
                   <SelectContent>
                     {flow.stages.map((stage, index) => (
@@ -195,6 +212,12 @@ export default function NewInterviewPage() {
                     ))}
                   </SelectContent>
                 </Select>
+                {company !== "generic" && roleCategoryId !== CS_ROLE_CATEGORY_ID ? (
+                  <p className="mt-2 text-xs text-muted-foreground">
+                    {COMPANY_FLOWS[company]?.name ?? "该公司"}的预设轮次面向技术岗，
+                    已按你选择的岗位方向切换为通用轮次。
+                  </p>
+                ) : null}
               </div>
             </CardContent>
           </Card>
@@ -258,7 +281,8 @@ export default function NewInterviewPage() {
         mode={mode}
         company={company}
         role={role}
-        stageIndex={stageIndex}
+        stageIndex={activeStageIndex}
+        flow={flow}
         stressMode={stressMode}
         resumeFile={resumeFile}
         loading={loading}
@@ -267,7 +291,7 @@ export default function NewInterviewPage() {
           setCompany(value);
           setStageIndex(0);
         }}
-        onRoleChange={setRole}
+        onRoleChange={handleRoleChange}
         onStageIndexChange={setStageIndex}
         onStressModeChange={setStressMode}
         onResumeFileChange={setResumeFile}
@@ -282,6 +306,7 @@ function MobileNewInterview({
   company,
   role,
   stageIndex,
+  flow,
   stressMode,
   resumeFile,
   loading,
@@ -297,6 +322,7 @@ function MobileNewInterview({
   company: string;
   role: string;
   stageIndex: number;
+  flow: CompanyFlow;
   stressMode: boolean;
   resumeFile: File | null;
   loading: boolean;
@@ -309,7 +335,6 @@ function MobileNewInterview({
   onStart: () => void;
 }) {
   const resumeInputRef = useRef<HTMLInputElement>(null);
-  const flow = COMPANY_FLOWS[company] ?? COMPANY_FLOWS.generic;
   const selectedStage = flow.stages[stageIndex] ?? flow.stages[0];
 
   // 两级岗位选择：先大类、再细分小类（64 个岗位塞一级下拉不可用）
