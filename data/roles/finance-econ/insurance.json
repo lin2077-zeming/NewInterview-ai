@@ -277,6 +277,346 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "finance-econ.insurance-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "准备金评估方法选择",
+      "content": "你负责一款新推出的长期健康险产品的准备金评估，在缺乏充足历史经验数据的情况下，你会如何选择评估方法？请说明可能采用的假设、模型和数据来源，并解释对偿付能力的影响。",
+      "tags": [
+        "准备金评估",
+        "精算假设",
+        "偿付能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.insurance-q012",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "高风险职业核保定价",
+      "content": "某企业为员工投保团体意外险，其中包含高空作业人员。你会如何评估该群体的风险？请说明核保时需获取哪些信息、如何设定承保条件与费率，并考虑再保安排。",
+      "tags": [
+        "核保评估",
+        "风险定价",
+        "再保安排"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.insurance-q013",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "保险利益原则应用",
+      "content": "请举例说明保险利益原则在人身保险和财产保险中的不同应用，并解释为什么保险利益是保险合同有效的前提。若投保时被保险人对保险标的不具有保险利益，合同效力如何？",
+      "tags": [
+        "保险原理",
+        "保险利益",
+        "合同效力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.insurance-q014",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "精算建模项目经历",
+      "content": "请描述你参与过的一个精算或数据分析项目，包括项目目标、你使用的工具（如Excel/SQL/Python/R）、遇到的最大挑战以及最终如何解决。",
+      "tags": [
+        "项目经历",
+        "数据分析",
+        "建模工具"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.insurance-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "核保理赔实习案例",
+      "content": "在之前的核保或理赔实习中，你处理过的最复杂的一个案件是什么？请说明案件背景、你如何分析风险或核定损失、以及你从中学到了什么。",
+      "tags": [
+        "实习经历",
+        "案件处理",
+        "风险分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.insurance-q016",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "定价模型优化经历",
+      "content": "请分享一次你优化保险产品定价模型或核保规则的经历。你如何验证改进效果？是否遇到数据不足或监管限制？最终结果如何？",
+      "tags": [
+        "定价模型",
+        "模型优化",
+        "监管限制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.insurance-q017",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "核保决定沟通",
+      "content": "你作为核保人，拒绝了某重要客户的投保申请，但销售团队强烈反对并施压。你会如何与销售沟通？请现场模拟一段对话，并说明如何平衡业务发展与风险控制。",
+      "tags": [
+        "跨部门沟通",
+        "核保决定",
+        "风险控制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.insurance-q018",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "理赔纠纷沟通",
+      "content": "客户对理赔金额不满，情绪激动地投诉。你作为理赔人员，会如何安抚客户并解释理赔计算依据？请说明沟通步骤和合规注意事项。",
+      "tags": [
+        "理赔沟通",
+        "客户投诉",
+        "合规"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.insurance-q019",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "精算与核保方向选择",
+      "content": "精算和核保理赔是保险岗位的两大方向，你更倾向于哪一个？请结合你的性格、技能和职业目标说明原因，并谈谈你为此做了哪些准备。",
+      "tags": [
+        "方向选择",
+        "职业目标",
+        "能力匹配"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.insurance-q020",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "合规与业绩冲突",
+      "content": "如果公司要求你加快核保流程以提升业绩，但某些案件需要更严格的风险审查，你会如何应对？请说明你的原则和沟通方式。",
+      "tags": [
+        "合规意识",
+        "职业道德",
+        "沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.insurance-q021",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "退保率假设影响分析",
+      "content": "假设某终身寿险产品定价时，精算师将退保率假设从3%提高到5%，请分析这对产品利润、准备金和偿付能力的影响，并说明你会如何验证该假设的合理性。",
+      "tags": [
+        "精算定价",
+        "退保率",
+        "利润测试"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.insurance-q022",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "重疾险核保风险评估",
+      "content": "客户40岁男性，BMI 32，高血压服药控制良好，近期体检正常，申请投保重疾险。请说明你会重点核实哪些信息，如何评估风险，并给出可能的核保结论（标准体/加费/除外/拒保）及理由。",
+      "tags": [
+        "核保",
+        "风险评估",
+        "重疾险"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.insurance-q023",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "未决赔款准备金不利进展",
+      "content": "某财险公司车险业务连续两个季度未决赔款准备金出现不利进展。请从数据、定价、核保、理赔、再保等角度分析可能原因，并说明你会如何调整准备金评估方法和后续经营策略。",
+      "tags": [
+        "准备金评估",
+        "未决赔款",
+        "车险"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.insurance-q024",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "精算项目经历复盘",
+      "content": "请介绍你参与过的一个精算定价或准备金评估项目，说明项目背景、你负责的具体工作、使用的工具（Excel/SQL/Python/R）、遇到的困难及最终成果，并反思可改进之处。",
+      "tags": [
+        "项目经历",
+        "精算工具",
+        "成果复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.insurance-q025",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "复杂核保理赔案例",
+      "content": "请分享一个你处理过的复杂核保或理赔案例，说明案件难点、你收集了哪些证据、如何应用条款和医学/法律知识，最终决定及沟通方式，并总结从中获得的经验。",
+      "tags": [
+        "核保理赔",
+        "案例复盘",
+        "条款应用"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.insurance-q026",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "保险数据建模项目",
+      "content": "请描述一个你使用SQL、Python或R解决保险业务数据问题的项目。重点说明数据来源与清洗、建模思路、模型验证方法、结果如何支持定价/核保/理赔决策，以及你对模型局限性的认识。",
+      "tags": [
+        "数据分析",
+        "建模",
+        "保险决策"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.insurance-q027",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "定价分歧跨部门协调",
+      "content": "销售部抱怨新产品定价过高，要求降低费率以提升竞争力；精算部认为当前定价已基于保守假设，降低将影响偿付能力。作为项目协调人，你会如何组织沟通并推动达成一致？",
+      "tags": [
+        "跨部门沟通",
+        "定价分歧",
+        "合规"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.insurance-q028",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "理赔舆情危机应对",
+      "content": "某理赔案被媒体曝光，称公司“无理拒赔”，但调查发现客户投保时未如实告知既往病史。作为理赔主管，你如何对外沟通、对内汇报，并平衡客户关系、合规要求和公司声誉？",
+      "tags": [
+        "舆情应对",
+        "理赔沟通",
+        "合规"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.insurance-q029",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "保险职业动机与规划",
+      "content": "你为什么选择保险行业？在精算与核保理赔两个方向中，你更倾向哪个？请结合你的性格、能力和职业目标，谈谈未来3-5年的规划。",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "方向选择"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.insurance-q030",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "高压工作与团队协作",
+      "content": "保险工作常面临案件量大、时效要求高、客户情绪激动等压力。请举例说明你如何在高压下保持准确与合规，以及一次与同事协作解决难题的经历。",
+      "tags": [
+        "抗压能力",
+        "团队协作",
+        "职业素养"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -400,7 +740,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

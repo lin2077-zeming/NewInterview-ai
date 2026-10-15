@@ -276,6 +276,506 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "energy-chem.environmental-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "VOCs新增排放合规判断",
+      "content": "某机械加工企业拟新增喷漆工序，年用溶剂型油漆30吨，配套干式过滤+活性炭吸附。作为环评/合规工程师，你如何判断其应执行的国家/地方VOCs标准、是否需重新申请排污许可，并说明废气收集率与去除效率的核查要点。",
+      "tags": [
+        "法规标准",
+        "排污许可",
+        "VOCs"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q012",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "环评现状监测超标处理",
+      "content": "你在编制某工业园区废水环评报告时，发现纳污水体COD现状监测值已超地表水Ⅲ类标准，但园区污水处理厂尾水拟排入该河段。你会如何分析纳污能力、设置评价因子与监测方案，并在报告中提出哪些可落地的削减措施？",
+      "tags": [
+        "环评报告",
+        "水环境",
+        "达标规划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "电镀混合废水工艺选型",
+      "content": "某电镀厂废水含六价铬、镍和少量氰化物，pH波动大，要求出水执行GB 21900表3。请说明你会如何分质分流，选择化学还原、破氰、沉淀等单元的顺序，并给出关键控制参数与污泥处置注意点。",
+      "tags": [
+        "废水处理",
+        "工艺设计",
+        "重金属"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q014",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "废气采样工况核查",
+      "content": "到某企业做有组织废气例行监测，生产设备未满负荷，排气筒采样孔位置也不符合规范。你会如何判断监测是否有效、与企业和监管方如何沟通，并记录哪些现场信息以保证数据可追溯？",
+      "tags": [
+        "环境监测",
+        "采样规范",
+        "数据有效性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "最复杂环评项目复盘",
+      "content": "请选一个你主导或深度参与的环评项目，说明项目性质、主要污染因子、评价等级和敏感目标。重点讲你如何确定评价范围与监测布点，以及报告评审时专家提出的最棘手意见和你的修改思路。",
+      "tags": [
+        "项目复盘",
+        "环评",
+        "专家评审"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q016",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "废水站调试异常排查",
+      "content": "描述一次你参与调试的废水处理站，若出水氨氮持续超标，而COD和SS正常。请按你的实际角色，讲清当时排查了哪些工艺环节、检测了什么指标、如何调整碳源/曝气/回流，最终结果如何。",
+      "tags": [
+        "调试运维",
+        "氨氮",
+        "故障排查"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q017",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "排污许可申报经历",
+      "content": "你曾为哪类企业做过排污许可申报或环保竣工验收？请具体说明许可类别、产排污环节、自行监测方案和台账要求。如果实际排放口与环评批复不一致，你当时是如何处理并说服企业整改的？",
+      "tags": [
+        "排污许可",
+        "竣工验收",
+        "合规"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q018",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "环保督察应对经历",
+      "content": "请讲一次你陪同企业或园区应对环保督察/执法检查的经历。督察组关注了哪些资料和现场问题？你如何协调生产、安环、第三方检测在时限内提供证据，最后是否有处罚或整改项？",
+      "tags": [
+        "环保督察",
+        "沟通协调",
+        "整改"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q019",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "在线监测超标报警",
+      "content": "周五下班前，你负责的客户废水在线COD数据突然超标并触发报警，企业生产仍在继续。作为环境工程师，你如何在30分钟内判断真伪、通知谁、采取什么临时措施，并确保不构成弄虚作假？",
+      "tags": [
+        "应急响应",
+        "在线监测",
+        "合规"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "生产拒绝停线整改",
+      "content": "你发现某工序废气收集罩风量不足，需要停线改造，但生产经理以交付紧张拒绝。你如何用数据、法规风险和替代方案与他及管理层沟通，推动既不停产太久又能达标整改？",
+      "tags": [
+        "跨部门协作",
+        "沟通说服",
+        "废气治理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "居民异味投诉处理",
+      "content": "企业环评和验收都达标，但周边居民持续投诉异味。你受委托去处理，现场风向多变、投诉集中在夜间。你会如何设计排查与监测方案，如何与居民、企业和生态环境部门沟通，避免矛盾升级？",
+      "tags": [
+        "投诉处理",
+        "沟通协调",
+        "恶臭监测"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q022",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "客户要求改数据",
+      "content": "客户暗示你把一份超标监测报告改成达标，否则不付尾款，并称“大家都这么操作”。你如何在合法合规前提下回应客户，同时保护自己和公司？请说明具体话术、替代方案和内部上报流程。",
+      "tags": [
+        "职业操守",
+        "数据真实性",
+        "压力应对"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为何选择环境工程",
+      "content": "环境工程师常年在企业现场、报告和监管要求之间切换，有时还要处理投诉和督察。请结合你的经历，说明你为什么选择这个岗位，以及你认为自己最适合做法规合规、环评报告还是治理运维，为什么？",
+      "tags": [
+        "求职动机",
+        "岗位认知",
+        "职业匹配"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "三年职业规划",
+      "content": "如果入职，你希望三年内成为哪一类环境工程师：能独立负责环评报告、能主导治理工程调试，还是能统筹企业环保合规？请给出阶段性目标、要补的证书或技能，以及你如何衡量自己是否达标。",
+      "tags": [
+        "职业规划",
+        "能力提升",
+        "证书"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q025",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "跨专业团队协作",
+      "content": "一个项目中需要你、工艺设计、现场运维和第三方检测配合，但检测排期延误导致报告无法送审。请讲你会如何分工、同步信息和补救，并举一个你实际解决类似团队协作问题的例子。",
+      "tags": [
+        "团队协作",
+        "项目管理",
+        "沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "驻场与出差接受度",
+      "content": "环境工程师可能需要频繁出差、驻厂调试或夜间采样，也可能面对企业施压。请说明你对出差强度、驻场条件和薪酬期望的真实想法，以及你过去如何平衡工作压力与生活。",
+      "tags": [
+        "期望管理",
+        "抗压能力",
+        "出差驻场"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q027",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "单元操作与单元过程的区别",
+      "content": "单元操作（unit operation）与单元过程（unit process）有什么区别？各举一例。",
+      "tags": [
+        "化工原理",
+        "基础概念"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q028",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "间接排放限值确定",
+      "content": "某企业生产废水经预处理后接入园区污水处理厂，园区要求执行间接排放标准，但当地生态环境局另有更严规定。你作为环境工程师，如何确定项目应执行的排放限值？请说明法规依据、标准优先级和与园区、主管部门沟通的要点。",
+      "tags": [
+        "环保法规",
+        "排放标准"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q029",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "环评敏感点漏项补救",
+      "content": "你在编制某机械加工项目环评报告表时，现场踏勘后才发现厂界外约300米有一所新建幼儿园，但立项文件未标注。此时报告已进入内审。你会如何补充敏感点调查、调整防护距离并修改报告？请说明工作顺序。",
+      "tags": [
+        "环评报告",
+        "敏感点调查"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q030",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "电镀废水分类治理",
+      "content": "某电镀园区废水含铬、镍、氰化物和酸碱，要求分质处理并部分回用。请设计一条分类分流与处理工艺路线，说明含铬、含氰废水预处理顺序、关键控制参数及污泥属性判断依据。",
+      "tags": [
+        "废水处理",
+        "工艺设计"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q031",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "全程参与项目复盘",
+      "content": "请挑选一个你全程参与的环境咨询或工程类项目，说明项目类型、你的具体职责、你独立完成的章节或模块，以及最终评审或验收时专家、主管部门提出的主要修改意见。",
+      "tags": [
+        "项目经历",
+        "环评验收"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q032",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "现场采样质控经历",
+      "content": "描述一次你负责的废水或废气现场采样。请说明点位布设依据、采样容器与保存剂选择、运输和交接记录，以及你遇到过的异常情况，如工况不稳、样品失效，并说明处置方式。",
+      "tags": [
+        "环境监测",
+        "采样质控"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q033",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "设施调试故障排查",
+      "content": "你调试或运维过哪类环保设施？若生化系统进水COD突然升高、出水氨氮超标，你会按什么顺序排查？请结合pH、溶解氧、污泥浓度、回流比等参数，说明判断思路和调整措施。",
+      "tags": [
+        "设施运维",
+        "故障排查"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q034",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "环保督察应急应对",
+      "content": "客户工厂突遇环保督察，现场发现危废台账与实物库存不符，负责人希望你帮忙“先应付过去”。你作为第三方环境工程师，应如何稳定现场、向企业说明风险，并协调整改与沟通？",
+      "tags": [
+        "环保督察",
+        "沟通协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q035",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "推动工艺部门整改",
+      "content": "你发现生产车间为降成本擅自调整工艺参数，导致废水站进水波动、存在超标风险，但工艺部门认为你小题大做。你如何用数据和法规推动整改，同时不影响跨部门关系？",
+      "tags": [
+        "跨部门协作",
+        "合规沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q036",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "职业方向与考证规划",
+      "content": "环境工程师可向环评咨询、治理工艺、监测运维或企业EHS发展。你更希望深耕哪个方向？未来三年你计划考取哪些证书、积累哪些项目经验？请结合我们岗位说明你的规划。",
+      "tags": [
+        "职业规划",
+        "证书考取"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q037",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "合规压力下的选择",
+      "content": "如果客户要求你在环评或验收报告中修改监测数据，否则可能更换合作方，你拒绝后项目可能流失。你会如何向公司汇报、向客户解释，并守住职业底线？请举一例说明你的处理原则。",
+      "tags": [
+        "职业操守",
+        "抗压沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q038",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "电镀废水环评标准判定",
+      "content": "某工业园区新建日处理5000吨电镀废水项目，纳污水体为Ⅲ类水体，下游3公里有集中式饮用水源二级保护区。你在编制环评报告时，如何判定排放标准、确定主要污染因子及评价等级？请说明依据的法规标准与关键计算步骤。",
+      "tags": [
+        "环评编制",
+        "排放标准",
+        "法规依据"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q039",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "治理项目调试与超标排查",
+      "content": "请介绍你参与过的一个废水或废气治理项目：从污染物特性、工艺选型、关键参数计算到调试运行，说明你的具体角色。若出水COD反复超标，你会按什么顺序排查工艺、设备与进水因素？",
+      "tags": [
+        "工艺设计",
+        "调试运维",
+        "项目经历"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.environmental-q040",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "评审质疑与多方协调",
+      "content": "你负责的环评项目在评审会上被专家质疑源强核算依据不足，企业又催促尽快报批。你会如何与专家、企业及内部技术负责人沟通，并在3天内补齐数据？请说明沟通顺序和风险控制。",
+      "tags": [
+        "沟通协调",
+        "环评评审",
+        "风险控制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -372,7 +872,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

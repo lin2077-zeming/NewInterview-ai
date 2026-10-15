@@ -277,6 +277,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "cs-it.test-dev-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "等价类与边界值设计",
+      "content": "给定一个用户注册接口，要求用户名长度为6-20位，只能包含字母、数字和下划线。请用等价类划分和边界值分析法设计测试用例，并说明你如何确定有效等价类和无效等价类，以及会重点覆盖哪些边界值。",
+      "tags": [
+        "测试用例设计",
+        "等价类",
+        "边界值"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "自动化框架分层设计",
+      "content": "你需要为一个Web项目从零搭建自动化测试框架，要求支持多浏览器、数据驱动和失败重试。请描述你的框架分层设计（如页面对象模型、测试数据管理、报告生成），并说明如何降低用例维护成本。",
+      "tags": [
+        "自动化框架",
+        "分层设计",
+        "Selenium"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "缺陷定位与日志分析",
+      "content": "测试环境发现一个接口返回500错误，但开发说本地无法复现。你会如何一步步定位问题？请描述你的排查思路，包括如何查看日志、分析请求响应、使用抓包工具，以及如何判断是环境问题还是代码缺陷。",
+      "tags": [
+        "缺陷定位",
+        "日志分析",
+        "问题排查"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q014",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "性能测试方案设计",
+      "content": "某电商系统即将大促，需要你设计性能测试方案。请说明你会如何确定测试目标（如TPS、响应时间）、选择场景（如秒杀、下单）、设计负载模型，以及如何监控和分析瓶颈（如数据库、中间件、应用服务器）。",
+      "tags": [
+        "性能测试",
+        "方案设计",
+        "瓶颈分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "自动化项目落地经历",
+      "content": "请描述你过去参与过的一个自动化测试项目：项目背景、你负责的模块、使用的技术栈、遇到的挑战（如元素定位不稳定、用例执行慢），以及你是如何解决并衡量自动化收益的（如覆盖率、执行时间）。",
+      "tags": [
+        "项目经历",
+        "自动化测试",
+        "收益衡量"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "质量推动案例深挖",
+      "content": "请分享一次你推动开发或产品改进质量的经历。你发现了什么问题？如何量化影响？你采取了哪些沟通和推动手段？最终结果如何？如果重来一次，你会如何做得更好？",
+      "tags": [
+        "质量推动",
+        "沟通协作",
+        "复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q017",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "测试平台架构设计",
+      "content": "假设你要为公司设计一个测试平台，支持用例管理、自动化调度、环境管理和报告展示。请描述你的架构设计（前后端、数据库、任务队列），并说明如何保证平台的高可用和可扩展性，以及如何与CI/CD流水线集成。",
+      "tags": [
+        "测试平台",
+        "架构设计",
+        "CI/CD"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q018",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "CI流水线搭建经验",
+      "content": "你是否在项目中搭建过持续集成流水线？请描述你如何配置Jenkins或GitLab CI，在代码提交后自动触发测试，并通知结果。遇到构建失败时，你如何快速定位是代码问题还是环境问题？",
+      "tags": [
+        "持续集成",
+        "Jenkins",
+        "流水线"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "开发不认缺陷沟通",
+      "content": "你提了一个严重bug，但开发认为不是缺陷，拒绝修复。你会如何沟通？请说明你如何准备证据（如日志、录屏、复现步骤），如何从用户和业务角度阐述影响，以及如果仍然无法达成一致，你会怎么处理。",
+      "tags": [
+        "跨部门沟通",
+        "缺陷争议",
+        "冲突处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q020",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "需求频繁变更应对",
+      "content": "产品需求在迭代中频繁变更，导致测试用例和自动化脚本需要反复修改。你会如何与产品、开发协作来减少变更带来的返工？请描述你的应对策略，如需求评审、用例设计预留扩展性、自动化分层等。",
+      "tags": [
+        "需求变更",
+        "应变能力",
+        "协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q021",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "线上故障应急处理",
+      "content": "线上突发严重故障，用户无法下单。你作为测试负责人，需要在短时间内协调开发、运维和产品进行排查。请描述你的应急处理流程：如何快速止损、如何组织复现和验证、如何同步信息，以及事后如何推动改进。",
+      "tags": [
+        "线上故障",
+        "应急处理",
+        "协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q022",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "测试环境资源冲突",
+      "content": "多个项目组共用一套测试环境，经常出现资源冲突导致测试阻塞。你会如何协调各方？请说明你如何制定环境使用规范、推动环境隔离或容器化，以及如何与运维团队协作提升环境稳定性。",
+      "tags": [
+        "环境管理",
+        "资源协调",
+        "运维协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "测开岗位选择动机",
+      "content": "你为什么选择测试开发工程师岗位，而不是纯开发或纯手工测试？请结合你的经历和兴趣，说明你对测开岗位的理解，以及你认为自己哪些特质适合这个岗位。",
+      "tags": [
+        "求职动机",
+        "岗位理解",
+        "自我认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "职业成长目标规划",
+      "content": "未来3年，你希望在测试开发领域达到什么样的水平？请具体说明你想提升的技术方向（如自动化框架、性能测试、测试平台），以及你计划如何实现这些目标。",
+      "tags": [
+        "职业规划",
+        "成长目标",
+        "学习计划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "团队协作与反馈",
+      "content": "请举例说明你在团队中如何给予或接受负面反馈。当你的测试方案被同事质疑时，你会如何应对？你如何确保团队在质量目标上达成一致？",
+      "tags": [
+        "团队协作",
+        "反馈沟通",
+        "质量共识"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "压力管理与优先级",
+      "content": "测试工作经常面临多项目并行和紧急上线压力。请描述一次你同时处理多个高优先级任务的经历，你如何排定优先级、管理时间，并确保关键测试不遗漏？",
+      "tags": [
+        "压力管理",
+        "优先级",
+        "时间管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q027",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "文件上传功能测试用例设计",
+      "content": "请为「用户头像上传」功能设计测试用例。需考虑文件格式（jpg/png/gif）、大小限制（如2MB）、上传方式（点击/拖拽）、并发上传、网络中断续传、服务器存储路径等。请说明你划分的测试维度及优先级。",
+      "tags": [
+        "测试用例",
+        "边界值",
+        "场景设计"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q028",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "数据驱动接口自动化框架",
+      "content": "设计一个数据驱动的接口自动化测试框架，支持多环境切换、用例参数化、断言校验、测试报告生成。请说明框架的分层结构、核心模块职责，以及如何与CI流水线集成。",
+      "tags": [
+        "自动化测试",
+        "框架设计",
+        "持续集成"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q029",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "秒杀系统性能测试方案",
+      "content": "某秒杀活动预计峰值QPS 5万，库存1万件。请设计性能测试方案：包括场景建模（登录、商品详情、下单）、并发策略、监控指标（TPS、响应时间、错误率、资源利用率），以及如何定位瓶颈（如数据库锁、网络IO）。",
+      "tags": [
+        "性能测试",
+        "瓶颈定位",
+        "容量评估"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q030",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "自动化测试框架落地经验",
+      "content": "请描述你主导或深度参与开发的自动化测试框架/工具。重点说明：解决了什么测试痛点（如回归耗时、环境依赖）、技术选型理由、核心模块设计，以及上线后带来的量化收益（覆盖率、耗时缩短比例）。",
+      "tags": [
+        "项目经验",
+        "框架落地",
+        "效率提升"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q031",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "推动开发修复缺陷的经历",
+      "content": "回忆一次你发现的、但开发认为「不是bug」或「优先级低」的缺陷。你是如何收集证据、评估影响、与开发及产品沟通，最终推动问题解决的？结果如何？",
+      "tags": [
+        "缺陷管理",
+        "沟通推动",
+        "质量闭环"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q032",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "最有挑战的性能测试项目",
+      "content": "讲述你经历过的最有挑战的性能测试项目。当时的系统架构、性能目标是什么？你如何设计测试场景、准备测试数据、执行压测并分析结果？最终发现了什么瓶颈，如何协助开发优化？",
+      "tags": [
+        "性能调优",
+        "场景设计",
+        "问题定位"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q033",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "开发不认bug且产品催上线",
+      "content": "上线前你发现一个概率性缺陷，开发认为难以复现且不影响主流程，产品则催促按期发布。作为测试负责人，你会如何应对？请说明你的沟通策略和决策依据。",
+      "tags": [
+        "跨部门沟通",
+        "质量坚守",
+        "优先级"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q034",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "自动化用例频繁失败的应对",
+      "content": "团队自动化用例频繁失败，维护成本高，开发抱怨「不如手工测试」。你作为测开，会从哪些方面分析原因（如用例脆弱、环境不稳、数据污染），并采取什么措施提升稳定性和ROI？",
+      "tags": [
+        "自动化稳定性",
+        "维护成本",
+        "持续改进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q035",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么选择测试开发",
+      "content": "你为什么不选择纯开发岗位，而是做测试开发？结合你对测开岗位的理解，谈谈未来3年的职业规划，以及你希望在这个岗位上获得什么成长。",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "岗位认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q036",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "如何跟进测试新技术",
+      "content": "测试领域技术更新快（如AI测试、精准测试、混沌工程）。请举例说明你最近主动学习的一项测试新技术，通过什么方式学习，并如何应用到实际工作中。",
+      "tags": [
+        "学习能力",
+        "技术跟进",
+        "自我驱动"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q037",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "优惠券叠加测试用例设计",
+      "content": "某电商下单页支持多张优惠券叠加使用：满减券与折扣券可叠加但各限一张，折扣券按商品原价计算，满减券在折扣后金额上抵扣，叠加后实付不得低于 0.01 元，且优惠券有有效期、适用品类与库存限制。请给出该功能的测试用例设计思路，并说明如何用等价类、边界值和场景法覆盖主要风险点。",
+      "tags": [
+        "用例设计",
+        "等价类边界值",
+        "场景法"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q038",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "自动化框架项目深挖",
+      "content": "请挑一个你主导或深度参与的自动化测试框架/平台项目，说明它解决的具体痛点、技术选型（如 pytest+Allure、Selenium Grid、Jenkins 流水线）、分层设计与你负责的模块。重点讲：用例规模与单次执行时长、失败重跑与等待策略等稳定性手段、维护成本，以及上线后回归效率或漏测率等可量化收益。",
+      "tags": [
+        "自动化框架",
+        "技术选型",
+        "量化收益"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q039",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "偶现缺陷与上线决策",
+      "content": "版本封板前夜，回归中发现一个概率约 5% 的支付金额错乱缺陷，现有日志不足以定位根因。开发认为偶现且不影响主流程，建议下版本修复；产品希望按原计划上线。作为测试负责人，你会如何评估风险、收集关键信息，并在上线决策会上推动形成结论？请给出具体行动步骤与沟通要点。",
+      "tags": [
+        "缺陷定位",
+        "风险评估",
+        "跨团队沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.test-dev-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "测开定位与优先级",
+      "content": "你过去一年在测试开发上投入最多的一件事是什么？如果入职后前三个月团队更需要你支撑业务功能测试，自动化建设只能占用约 20% 的时间，你会如何安排优先级并证明自己的价值？请结合你对测开岗位定位的理解来回答。",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "优先级管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -389,7 +899,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full",
     "dimensionSource": "project-authored"
   }

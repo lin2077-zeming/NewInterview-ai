@@ -278,6 +278,506 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "finance-econ.securities-research-q011",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "搭建DCF模型的关键假设",
+      "content": "假设你覆盖一家新能源电池企业，请说明搭建DCF模型时你会如何设定收入增长率、毛利率、WACC等关键假设，并如何做敏感性分析来验证估值结果的稳健性。",
+      "tags": [
+        "财务建模",
+        "估值",
+        "敏感性分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "行业研究框架搭建",
+      "content": "请以半导体设备行业为例，从宏观、中观、微观三个层面搭建研究框架，说明你会跟踪哪些核心指标，并如何判断行业景气度拐点。",
+      "tags": [
+        "研究框架",
+        "行业分析",
+        "景气度"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q013",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "财报异常指标分析",
+      "content": "你覆盖的消费公司近两个季度应收账款周转率大幅下降、存货周转天数上升，但收入仍增长。请分析可能原因，并说明你会向管理层追问哪些问题。",
+      "tags": [
+        "财务分析",
+        "财报异常",
+        "调研问题"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q014",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "估值方法的选择与适用",
+      "content": "请对比DCF、PE、PB、PS、EV/EBITDA等估值方法的适用场景，并说明对于一家尚未盈利的生物科技公司，你会优先采用哪种估值方法，为什么。",
+      "tags": [
+        "估值方法",
+        "相对估值",
+        "绝对估值"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "深挖一份研究报告",
+      "content": "请挑选一份你独立撰写或深度参与的研究报告，介绍研究问题、数据来源、分析框架、核心结论，以及报告发布后市场表现是否验证了你的判断？你复盘时发现了哪些不足？",
+      "tags": [
+        "研究报告",
+        "复盘",
+        "逻辑验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "上市公司调研经历",
+      "content": "描述一次你参与上市公司调研或专家访谈的经历。你如何准备问题清单？现场如何追问以获取增量信息？调研后如何交叉验证信息的真实性？",
+      "tags": [
+        "上市公司调研",
+        "专家访谈",
+        "信息验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q017",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "财务模型搭建难点",
+      "content": "请介绍你搭建过的最复杂的一个财务模型（如三表联动、并购模型等），说明模型结构、关键假设、遇到的难点及解决方案，以及如何确保模型的可扩展性和准确性。",
+      "tags": [
+        "财务模型",
+        "三表联动",
+        "建模难点"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q018",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "数据分析项目经历",
+      "content": "请分享一个你利用编程工具（Python/SQL等）进行数据清洗、分析并得出投资洞察的项目。你处理了哪些数据？发现了什么规律？如何验证结论的稳健性？",
+      "tags": [
+        "数据分析",
+        "编程工具",
+        "投资洞察"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "调研中遭遇回避如何应对",
+      "content": "在上市公司业绩说明会上，你追问核心产品毛利率下滑的原因，但管理层反复回避、只给模糊回答。你会如何调整提问策略？会后如何通过其他渠道获取信息？",
+      "tags": [
+        "沟通应变",
+        "调研技巧",
+        "信息获取"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q020",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "买方质疑推荐逻辑",
+      "content": "你向买方机构路演推荐某只股票，对方基金经理当场质疑你的核心假设，认为你过于乐观。你会如何回应？如果对方坚持反对，你如何平衡坚持观点与维护客户关系？",
+      "tags": [
+        "路演",
+        "客户沟通",
+        "观点辩护"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "跨部门协作与合规",
+      "content": "投行部正在承做某公司的IPO，而你的研究覆盖该行业并可能给出负面评价。你会如何处理研究独立性与公司内部关系？请说明具体沟通和操作步骤。",
+      "tags": [
+        "跨部门协作",
+        "合规",
+        "研究独立性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q022",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "突发利空快速点评",
+      "content": "你覆盖的公司盘后突发公告，称董事长被留置调查。你需要在一小时内向机构客户发布点评。在信息有限的情况下，你会如何组织内容？优先确认哪些事实？如何管理客户预期？",
+      "tags": [
+        "突发事件",
+        "快速响应",
+        "客户沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为何选择投研职业",
+      "content": "你为什么选择从事证券与投研工作？是哪些经历或特质让你认为自己适合这个高强度、高竞争的岗位？请结合具体事例说明。",
+      "tags": [
+        "求职动机",
+        "职业选择",
+        "自我认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "未来三到五年规划",
+      "content": "请描述你未来3-5年的职业规划。你希望深耕哪个行业？期望在研究中形成怎样的差异化优势？是否考虑过从卖方转向买方？",
+      "tags": [
+        "职业规划",
+        "行业深耕",
+        "发展路径"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "如何应对排名与压力",
+      "content": "卖方研究员面临频繁出差、深夜写报告、排名压力。请分享一个你同时处理多项紧急任务的事例，说明你如何安排优先级、调节情绪并保证输出质量。",
+      "tags": [
+        "抗压能力",
+        "时间管理",
+        "情绪调节"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q026",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "团队协作与分工",
+      "content": "在投研团队中，你与另一位同事共同覆盖一个大行业。你们如何分工？如果你们对某只股票的评级产生分歧，你会如何处理？请举例说明。",
+      "tags": [
+        "团队协作",
+        "分歧处理",
+        "投研团队"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q027",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "从三个角度谈资产负债率",
+      "content": "请分别从管理者、投资者、债权人的角度，谈谈对资产负债率的看法。",
+      "tags": [
+        "财务分析",
+        "多视角"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "华图教育《银保监会财会岗面试真题（2017 各批次）》",
+        "url": "https://ah.huatu.com/2020/1125/1903657.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q028",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "新能源车研究框架",
+      "content": "假设你被分配覆盖新能源汽车行业，请用三分钟搭建一个从宏观驱动、中观供需到微观公司竞争力的研究框架，并指出未来12个月你最关注的三个先行指标及其数据来源。",
+      "tags": [
+        "研究框架",
+        "行业分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q029",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "盈利质量与估值调整",
+      "content": "你覆盖的制造业公司近三年净利润CAGR 40%，但经营现金流净额连续为负，应收账款增速是营收两倍，存货周转天数上升。请现场分析其盈利质量，并说明你会调整DCF或PE估值中的哪些关键假设。",
+      "tags": [
+        "财务分析",
+        "估值建模"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q030",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "陌生行业首次覆盖",
+      "content": "假设下周你要首次覆盖一个完全陌生的行业，比如预制菜，只有一周时间。请列出你的研究步骤、必须获取的三类数据，以及如何判断这个行业是否值得写深度报告。",
+      "tags": [
+        "研究流程",
+        "行业筛选"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q031",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "投研经历与交付物",
+      "content": "请用STAR法则讲一段你写行业或公司报告的实习/课程项目：你负责的模块、使用的研究方法、最终交付物是什么，带教老师或评委给过什么具体反馈？",
+      "tags": [
+        "经历深挖",
+        "报告撰写"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q032",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "财务模型细节追问",
+      "content": "请描述你独立搭建过的最复杂财务模型：收入拆解到哪一层，三张表如何勾稽，WACC和永续增长率怎么定，做了哪些敏感性分析。如果关键假设错了10%，对目标价影响多大？",
+      "tags": [
+        "财务建模",
+        "项目细节"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q033",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "调研准备与追问",
+      "content": "讲一次你参与上市公司调研或专家访谈的经历。你提前准备了哪些问题？当管理层对毛利率下滑、关联交易等敏感问题回避时，你现场如何追问并交叉验证？",
+      "tags": [
+        "上市公司调研",
+        "信息验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q034",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "路演遭遇尖锐质疑",
+      "content": "你在路演中推荐某股票，一位基金经理当场质疑你的核心假设，并说“这报告是拍脑袋”，现场还有多位客户。你如何回应质疑、控制场面并推进交流？",
+      "tags": [
+        "路演沟通",
+        "应变能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q035",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "盘中突发政策点评",
+      "content": "盘中突发行业监管政策，你覆盖的龙头股迅速跌停，销售在群里要求10分钟内给出点评和操作建议。此时官方细则未出、市场传闻混乱，你会如何组织信息并给出有纪律的初步判断？",
+      "tags": [
+        "突发应对",
+        "政策解读"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q036",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "投研求职动机",
+      "content": "你为什么选择证券投研而不是银行、审计或产业？请结合你为进入这一行做过的具体准备，谈谈未来3年你想成为什么类型的研究员，以及你愿意为此付出什么。",
+      "tags": [
+        "求职动机",
+        "职业规划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q037",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "研究独立性与沟通",
+      "content": "你的研究结论看空某公司，但该公司是公司投行部重要客户，且基金经理重仓持有。你会如何处理报告结论、内部沟通和对外发布？请说明你的原则和具体步骤。",
+      "tags": [
+        "研究独立性",
+        "沟通原则"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q038",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "产能扩张期公司估值",
+      "content": "假设你被指派覆盖一家处于产能扩张期、近两年自由现金流为负的光伏组件公司，首席要求你三天内完成首次覆盖报告并给出12个月目标价。请说明你会选择哪套估值方法、核心假设（出货量、单位成本、产能利用率、折现率）如何设定，以及若产能利用率低于预期，结论会如何变化。",
+      "tags": [
+        "估值框架",
+        "财务建模",
+        "首次覆盖"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q039",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "复盘你的研究报告",
+      "content": "请复盘一份你独立完成或深度参与的行业/公司研究报告：当时市场共识是什么，你的结论与共识是否一致，支撑结论的关键论据分别来自哪些一手与二手信息（如上市公司调研、专家访谈、产业链数据、公告与第三方数据库），事后看哪个环节判断错了。",
+      "tags": [
+        "经历复盘",
+        "调研方法",
+        "信息源"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.securities-research-q040",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "标的下跌后的路演质询",
+      "content": "你路演推荐的一只标的在报告发布后两周内下跌15%，买方基金经理在电话会上当场质疑你的核心逻辑，要求你立刻给出解释。请现场模拟你前两句会怎么说，并说明事后你会怎样调整模型与盈利预测、是否下调评级，以及如何维护与这家客户的关系。",
+      "tags": [
+        "路演沟通",
+        "抗压",
+        "评级调整"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -404,7 +904,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

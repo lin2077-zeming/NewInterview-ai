@@ -277,6 +277,494 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "cs-it.devops-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "磁盘写满但du对不上",
+      "content": "线上某台机器磁盘使用率 100% 触发告警，但用 du -sh 统计目录总量只有 40G，而磁盘容量是 200G。请说明你会用哪些命令、按什么顺序定位原因，并解释最可能的几种情况（如已删除但被进程持有的文件、挂载点覆盖、僵尸日志）以及如何安全释放空间。",
+      "tags": [
+        "Linux排查",
+        "磁盘管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q012",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "Pod内curl超时的分层排查",
+      "content": "K8s 集群里 A 服务调用 B 服务的 ClusterIP 偶发超时，进入 A 的 Pod 内 curl Service 域名时快时慢。请给出分层排查思路：从 DNS 解析、Endpoints 是否就绪、kube-proxy/iptables 规则到目标 Pod 探针状态，每一步你会用什么命令验证，如何判断问题出在哪一层。",
+      "tags": [
+        "K8s网络",
+        "故障排查"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "多环境发布流水线设计",
+      "content": "团队有 dev/staging/prod 三套环境，目前发布靠人工登录机器执行脚本，经常配置漂移、漏发版本。请设计一条基于 Git 的 CI/CD 流水线，说明分支与制品晋级策略、配置和密钥如何管理、灰度与一键回滚怎么实现，以及如何防止有人绕过流水线手工改生产。",
+      "tags": [
+        "CI/CD",
+        "发布回滚",
+        "配置管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q014",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "告警降噪与SLO告警设计",
+      "content": "当前监控有 800 条告警规则，日均触发 300 次，值班同学逐渐麻木，真实故障反而被淹没。请给出治理方案：如何用 SLO 与错误预算重构告警、如何区分症状型与原因型指标、分级抑制与聚合怎么做，并说明你用什么指标验证治理确实有效。",
+      "tags": [
+        "监控告警",
+        "SLO",
+        "降噪"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "流水线提速的量化改造",
+      "content": "请讲一个你亲手优化过的 CI/CD 流水线：原来的构建部署耗时多久、瓶颈在哪（依赖下载、镜像构建、串行阶段、测试用例等），你做了哪些改造，最终耗时和发布频率变化多少？请给出可验证的度量数据，以及改造过程中被否决的方案。",
+      "tags": [
+        "CI/CD优化",
+        "效能度量"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "一次线上故障的复盘",
+      "content": "挑一次你参与处置的线上故障，按时间线讲清楚：怎么发现的、第一时间的止损动作是什么、根因如何定位、影响面多大，复盘后落地的改进项（监控、预案、架构）是否真正生效，你又是怎么验证它不会再犯的。",
+      "tags": [
+        "故障复盘",
+        "应急响应"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q017",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "K8s落地踩坑与解决",
+      "content": "请讲一个你在容器化或 K8s 落地中遇到的最难问题：例如 Pod 频繁 OOMKilled、探针配置不当导致滚动更新中断、镜像过大拖慢发布、存储或网络插件故障。说清当时的排查路径、最终方案，以及你留下什么预防机制避免复发。",
+      "tags": [
+        "K8s",
+        "容器化",
+        "踩坑"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q018",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "自研运维平台的价值论证",
+      "content": "你主导或深度参与过哪个运维工具或平台（发布系统、批量巡检、日志检索、CMDB 等）？请说明为什么当时选择自研而不是直接用开源方案，投入了多少人力与时间，上线后替代了多少人工操作，故障率或 MTTR 有什么可量化的变化。",
+      "tags": [
+        "运维平台",
+        "自动化",
+        "收益量化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "上线窗口前的变更博弈",
+      "content": "周五下午，研发负责人坚持把一个只做了冒烟测试的变更发到生产，理由是要赶客户演示，而你判断回滚方案并不完整。你会怎么沟通、提出哪些替代方案，如果对方仍坚持，你会如何记录决策与风险，事后又怎么推动流程改进？",
+      "tags": [
+        "变更管控",
+        "跨团队沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "故障现场的多团队协同",
+      "content": "一次 P1 故障涉及研发、DBA、网络和云厂商四方，群里几十人不停刷信息，排查进展混乱。作为值班的运维开发，你会如何划分排查分工、如何同步进展与对外通报，又如何避免多人同时操作生产环境造成二次故障？",
+      "tags": [
+        "应急协同",
+        "信息同步"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q021",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "流量突增时的降级决策",
+      "content": "晚高峰流量突增到日常 5 倍，自动扩容受云配额限制短时间无法生效，核心接口错误率持续上升。你需要决定限流阈值与降级哪些功能，请说明判断依据和决策流程，以及如何说服业务方接受牺牲部分非核心功能保住主链路。",
+      "tags": [
+        "容量与限流",
+        "降级决策"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q022",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "研发想跳过流水线门禁",
+      "content": "研发同学抱怨流水线太慢、卡点太多，希望紧急发版时能跳过单元测试和安全扫描直接上线。作为流水线负责人，你会怎么回应？请给出既保证交付效率、又不破坏质量底线的具体做法，并说明什么情况下你愿意让步。",
+      "tags": [
+        "质量门禁",
+        "协作沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "未来三年的成长规划",
+      "content": "从你目前的经历出发，未来三年你希望自己在运维开发方向上成长为什么样的工程师？为此打算补齐哪些能力，有没有已经在做的行动？如果团队短期内安排你做一些重复性运维工作，你会怎么看待和安排？",
+      "tags": [
+        "职业规划",
+        "学习成长"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "如何跟进云原生新技术",
+      "content": "云原生和运维工具链更新很快，请举一个你最近半年主动学习并用到工作中的技术，比如 eBPF、OpenTelemetry、Terraform 或某个可观测性平台。讲讲你的学习路径、落地效果，以及有没有学到一半放弃的，原因是什么。",
+      "tags": [
+        "技术学习",
+        "云原生"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "你认同的SRE团队文化",
+      "content": "你理想中的运维团队是什么样？请结合对「无指责复盘」「谁开发谁运维」「自动化优先于加人」这些常见理念的理解，谈谈你过往团队中见过的好做法，以及你不认同、甚至想改变的做法。",
+      "tags": [
+        "团队文化",
+        "价值观"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "入职前三个月的优先级",
+      "content": "假设你入职我们团队，前三个月你会优先做哪三件事？请说明入职第一周会去看哪些东西（监控大盘、流水线配置、历史故障记录、架构文档等），以及你如何判断自己已经度过适应期、开始产生实际价值。",
+      "tags": [
+        "入职规划",
+        "角色融入"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q027",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "CPU 飙高如何定位",
+      "content": "线上告警显示一台应用服务器 CPU 使用率持续 95%，top 中一个 Python 进程占满单核，但业务量并无明显增长，且不能直接重启服务。请说明你的排查顺序、会用到的命令（如 top、pidstat、py-spy、perf 等），以及如何区分死循环、GC 频繁与外部请求激增三种成因。",
+      "tags": [
+        "Linux排查",
+        "性能分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q028",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "CI/CD 流水线设计",
+      "content": "团队现在发布靠人工登录机器执行脚本，一次发布约 40 分钟且常因环境不一致失败。请设计一条从代码提交到生产灰度的 CI/CD 流水线，说明关键阶段、如何保证构建产物一致性与发布幂等、失败如何自动回滚，以及你会优先自动化哪一环。",
+      "tags": [
+        "CI/CD",
+        "自动化部署"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q029",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "告警治理与 SLO 设计",
+      "content": "当前监控有 800 条告警规则，日均触发 300 次，研发已普遍开启免打扰，真正故障反而被淹没。请你给出告警治理方案：如何基于 SLO 与错误预算设置分级阈值，如何收敛重复告警与抖动告警，以及怎样验证治理后的效果。",
+      "tags": [
+        "监控告警",
+        "SLO"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q030",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "容器化迁移落地细节",
+      "content": "请讲一个你主导或深度参与的服务容器化 / K8s 迁移项目：迁移前的服务形态与依赖是什么，遇到的最大障碍（如有状态服务、启动依赖、配置管理），你如何设计迁移与回滚方案，上线后稳定性指标是否有可量化的变化？",
+      "tags": [
+        "Kubernetes",
+        "容器化迁移"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q031",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "线上故障应急复盘",
+      "content": "请描述一次你亲历的线上 P0/P1 故障：从告警触发到你介入的第一分钟做了什么，如何判断影响面并决策止损（回滚还是修复），最终根因是什么。请重点说明复盘后落地的具体改进项，以及它后来是否真的再次拦住同类问题。",
+      "tags": [
+        "应急响应",
+        "故障复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q032",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "自动化替代人工经历",
+      "content": "请举一个你用脚本或平台替代重复人工操作的例子：原来的操作频率和耗时是多少，你用什么语言和工具实现，如何保证它出错时不会造成更大破坏（如幂等、dry-run、审批），上线后节省了多少人力或减少了多少人为事故？",
+      "tags": [
+        "脚本开发",
+        "效率提升"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q033",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "与研发的发布分歧",
+      "content": "研发团队希望随时合并即上线，而你认为需要变更窗口与灰度卡点，双方在发布规范上僵持不下。请说明你会如何用数据（如变更失败率、回滚耗时）推动共识，你会做出哪些让步，以及如果对方仍坚持绕过流程你会怎么处理。",
+      "tags": [
+        "跨团队沟通",
+        "变更管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q034",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "突发流量应急协作",
+      "content": "大促前 30 分钟，监控显示核心接口 QPS 已是日常峰值 3 倍，数据库连接池接近打满，此时业务方仍在追加新的营销活动。请说明你接下来 10 分钟内会做哪些动作、如何与业务方和应用负责人同步信息，以及事后如何推动容量预案。",
+      "tags": [
+        "应急响应",
+        "沟通协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q035",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么选择 SRE",
+      "content": "你之前的经历中，哪一段让你确定想转向运维开发 / SRE 方向？请具体说明你理解这个岗位日常要面对什么（如值班、告警、背锅压力），以及你为这个方向做了哪些准备。",
+      "tags": [
+        "求职动机",
+        "职业选择"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q036",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "值班压力与长期规划",
+      "content": "运维岗位常需要 on-call 和凌晨处理故障，你如何看待这种工作节奏？请结合你在压力下的一次经历，说明你的应对方式。另外，未来两三年你希望自己在自动化、稳定性还是云原生方向上形成什么专长？",
+      "tags": [
+        "抗压能力",
+        "职业规划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q037",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "TIME_WAIT 端口耗尽排障",
+      "content": "线上网关服务偶发 502，监控显示单机 ESTABLISHED 正常，但 netstat 中 TIME_WAIT 持续在 3 万以上，新连接偶发 EADDRNOTAVAIL。请说明你的排查路径：从内核参数、连接模型到上游连接池，你会依次看哪些指标，短期止血和长期修复分别怎么做？",
+      "tags": [
+        "Linux网络",
+        "故障排查",
+        "TCP调优"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q038",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "CI/CD 流水线量化改造",
+      "content": "请讲一个你主导过的 CI/CD 流水线优化：优化前构建/发布链路是什么样，瓶颈定位在哪，你做了哪些改造（缓存、并行、镜像分层、制品管理等），最终构建时长、发布频率、回滚耗时分别变化多少？如果重来一次你会先做什么？",
+      "tags": [
+        "CI/CD",
+        "自动化",
+        "效能度量"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q039",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "研发紧急直改线上配置",
+      "content": "大促前夜，研发同学说改一行配置就能修复一个 P2 问题，要求跳过审批直接在生产改配置并重启服务。你作为值班 SRE，既不希望阻碍业务恢复，又要控制变更风险。你会怎么沟通、拿到什么信息、做哪些兜底动作？",
+      "tags": [
+        "变更管理",
+        "跨团队沟通",
+        "应急响应"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.devops-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "DevOps 方向成长规划",
+      "content": "你未来 1–3 年希望在 DevOps/SRE 方向积累哪些能力？请结合你目前最薄弱的一块（如 K8s、IaC、可观测性、编码能力）说说你的学习计划，以及你判断自己进步的标准是什么？",
+      "tags": [
+        "职业规划",
+        "学习能力",
+        "自我认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -400,7 +888,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full",
     "dimensionSource": "project-authored"
   }

@@ -276,6 +276,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "安全生产责任制落地",
+      "content": "你所在企业准备修订安全生产责任制，请说明《安全生产法》中“三管三必须”和全员安全生产责任制对业务部门、人力资源、财务分别意味着什么？你会如何把职责写进责任清单并设置可考核指标？",
+      "tags": [
+        "安全生产法",
+        "责任制",
+        "合规落地"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "有限空间作业JHA",
+      "content": "某制造车间要清理废水池，池深3米、可能存硫化氢且通风不良。请用JHA或LEC组织一次作业前风险辨识，说明你会列哪些步骤、关键风险、控制层级和作业许可审批要点。",
+      "tags": [
+        "有限空间",
+        "JHA",
+        "风险管控"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q013",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "盐酸泄漏应急处置",
+      "content": "厂区装卸区发生盐酸少量泄漏，无人员重伤，但围堰外排口pH异常。作为EHS工程师，请说明现场处置、报告时限、事故调查取证和纠正措施，并判断是否可能构成突发环境事件。",
+      "tags": [
+        "泄漏应急",
+        "事故调查",
+        "环境事件"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q014",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "承包商体系不符合项",
+      "content": "内审发现某车间承包商管理只有安全协议，无入场培训、作业许可和绩效评价记录。请按ISO 45001和ISO 14001相关条款指出不符合项，并给出从文件、现场到验证的整改闭环方案。",
+      "tags": [
+        "ISO45001",
+        "承包商管理",
+        "内审整改"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "隐患排查闭环案例",
+      "content": "请讲一个你主导或深度参与的隐患排查案例：当时现场状况如何、你如何分级、推动哪个部门整改、遇到什么阻力、最终验证关闭的证据是什么？请用具体数据和时间线说明。",
+      "tags": [
+        "隐患排查",
+        "整改闭环",
+        "项目经历"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "事故根因分析复盘",
+      "content": "描述一次你参与的事故或未遂事件调查。你如何收集证据、访谈当事人、用5Why或鱼骨图找到根因？整改建议中哪些是工程控制、哪些是管理措施？效果如何验证？",
+      "tags": [
+        "事故调查",
+        "根因分析",
+        "未遂事件"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "应急演练组织复盘",
+      "content": "你组织过或参与过哪次应急演练？请说明演练场景、脚本设计、参演角色、暴露出的问题，以及你如何把改进项落到预案修订和物资补充。若员工觉得演练走过场，你怎么办？",
+      "tags": [
+        "应急演练",
+        "预案修订",
+        "组织协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q018",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "体系外审迎检经历",
+      "content": "请复盘一次你负责的ISO 14001/45001外审或政府安全检查。审核前你如何做差距分析、文件补强和现场准备？审核中遇到不符合项，你如何沟通、承诺整改并跟踪关闭？最终结果如何？",
+      "tags": [
+        "体系审核",
+        "政府检查",
+        "整改沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "生产赶工与隐患整改",
+      "content": "生产经理以订单交付为由拒绝停机整改一处防护罩缺失，你判断风险不可接受。请现场模拟你如何沟通，提出哪些替代控制措施，若对方仍不同意你如何升级并留存记录？",
+      "tags": [
+        "跨部门沟通",
+        "生产冲突",
+        "风险升级"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "政府突击检查应对",
+      "content": "应急管理局突然到厂检查，发现危化品仓库标识不清、MSDS缺失，陪同的车间主任想先解释。作为EHS，你如何接待、分工、回答询问并避免现场冲突？检查后如何闭环？",
+      "tags": [
+        "政府检查",
+        "危机应对",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q021",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "员工拒戴防护用品",
+      "content": "多名老员工认为戴防尘口罩闷热、拒绝佩戴，班组长也默许。你如何设计一次不超过30分钟的现场沟通或培训，让他们理解风险并接受要求？你如何评估培训真的有效？",
+      "tags": [
+        "安全培训",
+        "一线沟通",
+        "培训评估"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q022",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "可燃气报警前10分钟",
+      "content": "中控室可燃气体报警突然响起，现场有检修动火作业，值班主管不在。你作为EHS工程师接到电话，请按优先级说出前10分钟你做什么：判断、停产、疏散、报告、警戒、检测和恢复条件。",
+      "tags": [
+        "应急响应",
+        "报警处置",
+        "现场决策"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为何选择EHS岗位",
+      "content": "安全工程师常被看作“找麻烦”的岗位，还要承担事故追责压力。你为什么仍选择EHS方向？过去哪件事让你确认自己适合做安全？请结合具体经历谈。",
+      "tags": [
+        "岗位选择",
+        "抗压动机",
+        "自我认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q024",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "EHS三年成长路径",
+      "content": "未来3年，你希望在EHS领域成为法规专家、现场风险专家还是体系审核专家？你现在的短板是什么，计划通过哪些证书、项目或轮岗补齐？",
+      "tags": [
+        "成长路径",
+        "能力短板",
+        "学习计划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q025",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "跨部门整改协作经历",
+      "content": "你推动整改时经常要借力生产、设备、HR和财务。请举一个你跨部门协作达成安全目标的例子，说明你如何分配任务、处理异议，让非安全部门愿意配合。",
+      "tags": [
+        "跨部门协作",
+        "整改推动",
+        "影响力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q026",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "EHS工作条件期望",
+      "content": "EHS岗位可能需要下车间、夜班应急、节假日值班，也可能面对管理层不重视。你对工作地点、班次、薪酬和授权有什么真实期望？如果实际条件与预期不符你会怎么处理？",
+      "tags": [
+        "期望管理",
+        "工作条件",
+        "抗压"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q027",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "车间报警响起你该怎么做",
+      "content": "你在车间里，警报突然响起来，你会怎么做？请按顺序说明你的处置动作。",
+      "tags": [
+        "安全生产",
+        "应急处置"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "伊利诺伊大学《Technical Interviews》",
+        "url": "https://scs.illinois.edu/document/69",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q028",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "主要负责人职责落地",
+      "content": "监管部门检查时询问企业主要负责人安全生产职责，你作为EHS工程师需当场说明。请列举《安全生产法》规定的三项主要负责人职责和两项安全管理人员职责，并各举一个日常落地动作。",
+      "tags": [
+        "法规标准",
+        "安全生产法",
+        "合规"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q029",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "丙酮清洗机风险评估",
+      "content": "车间新增一台使用丙酮的清洗机，请你用JHA或LEC方法组织一次风险评估。请说明评估步骤、可能风险点、控制层级，以及需要更新哪些操作规程、培训和应急物资。",
+      "tags": [
+        "风险辨识",
+        "JHA",
+        "控制措施"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q030",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "反应釜灼伤事故调查",
+      "content": "某反应釜超压冲料，造成一名员工灼伤。你负责事故调查，请说明调查步骤、需收集的证据、如何区分直接原因与间接原因，并给出整改闭环和举一反三措施。",
+      "tags": [
+        "事故调查",
+        "根因分析",
+        "整改闭环"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q031",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "现场隐患排查闭环经历",
+      "content": "请从你简历中的EHS经历里选一次现场隐患排查，说明隐患发现过程、违反的具体法规或标准条款、你提出的整改建议，以及最终如何验证闭环。",
+      "tags": [
+        "隐患排查",
+        "闭环管理",
+        "项目经历"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q032",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "安全培训与演练设计",
+      "content": "请描述一次你主导或参与的安全培训/应急演练。重点说明培训目标如何确定、内容如何贴合岗位风险、效果如何评估，以及后续如何改进。",
+      "tags": [
+        "培训设计",
+        "应急演练",
+        "效果评估"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q033",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "政府EHS检查应对经历",
+      "content": "请讲一次你参与应对政府EHS检查或环保督察的经历。当时发现了什么问题、你如何组织整改、体系文件如何修订，最后如何防止同类问题再发生？",
+      "tags": [
+        "政府检查",
+        "环保合规",
+        "整改"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q034",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "生产拒绝停机整改沟通",
+      "content": "生产经理认为停机整改影响交付，拒绝在隐患整改单上签字。你作为安全工程师，如何与他沟通并推动整改？请说明你的沟通步骤、可用的升级机制和底线。",
+      "tags": [
+        "跨部门沟通",
+        "整改阻力",
+        "风险决策"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q035",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "危废混放突击检查处置",
+      "content": "政府突击检查发现危废暂存间混放且标识缺失，要求立即停产整改。管理层让你“先沟通缓一缓”，你会如何处置？请说明现场动作、汇报路径和合规底线。",
+      "tags": [
+        "政府沟通",
+        "合规冲突",
+        "应急应变"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q036",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "EHS职业选择与抗压",
+      "content": "你为什么选择安全工程师（EHS）这个职业？请结合一次实习或工作选择说明。面对现场压力、事故责任和有时不被理解的情况，你如何保持长期投入和职业热情？",
+      "tags": [
+        "求职动机",
+        "抗压",
+        "职业选择"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q037",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "EHS职业规划与前90天",
+      "content": "未来3—5年，你希望在法规合规、风险管控还是体系管理方向深耕？如果入职一家安全管理基础薄弱的公司，你前90天会设定哪三个目标？请说明目标与衡量标准。",
+      "tags": [
+        "职业规划",
+        "前90天",
+        "价值定位"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q038",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "储罐区动火作业审批",
+      "content": "装置检修时需在运行中的常压储罐区外约5米处进行管道电焊动火。请说明你依据哪些法规与标准判断该作业能否批准，动火作业票的审批层级与有效期、气体分析的取样点与合格判定、作业中出现哪些异常必须立即停止动火，以及你在什么条件下会行使否决权。",
+      "tags": [
+        "动火作业",
+        "特殊作业许可",
+        "法规标准"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q039",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "隐患整改案例复盘",
+      "content": "请完整讲述一次你亲自发现并推动整改的现场隐患：当时的场景与判断依据是什么，隐患属于什么等级、依据哪条法规或标准定性，涉及哪些部门、你如何沟通推动，整改完成后怎样验证效果、又做了哪些防止复发的措施。",
+      "tags": [
+        "隐患排查",
+        "整改闭环",
+        "跨部门推动"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.safety-engineering-q040",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "夜班反应釜超温应急",
+      "content": "夜班23点，你作为值班安全工程师接到报告：某反应釜温度持续上升、现场有刺激性气味，班组长想先自行处理再上报。请描述接下来10分钟内你的行动顺序——现场确认与初期判断、人员疏散与警戒、信息上报、与生产/消防/应急部门的协同，以及事后改进。",
+      "tags": [
+        "应急处置",
+        "事故上报",
+        "现场指挥"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -392,7 +902,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

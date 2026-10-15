@@ -293,6 +293,337 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "cs-it.client-q012",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "生命周期与状态恢复",
+      "content": "场景：用户在商品编辑页填了半屏内容，此时来电或切到后台，部分机型返回后输入内容被清空、弹窗错位。请说明 Android 与 iOS 各自的生命周期回调顺序，并给出你会怎样保存与恢复页面状态、避免重复发起请求。",
+      "tags": [
+        "生命周期",
+        "状态保存",
+        "移动端基础"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.client-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "列表滑动卡顿优化",
+      "content": "某首页信息流列表项包含网络图片、多行文本和圆角阴影，上线后中低端机滑动掉帧明显。请说明你会如何定位掉帧来源，并给出至少三条具体优化手段（含布局层级、图片解码、视图复用与预取），以及如何验证优化效果。",
+      "tags": [
+        "列表优化",
+        "滑动流畅",
+        "性能调优"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.client-q014",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "冷启动耗时优化",
+      "content": "线上冷启动 P90 耗时 2.8 秒，目标压到 1.5 秒以内，但首帧必须展示个性化推荐内容。请说明你如何定义并分段测量启动耗时、定位主要瓶颈，给出可行的优化方案（含启动任务编排、懒加载、三方 SDK 治理），以及如何防止后续劣化。",
+      "tags": [
+        "启动优化",
+        "性能度量",
+        "工程治理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.client-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "多机型屏幕适配方案",
+      "content": "请结合你做过的项目，讲一个界面从设计稿到真机还原时，遇到刘海屏、折叠屏或小屏机型的适配问题。你当时采用了什么适配策略（约束布局、等比缩放、安全区等），如何与设计确认，最终效果如何量化？",
+      "tags": [
+        "屏幕适配",
+        "UI还原",
+        "项目经历"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.client-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "线上崩溃定位与修复",
+      "content": "回忆一次你排查线上崩溃的经历：崩溃率多少、堆栈是否可读、必现还是偶现。请说明你如何从堆栈、用户操作路径和版本机型分布缩小范围，是否涉及符号化或用户日志，最终根因与修复方案是什么，上线后如何验证。",
+      "tags": [
+        "崩溃排查",
+        "符号化",
+        "线上问题"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.client-q017",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "接口数据缓存与离线",
+      "content": "在你的项目里，页面数据从后端拉取后需要在本地展示。请讲一个你处理缓存或弱网的具体做法：缓存粒度与失效策略怎么定，无网时展示什么内容，如何避免旧数据造成误导，过程中踩过什么坑。",
+      "tags": [
+        "数据缓存",
+        "弱网处理",
+        "持久化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.client-q018",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "需求变更与排期协调",
+      "content": "临近版本封版，产品要求把首页改版塞进当前迭代，但后端接口只能提供一半字段。你会如何评估技术可行性与工作量，怎样和产品、后端、测试对齐范围与上线节奏？请给出你的沟通顺序和具体推进思路。",
+      "tags": [
+        "需求评估",
+        "跨端协作",
+        "排期管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.client-q019",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "灰度期崩溃应急决策",
+      "content": "版本发布后灰度阶段崩溃率从 0.2% 涨到 3%，集中在某一新机型上，而全量发布窗口只剩两小时，此时你手上还没有明确复现路径。请说明你的应急决策：先止损还是先定位、是否回滚，如何同步各方并做后续复盘。",
+      "tags": [
+        "应急处理",
+        "灰度发布",
+        "风险决策"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.client-q020",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "客户端方向的成长规划",
+      "content": "你希望未来两年在客户端方向成长成什么样？请具体说说你想深耕的能力（如性能优化、跨端框架、架构设计）和衡量自己进步的标准，以及你认为自己当前最大的短板是什么，打算怎么补。",
+      "tags": [
+        "职业规划",
+        "成长路径",
+        "自我认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.client-q021",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "与设计的还原度分歧",
+      "content": "如果你按设计稿实现后，设计师仍认为还原度不达标，但按他的要求改会带来明显性能损耗或适配风险，你会怎么处理？请结合一次真实或设想的分歧，说明你如何表达技术约束并推动双方达成一致。",
+      "tags": [
+        "沟通表达",
+        "技术分歧",
+        "协作意识"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.client-q022",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "移动端生命周期与状态恢复",
+      "content": "以 Android 的 Activity 重建或 iOS 的 ViewController 生命周期为例，说明当系统因内存回收或配置变更销毁页面时，你如何保证用户已输入的内容与列表滚动位置不丢失？请结合具体回调、数据保存与恢复的时机来讲。",
+      "tags": [
+        "生命周期",
+        "状态恢复"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.client-q023",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "手写图片内存缓存 LRU",
+      "content": "手写一个用于图片内存缓存的 LRU：支持 get/put、设定容量上限、读写复杂度 O(1)，并说明在多线程并发下载图片的场景下如何保证线程安全，以及缓存 key 该如何设计（需考虑同一张图的不同尺寸）。",
+      "tags": [
+        "数据结构",
+        "缓存",
+        "并发"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.client-q024",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "带优先级的下载队列设计",
+      "content": "设计一个客户端图片/文件下载队列：限制最大并发数、支持高优先级任务插队、支持任务取消与相同 URL 去重、页面退出时可批量取消。请说明数据结构选择、取消的实现方式，以及如何保证取消后回调不再触达已销毁的页面。",
+      "tags": [
+        "并发编程",
+        "任务调度"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.client-q025",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "启动速度优化实战",
+      "content": "挑一个你做过启动优化的项目：先说清优化前的冷启动耗时和统计口径（首帧还是可交互），再讲你用什么工具或打点定位到瓶颈，最后说具体改了什么、收益多少、有没有带来副作用。",
+      "tags": [
+        "性能优化",
+        "启动速度"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.client-q026",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "线上崩溃治理闭环",
+      "content": "讲一次你负责把线上崩溃率降下来的经历：崩溃是怎么被发现和聚合的、如何定位到根因、修复后怎么验证效果。如果遇到本地无法复现的机型专属崩溃，你会按什么步骤推进？",
+      "tags": [
+        "崩溃排查",
+        "线上质量"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.client-q027",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "复杂列表的实现与坑",
+      "content": "描述你实现过最复杂的一个列表页面（如信息流、聊天记录）：如何做 cell 复用、异步图片加载与预加载、局部刷新？过程中踩过哪些坑，最后是怎么解决的？",
+      "tags": [
+        "列表复用",
+        "UI实现"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.client-q028",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "联调接口延期如何推进",
+      "content": "项目排期已定，但后端接口联调一再延期，导致你无法按计划自测。此时距提测只剩三天，你会做哪些事来保住进度？请说明你会找谁、说什么、产出什么。",
+      "tags": [
+        "跨端协作",
+        "进度推进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.client-q029",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "发版前的多线冲突决策",
+      "content": "大版本发布前三天：产品临时插入一个高优先级需求，测试反馈一个偶现崩溃暂时无法复现，同时团队有一人请假。作为该版本客户端负责人，你如何排序、沟通与取舍？请说出你的判断依据。",
+      "tags": [
+        "突发应对",
+        "优先级判断"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.client-q030",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么选择单端深耕",
+      "content": "移动端有原生、跨端、大前端等多种路线。你为什么选择在 iOS 或 Android 单端深入，而不是走跨端或全栈方向？请结合你的实际经历说说这个选择背后的考虑。",
+      "tags": [
+        "求职动机",
+        "职业选择"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.client-q031",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "主动补位的协作经历",
+      "content": "讲一次你主动承担了职责范围之外工作的经历：当时是什么情况、你为什么站出来、过程中遇到哪些阻力、最终结果如何？如果重来一次，你会怎么做得更好？",
+      "tags": [
+        "团队协作",
+        "主动性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -409,7 +740,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

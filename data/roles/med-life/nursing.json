@@ -276,6 +276,397 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "med-life.nursing-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "输液出现不良反应如何处理",
+      "content": "你给一个患者进行输液，突然出现了不良反应，此时你该如何应对？",
+      "tags": [
+        "临床应急",
+        "用药安全"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "中公医考网《执业护士考试常见面试问题汇总》",
+        "url": "https://m.offcn.com/yixue/2023/0925/116643.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q012",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "七步洗手法需要多久",
+      "content": "七步洗手要多长时间？全过程有哪些要点？",
+      "tags": [
+        "院感防控",
+        "操作规范"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "中公医考网《执业护士考试常见面试问题汇总》",
+        "url": "https://m.offcn.com/yixue/2023/0925/116643.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "配药液前的注意事项",
+      "content": "配药液前应该注意些什么？",
+      "tags": [
+        "用药安全",
+        "操作规范"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "中公医考网《执业护士考试常见面试问题汇总》",
+        "url": "https://m.offcn.com/yixue/2023/0925/116643.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q014",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "镇痛剂用药间隔未到但病人剧痛",
+      "content": "有一位病人医嘱 4 小时用一次镇痛剂，这次病人用过镇痛剂不足三个小时，有吵闹疼痛厉害，你该怎么办？",
+      "tags": [
+        "医嘱执行",
+        "疼痛管理"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "中公医考网《执业护士考试常见面试问题汇总》",
+        "url": "https://m.offcn.com/yixue/2023/0925/116643.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q015",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "洗胃的禁忌症",
+      "content": "洗胃的禁忌症是什么？请说明为什么这些情况不能洗胃。",
+      "tags": [
+        "急救",
+        "操作禁忌"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "中公医考网《执业护士考试常见面试问题汇总》",
+        "url": "https://m.offcn.com/yixue/2023/0925/116643.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q016",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "被分配到不适合的科室怎么办",
+      "content": "如果这次你通过面试被安排在急诊科工作，但工作一段时间之后，发现你不适合急诊科工作，你该怎么办？",
+      "tags": [
+        "职业适应",
+        "抗压能力"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "中公医考网《执业护士考试常见面试问题汇总》",
+        "url": "https://m.offcn.com/yixue/2023/0925/116643.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q017",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "新科室同事关系差如何改善",
+      "content": "如果你到一个新科室，发现同事关系很差、工作不好开展，你会做哪些努力来改变这种状况？",
+      "tags": [
+        "团队协作",
+        "人际关系"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "中公医考网《执业护士考试常见面试问题汇总》",
+        "url": "https://m.offcn.com/yixue/2023/0925/116643.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q018",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "纱布数量对不上该不该坚持",
+      "content": "手术后护士发现只剩下六块纱布，而她记得明明是七块。医生却说「我是主任还是你是主任」，谈谈你的看法。",
+      "tags": [
+        "医疗安全",
+        "职业操守"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "应届毕业生网《护士面试问题及答案》",
+        "url": "https://www.yjbys.com/file/hushimianshiwentijidaan/",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q019",
+      "stage": "hr",
+      "difficulty": "hard",
+      "title": "有过硬操作技能就是优秀护士吗",
+      "content": "作为一名护士，只要有过硬的操作技能，就是一名优秀的护士——你同意这个看法吗？为什么？",
+      "tags": [
+        "职业素养",
+        "岗位认知"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "应届毕业生网《护士面试问题及答案》",
+        "url": "https://www.yjbys.com/file/hushimianshiwentijidaan/",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q020",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "实习期病人拒绝你操作",
+      "content": "实习护士为病人做治疗时，往往会遭到病人拒绝。如果你是一名实习护士，你该怎么办？",
+      "tags": [
+        "医患沟通",
+        "实习适应"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "应届毕业生网《护士面试问题及答案》",
+        "url": "https://www.yjbys.com/file/hushimianshiwentijidaan/",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q021",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "值班时病人突然晕倒",
+      "content": "你在值班的时候，面前一个急症病号突然晕倒，你如何处理？",
+      "tags": [
+        "急救",
+        "应急处理"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "面试123网《医院护士面试常考20题》",
+        "url": "http://www.mianshi123.com/msjq/q39756.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q022",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "值班时亲友找你有急事",
+      "content": "你是一名急诊科医务人员，在你值班的时候，你的亲戚好友找你有急事，你会怎么做？",
+      "tags": [
+        "职业边界",
+        "应急处理"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "面试123网《医院护士面试常考20题》",
+        "url": "http://www.mianshi123.com/msjq/q39756.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q023",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "如何看待医务人员收受红包",
+      "content": "你如何看待个别医务工作者违反规定收受红包？如果你遇到这种情况，你会怎么做？",
+      "tags": [
+        "医德医风",
+        "合规"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "面试123网《医院护士面试常考20题》",
+        "url": "http://www.mianshi123.com/msjq/q39756.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q024",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "导管敷料异常处理",
+      "content": "你在为患者更换中心静脉导管敷料时，发现敷料卷边、穿刺点发红但患者无发热。请描述你的评估与处理流程，并说明无菌操作中哪些环节最容易出问题。",
+      "tags": [
+        "无菌操作",
+        "导管护理",
+        "病情观察"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q025",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "镇痛医嘱间隔未到",
+      "content": "夜班接到医嘱：某术后患者肌注哌替啶50mg，但距上次使用不到4小时，患者仍诉切口剧痛。你如何核对、沟通与记录？请说明疼痛评估、用药安全和替代措施。",
+      "tags": [
+        "用药安全",
+        "医嘱执行",
+        "疼痛评估"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q026",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "慢阻肺患者病情突变",
+      "content": "巡视病房发现慢阻肺患者呼吸急促、SpO2 88%、烦躁。请按ABC评估并说明：先做什么、呼叫谁、如何配合抢救，以及氧疗和用药观察重点。",
+      "tags": [
+        "病情观察",
+        "急救处理",
+        "氧疗"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q027",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "独立完成护理操作",
+      "content": "请举一个你实习或工作中独立完成的基础护理操作，从评估、准备、实施到评价完整讲述，并说明你如何判断操作有效、遇到问题如何求助。",
+      "tags": [
+        "护理程序",
+        "操作规范",
+        "实习经历"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q028",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "整体护理案例复盘",
+      "content": "选一例你参与整体护理的患者，说明你如何收集资料、提出护理诊断、制定并调整护理计划，以及最终效果。请突出你个人的判断和行动，而非团队笼统描述。",
+      "tags": [
+        "护理程序",
+        "病例分析",
+        "经历深挖"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q029",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "护理不良事件反思",
+      "content": "请讲述你经历或观察到的一次护理不良事件或隐患，包括你当时的角色、如何上报、对患者的处理、事后根因分析与改进。若涉及隐私请匿名化，重点谈你的反思。",
+      "tags": [
+        "患者安全",
+        "不良事件",
+        "反思改进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q030",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "家属情绪激动指责",
+      "content": "门诊输液室一位患儿家属因排队久情绪激动，指责护士不负责任，其他家属围观拍摄。你如何安抚、澄清、保护患者隐私并维持输液秩序？请分步骤说明。",
+      "tags": [
+        "护患沟通",
+        "冲突处理",
+        "隐私保护"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q031",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "发现同事发错药",
+      "content": "你发现同班护士给患者发错药但尚未造成后果，她请你不要声张。你会怎么做？请说明对患者安全、同事关系、上报制度和慎独精神的多方考量。",
+      "tags": [
+        "团队协作",
+        "患者安全",
+        "慎独精神"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q032",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "选择护理与岗位适应",
+      "content": "你为什么选择护理职业？如果入职后被分配到ICU或急诊等高压科室，你如何规划前三个月的学习和适应？请结合你的性格与经历说明。",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "抗压能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.nursing-q033",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "倒班压力与职业动力",
+      "content": "护理工作常需倒班、节假日值班，也可能面对患者不理解和职业暴露。你如何保持长期动力？请结合一次你克服疲惫或委屈的具体经历说明。",
+      "tags": [
+        "职业素养",
+        "抗压能力",
+        "团队协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -388,7 +779,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

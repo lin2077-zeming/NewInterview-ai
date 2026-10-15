@@ -273,6 +273,345 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "civil-arch.cost-engineering-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "识图算量基础",
+      "content": "给出一套建筑结构施工图（含基础平面图、柱梁板配筋图），请说明你计算混凝土工程量的完整思路：从哪张图入手、如何划分构件、梁柱交接处如何扣减、板与梁重叠部位怎么算。请结合你实际做过的项目举例说明。",
+      "tags": [
+        "识图算量",
+        "工程量计算",
+        "混凝土"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.cost-engineering-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "清单与定额换算",
+      "content": "某项目采用工程量清单计价，招标文件要求商品混凝土由甲方供应，但清单项目特征中未写明。你在组价时如何处理？请说明定额换算的具体步骤，以及甲供材在投标计价和竣工结算两个阶段的不同处理方式。",
+      "tags": [
+        "清单计价",
+        "定额换算",
+        "甲供材"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.cost-engineering-q013",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "变更签证计价争议",
+      "content": "施工中设计变更将原CFG桩改为钻孔灌注桩，已施工部分发生返工。请说明你如何编制变更报价：变更工程量计算依据、已完工程与返工费用如何区分、措施费是否随之调整、如何与监理和审计逐条对账。",
+      "tags": [
+        "变更签证",
+        "签证计价",
+        "索赔"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.cost-engineering-q014",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "预结算编制经历深挖",
+      "content": "请挑一个你完整参与过预结算编制的项目，说明项目规模（建筑面积或造价金额）、你负责的范围、编制周期、过程中遇到的算量或组价难点及解决方式。追问：报审金额与审定金额差多少，差异集中在哪些分项？",
+      "tags": [
+        "预结算",
+        "项目经历",
+        "报审审定"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.cost-engineering-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "软件操作与数据核对",
+      "content": "你在广联达（或鲁班、斯维尔）中建过哪些类型的模型？请具体说明你做过的工程量核对方式，例如三维模型与手算对比、指标含量分析（每平米钢筋含量、混凝土含量）。追问：模型算量结果与手算相差5%，你会怎么排查？",
+      "tags": [
+        "造价软件",
+        "指标分析",
+        "数据核对"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.cost-engineering-q016",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "审核中发现的错误",
+      "content": "在你以往的造价工作中，是否在审核他人或自己编制的造价文件时发现过重大错误？请说明错误类型（漏项、重复计算、定额套错、取费错误等）、涉及金额，以及你如何整改并避免同类问题再次发生。",
+      "tags": [
+        "文件审核",
+        "错误排查",
+        "严谨性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.cost-engineering-q017",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "现场对量的分歧处理",
+      "content": "现场对量时，施工单位坚持某部分工程量应全额计算，而你依据定额计算规则认为应当扣减，双方争执不下、对方情绪激动。请说明你如何处理，包括依据准备、沟通口径与上报升级的时机。",
+      "tags": [
+        "对量沟通",
+        "争议处理",
+        "跨方协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.cost-engineering-q018",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "材料涨价索赔应对",
+      "content": "项目施工期间钢材价格上涨超过合同约定幅度30%，施工单位提出调价索赔，建设单位认为风险应由承包方承担。作为造价人员，你如何梳理合同条款、市场信息价与调价公式，形成处理建议并向双方说明？",
+      "tags": [
+        "价格调整",
+        "索赔",
+        "风险分担"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.cost-engineering-q019",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "岗位选择动机",
+      "content": "你为什么会选择工程造价这个岗位？结合你了解的行业现状（全过程咨询转型、BIM算量普及、房地产下行对岗位需求的影响），谈谈你希望在什么样的团队和业务类型中长期发展。",
+      "tags": [
+        "求职动机",
+        "行业认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.cost-engineering-q020",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "职业规划与考证",
+      "content": "未来三年你的职业规划是什么？是否计划考取一级造价工程师等职业资格？如果公司短期内安排你长期驻场或频繁出差，你如何平衡工作强度、考证学习与个人生活？",
+      "tags": [
+        "职业规划",
+        "考证",
+        "抗压"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.cost-engineering-q021",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "框架梁混凝土工程量计算",
+      "content": "某框架结构办公楼，二层梁平法施工图中KL1截面300×600，净跨6m，两端支座宽400mm，板厚120mm。请口述计算该梁混凝土工程量的完整过程，并说明哪些部位需要扣减、哪些不需要，依据是什么？",
+      "tags": [
+        "识图算量",
+        "混凝土工程量",
+        "扣减规则"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.cost-engineering-q022",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "清单混凝土强度换算",
+      "content": "某工程现浇混凝土矩形柱清单项目特征为C30商品混凝土，施工中设计变更为C35。作为造价人员，你如何调整该清单项目的综合单价？请说明换算依据、步骤及需要关注的定额说明。",
+      "tags": [
+        "清单计价",
+        "定额换算",
+        "综合单价"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.cost-engineering-q023",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "口头变更签证费用处理",
+      "content": "施工中发包人口头通知增加一道构造柱，施工完成后补办签证。作为造价人员，你如何处理该签证费用？需收集哪些资料？若发包人拒绝签认，你有哪些应对措施？请结合合同条款说明。",
+      "tags": [
+        "变更签证",
+        "合同管理",
+        "费用处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.cost-engineering-q024",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "独立算量项目经历",
+      "content": "请举一个你独立完成算量的项目，说明你使用什么软件、计算了哪些主要构件、最终工程量与审核方差异多大？差异主要出现在哪里？你从中总结了什么经验？",
+      "tags": [
+        "项目经历",
+        "算量软件",
+        "经验总结"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.cost-engineering-q025",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "定额缺项或特征不符处理",
+      "content": "在过往项目中，你遇到过定额缺项或清单项目特征描述与图纸不符的情况吗？请具体说明当时如何处理的，如何组价、与谁沟通，最终结果如何？",
+      "tags": [
+        "定额应用",
+        "清单特征",
+        "组价经历"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.cost-engineering-q026",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "变更索赔案例深挖",
+      "content": "请分享一个你参与处理工程变更或索赔的案例：说明变更背景、你的处理思路、与各方沟通博弈的过程，以及最终对造价和工期的影响。你在其中承担什么角色？",
+      "tags": [
+        "变更索赔",
+        "成本控制",
+        "沟通谈判"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.cost-engineering-q027",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "施工做法与图纸不符",
+      "content": "施工方提出某项做法与图纸不符但更便于施工，要求你确认不影响造价。你如何与设计、施工、监理沟通？在什么情况下可以同意？请说明你的判断依据和沟通步骤。",
+      "tags": [
+        "跨方沟通",
+        "图纸变更",
+        "专业判断"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.cost-engineering-q028",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "造价结论与项目经理冲突",
+      "content": "当你出具的造价结论与项目经理的预期有较大冲突时，你会如何处理？请举例说明你如何用专业和数据说服对方，或如何调整自己的沟通方式。",
+      "tags": [
+        "沟通表达",
+        "冲突处理",
+        "团队协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.cost-engineering-q029",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "造价团队中的角色认知",
+      "content": "你如何看待造价人员在项目团队中的角色？当需要你配合其他部门提供数据，但对方拖延时，你会怎么做？请结合过去经历谈谈。",
+      "tags": [
+        "团队协作",
+        "角色认知",
+        "主动沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.cost-engineering-q030",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "职业期望与驻场意愿",
+      "content": "你期望在造价岗位上3年内达到什么水平？为此你做了哪些准备？如果公司项目需要长期驻场，你能否接受？请说明你的考虑。",
+      "tags": [
+        "职业规划",
+        "驻场意愿",
+        "稳定性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -388,7 +727,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

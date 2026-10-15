@@ -277,6 +277,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "简支梁弯矩手算",
+      "content": "一根跨度 6m 的简支梁，跨中承受 200kN 集中荷载，梁自重忽略不计。请现场口算跨中最大弯矩和支座处剪力，并说明如果把同一根梁改成悬臂梁、荷载位置不变，弯矩会变成多少，对配筋有什么影响。",
+      "tags": [
+        "结构力学",
+        "弯矩计算",
+        "受力分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "强柱弱梁与箍筋加密",
+      "content": "某框架结构抗震设计图纸中，框架柱在节点上下各 1/2 柱截面高度范围内设置箍筋加密区。请说明这个加密区的作用，并结合「强柱弱梁」的设计思路，分析如果现场漏设加密区箍筋会带来哪些隐患。",
+      "tags": [
+        "抗震设计",
+        "框架结构",
+        "规范应用"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "框架梁平法标注识读",
+      "content": "给你一张框架梁平法施工图，标注为 KL3（2）300×600，箍筋 Φ8@100/200（2），上部通长筋 2Φ20，支座负筋 4Φ22。请逐项说明这些标注的含义，并指出现场绑扎时最容易被做错的两处。",
+      "tags": [
+        "施工图识读",
+        "平法标注",
+        "钢筋绑扎"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q014",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "软土区深基坑方案思路",
+      "content": "某市政项目位于沿海软土地区，地下水位高，需开挖深度 8m 的雨水泵站基坑，周边 5m 处有既有市政管线。请从支护形式、降水方案、监测重点三个方面给出技术思路，并说明你会优先控制哪些风险。",
+      "tags": [
+        "深基坑",
+        "软土地基",
+        "风险控制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q015",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "讲一个你参与过的项目",
+      "content": "请挑一个你亲身参与过的工程或实习项目，用两三分钟讲清楚：项目规模与结构形式、你具体负责哪一块工作、其中你独立完成的内容占多少比例。我们会针对你提到的技术细节继续追问。",
+      "tags": [
+        "项目经历",
+        "岗位职责",
+        "经历核实"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "最难的技术问题怎么解决",
+      "content": "在你参与的项目中，遇到过哪个技术问题是你一开始没把握、最后靠自己查规范或计算解决的？请说明问题起因、你的分析过程、依据了哪本规范或哪套计算，以及你的结论最终是否被采纳。",
+      "tags": [
+        "问题解决",
+        "技术深度",
+        "经历深挖"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "图纸与现场不符的经历",
+      "content": "请回忆一次施工图与现场实际情况不一致的经历：是谁先发现的，你当时怎么判断孰对孰错，走了什么流程（技术核定单、设计变更、工程联系单），最后有没有造成返工或工期损失。",
+      "tags": [
+        "图纸变更",
+        "现场处理",
+        "流程意识"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q018",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "方案优化与成本控制",
+      "content": "请举一个你主导或深度参与的技术方案调整案例，说明调整的原因、涉及的费用与工期变化、你如何用数据说服业主或监理接受，以及事后复盘你认为哪个环节还可以做得更好。",
+      "tags": [
+        "方案优化",
+        "成本控制",
+        "沟通说服"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "监理与班组的质量争执",
+      "content": "现场浇筑混凝土时，监理认为某段柱钢筋保护层厚度不足要求返工，劳务班组以工期紧为由拒绝，双方在楼层上僵持。你作为项目技术负责人到场，接下来十分钟你会怎么处理？",
+      "tags": [
+        "跨方协调",
+        "质量争议",
+        "现场沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q020",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "基坑监测报警应急处置",
+      "content": "基坑监测数据突然报警：连续墙位移一天增加 12mm，坑边出现细微裂缝，且预报未来 24 小时有暴雨，现场还有 30 名工人在坑内作业。请按时间顺序说明你的应急处置动作和依据。",
+      "tags": [
+        "应急处置",
+        "安全风险",
+        "决策判断"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "多方进度冲突怎么协调",
+      "content": "设计院出图延迟两周，业主又要求总工期不变，同时分包队伍已进场待工产生窝工。你需要同时协调设计院、业主、分包三方。请说明你分别找谁、谈什么、用哪些数据支撑你的方案。",
+      "tags": [
+        "进度协调",
+        "多部门沟通",
+        "资源调配"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q022",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "向后浇带业主解释",
+      "content": "业主代表不是工程背景，他质疑为什么梁板要留后浇带、能不能一次浇筑完。请你用一段他能听懂的话解释，既讲清技术必要性，又不让人觉得你在推诿或故意拖延工期。",
+      "tags": [
+        "技术表达",
+        "沟通能力",
+        "业主对接"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么选择做土木",
+      "content": "土木行业工作地点常随项目走，加班和驻场是常态。你为什么还是选择做土木工程师？在你目前投递或了解的岗位里，你最看重什么样的项目类型和团队氛围？",
+      "tags": [
+        "求职动机",
+        "职业选择",
+        "岗位认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "三年后的专业目标",
+      "content": "如果顺利入职，你希望三年后自己在专业上达到什么状态，比如能独立负责哪一块工作、考取哪些证书？请给一个具体可衡量的目标，并说说你入职第一年的第一步计划。",
+      "tags": [
+        "职业规划",
+        "成长目标",
+        "证书考取"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "长期驻场的真实想法",
+      "content": "假设公司派你到一个偏远地区的高速公路项目，驻地条件一般、回家周期长，同期入职的同事有人想调回城市。你会怎么和主管沟通你的想法？请说真实考虑，不用给标准答案。",
+      "tags": [
+        "环境适应",
+        "团队稳定",
+        "真实动机"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "与老施工员的意见分歧",
+      "content": "你和一位经验比你丰富的老施工员在施工顺序上意见不一致，他坚持按老做法，你认为按方案实施更安全。你会怎么做？请结合你过往一次真实的分歧经历来谈。",
+      "tags": [
+        "团队协作",
+        "沟通方式",
+        "职业素养"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q027",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "软土地基选什么基础",
+      "content": "在软土地基（如淤泥质土）上你会采用什么基础形式？为什么？需要注意哪些问题？",
+      "tags": [
+        "地基基础",
+        "专业判断"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q028",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "雷诺数与水力现象",
+      "content": "什么是雷诺数？它在给排水或水力学中有什么意义？什么是水跃？",
+      "tags": [
+        "水力学",
+        "专业基础"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q029",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "悬臂结构的支承条件",
+      "content": "悬臂梁的支承条件是什么？请画出它的弯矩图，并说明与简支梁的区别。",
+      "tags": [
+        "结构力学",
+        "内力分析"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q030",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "如何做抗震结构设计",
+      "content": "你会如何设计抗震结构？请说明抗震设计的基本思路和关键措施。",
+      "tags": [
+        "抗震设计",
+        "结构安全"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q031",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "梁柱节点配筋识图",
+      "content": "给你一张框架边柱梁柱节点的平法施工图，请指出梁上部纵筋在柱内的锚固方式、箍筋加密区范围以及柱内对应构造要求。说明你依据哪本规范核对，并列出施工现场最容易漏做的两项。",
+      "tags": [
+        "施工图识读",
+        "平法图集",
+        "节点构造"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q032",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "独立基础偏心验算",
+      "content": "某单层厂房柱下独立基础承受轴力N、弯矩M和剪力V，地基承载力特征值已知。请说明你会如何验算基底压力、抗冲切和抗弯承载力，并判断哪个工况最可能控制设计。",
+      "tags": [
+        "基础设计",
+        "承载力验算",
+        "结构计算"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q033",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "深基坑支护与监测",
+      "content": "城市中心12m深基坑，紧邻既有地铁隧道和重要管线，地下水位较高。请从支护形式比选、降水方案、变形控制指标和监测项目四方面，给出你的技术思路与安全底线。",
+      "tags": [
+        "基坑工程",
+        "变形控制",
+        "施工安全"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q034",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "深挖一个参与项目",
+      "content": "请挑一个你深度参与的土木项目，说明你加入时项目处于哪个阶段、你负责的具体成果（如计算书、技术交底、验收记录），以及哪些部分是你独立完成，哪些是团队协作。",
+      "tags": [
+        "项目经历",
+        "个人贡献",
+        "经历深挖"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q035",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "图纸与现场不符处理",
+      "content": "回忆一次施工图与现场实际不符或发生设计变更的经历。你如何发现、核对规范、与设计院和监理沟通，并形成闭合记录？最终对进度和成本产生了什么影响？",
+      "tags": [
+        "设计变更",
+        "沟通协调",
+        "闭环管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q036",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "质量安全事件复盘",
+      "content": "请描述你经历的一次质量或安全事件，例如混凝土裂缝、基础沉降、支护变形。你当时采取了哪些技术措施、按什么路径汇报，后续如何预防？如果重来一次会怎么改进？",
+      "tags": [
+        "质量安全",
+        "应急处理",
+        "复盘改进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q037",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "业主压缩工期协调",
+      "content": "主体施工阶段，业主突然要求压缩20%工期，但设计变更尚未闭合、分包班组人手不足。作为现场工程师，你如何组织多方会议、调整工序穿插，并守住安全质量底线？",
+      "tags": [
+        "多方协调",
+        "工期管理",
+        "风险控制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q038",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "监理拒绝隐蔽验收",
+      "content": "你负责的隐蔽工程已自检合格，监理却以资料不全拒绝验收，班组停工情绪很大。你如何现场沟通、补齐资料并推动验收，同时不激化与监理和班组的关系？",
+      "tags": [
+        "冲突处理",
+        "验收流程",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q039",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "求职动机与三年规划",
+      "content": "你为什么选择土木工程师岗位？未来三年你希望成为现场管理型、设计计算型还是复合型人才？请结合你对驻场、加班和项目流动性的了解来说明。",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "岗位认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.civil-engineering-q040",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "团队分歧与安全底线",
+      "content": "你与经验更丰富的同事对施工方案有分歧，对方坚持按老做法推进。你会如何表达观点并推动决策？如果分歧涉及安全底线，你会采取什么行动？",
+      "tags": [
+        "团队协作",
+        "安全责任",
+        "职业素养"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -397,7 +907,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

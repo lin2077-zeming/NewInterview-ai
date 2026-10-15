@@ -277,6 +277,448 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "media-culture.publishing-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "校对实操：找错并修改",
+      "content": "下面是一段200字左右的图书初稿，其中隐藏了3处错别字、2处标点误用和1处逻辑矛盾。请现场标出所有问题，逐条说明修改理由，并给出修改后的完整段落。注意：不仅要改对，还要解释编辑判断依据。",
+      "tags": [
+        "校对功底",
+        "文字敏感度",
+        "编辑规范"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q012",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "选题论证：极简生活热",
+      "content": "假设你负责生活类图书，发现‘极简主义’在社交媒体升温。请以此策划一个选题，从读者画像、竞品分析、作者资源、成本收益四方面进行论证，并给出书名、目录框架和营销切入点。限时8分钟陈述，面试官会追问数据来源与风险。",
+      "tags": [
+        "选题策划",
+        "市场分析",
+        "竞品调研"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "引文出处与数据核查",
+      "content": "作者在书稿中引用了某学术著作的核心观点，但未注明出处，且所用数据与最新统计年鉴存在出入。作为责任编辑，请说明你会如何核实、与作者沟通，并最终在书稿中规范呈现。需涵盖版权、学术规范与读者信任三个角度。",
+      "tags": [
+        "事实核查",
+        "编辑规范",
+        "版权意识"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q014",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "写电商详情页文案",
+      "content": "请为一本即将上市的社科新书《城市里的陌生人》写一段电商详情页文案，突出核心卖点，不超过150字。写完后说明你提炼卖点的逻辑：目标读者是谁？为什么选择这些卖点？文案如何促成购买？",
+      "tags": [
+        "文案撰写",
+        "营销推广",
+        "卖点提炼"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "深挖一段编辑经历",
+      "content": "请分享一段你独立负责或深度参与的书稿编辑经历，从选题到成书。具体说明：你承担了哪些环节？遇到的最大挑战是什么？你采取了哪些行动？最终结果如何？如果重来一次，你会在哪个节点做得不一样？",
+      "tags": [
+        "经历深挖",
+        "项目复盘",
+        "编辑流程"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "作者不配合怎么推动",
+      "content": "在你的实习或项目经历中，是否遇到过作者拖延返稿、拒绝修改或稿件质量远低于预期的情况？请描述具体情境，你如何沟通并推动修改？最终是否按时交付？你从中学到了什么沟通或项目管理方法？",
+      "tags": [
+        "作者沟通",
+        "进度管理",
+        "冲突解决"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q017",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "多书稿并行的管理",
+      "content": "请举例说明你同时处理多本书稿或多项出版任务的经历。你如何判断优先级、分配时间、跟踪进度？当其中一项突然出现紧急问题（如印前发现重大错误），你如何调整计划并确保其他项目不受影响？请给出具体工具或方法。",
+      "tags": [
+        "多任务管理",
+        "时间管理",
+        "抗压能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q018",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "用数据优化选题或文案",
+      "content": "请举一个你通过市场数据、读者反馈或销售表现，成功优化选题方向或营销文案的例子。你当时参考了哪些数据？如何分析？调整后效果如何？如果没有直接经验，可以谈你观察到的案例并说明你会怎么做。",
+      "tags": [
+        "数据分析",
+        "市场判断",
+        "优化迭代"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q019",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "作者以撤稿施压",
+      "content": "作者坚持保留一段你认为存在逻辑漏洞或事实错误的文字，并明确表示‘不修改就撤稿’。此时书稿已进入三审三校后期，营销物料已开始制作。作为责任编辑，你会如何应对？请分步骤说明你的沟通策略、风险权衡和最终决策依据。",
+      "tags": [
+        "冲突解决",
+        "沟通技巧",
+        "风险决策"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "出版周期突然压缩",
+      "content": "原定6个月的出版周期因市场窗口提前被压缩到3个月，排版、封面设计、营销物料都需同步提前。你作为项目负责人，如何重新排期、协调作者/美编/印务/营销？请说明你会优先砍掉哪些环节、如何保证质量底线、怎样同步信息。",
+      "tags": [
+        "项目管理",
+        "跨部门协调",
+        "进度控制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "营销要求夸张标题",
+      "content": "营销同事要求你在图书文案中使用‘震惊’‘必读’等夸张标题以吸引点击，但你判断这与图书的严肃调性不符，可能伤害品牌。你会如何与营销同事沟通？请给出具体话术，并说明如何在不牺牲调性的前提下提升传播效果。",
+      "tags": [
+        "跨部门沟通",
+        "品牌调性",
+        "营销平衡"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q022",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "美编与印务工艺冲突",
+      "content": "封面设计已定稿，但印务反馈所选特种纸和烫金工艺会导致成本超支且工期延长，美编坚持不改设计。你作为编辑项目负责人，如何调解双方分歧？请说明你的沟通步骤、成本与效果的权衡标准，以及如何向上级汇报。",
+      "tags": [
+        "协调能力",
+        "成本意识",
+        "冲突调解"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "最近读的一本书",
+      "content": "你平时喜欢读什么类型的书？请分享最近读的一本让你印象深刻的编辑或出版相关书籍，谈谈它为什么打动你，以及它对你理解编辑工作的启发。如果没有相关书籍，也可以谈一本你从编辑视角重读后产生新看法的书。",
+      "tags": [
+        "阅读热情",
+        "职业动机",
+        "编辑视角"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "如何保持专注与热情",
+      "content": "编辑工作常需长期伏案、反复打磨文字，有时一本书要跟半年以上。你如何保持专注与热情？请结合你的学习、实习或生活经历，说明你应对枯燥、重复性任务的方法，以及你如何给自己设定正向反馈。",
+      "tags": [
+        "职业热情",
+        "细致耐心",
+        "自我驱动"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "三年编辑成长规划",
+      "content": "你希望未来三年成为什么样的编辑？请具体说明你在文字功底、选题策划、项目管理三个维度上的提升计划，以及你希望获得哪些培训或实践机会。你如何看待从助理编辑到独立策划编辑的成长路径？",
+      "tags": [
+        "职业规划",
+        "能力提升",
+        "成长路径"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q026",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "面对质疑如何协作",
+      "content": "如果团队中有人对你的编辑意见提出质疑，甚至当众否定你的修改方案，你会如何应对？请举例说明你的协作风格。你更倾向于坚持专业判断还是优先维护团队和谐？为什么？",
+      "tags": [
+        "团队协作",
+        "沟通风格",
+        "情绪管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q027",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "校对纠错实操题",
+      "content": "下面这段书稿约80字，请找出其中的错别字、标点误用和一处语义重复：「截止2019年底，该公司已连续三年赢利，产品即畅销又长销，深受读者亲睐。据负责人介绍：今年将推出《中国古建筑》系列丛书，共五册，全书字数约计80万字左右。」请逐处说明修改理由。",
+      "tags": [
+        "校对功底",
+        "文字敏感度",
+        "编辑规范"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q028",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "睡眠科普书选题论证",
+      "content": "假设你负责生活类图书，想策划一本「都市人睡眠改善」的科普书。调研发现同类书已有三本在售，其中一本是畅销书；你的首印预算只有8000册，作者是尚无知名度的新晋睡眠科医生。请现场说出选题论证思路：读者定位、差异化卖点、竞品对策与主要风险。",
+      "tags": [
+        "选题策划",
+        "竞品分析",
+        "市场判断"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q029",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "稿件事实核查与授权",
+      "content": "审读一部历史普及读物时，稿件里出现网络流传的数据、一段未标注出处的名人引文，以及一张来源不明的地图。作为责任编辑，请说明你会依次做哪些核查动作，哪些内容必须取得书面授权，哪些必须删改，依据是什么。",
+      "tags": [
+        "事实核查",
+        "版权授权",
+        "出版法规"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q030",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "讲一次完整编校经历",
+      "content": "请挑一本你参与过编辑、校对或策划的书稿（校刊、公众号长文、毕业论文亦可），完整讲一遍从接手到定稿的流程：你负责哪一环、用了哪些工具或规范、最难的一处判断是什么、最后结果如何。没有正式出版经历，可用校内刊物或实习项目替代。",
+      "tags": [
+        "经历深挖",
+        "流程管理",
+        "细节追问"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q031",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "作者拒绝删改怎么谈",
+      "content": "作者认为你删掉的那一段「写得最好」，坚持保留，否则就要撤稿；而这段存在事实错误，且与全书体例不符。请还原你会怎么和作者沟通：先说什么、准备什么证据、给什么替代方案，如果对方仍不让步，你的下一步是什么。",
+      "tags": [
+        "沟通协调",
+        "冲突解决",
+        "作者关系"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q032",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "三本书并行如何排期",
+      "content": "你同时跟进三本书：A书已到三校、下周必须付印；B书作者刚交来超期两个月的初稿，营销已排好上市档期；C书封面反复返工。请口述你未来两周的排期逻辑：哪些环节可以压缩、哪些绝不能让、每天如何分配时间，以及何时必须向上级求助。",
+      "tags": [
+        "项目管理",
+        "时间管理",
+        "抗压能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q033",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "付印后发现内文错误",
+      "content": "一本重点书的封面已签字付印，你在最后通读时发现内文有一处人名写错，且目录页码与正文不符。此时距离上市发布会还有十天。请说明你从发现问题到彻底解决的完整处置步骤，包括先通知谁、按什么顺序、如何判断要不要重印。",
+      "tags": [
+        "应急处理",
+        "跨部门协作",
+        "质量把关"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q034",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "营销要夸张文案怎么办",
+      "content": "营销同事希望把书名改成更有冲击力的「爆款体」，腰封上写一句与书中观点并不完全相符的话，理由是「读者只看标题」。你作为责任编辑如何回应？请说明你的底线在哪、哪些可以妥协，以及你能提出的具体替代方案。",
+      "tags": [
+        "跨部门沟通",
+        "内容底线",
+        "营销配合"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q035",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "最近读的三本书与动机",
+      "content": "请说说你最近一年读过的三本书，其中哪一本让你产生过「如果我来做会更好」的念头，为什么？另外，结合你真实的阅读或写作经历，谈谈你认为自己适合长期做编辑出版的理由，不要只讲行业前景。",
+      "tags": [
+        "求职动机",
+        "阅读积累",
+        "职业热情"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.publishing-q036",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "理想落差与适应计划",
+      "content": "入职后你发现，日常大部分时间在做校对、核对引文和催进度，与你想做的「策划型编辑」有明显落差，同期同事也有人离职。你会如何调整？请给出入职前三个月的具体行动计划，以及你判断自己是否适合这份工作的标准。",
+      "tags": [
+        "职业规划",
+        "抗压适应",
+        "自我认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -381,7 +823,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

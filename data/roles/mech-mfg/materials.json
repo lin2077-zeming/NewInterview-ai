@@ -277,6 +277,500 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "mech-mfg.materials-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "强化机制与应用举例",
+      "content": "请说明固溶强化、细晶强化、位错强化和第二相强化的微观机理，并各举一个材料工程中的实际应用实例。如果要求你在不改变成分的前提下提高某铝合金薄板的屈服强度，你会优先考虑哪种机制？为什么？",
+      "tags": [
+        "材料科学基础",
+        "强化机制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "铝合金拉伸测试方案",
+      "content": "现需按ASTM E8对一批6061-T6铝板做拉伸测试，请说明试样制备、应变速率选择、引伸计使用及数据有效性判定。若同批次屈服强度离散度超过10%，你会从哪些环节排查原因？",
+      "tags": [
+        "性能测试",
+        "ASTM标准"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "传动轴断裂失效分析",
+      "content": "一批45钢传动轴在服役约2000小时后于键槽处断裂，断口呈贝壳状纹路并伴有少量锈迹。请描述你的失效分析流程：取样、宏观与微观断口观察、金相与硬度检测，并给出至少两个根因假设及验证方法。",
+      "tags": [
+        "失效分析",
+        "断口分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q014",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "渗碳淬火工艺调整",
+      "content": "某20CrMnTi齿轮要求表面硬度58-62HRC、心部30-42HRC，但渗碳淬火后出现网状碳化物且变形超差。请从渗碳气氛碳势、温度与时间、淬火介质及装炉方式分析原因，并给出可落地的工艺调整方案。",
+      "tags": [
+        "热处理工艺",
+        "渗碳"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q015",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "材料选型项目介绍",
+      "content": "请挑一个你主导或深度参与的材料选型或测试项目，用STAR结构说明：产品需求与约束是什么、你比较了哪些候选材料、依据哪些数据做决策、最终方案在验证或量产中的表现如何。",
+      "tags": [
+        "项目经历",
+        "材料选型"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "实验设计的细节追问",
+      "content": "接着上一个项目，请具体说明你设计了哪些实验：试样数量与分组、依据的测试标准、控制的关键变量、数据处理方法。若出现异常数据点，你如何判断是操作失误还是材料本身的真实差异？",
+      "tags": [
+        "实验设计",
+        "数据异常"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "失效分析项目经历",
+      "content": "请分享一次你参与的失效分析：失效现象与背景、你提出的根因假设、做了哪些验证实验、最终改进措施及闭环效果。如果当时证据不足以支撑结论，你如何降低误判风险？",
+      "tags": [
+        "失效分析",
+        "根因验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q018",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "从实验室到量产导入",
+      "content": "描述一个你推动材料或工艺变更从实验室走向量产的案例：变更动机、小试与中试验证、与产线和供应商的协作、成本与良率变化。放大过程中出现性能偏差时，你如何定位并处理？",
+      "tags": [
+        "工艺放大",
+        "量产导入"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q019",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "进口合金替代沟通",
+      "content": "设计部门坚持选用某进口高温合金，采购反馈交期12周、成本超预算30%，而项目节点只剩6周。作为材料工程师，你会准备哪些数据、与哪些角色沟通、给出怎样的备选材料方案？",
+      "tags": [
+        "跨部门协作",
+        "成本控制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "产线批量开裂应急",
+      "content": "产线突然出现批量开裂，停线每小时损失很大，设计、工艺、质量人员都已到场。你如何在两小时内给出临时围堵措施和根因排查方向？请说明优先级排序与分工建议。",
+      "tags": [
+        "应急处理",
+        "质量事故"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "供应商批次性能波动",
+      "content": "供应商更换原材料批次后，来料检验合格，但成品性能出现波动。你如何与供应商及内部SQE协作定位问题？请说明你会索要哪些证据、设计哪些对比试验来锁定变量。",
+      "tags": [
+        "供应商管理",
+        "来料异常"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q022",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "技术分歧的向上沟通",
+      "content": "你的失效分析结论指向设计选材不当，但设计负责人不认可，认为是你测试方法有问题。在项目评审会上，你如何组织证据链并推动共识？如果领导要求你先搁置结论，你怎么办？",
+      "tags": [
+        "技术沟通",
+        "冲突处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "岗位理解与自我定位",
+      "content": "你如何理解材料工程师在产品开发中的价值？请结合你的专业背景，说明自己目前最匹配岗位的一项能力，以及最需要补足的一项能力，并给出具体的提升计划。",
+      "tags": [
+        "岗位理解",
+        "自我认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "驻场与出差接受度",
+      "content": "材料工程师常需驻供应商现场或跟产线调试。请说明你对出差、驻厂的接受度，以及你会如何平衡现场支持与实验室内的测试分析工作？",
+      "tags": [
+        "工作安排",
+        "适应性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "薪酬结构与激励偏好",
+      "content": "你期望怎样的薪酬结构？如果基本工资低于预期，但项目奖金、专利奖励和晋升空间较大，你会如何权衡？请结合你对材料岗位成长节奏的理解来说明。",
+      "tags": [
+        "薪酬期望",
+        "激励偏好"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "失误复盘与成长",
+      "content": "请讲一次你因判断失误导致实验返工或方案被否的经历：当时的情况、你如何复盘、后续做了哪些改变。如果再遇到类似问题，你的处理方式会有什么不同？",
+      "tags": [
+        "复盘反思",
+        "成长心态"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q027",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "低碳钢的应力应变曲线",
+      "content": "请描述低碳钢的应力—应变曲线，标出弹性阶段、屈服、强化与颈缩各段，并说明工程意义。",
+      "tags": [
+        "材料力学",
+        "专业基础"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q028",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "轻量化结构件选材",
+      "content": "某新能源车企欲将电池包下箱体由钢改为轻量化材料，要求减重30%、耐腐蚀、成本增幅不超过15%。请给出你的选材思路：候选材料体系、关键性能指标、成型与连接工艺约束，并说明你会如何用Ashby图或成本模型做权衡。",
+      "tags": [
+        "材料选型",
+        "轻量化",
+        "成本权衡"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q029",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "铝合金时效强化机理",
+      "content": "7075铝合金经T6处理后强度显著提升，但过时效会软化。请从相图、GP区、析出相与位错交互作用角度解释强化机制，并说明如何通过DSC和硬度曲线确定最佳时效工艺窗口。",
+      "tags": [
+        "相图",
+        "时效强化",
+        "热处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q030",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "硬度测试方法选择",
+      "content": "需要评价一批经过渗碳淬火的齿轮表面硬度与硬化层深度。请说明你会选择哪些硬度测试方法（如洛氏、维氏、显微硬度），各自适用标准与测试注意事项，并解释为何不能只用一种方法。",
+      "tags": [
+        "硬度测试",
+        "渗碳淬火",
+        "标准"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q031",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "材料替代项目深挖",
+      "content": "请挑一个你主导的材料替代或国产化项目，说明：原始需求与约束（性能/成本/工艺）、你如何制定验证矩阵、做了哪些测试、失败过哪些方案、最终如何说服设计和采购部门采纳。重点讲你个人的决策依据。",
+      "tags": [
+        "项目经历",
+        "材料替代",
+        "验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q032",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "失效分析项目复盘",
+      "content": "请复盘一次你深度参与的失效分析案例。要求说明：失效现象与批量/个案判断、你采用的表征手段（断口、金相、SEM/EDS等）、如何排除干扰因素、根因结论及改进措施，以及改进后如何验证有效性。",
+      "tags": [
+        "失效分析",
+        "表征",
+        "根因"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q033",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "工艺参数优化经历",
+      "content": "请分享一个你通过工艺参数优化改善材料性能或成型质量的经历。说明：响应变量与因子如何选择、用了什么DOE或统计方法、样本量与重复性如何保证、最终工艺窗口如何设定并移交给产线。",
+      "tags": [
+        "工艺优化",
+        "DOE",
+        "统计分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q034",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "性能与成本冲突协调",
+      "content": "设计部门坚持选用一款进口高性能材料，但采购反馈交期长、成本超预算30%，且量产工艺不稳定。你作为材料工程师，会如何组织评估并推动各方达成可落地方案？请说明你的沟通步骤和决策依据。",
+      "tags": [
+        "跨部门协作",
+        "成本意识",
+        "决策"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q035",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "产线批量失效应急",
+      "content": "产线突然出现批量零件开裂，停线每小时损失数十万。你到现场后，在信息不全的情况下，会按什么优先级排查？如何设计临时围堵与快速验证实验？请给出前2小时的具体行动清单。",
+      "tags": [
+        "应急响应",
+        "失效排查",
+        "围堵"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q036",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "职业动机与规划",
+      "content": "你为何选择材料工程师作为职业方向？结合你过往经历，说明未来3-5年你希望在材料领域深耕哪个方向（如金属、高分子、失效分析），以及你为此做了哪些准备。我们岗位可能长期在实验室与产线间切换，你如何看待？",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "岗位认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q037",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "重复测试与成长心态",
+      "content": "材料测试常涉及大量重复性实验与数据整理，有时结果不如预期。请举例说明你如何保持严谨与耐心，并从一次不理想的实验结果中学到了什么，后续如何调整实验设计或工作方法。",
+      "tags": [
+        "成长心态",
+        "实验态度",
+        "学习能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q038",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "焊接热影响区软化分析",
+      "content": "某批次6061-T6铝合金支架在焊接后，热影响区出现开裂，硬度测试显示该区域明显软化。请从Al-Mg-Si相图、析出强化机制与热处理工艺角度解释软化原因，说明T6状态在焊接热循环下发生了什么组织变化，并给出两种可落地的改善思路及其代价。",
+      "tags": [
+        "相图与热处理",
+        "失效分析",
+        "铝合金"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q039",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "性能测试方案设计复盘",
+      "content": "请挑一个你主导过的材料性能测试项目：说明测试目的、参照的标准（ASTM/GB/ISO）、试样制备方式与所用设备，以及测试中出现的异常数据。重点讲你如何判断数据离散是材料本身波动还是制样、操作误差，最终结论如何被设计或工艺部门采纳。",
+      "tags": [
+        "测试标准",
+        "实验设计",
+        "数据离散"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.materials-q040",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "材料方案跨部门推进",
+      "content": "你为某新产品推荐了一种综合性能更好的材料，但设计担心要改结构、工艺反馈现有设备参数做不了、采购提出单价高出30%且交期变长。作为材料工程师，你会按什么顺序收集信息、准备哪些量化数据，来推动这次材料变更落地或被合理否决？",
+      "tags": [
+        "跨部门协作",
+        "成本与量产",
+        "材料选型"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -395,7 +889,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

@@ -277,6 +277,261 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "cs-it.security-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "SYN 半连接队列排查",
+      "content": "线上业务偶发无法建立 TCP 连接，抓包发现大量 SYN 包无对应 ACK，服务器 netstat 显示较多 SYN_RECV。请判断这是 SYN Flood 还是半连接队列溢出，给出关键排查命令、内核参数以及临时缓解与长期加固措施。",
+      "tags": [
+        "网络协议",
+        "SYN Flood",
+        "应急排查"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.security-q012",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "登录框注入与越权验证",
+      "content": "你获得授权测试某 Web 应用，只有登录框和普通用户账号，WAF 开启。要求在不破坏数据的前提下，判断是否存在 SQL 注入和水平越权。请说明测试思路、验证 payload 的设计原则、如何绕过常见 WAF 检测，以及发现后如何最小化影响地证明危害。",
+      "tags": [
+        "Web安全",
+        "SQL注入",
+        "越权测试"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.security-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "WAF 规则有效性验证",
+      "content": "公司部署 WAF 后仍收到疑似绕过告警。请设计一套验证用例，覆盖编码转换、分块传输、参数污染、大小写与注释混淆等场景，并说明如何将 WAF 日志、源 IP 和原始请求 payload 关联，判断规则是真正拦截还是仅告警。",
+      "tags": [
+        "WAF绕过",
+        "日志分析",
+        "安全运维"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.security-q014",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "渗透测试项目深挖",
+      "content": "请选一次你负责的渗透测试项目，说明目标类型、授权范围、测试周期、发现的最高危漏洞及验证过程。重点讲你如何从信息收集走到漏洞利用，遇到哪些阻碍，最终修复建议和复测结果如何，以及你独立完成的部分。",
+      "tags": [
+        "渗透测试",
+        "项目复盘",
+        "漏洞验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.security-q015",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "应急响应与入侵溯源",
+      "content": "讲一次你参与或模拟的应急响应：从哪个告警或日志发现异常，如何确认入侵链、提取 IOC、隔离受影响主机并溯源攻击者？如果业务不能停机，你如何权衡取证与恢复？最终报告包含哪些关键结论和整改项？",
+      "tags": [
+        "应急响应",
+        "入侵溯源",
+        "业务连续性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.security-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "等保测评参与细节",
+      "content": "简历提到熟悉等级保护。请选一个你参与的系统，说明定级、备案、差距分析、整改和测评结论中你具体负责什么。若没有真实项目，请给出你会如何开展差距分析，并举例说明一个高风险项从发现到整改闭环的过程。",
+      "tags": [
+        "等级保护",
+        "合规",
+        "风险评估"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.security-q017",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "推动研发修复漏洞",
+      "content": "你向研发提交一个高危漏洞，研发认为这是误报且修复会影响版本发布，拒绝排期。请结合 CVSS 评分、业务场景、利用条件和临时缓解措施，说明你如何沟通、争取资源并推动修复，同时不破坏协作关系。",
+      "tags": [
+        "跨团队沟通",
+        "漏洞修复",
+        "风险沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.security-q018",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "告警洪峰如何研判",
+      "content": "值班时安全大屏突然出现大量告警，同时业务方反馈系统变慢。请说明你如何在 10 分钟内判断这是误报、真实攻击还是安全设备自身故障，列出排查优先级、你会查看的关键证据，以及需要同步给业务和上级的信息。",
+      "tags": [
+        "告警处置",
+        "综合应变",
+        "沟通同步"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.security-q019",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "求职动机与规划",
+      "content": "为什么选择网络安全工程师作为职业方向？未来 3 年你希望深入渗透测试、应急响应还是安全开发？请结合你目前的技术短板、学习计划和期望获得的项目机会，说明你如何从初级成长为能独立负责安全项目的人。",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "学习计划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.security-q020",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "适应团队与值守",
+      "content": "如果你入职后发现团队技术栈与你的经验不完全匹配，且需要长期参与夜间安全值守，你会如何适应并与团队协作？请举一个过去类似经历，说明你如何调整节奏、补齐技能并保证值守质量。",
+      "tags": [
+        "团队协作",
+        "适应能力",
+        "责任心"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.security-q021",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "SYN Flood与半连接判断",
+      "content": "你在企业边界防火墙监控中看到某IP大量TCP半连接，服务器响应变慢。请说明如何区分这是SYN Flood攻击还是正常业务突增，并给出至少两种缓解措施。",
+      "tags": [
+        "网络协议",
+        "DDoS防护",
+        "安全运维"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.security-q022",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "WAF绕过SQL注入",
+      "content": "在对某Web应用做授权渗透测试时，SQL注入Payload被WAF拦截。请结合SQL注入原理，说明你会如何分析WAF规则并尝试绕过，同时指出修复该漏洞的根本方案。",
+      "tags": [
+        "渗透测试",
+        "SQL注入",
+        "WAF"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.security-q023",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "Linux Rootkit排查",
+      "content": "应急响应中，你怀疑一台Linux服务器被植入Rootkit，但常规ps、ls命令输出可疑。请描述你的排查思路：如何发现隐藏进程、文件与网络连接，并给出清除与加固建议。",
+      "tags": [
+        "应急响应",
+        "系统安全",
+        "Rootkit"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.security-q024",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "渗透测试范围与风控",
+      "content": "请描述一次你主导或参与的渗透测试项目：如何与客户确认测试范围、时间窗口和授权边界？测试中如何控制风险，避免影响生产业务？",
+      "tags": [
+        "渗透测试",
+        "项目管理",
+        "风险控制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.security-q025",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "漏洞挖掘案例深挖",
+      "content": "请分享一个你实际发现并推动修复的漏洞案例。重点说明：漏洞如何被发现、利用链是什么、修复方案如何落地，以及你从中总结了什么经验。",
+      "tags": [
+        "漏洞挖掘",
+        "项目经历",
+        "修复跟进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -402,7 +657,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

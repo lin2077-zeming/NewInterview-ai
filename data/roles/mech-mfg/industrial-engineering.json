@@ -277,6 +277,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "工时测量与标准工时",
+      "content": "请描述你用秒表法测工时的完整流程。假设某工位周期时间波动很大，你如何确定观测次数、剔除异常值并制定标准工时？如果员工故意放慢动作，你如何保证数据可信？",
+      "tags": [
+        "工时测量",
+        "标准工时",
+        "数据可信"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "产线平衡与瓶颈改善",
+      "content": "某装配线有8个工位，节拍要求30秒/件，但瓶颈工位耗时45秒，其他工位平均22秒。请说明你会如何做产线平衡？给出具体步骤、需要的现场数据，以及改善后如何验证产能提升。",
+      "tags": [
+        "产线平衡",
+        "瓶颈分析",
+        "产能验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "数据分析与过程能力",
+      "content": "某注塑参数调整后，产品尺寸CPK从0.9提升到1.33。请说明你会如何用Minitab验证改善是否显著，并排除其他因素干扰。需要哪些数据、做什么图表和检验？",
+      "tags": [
+        "过程能力",
+        "Minitab",
+        "假设检验"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q014",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "仿真建模与决策支持",
+      "content": "某物流中心入库拥堵，你打算用FlexSim做仿真。请说明建模前需要收集哪些数据、如何设定假设、如何验证模型有效性，以及如何用仿真结果说服管理层投资改造。",
+      "tags": [
+        "仿真建模",
+        "数据分析",
+        "决策支持"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q015",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "改善项目经历与量化收益",
+      "content": "请介绍你参与过的一个IE改善项目，你负责哪部分？用了哪些IE工具（如工时测量、ECRS、SMED）？最终效率、成本或质量指标量化改善了多少？",
+      "tags": [
+        "项目经历",
+        "IE工具",
+        "量化收益"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "产线布局优化项目深挖",
+      "content": "请详细描述你做过的一次产线布局或工位优化项目。你如何收集物流量、人员走动等数据？方案落地时遇到哪些阻力？最终用什么指标验证效果？",
+      "tags": [
+        "布局优化",
+        "数据收集",
+        "效果验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "精益改善项目与阻力",
+      "content": "讲一个你主导或深度参与的精益改善项目，比如缩短换型时间或减少七大浪费。你如何设定目标、分解任务、推动执行？改善前后数据对比如何？",
+      "tags": [
+        "精益改善",
+        "SMED",
+        "执行推动"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q018",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "仿真或数据分析项目",
+      "content": "请分享一个你用数据分析或仿真建模解决实际问题的项目。模型的关键假设是什么？你如何验证模型可信？结论怎样影响了最终决策或投资？",
+      "tags": [
+        "仿真建模",
+        "数据分析",
+        "决策影响"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q019",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "改善方案遭生产抵触",
+      "content": "你设计了一个提升效率的工位改善方案，但生产主管认为会增加员工操作难度并拒绝配合。你会如何与他对齐目标、调整方案并争取落地？",
+      "tags": [
+        "跨部门沟通",
+        "冲突处理",
+        "方案落地"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "品质与生产标准工时争执",
+      "content": "品质部认为标准工时太紧导致员工赶工影响质量，生产部认为工时太松影响效率。作为IE，你如何用数据协调双方，推动达成一致？",
+      "tags": [
+        "跨部门协调",
+        "标准工时",
+        "数据说服"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "现场批量不良应急响应",
+      "content": "产线突然出现批量不良，生产、品质、工程都在现场但意见不一。作为IE，你如何快速收集数据、定位流程问题并组织跨部门处置？",
+      "tags": [
+        "现场问题",
+        "应急响应",
+        "跨部门协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q022",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "跨部门精益项目推进",
+      "content": "你负责一个跨部门精益项目，但资源不足，其他部门优先级冲突，项目进度滞后。你会如何重新对齐目标、争取资源并调整推进策略？",
+      "tags": [
+        "项目管理",
+        "资源协调",
+        "推进策略"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为何选择工业工程师",
+      "content": "你为什么选择工业工程师，而不是机械设计或生产管理？结合你的实习、课程或项目经历，谈谈你对IE核心价值的理解。",
+      "tags": [
+        "求职动机",
+        "岗位认知",
+        "IE价值"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q024",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "未来三到五年规划",
+      "content": "未来3-5年，你希望成为精益专家、数据分析师还是IE经理？为什么？你打算通过哪些具体行动弥补当前能力差距？",
+      "tags": [
+        "职业规划",
+        "能力发展",
+        "方向选择"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q025",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "下车间跟线的态度",
+      "content": "IE需要经常下车间跟线，环境嘈杂、工作重复，有时还要加班支持新产线。你如何看待这种工作状态？请举一个你适应艰苦环境的经历。",
+      "tags": [
+        "工作态度",
+        "现场适应",
+        "吃苦耐劳"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "与上级风格适配",
+      "content": "你期望什么样的团队和上级？如果上级不懂IE但决策权很大，经常凭经验否定你的数据方案，你会如何沟通和适应？",
+      "tags": [
+        "团队适配",
+        "向上沟通",
+        "沟通策略"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q027",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "CPM 与 PERT 的区别",
+      "content": "CPM 与 PERT 有什么区别？分别在什么场景下使用？请举例说明。",
+      "tags": [
+        "项目管理",
+        "进度控制"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q028",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "工时波动如何归因",
+      "content": "在车间做时间观测时，你发现同一工位周期时间从38秒到55秒波动。你第一步如何判断这是测量误差、操作差异还是真实异常？请说明分层、剔除异常值和确定观测次数的方法。",
+      "tags": [
+        "工时测量",
+        "数据分层",
+        "异常值"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q029",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "产线节拍降低改善",
+      "content": "某装配线节拍60秒，8个工位，瓶颈68秒，其他工位45-55秒。订单增加要求节拍降至55秒。请用ECRS与产线平衡思路给出改善步骤，并说明如何量化瓶颈改善后的产能与收益。",
+      "tags": [
+        "产线平衡",
+        "ECRS",
+        "产能测算"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q030",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "SMED缩短换型时间",
+      "content": "某注塑车间换型时间120分钟，每天换型6次。请用SMED方法将换型压缩到45分钟以内，列出内外部作业转换、并行作业与标准化要点，并估算释放出的日产能。",
+      "tags": [
+        "SMED",
+        "快速换型",
+        "产能释放"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q031",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "精益改善项目复盘",
+      "content": "请讲一个你主导或深度参与的精益改善项目。说明问题定义、基线数据来源、改善目标、所用工具、实施阻力，以及最终量化收益，如效率提升百分比、面积节省平方米或年化金额。",
+      "tags": [
+        "项目深挖",
+        "精益改善",
+        "量化收益"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q032",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "产线布局方案选择",
+      "content": "你参与过产线布局或工位设计项目吗？请描述面积、物流、设备、安全等约束，你如何用SLP或FlexSim比较方案，最终选了哪个，关键指标如搬运距离、在制品库存改善多少？",
+      "tags": [
+        "布局设计",
+        "物流仿真",
+        "方案比较"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q033",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "IE工具实战案例",
+      "content": "你用过AutoCAD、FlexSim或Minitab中的哪些工具？请举一个具体任务，说明你输入了什么数据、做了哪些操作、输出结果如何被团队采纳，并解决了什么现场问题。",
+      "tags": [
+        "工具应用",
+        "数据分析",
+        "落地采纳"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q034",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "标准工时推行分歧",
+      "content": "生产主管认为你测定的新标准工时过紧，员工可能抵触，拒绝在产线推行。你如何用数据与沟通化解分歧，同时不牺牲改善目标？请给出具体步骤和话术思路。",
+      "tags": [
+        "跨部门沟通",
+        "标准工时",
+        "变革推进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q035",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "测试时间缩短协调",
+      "content": "为提升效率，你建议缩短某产品老化测试时间，品质部担心客诉风险。请说明你如何设计验证方案、协调品质与生产，并设定数据化的放行条件与风险应对计划。",
+      "tags": [
+        "品质协同",
+        "风险验证",
+        "放行标准"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q036",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "IE职业动机与规划",
+      "content": "你为什么选择工业工程师作为职业起点？未来三年，你希望在工时测量、产线规划、精益改善或数据建模哪个方向形成可量化的能力里程碑？请结合个人经历说明。",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "能力里程碑"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q037",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "数据说服与团队协作",
+      "content": "IE需要频繁与生产、品质、计划、工程沟通，方案常被质疑。请举例说明你如何用事实和数据说服他人，处理了怎样的分歧，最终推动团队采取了什么行动？",
+      "tags": [
+        "团队协作",
+        "数据说服",
+        "推动执行"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q038",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "不增设备提产25%怎么破",
+      "content": "某电子装配车间单班8小时（含30分钟宽放），需求要从日产800件提升到1000件，不允许新增设备和人员。请说明你的完整分析路径：怎么做时间观测与评比宽放、如何计算节拍与产线平衡率、识别瓶颈工位后有哪些改善手段（ECRS、动作改善、工装治具等），以及你会用哪些数据证明改善真的有效。",
+      "tags": [
+        "产线平衡",
+        "工时测量",
+        "产能提升"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q039",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "精益改善项目的量化复盘",
+      "content": "请讲一个你主导或深度参与的精益改善项目（如换型时间缩短、车间布局调整、七大浪费消除）。要求说清：改善前的基线数据是怎么测出来的、你用了哪些工具（SMED／价值流图／Minitab等）、推进中最大的阻力是什么、量化收益怎么算、采取了什么措施防止成果回退。",
+      "tags": [
+        "精益改善",
+        "项目量化",
+        "SMED"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.industrial-engineering-q040",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "标准作业变更如何落地",
+      "content": "你推动的标准作业变更遭到一线班组抵触，班组长说“原来那样干也没出过问题”，而生产任务很紧、没有停线培训时间。你需要在两周内让新标准落地。请说说你会怎么和生产、品质、培训三方沟通协调，按什么顺序推进。",
+      "tags": [
+        "跨部门沟通",
+        "标准作业",
+        "落地推动"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -372,7 +882,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

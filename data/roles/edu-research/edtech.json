@@ -277,6 +277,512 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "edu-research.edtech-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "初中编程课ADDIE设计",
+      "content": "假设你要为初中生设计一门在线编程入门课，请基于ADDIE模型的前两个阶段（分析、设计），说明你会如何分析学习者特征与学习需求，并设计课程大纲与至少一个互动环节。同时，你会用哪些指标评估学习目标是否达成？",
+      "tags": [
+        "教学设计",
+        "ADDIE",
+        "学习者分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q012",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "AI作文批改功能评估",
+      "content": "产品经理希望为作文批改产品增加AI自动评分功能，但技术团队反馈NLP模型对开放性作文的评分准确率仅70%，且开发成本高。作为教研负责人，你会如何评估这个需求？请说明你会提出怎样的替代或分阶段方案，并如何与产品、技术团队对齐目标。",
+      "tags": [
+        "产品思维",
+        "需求评估",
+        "跨部门协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q013",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "教学设计项目深挖",
+      "content": "请分享一个你主导或深度参与的教学设计项目。重点说明：你如何定义学习目标？如何设计评估方式？上线后收集了哪些数据？基于数据做了哪些迭代？最终效果如何量化？如果数据不理想，你具体调整了哪个环节？",
+      "tags": [
+        "项目经历",
+        "数据迭代",
+        "教学评估"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q014",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "低完课率归因分析",
+      "content": "你负责的一门在线课程，用户满意度评分4.8/5，但完课率只有30%。请详细说明你会从哪些维度拆解数据、如何定位问题、可能的原因有哪些，以及你会设计怎样的干预方案来提升完课率？请结合你过往的真实经历或假设情景回答。",
+      "tags": [
+        "数据分析",
+        "完课率",
+        "归因"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q015",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "互动功能开发沟通",
+      "content": "你设计了一个课堂互动功能，但技术团队认为开发周期太长、实现难度大，产品经理也担心影响上线时间。你会如何与技术和产品团队沟通，推动这个功能落地？请描述你的具体沟通步骤和可能的妥协方案。",
+      "tags": [
+        "跨部门沟通",
+        "需求推动",
+        "协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q016",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "教师培训现场抵触",
+      "content": "你负责到一所合作学校培训教师使用新上线的教学平台，但现场多位教师反映操作太复杂，甚至有人表示不想用。作为教研负责人，你会如何应对？请说明你当场会做什么、后续如何收集反馈并推动产品优化。",
+      "tags": [
+        "应变能力",
+        "教师培训",
+        "用户反馈"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q017",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么选择教研岗",
+      "content": "你为什么选择教育技术与教研这个岗位？在你看来，这个岗位的核心价值是什么？未来3-5年你希望在这个领域达到怎样的专业水平？请结合你的教育背景或相关经历谈谈。",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "岗位认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q018",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "专业立场与团队协作",
+      "content": "教研工作常需要与产品、技术、运营等多方协作，有时你的专业判断与团队其他角色意见不一致。请分享一次你坚持教育专业立场并最终说服他人的经历，或者如果缺乏经历，你会如何建立自己的专业影响力？",
+      "tags": [
+        "团队协作",
+        "影响力",
+        "沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q019",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "分数课导入设计",
+      "content": "假设你要为小学三年级学生设计一节20分钟的在线数学课，主题是‘分数的初步认识’。请说明你会如何分析学习者特征、设定一两个可观测的学习目标，并设计一个能引发兴趣的导入活动。不必展开完整教案，重点讲设计依据。",
+      "tags": [
+        "教学设计",
+        "学习者分析",
+        "在线课程"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q020",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "在线课互动环节设计",
+      "content": "某初中物理在线课完课率低，学生反馈‘看视频容易走神’。请基于ADDIE或你熟悉的教学设计模型，提出三个具体的互动环节设计，并说明每个环节如何对应学习目标、如何在学习平台上实现与收集数据。",
+      "tags": [
+        "ADDIE",
+        "互动设计",
+        "完课率"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q021",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "教学效果评估指标设计",
+      "content": "公司新上线一门面向高中生的编程入门课，需要你设计一套教学效果评估方案。请说明你会选哪些过程指标和结果指标，如何避免只看完课率或满意度，如何用前后测、行为数据和作品评价交叉验证学习效果。",
+      "tags": [
+        "教学评估",
+        "数据指标",
+        "效果验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q022",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "教育目标与产品目标平衡",
+      "content": "产品团队希望把一门阅读理解课改成游戏化闯关，以提升低龄学生留存；但你判断过度游戏化会削弱深度阅读训练。请说明你会如何拆解教育目标与产品目标，提出一个双方都能接受的折中方案。",
+      "tags": [
+        "教育产品思维",
+        "目标拆解",
+        "方案权衡"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q023",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "课程体系设计项目复盘",
+      "content": "请讲一个你参与或主导的课程体系/大纲设计项目。说明项目背景、你如何做需求分析、如何确定课程结构与顺序、最终交付了什么，以及你个人最关键的贡献是什么。",
+      "tags": [
+        "课程设计",
+        "项目复盘",
+        "经历深挖"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q024",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "数字资源数据迭代",
+      "content": "你开发或负责过的一套数字化教学资源（如微课、题库、互动课件）上线后使用率不达预期。请具体说明你当时看了哪些数据、如何定位原因、做了哪些迭代，以及最终效果如何变化。",
+      "tags": [
+        "数据迭代",
+        "资源开发",
+        "效果分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q025",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "推动教学设计落地",
+      "content": "请回忆一个你需要与产品、技术或运营协作才能落地的教研项目。重点说明：当对方以排期、成本或商业目标为由挑战你的教学设计时，你如何对齐目标、调整方案并推动上线？结果如何？",
+      "tags": [
+        "跨部门协作",
+        "项目推动",
+        "教学设计"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q026",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "教研活动组织经历",
+      "content": "请分享一次你组织教研活动（如集体备课、公开课、教师工作坊）的经历。说明你如何确定主题、设计流程、调动教师参与，以及你用什么方式判断活动是否真正改变了教师的教学行为。",
+      "tags": [
+        "教研组织",
+        "教师发展",
+        "活动评估"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q027",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "向产品解释学习目标",
+      "content": "产品经理没有教育背景，认为‘学习目标’是虚的，不如直接堆更多题目。请你现场用三分钟向他解释一门课的学习目标为什么重要，以及它会如何影响题目设计和数据指标。你会怎么说？",
+      "tags": [
+        "跨部门沟通",
+        "教育产品思维",
+        "表达说服"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q028",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "教师抵触新平台",
+      "content": "你负责培训教师使用新教学平台，但有教师当场抱怨‘功能太多，增加备课负担’，其他教师也开始附和。请说明你如何回应、如何调整培训节奏，并在不激化矛盾的前提下推动他们真正用起来。",
+      "tags": [
+        "教师培训",
+        "应变沟通",
+        "产品落地"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q029",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "难度与完课率之争",
+      "content": "运营团队要求你把一门思维课难度调低，理由是完课率下降影响续费；但你担心难度过低会损害学习效果和口碑。请说明你会如何用数据和教学原理与运营沟通，并给出一个可测试的方案。",
+      "tags": [
+        "跨部门冲突",
+        "数据沟通",
+        "教育产品思维"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q030",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "技术受限下的互动替代",
+      "content": "你设计了一个需要实时语音评测的课堂互动，但技术团队评估开发成本过高，建议改成普通选择题。上线时间只剩两周。请说明你会如何评估替代方案、与技术和产品沟通，并保证核心学习目标不丢失。",
+      "tags": [
+        "技术协作",
+        "应变方案",
+        "教学设计"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q031",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为何进入教育科技教研",
+      "content": "你之前有教学或教育相关背景，为什么选择进入教育科技公司做教研，而不是继续在学校任教或去传统出版机构？请结合你对在线教育产品逻辑的理解，谈谈你的真实动机。",
+      "tags": [
+        "求职动机",
+        "职业选择"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q032",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "三年职业规划",
+      "content": "如果你入职教育技术与教研岗位，请谈谈未来三年你希望提升哪些能力、承担什么职责，以及你如何判断自己是否达到了阶段目标。你更希望深耕学科教研还是转向教育产品？",
+      "tags": [
+        "职业规划",
+        "自我发展"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q033",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "团队分歧处理",
+      "content": "请讲一次你在团队协作中与同事产生分歧的经历。分歧具体是什么？你当时如何表达自己的立场、又如何倾听对方？最后结果如何？如果重来一次，你会改变什么？",
+      "tags": [
+        "团队协作",
+        "沟通反思"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q034",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "看待教研重复性",
+      "content": "教研工作既有创造性设计，也有大量内容校对、数据整理和重复迭代。你如何看待这种重复性？请结合过往经历说明你如何保持质量与动力，以及你对加班或项目冲刺期的接受程度。",
+      "tags": [
+        "工作认知",
+        "抗压意愿"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q035",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "ADDIE设计编程入门课",
+      "content": "某在线教育平台计划为小学三年级学生开发一门'趣味编程'入门课，学习目标为掌握顺序、循环、条件三种基本结构。请用ADDIE模型简述你的教学设计思路，并说明每个阶段的关键产出，以及如何评估学习效果。",
+      "tags": [
+        "教学设计",
+        "ADDIE",
+        "学习评估"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q036",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "错题本智能推荐权衡",
+      "content": "你负责一款K12错题本产品，教研团队希望增加'智能推荐相似题'功能，但技术团队反馈算法准确率仅70%，且开发成本高、周期长。作为教研负责人，你如何权衡教育目标与产品可行性，并推动产品、技术团队达成共识？请说明你的决策依据和沟通策略。",
+      "tags": [
+        "教育产品思维",
+        "跨部门沟通",
+        "决策权衡"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q037",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "数字化教学资源开发",
+      "content": "请分享一个你参与开发的数字化教学资源（如微课、互动课件、题库或在线课程）。你在其中负责哪些环节？如何确保内容符合教学目标和学习者认知规律？上线后如何收集反馈并迭代优化？",
+      "tags": [
+        "项目经历",
+        "资源开发",
+        "迭代优化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q038",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "教学效果未达预期归因",
+      "content": "在你过往的教研工作中，是否遇到过教学效果未达预期的情况？请具体说明当时的数据表现（如完课率、正确率、满意度等），你如何归因分析，采取了哪些迭代措施，最终结果如何？",
+      "tags": [
+        "数据分析",
+        "效果评估",
+        "迭代改进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q039",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "上线节奏冲突沟通",
+      "content": "产品经理要求下周上线一个新功能，但教研团队认为当前教学设计尚未经过验证，仓促上线可能影响学习效果。作为教研负责人，你如何与产品、技术、运营团队沟通，推动达成共识并制定可行的上线方案？",
+      "tags": [
+        "跨部门协作",
+        "沟通策略",
+        "项目推进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.edtech-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "岗位理解与专业成长",
+      "content": "你为什么选择教育技术与教研这个方向？结合你的背景，谈谈你对该岗位核心价值的理解，以及你计划如何持续提升自己的专业能力，以更好地服务学生和教师？",
+      "tags": [
+        "求职动机",
+        "职业认知",
+        "专业成长"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -387,7 +893,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

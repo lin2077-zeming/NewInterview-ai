@@ -278,6 +278,482 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "med-life.public-health-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "传染病报告时限判断",
+      "content": "你在疾控中心值班，接到某医院报告一例疑似霍乱病例。请说明按照《传染病防治法》和突发公共卫生事件相关信息报告管理规范，你应在多长时间内完成网络直报，同时需要核实哪些关键信息，并如何反馈医院？",
+      "tags": [
+        "传染病报告",
+        "法规",
+        "应急处置"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "诺如暴发病例定义与罹患率",
+      "content": "某小学3天内报告呕吐腹泻病例42例，全校1200人，其中某班40人中12人发病。作为流调人员，请给出本次暴发的病例定义，计算全校及该班罹患率，并说明结果如何指导停课、消毒和密接管理。",
+      "tags": [
+        "流行病学调查",
+        "卫生统计",
+        "暴发处置"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "监测系统病例异常升高处置",
+      "content": "传染病监测系统显示某区某病本周报告病例较上周上升200%，且集中在同一街道。你作为监测岗，会按什么步骤核实数据、排除重复和误报、判断聚集性，并决定是否预警或启动现场调查？",
+      "tags": [
+        "监测系统",
+        "数据分析",
+        "预警处置"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q014",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "麻疹暴发疫苗保护效果评价",
+      "content": "某学校发生麻疹暴发，已收集病例和密切接触者的疫苗接种史。请设计计算疫苗保护效果的方法，说明需要哪些分母数据，并解释接种率、罹患率与保护效果之间的关系，以及如何判断疫苗效果。",
+      "tags": [
+        "流行病学",
+        "疫苗效果",
+        "统计分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q015",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "流调经历与个人分工",
+      "content": "请结合你参与过的一次传染病流调或监测项目，说明你承担的具体任务、使用的工具、最终产出，以及你如何保证信息真实完整。若没有正式工作经历，可讲实习、课题或志愿服务中的相关实践。",
+      "tags": [
+        "经历深挖",
+        "流调实践",
+        "数据核实"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "流调报告中的病例定义",
+      "content": "描述一次你撰写或参与撰写的流调报告。你是如何确定病例定义、密切接触者范围和潜伏期观察期的？遇到关键信息缺失或前后矛盾时，你如何记录、核实并在报告中说明局限？",
+      "tags": [
+        "经历深挖",
+        "流调报告",
+        "密接判定"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "监测数据清洗与分析经历",
+      "content": "在以往项目或实习中，你处理过最棘手的一份公共卫生数据是什么？请说明数据来源、清洗规则、缺失值与异常值处理方式，以及最终用于什么分析、得出什么结论。",
+      "tags": [
+        "经历深挖",
+        "卫生统计",
+        "数据清洗"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q018",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "暴发调查中的偏倚控制",
+      "content": "回忆一次你参与的调查，若回忆偏倚或信息偏倚可能影响暴露与疾病的关联，你当时或事后认为应该采取哪些设计、询问和核实措施来控制？请给出具体做法，并说明对结果解释的影响。",
+      "tags": [
+        "经历深挖",
+        "偏倚控制",
+        "现场调查"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "停课范围多部门分歧",
+      "content": "某学校出现聚集性疫情，疾控建议扩大停课范围，教育部门担心教学进度，家长要求马上复课。你作为疾控现场人员，如何组织沟通、呈现证据并推动科学决策，同时安抚各方情绪？",
+      "tags": [
+        "综合应变",
+        "跨部门协作",
+        "风险沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q020",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "流调对象隐瞒接触史",
+      "content": "现场流调时，一名确诊患者情绪激动，拒绝提供行程和接触者信息，还称“说了会被网暴”。你需要在30分钟内获取关键信息，你会怎么沟通、承诺隐私保护并完成必要处置？",
+      "tags": [
+        "现场沟通",
+        "应急处置",
+        "隐私保护"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "不实疫情信息引发恐慌",
+      "content": "本地自媒体发布“某市场出现不明原因肺炎，已封控”的不实信息，超市出现抢购。你作为疾控宣传人员，如何快速核实、回应并开展健康沟通，避免恐慌和二次传播？",
+      "tags": [
+        "健康教育",
+        "风险沟通",
+        "舆情应对"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q022",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "社区讲座遇疫苗质疑",
+      "content": "你在社区开展流感疫苗接种讲座，有居民打断说“疫苗没用还有害”，其他居民开始议论。请模拟你接下来的沟通步骤和核心话术，既回应质疑又维护现场秩序。",
+      "tags": [
+        "健康教育",
+        "沟通表达",
+        "疫苗犹豫"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为何投身疾控公卫",
+      "content": "你身边的同学可能更倾向临床或高薪行业。请谈谈你为什么选择疾控或公共卫生岗位，你对它的收入、工作强度和社会价值有哪些真实了解，未来三到五年有什么打算？",
+      "tags": [
+        "求职动机",
+        "岗位认知",
+        "职业规划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q024",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "应急加班与生活安排",
+      "content": "公卫岗位常需在夜间或节假日处置突发疫情。请结合你的实际情况，说明你会如何安排家庭、健康与工作，并举例你过去如何应对计划外任务或连续加班。",
+      "tags": [
+        "职业规划",
+        "抗压能力",
+        "工作生活平衡"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "疾控团队中的协作角色",
+      "content": "在疾控应急或监测团队中，你通常扮演什么角色？请举一个你推动团队配合、主动补位或化解低效沟通的具体事例，并说明结果和你从中学到了什么。",
+      "tags": [
+        "团队协作",
+        "经历深挖",
+        "沟通协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "法定报告与上级压力",
+      "content": "假如你负责传染病网络直报，科室领导说“这例先别报，等复核完再说”，但按规定需在时限内报告。你会如何与领导沟通，既尊重管理流程又守住法规底线？",
+      "tags": [
+        "法规意识",
+        "职业操守",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q027",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "值班时病人突然晕倒",
+      "content": "你在值班的时候，面前一个急症病号突然晕倒，你如何处理？",
+      "tags": [
+        "急救",
+        "应急处理"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "面试123网《医院护士面试常考20题》",
+        "url": "http://www.mianshi123.com/msjq/q39756.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q028",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "如何看待医务人员收受红包",
+      "content": "你如何看待个别医务工作者违反规定收受红包？如果你遇到这种情况，你会怎么做？",
+      "tags": [
+        "医德医风",
+        "合规"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "面试123网《医院护士面试常考20题》",
+        "url": "http://www.mianshi123.com/msjq/q39756.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q029",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "诺如病毒学校聚集性疫情流调",
+      "content": "某小学3天内报告20例呕吐、腹泻学生，怀疑诺如病毒感染。你作为疾控人员，请说明如何开展现场流行病学调查，包括病例定义、调查内容、标本采集和初步控制措施。",
+      "tags": [
+        "现场流调",
+        "诺如病毒",
+        "病例定义"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q030",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "不明原因肺炎聚集性疫情处置",
+      "content": "某医院报告3例不明原因肺炎，均有某海鲜市场暴露史。你作为疾控应急队员，请阐述如何核实诊断、开展流调、追踪密切接触者、划定风险区域，并说明与临床、公安等部门协作要点。",
+      "tags": [
+        "不明原因肺炎",
+        "应急响应",
+        "多部门协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q031",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "监测数据异常升高分析",
+      "content": "你在审核传染病网络直报数据时，发现某县手足口病报告发病率较上周上升200%。请说明你会从哪些方面分析原因，如何核实数据质量，并判断是否为真实疫情暴发。",
+      "tags": [
+        "监测系统",
+        "数据核实",
+        "暴发识别"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q032",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "慢性病监测项目经验",
+      "content": "请分享你参与过的一项慢性病监测或调查项目，包括你负责的具体工作、抽样方法、问卷设计、数据收集与质量控制，以及你遇到的最大挑战和解决办法。",
+      "tags": [
+        "慢性病监测",
+        "项目经验",
+        "质量控制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q033",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "食物中毒调查数据分析",
+      "content": "描述一次你参与的食物中毒或传染病暴发调查。你是如何整理病例与对照的进食史数据，计算罹患率或OR值，并据此提出防控建议的？请具体说明分析过程。",
+      "tags": [
+        "暴发调查",
+        "数据分析",
+        "OR值"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q034",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "健康教育方案制定经历",
+      "content": "请举例说明你独立或参与制定的一项健康教育与健康促进方案，包括目标人群、干预策略、实施步骤和效果评价方法。你是如何确保方案落地的？",
+      "tags": [
+        "健康教育",
+        "方案设计",
+        "效果评价"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q035",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "流调对象不配合的沟通",
+      "content": "在新冠肺炎流调中，病例因担心隐私泄露，拒绝透露行程和接触者。你作为流调人员，如何在有限时间内建立信任、获取关键信息，同时遵守法规并保护其隐私？",
+      "tags": [
+        "流调沟通",
+        "隐私保护",
+        "应急能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q036",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "多部门应急协调与资源分配",
+      "content": "某地发生洪涝灾害后出现腹泻病例激增，你作为疾控现场负责人，需协调医疗、社区、水利等部门。请说明你如何分配有限的消毒物资和人力，并确保信息畅通、措施落实。",
+      "tags": [
+        "应急协调",
+        "资源分配",
+        "多部门合作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q037",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么选择公共卫生岗位",
+      "content": "公共卫生工作责任重、待遇相对不高，有时还需面对突发疫情和压力。请谈谈你为什么选择这个岗位，以及你对自己未来3-5年的职业规划。",
+      "tags": [
+        "职业动机",
+        "职业规划",
+        "岗位认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.public-health-q038",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "发现疫情漏报如何处理",
+      "content": "如果你在工作中发现某医疗机构未按规定报告传染病疫情，你会如何处理？请结合《传染病防治法》等法规，说明你的步骤和原则。",
+      "tags": [
+        "法规意识",
+        "传染病报告",
+        "职业操守"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -394,7 +870,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

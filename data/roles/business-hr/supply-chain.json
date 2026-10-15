@@ -276,6 +276,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "business-hr.supply-chain-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "SKU需求预测与偏差复盘",
+      "content": "你负责某快消SKU的月度需求预测。历史销量有季节性，下月有电商大促，但销售给出的预测比模型高30%。请说明你会收集哪些数据、用什么方法形成最终预测，并如何设定偏差复盘指标。",
+      "tags": [
+        "需求预测",
+        "数据分析",
+        "S&OP"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "供应商交期延误谈判",
+      "content": "核心供应商连续两批交期延误，导致产线停线风险，同时对方提出原材料涨价8%。你需要在两周内恢复交付并控制成本。请给出谈判前准备、可交换筹码和分阶段行动方案。",
+      "tags": [
+        "供应商管理",
+        "采购谈判",
+        "交付管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "库存周转与安全库存优化",
+      "content": "某仓库A类物料库存周转天数从45天升至70天，但生产线仍出现两次缺料。请用ABC/XYZ分类、安全库存和补货策略分析原因，并给出未来三个月的库存优化方案与衡量指标。",
+      "tags": [
+        "库存控制",
+        "仓储优化",
+        "周转率"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q014",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "港口罢工下的物流应急",
+      "content": "你有一批高价值零部件从欧洲海运至上海，遇到港口罢工和海关查验，预计延迟两周，工厂仅剩5天安全库存。空运成本是海运6倍。请阐述你的应急决策框架、跨方沟通顺序和风险缓冲方案。",
+      "tags": [
+        "物流运输",
+        "关务",
+        "应急管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q015",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "端到端供应链项目深挖",
+      "content": "请选一个你亲身参与的供应链项目，从需求、采购、生产到交付完整说明你的角色。重点讲清项目目标、你做的关键动作、遇到的困难，以及用哪些量化指标证明结果。",
+      "tags": [
+        "项目经历",
+        "端到端",
+        "结果量化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "采购谈判案例复盘",
+      "content": "描述一次你主导或深度参与的供应商开发或采购谈判。请说明供应商背景、谈判目标、你方筹码、对方底线判断、最终条款，以及后续如何跟踪合同执行和绩效。",
+      "tags": [
+        "采购谈判",
+        "供应商开发",
+        "合同执行"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "库存或仓储优化项目",
+      "content": "请分享一个你推动过的库存降低或仓储效率提升项目。说明你如何取数分析、如何设定目标、协调了哪些部门、遇到什么阻力，以及最终库存周转、缺货率或拣货效率的变化。",
+      "tags": [
+        "库存优化",
+        "仓储管理",
+        "跨部门协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q018",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "跨境物流异常项目复盘",
+      "content": "请讲一个你经历过的跨境物流或关务异常案例，例如清关延误、运输破损或运费暴涨。说明当时信息有多不完整、你的判断依据、采取的措施、损失控制结果和事后流程改进。",
+      "tags": [
+        "跨境物流",
+        "关务",
+        "风险复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "销售插单与物料冲突协调",
+      "content": "销售临时插入一个急单，生产说产能排满，采购说关键物料交期四周，但客户要求十天内交付。作为供应链负责人，你会如何组织会议、评估选项并推动各方达成可执行方案？",
+      "tags": [
+        "跨部门协作",
+        "插单管理",
+        "沟通协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "推动呆滞库存清理",
+      "content": "仓库有一批呆滞料占用大量资金，销售不愿打折清货，研发说可能后续项目会用，财务要求计提。你如何组织跨部门评估，设计决策规则并推动落地，同时不破坏部门关系？",
+      "tags": [
+        "呆滞库存",
+        "跨部门推动",
+        "沟通谈判"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q021",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "供应商断供应急协同",
+      "content": "独家供应商突发火灾，至少断供六周，销售已承诺客户交期，生产面临停线。你作为供应链协调人，如何在24小时内完成风险分级、替代料验证、客户沟通和内部资源调配？",
+      "tags": [
+        "断供应急",
+        "风险分级",
+        "资源协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q022",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "向上汇报供应链坏消息",
+      "content": "因运费上涨和交期延迟，本季度物流成本将超预算15%，且可能影响两个大客户。你需要向不熟悉供应链细节的高管汇报。请说明你的汇报结构、关键数据和争取的支持。",
+      "tags": [
+        "向上沟通",
+        "成本超支",
+        "表达结构"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "选择供应链岗位的原因",
+      "content": "你为什么不选市场、金融等方向，而选择供应链与物流？请结合你对这个岗位日常工作的理解，以及你过去哪段经历或能力匹配，说明这是理性选择而非临时投递。",
+      "tags": [
+        "岗位认知",
+        "求职动机",
+        "匹配度"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "供应链职业规划",
+      "content": "未来三到五年，你更希望成为需求计划、采购还是物流方向的专家？请说明你的规划路径、需要补齐的能力，以及如果公司安排你轮岗到仓库或工厂，你会如何应对。",
+      "tags": [
+        "职业规划",
+        "轮岗",
+        "能力发展"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q025",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "高压旺季下的工作状态",
+      "content": "供应链旺季常出现紧急插单、供应商催货和跨时区会议。请举一个你高压下同时处理多任务的例子，说明你如何排序、保持准确率，以及你期望团队和上级提供什么支持。",
+      "tags": [
+        "抗压能力",
+        "多任务",
+        "团队支持"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "期望与出差轮岗接受度",
+      "content": "供应链岗位可能需要驻厂、仓库轮岗或短期出差，薪资也会受地点和绩效影响。请谈谈你的期望薪资范围、可接受的工作地点与出差频率，以及你评估一份供应链offer时最看重什么。",
+      "tags": [
+        "期望管理",
+        "出差轮岗",
+        "offer评估"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q027",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "季节性需求预测优化",
+      "content": "你负责一款季节性快消品的需求预测。过去三个季度预测偏差平均达25%，导致库存积压与缺货并存。你会如何分析历史数据、结合哪些内外部因素来优化预测模型？请具体说明步骤和工具。",
+      "tags": [
+        "需求预测",
+        "数据分析",
+        "计划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q028",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "核心供应商降本谈判",
+      "content": "某核心供应商报价连续两年上涨，占采购成本30%。公司要求你今年实现降本8%，但对方态度强硬，且该物料切换供应商周期长、风险高。请设计一套谈判策略与备选方案，并说明如何量化谈判效果。",
+      "tags": [
+        "采购谈判",
+        "成本控制",
+        "供应商管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q029",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "库存周转与订单满足率",
+      "content": "某电商仓库SKU数超过5000，库存周转天数从45天升至60天，但订单满足率反而下降。请分析可能原因，并提出3条可落地的库存优化与仓储布局调整建议，需说明衡量指标。",
+      "tags": [
+        "库存控制",
+        "仓储优化",
+        "数据分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q030",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "供应链优化项目复盘",
+      "content": "请描述你过去参与过的一个供应链优化项目。当时背景是什么？你负责哪部分？用了什么方法？最终取得了哪些量化成果（如成本降低、效率提升）？",
+      "tags": [
+        "项目经验",
+        "供应链优化",
+        "成果量化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q031",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "供应商延迟处理经历",
+      "content": "你有没有遇到过供应商交货延迟或质量问题？请具体说明当时的情况、你的处理动作以及最终结果。如果没有，可以分享一个你处理突发问题的经历。",
+      "tags": [
+        "供应商管理",
+        "应急处理",
+        "问题解决"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q032",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "数据分析工具应用",
+      "content": "请举例说明你如何使用Excel或ERP系统进行供应链数据分析。你处理的数据量多大？用了哪些函数或功能？分析结论如何影响了业务决策？",
+      "tags": [
+        "数据分析",
+        "ERP",
+        "Excel"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q033",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "销售承诺与交付冲突",
+      "content": "销售部门为拿下大客户，承诺15天交付，但生产周期至少25天，且关键物料库存不足。作为供应链负责人，你如何协调销售、生产、采购三方？请说明沟通步骤和备选方案。",
+      "tags": [
+        "跨部门协作",
+        "交付协调",
+        "沟通谈判"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q034",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "海外供应商罢工应急",
+      "content": "你的主要海外供应商所在国突发罢工，港口停运，预计影响未来两个月的物料供应。现有库存仅够维持3周。请列出你的应急响应步骤，并说明如何与内部团队及备选供应商沟通。",
+      "tags": [
+        "应急处理",
+        "供应链韧性",
+        "跨境物流"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q035",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为何选择供应链岗位",
+      "content": "你为什么选择供应链与物流作为职业方向？你认为这个岗位最吸引你和最具挑战性的地方分别是什么？",
+      "tags": [
+        "求职动机",
+        "岗位认知",
+        "职业选择"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q036",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "团队协作推动任务",
+      "content": "请分享一次你在团队中推动一项困难任务完成的经历。你遇到了什么阻力？如何与队友协作解决？最终结果如何？",
+      "tags": [
+        "团队协作",
+        "沟通表达",
+        "问题解决"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q037",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "搭建促销期需求预测",
+      "content": "你负责一款促销频繁、生命周期短的SKU，过去12个月需求波动很大。销售预测下月大促增长50%，但历史促销实际达成率在70%到120%之间，且未考虑竞品降价。请说明你会如何搭建需求预测与补货计划，包括数据来源、预测方法、安全库存和与销售对齐机制。",
+      "tags": [
+        "需求预测",
+        "库存计划",
+        "跨部门协同"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q038",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "库存优化项目复盘",
+      "content": "请复盘一个你参与的库存优化或仓储改善项目：当时库存周转率、缺货率或仓储成本分别是多少？你采取了哪些措施？如何量化改善结果？如果重来一次，你会调整哪一步？",
+      "tags": [
+        "库存优化",
+        "项目复盘",
+        "数据量化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q039",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "进口原料延误应急",
+      "content": "某批生产急需的进口原料在目的港被海关查验，预计延误7天，而生产线3天后可能停线。销售不同意空运因成本过高，采购称供应商无法提前发货。你会如何协调各方并给出短期与长期处置方案？",
+      "tags": [
+        "物流应急",
+        "关务协调",
+        "跨部门沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.supply-chain-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "供应链岗位压力认知",
+      "content": "供应链工作常需在成本、交付和服务之间做取舍，有时还要承受销售与生产的双向压力。你如何理解这种岗位常态？未来两年你希望重点提升哪项能力，为什么？",
+      "tags": [
+        "岗位认知",
+        "职业规划",
+        "抗压能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -371,7 +881,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

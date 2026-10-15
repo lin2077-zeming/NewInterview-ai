@@ -276,6 +276,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "business-hr.marketing-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "市场进入调研与定位",
+      "content": "假设公司要推出一款面向25-35岁职场人的轻食代餐，预算有限，需在两周内完成市场进入策略。请说明你会如何做用户调研与竞品分析，并给出差异化定位和验证方式。",
+      "tags": [
+        "市场调研",
+        "用户洞察",
+        "竞品分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q012",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "快闪店引流闭环设计",
+      "content": "公司要在商场中庭办三天快闪店，总预算5万元，目标新增私域用户2000人并带动现场销售。请给出活动主题、动线设计、引流钩子、人员分工和突发天气预案。",
+      "tags": [
+        "活动策划",
+        "私域增长",
+        "风险预案"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "投放ROI下降诊断",
+      "content": "某信息流渠道连续两周ROI从1.8降到1.1，预算和素材数量不变。请列出你的排查步骤、需要查看的关键指标，以及可能的三类优化动作和验证周期。",
+      "tags": [
+        "数据分析",
+        "ROI优化",
+        "渠道投放"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q014",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "小红书种草方案",
+      "content": "为一款新锐咖啡品牌策划小红书种草campaign，目标是提升品牌搜索量。请说明内容选题方向、KOL组合策略、发布节奏和效果衡量指标。",
+      "tags": [
+        "社交媒体",
+        "内容创意",
+        "KOL合作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "主导活动复盘",
+      "content": "请挑一个你主导或深度参与的市场活动，说明活动目标、预算规模、你的具体角色、最终数据结果，以及如果重做一次，你会优先修改哪个环节。",
+      "tags": [
+        "项目复盘",
+        "活动执行",
+        "数据结果"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q016",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "增长归因深挖",
+      "content": "你简历提到做过用户增长，请具体说明当时获客成本、留存变化和归因方式。你如何判断增长来自你的动作，而不是自然流量或季节性因素？",
+      "tags": [
+        "用户增长",
+        "归因分析",
+        "项目深挖"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "跨部门项目推进",
+      "content": "请分享一次你协调产品、销售和设计共同推进营销项目的经历。你如何对齐目标、分配任务？遇到的最大阻力是什么，最后如何解决？",
+      "tags": [
+        "跨部门协作",
+        "项目推进",
+        "沟通协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q018",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "数据驱动策略迭代",
+      "content": "请描述一次你根据数据调整营销策略的案例：最初的假设是什么，数据出现了什么异常，你如何验证原因，并最终做了哪些调整？",
+      "tags": [
+        "数据驱动",
+        "策略迭代",
+        "项目复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q019",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "发布会嘉宾缺席应急",
+      "content": "发布会前一天，主讲嘉宾临时爽约，物料已印刷，媒体和客户已邀约。作为负责人，你如何在一小时内调整方案、重排流程并同步各方？",
+      "tags": [
+        "危机处理",
+        "资源协调",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "促销与品牌调性冲突",
+      "content": "销售团队要求立刻把官网所有产品降价30%做促销，品牌部认为会伤害调性。你夹在中间，会如何收集信息、沟通双方并推动决策？",
+      "tags": [
+        "跨部门沟通",
+        "利益平衡",
+        "决策推动"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "KOL舆情应对",
+      "content": "KOL合作内容发布后引发负面舆情，评论区出现产品安全质疑。你如何判断严重程度、分工回应、对外口径和上报节奏？请给出具体步骤。",
+      "tags": [
+        "舆情应对",
+        "危机公关",
+        "社交媒体"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q022",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "多任务优先级排序",
+      "content": "你同时负责三个渠道投放和一场线下活动，周五下午老板临时加一个紧急物料需求。你会如何评估优先级、分配时间和同步相关方？",
+      "tags": [
+        "多任务管理",
+        "优先级",
+        "应变能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "选择市场营销动机",
+      "content": "你为什么选择市场营销作为职业方向？过去哪一段经历让你确认自己适合做市场？请结合具体项目、你的角色和当时的感受来谈。",
+      "tags": [
+        "求职动机",
+        "自我认知",
+        "职业选择"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "三年职业发展定位",
+      "content": "未来三年你希望成为哪类营销人：品牌创意、增长投放还是市场研究？为什么？请说明你已具备的基础和接下来要补的能力。",
+      "tags": [
+        "职业规划",
+        "发展方向",
+        "自我定位"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "团队士气改善",
+      "content": "如果团队连续两个季度业绩未达标，你观察到士气低落，你会如何与主管和同事协作改善？请说出你的观察、沟通方式和具体行动。",
+      "tags": [
+        "团队协作",
+        "士气管理",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "薪资与成长取舍",
+      "content": "你对薪资和成长机会的期望是什么？如果短期两者冲突，比如高薪但成长有限，你会如何取舍？请说明你的判断标准。",
+      "tags": [
+        "期望管理",
+        "薪资谈判",
+        "职业选择"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q027",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "新品冷启动的用户调研",
+      "content": "假设公司要推一款面向Z世代的低度酒，赛道已有头部品牌占据了货架和心智。请说明你会怎么设计这次市场调研：需要回答哪几个关键问题、用哪些信息源和方法、样本怎么选，以及如何把调研结论转成可执行的定位与卖点。可结合你实际做过的调研举例。",
+      "tags": [
+        "市场调研",
+        "用户洞察",
+        "新品定位"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q028",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "十万预算的活动怎么花",
+      "content": "给你10万元预算，为一个新消费品牌在单城市做一场线下快闪店，目标是现场获客并沉淀私域，筹备时间只有三周。请说出你的目标拆解、场地与形式选择、预算分配、传播节奏，以及你用什么标准判断这场活动算不算成功。",
+      "tags": [
+        "活动策划",
+        "预算分配",
+        "私域获客"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q029",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "ROI下滑的归因与决策",
+      "content": "某信息流渠道连续两周ROI从1.8跌到0.9，预算已花掉一半。你会按什么顺序排查原因、需要调取哪些数据？若排查后发现是素材老化叠加人群重叠导致，接下来两周你会怎么调整？请说明你会用哪些指标监控调整是否真的有效。",
+      "tags": [
+        "数据分析",
+        "投放优化",
+        "归因"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q030",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "讲一个你主导的营销项目",
+      "content": "请挑一个你真正主导过的营销项目，活动、campaign或内容专题均可，说清楚：当时的业务目标和你的具体角色、你做的关键决策是什么、过程中遇到什么意料之外的问题、最后用哪几个数据证明效果，以及如果重做一次你会改什么。",
+      "tags": [
+        "项目复盘",
+        "经历深挖",
+        "效果评估"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q031",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "KOL合作失败的复盘",
+      "content": "请讲一次效果不及预期的KOL或达人合作经历。当时怎么选人、给了什么brief、数据差在哪一环？你判断问题出在选人、内容还是投放方式？如果预算重来一次，你的筛选标准、报价谈判和效果验收方式会怎么改？",
+      "tags": [
+        "KOL合作",
+        "失败复盘",
+        "渠道投放"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q032",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "从零做起的账号增长",
+      "content": "请介绍你运营过的一个社交媒体账号或内容栏目：目标人群是谁、用什么内容形式和发布节奏、增长主要靠自然流量还是投放、表现最好的一条内容为什么能起来。如果没有账号运营经验，可以说说你打算怎么从零起步。",
+      "tags": [
+        "社交媒体",
+        "内容运营",
+        "用户增长"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q033",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "跨部门推不动的活动",
+      "content": "你策划的联合活动需要设计出图、销售提供客户名单、产品确认权益，但三方都以排期满了推脱，距离上线只剩一周。你会怎么推进？请说明你分别找谁、说什么、优先级怎么排，以及如果最终只能保住一个环节，你保哪个、为什么。",
+      "tags": [
+        "跨部门协作",
+        "沟通推动",
+        "优先级"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q034",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "活动前一天的突发状况",
+      "content": "线下发布会前一天，主视觉被指与竞品高度相似，合作KOL临时要求加价否则不出席，同时场地方通知当天电力检修。三件事同时压过来，你手上只有一个实习生帮忙。请说出你的处理顺序、每件事的应对方案，以及你会向谁同步什么信息。",
+      "tags": [
+        "突发应对",
+        "危机处理",
+        "抗压"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q035",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么选择市场营销",
+      "content": "你为什么选择市场营销作为职业方向？在你看来，这个岗位每天真正在做的事和你想象中有什么差距？如果入职后发现大量时间花在盯数据、催物料和反复改文案上，你打算怎么面对？",
+      "tags": [
+        "求职动机",
+        "岗位认知",
+        "职业规划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q036",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "多线程任务下的取舍",
+      "content": "市场营销常常同时推进多个项目，还要随时接临时需求。请举一个你同时处理多件事的例子：你怎么判断优先级、有没有因此耽误过事、事后怎么补救。另外说说未来两年你希望在这份工作里长出什么能力。",
+      "tags": [
+        "时间管理",
+        "抗压能力",
+        "成长目标"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q037",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "两个渠道怎么选",
+      "content": "假设你负责一款客单价 199 元的国产护肤新品在小红书的投放：A 渠道 CPM 低、互动率高，但加购转化只有 0.8%；B 渠道 CPM 高出 40%，加购转化 2.5%。预算只够主投一个渠道，两周后要向老板复盘。你会怎么判断继续投哪个？需要看哪些数据、如何设定判断标准？",
+      "tags": [
+        "数据分析",
+        "渠道投放",
+        "ROI"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q038",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "完整复盘一次营销活动",
+      "content": "请挑一个你完整参与过的营销活动（线上 campaign 或线下快闪均可），说明：目标当初是怎么定的、你具体负责哪部分、过程中最大的资源约束是什么、最后用什么指标证明它成功了。如果现在让你重做一次，你会改哪一步、为什么？",
+      "tags": [
+        "活动策划",
+        "项目复盘",
+        "效果评估"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q039",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "设计排期被销售抢占",
+      "content": "你策划的落地页需要设计部出 3 版视觉，但设计师的档期已被销售部的物料需求占满，距离上线只剩 4 天，销售负责人还坚持自己的需求优先。你打算怎么推进？请说明你会先做什么、找谁沟通、以及谈不拢时的备选方案。",
+      "tags": [
+        "跨部门沟通",
+        "资源协调",
+        "应变"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.marketing-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "最近学的一项营销技能",
+      "content": "请说说你最近一年主动学的一项与营销相关的技能（工具、方法论或平台玩法都可以），你是怎么学的、用在了哪里、结果如何。另外，未来两年你希望在哪个营销方向（内容、投放、品牌、增长等）上扎根，为什么？",
+      "tags": [
+        "职业规划",
+        "学习能力",
+        "求职动机"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -390,7 +900,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

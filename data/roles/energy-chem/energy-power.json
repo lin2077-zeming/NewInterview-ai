@@ -277,6 +277,468 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "energy-chem.energy-power-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "压气机耗功计算",
+      "content": "某压缩空气储能项目需估算压气机耗功：入口空气为1 bar、300 K，压比8，等熵效率0.85，质量流量2 kg/s。请说明你会选用什么热力学模型、查取哪些物性，并写出稳定流动能量方程的计算步骤与关键假设。",
+      "tags": [
+        "热力学第一定律",
+        "压缩空气储能"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "换热器传热计算",
+      "content": "某余热回收换热器设计工况：烟气入口350℃、出口180℃，水入口25℃、出口95℃，逆流布置。请计算对数平均温差，并说明若运行半年后出口水温不达标，你会如何从传热系数、污垢热阻和流量分配三方面诊断？",
+      "tags": [
+        "传热学",
+        "换热器"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q013",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "叶轮机械CFD验证",
+      "content": "针对离心压气机叶轮，你计划用Fluent做全通道定常仿真。请说明湍流模型选择依据、网格无关性验证方案、收敛判据，以及如何用总压比、效率与实验数据对比来确认结果可信。若仿真效率偏高5%，你的排查顺序是什么？",
+      "tags": [
+        "CFD",
+        "叶轮机械",
+        "仿真验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q014",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "泵汽蚀余量校核",
+      "content": "某电厂凝结水泵从除氧器下游吸水，入口水温对应饱和压力已知，泵必需汽蚀余量NPSHr为4 m。请说明有效汽蚀余量NPSHa的计算方法，并判断安装高度或入口管路应如何调整以避免汽蚀。",
+      "tags": [
+        "流体力学",
+        "泵",
+        "汽蚀"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "锅炉改造项目深挖",
+      "content": "请挑一个你参与过的热力系统或动力装置设计项目，说明设计目标、边界条件、你负责的模块，以及关键参数（如热效率、压损、出口温度）如何确定。若重新做，你会在哪个环节引入仿真或实验验证？",
+      "tags": [
+        "项目经历",
+        "热力系统"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q016",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "新能源系统仿真优化",
+      "content": "描述你做过的新能源系统（光伏、风电、储能或氢能）建模项目。重点说明物理模型、输入气象/负荷数据来源、优化目标和约束，以及你如何验证仿真结果。若政策补贴退坡导致经济性不达标，你会调整哪些设计变量？",
+      "tags": [
+        "新能源",
+        "系统仿真",
+        "优化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q017",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "实验数据处理",
+      "content": "请讲一次你负责或参与的动力设备实验测试。你测量了哪些量（温度、压力、流量、扭矩等），采样频率和传感器精度如何选，数据后处理中如何剔除坏点并给出不确定度？最终结论是否支撑设计改进？",
+      "tags": [
+        "实验测试",
+        "数据分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q018",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "现场调试故障诊断",
+      "content": "某热力系统调试时发现实际出力比设计值低8%，且振动随负荷升高。请按你的项目经验，说明从热力学参数、流体流动、机械安装和控制逻辑四方面的排查步骤，并给出你最终如何定位与处理。",
+      "tags": [
+        "现场调试",
+        "故障诊断"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "跨专业接口协调",
+      "content": "在动力系统项目中，你发现控制专业给出的阀门响应时间与工艺专业要求的调节精度冲突，可能影响变工况性能。你会如何组织沟通、建立接口参数表并推动双方达成可验证的折中方案？",
+      "tags": [
+        "跨专业协作",
+        "接口管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q020",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "向客户解释仿真",
+      "content": "非技术客户质疑你的CFD仿真结论与现场现象不符，要求你当场解释。请模拟一段沟通：如何用通俗语言说明模型假设、误差来源和后续验证计划，既不推卸责任，也不过度承诺？",
+      "tags": [
+        "沟通表达",
+        "仿真结果"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q021",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "仿真实验冲突决策",
+      "content": "项目关键节点前，你的仿真显示方案可行，但现场试验数据明显偏离且工期只剩一周。领导要求你给出明确结论。你会如何快速评估数据可信度、设计补充验证，并决定是放行、修改还是暂停？",
+      "tags": [
+        "综合应变",
+        "决策判断"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q022",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "采购变更影响评估",
+      "content": "供应商通知某换热器管材因供货问题必须更换，热导率和成本均有变化。作为设计负责人，你会如何评估对传热性能、压降和寿命的影响，并协调采购、工艺与项目进度？",
+      "tags": [
+        "变更管理",
+        "跨部门沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "投递岗位动机",
+      "content": "你为什么选择能源与动力工程师岗位？结合你了解的电力、汽车或航空航天行业，谈谈哪类热力/动力系统最吸引你，以及你希望在前三年积累哪些具体能力。",
+      "tags": [
+        "求职动机",
+        "职业规划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q024",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "技术分歧处理",
+      "content": "如果你与资深工程师在仿真模型简化程度上产生分歧，对方坚持经验方案，你如何表达自己的依据并推进验证？请举一个你实际处理技术分歧的例子，说明结果和反思。",
+      "tags": [
+        "团队协作",
+        "技术分歧"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q025",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "行业方向选择",
+      "content": "电力、汽车、航空航天和建筑节能都需要能源与动力工程师。你更倾向哪个方向？请说明你的判断依据，以及如果公司安排你进入非首选方向，你会如何快速适应？",
+      "tags": [
+        "行业认知",
+        "适应能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "多项目压力管理",
+      "content": "同时负责仿真分析、现场调试和报告编写，且出差频繁时，你如何安排优先级并保证交付质量？请结合过往经历，说明你使用的时间管理方法、求助边界和压力调节方式。",
+      "tags": [
+        "压力管理",
+        "多任务"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q027",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "单元操作与单元过程的区别",
+      "content": "单元操作（unit operation）与单元过程（unit process）有什么区别？各举一例。",
+      "tags": [
+        "化工原理",
+        "基础概念"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q028",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "再热与回热对循环效率的影响",
+      "content": "某燃煤机组拟通过改造提升循环效率，现有两个备选方案：在朗肯循环中增加一次再热，或增设回热抽汽。请说明两种措施各自的热力学依据，并结合平均吸热温度、汽轮机排汽干度与设备改造成本，分析在什么工况下应优先选择哪一种。",
+      "tags": [
+        "热力循环",
+        "朗肯循环",
+        "效率优化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q029",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "CFD仿真结果可信度判断",
+      "content": "你完成了一台板式换热器流道的CFD仿真，残差已降至1e-5且监控曲线平稳，但算出的换热系数比实验关联式高出约20%。请说明你会依次检查哪些环节（网格无关性、边界条件、湍流模型、物性设置等），并给出判断仿真是否可信的量化标准。",
+      "tags": [
+        "CFD仿真",
+        "传热",
+        "结果验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q030",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "换热器压降与换热的权衡",
+      "content": "为提升一台管壳式换热器的换热量，方案A是增加壳程折流板数量，方案B是改用更小管径的换热管。请从传热系数、流动压降、泵功耗与结垢风险四个方面定量比较两种方案，说明你的选型判据，以及需要向客户说明的约束条件。",
+      "tags": [
+        "换热器",
+        "传热与压降",
+        "方案选型"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q031",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "仿真与实验偏差的处理",
+      "content": "请讲一个你参与的仿真结果与实验数据存在明显偏差的经历。你当时如何定位偏差来源（模型简化、边界条件、测量误差或物性参数）？最终如何处理，是否修正了模型并复现了实验？请给出具体的偏差幅度和你得到的结论。",
+      "tags": [
+        "仿真建模",
+        "实验对比",
+        "问题定位"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q032",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "现场调试中的泵汽蚀",
+      "content": "在给水泵调试中，现场出现明显振动与噪声，出口流量低于设计值，初步怀疑发生汽蚀。请描述你会如何通过有效汽蚀余量与必需汽蚀余量的比较来确认判断，并说明后续的排查步骤与相应的整改措施。",
+      "tags": [
+        "现场调试",
+        "流体机械",
+        "故障诊断"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q033",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "新能源系统方案设计取舍",
+      "content": "客户要求在工业园区配套建设一套光伏加储能的供能系统，目标是把外购电比例降到约定水平，同时限制投资回收期。请说明你会收集哪些负荷与资源数据、用什么指标评价方案，以及如何向客户解释你最终推荐的容量配置。",
+      "tags": [
+        "新能源",
+        "储能系统",
+        "方案设计"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q034",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "与其他专业方案冲突的协调",
+      "content": "你负责的动力系统方案需要更大的管路与检修空间，但结构专业反馈布置已到极限，电气专业也要求保留通道，而项目已进入详细设计阶段。请描述你的沟通与推进思路，包括如何用数据支撑诉求、如何做取舍，以及如何形成团队可接受的结论。",
+      "tags": [
+        "跨专业协作",
+        "设计冲突",
+        "沟通推进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q035",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "向非技术客户解释报告",
+      "content": "客户是园区管理方，没有工程背景，你需要在30分钟内汇报一份热力系统节能改造的技术报告，重点讲清投资、收益与风险。请说明你会如何组织内容、用什么方式呈现关键数据，以及如何应对客户对数据可靠性的追问。",
+      "tags": [
+        "技术沟通",
+        "报告表达",
+        "客户对接"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q036",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "求职动机与职业规划",
+      "content": "请结合你的学习与实习经历，说明你为什么选择能源与动力工程方向，以及未来三到五年你希望在设计仿真、现场调试还是新能源技术方向深耕，为什么这样规划。",
+      "tags": [
+        "求职动机",
+        "职业规划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q037",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "长期驻场与出差的接受度",
+      "content": "本岗位项目型工作较多，可能需要在电厂或项目现场连续驻场数周，参与调试与故障处理。请谈谈你如何看待这类工作节奏，过去是否有类似经历，以及你会如何兼顾现场任务与个人的学习提升。",
+      "tags": [
+        "工作节奏",
+        "驻场出差",
+        "团队协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.energy-power-q038",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "微通道冷板压降超标的归因",
+      "content": "某数据中心冷板式液冷项目，冷却液在微通道冷板内的实测压降约为设计值的1.8倍，泵扬程已接近极限。请说明你会如何设置CFD的边界条件与湍流模型、如何做网格无关性验证，并结合沿程阻力与局部阻力的分析判断压降主要来自哪里，给出两条优化方向及各自的代价。",
+      "tags": [
+        "热流体仿真",
+        "CFD",
+        "压降分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -378,7 +840,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

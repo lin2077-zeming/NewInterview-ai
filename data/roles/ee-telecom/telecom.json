@@ -275,6 +275,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "ee-telecom.telecom-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "调制方式与信道质量",
+      "content": "某无线链路在相同发射功率和带宽下，分别采用QPSK与16QAM，实测16QAM误码率明显更高。请从星座图、信噪比门限、频谱效率和链路自适应角度解释原因，并说明什么条件下应切换到64QAM。",
+      "tags": [
+        "调制解调",
+        "误码率",
+        "链路自适应"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q012",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "协议分层与抓包分析",
+      "content": "用户投诉网页打开慢，你抓包发现TCP三次握手正常但TLS握手耗时很长。请按OSI或TCP/IP分层说明数据封装与解封装过程，并指出应重点排查哪几层、哪些指标。",
+      "tags": [
+        "网络协议",
+        "TCP/IP",
+        "抓包分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q013",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "无线链路预算与覆盖规划",
+      "content": "需为某郊区新建LTE基站做覆盖规划，给定发射功率、天线增益、馈线损耗、频率、带宽和边缘速率要求。请说明上行与下行链路预算差异，如何计算最大允许路径损耗并确定站间距，以及上下行受限时如何调整。",
+      "tags": [
+        "链路预算",
+        "无线规划",
+        "覆盖"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q014",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "基站小区退服排查",
+      "content": "监控显示某基站3个小区同时退服，传输、电源和主设备告警均上报。请给出从核心网到天馈的排查顺序，说明如何用环回、Ping、光功率、驻波比和日志快速定位故障段，并给出恢复策略。",
+      "tags": [
+        "故障排查",
+        "基站维护",
+        "传输"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "网络优化项目深挖",
+      "content": "请介绍你做过的一个网络规划或优化项目：当时覆盖、容量或质量指标是什么？你用了哪些工具和数据？做了哪些参数或站址调整？最终KPI提升多少？如果重做，你会改进哪一步？",
+      "tags": [
+        "项目经历",
+        "网络优化",
+        "KPI"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q016",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "割接方案与回退设计",
+      "content": "请讲一次你参与或主导的通信割接：割接窗口、影响业务范围、实施步骤、验证清单和回退方案分别是什么？过程中出现异常时你依据什么判断继续还是回退？最终结果和复盘结论如何？",
+      "tags": [
+        "割接",
+        "项目管理",
+        "回退方案"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "复杂故障定位案例",
+      "content": "描述一次你遇到的最难定位的通信故障：现象、影响范围、初步假设、你用哪些数据或工具排除干扰项，根因是什么？如何验证修复有效？请给出关键时间线和你的个人贡献。",
+      "tags": [
+        "故障定位",
+        "数据排查",
+        "案例"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q018",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "仿真与数据分析项目",
+      "content": "请举例说明你如何用MATLAB、Python或仿真平台解决通信问题：建模假设、输入参数、评价指标和验证方法是什么？仿真结果与现网数据是否一致？你从中得出什么可落地的优化建议？",
+      "tags": [
+        "信号仿真",
+        "数据分析",
+        "建模"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "多厂商协作需求变更",
+      "content": "项目临近上线，运营商临时增加覆盖需求，但设备商供货周期和施工队排期都无法满足。你作为通信工程师，如何组织多方沟通、评估技术替代方案并推动新计划落地？请说明你的沟通顺序和关键动作。",
+      "tags": [
+        "跨部门协作",
+        "需求变更",
+        "沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q020",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "大面积故障应急决策",
+      "content": "节假日期间某区域大面积断网，客户投诉激增，值班人员有限，核心网和无线侧均有告警。请说明你如何分级故障、分配资源、对外通报，并在信息不完整时做出临时恢复决策，同时控制二次风险。",
+      "tags": [
+        "应急处理",
+        "故障分级",
+        "抗压"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "部门分歧推动方案",
+      "content": "市场部门要求增强热点区域覆盖，但运维部门认为成本高且站址难协调。你掌握链路预算和容量数据，如何用技术方案和数据说服双方，形成可执行折中方案？请描述你的推进步骤和汇报结构。",
+      "tags": [
+        "跨部门沟通",
+        "方案推动",
+        "数据说服"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q022",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "割接窗口配置不一致",
+      "content": "凌晨割接窗口只剩30分钟，你发现现网配置与割接脚本有一处参数不一致，但业务暂时正常。你会继续、暂停还是回退？请说明判断依据、需要立即确认的信息以及如何向上级和客户同步。",
+      "tags": [
+        "应变决策",
+        "割接",
+        "风险控制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "求职动机与岗位理解",
+      "content": "你为什么选择通信工程师作为职业方向？请结合你了解的通信网络规划、优化或维护工作，说明你为何应聘本岗位，以及你希望在前两年重点积累什么能力。",
+      "tags": [
+        "求职动机",
+        "岗位理解",
+        "职业选择"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "职业规划与发展路径",
+      "content": "请谈谈你未来3到5年的职业规划：你更倾向深耕无线、传输、核心网还是数据分析？你设定了哪些阶段性目标？如果公司安排你从现场维护做起，你如何看待这一安排？",
+      "tags": [
+        "职业规划",
+        "发展目标",
+        "岗位适配"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "团队协作与抗压举例",
+      "content": "请举一个你在团队项目中承受较大压力的例子：任务冲突、时间紧迫或成员意见不一致时，你具体做了什么？结果如何？如果同事不配合，你通常怎样推动协作并保持沟通？",
+      "tags": [
+        "团队协作",
+        "抗压能力",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q026",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "出差驻场与值班意愿",
+      "content": "通信工程师常需出差、驻场、夜间割接或节假日值班。你如何评估自己的适应能力？请结合过往经历说明你能否接受这种工作节奏，以及你如何保持工作与生活的平衡。",
+      "tags": [
+        "工作意愿",
+        "出差驻场",
+        "稳定性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q027",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "低通与高通滤波器",
+      "content": "什么是低通滤波器和高通滤波器？请各举一个实际应用场景。",
+      "tags": [
+        "信号处理",
+        "滤波器"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q028",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "CDMA 的工作原理",
+      "content": "什么是 CDMA？它是如何工作的？与其它多址方式相比有什么优劣？",
+      "tags": [
+        "通信原理",
+        "多址技术"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q029",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "自适应调制编码原理",
+      "content": "在无线链路中，当信道质量变差时，系统会自动降低调制阶数和编码速率。请解释自适应调制编码（AMC）的基本原理，并说明它如何依赖CQI反馈。如果CQI上报延迟较大，会对系统性能产生什么影响？",
+      "tags": [
+        "自适应调制",
+        "CQI反馈",
+        "链路自适应"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q030",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "城区新增基站规划",
+      "content": "某城区用户密度激增，现网出现容量受限和部分弱覆盖。请你说明新增基站的规划流程：如何确定站址、天线挂高、下倾角和方位角？会用哪些仿真工具验证覆盖与容量？关键输出指标有哪些？",
+      "tags": [
+        "站址规划",
+        "覆盖仿真",
+        "容量估算"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q031",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "VoLTE呼叫失败排查",
+      "content": "一次VoLTE呼叫在核心网侧返回488错误，用户无法接通。请描述从UE发起INVITE到振铃的关键信令流程，并说明你会如何分段定位问题：无线侧、IMS核心网、还是承载网？需要抓取哪些接口的信令？",
+      "tags": [
+        "VoLTE",
+        "信令流程",
+        "故障定位"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q032",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "网络割接项目经历",
+      "content": "请描述你参与过的一次通信网络割接项目。你负责哪个环节？割接方案中回退条件是如何设定的？实施过程中遇到的最大风险是什么？割接后你通过哪些指标监控业务质量？",
+      "tags": [
+        "网络割接",
+        "回退方案",
+        "风险控制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q033",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "网络优化项目数据",
+      "content": "请分享一个你主导或深度参与的网络优化案例。优化前哪些指标（如RSRP、SINR、掉线率、切换成功率）不达标？你采取了哪些具体措施（天馈调整、功率参数、切换门限）？优化后数据改善多少？",
+      "tags": [
+        "网络优化",
+        "指标提升",
+        "参数调整"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q034",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "技术文档编写经验",
+      "content": "在过往项目里，你编写过哪类通信技术文档（如规划报告、测试报告、操作手册）？请举例说明一份文档的结构，以及你如何确保工程、运维、客户等不同角色都能准确理解关键信息。",
+      "tags": [
+        "技术文档",
+        "跨部门沟通",
+        "项目交付"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q035",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "基站大面积退服应急",
+      "content": "你负责的片区多个基站突然大面积退服，客户投诉激增，运维、厂商、施工队同时找你问原因。请按时间线说明你如何组织排查、同步信息、协调资源并尽快恢复业务，同时安抚客户。",
+      "tags": [
+        "应急处理",
+        "故障排查",
+        "多方协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q036",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "向客户解释信号问题",
+      "content": "一位非技术背景的政企客户抱怨办公楼内手机信号差，影响业务。你如何用通俗语言解释可能的原因（如建筑遮挡、室内分布系统缺失），并给出可落地的解决建议？",
+      "tags": [
+        "技术沟通",
+        "客户服务",
+        "表达简化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q037",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "职业选择与发展方向",
+      "content": "你为什么选择通信工程师作为职业起点？未来3到5年，你希望在无线优化、核心网、传输或网络规划等哪个方向深入？为此你已经在做哪些准备？",
+      "tags": [
+        "职业规划",
+        "求职动机",
+        "发展方向"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q038",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "保持技术更新方式",
+      "content": "通信技术迭代很快，从5G到5G-A、6G、SDN/NFV不断演进。你平时通过哪些渠道学习新技术？请举一个你最近学习并尝试应用到工作或项目中的具体例子。",
+      "tags": [
+        "学习能力",
+        "技术更新",
+        "自我驱动"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q039",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "商圈上行质差优化",
+      "content": "某城区商圈用户集中投诉上行速率低、接入失败率升高，后台显示RSRP良好但SINR差、上行干扰噪声抬升且PRB利用率接近饱和。请分析可能原因，按优先级给出排查步骤，并提出参数调整、频率/站点或容量扩容方面的优化方案。",
+      "tags": [
+        "网络优化",
+        "上行干扰",
+        "容量规划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.telecom-q040",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "割接项目排障复盘",
+      "content": "请结合你参与过的一次通信网络割接或设备替换项目，说明你负责的环节、割接前如何做业务影响评估与回退预案、割接中遇到过什么异常、如何定位并恢复，以及事后如何复盘形成技术文档。",
+      "tags": [
+        "项目经历",
+        "割接",
+        "故障排查"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -388,7 +898,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

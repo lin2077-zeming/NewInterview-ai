@@ -277,6 +277,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "med-life.clinical-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "输液出现不良反应如何处理",
+      "content": "你给一个患者进行输液，突然出现了不良反应，此时你该如何应对？",
+      "tags": [
+        "临床应急",
+        "用药安全"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "中公医考网《执业护士考试常见面试问题汇总》",
+        "url": "https://m.offcn.com/yixue/2023/0925/116643.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q012",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "镇痛剂用药间隔未到但病人剧痛",
+      "content": "有一位病人医嘱 4 小时用一次镇痛剂，这次病人用过镇痛剂不足三个小时，有吵闹疼痛厉害，你该怎么办？",
+      "tags": [
+        "医嘱执行",
+        "疼痛管理"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "中公医考网《执业护士考试常见面试问题汇总》",
+        "url": "https://m.offcn.com/yixue/2023/0925/116643.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q013",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "洗胃的禁忌症",
+      "content": "洗胃的禁忌症是什么？请说明为什么这些情况不能洗胃。",
+      "tags": [
+        "急救",
+        "操作禁忌"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "中公医考网《执业护士考试常见面试问题汇总》",
+        "url": "https://m.offcn.com/yixue/2023/0925/116643.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q014",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "被分配到不适合的科室怎么办",
+      "content": "如果这次你通过面试被安排在急诊科工作，但工作一段时间之后，发现你不适合急诊科工作，你该怎么办？",
+      "tags": [
+        "职业适应",
+        "抗压能力"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "中公医考网《执业护士考试常见面试问题汇总》",
+        "url": "https://m.offcn.com/yixue/2023/0925/116643.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q015",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "新科室同事关系差如何改善",
+      "content": "如果你到一个新科室，发现同事关系很差、工作不好开展，你会做哪些努力来改变这种状况？",
+      "tags": [
+        "团队协作",
+        "人际关系"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "中公医考网《执业护士考试常见面试问题汇总》",
+        "url": "https://m.offcn.com/yixue/2023/0925/116643.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q016",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "纱布数量对不上该不该坚持",
+      "content": "手术后护士发现只剩下六块纱布，而她记得明明是七块。医生却说「我是主任还是你是主任」，谈谈你的看法。",
+      "tags": [
+        "医疗安全",
+        "职业操守"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "应届毕业生网《护士面试问题及答案》",
+        "url": "https://www.yjbys.com/file/hushimianshiwentijidaan/",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q017",
+      "stage": "hr",
+      "difficulty": "hard",
+      "title": "有过硬操作技能就是优秀护士吗",
+      "content": "作为一名护士，只要有过硬的操作技能，就是一名优秀的护士——你同意这个看法吗？为什么？",
+      "tags": [
+        "职业素养",
+        "岗位认知"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "应届毕业生网《护士面试问题及答案》",
+        "url": "https://www.yjbys.com/file/hushimianshiwentijidaan/",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q018",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "实习期病人拒绝你操作",
+      "content": "实习护士为病人做治疗时，往往会遭到病人拒绝。如果你是一名实习护士，你该怎么办？",
+      "tags": [
+        "医患沟通",
+        "实习适应"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "应届毕业生网《护士面试问题及答案》",
+        "url": "https://www.yjbys.com/file/hushimianshiwentijidaan/",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q019",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "值班时病人突然晕倒",
+      "content": "你在值班的时候，面前一个急症病号突然晕倒，你如何处理？",
+      "tags": [
+        "急救",
+        "应急处理"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "面试123网《医院护士面试常考20题》",
+        "url": "http://www.mianshi123.com/msjq/q39756.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "值班时亲友找你有急事",
+      "content": "你是一名急诊科医务人员，在你值班的时候，你的亲戚好友找你有急事，你会怎么做？",
+      "tags": [
+        "职业边界",
+        "应急处理"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "面试123网《医院护士面试常考20题》",
+        "url": "http://www.mianshi123.com/msjq/q39756.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q021",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "如何看待医务人员收受红包",
+      "content": "你如何看待个别医务工作者违反规定收受红包？如果你遇到这种情况，你会怎么做？",
+      "tags": [
+        "医德医风",
+        "合规"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "面试123网《医院护士面试常考20题》",
+        "url": "http://www.mianshi123.com/msjq/q39756.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q022",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "胸痛患者鉴别与处置",
+      "content": "急诊接诊一名58岁男性，突发胸痛2小时，伴大汗、恶心。心电图示非特异性ST-T改变，首次肌钙蛋白阴性。既往高血压、糖尿病史。请说明你的鉴别诊断思路、还需追问哪些病史和检查，以及下一步处置方案。",
+      "tags": [
+        "胸痛鉴别",
+        "临床决策",
+        "急诊处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q023",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "住院患者发热低血压",
+      "content": "夜班时，一名术后第3天的患者出现发热38.9℃，血压85/50mmHg，心率120次/分，尿量减少。你作为值班医生，请按优先级说明评估步骤、可能的病因及紧急处理措施。",
+      "tags": [
+        "急危重症",
+        "术后并发症",
+        "值班处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q024",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "反复腹痛的临床推理",
+      "content": "门诊接诊一名35岁女性，反复右上腹隐痛3个月，B超未见异常，胃镜示浅表性胃炎。患者焦虑，要求做全身CT。请展示你的临床推理过程，如何进一步问诊和选择辅助检查，并沟通检查必要性。",
+      "tags": [
+        "门诊推理",
+        "辅助检查",
+        "医患沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q025",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "分享危重病例救治经历",
+      "content": "请讲述你在实习或规培期间，独立管床或作为团队成员参与救治的一例危重患者。说明患者病情、你的具体职责、临床决策依据、团队协作过程，以及最终结果和你从中获得的经验。",
+      "tags": [
+        "危重病例",
+        "团队协作",
+        "临床经验"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q026",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "棘手医患沟通案例",
+      "content": "回忆一次你与患者或家属沟通困难的经历，例如对治疗方案不信任、情绪激动或拒绝配合。请描述背景、你当时的沟通策略、患者的反应，以及你事后反思可以改进的地方。",
+      "tags": [
+        "医患沟通",
+        "沟通策略",
+        "反思改进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q027",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "操作失误与安全反思",
+      "content": "请分享一次你在临床操作或病历书写中出现的失误或险兆事件（如无菌操作不严、医嘱开错、记录遗漏）。说明当时情境、你如何发现并补救、对患者的影响，以及你后续如何改进以确保医疗安全。",
+      "tags": [
+        "操作规范",
+        "医疗安全",
+        "反思改进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q028",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "家属情绪激动如何处理",
+      "content": "你在病房值班，一名患者家属因等待检查结果时间过长，在护士站大声指责并扬言投诉。周围有其他患者和家属。请说明你如何安抚情绪、澄清事实、协调资源，并做好后续沟通与记录。",
+      "tags": [
+        "医患冲突",
+        "情绪安抚",
+        "沟通协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q029",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "多学科会诊分歧协调",
+      "content": "在一位复杂肿瘤患者的多学科会诊中，外科主张手术，内科认为应先化疗，双方争执不下。你作为主管住院医师，会如何收集信息、表达观点并推动达成一致？",
+      "tags": [
+        "多学科协作",
+        "分歧协调",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q030",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "职业选择与规划",
+      "content": "你为什么选择成为一名临床医生？请结合你的经历谈谈对这份职业的理解，并描述你未来3-5年的职业发展规划，包括希望深耕的专科方向或技能提升目标。",
+      "tags": [
+        "职业动机",
+        "职业规划",
+        "临床医生"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q031",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "抗压与持续学习",
+      "content": "临床工作强度大、夜班多、责任重，你如何调节压力并保持学习动力？请举例说明你过去如何应对高压情境，以及你平时通过哪些方式更新医学知识。",
+      "tags": [
+        "抗压能力",
+        "持续学习",
+        "压力管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q032",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "不典型胸痛的鉴别",
+      "content": "急诊接诊一位62岁糖尿病患者，主诉上腹胀痛伴恶心4小时，无典型胸痛，血压135/85 mmHg，心电图未见明显ST段抬高。作为接诊医生，你下一步如何问诊和查体？需要考虑哪些鉴别诊断？请说明你的优先处理与依据。",
+      "tags": [
+        "临床推理",
+        "胸痛鉴别",
+        "急诊处置"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q033",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "术后发热的评估",
+      "content": "患者腹部手术后第3天，体温升至38.9℃，伴切口局部红肿、白细胞升高。作为主管住院医师，请列出你首先需要鉴别的发热原因，并说明会安排哪些检查、何时启动经验性抗感染治疗，以及如何与上级沟通。",
+      "tags": [
+        "术后发热",
+        "鉴别诊断",
+        "抗感染"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q034",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "育龄女性休克查因",
+      "content": "急诊来一位28岁女性，突发下腹剧痛伴晕厥，血压85/50 mmHg、心率120次/分，面色苍白，停经史不详。你如何在5分钟内完成重点评估？考虑哪些致命诊断？请给出复苏、检查和会诊的先后顺序及依据。",
+      "tags": [
+        "休克",
+        "急腹症",
+        "急危重症"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q035",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "管床病例的决策复盘",
+      "content": "请选取你在实习或规培中独立管床的一位患者，说明当时的主要问题、你的初步判断、执行的诊疗措施，以及上级医师修改了哪一点。你从这次‘被纠正’中学到了什么？如果重来一次会怎么做？",
+      "tags": [
+        "经历深挖",
+        "临床决策",
+        "反思能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q036",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "病历书写与上级修改",
+      "content": "请回忆你书写病历或病程记录时，被上级医师修改最多的部分是什么？是你遗漏了关键阴性体征、鉴别诊断，还是用药逻辑？请举一份具体病历说明，并谈谈你现在如何保证病历的规范与真实性。",
+      "tags": [
+        "病历规范",
+        "操作安全",
+        "学习改进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q037",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "隐瞒病情的沟通困境",
+      "content": "一位晚期肿瘤患者家属反复要求对患者隐瞒病情，但患者本人查房时直接问你：‘医生，我是不是得了癌症？’此时家属在场并不断使眼色。你如何在尊重家属意愿、患者知情权和人文关怀之间妥善回应？请现场模拟。",
+      "tags": [
+        "医患沟通",
+        "人文关怀",
+        "知情同意"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q038",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "夜班急诊资源冲突",
+      "content": "你值夜班，只有一名护士配合，同时来两位患者：一位胸痛伴大汗、心电图提示ST段抬高；另一位车祸多发伤、血压下降。两人都需要立即处理，抢救资源不足。你如何分诊、启动院内支援并与家属沟通？请说明优先顺序和理由。",
+      "tags": [
+        "急危重症",
+        "资源调配",
+        "抗压能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q039",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "医护协作冲突处理",
+      "content": "在临床工作中，你与护士或医技科室对医嘱执行、标本采集或用药时间产生分歧，对方情绪也比较激动。你会如何沟通解决，既保证患者安全又维护团队关系？请结合一个具体场景说明。",
+      "tags": [
+        "团队协作",
+        "沟通表达",
+        "患者安全"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.clinical-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "患者送红包时",
+      "content": "手术前，患者家属悄悄塞给你一个红包，希望‘多照顾’。你既不想伤害家属情感，也必须守住职业底线。你会怎么处理？如果家属坚持，甚至在术后再次送来，你如何应对并做好记录？",
+      "tags": [
+        "职业操守",
+        "医患沟通",
+        "合规意识"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -385,7 +895,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

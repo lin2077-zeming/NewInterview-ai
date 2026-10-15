@@ -276,6 +276,500 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "finance-econ.risk-management-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "偿债能力指标的局限",
+      "content": "请说明流动比率与速动比率的差异，并指出它们在评估制造业与房地产企业短期偿债能力时各自的局限。如果一家企业流动比率高于2但速动比率低于0.5，你会重点核查哪些科目，为什么？",
+      "tags": [
+        "财务分析",
+        "偿债能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "盈利却缺现金的借款人",
+      "content": "某制造业借款人近三年净利润为正且逐年增长，但经营活动现金流净额连续为负，应收账款周转天数从90天升至210天。你会如何判断其真实偿债能力？请说明你会调取哪些资料、关注哪些科目，并给出可能的风险结论。",
+      "tags": [
+        "现金流分析",
+        "信用评估"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "行业预警指标设计",
+      "content": "请为一家拟授信的光伏组件制造企业设计3个可量化的风险预警指标，说明数据来源、触发阈值和触发后的处置动作。要求指标既能反映行业景气度变化，也能反映企业自身经营恶化。",
+      "tags": [
+        "风险预警",
+        "指标体系"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q014",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "评分卡与PD模型开发",
+      "content": "开发中小企业信用评分卡时，样本中违约客户仅占1.5%，且存在大量缺失值。请说明你会如何处理样本不平衡、筛选变量并做模型验证，解释WOE与IV的作用，以及如何向业务方说明模型结果的可用性。",
+      "tags": [
+        "信用模型",
+        "数据建模"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q015",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "尽调中我负责的模块",
+      "content": "请介绍一段你参与过的授信尽职调查或信用风险评估经历，说明项目背景、你具体负责的模块（财务分析、行业判断或现场核查）、你交付了什么成果，以及你的结论最终是否被采纳。",
+      "tags": [
+        "经历深挖",
+        "尽职调查"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "一次风险信号复盘",
+      "content": "请讲一次你识别出客户风险信号但最终未发生违约，或你当时漏判了风险信号的经历。重点说明你依据哪些数据和逻辑作出判断，事后复盘发现哪里判断对了、哪里判断偏了。",
+      "tags": [
+        "风险识别",
+        "复盘反思"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "财报疑点的交叉验证",
+      "content": "在过往项目或实习中，你是否遇到财务数据缺失或疑似粉饰的情况？请举例说明你通过哪些手段交叉验证（如关联交易、毛利率与同行对比、纳税与收入匹配），并说明如何把疑点写进风险报告。",
+      "tags": [
+        "财务舞弊",
+        "交叉验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q018",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "组合层面压力测试",
+      "content": "如果你负责对某银行对公信贷组合做压力测试，请描述你会如何设定宏观情景（如GDP增速、利率、房价）、如何映射到PD与LGD，并测算资本与拨备缺口。可结合你实际做过或深入了解的项目说明。",
+      "tags": [
+        "压力测试",
+        "组合风险"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q019",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "业务施压放宽授信",
+      "content": "业务部门为完成季度指标，要求你对一个抵押物充足但经营现金流持续恶化的客户出具同意授信意见。你会如何与客户经理沟通？请现场模拟你会说的关键三句话，并说明你的底线在哪里。",
+      "tags": [
+        "跨部门沟通",
+        "风控独立性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "监管检查数据不一致",
+      "content": "监管现场检查临时调取某行业风险敞口数据，你发现业务系统与风险系统口径不一致，差异可能被认定为数据质量问题。距离提交材料只剩半天，你会怎么处理？请说明先后顺序和补位方案。",
+      "tags": [
+        "应急处理",
+        "数据治理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "风险信息向上传递",
+      "content": "你判断某客户风险等级应下调，但直属领导认为调整会影响当期利润、不愿推动。请说明你会准备哪些材料、选择什么场合向谁反映，以及如何在坚持专业判断与服从管理之间把握边界。",
+      "tags": [
+        "沟通协调",
+        "风险文化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q022",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "突发负面舆情处置",
+      "content": "周五傍晚，你负责的某集团客户被媒体曝出大额对外担保违约，次日将有债券到期。请说明接下来24小时你会做哪些动作，包括信息核实、敞口排查、内部上报，以及对客户和监管的沟通口径。",
+      "tags": [
+        "突发事件",
+        "风险处置"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为何选择风险管理",
+      "content": "不少同学更愿意去前台业务或投研岗位，你为什么选择风险管理？请结合你对这份工作日常内容的理解，说出你判断自己适合的三个理由，以及你目前最欠缺的一项能力。",
+      "tags": [
+        "求职动机",
+        "岗位理解"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "三到五年的成长路径",
+      "content": "如果入职后有三条路径：信用模型与量化、行业与政策研究、授信审批与客户风险管理，你更倾向哪一条？请说明未来三到五年你希望积累到什么能力和可验证的成果。",
+      "tags": [
+        "职业规划",
+        "成长路径"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "多任务与截止日期",
+      "content": "假设你同时要在两天内完成季度风险报告、配合一次监管数据报送，并处理业务部门临时发起的紧急授信申请。请说明你的优先级排序逻辑、具体时间安排，以及你会向谁同步进展。",
+      "tags": [
+        "抗压能力",
+        "时间管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "同事假设明显偏乐观",
+      "content": "你发现同事在风险模型或报告中使用了明显偏乐观的假设，而这份材料即将提交管理层。你会怎么做？请描述你的沟通顺序、表达方式，以及如果对方不接受你的意见你会如何处理。",
+      "tags": [
+        "团队协作",
+        "专业坚持"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q027",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "发现同事报告有错但已获领导肯定",
+      "content": "同事小王为完成某项目提交一份报告，得到了领导的肯定。你虽然没有参加该项目，但发现其中存在一些错误，可能影响后期工作进展。你会怎么办？",
+      "tags": [
+        "职场沟通",
+        "纠错"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "华图教育《银保监会财会岗面试真题（2017 各批次）》",
+        "url": "https://ah.huatu.com/2020/1125/1903657.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q028",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "注册会计师审计失败的原因",
+      "content": "注册会计师在外部审计的过程中频频出现审计失败，你认为导致审计失败的原因是什么？该怎么改善？",
+      "tags": [
+        "审计风险",
+        "行业观察"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "搜狐《银保监会财会岗面试真题精选》",
+        "url": "https://www.sohu.com/a/434371128_120890208",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q029",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "如何看待工作留痕",
+      "content": "工作中都会要求留痕，比如以视频、图片等形式留存，以备日后查验。但有一些部门为了避免被查、追责的风险，选择不留痕，或者留的痕迹存在问题。你怎么看待工作留痕问题？",
+      "tags": [
+        "合规意识",
+        "职场观察"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "搜狐《银保监会财会岗面试真题精选》",
+        "url": "https://www.sohu.com/a/434371128_120890208",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q030",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "利润增长但现金流恶化",
+      "content": "某制造业借款人近三年营收和净利润持续增长，但经营性现金流连续为负，应收账款周转天数从60天升至150天，短期借款大幅增加。你会如何交叉验证其盈利质量与真实偿债能力？请列出关键分析步骤和可能的风险信号。",
+      "tags": [
+        "财务分析",
+        "偿债能力",
+        "现金流"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q031",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "预警指标阈值与误报",
+      "content": "你需要为一家城商行的对公信贷组合设计信用风险预警体系，覆盖财务、舆情、行业和交易行为四类数据。请说明如何选择核心指标、设定阈值、验证误报与漏报，并量化评估预警规则的有效性。若管理层要求三个月内上线，你如何取舍？",
+      "tags": [
+        "风险预警",
+        "量化模型",
+        "阈值设定"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q032",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "ECL三阶段划分争议",
+      "content": "某客户因所在行业景气度下滑，评级从BBB下调至BB，但当前仍正常付息。业务部门认为不应将其贷款划入预期信用损失模型第二阶段，以免多计提拨备影响利润。你如何依据监管规则和风险实质判断阶段划分？需要补充哪些证据？",
+      "tags": [
+        "监管合规",
+        "预期信用损失",
+        "风险文化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q033",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "主导信用评估项目",
+      "content": "请结合你参与过的一个信用风险评估项目，说明你如何确定分析框架、获取财务与非财务数据、识别关键风险点，并形成授信建议。若当时企业提供的报表与工商、税务、流水信息存在矛盾，你具体怎么处理？最终结论是否被采纳？",
+      "tags": [
+        "经历深挖",
+        "信用评估",
+        "数据验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q034",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "贷后监控与预警处置",
+      "content": "请描述你做过的一次贷后风险监控或预警处置经历：预警触发后，你如何核实信号、判断风险等级、通知业务并跟踪措施？过程中遇到业务不配合或信息不完整时，你怎样推进并闭环？",
+      "tags": [
+        "贷后管理",
+        "风险预警",
+        "沟通协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q035",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "风险报告结论被挑战",
+      "content": "你曾撰写的一份风险分析报告结论是建议压降某客户授信，但业务部门以客户贡献大、同业仍在介入为由要求修改。请还原当时报告的核心论据，说明你如何用数据与情景分析回应质疑；如果管理层最终仍决定维持敞口，你会怎么设置后续监控和免责边界？",
+      "tags": [
+        "报告呈现",
+        "抗压能力",
+        "风险决策"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q036",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "业务施压放宽授信",
+      "content": "情景模拟：业务负责人说某客户是战略客户，若本周不批复贷款就会被同业抢走，要求你跳过一项待补充的担保手续并先出风险意见。请现场与他沟通，既要维护业务关系，又要守住合规底线。你会怎么开场、提问并给出替代方案？",
+      "tags": [
+        "沟通协调",
+        "合规底线",
+        "情景模拟"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q037",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "跨部门风险分歧",
+      "content": "风控、法务、财务和业务对同一交易对手的风险判断不一致：业务看收益，财务看报表，法务关注合同瑕疵，你关注敞口集中度。作为风险经理，你如何组织一次跨部门讨论，把分歧转化为可执行的风险缓释方案？请说明会议目标、议程和输出。",
+      "tags": [
+        "跨部门协作",
+        "风险缓释",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q038",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为何选择风险管理",
+      "content": "你为什么选择风险管理岗位？请结合你对金融机构风险文化的理解，谈谈你认为一名风控人员最重要的底线是什么。如果业务发展与风险控制发生短期冲突，你会如何向团队说明自己的立场？",
+      "tags": [
+        "求职动机",
+        "风险文化",
+        "职业价值观"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q039",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "职业规划与抗压",
+      "content": "风险管理常处于业务对立面，报告可能不被采纳，还要应对监管检查和突发预警。请谈谈你未来3—5年的职业规划，以及你如何保持专业判断和抗压能力。能否举一个你承受压力仍坚持原则或主动调整方法的例子？",
+      "tags": [
+        "职业规划",
+        "抗压能力",
+        "团队协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.risk-management-q040",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "制造业客户续贷信用风险分析",
+      "content": "你作为银行信用风险经理，审查一家申请续贷的制造业企业。其近三年营收复合增长15%，但经营性现金流连续两年为负，应收账款周转天数从60天升至120天，存货周转率下降，资产负债率65%，且存在大额关联方交易。请分析其偿债能力与主要风险点，说明你会重点监控哪些预警指标，并给出续贷审批建议。",
+      "tags": [
+        "财务分析",
+        "信用风险",
+        "风险预警"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -372,7 +866,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

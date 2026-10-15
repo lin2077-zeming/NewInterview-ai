@@ -275,6 +275,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "edu-research.k12-teacher-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "易错点诊断与纠正",
+      "content": "批改作业时，你发现班里近一半学生在同一类题目上重复出错（例如小学分数加减、初中方程移项）。请以你报考学科的一个具体知识点为例，说明：学生的典型错误是什么、背后可能的原因，以及你会用哪两步在下一节课上纠正，并说明如何检验纠正效果。",
+      "tags": [
+        "学科功底",
+        "学情诊断",
+        "纠错教学"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q012",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "8分钟课堂片段设计",
+      "content": "请以你报考学科某年级的一个核心概念为例（如小学“分数的意义”、初中“函数的概念”），现场设计一个8分钟课堂片段：说出你的导入方式、两个逐层递进的主问题、学生可能的回答，以及板书的呈现顺序。设计要说明为什么这样安排符合该年龄段学生的认知特点。",
+      "tags": [
+        "教学设计",
+        "说课",
+        "认知特点"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q013",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "独立备课上课的经历",
+      "content": "请从你简历中的实习、代课或支教经历里，挑一次你独立备课并完整上完的课。具体说明：你如何确定这节课的目标、课前预判学生会在哪里卡住、课堂上你根据学生反应临时做了什么调整，以及课后你从作业或反馈中发现了什么问题。",
+      "tags": [
+        "经历深挖",
+        "备课",
+        "课堂调整"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q014",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "教学调整与效果复盘",
+      "content": "你提到过某次教学或辅导让班级成绩、学生状态有变化。请用具体数据或事实说明起点是什么、你做了哪几项关键调整、坚持了多长时间，以及怎么排除其他因素（如题目难度变化）的影响。如果重来一次，你会改动哪一步？",
+      "tags": [
+        "教学复盘",
+        "数据意识",
+        "经历深挖"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q015",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "课堂冲突与教学推进",
+      "content": "上课进行到关键环节，两名学生因琐事发生口角并推搡，其中一人情绪激动要冲出教室。此时全班都在看着你，教学进度已经落后。请说明你接下来两分钟内的具体动作与语言，并谈谈事后你会如何分别处理这两名学生和全班。",
+      "tags": [
+        "课堂管理",
+        "突发事件",
+        "情绪处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q016",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "家长群公开质疑",
+      "content": "家长在班级群里@你，说“最近作业太多，孩子每天写到十一点，老师是不是只会刷题”，有几位家长跟着附和。请说明你会怎么在群里回应，以及之后如何与这位家长单独沟通。注意师德与措辞边界。",
+      "tags": [
+        "家校沟通",
+        "师德边界",
+        "舆情应对"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q017",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "带后进班的三年规划",
+      "content": "学校可能安排你第一年就接手一个纪律松散、成绩靠后的班级，同时兼任学科教学。请说说你入职前三年的专业成长规划，具体到每一年你想达成什么目标，以及面对这样的班级，你第一个月会先抓哪三件事。",
+      "tags": [
+        "职业规划",
+        "班级管理",
+        "后进班"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q018",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "团队协作与角色定位",
+      "content": "备课组要求统一进度和作业，但你觉得本班学情需要放慢节奏。请说说你会怎么和备课组长及同事沟通，既能表达自己的判断，又不破坏团队协作。可以结合你过去在团队中的一次真实经历来说明。",
+      "tags": [
+        "团队协作",
+        "沟通表达",
+        "角色定位"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "学生向家长反映老师不耐烦",
+      "content": "有同学向家长反映，说他每次向数学老师问问题，老师都说「这么简单你也不会」。作为班主任，你会怎么办？",
+      "tags": [
+        "家校沟通",
+        "教师协作"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "欣瑞教育《教师招聘考试结构化面试试题（三）》",
+        "url": "https://www.xredu.cn/list_3677/312962_1.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "家长请数学老师讲题被怠慢",
+      "content": "家长让自己的孩子请教数学老师难题，数学老师非常不耐烦。作为班主任，你怎么办？",
+      "tags": [
+        "家校沟通",
+        "教师协作"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "欣瑞教育《教师招聘考试结构化面试试题（三）》",
+        "url": "https://www.xredu.cn/list_3677/312962_1.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q021",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "如何看待中小学生课业压力重",
+      "content": "现在的中小学学生课业压力普遍很重，对于这一现象，你怎么看？",
+      "tags": [
+        "教育理念",
+        "教育政策"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "欣瑞教育《教师招聘考试结构化面试试题（三）》",
+        "url": "https://www.xredu.cn/list_3677/312962_1.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q022",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "家长不愿在家长会分享经验",
+      "content": "班主任开家长会，想让小明妈妈分享教育经验，但她不愿意。你怎么办？",
+      "tags": [
+        "家校沟通",
+        "班级管理"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "欣瑞教育《教师招聘考试结构化面试试题（三）》",
+        "url": "https://www.xredu.cn/list_3677/312962_1.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q023",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "学生不带文具且容易跑神",
+      "content": "如果你的课堂上有个同学不带文具而且容易跑神，你怎么办？",
+      "tags": [
+        "课堂管理",
+        "学习习惯"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "欣瑞教育《教师招聘考试结构化面试试题（三）》",
+        "url": "https://www.xredu.cn/list_3677/312962_1.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q024",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "家长要求调换座位",
+      "content": "家长要求自己的孩子坐中间的座位，你怎么办？",
+      "tags": [
+        "家校沟通",
+        "座位管理"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "欣瑞教育《教师招聘考试结构化面试试题（八）》",
+        "url": "https://www.xredu.cn/list_3677/312967_1.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q025",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "学生放学情绪低落家长来电",
+      "content": "小明放学回家情绪低落，妈妈打电话给老师，你怎么办？",
+      "tags": [
+        "家校沟通",
+        "学生心理"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "欣瑞教育《教师招聘考试结构化面试试题（八）》",
+        "url": "https://www.xredu.cn/list_3677/312967_1.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q026",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "老师自己先违反游戏规则",
+      "content": "老师讲了游戏规则，但老师自己先碰了足球，有个小朋友当场提出来了，你该怎么做？",
+      "tags": [
+        "班级管理",
+        "以身作则"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "欣瑞教育《教师招聘考试结构化面试试题（八）》",
+        "url": "https://www.xredu.cn/list_3677/312967_1.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q027",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "学生因家中添弟弟而不开心",
+      "content": "有个小朋友的妈妈生了小弟弟，小朋友不开心，你该怎么做？",
+      "tags": [
+        "学生心理",
+        "家校合作"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "欣瑞教育《教师招聘考试结构化面试试题（八）》",
+        "url": "https://www.xredu.cn/list_3677/312967_1.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q028",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "教案直接用网络上的怎么看",
+      "content": "许多老师教案直接用网络上的，你怎么看？",
+      "tags": [
+        "教育理念",
+        "教学设计"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "应届毕业生网《教师结构化面试》",
+        "url": "https://www.yjbys.com/qiuzhizhinan/show-62126.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q029",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "如何看待教师偏爱成绩好的学生",
+      "content": "你怎样看待教师偏爱学习成绩好的学生？",
+      "tags": [
+        "教育公平",
+        "师德"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "应届毕业生网《教师结构化面试》",
+        "url": "https://www.yjbys.com/qiuzhizhinan/show-62126.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q030",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "秋游后学生不愿写游记",
+      "content": "秋游后学生不愿写游记，作为教师你怎么办？",
+      "tags": [
+        "学习动机",
+        "写作教学"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "应届毕业生网《教师结构化面试》",
+        "url": "https://www.yjbys.com/qiuzhizhinan/show-62126.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q031",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么选择教师这个行业",
+      "content": "为什么选择教师这个行业？你是怎么看教师这个工作的？",
+      "tags": [
+        "职业动机",
+        "岗位认知"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "应届毕业生网《教师结构化面试》",
+        "url": "https://www.yjbys.com/qiuzhizhinan/show-62126.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q032",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "上课时学生传纸条",
+      "content": "当在你上课时，一个学生在传纸条，你怎么办？",
+      "tags": [
+        "课堂管理",
+        "突发处理"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "华图教育《中小学教师招聘考试面试》",
+        "url": "https://xuancheng.huatu.com/zt/snjszpmszt/",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q033",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "学生早恋如何处理",
+      "content": "学生早恋怎么办？你支持学生早恋吗？",
+      "tags": [
+        "学生心理",
+        "青春期教育"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "华图教育《中小学教师招聘考试面试》",
+        "url": "https://xuancheng.huatu.com/zt/snjszpmszt/",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q034",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "谈谈你的缺点",
+      "content": "谈谈你的缺点。（注意：不宜说自己没缺点，也不宜说出严重影响所应聘职位的缺点。）",
+      "tags": [
+        "自我认知",
+        "职业素养"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "华图教育《中小学教师招聘考试面试》",
+        "url": "https://xuancheng.huatu.com/zt/snjszpmszt/",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q035",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "为抽象概念设计导入",
+      "content": "假设你应聘初中数学教师，试讲《函数的概念》第一课时。请用3分钟说明你会如何设计课堂导入，要求贴合学生生活经验、引出“变量对应关系”并自然过渡到定义，同时说明该导入可能占用的课堂时间与预期学生反应。",
+      "tags": [
+        "教学设计",
+        "学科功底",
+        "课堂导入"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q036",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "用通俗话解释学科概念",
+      "content": "请以初中数学教师身份，用不超过5句话给初一学生解释“为什么负数乘负数得正”。要求不使用“规定”搪塞，至少借助数轴、生活情境或运算规律中的一种，并预判学生可能追问的一个问题及你的回应。",
+      "tags": [
+        "学科专业功底",
+        "语言表达",
+        "概念讲解"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q037",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "深挖一段备课经历",
+      "content": "请结合你最近一次独立备课或实习授课经历，说明你如何确定一节课的教学目标、重难点和作业设计。请具体到一个知识点，并说明你依据什么判断目标达成，以及课后做了哪些调整。",
+      "tags": [
+        "备课经历",
+        "教学设计",
+        "反思改进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q038",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "班主任经历中的家校沟通",
+      "content": "请讲述一次你与家长沟通学生行为或成绩问题的真实经历。说明你事先做了哪些准备、沟通中如何反馈事实与建议、家长情绪激动时你怎么处理，以及事后如何跟进并保护学生隐私。",
+      "tags": [
+        "家校沟通",
+        "班级管理",
+        "共情表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q039",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "课堂突发受伤处理",
+      "content": "小学课堂上，一名学生突然被桌椅绊倒，膝盖流血并哭闹，其他学生起哄围观。你正在讲新课，教室无其他教师。请说明你第一时间到后续处理的完整步骤，并兼顾教学秩序、学生安全与家长通知。",
+      "tags": [
+        "课堂应变",
+        "安全管理",
+        "沟通协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.k12-teacher-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么选择中小学教师",
+      "content": "你应聘中小学教师，请结合个人经历谈谈为什么选择这个职业，并说明未来三年你在教学、班级管理和家校沟通三方面希望达到的具体目标。如果入职后长期教平行班、重复内容，你如何保持职业热情？",
+      "tags": [
+        "职业动机",
+        "职业规划",
+        "抗压坚持"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -372,7 +882,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

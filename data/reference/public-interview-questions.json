@@ -1,0 +1,510 @@
+{
+  "_说明": "逐字引用的公开面试真题/题库题目，带可核验来源链接。由 scripts/merge-public-questions.mjs 合入各岗位文件，来源类型标注为 public-post（需带 URL）。",
+  "_整理时间": "2026-10-15",
+  "题目": [
+    {
+      "roles": ["edu-research.k12-teacher", "edu-research.training-institution"],
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "学生向家长反映老师不耐烦",
+      "content": "有同学向家长反映，说他每次向数学老师问问题，老师都说「这么简单你也不会」。作为班主任，你会怎么办？",
+      "tags": ["家校沟通", "教师协作"],
+      "source": { "type": "public-post", "name": "欣瑞教育《教师招聘考试结构化面试试题（三）》", "url": "https://www.xredu.cn/list_3677/312962_1.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["edu-research.k12-teacher", "edu-research.training-institution"],
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "家长请数学老师讲题被怠慢",
+      "content": "家长让自己的孩子请教数学老师难题，数学老师非常不耐烦。作为班主任，你怎么办？",
+      "tags": ["家校沟通", "教师协作"],
+      "source": { "type": "public-post", "name": "欣瑞教育《教师招聘考试结构化面试试题（三）》", "url": "https://www.xredu.cn/list_3677/312962_1.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["edu-research.k12-teacher"],
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "如何看待中小学生课业压力重",
+      "content": "现在的中小学学生课业压力普遍很重，对于这一现象，你怎么看？",
+      "tags": ["教育理念", "教育政策"],
+      "source": { "type": "public-post", "name": "欣瑞教育《教师招聘考试结构化面试试题（三）》", "url": "https://www.xredu.cn/list_3677/312962_1.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["edu-research.k12-teacher"],
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "家长不愿在家长会分享经验",
+      "content": "班主任开家长会，想让小明妈妈分享教育经验，但她不愿意。你怎么办？",
+      "tags": ["家校沟通", "班级管理"],
+      "source": { "type": "public-post", "name": "欣瑞教育《教师招聘考试结构化面试试题（三）》", "url": "https://www.xredu.cn/list_3677/312962_1.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["edu-research.k12-teacher"],
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "学生不带文具且容易跑神",
+      "content": "如果你的课堂上有个同学不带文具而且容易跑神，你怎么办？",
+      "tags": ["课堂管理", "学习习惯"],
+      "source": { "type": "public-post", "name": "欣瑞教育《教师招聘考试结构化面试试题（三）》", "url": "https://www.xredu.cn/list_3677/312962_1.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["edu-research.k12-teacher"],
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "家长要求调换座位",
+      "content": "家长要求自己的孩子坐中间的座位，你怎么办？",
+      "tags": ["家校沟通", "座位管理"],
+      "source": { "type": "public-post", "name": "欣瑞教育《教师招聘考试结构化面试试题（八）》", "url": "https://www.xredu.cn/list_3677/312967_1.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["edu-research.k12-teacher"],
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "学生放学情绪低落家长来电",
+      "content": "小明放学回家情绪低落，妈妈打电话给老师，你怎么办？",
+      "tags": ["家校沟通", "学生心理"],
+      "source": { "type": "public-post", "name": "欣瑞教育《教师招聘考试结构化面试试题（八）》", "url": "https://www.xredu.cn/list_3677/312967_1.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["edu-research.k12-teacher"],
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "老师自己先违反游戏规则",
+      "content": "老师讲了游戏规则，但老师自己先碰了足球，有个小朋友当场提出来了，你该怎么做？",
+      "tags": ["班级管理", "以身作则"],
+      "source": { "type": "public-post", "name": "欣瑞教育《教师招聘考试结构化面试试题（八）》", "url": "https://www.xredu.cn/list_3677/312967_1.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["edu-research.k12-teacher"],
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "学生因家中添弟弟而不开心",
+      "content": "有个小朋友的妈妈生了小弟弟，小朋友不开心，你该怎么做？",
+      "tags": ["学生心理", "家校合作"],
+      "source": { "type": "public-post", "name": "欣瑞教育《教师招聘考试结构化面试试题（八）》", "url": "https://www.xredu.cn/list_3677/312967_1.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["edu-research.k12-teacher", "edu-research.training-institution"],
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "教案直接用网络上的怎么看",
+      "content": "许多老师教案直接用网络上的，你怎么看？",
+      "tags": ["教育理念", "教学设计"],
+      "source": { "type": "public-post", "name": "应届毕业生网《教师结构化面试》", "url": "https://www.yjbys.com/qiuzhizhinan/show-62126.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["edu-research.k12-teacher"],
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "如何看待教师偏爱成绩好的学生",
+      "content": "你怎样看待教师偏爱学习成绩好的学生？",
+      "tags": ["教育公平", "师德"],
+      "source": { "type": "public-post", "name": "应届毕业生网《教师结构化面试》", "url": "https://www.yjbys.com/qiuzhizhinan/show-62126.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["edu-research.k12-teacher"],
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "秋游后学生不愿写游记",
+      "content": "秋游后学生不愿写游记，作为教师你怎么办？",
+      "tags": ["学习动机", "写作教学"],
+      "source": { "type": "public-post", "name": "应届毕业生网《教师结构化面试》", "url": "https://www.yjbys.com/qiuzhizhinan/show-62126.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["edu-research.k12-teacher", "edu-research.training-institution"],
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么选择教师这个行业",
+      "content": "为什么选择教师这个行业？你是怎么看教师这个工作的？",
+      "tags": ["职业动机", "岗位认知"],
+      "source": { "type": "public-post", "name": "应届毕业生网《教师结构化面试》", "url": "https://www.yjbys.com/qiuzhizhinan/show-62126.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["edu-research.k12-teacher"],
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "上课时学生传纸条",
+      "content": "当在你上课时，一个学生在传纸条，你怎么办？",
+      "tags": ["课堂管理", "突发处理"],
+      "source": { "type": "public-post", "name": "华图教育《中小学教师招聘考试面试》", "url": "https://xuancheng.huatu.com/zt/snjszpmszt/", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["edu-research.k12-teacher"],
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "学生早恋如何处理",
+      "content": "学生早恋怎么办？你支持学生早恋吗？",
+      "tags": ["学生心理", "青春期教育"],
+      "source": { "type": "public-post", "name": "华图教育《中小学教师招聘考试面试》", "url": "https://xuancheng.huatu.com/zt/snjszpmszt/", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["edu-research.k12-teacher", "edu-research.training-institution"],
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "谈谈你的缺点",
+      "content": "谈谈你的缺点。（注意：不宜说自己没缺点，也不宜说出严重影响所应聘职位的缺点。）",
+      "tags": ["自我认知", "职业素养"],
+      "source": { "type": "public-post", "name": "华图教育《中小学教师招聘考试面试》", "url": "https://xuancheng.huatu.com/zt/snjszpmszt/", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["med-life.nursing", "med-life.clinical"],
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "输液出现不良反应如何处理",
+      "content": "你给一个患者进行输液，突然出现了不良反应，此时你该如何应对？",
+      "tags": ["临床应急", "用药安全"],
+      "source": { "type": "public-post", "name": "中公医考网《执业护士考试常见面试问题汇总》", "url": "https://m.offcn.com/yixue/2023/0925/116643.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["med-life.nursing"],
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "七步洗手法需要多久",
+      "content": "七步洗手要多长时间？全过程有哪些要点？",
+      "tags": ["院感防控", "操作规范"],
+      "source": { "type": "public-post", "name": "中公医考网《执业护士考试常见面试问题汇总》", "url": "https://m.offcn.com/yixue/2023/0925/116643.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["med-life.nursing", "med-life.pharmacy"],
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "配药液前的注意事项",
+      "content": "配药液前应该注意些什么？",
+      "tags": ["用药安全", "操作规范"],
+      "source": { "type": "public-post", "name": "中公医考网《执业护士考试常见面试问题汇总》", "url": "https://m.offcn.com/yixue/2023/0925/116643.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["med-life.nursing", "med-life.clinical"],
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "镇痛剂用药间隔未到但病人剧痛",
+      "content": "有一位病人医嘱 4 小时用一次镇痛剂，这次病人用过镇痛剂不足三个小时，有吵闹疼痛厉害，你该怎么办？",
+      "tags": ["医嘱执行", "疼痛管理"],
+      "source": { "type": "public-post", "name": "中公医考网《执业护士考试常见面试问题汇总》", "url": "https://m.offcn.com/yixue/2023/0925/116643.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["med-life.nursing", "med-life.clinical"],
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "洗胃的禁忌症",
+      "content": "洗胃的禁忌症是什么？请说明为什么这些情况不能洗胃。",
+      "tags": ["急救", "操作禁忌"],
+      "source": { "type": "public-post", "name": "中公医考网《执业护士考试常见面试问题汇总》", "url": "https://m.offcn.com/yixue/2023/0925/116643.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["med-life.nursing", "med-life.clinical"],
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "被分配到不适合的科室怎么办",
+      "content": "如果这次你通过面试被安排在急诊科工作，但工作一段时间之后，发现你不适合急诊科工作，你该怎么办？",
+      "tags": ["职业适应", "抗压能力"],
+      "source": { "type": "public-post", "name": "中公医考网《执业护士考试常见面试问题汇总》", "url": "https://m.offcn.com/yixue/2023/0925/116643.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["med-life.nursing", "med-life.clinical"],
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "新科室同事关系差如何改善",
+      "content": "如果你到一个新科室，发现同事关系很差、工作不好开展，你会做哪些努力来改变这种状况？",
+      "tags": ["团队协作", "人际关系"],
+      "source": { "type": "public-post", "name": "中公医考网《执业护士考试常见面试问题汇总》", "url": "https://m.offcn.com/yixue/2023/0925/116643.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["med-life.nursing", "med-life.clinical"],
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "纱布数量对不上该不该坚持",
+      "content": "手术后护士发现只剩下六块纱布，而她记得明明是七块。医生却说「我是主任还是你是主任」，谈谈你的看法。",
+      "tags": ["医疗安全", "职业操守"],
+      "source": { "type": "public-post", "name": "应届毕业生网《护士面试问题及答案》", "url": "https://www.yjbys.com/file/hushimianshiwentijidaan/", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["med-life.nursing", "med-life.clinical"],
+      "stage": "hr",
+      "difficulty": "hard",
+      "title": "有过硬操作技能就是优秀护士吗",
+      "content": "作为一名护士，只要有过硬的操作技能，就是一名优秀的护士——你同意这个看法吗？为什么？",
+      "tags": ["职业素养", "岗位认知"],
+      "source": { "type": "public-post", "name": "应届毕业生网《护士面试问题及答案》", "url": "https://www.yjbys.com/file/hushimianshiwentijidaan/", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["med-life.nursing", "med-life.clinical"],
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "实习期病人拒绝你操作",
+      "content": "实习护士为病人做治疗时，往往会遭到病人拒绝。如果你是一名实习护士，你该怎么办？",
+      "tags": ["医患沟通", "实习适应"],
+      "source": { "type": "public-post", "name": "应届毕业生网《护士面试问题及答案》", "url": "https://www.yjbys.com/file/hushimianshiwentijidaan/", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["med-life.nursing", "med-life.clinical", "med-life.public-health"],
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "值班时病人突然晕倒",
+      "content": "你在值班的时候，面前一个急症病号突然晕倒，你如何处理？",
+      "tags": ["急救", "应急处理"],
+      "source": { "type": "public-post", "name": "面试123网《医院护士面试常考20题》", "url": "http://www.mianshi123.com/msjq/q39756.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["med-life.nursing", "med-life.clinical"],
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "值班时亲友找你有急事",
+      "content": "你是一名急诊科医务人员，在你值班的时候，你的亲戚好友找你有急事，你会怎么做？",
+      "tags": ["职业边界", "应急处理"],
+      "source": { "type": "public-post", "name": "面试123网《医院护士面试常考20题》", "url": "http://www.mianshi123.com/msjq/q39756.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["med-life.clinical", "med-life.nursing", "med-life.public-health"],
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "如何看待医务人员收受红包",
+      "content": "你如何看待个别医务工作者违反规定收受红包？如果你遇到这种情况，你会怎么做？",
+      "tags": ["医德医风", "合规"],
+      "source": { "type": "public-post", "name": "面试123网《医院护士面试常考20题》", "url": "http://www.mianshi123.com/msjq/q39756.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["finance-econ.accounting-audit", "finance-econ.banking"],
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "会计政策与会计估计的理解",
+      "content": "请谈谈对会计政策和会计估计的理解，并各举一个例子说明二者的区别。",
+      "tags": ["会计准则", "专业基础"],
+      "source": { "type": "public-post", "name": "华图教育《银保监会财会岗面试真题（2017 各批次）》", "url": "https://ah.huatu.com/2020/1125/1903657.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["finance-econ.accounting-audit"],
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "计算机是否会取代财会人员",
+      "content": "现在计算机技术越来越成熟，有人说这样会取代财会人员、造成财会人员失业下岗，你怎么看？",
+      "tags": ["行业趋势", "职业判断"],
+      "source": { "type": "public-post", "name": "华图教育《银保监会财会岗面试真题（2017 各批次）》", "url": "https://ah.huatu.com/2020/1125/1903657.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["finance-econ.accounting-audit", "finance-econ.banking", "finance-econ.securities-research"],
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "从三个角度谈资产负债率",
+      "content": "请分别从管理者、投资者、债权人的角度，谈谈对资产负债率的看法。",
+      "tags": ["财务分析", "多视角"],
+      "source": { "type": "public-post", "name": "华图教育《银保监会财会岗面试真题（2017 各批次）》", "url": "https://ah.huatu.com/2020/1125/1903657.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["finance-econ.accounting-audit", "finance-econ.risk-management"],
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "发现同事报告有错但已获领导肯定",
+      "content": "同事小王为完成某项目提交一份报告，得到了领导的肯定。你虽然没有参加该项目，但发现其中存在一些错误，可能影响后期工作进展。你会怎么办？",
+      "tags": ["职场沟通", "纠错"],
+      "source": { "type": "public-post", "name": "华图教育《银保监会财会岗面试真题（2017 各批次）》", "url": "https://ah.huatu.com/2020/1125/1903657.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["finance-econ.accounting-audit"],
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "客观性与谨慎性是否冲突",
+      "content": "会计信息质量的客观性和谨慎性，有人说有冲突，你怎么看？",
+      "tags": ["会计信息质量", "专业辨析"],
+      "source": { "type": "public-post", "name": "搜狐《银保监会财会岗面试真题精选》", "url": "https://www.sohu.com/a/434371128_120890208", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["finance-econ.accounting-audit", "finance-econ.risk-management"],
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "注册会计师审计失败的原因",
+      "content": "注册会计师在外部审计的过程中频频出现审计失败，你认为导致审计失败的原因是什么？该怎么改善？",
+      "tags": ["审计风险", "行业观察"],
+      "source": { "type": "public-post", "name": "搜狐《银保监会财会岗面试真题精选》", "url": "https://www.sohu.com/a/434371128_120890208", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["finance-econ.banking", "finance-econ.accounting-audit"],
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "如何衡量企业偿债能力",
+      "content": "如何衡量企业的偿债能力？请说明你会看哪些指标，以及各自的局限。",
+      "tags": ["财务分析", "偿债能力"],
+      "source": { "type": "public-post", "name": "搜狐《银保监会财会岗面试真题精选》", "url": "https://www.sohu.com/a/434371128_120890208", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["finance-econ.banking", "finance-econ.risk-management"],
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "如何看待工作留痕",
+      "content": "工作中都会要求留痕，比如以视频、图片等形式留存，以备日后查验。但有一些部门为了避免被查、追责的风险，选择不留痕，或者留的痕迹存在问题。你怎么看待工作留痕问题？",
+      "tags": ["合规意识", "职场观察"],
+      "source": { "type": "public-post", "name": "搜狐《银保监会财会岗面试真题精选》", "url": "https://www.sohu.com/a/434371128_120890208", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["law-public.lawyer-legal", "law-public.civil-servant", "law-public.administration"],
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "AI 辅助量刑与数字黑洞",
+      "content": "法院系统用 AI 辅助量刑，通过整合数据运用 AI 断案，律师担心这会带来「数字黑洞」。对此你怎么看？",
+      "tags": ["司法改革", "技术伦理"],
+      "source": { "type": "public-post", "name": "山东人才就业网《陕西省公务员面试（执法、公检法）真题》", "url": "https://jiufengsw.com/index.php?a=shows&catid=166&id=55840", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["law-public.lawyer-legal", "law-public.civil-servant", "law-public.public-policy"],
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "法要兼顾人情与群众找关系",
+      "content": "三句话：法要兼顾人情；法不外乎人情；群众遇到问题优先找关系而非法律。谈谈你的认识。",
+      "tags": ["法理人情", "法治现状"],
+      "source": { "type": "public-post", "name": "山东人才就业网《陕西省公务员面试（执法、公检法）真题》", "url": "https://jiufengsw.com/index.php?a=shows&catid=166&id=55840", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["law-public.administration", "law-public.civil-servant"],
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "醉酒纠纷引发围观拍照",
+      "content": "有一酒醉人员与一餐馆老板之间产生矛盾纠纷，导致周边人群围观拍照。作为现场执法人员，你该怎么办？",
+      "tags": ["现场执法", "舆情处置"],
+      "source": { "type": "public-post", "name": "山东人才就业网《陕西省公务员面试（执法、公检法）真题》", "url": "https://jiufengsw.com/index.php?a=shows&catid=166&id=55840", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["law-public.civil-servant", "law-public.administration"],
+      "stage": "hr",
+      "difficulty": "hard",
+      "title": "律师朋友几年买房而公务员买不起",
+      "content": "你的朋友做律师，几年内就可以买车买房，你做公务员几年都买不起，请问你怎么看？",
+      "tags": ["职业选择", "价值观"],
+      "source": { "type": "public-post", "name": "华图教育《广东法检系统公务员面试真题》", "url": "https://v.huatu.com/htnews/guangdong/gongwuyuan/mianshi/2011/0511/25409.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["law-public.lawyer-legal", "law-public.compliance"],
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "谈谈对酒驾入罪的看法",
+      "content": "请你谈谈对酒驾入罪的看法。",
+      "tags": ["立法观察", "社会法治"],
+      "source": { "type": "public-post", "name": "华图教育《广东法检系统公务员面试真题》", "url": "https://v.huatu.com/htnews/guangdong/gongwuyuan/mianshi/2011/0511/25409.html", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["ee-telecom.electronics", "ee-telecom.ic-design", "ee-telecom.embedded"],
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "触发器与锁存器的区别",
+      "content": "触发器（Flip-flop）与锁存器（Latch）有什么区别？各自适用于什么场景？",
+      "tags": ["数字电路", "基础概念"],
+      "source": { "type": "public-post", "name": "CATKing《Most Common Interview Questions for Engineers》", "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["ee-telecom.electronics", "ee-telecom.ic-design"],
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "NPN 与 PNP 三极管的区别",
+      "content": "三极管的工作原理是什么？NPN 型与 PNP 型有什么区别，各自常用在什么场合？",
+      "tags": ["模拟电路", "元器件"],
+      "source": { "type": "public-post", "name": "CATKing《Most Common Interview Questions for Engineers》", "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["ee-telecom.telecom", "ee-telecom.electronics"],
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "低通与高通滤波器",
+      "content": "什么是低通滤波器和高通滤波器？请各举一个实际应用场景。",
+      "tags": ["信号处理", "滤波器"],
+      "source": { "type": "public-post", "name": "CATKing《Most Common Interview Questions for Engineers》", "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["ee-telecom.telecom", "ee-telecom.electronics"],
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "CDMA 的工作原理",
+      "content": "什么是 CDMA？它是如何工作的？与其它多址方式相比有什么优劣？",
+      "tags": ["通信原理", "多址技术"],
+      "source": { "type": "public-post", "name": "CATKing《Most Common Interview Questions for Engineers》", "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["civil-arch.civil-engineering", "civil-arch.municipal", "civil-arch.architecture"],
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "软土地基选什么基础",
+      "content": "在软土地基（如淤泥质土）上你会采用什么基础形式？为什么？需要注意哪些问题？",
+      "tags": ["地基基础", "专业判断"],
+      "source": { "type": "public-post", "name": "CATKing《Most Common Interview Questions for Engineers》", "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["civil-arch.municipal", "civil-arch.civil-engineering"],
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "雷诺数与水力现象",
+      "content": "什么是雷诺数？它在给排水或水力学中有什么意义？什么是水跃？",
+      "tags": ["水力学", "专业基础"],
+      "source": { "type": "public-post", "name": "CATKing《Most Common Interview Questions for Engineers》", "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["civil-arch.civil-engineering", "civil-arch.architecture"],
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "悬臂结构的支承条件",
+      "content": "悬臂梁的支承条件是什么？请画出它的弯矩图，并说明与简支梁的区别。",
+      "tags": ["结构力学", "内力分析"],
+      "source": { "type": "public-post", "name": "CATKing《Most Common Interview Questions for Engineers》", "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["civil-arch.civil-engineering", "civil-arch.architecture"],
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "如何做抗震结构设计",
+      "content": "你会如何设计抗震结构？请说明抗震设计的基本思路和关键措施。",
+      "tags": ["抗震设计", "结构安全"],
+      "source": { "type": "public-post", "name": "CATKing《Most Common Interview Questions for Engineers》", "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["energy-chem.chemical-engineering", "energy-chem.energy-power", "energy-chem.environmental"],
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "单元操作与单元过程的区别",
+      "content": "单元操作（unit operation）与单元过程（unit process）有什么区别？各举一例。",
+      "tags": ["化工原理", "基础概念"],
+      "source": { "type": "public-post", "name": "CATKing《Most Common Interview Questions for Engineers》", "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["energy-chem.chemical-engineering", "energy-chem.safety-engineering"],
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "车间报警响起你该怎么做",
+      "content": "你在车间里，警报突然响起来，你会怎么做？请按顺序说明你的处置动作。",
+      "tags": ["安全生产", "应急处置"],
+      "source": { "type": "public-post", "name": "伊利诺伊大学《Technical Interviews》", "url": "https://scs.illinois.edu/document/69", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["energy-chem.chemical-engineering"],
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "如何估算泵的效率",
+      "content": "你如何估算一台泵的效率？需要测量或知道哪些参数？",
+      "tags": ["流体机械", "工程计算"],
+      "source": { "type": "public-post", "name": "伊利诺伊大学《Technical Interviews》", "url": "https://scs.illinois.edu/document/69", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["mech-mfg.mechanical-design", "mech-mfg.materials", "mech-mfg.vehicle"],
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "低碳钢的应力应变曲线",
+      "content": "请描述低碳钢的应力—应变曲线，标出弹性阶段、屈服、强化与颈缩各段，并说明工程意义。",
+      "tags": ["材料力学", "专业基础"],
+      "source": { "type": "public-post", "name": "CATKing《Most Common Interview Questions for Engineers》", "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["mech-mfg.mechanical-design", "mech-mfg.smart-manufacturing"],
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "如何确保设计不出错",
+      "content": "你用什么校验手段来确保自己的设计不出错？请结合一个具体项目说明。",
+      "tags": ["设计校核", "工程习惯"],
+      "source": { "type": "public-post", "name": "UC Davis AvenueE《Engineering Interview Question Prompts》", "url": "https://avenuee.engineering.ucdavis.edu/sites/g/files/dgvnsk9286/files/inline-files/AvenueE_Interview_Questions_updated7-27-2020_0.pdf", "collectedAt": "2026-10-15" }
+    },
+    {
+      "roles": ["mech-mfg.industrial-engineering", "mech-mfg.smart-manufacturing"],
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "CPM 与 PERT 的区别",
+      "content": "CPM 与 PERT 有什么区别？分别在什么场景下使用？请举例说明。",
+      "tags": ["项目管理", "进度控制"],
+      "source": { "type": "public-post", "name": "CATKing《Most Common Interview Questions for Engineers》", "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf", "collectedAt": "2026-10-15" }
+    }
+  ]
+}

@@ -276,6 +276,346 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "civil-arch.real-estate-q011",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "投资测算与现金流决策",
+      "content": "某住宅地块占地5万㎡，容积率2.0，地价8亿元，建安及各项成本合计4500元/㎡，预计售价1.8万元/㎡，开发周期3年，自有资金比例30%，融资成本8%。请说明你如何搭建投资测算模型，重点测算哪些指标，并判断项目是否可行。",
+      "tags": [
+        "投资测算",
+        "现金流",
+        "经营决策"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.real-estate-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "设计变更与成本协同",
+      "content": "项目施工阶段，设计院提出优化外立面以提升品质，预计增加成本1200万元，可带来售价提升约300元/㎡，总可售面积8万㎡。作为开发负责人，你如何组织成本、设计、营销论证并决策？需重点考虑哪些约束与风险？",
+      "tags": [
+        "设计变更",
+        "成本协同",
+        "经营权衡"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.real-estate-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "滞销盘去化策略",
+      "content": "某三线城市新盘首开去化率仅30%，周边竞品降价10%并赠送车位。你负责该项目，请从市场调研、客户画像、产品适配和营销策略角度，提出三个月内的去化提升方案，并说明如何平衡利润与现金流。",
+      "tags": [
+        "市场去化",
+        "客户洞察",
+        "营销策略"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.real-estate-q014",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "全周期项目复盘",
+      "content": "请选一个你全程参与或主导的房地产项目，说明从投资研判、报建、施工到开盘交付的关键节点，你具体负责什么，遇到的最大偏差是什么，如何纠偏，最终经营指标（利润、现金流、去化）如何。",
+      "tags": [
+        "项目全周期",
+        "经历复盘",
+        "经营指标"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.real-estate-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "报建政策应对经历",
+      "content": "请举例说明你经历过的项目报建或政策变化（如限购、限价、预售资金监管）如何影响开发节奏。你当时如何解读政策、调整计划并协调政府与内部团队？最终结果如何？",
+      "tags": [
+        "报建流程",
+        "政策应对",
+        "风险预判"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.real-estate-q016",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "招采降本谈判实例",
+      "content": "请举例你主导或参与的招采/合约谈判，如何在保证质量与履约的前提下降低成本？请说明供应商选择、清单编制、谈判策略、履约评估，以及实际降本金额或比例。",
+      "tags": [
+        "招采管理",
+        "合约谈判",
+        "成本控制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.real-estate-q017",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "开盘前跨部门冲突",
+      "content": "项目临近预售节点，工程要求增加工期保质量，成本要求压缩变更，营销要求提前开放示范区。三方互不让步，你作为开发负责人如何组织协调并形成决策？请说明沟通顺序、决策依据和风险预案。",
+      "tags": [
+        "跨部门协调",
+        "冲突决策",
+        "运营节奏"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.real-estate-q018",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "停工与资金监管应急",
+      "content": "项目开盘前一个月，因环保督察要求停工整改，同时预售资金监管账户放款延迟，施工单位要求支付进度款，营销已收诚意金。你如何统筹工程、资金、营销与政府沟通，制定应急方案并守住经营底线？",
+      "tags": [
+        "突发应对",
+        "资金链",
+        "政府沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.real-estate-q019",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "驻场外派与工作期望",
+      "content": "房地产开发项目常在外地，需长期驻场或频繁出差，可能影响家庭生活。请结合过往经历说明你对驻场/外派的接受度，你如何安排工作与生活？你期望公司在哪些方面提供支持？",
+      "tags": [
+        "驻场外派",
+        "工作方式",
+        "期望沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.real-estate-q020",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "合规底线与节点压力",
+      "content": "若上级要求项目“先开工后补证”以抢预售节点，你会如何处理？请说明你的原则、沟通方式和底线，并举例说明你如何在业绩压力下坚持合规或推动替代方案。",
+      "tags": [
+        "合规底线",
+        "业绩压力",
+        "沟通原则"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.real-estate-q021",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "净利率与IRR辨析",
+      "content": "在房地产投资测算中，净利率和IRR都是核心指标。请说明两者的计算逻辑差异，分别反映项目的什么能力，以及在什么决策场景下你会优先看哪个指标？",
+      "tags": [
+        "投资测算",
+        "经济分析",
+        "财务指标"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.real-estate-q022",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "搭建项目现金流模型",
+      "content": "假设你拿到一块住宅用地，规划建面10万㎡，土地款5亿，建安成本3000元/㎡，开发周期3年。请简述你会如何搭建现金流模型，重点监控哪些节点，如何判断项目是否可行？",
+      "tags": [
+        "投资测算",
+        "现金流",
+        "可行性研究"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.real-estate-q023",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "钢材涨价调价决策",
+      "content": "项目主体施工阶段，钢材价格突然上涨20%，施工单位要求调价，否则将放缓进度。合同约定主材价格波动±5%以内不调。作为开发经营岗，你如何评估调价合理性，并在成本、进度、合作关系之间做出决策？",
+      "tags": [
+        "成本合约",
+        "工程协同",
+        "风险决策"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.real-estate-q024",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "投资测算案例深挖",
+      "content": "请分享一个你主导或深度参与的项目投资测算案例。当时的关键假设（售价、成本、去化速度）是什么？实际结果与测算偏差多少？偏差原因是什么？你从中总结了什么经验？",
+      "tags": [
+        "项目经历",
+        "投资测算",
+        "复盘总结"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.real-estate-q025",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "成本优化措施与影响",
+      "content": "你曾负责或参与过哪个项目的成本优化？采取了哪些具体措施（如设计优化、招采策略、材料替代）？节省了多少成本？对工程进度或质量有无影响？请用数据说明。",
+      "tags": [
+        "成本优化",
+        "招采管理",
+        "工程协同"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.real-estate-q026",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "协调多方冲突实例",
+      "content": "在某个项目中，设计院、施工单位和营销代理之间出现冲突（如设计变更影响进度、营销要求提前展示区开放）。请举一个具体例子，说明你如何协调，最终结果如何？",
+      "tags": [
+        "沟通协调",
+        "资源整合",
+        "跨部门协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.real-estate-q027",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "蓄客不足降价决策",
+      "content": "项目开盘前一个月，营销代理反馈蓄客量仅为推盘量的40%，建议降价10%开盘。但工程节点紧张，降价将直接影响利润指标。作为开发经营负责人，你如何权衡并决策？请说明分析框架。",
+      "tags": [
+        "营销决策",
+        "利润平衡",
+        "应急调整"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.real-estate-q028",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "规划调整高架桥应对",
+      "content": "你正在推进一个住宅项目，突然接到政府通知，因城市规划调整，项目东侧将新建高架桥，可能带来噪音和景观影响，导致客户抗性。你如何评估影响并制定应对方案？",
+      "tags": [
+        "政策风险",
+        "应变处理",
+        "客户沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.real-estate-q029",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "求职动机与职业规划",
+      "content": "你为什么选择房地产开发与经营岗位？未来3-5年的职业规划是什么？你期望在什么样的团队和公司文化中工作？请结合你的经历谈谈。",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "团队匹配"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.real-estate-q030",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "压力与节点冲突处理",
+      "content": "房地产开发工作常面临高压力和长周期，项目节点与个人事务冲突是常态。请举例说明你如何管理压力、优先排序，并确保关键节点不受影响。",
+      "tags": [
+        "压力管理",
+        "工作节奏",
+        "职业态度"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -402,7 +742,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

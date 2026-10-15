@@ -275,6 +275,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "energy-chem.electrical-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "保护导体截面选择",
+      "content": "在低压配电设计中，依据 GB 50054，保护导体（PE）截面应如何随相线截面变化选取？请分别说明相线为 16mm²、35mm² 和 400mm² 时的要求，并解释原因。",
+      "tags": [
+        "电气规范",
+        "保护导体",
+        "低压配电"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "需要系数法负荷计算",
+      "content": "某车间配电设计，已知各用电设备组的设备功率、需要系数和功率因数。请说明如何用需要系数法确定计算负荷，并指出同时系数和功率因数补偿对变压器选型的影响。",
+      "tags": [
+        "负荷计算",
+        "需要系数",
+        "变压器选型"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "低压短路电流计算",
+      "content": "某 10/0.4kV 变电所，变压器容量 1250kVA，阻抗电压 6%，低压母线短路容量未知。请说明如何计算低压侧三相短路电流，并列出主要参数与假设条件。",
+      "tags": [
+        "短路计算",
+        "变压器",
+        "继电保护"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q014",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "10kV馈线保护整定",
+      "content": "10kV 馈线配置过流和电流速断保护，CT 变比 200/5，最大负荷电流 180A，线路末端最小短路电流 1.2kA。请给出速断和过流定值整定步骤，并校验灵敏度是否满足要求。",
+      "tags": [
+        "继电保护",
+        "整定计算",
+        "灵敏度校验"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q015",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "EPLAN电气图纸绘制",
+      "content": "请介绍你使用 EPLAN 或 CAD 绘制电气原理图的经历。图纸包含哪些图层、符号标准和标题栏信息？你如何保证图纸版本与现场设备一致？",
+      "tags": [
+        "EPLAN",
+        "电气图纸",
+        "设计软件"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "PLC系统调试经历",
+      "content": "请描述你参与的一个 PLC/DCS 控制系统项目，从 I/O 清单编制、程序编写到联锁调试，你具体负责什么？举一个联锁逻辑验证的例子。",
+      "tags": [
+        "PLC编程",
+        "联锁调试",
+        "项目经历"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q017",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "现场电气故障排查",
+      "content": "现场调试时，你遇到过最棘手的电气故障是什么？请说明故障现象、排查思路、使用的仪器仪表，以及最终根因和整改措施。",
+      "tags": [
+        "故障排查",
+        "现场调试",
+        "仪器仪表"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q018",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "继电保护实战经验",
+      "content": "你是否有继电保护整定或短路电流计算的实战经验？请具体说明项目参数、整定过程、保护配合结果，以及投运后是否发生过误动或拒动。",
+      "tags": [
+        "继电保护",
+        "短路计算",
+        "项目实战"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "桥架与风管冲突协调",
+      "content": "施工方按图施工时发现电缆桥架与暖通风管冲突，且工期紧张。你作为电气专业负责人，会按什么步骤协调解决？请说明变更流程和沟通要点。",
+      "tags": [
+        "跨专业协作",
+        "现场协调",
+        "图纸变更"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "夜间产线故障应急",
+      "content": "凌晨工厂电话通知生产线因电气故障停机，现场值班电工描述不清，你远程无法判断。你如何组织排查、调配资源并安抚生产部门？",
+      "tags": [
+        "应急响应",
+        "沟通表达",
+        "故障处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "业主降标准如何应对",
+      "content": "业主为节省成本，要求降低电气设备选型标准，但你认为会影响安全裕度。你如何用数据和规范说服对方，同时守住安全底线？",
+      "tags": [
+        "安全底线",
+        "沟通说服",
+        "成本控制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q022",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "海外项目规范差异",
+      "content": "在海外项目中，当地电气规范与国标要求不一致，且语言沟通有障碍。你如何确保设计既满足当地合规要求，又保证施工可行性？请说明决策流程。",
+      "tags": [
+        "国际项目",
+        "规范差异",
+        "跨文化沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为何选择电气工程师",
+      "content": "你为什么选择电气工程师作为职业方向？未来 3-5 年，你希望在设计、调试还是运维方向深耕？请结合自身经历说明。",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "方向选择"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "驻场出差工作节奏",
+      "content": "电气工作常需出差驻场，甚至连续数周在工地。你如何看待这种工作节奏？请结合过往实习或项目经历，说明你如何平衡工作与生活。",
+      "tags": [
+        "工作节奏",
+        "驻场出差",
+        "抗压能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "跨专业接口返工处理",
+      "content": "请举例说明你与机械或土建工程师协作时，因专业接口不清导致返工的情况。你当时如何沟通解决？事后做了哪些改进？",
+      "tags": [
+        "团队协作",
+        "接口管理",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q026",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "转岗适应与学习计划",
+      "content": "如果公司安排你从设计岗转到现场运维岗，你会有顾虑吗？你会如何快速学习设备运维知识并适应现场工作节奏？",
+      "tags": [
+        "岗位调整",
+        "适应能力",
+        "职业态度"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q027",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "电机额定电流与断路器选型",
+      "content": "某三相异步电动机额定功率200kW，额定电压380V，功率因数0.85，效率0.92。请计算其额定电流，并说明选择断路器时需要考虑哪些因素（如启动电流、脱扣曲线等）。",
+      "tags": [
+        "负荷计算",
+        "断路器选型",
+        "电机"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q028",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "PLC星三角启动控制设计",
+      "content": "请设计一个PLC控制的星三角启动电路，要求：按下启动按钮后，主接触器先得电，延时5秒后星接触器断开、角接触器闭合；按下停止按钮所有接触器断开。请列出I/O分配表并描述梯形图编程思路。",
+      "tags": [
+        "PLC",
+        "星三角启动",
+        "I/O分配"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q029",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "变压器差动保护整定计算",
+      "content": "某10kV/0.4kV变压器，容量1250kVA，接线组别Dyn11，需配置差动保护。请说明差动保护整定计算的主要步骤，包括平衡系数计算、启动电流整定、比率制动特性选取，并指出Dyn11接线对CT变比和相位补偿的要求。",
+      "tags": [
+        "继电保护",
+        "差动保护",
+        "整定计算"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q030",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "电气设计项目与电缆选型",
+      "content": "请介绍一个你参与过的电气设计项目。你使用了CAD还是EPLAN？在项目中，你是如何根据负荷计算结果选择电缆截面的？请说明计算步骤和选型依据。",
+      "tags": [
+        "电气设计",
+        "电缆选型",
+        "CAD/EPLAN"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q031",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "现场调试故障排查经历",
+      "content": "请描述一次你在现场调试PLC或电气设备时遇到的故障。当时的现象是什么？你按照什么顺序排查（如检查电源、I/O信号、程序逻辑）？最终的根本原因是什么？如何解决的？",
+      "tags": [
+        "现场调试",
+        "故障排查",
+        "PLC"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q032",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "继电保护整定实例深挖",
+      "content": "请详细说明你参与过的一个继电保护整定或短路电流计算项目。你使用了什么软件或方法？计算中考虑了哪些运行方式？整定后如何验证保护的选择性和灵敏性？遇到过分歧吗？如何解决？",
+      "tags": [
+        "继电保护",
+        "短路计算",
+        "整定验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q033",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "业主临时增加设备需求",
+      "content": "在项目现场，业主临时要求增加一台大功率设备，但现有供电容量和工期不变。你会如何评估对供配电系统的影响？需要重新计算哪些参数？如何与业主、项目经理沟通并给出可行方案？",
+      "tags": [
+        "需求变更",
+        "供电容量评估",
+        "沟通协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q034",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "机械接口信号不明确时",
+      "content": "在自动化项目中，机械工程师提供的控制接口信号定义不明确，导致电气设计无法推进。你会如何与机械工程师沟通？需要确认哪些关键信息（如信号类型、时序、联锁条件）？如何形成书面记录？",
+      "tags": [
+        "跨专业沟通",
+        "接口定义",
+        "联锁条件"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q035",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "职业选择与应聘动机",
+      "content": "你为什么选择电气工程师作为职业方向？在应聘我们公司之前，你了解过我们的业务领域（如工业、建筑、能源）吗？你认为自己最匹配这个岗位的哪一点？",
+      "tags": [
+        "求职动机",
+        "职业选择",
+        "公司了解"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q036",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "团队分歧与职业规划",
+      "content": "电气工程师常需与机械、土建等专业协作。请分享一次你在团队中遇到意见分歧的经历，你是如何处理的？未来3-5年，你希望在设计、调试还是管理方向发展？为什么？",
+      "tags": [
+        "团队协作",
+        "职业规划",
+        "分歧处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q037",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "低压短路电流估算与保护校验",
+      "content": "某10/0.4kV变电所，变压器容量1250kVA，阻抗电压6%，低压侧母线需新增一台55kW风机。请说明你如何估算变压器低压侧三相短路电流，并据此校验新增回路断路器分断能力、电缆热稳定及电动机保护整定；列出关键公式和需查取的参数。",
+      "tags": [
+        "短路计算",
+        "继电保护",
+        "设备选型"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q038",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "深挖供配电或PLC项目经历",
+      "content": "请挑一个你全程参与的供配电或PLC改造项目，说明你在负荷计算、设备选型、CAD/EPLAN图纸中的具体职责；遇到设计变更或现场条件不符时如何调整并验证，最终投运指标如何？若重做一次，你会改进哪一步？",
+      "tags": [
+        "项目经历",
+        "设计交付",
+        "调试验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q039",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "现场增补变频器的跨专业协调",
+      "content": "现场调试时，机械专业临时要求增加一台变频器，但配电柜回路已定、土建桥架已封板，项目经理要求你三天内出方案。你会如何与机械、土建、采购及施工方沟通并推进？请说明优先级、风险控制和替代方案。",
+      "tags": [
+        "跨专业协作",
+        "设计变更",
+        "现场沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.electrical-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "职业方向与岗位适配",
+      "content": "你选择电气工程师岗位，未来3—5年更希望深耕供配电设计、PLC控制还是运维管理？为什么？如果公司安排的初始岗位与你的规划不一致，你会怎么考虑和调整？",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "岗位适配"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -371,7 +881,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

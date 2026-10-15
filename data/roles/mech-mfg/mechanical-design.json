@@ -277,6 +277,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "三维模型到工程图闭环",
+      "content": "请以你做过的一个典型零件为例，说明从接到设计需求到输出可用于加工的二维工程图，你会经历哪些步骤。重点讲清：如何确定基准与关键尺寸、如何在图纸上表达形位公差与表面粗糙度，以及建模时有哪些习惯能避免后期返工。",
+      "tags": [
+        "三维建模",
+        "工程图",
+        "设计闭环"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "悬臂支架强度校核",
+      "content": "有一个悬臂支架，末端承受 500N 的循环载荷，材料初步选用 Q235。请说明你会如何开展强度与刚度校核：需要哪些已知条件、如何简化受力模型、用哪些公式判断危险截面，以及依据什么决定是否更换材料或加大截面。",
+      "tags": [
+        "材料力学",
+        "强度校核",
+        "受力分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "孔轴配合与尺寸链",
+      "content": "某传动轴与轴承内圈需要过盈配合，轴上还装有隔套与端盖。请说明你如何选择配合公差代号，并计算轴向尺寸链：封闭环是端面间隙，各组成环公差如何分配？如果装配后出现轴向间隙超差，你会优先调整哪个环节？",
+      "tags": [
+        "公差配合",
+        "尺寸链",
+        "装配"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q014",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "圆角处批量裂纹分析",
+      "content": "某零件在客户现场使用 3 个月后批量出现裂纹，断裂位置在圆角过渡处，实际载荷远低于静强度计算值。请给出你的分析思路：从断口形貌、应力集中、表面质量、材料与热处理几个方向如何逐一排查，并说明最终改设计还是改工艺的判断依据。",
+      "tags": [
+        "疲劳强度",
+        "失效分析",
+        "应力集中"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q015",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "最有代表性的设计项目",
+      "content": "请挑一个你参与度最高的机械设计项目，用三分钟讲清楚：产品是什么、你的具体职责边界、你输出的交付物（模型、图纸、BOM 或技术文档），以及这个项目最终是否量产。我会追问其中的技术细节。",
+      "tags": [
+        "项目经历",
+        "职责边界",
+        "交付物"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "样机装配干涉排查",
+      "content": "描述一次你在样机试制中遇到的装配干涉或零件装不上的问题。请讲清楚：你是如何定位到根因的（是建模错误、公差累积还是加工偏差）、做了哪些验证、最终如何修改图纸，以及这次经历让你在后续设计中增加了什么习惯。",
+      "tags": [
+        "样机试制",
+        "装配干涉",
+        "问题排查"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "中后期设计变更经历",
+      "content": "讲一个你在项目中后期被迫做设计变更的经历。是什么触发了变更（成本、工艺、供应商还是客户需求）？变更涉及哪些零件和图纸？你如何评估变更对已投产零件和项目进度的影响？最后结果如何？",
+      "tags": [
+        "设计变更",
+        "成本控制",
+        "项目推进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q018",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "批量超差复盘",
+      "content": "假设你负责的零件在批量生产阶段出现整批尺寸超差，客户已停线。请以真实经历说明：你如何组织工艺、质量、供应商一起做失效分析，用什么方法（如 5Why、鱼骨图）定位根因，如何区分是设计问题还是制造问题，以及后续如何防止复发。",
+      "tags": [
+        "失效分析",
+        "质量改进",
+        "跨部门"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q019",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "工艺说设计做不出来",
+      "content": "你设计的一个零件被工艺工程师反馈「结构太复杂、成本太高，现有设备做不出来」。此时你会怎么处理？请说明你会向工艺了解哪些具体信息、是否愿意改结构、改到什么程度，以及如何平衡性能、成本和可制造性。",
+      "tags": [
+        "DFM",
+        "工艺沟通",
+        "成本权衡"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "供应商断货与替代料",
+      "content": "量产在即，供应商通知你选定的某牌号铝合金板材断货，交期延后六周。采购建议换一家国产替代料。请说明你会从哪些维度评估替代材料是否可用（力学性能、热处理状态、加工性、表面处理等），需要做哪些验证才能放行，以及如何向项目经理汇报风险。",
+      "tags": [
+        "材料选型",
+        "供应链",
+        "风险评估"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "图纸与现场实物不符",
+      "content": "产线反馈：现场零件与你的图纸不一致，但按现有实物已经装配了 200 台。你会如何处置？请说明你如何判断是图纸错、工艺错还是供应商擅自改图，已装机的产品怎么处理，以及如何与生产、质量、客户沟通这件事。",
+      "tags": [
+        "现场问题",
+        "图纸管理",
+        "跨部门协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q022",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "周期压缩下的设计取舍",
+      "content": "项目周期被压缩一半，留给设计验证和样机测试的时间几乎为零，但项目负责人要求你按期出图投产。请说明你会如何应对：哪些校核绝对不能省、哪些可以借助仿真或经验公式替代、如何用书面方式记录并向上沟通技术风险，以及你会向对方争取什么条件。",
+      "tags": [
+        "进度压力",
+        "风险沟通",
+        "设计验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "求职动机与深耕方向",
+      "content": "你为什么选择机械设计工程师这个方向？在过去的经历中，哪一件设计工作让你最有成就感？未来三到五年，你希望自己在结构设计、力学分析还是产品开发管理上深耕？请结合具体经历说明，不要只讲空泛的规划。",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "自我认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "与同事的技术分歧",
+      "content": "请举一个你和同事（工艺、采购或上级）在技术方案上产生分歧的例子。分歧点是什么？你当时怎么表达自己的观点？最后是按谁的意见执行的？如果事后证明你的方案更好，你会怎么处理？",
+      "tags": [
+        "团队协作",
+        "沟通表达",
+        "冲突处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "高强度项目期的状态",
+      "content": "机械设计岗位在样机阶段经常需要连续加班、反复改图、被多方催进度。请讲一次你承受较大压力的经历：当时的任务量和时间节点是什么？你如何安排优先级？有没有出现过失误？你用什么方式调节状态并保证图纸质量？",
+      "tags": [
+        "抗压能力",
+        "时间管理",
+        "工作状态"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "快速上手新软件与新工艺",
+      "content": "如果入职后公司使用的是你没深度用过的三维软件（如从 SolidWorks 转到 CATIA），同时项目还要求你接触仿真分析或新的加工工艺。你会如何快速上手？请说明你的学习方法、预计多久能独立出图，以及你过去自学一项新技能的完整经历。",
+      "tags": [
+        "学习能力",
+        "软件技能",
+        "成长意愿"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q027",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "低碳钢的应力应变曲线",
+      "content": "请描述低碳钢的应力—应变曲线，标出弹性阶段、屈服、强化与颈缩各段，并说明工程意义。",
+      "tags": [
+        "材料力学",
+        "专业基础"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q028",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "如何确保设计不出错",
+      "content": "你用什么校验手段来确保自己的设计不出错？请结合一个具体项目说明。",
+      "tags": [
+        "设计校核",
+        "工程习惯"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "UC Davis AvenueE《Engineering Interview Question Prompts》",
+        "url": "https://avenuee.engineering.ucdavis.edu/sites/g/files/dgvnsk9286/files/inline-files/AvenueE_Interview_Questions_updated7-27-2020_0.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q029",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "传动轴选材与热处理",
+      "content": "现有一根承受中等载荷、转速1500r/min的传动轴，轴颈处需要耐磨，轴身要求较高的综合力学性能。请说明你会选择什么材料、采用怎样的热处理工艺路线，并解释为什么不直接选用整体淬硬的不锈钢。",
+      "tags": [
+        "材料选型",
+        "热处理",
+        "传动轴"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q030",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "轴向尺寸链与公差分配",
+      "content": "一个由5个零件叠加装配的轴向间隙要求为0.1~0.3mm，各零件尺寸及公差已知。请说明你会用极值法还是概率法计算，写出基本步骤，并解释当计算结果超出要求时，你会优先调整哪个零件的公差、依据是什么。",
+      "tags": [
+        "尺寸链",
+        "公差配合",
+        "计算校核"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q031",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "悬臂支架减重与疲劳校核",
+      "content": "某悬臂支架在振动工况下出现早期疲劳裂纹，同时客户要求减重20%。请说明你如何判断裂纹是应力集中还是共振引起，给出分析路径（载荷谱、有限元、安全系数），并说明当减重目标与疲劳寿命冲突时你会如何权衡取舍。",
+      "tags": [
+        "疲劳强度",
+        "结构优化",
+        "有限元"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q032",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "独立完成的设计闭环",
+      "content": "请挑一个你独立负责的项目，从需求输入讲到三维建模、二维出图、BOM与样机验证。重点说明：需求中哪些是模糊的，你如何把它转化成可量化的设计参数，最终交付物由谁验收、验收标准是什么。",
+      "tags": [
+        "设计闭环",
+        "工程图",
+        "项目经历"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q033",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "样机装配干涉怎么解",
+      "content": "讲讲你项目中样机试制时出现的装配干涉或间隙超差问题。当时如何发现、定位到哪个零件、最终是改图纸还是改工艺？如果再给你一次机会，你会在设计阶段用什么手段提前避免这类问题？",
+      "tags": [
+        "装配工艺",
+        "干涉排查",
+        "DFA"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q034",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "量产后批量开裂失效分析",
+      "content": "某零件样机阶段验证通过，量产后3个月出现批量开裂，失效比例约5%。请完整讲一次你主导或参与的失效分析：如何收集证据、如何区分设计、材料、工艺三类根因，最终改了什么，又是如何验证改善有效的。",
+      "tags": [
+        "失效分析",
+        "量产问题",
+        "根因定位"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q035",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "公差与制造成本起冲突",
+      "content": "你设计的配合公差被工艺部门反馈“现有设备做不出来，要么放宽要么加成本”，而项目节点已经很紧。请说明你会先确认哪些事实，和工艺、采购分别怎么沟通；如果最终必须让步，你会如何评估让步后的风险。",
+      "tags": [
+        "跨部门协作",
+        "公差让步",
+        "成本权衡"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q036",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "来料超差与交期冲突",
+      "content": "批量装配前发现供应商来料关键尺寸超差0.05mm，返工需两周，但客户交期只剩一周。作为设计负责人，请给出处置方案：临时放行、设计变更还是停线等待？说明你的判断依据，以及你会拉哪些角色一起决策。",
+      "tags": [
+        "供应商管理",
+        "紧急决策",
+        "质量风险"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q037",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么选择机械设计方向",
+      "content": "你为什么选择机械设计工程师这条路线？结合过往经历说说，你最享受设计工作中的哪个环节——建模、计算校核还是现场解决问题？未来三年你希望自己在哪方面形成不可替代的能力？",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "自我认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q038",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "与资深工程师方案分歧",
+      "content": "你与一位资深工程师在结构方案上意见不一致，你认为自己的方案更优，但对方资历更深。请还原一次真实经历：你如何表达观点、用什么证据去说服或最终接受对方意见，事后你和这位同事的协作关系如何。",
+      "tags": [
+        "团队协作",
+        "沟通表达",
+        "冲突处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q039",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "支架裂纹分析与改进",
+      "content": "某设备上的铝合金支架在振动测试中于圆角处出现裂纹。请说明你会如何判断失效模式，并给出至少两项改进措施（涉及材料、结构或工艺），同时说明如何验证改进效果。",
+      "tags": [
+        "力学分析",
+        "结构优化",
+        "失效分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.mechanical-design-q040",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "设计闭环与公差验证",
+      "content": "请结合你主导过的一个机械设计项目，讲述从需求到出图的全过程。重点说明：你如何确定关键尺寸链与公差？试制中是否出现装配问题？你如何定位并解决？最终如何验证设计满足要求？",
+      "tags": [
+        "项目经验",
+        "公差配合",
+        "设计闭环"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -374,7 +884,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

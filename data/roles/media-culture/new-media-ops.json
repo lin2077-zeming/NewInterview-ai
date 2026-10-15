@@ -276,6 +276,439 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "media-culture.new-media-ops-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "小红书美妆选题策划",
+      "content": "假设你负责一个国产护肤品牌的小红书账号，现有粉丝 3000，近期要推一款主打「敏感肌修复」的新品。请现场说出你会做的三个选题方向，并分别说明每个方向的目标人群、内容形式和预期的互动点。",
+      "tags": [
+        "选题策划",
+        "小红书",
+        "内容形式"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q012",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "产品卖点改写成笔记",
+      "content": "给出一段产品介绍：「XX空气炸锅，360度热风循环，5升大容量，一键操作」。请把它改写成一条小红书笔记的开头两行，并说明你改写时优先考虑了什么、舍弃了什么。",
+      "tags": [
+        "文案撰写",
+        "平台调性",
+        "用户视角"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q013",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "同一内容多平台改编",
+      "content": "一条在抖音跑出 80 万播放的短视频，原样搬到视频号和小红书却数据惨淡。请分别说出抖音、视频号、小红书在流量分发逻辑和用户观看动机上的差异，并说明你会如何针对后两个平台改编这条内容。",
+      "tags": [
+        "平台规则",
+        "算法理解",
+        "内容改编"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q014",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "阅读量高转化低",
+      "content": "你负责的公众号一篇推文阅读量 5 万，是日常的 5 倍，但带去的商品下单只有 12 单。请说出你会从哪些环节排查原因、需要调取哪些数据，并给出下一步的调整思路。",
+      "tags": [
+        "数据复盘",
+        "转化分析",
+        "公众号"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "从0到1的账号复盘",
+      "content": "挑一个你亲自参与运营、时间最长或效果最好的账号，说明它当时的定位、你的具体分工、涨粉曲线中最关键的一次增长来自什么动作，以及现在回头看，哪些是运气，哪些是可复制的方法。",
+      "tags": [
+        "项目复盘",
+        "经历深挖",
+        "涨粉方法"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q016",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "最满意的一条内容",
+      "content": "讲一条你自己写或参与过的、数据最好的内容：当时为什么判断这个选题会有效？从起草到发布中间改了几版、谁提了修改意见？如果让你现在重做一次，哪一步会做得不一样？",
+      "tags": [
+        "内容创作",
+        "经历深挖",
+        "复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q017",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "数据不达预期的归因",
+      "content": "讲一个你投入很多但结果不理想的内容或活动项目。请具体说明目标是多少、实际是多少、你当时的归因是什么，后来有没有验证这个归因——重点讲你是怎么区分「内容问题」和「渠道问题」的。",
+      "tags": [
+        "归因分析",
+        "项目失败",
+        "数据验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q018",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "内容生产流程与产能",
+      "content": "在你之前的实习或项目里，一篇内容从选题到发布要经过哪些环节？有没有出现过卡在某个环节导致发布延误？你为此做过哪些调整，一周能稳定产出多少条内容，其中原创占比多少？",
+      "tags": [
+        "内容产能",
+        "工作流程",
+        "效率优化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "热点与调性冲突",
+      "content": "一个全网爆火的社会热点，跟你们品牌调性关联很弱，甚至有点擦边风险，但上级在群里说「这个热点可以蹭一下」。你手上还有两个常规选题。请说出你接下来的具体动作和沟通话术。",
+      "tags": [
+        "热点借势",
+        "品牌调性",
+        "向上沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q020",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "已发布内容出现错误",
+      "content": "你负责的公众号文章已推送，20 分钟后发现正文里有一处产品价格写错，还有一张配图用了未经授权的素材。此刻你在做什么？请按时间顺序说出前 30 分钟的动作，包括要不要删文、怎么对外说明。",
+      "tags": [
+        "发布事故",
+        "危机处理",
+        "容错机制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q021",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "设计排期冲突",
+      "content": "你明天要发的活动海报，设计同事说手上还有别的活，最快后天给你，而活动时间已经对外公布。请说出你会怎么处理这件事：找谁、说哪些话、准备哪些备选方案。",
+      "tags": [
+        "跨部门沟通",
+        "排期协调",
+        "备选方案"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q022",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "用户私信投诉处理",
+      "content": "一位用户在多个平台评论区留言，说用了你们推荐的产品后过敏，情绪激烈，已经有人跟评。你既不是客服，也没有权限做赔偿承诺。请说出你会怎么处理：回复内容、内部沟通和后续跟进。",
+      "tags": [
+        "用户互动",
+        "客诉处理",
+        "跨部门"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "日常信息源",
+      "content": "你平时主要通过哪些渠道获取内容灵感和行业信息？请说出三个你长期关注的账号或栏目，并具体讲讲最近哪一条内容让你觉得「这个做得真好」，好在哪。",
+      "tags": [
+        "内容敏感度",
+        "信息源",
+        "求职动机"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q024",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "追热点的工作节奏",
+      "content": "新媒体工作经常需要追突发热点，可能晚上或周末临时加班，节假日也要值班发稿。请说说你过去的经历里有没有类似节奏，你实际是怎么安排生活和工作的，以及你的接受程度。",
+      "tags": [
+        "工作节奏",
+        "抗压能力",
+        "岗位认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "选择公司与团队的判断",
+      "content": "如果你手上同时有几个方向不同的 offer，你会用什么标准来选？具体到我们公司，你在面试前做了哪些了解，有哪些点你觉得合适，又有哪些点你还有疑问？",
+      "tags": [
+        "求职动机",
+        "公司了解",
+        "选择标准"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q026",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "选题被否之后",
+      "content": "在团队里，如果你的选题被同事或上级否掉，而你认为它值得做，你一般会怎么处理？请举一个真实发生过的例子，说明你当时的做法和最后的结果。",
+      "tags": [
+        "团队协作",
+        "沟通方式",
+        "抗压能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q027",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "三平台同一产品的开头怎么写",
+      "content": "假设你负责一款定价 199 元的国货保湿精华。请分别用小红书、抖音、微信公众号三个平台各写一句开头（可直接口述），并说明这三句在语气、人称、信息密度上为什么这样处理。如果只能保留一个平台，你会选哪个，为什么？",
+      "tags": [
+        "平台差异",
+        "文案适配"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q028",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "母婴品牌该不该蹭这个热点",
+      "content": "你运营一个母婴辅食品牌的官方账号。今天热搜第一是某明星的离婚争议，团队有人建议立刻借势做一条「分手了也要好好吃饭」的内容。请给出你的判断和处理方案：做还是不做，理由是什么，如果不做你会用什么替代选题？",
+      "tags": [
+        "热点借势",
+        "品牌调性",
+        "风险判断"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q029",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "曝光高收藏低怎么复盘",
+      "content": "你负责的小红书账号近两周笔记曝光量涨了 3 倍，但收藏率从 5% 掉到 1.2%，粉丝净增几乎为零。请说明你会拉取哪些数据、如何拆解定位问题，并给出至少两条可验证的调整动作以及各自的判断周期。",
+      "tags": [
+        "数据复盘",
+        "转化漏斗"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q030",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "讲一个你从零做起来的内容",
+      "content": "请挑一段你亲自操盘的内容或账号经历，用 STAR 说清楚：起点数据是多少、你做了哪几个关键动作、最终结果如何。我会追问哪些动作是你独立决定的、哪些是别人给的方向，以及如果重来一次你会改哪里。",
+      "tags": [
+        "经历深挖",
+        "归因能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q031",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "你维护过的用户群和互动",
+      "content": "讲一段你做用户互动或社群维护的经历：群规模多大、活跃度如何、你用什么机制让用户愿意说话甚至复购。请具体说明你发过什么、什么时间发、效果如何，以及有没有出现过负面情绪或投诉，你当时怎么处理的。",
+      "tags": [
+        "用户互动",
+        "社群维护"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q032",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "你的内容生产流程和工具",
+      "content": "请描述你最近一次完整的内容发布流程：从选题到排版上线，中间经过哪些人、用了哪些工具、大概花多少时间。如果有图片或视频是你自己做的，请说明你用什么软件、能做到什么程度、哪些效果是你做不出来的。",
+      "tags": [
+        "内容生产",
+        "工具熟练度"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q033",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "素材延迟两天上线怎么办",
+      "content": "一场线上活动定在周五上线，周三下午你发现设计只给了一半素材，产品同事还没确认奖品文案，而你的预热内容必须周四发出。请说出你接下来 24 小时的具体动作：先找谁、怎么沟通、有没有兜底方案。",
+      "tags": [
+        "跨部门沟通",
+        "项目推进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q034",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "评论区负面集中爆发",
+      "content": "你发的一条品牌内容因措辞被解读为「歧视」，两小时内评论区涌入大量负面，转发里出现抵制话题。请说明你的前 30 分钟动作、向谁汇报、对外回应怎么写，以及事后你会如何调整内容审核流程。",
+      "tags": [
+        "舆情应对",
+        "危机沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q035",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "三年后你想成为什么样的运营",
+      "content": "说说你未来三年在新媒体运营上的规划：你希望往哪个方向深耕，是内容、账号操盘还是数据增长？为此你这两年做过哪些具体准备？如果公司前半年只让你做重复的排版和发布，你怎么看？",
+      "tags": [
+        "职业规划",
+        "求职动机"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.new-media-ops-q036",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "数据不好被质疑时你怎么做",
+      "content": "假设你负责的账号连续两个月涨粉未达标，主管在周会上当众质疑你的能力，而你还得继续按时出内容。请描述你的真实反应和处理顺序：先做什么、怎么和主管沟通、如何调整心态和节奏。",
+      "tags": [
+        "抗压能力",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -381,7 +814,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

@@ -276,6 +276,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "mech-mfg.vehicle-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "四轮定位与操稳",
+      "content": "某车型高速行驶时方向盘回正偏弱、直线稳定性一般。请从主销后倾角、主销内倾角、前束等四轮定位参数解释其对回正力矩和高速稳定性的影响，并说明调整时需关注哪些关联部件与轮胎磨损风险。",
+      "tags": [
+        "汽车理论",
+        "底盘调校",
+        "四轮定位"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "不足转向与侧倾刚度",
+      "content": "底盘调校中希望车辆呈现适度不足转向。请说明如何通过前后悬架侧倾刚度分配、轮胎侧偏刚度与稳定杆匹配来影响不足转向度，并给出用CAE或场地试验验证调校效果的思路。",
+      "tags": [
+        "操稳性",
+        "悬架设计",
+        "CAE验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "CAE结果可信度判断",
+      "content": "你拿到一份白车身刚度CAE报告，位移结果比试验值偏乐观。请说明你会如何排查模型边界、连接单元、材料参数与网格质量，并如何设计对标试验来确认仿真结果是否可用于设计决策。",
+      "tags": [
+        "CAE",
+        "白车身",
+        "模型验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q014",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "路噪问题诊断优化",
+      "content": "纯电车型在粗糙路面下车内低频路噪明显，严重影响NVH评价。请从激励源、传递路径和响应端三个层面给出诊断流程，说明可能涉及的悬架衬套、车身板件与声腔模态，并给出优先级排序依据。",
+      "tags": [
+        "NVH",
+        "传递路径",
+        "悬架衬套"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "设计校核防错",
+      "content": "请结合你负责过的零部件，说明如何通过DFMEA、尺寸链计算、CAE强度/疲劳分析、DVP&R试验等手段确保设计一次做对。重点讲你如何识别关键特性并设定校核标准。",
+      "tags": [
+        "设计校核",
+        "DFMEA",
+        "DVP&R"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "量产异响根因分析",
+      "content": "某车型量产阶段出现底盘过坎异响，售后抱怨上升。请按你实际处理过的案例，讲清如何从故障复现、零件拆解、尺寸与力矩检测、CAE/试验对标到临时与永久措施推进闭环。",
+      "tags": [
+        "失效分析",
+        "底盘异响",
+        "量产质量"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q017",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "轻量化方案决策",
+      "content": "项目要求白车身减重8%，但成本不能增加且碰撞安全不能降级。请说明你会如何选择材料与工艺方案，如何权衡刚度、模态、碰撞和制造可行性，并用数据说服项目组接受你的取舍。",
+      "tags": [
+        "轻量化",
+        "碰撞安全",
+        "成本权衡"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q018",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "工艺与图纸不符",
+      "content": "试制现场反馈某个支架安装孔位与图纸不符，导致装配干涉。你作为设计工程师，会按什么步骤确认问题、评估风险并给出临时处理和设计变更？请说明如何与工艺、质量和供应商沟通。",
+      "tags": [
+        "试制",
+        "设计变更",
+        "跨部门沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "碰撞与造型冲突",
+      "content": "造型部门坚持某前脸特征，但总布置和碰撞安全评估显示行人保护或低速碰撞不达标。项目节点临近，你作为车辆工程师如何组织跨部门评审、提出替代方案并推动决策？",
+      "tags": [
+        "跨部门协作",
+        "碰撞安全",
+        "总布置"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q020",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "供应商偏差停线",
+      "content": "供应商提供的副车架尺寸超差，导致总装线停线风险。你需要在2小时内给出处置意见。请说明如何评估偏差对操稳、强度与装配的影响，如何决定是否让步接收，并协调供应商与内部资源。",
+      "tags": [
+        "供应链",
+        "应急处理",
+        "尺寸偏差"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q021",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "仿真试验结果不一致",
+      "content": "你负责的部件CAE仿真显示合格，但台架试验出现裂纹。试验与仿真工程师各执一词。你会如何组织复盘、对齐边界条件与失效判定标准，并推动下一步验证？",
+      "tags": [
+        "试验对标",
+        "问题解决",
+        "沟通协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q022",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "法规更新设计变更",
+      "content": "国家发布新的制动或灯光法规，已冻结的车型设计需在SOP前变更。请说明你如何评估法规影响范围、制定变更验证计划，并在成本、节点与合规之间与项目组达成一致。",
+      "tags": [
+        "法规标准",
+        "变更管理",
+        "项目节点"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "三年职业规划",
+      "content": "如果入职车辆工程工程师岗位，你未来三年希望达到什么能力水平？请结合整车开发流程、专业方向选择和项目承担，说明你的阶段目标以及你打算如何补齐短板。",
+      "tags": [
+        "职业规划",
+        "能力成长",
+        "整车开发"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "整车厂与供应商选择",
+      "content": "整车厂和零部件供应商的车辆工程岗位在工作内容、能力成长和项目视角上有差异。你更倾向哪一边？请结合你对本岗位的理解，说明选择理由和你能带来的价值。",
+      "tags": [
+        "求职动机",
+        "岗位认知",
+        "职业选择"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "岗位预期不符",
+      "content": "入职后你发现实际工作大量是数据整理、会议协调和重复校核，与你想做的创新设计有差距。你会如何调整心态、安排优先级，并向主管沟通你的发展诉求？",
+      "tags": [
+        "岗位适应",
+        "沟通表达",
+        "职业心态"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "长期项目压力管理",
+      "content": "整车项目周期长、节点密集，常出现临时试验失败或跨部门推诿。请讲一次你在压力下仍保证交付的经历，说明你如何拆解任务、管理情绪并寻求支持。",
+      "tags": [
+        "抗压能力",
+        "项目交付",
+        "团队协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q027",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "低碳钢的应力应变曲线",
+      "content": "请描述低碳钢的应力—应变曲线，标出弹性阶段、屈服、强化与颈缩各段，并说明工程意义。",
+      "tags": [
+        "材料力学",
+        "专业基础"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q028",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "悬架类型与操稳差异",
+      "content": "请结合前悬架设计，说明麦弗逊式独立悬架与扭力梁非独立悬架在结构、运动学特性以及对整车操纵稳定性上的主要差异，并各举一个典型适用车型级别。",
+      "tags": [
+        "悬架设计",
+        "操纵稳定性",
+        "汽车构造"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q029",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "CAE应力与试验差异",
+      "content": "你在进行底盘控制臂有限元强度分析时，发现最大应力出现在一个尖角处，但台架试验却在该区域附近出现裂纹。请分析可能原因，并说明如何改进仿真模型或结构设计以消除该差异。",
+      "tags": [
+        "CAE仿真",
+        "应力分析",
+        "试验验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q030",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "高速变道不足转向调校",
+      "content": "某车型在高速变道时出现明显不足转向，且后轴侧倾过大。请从悬架K&C特性、轮胎侧偏刚度、前后侧倾刚度分配及稳定杆匹配等角度，分析可能原因，并提出具体的调校方向与验证方案。",
+      "tags": [
+        "车辆动力学",
+        "不足转向",
+        "悬架调校"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q031",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "设计项目冲突权衡",
+      "content": "请分享一个你参与过的车辆零部件设计项目，说明你负责的具体模块、遇到的最大技术冲突（如性能与成本、重量与刚度），以及你如何权衡各方需求并推动方案最终落地。",
+      "tags": [
+        "项目经历",
+        "设计冲突",
+        "方案落地"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q032",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "CAE解决工程问题案例",
+      "content": "在过往项目中使用过哪些CAD/CAE软件？请具体说明一个你用CAE解决实际工程问题的案例，包括前处理、边界条件设置、结果解读，以及如何据此指导设计变更。",
+      "tags": [
+        "CAD/CAE",
+        "工程实践",
+        "设计变更"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q033",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "疲劳试验失效排查",
+      "content": "你负责某底盘零部件台架疲劳试验，试验中出现早期失效，但CAE分析寿命满足要求。请描述你会如何设计排查方案，从仿真模型、试验夹具、载荷谱、材料数据及制造工艺等方面定位差异。",
+      "tags": [
+        "疲劳试验",
+        "失效分析",
+        "仿真对标"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q034",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "悬架行程与布置冲突",
+      "content": "在整车开发中，底盘部门希望增加悬架行程以提升舒适性，但车身部门因布置空间限制强烈反对。作为集成工程师，你会如何组织沟通、评估方案并推动达成共识？",
+      "tags": [
+        "跨部门协作",
+        "系统集成",
+        "冲突协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q035",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "样车干涉应急处理",
+      "content": "样车试制阶段发现某支架与相邻管路干涉，但设计变更窗口即将关闭。请说明你的处理思路和优先级判断，包括临时方案、风险评估及后续正式变更的推进方式。",
+      "tags": [
+        "试制问题",
+        "应急处理",
+        "变更管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q036",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "职业动机与方向规划",
+      "content": "你为什么选择车辆工程工程师作为职业方向？未来3-5年你希望在设计、仿真、试验还是项目管理方向深入发展？请结合你对整车开发流程的理解谈谈。",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "整车开发"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q037",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "行业趋势与岗位认知",
+      "content": "请谈谈你对汽车行业“新四化”（电动化、智能化、网联化、共享化）的理解，以及它对你所应聘的车辆工程工程师岗位在知识结构和能力上提出了哪些新要求？",
+      "tags": [
+        "行业趋势",
+        "岗位认知",
+        "新四化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q038",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "前轮先抱死与ABS",
+      "content": "请解释汽车制动时前轮先抱死比后轮先抱死更安全的原因，并说明ABS如何改变这一特性。结合车辆工程理论回答，并举一个你遇到或了解的制动稳定性案例。",
+      "tags": [
+        "制动稳定性",
+        "ABS",
+        "汽车理论"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q039",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "CAE与试验偏差排查",
+      "content": "请结合你主导过的一个结构耐久或碰撞仿真项目，说明边界条件、材料模型和连接简化如何确定。若仿真与台架试验寿命偏差超过30%，你会按什么步骤排查载荷、材料、焊接与失效判据？",
+      "tags": [
+        "CAE仿真",
+        "耐久试验",
+        "偏差分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.vehicle-q040",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "法规与成本冲突协调",
+      "content": "整车开发后期，法规要求新增行人保护吸能结构，但前舱布置空间和单件成本均超目标。你作为车辆工程师，如何联合造型、采购、法规和工艺部门，在两周内给出可落地的集成方案？",
+      "tags": [
+        "法规合规",
+        "跨部门协作",
+        "成本控制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -398,7 +908,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

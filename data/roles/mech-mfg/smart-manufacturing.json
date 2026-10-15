@@ -276,6 +276,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "图纸基准与加工基准不重合",
+      "content": "一张零件图要求以A面为设计基准保证某尺寸公差±0.05mm，但实际加工时A面无法直接作为定位基准，只能以B面装夹。请说明你会如何分析并解决这个问题，需要用到什么方法，最终如何验证工艺方案可行。",
+      "tags": [
+        "尺寸链",
+        "工艺基准",
+        "公差分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "从图纸到量产的工艺路线",
+      "content": "现有一款铝合金壳体零件，年需求10万件，毛坯为压铸件，关键要求是两处轴承孔同轴度0.02mm、端面平面度0.05mm。请口述一条完整的工艺路线，并说明关键工序是哪几道、设备选择依据是什么、哪些工艺参数必须重点管控。",
+      "tags": [
+        "工艺路线",
+        "关键工序",
+        "设备选型"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "产线节拍不平衡的改善",
+      "content": "一条装配线共7个工位，实测节拍分别为45、52、68、50、49、55、47秒，客户要求日产能3200件（两班制、每班有效工时7.5小时）。请判断瓶颈在哪、能否达标，并给出至少三种工序平衡或改善的具体办法及各自风险。",
+      "tags": [
+        "产线平衡",
+        "节拍",
+        "瓶颈工序"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q014",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "自动化上下料方案与回报",
+      "content": "某冲压工序现由2名工人手动上下料，存在安全隐患，人工成本每年约18万元。现考虑两种方案：六轴机器人工作站投入45万元，专用机械手投入22万元。请说明你会从哪些维度评估选型、如何测算投资回收期，以及哪些因素会让测算结果失真。",
+      "tags": [
+        "自动化选型",
+        "投资回报",
+        "方案评估"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q015",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "讲一个你主导的工艺改善",
+      "content": "请介绍一个你亲身参与或主导的工艺改善、产线优化项目。重点说明：改善前的具体问题与量化指标、你具体做了什么、改善后的数据对比，以及这个改善最终有没有被固化进作业标准或工艺文件。",
+      "tags": [
+        "项目经历",
+        "工艺改善",
+        "量化结果"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "最难攻克的工艺问题",
+      "content": "在你做过的项目里，挑一个最难定位根因的工艺或质量问题。请描述当时的现象、你排查的完整思路与顺序、用过哪些工具（如5Why、鱼骨图、DOE），最后根因是什么，你又如何验证它确实是根因。",
+      "tags": [
+        "根因分析",
+        "DOE",
+        "问题定位"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "新产品导入的DFM评审",
+      "content": "你在新产品导入项目中参加过设计评审吗？请举实例说明：你发现过哪些不利于量产的设计问题，比如公差过严、结构无法装夹、缺少防错；你是如何提出并推动研发修改的，最终结果如何，有没有被拒绝的情况。",
+      "tags": [
+        "DFM",
+        "新产品导入",
+        "跨部门推动"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q018",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "用数据驱动工艺优化",
+      "content": "请举一个你用数据而非经验来做工艺决策的例子。说明数据从哪里采集（设备PLC、MES还是手工记录）、你如何处理异常值与样本量不足、用了什么分析方法，以及结论如何转化为工艺参数调整并验证效果。",
+      "tags": [
+        "数据分析",
+        "MES",
+        "参数优化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q019",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "质量与生产判定分歧",
+      "content": "生产认为这批产品只是外观轻微瑕疵、可以放行，质量坚持判不合格，双方争执不下找到你。作为工艺工程师，你会怎么处理？请说明你的判断依据、沟通顺序，以及如何避免同类争议反复发生。",
+      "tags": [
+        "跨部门沟通",
+        "质量判定",
+        "标准共识"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "批量不良的紧急处置",
+      "content": "夜班产线突然出现批量尺寸超差，已产出800件，交期就在两天后，生产线长要求先继续做。作为被叫到现场的工艺工程师，请说明你在前30分钟内的动作顺序：先做什么、如何隔离、凭什么判断是停线还是继续、向谁汇报。",
+      "tags": [
+        "现场问题",
+        "应急处置",
+        "批量不良"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "研发不改设计的僵局",
+      "content": "你评估后认为某结构在现有设备上无法稳定量产，需要研发修改设计，但研发以影响进度和性能为由拒绝，项目已进入量产准备阶段。你会如何推进？请给出沟通策略、需要拿出的证据，以及向上求助的时机。",
+      "tags": [
+        "跨部门协作",
+        "设计变更",
+        "推动力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q022",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "智能化改造遇一线抵触",
+      "content": "公司推行MES与数据采集，要求产线员工每班扫码报工并录入参数，但一线员工认为增加负担、消极应付，数据大量失真。作为项目推进者，你会如何分析原因、设计应对措施，让改造真正落地而不是流于形式？",
+      "tags": [
+        "智能化改造",
+        "变革管理",
+        "MES落地"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "NPI与量产维护的偏好",
+      "content": "工艺工程师的工作大致分两类：一是新产品导入，从零搭建工艺、节奏紧张、不确定性高；二是量产维护，相对稳定但重复性工作多、以持续改善为主。你更倾向哪一类，为什么？请结合你的经历说明。",
+      "tags": [
+        "岗位认知",
+        "自我认知",
+        "求职动机"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "驻场支持的意愿与考量",
+      "content": "公司新工厂在外地，需要工艺工程师驻场支持新产线调试约半年，期间出差频繁、工作强度较大。你如何看待这样的安排？有哪些实际因素需要提前考虑，你会怎样和团队坦诚沟通你的想法？",
+      "tags": [
+        "工作意愿",
+        "出差驻场",
+        "坦诚沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "三年内的能力目标",
+      "content": "如果入职这个岗位，三年后你希望自己具备哪些现在还不具备的能力？请具体到技能层面，比如自动化方案设计、数据分析、某一类工艺门类，并说说你打算用什么方式补齐，希望公司提供什么支持。",
+      "tags": [
+        "职业规划",
+        "能力成长",
+        "学习计划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "选择机会时最看重什么",
+      "content": "假设你同时拿到两份offer：一家规模大、流程规范但分工很细；一家规模小、需要你什么都干、成长快但资源有限。你会如何选择？请说明你最看重的三个因素以及背后的判断逻辑。",
+      "tags": [
+        "职业选择",
+        "价值排序",
+        "个人期望"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q027",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "如何确保设计不出错",
+      "content": "你用什么校验手段来确保自己的设计不出错？请结合一个具体项目说明。",
+      "tags": [
+        "设计校核",
+        "工程习惯"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "UC Davis AvenueE《Engineering Interview Question Prompts》",
+        "url": "https://avenuee.engineering.ucdavis.edu/sites/g/files/dgvnsk9286/files/inline-files/AvenueE_Interview_Questions_updated7-27-2020_0.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q028",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "CPM 与 PERT 的区别",
+      "content": "CPM 与 PERT 有什么区别？分别在什么场景下使用？请举例说明。",
+      "tags": [
+        "项目管理",
+        "进度控制"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q029",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "壳体加工工艺流程设计",
+      "content": "某铝合金压铸壳体，图纸要求关键安装孔位置度Φ0.05mm、配合面粗糙度Ra1.6，月需求2万件。请描述你会如何制定从毛坯到成品的完整工艺流程，逐道说明设备选择、定位基准和关键控制点，并指出哪道工序最可能成为能力瓶颈、你会用什么方式验证这个工艺方案可量产。",
+      "tags": [
+        "工艺流程",
+        "定位基准",
+        "可制造性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q030",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "瓶颈工序产线平衡改造",
+      "content": "某装配线共6道工序，客户要求节拍30秒/件，现状瓶颈工序耗时52秒，其余工序在20—35秒之间，整线OEE只有65%。请说明你的产线平衡思路，哪些工序值得上自动化、哪些靠拆分工序或改工装解决；给出所需工位数与投资回收期的粗算逻辑，并指出这类改造中最容易被忽略的隐性成本。",
+      "tags": [
+        "产线平衡",
+        "自动化选型",
+        "投资回收"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q031",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "低CPK尺寸的数据分析",
+      "content": "某关键尺寸的过程能力指数长期在1.0附近波动，你从MES导出了近3个月的尺寸数据，以及对应的设备参数、班次和来料批次记录。请说明你的分析步骤：先看哪些图表、如何区分是设备漂移、刀具磨损还是来料波动导致的变异、怎样锁定主因，以及你会用什么方式验证改善措施真的有效而不是数据巧合。",
+      "tags": [
+        "SPC",
+        "过程能力",
+        "数据驱动"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q032",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "最有挑战的工艺改善项目",
+      "content": "请挑一个你深度参与过的工艺改善、工装优化或产线改造项目，用数据讲清楚：改善前的痛点是什么（良率、节拍、人力或成本），你个人具体承担了哪部分工作，最后量化结果是多少，以及这个结果里有多少能归因到你自己的贡献。",
+      "tags": [
+        "项目复盘",
+        "量化成果",
+        "个人贡献"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q033",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "工装夹具定位与防错设计",
+      "content": "请介绍一次你主导或深度参与设计工装夹具的经历：零件是什么、定位与夹紧方案依据什么确定、如何做防呆与保证重复定位精度。上线后是否出现过定位偏差、干涉或换型超时的问题？你当时怎么处理？如果重新设计，你会改哪一处、为什么。",
+      "tags": [
+        "工装设计",
+        "防错",
+        "定位精度"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q034",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "自动化上线未达标复盘",
+      "content": "请讲一个未达预期甚至失败的项目，比如新工艺或自动化设备上线后良率不升反降、节拍达不到设计值。请说明当时的真实根因、你在方案评审或推进节奏上犯了什么错、最后如何与团队和供应商收场，以及这件事之后你具体改变了哪一条工作方法。",
+      "tags": [
+        "失败复盘",
+        "根因分析",
+        "决策反思"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q035",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "现场批量不良停线处置",
+      "content": "早班开工不久，产线反馈某工序连续出现尺寸超差，生产主管要求先把这批订单做完再处理，质量部门要求立即停线。你作为工艺工程师正好在现场，请说明接下来30分钟你会做什么：先看什么数据、找哪些人、依据什么判断是继续生产还是必须停线，以及如果双方都不让步你怎么办。",
+      "tags": [
+        "现场处置",
+        "跨部门沟通",
+        "停线决策"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q036",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "跨部门推动工艺变更",
+      "content": "你主导的工艺变更（例如更换切削参数、调整装配顺序或新增在线检测）需要生产、质量、设备三方配合，但生产担心影响产能、设备担心维护量增加、质量担心引入新风险。请说明你会如何准备沟通材料与验证方案、分几轮推进，以及某一方坚决反对时你的具体做法。",
+      "tags": [
+        "跨部门协作",
+        "变更管理",
+        "推动力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q037",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "选择工艺方向的原因",
+      "content": "你为什么选择工艺与智能制造工程师这个方向？结合你过往的学习、实习或项目经历，说说你为这个岗位做了哪些具体准备，以及入职前两年你希望重点补足哪一方面的能力。",
+      "tags": [
+        "求职动机",
+        "岗位理解",
+        "自我认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q038",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "现场岗位的长期动力与规划",
+      "content": "工艺工程师需要长期泡在车间现场，反复处理同类设备的异常，也可能要驻厂或配合倒班支持。结合你对这个岗位的理解，谈谈你如何保持长期动力，以及未来3年你想成长为专家型、管理型还是复合型工程师，理由是什么。",
+      "tags": [
+        "职业规划",
+        "抗压动机",
+        "岗位认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q039",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "Cpk不足的工艺诊断",
+      "content": "某批量零件关键尺寸公差±0.02mm，工艺路线为车削→铣削→热处理→精磨，近期Cpk仅0.9且偶发超差。请说明你会如何用数据定位问题工序，从设备、工装、工艺参数、来料哪些方面排查，并给出至少两项可落地的优化措施及验证方式。",
+      "tags": [
+        "工艺优化",
+        "过程能力",
+        "现场问题"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "mech-mfg.smart-manufacturing-q040",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "产线规划与自动化选型",
+      "content": "请挑一个你主导或深度参与的产线规划／自动化改造项目，说明产品与产能需求、节拍测算与瓶颈工位、设备或自动化方案的选型理由，以及最终在效率、良率或人力上的量化改善结果。若当时存在多个可选方案，你依据什么做取舍？",
+      "tags": [
+        "产线规划",
+        "自动化选型",
+        "节拍平衡"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -394,7 +904,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

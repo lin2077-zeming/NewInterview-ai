@@ -257,6 +257,533 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "law-public.public-policy-q010",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "总量调控政策评估思路",
+      "content": "某市为缓解拥堵，拟对网约车实施总量调控，委托你在两周内给出是否可行的初步研判。请说明你会如何拆解这一问题：核心政策目标是什么、关键利益相关方有哪些、需要哪些证据支撑因果判断，并指出你的结论中最可能被反驳的环节在哪里。",
+      "tags": [
+        "政策分析",
+        "因果论证",
+        "利益相关方"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "政策脉络梳理的信源设计",
+      "content": "领导要求你用一周时间梳理某领域近十年的政策脉络，形成带时间轴的梳理稿。请说明你会检索哪些渠道（法律法规数据库、部委与地方文件、学术文献、行业报告等），如何设定关键词与筛选标准，以及如何判断一份文件或数据的可信度与效力层级。",
+      "tags": [
+        "文献检索",
+        "信源评估",
+        "政策梳理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q012",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "无法随机实验的效果评估",
+      "content": "某地推行课后托管服务已两年，委托你评估其对家庭育儿负担的实际影响，但无法开展随机对照实验，也没有干净的断点可用。请说明你会如何设计评估方案：采用什么识别策略、需要哪些数据、如何排除混杂因素，并说明结论的适用边界。",
+      "tags": [
+        "效果评估",
+        "研究设计",
+        "方法边界"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q013",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "学术报告转决策内参",
+      "content": "你手中有一份两万字的学术型研究报告，委托方要求你在一夜之间改写成两页纸的决策内参。请说明你会保留什么、删除什么，开头怎么写、结构如何组织，才能让决策者在三分钟内抓住核心建议与依据。",
+      "tags": [
+        "报告撰写",
+        "决策导向",
+        "提炼能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q014",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "深挖一份政策报告链路",
+      "content": "请挑一份你参与过、最能拿得出手的政策报告或内参，说明选题从何而来、你负责哪一部分、用了哪些证据、结论是如何一步步推出来的。如果有专家或评审提出过反对意见，请说出具体是哪一条，你当时如何回应或修正。",
+      "tags": [
+        "经历深挖",
+        "论证链条",
+        "证据意识"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "调研抽样与访谈设计",
+      "content": "请描述一次你主导或深度参与的调研。说明调研对象如何确定、样本量与抽样方式、访谈提纲怎么设计，以及你事后如何判断样本是否存在偏差。如果重做一次，你会优先改进哪个环节？",
+      "tags": [
+        "调研设计",
+        "抽样方法",
+        "偏差识别"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q016",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "信息受限下的调研推进",
+      "content": "假设你负责的调研中，关键部门只肯提供口径统一的公开数据，访谈对象也回避敏感问题，而距交报告只剩十天。请结合你的真实经历说明，你会如何打开信息缺口：换信源、换问法，还是换分析角度？各自的代价是什么？",
+      "tags": [
+        "信息获取",
+        "应变策略",
+        "一手资料"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q017",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "建议未被采纳的复盘",
+      "content": "请讲一个你的政策建议最终未被采纳、或被大幅修改的经历。说明当时的建议是什么、被否或修改的原因是什么，你事后如何复盘，是否因此调整了后续的研究选题或表达方式。",
+      "tags": [
+        "复盘反思",
+        "建议落地",
+        "表达方式"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q018",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "匿名专家与官方数据冲突",
+      "content": "专家访谈中，一位受访者给出的判断与官方统计数据明显冲突，他要求匿名，并暗示部分数据存在问题。此时报告已进入定稿阶段。你会如何核实与处理？在报告中如何呈现这一分歧，既不冒失又能提醒决策者注意？",
+      "tags": [
+        "信息冲突",
+        "证据核实",
+        "沟通分寸"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "跨部门数据拖延的应对",
+      "content": "你牵头一项多部门联合调研，距离汇报只剩五天，其中一个部门迟迟不提供关键数据，对接人总是回复在走流程。你既没有权限催办，也不便越级上报。请说明你的沟通策略与备选方案，如何保证报告质量不塌方。",
+      "tags": [
+        "跨部门协作",
+        "进度管理",
+        "备选方案"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "汇报现场被质疑结论",
+      "content": "向委托方领导汇报时，对方当场打断，质疑你的核心结论与他的经验判断完全不符，会议室里还有其他部门负责人。请说明你会如何回应：先解释方法还是先承认分歧？怎样把争论拉回到可验证的事实层面？",
+      "tags": [
+        "临场应变",
+        "表达策略",
+        "结论辩护"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q021",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "研究方法分歧的处理",
+      "content": "团队中一位同事主张用定量模型验证政策效果，你认为定性访谈更能解释机制，双方僵持影响进度。请说明你会如何推进：说服对方、折中方案，还是借助第三方判断？你判断的依据是什么？",
+      "tags": [
+        "团队分歧",
+        "方法选择",
+        "协作推进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q022",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为何选择政策研究",
+      "content": "请说明你为什么选择公共政策研究作为职业方向。可以结合你长期关注的具体公共问题、做过的相关工作，以及你期待这份工作带给你什么样的成长与价值。",
+      "tags": [
+        "求职动机",
+        "岗位认知",
+        "公共关怀"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "三年内的成长路径",
+      "content": "如果你入职，请描述未来三年你希望在哪方面成长：是成为某个政策领域的专家、方法上的能手，还是综合型的项目负责人？为什么这样选择，你打算通过哪些具体行动去实现？",
+      "tags": [
+        "职业规划",
+        "成长路径",
+        "自我认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q024",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "结论与委托方立场冲突",
+      "content": "你长期关注哪一类公共问题？如果研究发现的方向与委托方或上级的既有立场不一致，你会怎么处理？请结合具体情境说明你的边界：什么情况下你会坚持结论，什么情况下你会调整表达方式而非结论本身。",
+      "tags": [
+        "价值判断",
+        "职业伦理",
+        "多方利益"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "团队角色与协作预期",
+      "content": "政策研究通常需要调研、数据分析、撰写、汇报等不同角色配合。在团队中你更擅长也更有意愿承担哪一环？如果被安排去做你并不擅长的环节，你会如何配合与补位，如何保证不拖累整体进度？",
+      "tags": [
+        "团队协作",
+        "角色定位",
+        "补位意识"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q026",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "法要兼顾人情与群众找关系",
+      "content": "三句话：法要兼顾人情；法不外乎人情；群众遇到问题优先找关系而非法律。谈谈你的认识。",
+      "tags": [
+        "法理人情",
+        "法治现状"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "山东人才就业网《陕西省公务员面试（执法、公检法）真题》",
+        "url": "https://jiufengsw.com/index.php?a=shows&catid=166&id=55840",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q027",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "共享单车治理分析框架",
+      "content": "某市共享单车乱停放问题突出，主管部门请你一周内提交分析框架。请说明你会如何界定问题、识别关键利益相关方、构建因果链条，并预判至少两种反驳意见及回应思路。",
+      "tags": [
+        "政策分析",
+        "逻辑论证",
+        "利益相关方"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q028",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "教师轮岗政策评估",
+      "content": "某地拟推行义务教育教师轮岗政策，委托你评估可行性。请给出分析思路，指出政策成功的关键假设、可能失败的条件，以及你会设计怎样的试点或准实验来验证效果。",
+      "tags": [
+        "政策评估",
+        "因果推断",
+        "试点设计"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q029",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "脱贫数据可靠性判断",
+      "content": "一份报告称“某省脱贫县农民收入增速高于全省平均，说明帮扶政策有效”。你如何判断该结论的可靠性？请指出至少三个需要核实的替代解释或方法论问题，并说明如何补充证据。",
+      "tags": [
+        "数据解读",
+        "政策敏感度",
+        "证据评估"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q030",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "政策调研项目复盘",
+      "content": "请描述你参与过的一项政策调研项目，从问题界定到最终建议。重点说明你如何确定调研对象、样本量和数据来源，以及遇到的最大挑战和应对方式。",
+      "tags": [
+        "调研设计",
+        "项目经历",
+        "数据来源"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q031",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "文献梳理与矛盾处理",
+      "content": "你曾为某个政策领域做过文献或政策梳理吗？请举一例说明你如何筛选来源、处理相互矛盾的研究结论，并形成自己的判断。",
+      "tags": [
+        "文献检索",
+        "信息筛选",
+        "政策梳理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q032",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "政策报告决策导向",
+      "content": "请展示你写过的一篇政策报告或内参。你如何根据决策者需求调整结构？如果领导要求从十页删减到两页，你会保留什么、舍弃什么？请说明取舍标准。",
+      "tags": [
+        "报告撰写",
+        "决策导向",
+        "文字表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q033",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "跨部门数据协调",
+      "content": "你牵头一项跨部门政策调研，但某局以数据敏感为由拒绝提供关键数据。项目时间紧迫，你如何沟通并推进？请说明你的替代方案和合规底线。",
+      "tags": [
+        "跨部门协作",
+        "沟通协调",
+        "合规意识"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q034",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "专家观点对立应对",
+      "content": "在专家座谈会上，两位专家对同一政策效果结论尖锐对立，现场气氛紧张。作为会议主持或记录者，你如何应对并确保获取有效信息？",
+      "tags": [
+        "专家访谈",
+        "现场应变",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q035",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "选择政策研究动机",
+      "content": "你为什么选择公共政策研究，而不是学术研究或企业咨询？请结合你对某类社会问题的长期关注，说明你的职业规划和你希望产生的影响。",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "公共关怀"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q036",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "研究成果未被采纳",
+      "content": "如果你花费数月完成的研究报告，最终因政治或预算原因未被采纳，你会如何应对？请说明你如何调整心态、复盘研究价值，并与团队保持协作。",
+      "tags": [
+        "抗压能力",
+        "职业心态",
+        "团队协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q037",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "公交调价方案论证",
+      "content": "某市拟将公交票价从2元调整为分段计价，以缓解拥堵并补贴运营。你手头有支持涨价的客流数据和反对涨价的低收入群体出行调查，但双方样本均有偏差。请你在30分钟内构建分析框架，提出初步建议，并说明如何回应「涨价会加重低收入者负担」的质疑。",
+      "tags": [
+        "政策分析",
+        "逻辑论证",
+        "数据偏差"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q038",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "主导调研项目复盘",
+      "content": "请讲述一个你主导或深度参与的政策调研项目。重点说明：你如何界定核心问题、设计抽样与访谈方案、验证信息可信度？最终报告提出了什么建议，是否被采纳？如果重做一次，你会改进哪个环节？",
+      "tags": [
+        "调研设计",
+        "信息验证",
+        "项目复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q039",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "临时调整政策选题",
+      "content": "你正撰写一份老旧小区改造的政策内参，突然接到通知：上级要求将主题改为社区养老服务，且一周内提交。你手头只有旧主题的调研数据，团队两名成员正在休假。你会如何重新规划信息获取、分工与报告框架？请说明优先级和风险控制。",
+      "tags": [
+        "应急应变",
+        "任务优先级",
+        "团队协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.public-policy-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "长期关注的政策议题",
+      "content": "如果给你一年时间独立研究一个你真正关心的公共政策议题，你会选择什么？为什么它值得研究？你打算如何让研究成果影响决策者，而不是停留在纸面？请结合你对当前政策环境的观察来谈。",
+      "tags": [
+        "公共关怀",
+        "政策敏感度",
+        "研究选题"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -373,7 +900,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

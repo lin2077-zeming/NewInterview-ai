@@ -276,6 +276,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "finance-econ.banking-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "反假币识别与客户争议",
+      "content": "你在柜面办理现金存款，点钞机连续报警，经人工鉴别确认为假币。客户情绪激动，坚称是刚从另一家银行取的，要求你退还并继续办理业务。请说明你会如何按流程处置，并现场模拟与客户的沟通。",
+      "tags": [
+        "反假币",
+        "合规操作",
+        "客户沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "可疑交易识别与上报",
+      "content": "一位客户连续三天到网点，每次存取现金均略低于大额交易报告标准，且账户资金快进快出、对手方分散。作为柜员，你会从哪些维度判断可疑？请说明你如何执行客户身份识别、留存证据并完成上报，同时不惊动客户。",
+      "tags": [
+        "反洗钱",
+        "可疑交易",
+        "风险防范"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q013",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "企业贷款财务分析",
+      "content": "某制造企业申请500万元流动资金贷款，财报显示营业收入增长20%，但经营活动现金流为负，应收账款周转天数从60天升至110天，资产负债率68%。请分析该企业还款能力与主要风险点，并说明你会补充哪些信息、设计怎样的授信方案。",
+      "tags": [
+        "财务报表分析",
+        "授信风险",
+        "方案设计"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q014",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "客户闲置资金配置",
+      "content": "一位45岁客户有100万元闲置资金，风险测评结果为稳健型，希望三年后用于子女留学，同时要求收益比定期高、不能亏本。请结合存款、理财、保险、基金等产品，说明你会如何做需求分析并设计配置方案，以及如何揭示风险。",
+      "tags": [
+        "产品知识",
+        "资产配置",
+        "风险揭示"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q015",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "最复杂的一笔业务",
+      "content": "请回忆你经手或实习中操作过的最复杂的一笔银行业务，比如大额转账、多账户挂失、对公开户等。说明业务难点、你如何核对凭证与系统信息、怎样确保账实相符，以及最终结果和你的收获。",
+      "tags": [
+        "业务操作",
+        "账实相符",
+        "经历深挖"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "一次成功的客户营销",
+      "content": "请用STAR法则讲述你过去成功向客户推荐产品或服务的一次经历。当时客户的需求和顾虑是什么？你如何挖掘需求、处理异议并促成交易？请给出具体数据或结果，并反思哪些环节可以做得更好。",
+      "tags": [
+        "营销技巧",
+        "需求挖掘",
+        "STAR"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "业务差错或系统故障处理",
+      "content": "请描述一次你在工作或实习中发生的操作差错，或遇到的系统故障、凭证缺失等突发情况。你当时如何第一时间控制风险、向上级报告、补救并安抚客户？事后你建立了什么机制避免再次发生？",
+      "tags": [
+        "差错处理",
+        "应急能力",
+        "复盘改进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q018",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "财务分析发现风险",
+      "content": "请举一个你通过财务数据或经营信息发现客户潜在风险的实例。你关注了哪些指标？如何验证你的判断？向团队或上级提出了什么建议？最终风险是否被化解？如果没有类似经历，请说明你会如何为一家企业客户做贷后检查。",
+      "tags": [
+        "风险识别",
+        "财务分析",
+        "贷后管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q019",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "劝阻老年客户被骗转账",
+      "content": "一位70岁老人到柜台，要求向陌生账户转账8万元，称投资养老项目，并不断接听电话、神色紧张。你判断可能遭遇电信诈骗，但老人坚持转账并抱怨你多管闲事。请现场模拟你如何劝阻并联动大堂经理、警方。",
+      "tags": [
+        "电信诈骗",
+        "应变沟通",
+        "客户保护"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "系统故障引发客户聚集",
+      "content": "网点核心系统突然中断，无法办理存取款和转账，等待客户越来越多，有人开始拍柜台、要求赔偿误工费。作为当班柜员或客户经理，你会如何分工、安抚客户、提供替代方案并做好后续解释？",
+      "tags": [
+        "突发事件",
+        "情绪安抚",
+        "现场管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "风控与营销意见分歧",
+      "content": "你营销的一位企业客户被风控部门以行业景气度下降为由否决授信，但你认为客户经营稳健、只是暂时缺抵押物。你如何与风控同事沟通？请说明你会补充哪些材料、如何向客户解释，并平衡业绩指标与合规要求。",
+      "tags": [
+        "跨部门协作",
+        "沟通协调",
+        "合规意识"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q022",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "月末冲量合规冲突",
+      "content": "月末最后一天，你的存款指标还差800万元。团队负责人在晨会上暗示大家可以贴息或返点吸引客户短期转入资金，并说别的支行都这么干。你清楚这违反监管规定。请说明你会如何回应负责人，同时提出合规的补救方案。",
+      "tags": [
+        "合规红线",
+        "指标压力",
+        "职业操守"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "被分配到偏远网点",
+      "content": "入职后你被分配到郊县网点做柜员，通勤单程两小时，业务量小、客户以老年人为主，与你预期的客户经理岗位有差距。你会如何看待和应对？请结合你的职业目标谈谈接下来一年的行动计划。",
+      "tags": [
+        "岗位认知",
+        "适应能力",
+        "职业态度"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "重复工作与指标压力",
+      "content": "柜面工作每天重复操作、监控严格，客户经理则背负存款、贷款、保险等多项指标，完不成会被督导。你认为自己哪方面特质最适合这份工作？请举一个你长期坚持、承受压力并达成目标的例子。",
+      "tags": [
+        "抗压能力",
+        "自我认知",
+        "坚持"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "同事间业绩归属冲突",
+      "content": "你和同事共同接待了一位客户，后来客户成交了一笔大额理财。同事认为客户是他先联系的，业绩应归他；你认为后续方案和促成主要由你完成。你会如何处理与同事的分歧？请说明沟通步骤和底线。",
+      "tags": [
+        "团队协作",
+        "冲突处理",
+        "业绩分配"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "被批评后的心态调整",
+      "content": "假设你因一次业务差错被领导当众批评，客户也表达了不满。你感到委屈，因为部分原因是系统问题。接下来一天你还要面对大量客户和指标任务。你会如何调整情绪、处理问题并向上级说明情况？",
+      "tags": [
+        "情绪管理",
+        "抗压能力",
+        "责任担当"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q027",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "会计政策与会计估计的理解",
+      "content": "请谈谈对会计政策和会计估计的理解，并各举一个例子说明二者的区别。",
+      "tags": [
+        "会计准则",
+        "专业基础"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "华图教育《银保监会财会岗面试真题（2017 各批次）》",
+        "url": "https://ah.huatu.com/2020/1125/1903657.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q028",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "从三个角度谈资产负债率",
+      "content": "请分别从管理者、投资者、债权人的角度，谈谈对资产负债率的看法。",
+      "tags": [
+        "财务分析",
+        "多视角"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "华图教育《银保监会财会岗面试真题（2017 各批次）》",
+        "url": "https://ah.huatu.com/2020/1125/1903657.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q029",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "如何衡量企业偿债能力",
+      "content": "如何衡量企业的偿债能力？请说明你会看哪些指标，以及各自的局限。",
+      "tags": [
+        "财务分析",
+        "偿债能力"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "搜狐《银保监会财会岗面试真题精选》",
+        "url": "https://www.sohu.com/a/434371128_120890208",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q030",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "如何看待工作留痕",
+      "content": "工作中都会要求留痕，比如以视频、图片等形式留存，以备日后查验。但有一些部门为了避免被查、追责的风险，选择不留痕，或者留的痕迹存在问题。你怎么看待工作留痕问题？",
+      "tags": [
+        "合规意识",
+        "职场观察"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "搜狐《银保监会财会岗面试真题精选》",
+        "url": "https://www.sohu.com/a/434371128_120890208",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q031",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "大额取现通融请求",
+      "content": "一位客户到网点办理20万元现金取款，但未携带身份证，且情绪激动地表示与你们行长很熟，要求你通融办理。请说明你的处理步骤，并解释涉及哪些合规要求和风险点。",
+      "tags": [
+        "合规意识",
+        "大额取现",
+        "操作流程"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q032",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "疑似假币处理",
+      "content": "客户存入5万元现金，你在清点时发现一张100元疑似假币，客户情绪激动，坚称是真钞并要求你退还。请描述你的操作流程、话术及后续处理。",
+      "tags": [
+        "反假币",
+        "现金业务",
+        "客户沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q033",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "现金流为负的贷款分析",
+      "content": "客户经理审贷时发现企业报表净利润增长，但经营性现金流连续两年为负，应收账款周转天数大幅上升。你会如何分析并形成审查意见？",
+      "tags": [
+        "财务分析",
+        "现金流",
+        "风险识别"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q034",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "最复杂柜面业务",
+      "content": "请分享一段你实际办理过的最复杂的柜面业务经历。当时遇到什么特殊情况，你如何与客户沟通、如何按流程操作，最终结果如何？",
+      "tags": [
+        "柜面操作",
+        "经历深挖",
+        "问题解决"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q035",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "成功营销经历",
+      "content": "请举例说明你曾成功向客户推荐或转介银行产品（如理财、保险、贷款）的经历。你是如何发现需求、设计方案并促成交易的？最终效果如何？",
+      "tags": [
+        "营销技巧",
+        "客户关系",
+        "产品推荐"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q036",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "合规与业绩冲突",
+      "content": "在你过往的实习或项目经历中，是否遇到过合规要求与业绩指标冲突的情形？请具体描述当时的情境、你的选择依据以及最终结果。",
+      "tags": [
+        "合规冲突",
+        "业绩压力",
+        "职业选择"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q037",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "转账未到账投诉",
+      "content": "一位客户因跨行转账未及时到账，在网点大厅大声投诉，要求立即解决并赔偿损失。作为柜员/客户经理，你会如何安抚客户并处理此事？",
+      "tags": [
+        "客户投诉",
+        "应变能力",
+        "沟通技巧"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q038",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "审批退件协调",
+      "content": "你为客户申请的贷款被风控部门退件，客户非常不满，要求你给出解释并尽快放款。你会如何与风控沟通、如何向客户说明并推进后续方案？",
+      "tags": [
+        "跨部门协作",
+        "客户沟通",
+        "风险控制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q039",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么选择银行",
+      "content": "你为什么选择应聘银行柜面/客户经理岗位？请结合你的性格特点、相关经历和对岗位工作内容的理解，谈谈未来3-5年的职业规划。",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "岗位认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.banking-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "指标压力与团队协作",
+      "content": "银行工作指标压力大，同事之间也存在业绩竞争。你如何在这种环境下保持团队协作，同时有效调节自身压力？请结合实例说明。",
+      "tags": [
+        "抗压能力",
+        "团队协作",
+        "指标压力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -388,7 +898,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

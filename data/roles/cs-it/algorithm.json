@@ -276,6 +276,509 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "cs-it.algorithm-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "过拟合诊断与正则化",
+      "content": "你在训练一个用户流失预测模型，训练集AUC 0.98但验证集只有0.72。请说明你会如何判断是过拟合还是数据分布问题，并给出至少三种缓解过拟合的具体手段及其原理。",
+      "tags": [
+        "过拟合",
+        "正则化",
+        "模型诊断"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "高基数类别特征处理",
+      "content": "CTR预估场景中，用户ID和商品ID都是高基数类别特征，One-Hot后维度爆炸且稀疏。请说明你会如何编码这些特征，对比Target Encoding、Embedding、哈希编码的优劣及防泄漏措施。",
+      "tags": [
+        "特征工程",
+        "类别特征",
+        "CTR预估"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "离线在线指标不一致排查",
+      "content": "你的推荐模型离线AUC提升0.02，但上线后点击率反而下降。请描述你会从数据、特征、模型、线上服务四个层面如何排查，并说明如何设计一个可信的线上A/B实验来验证。",
+      "tags": [
+        "实验设计",
+        "A/B测试",
+        "指标评估"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q014",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "模型推理性能优化",
+      "content": "线上服务要求单次推理延迟低于50ms，但你的BERT类模型在GPU上需要200ms。请给出至少三种优化方案（如量化、蒸馏、剪枝、ONNX/TensorRT），并分析各自对精度和工程复杂度的权衡。",
+      "tags": [
+        "模型部署",
+        "推理优化",
+        "工程落地"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "项目深挖：特征工程收益",
+      "content": "请挑一个你负责的算法项目，具体说明你做了哪些特征工程，其中哪个特征带来的收益最大，你是如何验证该特征的有效性并排除数据泄漏的？最终业务指标提升了多少？",
+      "tags": [
+        "特征工程",
+        "项目复盘",
+        "数据泄漏"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q016",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "bad case分析与解决",
+      "content": "描述一次你通过分析bad case发现模型系统性问题的经历。你如何定位根因、设计改进方案、并验证改进效果？请给出具体的评估指标变化和上线后的业务影响。",
+      "tags": [
+        "bad case",
+        "问题定位",
+        "模型迭代"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q017",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "论文复现经历",
+      "content": "请介绍一次你复现机器学习论文的经历。你遇到了哪些与论文描述不一致的地方？如何调试和验证复现结果？最终是否应用到实际业务中，效果如何？",
+      "tags": [
+        "论文复现",
+        "算法实现",
+        "持续学习"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q018",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "数据预处理与特征筛选",
+      "content": "在你的项目中，你是如何做数据清洗、缺失值处理和特征筛选的？请举例说明如何避免时间序列特征穿越和数据泄漏，以及特征筛选对模型泛化能力的影响。",
+      "tags": [
+        "数据预处理",
+        "特征筛选",
+        "泛化能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "与产品对齐指标",
+      "content": "产品经理希望提升用户停留时长，而你发现模型优化会降低点击率。你如何与产品沟通，对齐什么是最重要的业务指标？请给出你的沟通策略和量化分析思路。",
+      "tags": [
+        "跨团队沟通",
+        "指标对齐",
+        "业务理解"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q020",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "向非技术同事解释模型",
+      "content": "运营同事问你为什么模型给出这个推荐结果，但你无法直接解释深度模型。你会如何用非技术语言解释模型决策逻辑，同时管理对方对模型能力的预期？",
+      "tags": [
+        "沟通表达",
+        "模型解释",
+        "预期管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q021",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "线上故障应急处理",
+      "content": "线上模型服务突然大量超时，导致推荐结果降级。作为算法负责人，你如何快速定位是模型、特征还是工程问题？请描述你的应急排查步骤和止损方案。",
+      "tags": [
+        "线上故障",
+        "应急处理",
+        "工程能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q022",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "技术方案被质疑",
+      "content": "你提出的新模型方案在评审会上被工程团队质疑复杂度太高、维护成本大。你会如何回应？请说明你如何权衡算法收益与工程成本，并推动方案落地。",
+      "tags": [
+        "技术评审",
+        "方案推动",
+        "协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "职业规划与方向选择",
+      "content": "你为什么选择算法工程师作为职业方向？未来三年你希望自己在技术深度和业务广度上分别达到什么水平？请结合具体的学习计划或项目目标来谈。",
+      "tags": [
+        "职业规划",
+        "方向选择",
+        "学习计划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q024",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "持续学习与技术跟进",
+      "content": "算法领域更新很快，请分享你最近半年学习的一个新技术或论文，你是如何学习的？有没有应用到工作中？如果没有，你计划如何验证它的价值？",
+      "tags": [
+        "持续学习",
+        "技术跟进",
+        "应用落地"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q025",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "团队协作与反馈",
+      "content": "在团队协作中，如果你发现同事的模型实现有严重漏洞但对方很坚持，你会怎么处理？请举一个真实例子说明你如何给出反馈并推动问题解决。",
+      "tags": [
+        "技术反馈",
+        "协作沟通",
+        "问题解决"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "工作环境与压力管理",
+      "content": "算法工程师常面对实验失败和线上压力。你期望什么样的团队氛围？当多个需求同时压来时，你如何排优先级并管理自己的压力？请结合经历说明。",
+      "tags": [
+        "压力管理",
+        "优先级",
+        "团队氛围"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q027",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "过拟合的诊断与处理",
+      "content": "训练集 loss 持续下降，验证集 loss 在第 8 个 epoch 后开始上升，两者差距越来越大。请说明你如何判断这是过拟合，并给出至少三种缓解手段，分别解释它们的作用原理和适用场景。",
+      "tags": [
+        "过拟合",
+        "正则化",
+        "模型调优"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q028",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "极端不平衡下的指标选择",
+      "content": "风控场景正样本占比 0.3%，你的模型离线 AUC 达到 0.92，但业务方反馈实际拦截效果差、遗漏很多。请分析 AUC 在这种场景下可能掩盖什么问题，你会补充哪些指标和手段来定位与改进。",
+      "tags": [
+        "类别不平衡",
+        "评估指标",
+        "风控"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q029",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "离线高线上差的排查",
+      "content": "某个排序模型离线 AUC 提升 3 个点，全量上线后核心指标反而下降。请给出完整排查路径：从特征口径、样本构造、训练与推理一致性、线上线下分布几个角度，说明每一步具体怎么验证、用什么证据下结论。",
+      "tags": [
+        "数据泄漏",
+        "线上线下一致",
+        "问题排查"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q030",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "论文复现的完整过程",
+      "content": "请挑一篇你复现过的论文，说明：为什么选它、核心创新点是什么、你花了多久复现、结果与原文差多少、差距可能来自哪里。不用讲得完美，重点说清你实际跑了哪些实验、踩了哪些坑。",
+      "tags": [
+        "论文复现",
+        "实验能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q031",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "一次 bad case 分析",
+      "content": "讲一个你亲手做过 bad case 分析并推动模型改进的例子。请说明：你如何从线上数据里挑出 bad case、如何做归因分类、最终定位到哪类问题、改动之后指标变化了多少。",
+      "tags": [
+        "bad case",
+        "归因分析",
+        "模型迭代"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q032",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "项目收益的归因拆解",
+      "content": "描述你做过的一个效果提升最明显的项目。请把整体收益拆开：数据、特征、模型结构、训练策略、上线策略各贡献了多少，你是怎么验证的？如果面试官质疑其中某项只是噪声，你如何证明不是。",
+      "tags": [
+        "项目深挖",
+        "收益归因",
+        "实验设计"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q033",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "指标定义上的分歧",
+      "content": "产品经理坚持用点击率作为优化目标，你认为应该用转化率或成交额。双方各有数据支撑，会议陷入僵持。请说明你会怎么推进这次沟通，最终如何得到一个双方都认可、且可验证的结论。",
+      "tags": [
+        "跨部门沟通",
+        "目标对齐"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q034",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "线上模型效果骤降",
+      "content": "周五下午线上推荐效果突然下降，运营同事在群里连续催问原因，但你还没定位到问题。请说明接下来 30 分钟你会做什么：怎么回复对方、怎么并行排查、什么时候给出结论或临时方案。",
+      "tags": [
+        "线上故障",
+        "应急沟通",
+        "优先级"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q035",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么选择算法岗",
+      "content": "请说说你为什么想做算法工程师，而不是数据开发、后端开发或数据分析。结合你过往的一段具体经历，讲讲你在哪一刻确认自己适合这个方向，以及为此做了哪些准备。",
+      "tags": [
+        "求职动机",
+        "职业规划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q036",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "与技术同事的分歧",
+      "content": "讲一次你和同事在技术方案上产生分歧的经历：分歧点是什么、你当时怎么处理的、最后按谁的方案执行、结果如何。如果重来一次，你会在哪个环节做得不一样。",
+      "tags": [
+        "团队协作",
+        "技术分歧"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q037",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "GBDT与DNN特征处理差异",
+      "content": "在广告点击率预估场景中，你发现GBDT模型效果与DNN相当。请从特征处理、模型可解释性和训练效率三个角度，对比GBDT和DNN的差异，并说明在数据量、特征类型不同的情况下，你会如何选择模型。要求结合具体业务场景。",
+      "tags": [
+        "机器学习基础",
+        "模型选型"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q038",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "用户流失预测项目深挖",
+      "content": "请描述一个你参与的用户流失预测项目。重点说明：1）如何定义流失标签和观察窗口？2）构造了哪些时序特征，如何处理数据泄露？3）离线评估指标如何设计，上线后如何监控模型衰减？遇到的最大挑战是什么？",
+      "tags": [
+        "项目经历",
+        "特征工程",
+        "实验设计"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q039",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "与产品经理的指标分歧",
+      "content": "产品经理要求将推荐模型的点击率提升5%，但当前模型已接近瓶颈，且资源有限。你会如何与产品经理沟通？请说明你的分析思路、替代方案设计，以及如何推动双方达成一致。",
+      "tags": [
+        "跨部门沟通",
+        "业务理解"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.algorithm-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "算法工程师的持续学习",
+      "content": "算法技术迭代很快，你平时通过哪些方式保持学习？请举一个你最近学习并应用到实际工作中的新技术或论文，说明学习过程、遇到的困难以及最终产生的业务价值。",
+      "tags": [
+        "学习能力",
+        "职业规划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -392,7 +895,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full",
     "dimensionSource": "project-authored"
   }

@@ -277,6 +277,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "edu-research.research-assistant-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "细胞培养异常与污染处置",
+      "content": "你在为课题组做细胞传代，第二天发现其中一瓶培养基明显变浑浊、颜色由红转黄，其他瓶均正常。导师当天出差，带你的师兄也不在。请说明你会如何处置这瓶细胞、依据什么判断污染类型，以及后续怎样避免同类问题再次发生。",
+      "tags": [
+        "无菌操作",
+        "污染排查",
+        "规范处置"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q012",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "实验结果无法重复的排查",
+      "content": "你连续三周重复同一组Western blot，目标条带时有时无，导师要你找出原因。请描述你会从样本、抗体、试剂、操作、仪器等哪些环节逐项排查，如何设计对照来定位问题，以及排查期间怎样向导师同步进展、避免项目停摆。",
+      "tags": [
+        "实验排查",
+        "对照设计",
+        "科研思维"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q013",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "文献调研经历与检索策略",
+      "content": "请举一个你为某课题做文献调研或综述的真实例子：你用了哪些数据库、检索式和筛选标准，共检索多少篇、最终精读几篇，产出了什么（综述、汇报PPT还是方法清单）？过程中最卡的一步是什么，你如何解决？",
+      "tags": [
+        "文献检索",
+        "信息提炼",
+        "数据库"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q014",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "一项核心实验技能深挖",
+      "content": "请详细介绍你独立完成过的一项实验技能，如PCR、细胞培养、动物饲养或样品前处理：你负责其中哪些具体环节、累计做过多少次、出现过什么失败、你怎么定位并解决，以及现在重做一遍你会改进哪一步。",
+      "tags": [
+        "实验技能",
+        "失败复盘",
+        "动手能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q015",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "合作样本对接与信息补全",
+      "content": "课题组与一家医院合作，对方将寄来一批临床样本，由你负责接收、登记、分装和入库，但对接人只发来一份手写清单，缺项较多，电话也常打不通。你会如何推进这件事，确保样本信息不出错、不超时？",
+      "tags": [
+        "跨团队沟通",
+        "样本管理",
+        "细致"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q016",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "关键样品遇仪器故障",
+      "content": "周五晚上你独自在实验室跑一批关键样品，离心机突然报错停机，样品还悬在管里，而导师出差、仪器管理员联系不上，样品放置过久就会失效。请说明你会怎么处理，并解释每一步的理由。",
+      "tags": [
+        "突发应变",
+        "风险意识",
+        "决策判断"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q017",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为何选择科研助理岗位",
+      "content": "你为什么选择做科研助理，而不是直接读研或去企业？请结合你了解到的科研助理日常工作——配试剂、做基础实验、整理数据、订耗材——具体谈谈你的考虑。",
+      "tags": [
+        "求职动机",
+        "职业选择",
+        "岗位认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q018",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "对科研助理角色的理解",
+      "content": "你如何理解科研助理在课题组中的角色？如果入职后发现实际工作与预期差距很大，比如大部分时间在做耗材管理和数据录入，你会怎么调整？请结合你的性格和习惯来谈。",
+      "tags": [
+        "角色认知",
+        "心态调整",
+        "职业规划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q019",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "细胞培养污染排查",
+      "content": "你在做细胞培养时，发现培养基突然变浑浊，细胞状态变差。请描述你会如何排查污染来源，并说明后续处理步骤、需要丢弃哪些耗材，以及如何避免再次发生。",
+      "tags": [
+        "细胞培养",
+        "无菌操作",
+        "问题排查"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q020",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "PCR结果异常分析",
+      "content": "你负责的PCR实验连续三次扩增不出目的条带，但内参基因正常。请列出可能的原因，并说明你会如何设计对照实验逐步验证你的假设，最终找到问题所在。",
+      "tags": [
+        "PCR",
+        "实验设计",
+        "问题解决"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q021",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "文献快速调研",
+      "content": "导师让你在三天内调研一个你完全陌生的研究方向，并整理成一份可用的文献综述。请说明你的检索策略、筛选标准以及如何快速提炼关键信息。",
+      "tags": [
+        "文献检索",
+        "信息提炼",
+        "综述"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q022",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "危化品泄漏处理",
+      "content": "实验过程中，你不慎打翻了一瓶有机溶剂，现场有明火和同学。请描述你的第一反应和具体处理流程，并说明实验室应常备哪些应急物资。",
+      "tags": [
+        "实验室安全",
+        "应急处理",
+        "规范"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q023",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "最复杂实验经历",
+      "content": "请描述你独立完成的最复杂的一次实验，包括背景、你的角色。你遇到了什么意外？如何分析原因并调整方案？最终结果如何？如果重做，你会改进哪一步？",
+      "tags": [
+        "实验经历",
+        "问题解决",
+        "复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q024",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "实验记录与数据整理",
+      "content": "你平时如何记录实验数据？使用什么工具？请举例说明你如何保证数据可追溯、可复现，以及如何整理成导师能快速看懂的汇报材料。",
+      "tags": [
+        "实验记录",
+        "数据管理",
+        "汇报"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q025",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "文献综述写作经历",
+      "content": "你写过文献综述或参与过论文写作吗？请介绍你负责的具体部分，如何组织逻辑、处理引用格式，以及从中学到了什么。",
+      "tags": [
+        "文献综述",
+        "论文写作",
+        "经历"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q026",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "项目申报协助经历",
+      "content": "你是否协助过项目申报或结题材料整理？请描述你承担的具体工作、遇到的困难（如预算编制、附件整理），以及如何确保材料按时高质量提交。",
+      "tags": [
+        "项目申报",
+        "材料整理",
+        "细节"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q027",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "与导师意见分歧",
+      "content": "导师要求你按新方案做实验，但你根据文献和预实验认为原方案更合理。你会如何与导师沟通？如果导师坚持，你会怎么做？请说明具体步骤。",
+      "tags": [
+        "沟通",
+        "意见分歧",
+        "协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q028",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "关键实验突发中断",
+      "content": "你负责的动物实验已进行到关键时间点，但培养箱突然故障，且维修需要两天。项目结题在即，你会如何协调资源、调整方案并降低损失？",
+      "tags": [
+        "突发情况",
+        "资源协调",
+        "抗压"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q029",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "跨实验室借用仪器",
+      "content": "你需要借用其他课题组的精密仪器，但对方以繁忙为由婉拒。你会如何沟通协调？请说明具体话术、你能提供的回报，以及备选方案。",
+      "tags": [
+        "跨团队",
+        "沟通协调",
+        "资源"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q030",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "向非专业者解释研究",
+      "content": "请用最通俗的语言，向一位文科背景的家人解释你正在参与的研究课题及其意义。要求不超过三分钟，并确保对方能理解。",
+      "tags": [
+        "表达",
+        "科普",
+        "沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q031",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "求职动机与选择",
+      "content": "你毕业后为什么选择做科研助理，而不是继续读研或去企业？请结合你的教育背景和实习经历，谈谈你对这个岗位的期待和担忧。",
+      "tags": [
+        "求职动机",
+        "职业选择",
+        "规划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q032",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "职业规划与岗位匹配",
+      "content": "未来三到五年，你的职业规划是什么？科研助理这段经历在你规划中扮演什么角色？如果工作内容长期是重复性操作，你如何保持动力？",
+      "tags": [
+        "职业规划",
+        "岗位匹配",
+        "动力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q033",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "重复性工作与责任心",
+      "content": "科研助理常需处理大量重复性工作，如配液、记录、整理耗材。请举例说明你如何保证长期细致不出错，以及你如何看待这类工作对课题组的价值。",
+      "tags": [
+        "责任心",
+        "细致",
+        "重复工作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q034",
+      "stage": "hr",
+      "difficulty": "hard",
+      "title": "多次实验失败如何应对",
+      "content": "如果你的实验连续失败一个月，导师开始质疑你的能力，项目进度也受影响。你会如何调整心态和行动？请结合你过往经历中类似的挫折谈谈。",
+      "tags": [
+        "抗压",
+        "心态调整",
+        "复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q035",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "细胞培养污染排查",
+      "content": "你在协助做细胞培养实验时，发现同一批次的三个培养瓶中有两个出现培养基浑浊、pH变黄。请描述你会如何排查污染来源，并说明后续如何处理这些培养物和实验室环境。",
+      "tags": [
+        "细胞培养",
+        "污染排查",
+        "实验规范"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q036",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "PCR结果异常分析",
+      "content": "你负责的PCR实验连续三次扩增不出目的条带，而阳性对照正常、内参也正常。导师让你在半天内给出排查方案。请列出你会优先检查的环节和理由，并说明如何避免类似问题再次发生。",
+      "tags": [
+        "PCR",
+        "实验失败",
+        "问题解决"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q037",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "文献调研与综述",
+      "content": "请分享一次你为某个课题检索并整理文献的经历。你使用了哪些数据库和检索策略？如何筛选出核心文献？最终以什么形式呈现给团队？如果让你现在重新做一次，你会改进什么？",
+      "tags": [
+        "文献检索",
+        "信息整理",
+        "项目经历"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q038",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "实验记录与数据整理",
+      "content": "在过往的实验或课程项目中，你是如何记录实验数据和整理原始数据的？请具体说明记录的格式、频率和保存方式。如果导师突然要你调出三个月前某次实验的原始数据，你能在多长时间内找到并解释清楚？",
+      "tags": [
+        "实验记录",
+        "数据整理",
+        "规范习惯"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q039",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "跨组协作资源冲突",
+      "content": "你所在课题组与另一个课题组共用一台关键仪器。你急需用该仪器完成一批时间敏感的样品，但对方已预约了全天。你如何与对方沟通协调？如果协调不成，你会向导师反馈什么信息、提出哪些备选方案？",
+      "tags": [
+        "沟通协作",
+        "资源冲突",
+        "应变能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.research-assistant-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "岗位认知与期望",
+      "content": "你认为科研助理和研究生在实验室中的角色有什么不同？你期望导师和团队如何对待科研助理？如果实际工作中有大量事务性杂活，你会怎么调整心态？",
+      "tags": [
+        "岗位认知",
+        "职业期望",
+        "心态调整"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -389,7 +899,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

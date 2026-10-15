@@ -275,6 +275,346 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "finance-econ.economic-research-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "CPI与PPI背离的解读",
+      "content": "近几个月CPI同比回落至0.3%附近，PPI同比连续为负且降幅扩大。请用你熟悉的分析框架解释这种背离的可能成因，并说明它会如何影响市场对货币政策的预期。要求给出你判断时所依据的具体指标和数据来源。",
+      "tags": [
+        "宏观分析",
+        "物价数据",
+        "政策预期"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.economic-research-q012",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "设计一个预测模型",
+      "content": "假设要构建未来两个季度GDP增速的预测模型，你手头有Wind里的月度工业增加值、社融、PMI与发电量等数据。请说明你的变量选取逻辑、模型形式选择（如桥模型、VAR或状态空间）、样本区间划分与主要风险点，并解释如何避免过拟合与结构性断点问题。",
+      "tags": [
+        "计量建模",
+        "预测方法",
+        "数据处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.economic-research-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "识别数据异常与口径变化",
+      "content": "你在跟踪社融数据时发现某月同比增速与分项加总明显不符，事后确认是统计口径调整所致。请描述你在拿到原始数据后的清洗与校验流程，包括如何处理季节性、口径断裂、异常值与缺失值，以及你会如何在报告中向投资经理说明这一调整。",
+      "tags": [
+        "数据清洗",
+        "统计口径",
+        "实证研究"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.economic-research-q014",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "深挖一份研究报告",
+      "content": "请挑一份你主导或深度参与过的研究报告，说明研究问题的来源、核心假设与论证链条。重点讲：你如何从数据中发现与主流观点不一致的信号，又用什么证据说服自己改变或坚持原有结论？最终报告里哪一张图表最关键？",
+      "tags": [
+        "研究经历",
+        "论证逻辑",
+        "报告撰写"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.economic-research-q015",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "讲清一次建模的取舍",
+      "content": "请描述一次你在研究中做计量建模的完整过程：数据来源与样本量、模型设定、内生性与稳健性检验。你在其中做过哪些不得已的取舍（如变量代理、样本缩短）？如果给你再多两周和更完整的数据，你会怎么改进？",
+      "tags": [
+        "计量实证",
+        "稳健性",
+        "项目复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.economic-research-q016",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "数据终端使用习惯",
+      "content": "请介绍你在实习或研究中日常使用Wind、Bloomberg或同花顺等终端的典型工作流：从哪些板块取宏观与行业数据、如何用Excel或Python做批量处理与更新。举一个你搭建过的高频跟踪模板或自动更新脚本的实际例子。",
+      "tags": [
+        "数据终端",
+        "工具技能",
+        "工作效率"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.economic-research-q017",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "向非专业者讲清逻辑",
+      "content": "假设投资经理只有五分钟时间，且不熟悉计量术语。请现场用不超过三句话解释你最近一项研究的核心结论及其对配置的含义。之后我会追问其中一处推导，你要说明在不牺牲严谨性的前提下如何简化表达。",
+      "tags": [
+        "沟通表达",
+        "逻辑简化",
+        "路演能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.economic-research-q018",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "结论与首席意见相左",
+      "content": "你的研究结论与首席经济学家在内部会上的判断明显相反，且你的数据支撑更充分。此时你会怎么处理？请说明你如何准备证据、选择沟通时机与场合，以及如果最终仍按首席观点对外发布，你会如何在报告中留下自己的痕迹。",
+      "tags": [
+        "观点冲突",
+        "向上沟通",
+        "职业判断"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.economic-research-q019",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "突发数据大幅偏离预期",
+      "content": "某晚美国CPI数据大幅超预期，市场剧烈波动，而你第二天早上八点要交一份大类资产配置晨报。请描述你从接到消息到交稿的完整处置流程：先看什么、如何快速形成判断、如何与销售和投资经理同步，以及如何避免在情绪中做出过度解读。",
+      "tags": [
+        "市场敏感度",
+        "应急处理",
+        "政策解读"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.economic-research-q020",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么做卖方研究",
+      "content": "你同时有机会去买方或政府智库做研究，为什么最终选择这个方向？请结合你对这份工作日常节奏（晨会、路演、报告产出压力）的理解，谈谈你未来三年的能力建设重点，以及你希望被怎样的团队带。",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "岗位认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.economic-research-q021",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "用框架解释CPI与PPI背离",
+      "content": "近一年CPI同比温和、PPI同比持续为负，两者走势明显背离。请用一套宏观分析框架解释这一现象的可能成因，说明你会重点跟踪哪些分项与领先指标，并给出对未来6个月通胀路径的判断与依据。",
+      "tags": [
+        "宏观经济框架",
+        "通胀分析",
+        "数据跟踪"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.economic-research-q022",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "高频数据与季度GDP背离",
+      "content": "你负责跟踪月度高频数据。某季度PMI连续回升、社融超预期，但公布的GDP增速低于市场一致预期。请说明你会如何排查数据口径与统计方法上的差异，并判断这是短期扰动还是趋势变化，给出你的验证步骤。",
+      "tags": [
+        "高频数据",
+        "GDP分析",
+        "数据校验"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.economic-research-q023",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "为投资经理写一页降准点评",
+      "content": "央行宣布降准50BP，投资经理要求你在两小时内交出一页点评。请口述你的写作结构与核心结论：包括政策意图判断、对流动性、利率曲线和权益风格的影响，以及哪些观点需要标注为不确定，为什么。",
+      "tags": [
+        "政策解读",
+        "研究报告",
+        "市场影响"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.economic-research-q024",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "构建宏观预测模型",
+      "content": "请设计一个预测未来四个季度GDP增速的模型。说明你的变量选择逻辑、数据频率不一致（月度与季度）如何处理、样本区间如何选取，以及你打算用什么指标评估样本外预测能力、如何避免过拟合。",
+      "tags": [
+        "计量建模",
+        "宏观预测",
+        "方法论"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.economic-research-q025",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "Wind终端取数与清洗",
+      "content": "假设你要研究社融存量同比与制造业投资的关系，请描述在Wind上从取数到可建模数据的完整流程：你会选哪些指标与频率，遇到缺失值、口径调整和季节性问题分别怎么处理，最后如何验证数据质量。",
+      "tags": [
+        "数据终端",
+        "数据处理",
+        "实证研究"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.economic-research-q026",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "深挖一段研究实习经历",
+      "content": "请挑一段你最引以为傲的研究经历，说明研究问题是谁提出的、你独立完成了哪部分、用了什么数据与方法、结论是什么。如果当时给你再多两周，你会补做哪项分析来增强结论的稳健性？",
+      "tags": [
+        "经历深挖",
+        "独立研究",
+        "稳健性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.economic-research-q027",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "复盘一次结论被推翻",
+      "content": "讲一次你的研究结论被后续数据或市场证伪的经历。请具体说明：最初的逻辑链是什么、哪一环出了错、你是如何发现并修正的，以及这件事之后你在研究流程上增加了什么习惯或检查项。",
+      "tags": [
+        "经历深挖",
+        "复盘反思",
+        "研究流程"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.economic-research-q028",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "从选题到路演的完整报告",
+      "content": "请介绍一份你写过的深度报告，从选题、搭框架、找数据、形成结论到向客户或导师汇报。重点说明你如何确定核心论点、如何取舍材料，以及听众提出的最难回答的一个问题是什么、你当时怎么应对。",
+      "tags": [
+        "报告撰写",
+        "路演沟通",
+        "选题逻辑"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.economic-research-q029",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "与权益研究员观点冲突",
+      "content": "你从宏观数据判断经济将放缓，但权益研究员认为其覆盖行业景气度上行、不应减仓。请现场模拟你与他的沟通：你会先确认什么、用什么证据推进对话，以及如果最终无法达成一致，如何向上汇报与落地决策。",
+      "tags": [
+        "跨部门协作",
+        "观点分歧",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.economic-research-q030",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "数据源冲突下的应急判断",
+      "content": "路演开始前30分钟，你发现报告关键图表所用数据与国家统计局最新修订值不一致，结论可能受影响。请说明你的处置顺序：是否照原稿讲、如何向客户说明、后续如何补救，并解释你判断优先级的依据。",
+      "tags": [
+        "突发情况",
+        "应变能力",
+        "数据准确性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -379,7 +719,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

@@ -277,6 +277,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "law-public.civil-servant-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "会议通知撰写要点",
+      "content": "单位拟召开年度工作总结部署会，领导让你起草会议通知。请说明通知应包含哪些核心要素，并谈谈如何确保参会人员准确理解会议要求和时间安排。",
+      "tags": [
+        "公文写作",
+        "会议通知",
+        "办文办会"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "惠企政策落地遇阻",
+      "content": "你所在单位负责落实一项惠企补贴政策，但部分小微企业反映申报材料多、流程长，不愿申报。领导让你牵头优化，你会如何调研、协调并推动政策落地？",
+      "tags": [
+        "政策执行",
+        "沟通协调",
+        "服务企业"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "执法对象不配合",
+      "content": "你在执法检查中发现某商户占道经营，当事人以“别人也这样”为由拒绝整改，并引来群众围观。请说明你会如何依法处置，既维护执法权威又避免冲突升级。",
+      "tags": [
+        "依法行政",
+        "应急处理",
+        "群众工作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q014",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "老旧小区加装电梯",
+      "content": "老旧小区加装电梯，高层住户迫切希望推进，低层住户因采光、噪音和费用分摊强烈反对，双方多次争执。作为街道工作人员，你如何组织协商、平衡利益并推动问题解决？",
+      "tags": [
+        "群众工作",
+        "矛盾调解",
+        "基层治理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q015",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "组织过的活动经历",
+      "content": "请举一个你实际参与组织或协调的活动、项目或任务，说明你的具体角色、遇到的困难以及最终成效。重点谈谈你从中获得了哪些与公职工作相关的能力。",
+      "tags": [
+        "经历深挖",
+        "组织协调",
+        "能力迁移"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q016",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "撰写调研报告经历",
+      "content": "请分享一次你撰写调研报告或公文材料的经历。你是如何确定框架、收集数据、核实信息并反复修改的？最终成果发挥了什么作用？",
+      "tags": [
+        "公文写作",
+        "调研能力",
+        "文字表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "调解矛盾的具体案例",
+      "content": "请描述一次你处理群众诉求或调解矛盾的真实经历。当时矛盾焦点是什么？你采取了哪些沟通策略？结果如何？如果重来一次，你会怎么改进？",
+      "tags": [
+        "群众工作",
+        "沟通协调",
+        "经历深挖"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q018",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "政策与实际冲突时",
+      "content": "请回忆一次你在实习或工作中执行某项政策、制度时，发现与基层实际情况存在冲突的经历。你如何向上级反映？提出了哪些调整建议？最终效果如何？",
+      "tags": [
+        "政策执行",
+        "问题反馈",
+        "经历深挖"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q019",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "窗口排队群众急躁",
+      "content": "你在政务大厅窗口值班，因系统故障导致排队时间过长，群众情绪激动，有人大声抱怨并要求见领导。你如何处理现场，既安抚情绪又维持秩序？",
+      "tags": [
+        "应急处理",
+        "群众沟通",
+        "窗口服务"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "多部门协作推诿",
+      "content": "你负责牵头一项跨部门联合整治任务，但其中两个部门以人手不足为由拖延配合，导致进度滞后。你如何协调各方、明确责任并推动任务按时完成？",
+      "tags": [
+        "沟通协调",
+        "跨部门协作",
+        "计划组织"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "网络舆情应对",
+      "content": "网上出现一段视频，称你单位办事窗口“脸难看、事难办”，引发大量转发。领导让你牵头处理。你会如何核实情况、回应舆论并整改提升？",
+      "tags": [
+        "舆情应对",
+        "应急处理",
+        "机关形象"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q022",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "紧急数据上报任务",
+      "content": "下班后你接到紧急通知，要求两小时内上报一项重要数据，但负责该项工作的同事已休假且联系不上，其他同事不熟悉情况。你如何确保数据准确并按时上报？",
+      "tags": [
+        "应急处理",
+        "责任担当",
+        "沟通协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "分配偏远乡镇意愿",
+      "content": "如果你被录用后被分配到偏远乡镇，工作条件艰苦、通勤不便，你如何考虑？请结合你的家庭情况和个人意愿，谈谈你的真实想法和应对计划。",
+      "tags": [
+        "求职动机",
+        "基层服务",
+        "岗位认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q024",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "理解群众事无小事",
+      "content": "你如何理解“群众事无小事”？请结合你的学习或实践经历，谈谈你为他人解决实际困难的一次具体事例，以及你从中获得的体会。",
+      "tags": [
+        "服务意识",
+        "群众工作",
+        "价值观"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "长期加班与压力",
+      "content": "公职岗位常面临临时任务、加班和考核压力，有时还要承受群众误解。你过去如何应对高压情境？请举例说明你的调节方法和心理准备。",
+      "tags": [
+        "抗压能力",
+        "情绪管理",
+        "职业适应"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "个人安排与工作冲突",
+      "content": "你已安排好休假，但单位临时有紧急任务需要你取消休假返岗。你会如何处理？请说明你如何与家人沟通，以及你对公职工作“舍与得”的理解。",
+      "tags": [
+        "责任担当",
+        "价值观",
+        "沟通协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q027",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "AI 辅助量刑与数字黑洞",
+      "content": "法院系统用 AI 辅助量刑，通过整合数据运用 AI 断案，律师担心这会带来「数字黑洞」。对此你怎么看？",
+      "tags": [
+        "司法改革",
+        "技术伦理"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "山东人才就业网《陕西省公务员面试（执法、公检法）真题》",
+        "url": "https://jiufengsw.com/index.php?a=shows&catid=166&id=55840",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q028",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "法要兼顾人情与群众找关系",
+      "content": "三句话：法要兼顾人情；法不外乎人情；群众遇到问题优先找关系而非法律。谈谈你的认识。",
+      "tags": [
+        "法理人情",
+        "法治现状"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "山东人才就业网《陕西省公务员面试（执法、公检法）真题》",
+        "url": "https://jiufengsw.com/index.php?a=shows&catid=166&id=55840",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q029",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "醉酒纠纷引发围观拍照",
+      "content": "有一酒醉人员与一餐馆老板之间产生矛盾纠纷，导致周边人群围观拍照。作为现场执法人员，你该怎么办？",
+      "tags": [
+        "现场执法",
+        "舆情处置"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "山东人才就业网《陕西省公务员面试（执法、公检法）真题》",
+        "url": "https://jiufengsw.com/index.php?a=shows&catid=166&id=55840",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q030",
+      "stage": "hr",
+      "difficulty": "hard",
+      "title": "律师朋友几年买房而公务员买不起",
+      "content": "你的朋友做律师，几年内就可以买车买房，你做公务员几年都买不起，请问你怎么看？",
+      "tags": [
+        "职业选择",
+        "价值观"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "华图教育《广东法检系统公务员面试真题》",
+        "url": "https://v.huatu.com/htnews/guangdong/gongwuyuan/mianshi/2011/0511/25409.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q031",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "旧清单与新政策",
+      "content": "单位推行“高效办成一件事”改革，窗口要求精简材料，但一位老年群众坚持按旧清单准备了很多复印件，认为减少材料以后会出问题。领导让你负责解释并办理，你会如何把握政策要求与群众顾虑？",
+      "tags": [
+        "政策执行",
+        "群众沟通",
+        "窗口服务"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q032",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "零散数据写调研报告",
+      "content": "领导要求你根据三个科室提供的零散数据，起草一份关于优化营商环境、解决企业“反复跑”问题的调研报告，下周一上会。数据口径不一致，部分案例无佐证。你如何核实、取舍并形成有决策参考价值的报告？",
+      "tags": [
+        "公文写作",
+        "调研分析",
+        "数据核实"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q033",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "河道违建分类处置",
+      "content": "某乡镇开展河道违建集中整治，部分违建涉及历史遗留和村民唯一住房，上级要求限期拆除，村民情绪激动。作为承办人员，你如何在依法行政前提下提出分类处置建议，并防范法律与舆情风险？",
+      "tags": [
+        "依法行政",
+        "矛盾化解",
+        "风险防范"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q034",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "一次基层走访复盘",
+      "content": "请结合你参与过的一次基层走访、调研或志愿服务，说明你如何确定访谈对象、设计问题，并处理群众不愿说真话的情况。最终你形成了什么可验证的成果或建议？",
+      "tags": [
+        "经历深挖",
+        "基层调研",
+        "群众工作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q035",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "多方协调任务经历",
+      "content": "描述一次你协调多方（如社区、物业、主管部门、同事）共同完成任务或活动的经历。你遇到的最大阻力是什么？如何分工、排期和推动？如果重来，你会在哪一步设置检查点？",
+      "tags": [
+        "项目协调",
+        "沟通协作",
+        "复盘改进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q036",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "主笔公文被大幅修改",
+      "content": "请举一份你独立或主要参与撰写的公文、报告或方案。说明背景、领导要求、你如何搭框架、核数据、征求意见。若领导后来大幅修改甚至否定，你如何复盘并改进？",
+      "tags": [
+        "公文写作",
+        "经历深挖",
+        "抗压改进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q037",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "大厅群众录像投诉",
+      "content": "你在政务大厅值班，一名群众因办证材料不全无法办理，突然大声指责“故意刁难”，并拿出手机录像，周围群众围观。你只有一名同事可支援。你会如何现场处置、沟通并完成后续办理？",
+      "tags": [
+        "应急处理",
+        "群众沟通",
+        "舆情意识"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q038",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "跨部门数据拖延",
+      "content": "你牵头一项需要多个部门提供数据的专项工作，但某部门以“人手不足”为由反复拖延，截止日期临近。你如何在不激化矛盾的前提下推动对方配合，并向领导汇报进度？",
+      "tags": [
+        "跨部门协调",
+        "进度管理",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q039",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "偏远岗位与晋升慢",
+      "content": "你报考公务员或事业单位，如果被分配到偏远乡镇或窗口岗位，工作重复琐碎、晋升较慢，你如何看待？请结合个人经历说明你的职业预期和长期坚持的理由。",
+      "tags": [
+        "求职动机",
+        "岗位认知",
+        "职业规划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.civil-servant-q040",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "评优竞争与协作",
+      "content": "你所在科室年终评优名额有限，你和一位平时合作很多的同事都是候选人。领导让你先准备自己的事迹材料，同时参与汇总大家材料。你会如何处理竞争与协作关系？",
+      "tags": [
+        "团队协作",
+        "职业操守",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -397,7 +907,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

@@ -277,6 +277,380 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "ee-telecom.ic-design-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "触发器与锁存器的区别",
+      "content": "触发器（Flip-flop）与锁存器（Latch）有什么区别？各自适用于什么场景？",
+      "tags": [
+        "数字电路",
+        "基础概念"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.ic-design-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "NPN 与 PNP 三极管的区别",
+      "content": "三极管的工作原理是什么？NPN 型与 PNP 型有什么区别，各自常用在什么场合？",
+      "tags": [
+        "模拟电路",
+        "元器件"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.ic-design-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "异步复位同步释放设计",
+      "content": "请用Verilog实现一个异步复位、同步释放的复位同步电路，并说明在跨时钟域设计中为什么不能直接使用异步复位信号？请画出电路结构或写出关键代码。",
+      "tags": [
+        "复位同步",
+        "亚稳态",
+        "RTL设计"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.ic-design-q014",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "时钟偏斜对时序影响分析",
+      "content": "在一个同步电路中，如果时钟树存在偏斜（skew），请分析它对建立时间和保持时间裕量的影响，并说明如何通过RTL设计或时序约束来缓解这种影响。",
+      "tags": [
+        "时序分析",
+        "时钟偏斜",
+        "STA"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.ic-design-q015",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "RTL时钟门控与低功耗",
+      "content": "设计一个低功耗模块，要求在空闲时自动关闭时钟以降低动态功耗。请描述你会在RTL中如何实现时钟门控（clock gating），并说明使用门控时钟时需要注意哪些时序和测试问题。",
+      "tags": [
+        "低功耗",
+        "时钟门控",
+        "PPA"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.ic-design-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "RTL模块微架构与PPA权衡",
+      "content": "请描述你参与过的一个RTL模块设计项目，你是如何从规格书推导出微架构的？在面积、功耗、性能之间做了哪些权衡？最终PPA结果如何？",
+      "tags": [
+        "项目经历",
+        "微架构",
+        "PPA权衡"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.ic-design-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "UVM验证平台搭建与调试",
+      "content": "在验证过程中，你如何搭建UVM验证平台？遇到过哪些难以复现的bug？请具体说明你是如何定位和解决这些问题的。",
+      "tags": [
+        "UVM验证",
+        "调试",
+        "项目经验"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.ic-design-q018",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "综合后时序违例分析与优化",
+      "content": "你负责的模块在逻辑综合后出现了时序违例（setup/hold），请具体说明你如何分析违例路径，并采取了哪些RTL或约束优化措施？最终是否收敛？",
+      "tags": [
+        "时序收敛",
+        "逻辑综合",
+        "RTL优化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.ic-design-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "与后端协作处理拥塞问题",
+      "content": "与后端团队协作时，如果后端反馈你的RTL在物理实现上出现严重的拥塞或时钟树问题，你会如何沟通和调整设计？请举例说明。",
+      "tags": [
+        "跨团队协作",
+        "后端交互",
+        "沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.ic-design-q020",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "软件需求变更的评估与推进",
+      "content": "假设你正在负责一个模块，软件团队突然要求增加一个寄存器配置功能以支持新特性，但项目进度很紧，你会如何评估和推进？",
+      "tags": [
+        "需求变更",
+        "优先级",
+        "跨部门协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.ic-design-q021",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "职业动机与规划",
+      "content": "你为什么选择数字IC设计作为职业方向？未来3-5年的职业规划是什么？请结合你对行业的理解谈谈。",
+      "tags": [
+        "职业动机",
+        "职业规划",
+        "行业理解"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.ic-design-q022",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "技术分歧处理实例",
+      "content": "在团队合作中，如果你和同事在技术方案上产生分歧，你会如何处理？请举一个具体例子说明你的沟通和决策过程。",
+      "tags": [
+        "团队协作",
+        "冲突解决",
+        "沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.ic-design-q023",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "亚稳态与跨时钟域同步",
+      "content": "在数字IC设计中，当信号从快时钟域传到慢时钟域时，如果直接采样可能会产生亚稳态。请解释亚稳态产生的原因，并说明你会如何设计同步器来避免它？如果用两级触发器同步，对时钟频率和信号宽度有什么要求？",
+      "tags": [
+        "跨时钟域",
+        "亚稳态",
+        "同步器"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.ic-design-q024",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "异步FIFO设计与验证",
+      "content": "请设计一个异步FIFO用于跨时钟域数据传输，要求：深度16，数据位宽8bit。请说明你的指针编码方式（二进制还是格雷码）、空满判断逻辑，以及如何避免亚稳态。如果读写时钟频率相差10倍，设计上需要额外考虑什么？",
+      "tags": [
+        "异步FIFO",
+        "格雷码",
+        "跨时钟域"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.ic-design-q025",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "静态时序分析违例修复",
+      "content": "在逻辑综合后的STA中，你发现某条路径存在setup违例，slack为-0.3ns。请描述你的排查思路：如何判断是逻辑级数过多、时钟不确定性设置过紧，还是布局布线延迟导致？你会采取哪些RTL或约束层面的优化措施？",
+      "tags": [
+        "STA",
+        "时序收敛",
+        "setup违例"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.ic-design-q026",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "最有挑战的RTL模块",
+      "content": "请介绍你做过的一个最有挑战的RTL设计模块。要求说明：模块功能、你负责的部分、架构划分、时钟复位策略、代码行数或规模，以及你在设计过程中遇到的最棘手的问题和最终解决方案。",
+      "tags": [
+        "项目经历",
+        "RTL设计",
+        "架构划分"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.ic-design-q027",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "验证平台与覆盖率收集",
+      "content": "在你参与的项目中，你是如何搭建验证平台并收集功能覆盖率的？请具体说明：用了什么验证方法学（如UVM）、覆盖率模型如何定义、如何确保覆盖率达到100%，以及发现过哪些典型的RTL bug？",
+      "tags": [
+        "验证方法学",
+        "UVM",
+        "功能覆盖率"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.ic-design-q028",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "项目中的PPA优化实践",
+      "content": "请结合你参与过的项目，谈谈你是如何在性能、功耗和面积之间做权衡的。举一个具体例子：你做了什么优化（如流水线切割、门控时钟、资源共享），带来了多少PPA收益，又付出了什么代价？",
+      "tags": [
+        "PPA",
+        "低功耗设计",
+        "面积优化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.ic-design-q029",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "与后端团队时序收敛协作",
+      "content": "后端团队反馈你的模块在布局布线后时序无法收敛，需要你修改RTL。但你认为问题出在后端约束或布局上。你会如何与后端工程师沟通推进？请描述你的具体步骤和沟通要点。",
+      "tags": [
+        "跨团队协作",
+        "时序收敛",
+        "沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.ic-design-q030",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "与软件驱动团队联调",
+      "content": "芯片回片后，软件驱动团队反馈某个寄存器的读写行为与设计文档不符，但你认为RTL实现完全符合规格。你会如何定位问题并推动解决？请描述排查步骤和沟通方式。",
+      "tags": [
+        "软硬件联调",
+        "寄存器",
+        "问题定位"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.ic-design-q031",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "从校园到职场的角色转变",
+      "content": "从学生到集成电路设计工程师，你认为最大的挑战是什么？你打算如何快速融入团队、提升工程能力？请举例说明你自主学习一项新技术或工具的经历。",
+      "tags": [
+        "角色转变",
+        "学习能力",
+        "工程素养"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.ic-design-q032",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "团队协作与压力应对",
+      "content": "在项目进度紧张、任务繁重时，你是如何安排优先级并保证交付质量的？请结合一个具体事例，说明你如何与团队成员协作克服困难。",
+      "tags": [
+        "团队协作",
+        "压力管理",
+        "优先级"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -398,7 +772,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

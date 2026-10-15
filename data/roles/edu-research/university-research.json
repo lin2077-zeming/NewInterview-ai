@@ -277,6 +277,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "edu-research.university-research-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "新方向选题与方案设计",
+      "content": "假设你入职某高校后，发现学院现有强势方向已高度饱和，学院希望你在三到五年内开辟新的研究增长点。请以你博士期间的工作为基础，说明你会如何选定一个可立项的课题、设计怎样的技术路线，以及预判最可能失败的环节并提前准备替代方案。",
+      "tags": [
+        "科研选题",
+        "方案设计",
+        "创新能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q012",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "抽象概念试讲与检验",
+      "content": "请用5分钟，向本院非本专业的大二学生讲清你研究领域的一个核心概念。要求不使用公式，至少结合一个生活实例；讲完后请说明你会设计什么问题当场检验学生是否真正理解，而不是只会复述定义。",
+      "tags": [
+        "教学表达",
+        "概念讲解",
+        "课堂设计"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q013",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "代表成果深度复盘",
+      "content": "请挑一项你最具代表性的研究成果（论文、专利或项目），说明问题是怎么被发现的、你个人承担的不可替代工作是什么、遇到的最大技术瓶颈如何突破。如果今天让你重做，你会在哪一个环节改进，为什么？",
+      "tags": [
+        "成果复盘",
+        "科研能力",
+        "技术瓶颈"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q014",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "项目全流程参与情况",
+      "content": "请介绍你参与过的一个科研项目：从立项到结题你具体负责哪些环节，包括进度安排与经费使用；过程中最棘手的问题是什么，你如何协调资源解决；最终结题或验收结果如何，你的个人贡献用什么指标衡量。",
+      "tags": [
+        "项目经历",
+        "经费管理",
+        "进度把控"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q015",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "课堂被学生当场质疑",
+      "content": "你讲课时，一名学生当场指出你的PPT推导与教材不一致，语气略带挑衅，教室里瞬间安静。请现场演示你接下来两分钟的处理方式，并说明课后你会做哪几件事——包括如果确实是你讲错了，你该怎么办。",
+      "tags": [
+        "课堂应变",
+        "沟通表达",
+        "教学反思"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q016",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "跨学科合作方案分歧",
+      "content": "你与另一学院团队合作申报交叉学科项目，对方坚持采用他们熟悉的数据采集方案，而你认为这会导致你的核心假设无法验证，此时距申报截止仅剩一周。请说明你会怎样沟通、如何取舍，以及在什么条件下你会选择退出这次合作。",
+      "tags": [
+        "跨学科协作",
+        "冲突处理",
+        "资源协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q017",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "教学科研平衡与承诺",
+      "content": "多数高校实行预聘—长聘考核，教学课时与科研产出互相挤压。请结合你自己的节奏说明会如何分配每周时间，若第三年成果未达预期你打算怎么应对，以及在什么情况下你会考虑离开学术岗位。",
+      "tags": [
+        "职业动机",
+        "长期承诺",
+        "压力应对"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q018",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "研究生数据修饰处理",
+      "content": "你指导的一名研究生提交的图表数据存在明显修饰痕迹，学生辩称只是“美化”，而他正面临毕业压力。作为导师你会如何处理这名学生、这份数据以及后续论文署名？这件事是否应当上报学院？",
+      "tags": [
+        "学生指导",
+        "学术道德",
+        "导师责任"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q019",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "抽象概念五分钟试讲",
+      "content": "请你从本专业中选一个最抽象的核心概念，假设台下是刚入学、毫无专业基础的大一新生，用五分钟完成一次课堂导入与讲解。要求至少设计一个生活化类比，并说明你会用什么提问来检验学生是否真正理解了，而不只是记住了定义。",
+      "tags": [
+        "课堂试讲",
+        "概念讲解",
+        "教学设计"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q020",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "领域瓶颈的研究方案设计",
+      "content": "你所在研究方向目前存在一个公认瓶颈，例如方法可复现性差或样本量难以扩大。请现场提出一个可在三年内完成、经费约五十万元的课题：说明你要解决的科学问题、技术路线、关键实验设计，并指出最可能失败的环节和你的备选方案。",
+      "tags": [
+        "研究设计",
+        "科学问题",
+        "技术路线"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q021",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "异常数据的判断与处理",
+      "content": "你带的研究生在重复实验中连续三次得到与预期不符、但彼此高度一致的结果。你会如何引导他判断这属于操作失误、模型假设错误还是潜在的新发现？请说明你会让他先补做哪些对照实验、如何留痕记录，再决定是否写入论文。",
+      "tags": [
+        "实验设计",
+        "数据判断",
+        "科研指导"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q022",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "新开课程的备课思路",
+      "content": "学院安排你下学期开设一门你此前没有系统讲过、但与研究方向相关的专业选修课。请说明你会如何在两周内搭建课程框架：如何选定教材与前沿文献、如何平衡经典理论与最新进展、如何设计平时成绩与期末考核方式。",
+      "tags": [
+        "课程设计",
+        "备课",
+        "考核方式"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q023",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "代表作从选题到发表",
+      "content": "请挑一篇你最具代表性的论文，还原它从选题到发表的全过程：最初的想法从何而来、预实验遇到什么障碍、审稿人最尖锐的意见是什么、你如何回应和修改。请具体到时间节点以及你个人独立承担的部分。",
+      "tags": [
+        "代表作",
+        "论文发表",
+        "经历核实"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q024",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "项目经费与节点管理",
+      "content": "请介绍你主持或深度参与过的一个科研项目：总经费多少、分为哪几个里程碑、你如何分配经费与人力、有没有出现过进度滞后。如果项目需延期三个月，你会优先压缩哪部分工作，又如何向资助方说明？",
+      "tags": [
+        "项目申请",
+        "经费管理",
+        "进度控制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q025",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "原创贡献边界追问",
+      "content": "评审专家质疑：你自认为最具原创性的工作，与某团队两年前发表的结果在结论上高度相似。请具体说明你的工作与它究竟差在哪里——是问题设定、方法路径、数据规模还是机制解释？并给出能证明这一差异的关键证据。",
+      "tags": [
+        "原创性",
+        "学术贡献",
+        "答辩追问"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q026",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "学术会议报告经历",
+      "content": "请讲一次你在学术会议上做报告或海报展示的经历：参会者提出了哪些你没准备过的问题，你当时怎么回应？会后是否有人因此与你建立合作？这次经历让你在学术交流方式上做了哪些具体调整？",
+      "tags": [
+        "学术交流",
+        "会议报告",
+        "合作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q027",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "合作中的署名与数据分歧",
+      "content": "你与校外团队合作一年多，对方突然要求把共同第一作者改为他们团队的学生，理由是数据由他们采集。此时论文已投出，而你的学生即将毕业需要这篇成果。请说明你会如何处理：先沟通什么、底线在哪里、如何保护学生权益。",
+      "tags": [
+        "署名争议",
+        "沟通协商",
+        "学生权益"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q028",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "课堂上的公开质疑",
+      "content": "课堂上你正在讲解自己论文的结论，一名高年级学生当场指出某篇文献与你的结论相反，并质疑你的样本量不足，全班安静下来。请现场演示你接下来三分钟的处理方式，需兼顾课堂秩序、学术严谨与对学生质疑精神的保护。",
+      "tags": [
+        "课堂应变",
+        "学术质疑",
+        "教学机智"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q029",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "研究生情绪与去留处理",
+      "content": "你指导的研二学生在组会上被企业合作方当面否定方案后情绪低落，两周未推进工作，并私下表示想退学。请说明你会如何介入：先做什么、谈什么、如何与合作方沟通、如何判断这是课题本身的问题还是学生的心理状态问题。",
+      "tags": [
+        "学生指导",
+        "心理支持",
+        "多方沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q030",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "非专业听众的科普表达",
+      "content": "学校要求你做一场面向全校本科生的科普讲座，主题是你所在领域的前沿方向，听众来自文史、艺术等专业。请现场用两分钟说明你会如何开场，并举例说明你会删掉哪些专业术语、替换成什么样的表达。",
+      "tags": [
+        "科普表达",
+        "通俗化",
+        "跨专业沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q031",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为何选择高校教职",
+      "content": "以你的科研产出，去企业研发部门或研究院所也能拿到offer，收入可能更高。请说明你为什么选择高校教师岗位，并具体谈谈你更看重其中哪一部分——课堂、自由探索的研究，还是学生培养。",
+      "tags": [
+        "职业动机",
+        "岗位认知",
+        "求职意愿"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q032",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "入职后五年职业规划",
+      "content": "请谈谈入职后第一个五年你的具体规划：打算发表什么层次和数量的成果、申请哪一类项目、开设哪些课程、培养几名学生。如果三年后聘期考核显示科研指标未达标，你会调整哪一项，又不会放弃哪一项？",
+      "tags": [
+        "职业规划",
+        "聘期考核",
+        "目标管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q033",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "融入新课题组的边界",
+      "content": "你入职的院系已有一个成熟团队，研究方向与你相近，但存在资源与招生名额上的竞争。你会如何在一年内既做出自己的独立学术标签，又不被视为单干？请给出具体的合作切入点和沟通节奏。",
+      "tags": [
+        "团队融入",
+        "合作边界",
+        "资源协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q034",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "平台条件有限时的选择",
+      "content": "我们学校的实验平台和生源与顶尖高校有差距，科研启动经费也有限。请说明你会如何在这一条件下安排前两年的研究，是否会调整研究方向或缩小选题规模？如果之后收到更好平台的机会，你会如何权衡？",
+      "tags": [
+        "平台匹配",
+        "长期承诺",
+        "资源适配"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q035",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "青基选题与方案设计",
+      "content": "假设你准备申请国家自然科学基金青年项目，请结合你的研究基础，简要说明选题依据、拟解决的关键科学问题、研究方案及创新点。若评审专家认为你的方案可行性不足，你会如何补充论证？",
+      "tags": [
+        "科研创新",
+        "项目申请",
+        "方案设计"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q036",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "核心概念课堂导入",
+      "content": "请从你专业领域中选择一个核心概念，面向大二学生设计一段5分钟的课堂导入。要求说明你如何用生活案例或问题链激发兴趣，并自然引出概念定义与后续教学安排。",
+      "tags": [
+        "教学表达",
+        "课堂设计",
+        "导入"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q037",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "博士创新成果深挖",
+      "content": "请详细介绍你博士期间最具创新性的一项研究成果：研究问题是什么？你如何设计方法、克服关键困难？该成果在领域内的贡献与局限分别是什么？如果让你现在改进，你会从哪入手？",
+      "tags": [
+        "科研能力",
+        "成果深挖",
+        "学术贡献"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q038",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "项目申请书撰写经历",
+      "content": "你曾参与撰写过哪项科研项目申请书？请以其中一项为例，说明你如何凝练科学问题、设计技术路线，以及如何根据评审意见修改完善。你在其中承担了哪些具体工作？",
+      "tags": [
+        "项目申请",
+        "经历深挖",
+        "技术路线"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q039",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "学生当众质疑应对",
+      "content": "你在讲课时，一名学生当众指出你PPT上的一个数据错误，语气有些激动。此时全班都在看着你，你会如何回应？请现场模拟你的处理方式，并说明这样做的理由。",
+      "tags": [
+        "课堂应变",
+        "沟通表达",
+        "师生互动"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.university-research-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "职业动机与岗位匹配",
+      "content": "很多博士毕业生选择去企业研发或科研院所，你为什么更倾向于高校教师与科研岗位？请结合你的性格、经历和职业价值观，谈谈你与这个岗位最匹配的特质。",
+      "tags": [
+        "职业动机",
+        "岗位匹配",
+        "价值观"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -397,7 +907,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

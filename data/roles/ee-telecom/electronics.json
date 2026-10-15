@@ -277,6 +277,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "ee-telecom.electronics-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "ADC分压采样电路设计",
+      "content": "客户要求用3.3V单片机ADC采集0-10V直流母线电压，采样精度±1%。请说明你如何设计前端分压与保护电路，如何计算电阻取值，并考虑ADC输入阻抗和滤波电容对精度的影响。",
+      "tags": [
+        "电路基础",
+        "ADC采样",
+        "分压电路"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "I2C总线上拉与死锁",
+      "content": "某板卡I2C总线上挂一个EEPROM和一个传感器，通信偶发失败，示波器看到上升沿明显变缓。请分析可能原因，说明上拉电阻如何计算、总线电容限制，以及从机死锁时你如何用仪器定位并恢复。",
+      "tags": [
+        "I2C",
+        "硬件调试",
+        "信号完整性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "Buck电源纹波超标整改",
+      "content": "一款12V转3.3V/3A的Buck电路，在负载从0.5A跳变到3A时输出纹波超过200mV，且开关节点有振铃。请从电感、输出电容、环路补偿、布局回路和探头测量方法等方面给出排查与整改思路。",
+      "tags": [
+        "电源设计",
+        "DC-DC",
+        "硬件调试"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q014",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "高速信号完整性分析",
+      "content": "一块四层板上的SPI时钟频率为50MHz，通信时误码率随温度升高而增加。请说明你会如何用示波器与频谱仪检查过冲、振铃和地弹，如何评估走线阻抗、参考平面完整性与端接电阻，并给出可落地的改板措施。",
+      "tags": [
+        "信号完整性",
+        "PCB设计",
+        "EMC"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "硬件模块选型与计算",
+      "content": "请挑一个你主导过的硬件模块，说明输入输出需求、关键器件选型依据、参数计算过程，以及你如何验证计算与实测一致。若当时选型有误，你是通过什么数据发现并纠正的？",
+      "tags": [
+        "项目经历",
+        "器件选型",
+        "电路设计"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "多层板叠层与布局规划",
+      "content": "描述你做过的一块多层PCB：叠层如何安排、地平面如何分割、敏感模拟信号与高速数字信号如何隔离，电源平面和去耦电容如何布置。请给出当时最棘手的一处布局冲突及你最终的取舍。",
+      "tags": [
+        "PCB设计",
+        "布局布线",
+        "叠层设计"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "样机首次上电检查",
+      "content": "回忆一次样机首次上电调试：上电前你做了哪些检查？上电后若电流异常、无输出或芯片发烫，你按什么顺序隔离故障？请具体到用了哪些仪器、测了哪些点、如何判断是焊接、器件还是设计问题。",
+      "tags": [
+        "硬件调试",
+        "样机上电",
+        "故障定位"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q018",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "EMC整改与量产",
+      "content": "请讲一个你经历过的EMC整改案例：是辐射还是传导超标，频率点是多少，最初怀疑哪些路径？你如何通过近场探头、电容电感调整、屏蔽或接地改造把余量做到量产要求，并验证一致性？",
+      "tags": [
+        "EMC整改",
+        "量产",
+        "硬件测试"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "软硬件问题归属争论",
+      "content": "软件同事坚持说系统死机是硬件不稳定，你初步测量电源和时钟都正常。你会如何设计联合排查步骤、收集哪些证据、怎样在会议上推动定位，而不陷入互相指责？",
+      "tags": [
+        "跨部门协作",
+        "问题定位",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q020",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "结构与散热空间冲突",
+      "content": "结构工程师告知外壳厚度增加，原定散热片高度必须压缩一半，但芯片满载温度已接近上限。你会如何与结构、热设计和采购沟通，提出哪些硬件替代方案，并如何验证可靠性？",
+      "tags": [
+        "跨领域协作",
+        "散热设计",
+        "沟通协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "关键芯片交期延长",
+      "content": "项目量产前两个月，采购通知你选定的MCU交期从4周延长到26周。你会从哪些角度评估替代料、改板成本与认证风险？请说明你如何与采购、软件、项目经理协作制定应对计划。",
+      "tags": [
+        "供应链协作",
+        "替代选型",
+        "项目管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q022",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "客户现场批量故障应对",
+      "content": "客户现场反馈一批设备在低温启动时随机死机，影响交付。你作为硬件负责人，如何远程指导现场收集数据、安排实验室复现、协调软件和结构团队，并在最短时间内给出临时与长期措施？",
+      "tags": [
+        "突发应对",
+        "跨团队协作",
+        "硬件调试"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "硬件方向三年规划",
+      "content": "未来三年你希望在硬件领域深耕哪个方向，例如电源、高速信号、EMC或汽车电子？请结合你目前的短板，说明你会通过哪些具体项目或学习计划来补齐，并如何衡量自己是否达成。",
+      "tags": [
+        "职业规划",
+        "求职动机",
+        "成长路径"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q024",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "多项目进度冲突",
+      "content": "如果你同时负责两个项目的硬件调试，一个临近量产、一个刚投板，资源只够优先推进一个。你会如何评估优先级、向上沟通并安排自己的时间？请举一个你实际处理过的类似情境。",
+      "tags": [
+        "时间管理",
+        "优先级",
+        "沟通协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q025",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "团队角色与协作方式",
+      "content": "在以往的硬件团队中，你通常承担什么角色？当原理图评审出现分歧时，你如何表达自己的判断，又如何接受别人指出的问题？请用一次具体评审经历说明。",
+      "tags": [
+        "团队协作",
+        "硬件评审",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q026",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "工厂调试与出差意愿",
+      "content": "硬件岗位常需要去工厂跟线、出差处理量产异常，也可能短期加班。你如何看待这类工作安排？请结合你过去最辛苦的一次调试经历，说明你如何保持状态并保证交付质量。",
+      "tags": [
+        "工作意愿",
+        "抗压能力",
+        "量产支持"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q027",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "触发器与锁存器的区别",
+      "content": "触发器（Flip-flop）与锁存器（Latch）有什么区别？各自适用于什么场景？",
+      "tags": [
+        "数字电路",
+        "基础概念"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q028",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "NPN 与 PNP 三极管的区别",
+      "content": "三极管的工作原理是什么？NPN 型与 PNP 型有什么区别，各自常用在什么场合？",
+      "tags": [
+        "模拟电路",
+        "元器件"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q029",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "低通与高通滤波器",
+      "content": "什么是低通滤波器和高通滤波器？请各举一个实际应用场景。",
+      "tags": [
+        "信号处理",
+        "滤波器"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q030",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "CDMA 的工作原理",
+      "content": "什么是 CDMA？它是如何工作的？与其它多址方式相比有什么优劣？",
+      "tags": [
+        "通信原理",
+        "多址技术"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q031",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "去耦电容的作用与选型",
+      "content": "在数字电路设计中，经常在电源引脚附近放置去耦电容。请说明去耦电容的主要作用是什么？在选型和布局时需要考虑哪些因素？例如容值、封装、放置位置等。结合你实际设计经验谈谈。",
+      "tags": [
+        "电源完整性",
+        "去耦电容",
+        "电路基础"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q032",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "高速信号跨分割处理",
+      "content": "在多层PCB设计中，一条高速时钟信号需要从驱动端走到接收端，但参考平面不完整，走线跨越了电源分割区。请分析可能引起的信号完整性问题，并说明你会如何调整布局布线来避免或改善？考察SI基础与PCB设计规范。",
+      "tags": [
+        "信号完整性",
+        "PCB设计",
+        "高速信号"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q033",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "上电不工作的系统排查",
+      "content": "你拿到一块新焊接的样板，上电后发现电源指示灯不亮，电流异常。请描述你的系统化排查流程：从目视检查、电源短路排查、关键点电压测量，到使用示波器观察时序。你会优先检查哪些部分？如何隔离故障？",
+      "tags": [
+        "硬件调试",
+        "故障定位",
+        "仪器使用"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q034",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "硬件项目全流程经历",
+      "content": "请分享一个你完整负责或深度参与的硬件项目，从需求分析、元器件选型、原理图设计、PCB Layout到调试量产。重点说明你在其中承担的角色、遇到的最大挑战以及如何解决的？考察项目经验和工程思维。",
+      "tags": [
+        "项目经验",
+        "硬件设计",
+        "全流程"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q035",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "PCB设计中的EMC考虑",
+      "content": "在你的PCB设计经历中，针对EMC/EMI问题，你通常会采取哪些措施？请举例说明，比如滤波、屏蔽、接地、走线布局等方面。你如何验证设计是否满足EMC要求？考察EMC实践意识。",
+      "tags": [
+        "EMC/EMI",
+        "PCB设计",
+        "电磁兼容"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q036",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "复杂调试案例深挖",
+      "content": "请描述一个你遇到过的最棘手的硬件调试问题，比如偶发死机、通信误码、电源纹波超标等。你是如何一步步定位到根本原因的？使用了哪些仪器（示波器、频谱仪、逻辑分析仪）？最终如何解决？",
+      "tags": [
+        "调试经验",
+        "问题定位",
+        "仪器使用"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q037",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "软硬件联调接口冲突",
+      "content": "在项目联调阶段，软件同事反馈I2C通信偶尔失败，怀疑是硬件时序问题，而你认为软件配置有误。作为硬件工程师，你会如何推进问题排查？如何与软件团队协作定位并解决？考察跨部门沟通与协作。",
+      "tags": [
+        "跨部门协作",
+        "软硬件联调",
+        "沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q038",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "量产前硬件缺陷应对",
+      "content": "产品已临近量产，突然发现一个硬件设计缺陷，可能导致小概率功能失效。修改设计需要重新投板，影响进度。作为硬件负责人，你会如何评估风险、制定应对方案，并与项目经理、采购、生产等部门沟通？",
+      "tags": [
+        "风险管理",
+        "跨部门沟通",
+        "应急处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q039",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "职业规划与技术热情",
+      "content": "你为什么选择电子工程师作为职业方向？未来3-5年你的职业规划是什么？你平时如何保持对新技术、新器件、新工具的学习和跟进？请结合具体例子说明。考察求职动机与学习能力。",
+      "tags": [
+        "职业规划",
+        "学习能力",
+        "求职动机"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.electronics-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "团队分歧处理实例",
+      "content": "在团队协作中，你与同事在技术方案上产生分歧时，通常会如何处理？请分享一个具体实例，说明你如何表达观点、倾听他人并最终达成一致。考察团队协作与沟通能力。",
+      "tags": [
+        "团队协作",
+        "沟通能力",
+        "冲突处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -377,7 +887,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

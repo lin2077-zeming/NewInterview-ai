@@ -12,6 +12,8 @@
     "start": "next start -p 5000",
     "lint": "eslint",
     "roles:validate": "node --experimental-strip-types scripts/validate-roles.mjs",
+    "roles:expand": "node scripts/expand-role-questions.mjs",
+    "roles:merge-public": "node scripts/merge-public-questions.mjs",
     "roles:validate:strict": "node --experimental-strip-types scripts/validate-roles.mjs --strict",
     "roles:bundle": "node --experimental-strip-types scripts/build-roles-bundle.mjs",
     "roles:generate": "node --experimental-strip-types scripts/generate-roles.mjs",

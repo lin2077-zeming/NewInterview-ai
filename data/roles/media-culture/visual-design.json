@@ -281,6 +281,448 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "media-culture.visual-design-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "同一文案的三种版式",
+      "content": "给你一段 60 字左右的产品主标题+副标题文案，要求你在 20 分钟内用手绘或软件给出三种版式方案：分别强调「高端感」「年轻活力」「促销紧迫感」。请说明每种方案在字体选择、字距行距、留白比例上的具体处理，以及为什么这些处理能对应到相应调性。",
+      "tags": [
+        "版式设计",
+        "字体",
+        "调性表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "配色方案的取舍理由",
+      "content": "某健康食品品牌主色是低饱和墨绿，现要为其设计一组夏季新品促销海报。请给出你的配色方案（含主色、辅色、点缀色的大致色值或色相描述），并说明：哪些颜色你不能用、为什么；在保持品牌识别的前提下，你如何让画面仍然有夏天的清爽感和促销的吸引力。",
+      "tags": [
+        "色彩把控",
+        "品牌一致性",
+        "商业目标"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q013",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "LOGO 延展到 VI 系统",
+      "content": "假设你刚交付一个以「几何+手写感」为特征的 LOGO，客户要求延展成基础 VI：名片、工牌、纸杯、易拉宝、社交头像。请说明你会先确定哪些规范（网格、安全距离、最小尺寸、单色版本、字体组合等），并指出这套 LOGO 在上述哪种物料上最容易出问题，你打算怎么规避。",
+      "tags": [
+        "VI系统",
+        "规范意识",
+        "落地执行"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q014",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "印刷文件交付前的自检",
+      "content": "一份 16 页画册设计完成，明天要送印。请说出你在交付印刷文件前会逐项检查的内容清单，至少覆盖：色彩模式与专色、出血与裁切线、图片分辨率与嵌入、字体转曲、黑字与叠印、页码与拼版。并说明其中哪一项出错代价最大、为什么。",
+      "tags": [
+        "印刷工艺",
+        "文件规范",
+        "执行细节"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q015",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "把抽象概念视觉化",
+      "content": "客户给的关键词只有四个字：「可靠、有温度」。请现场说出你会如何把它转化为一张主视觉：先做什么（情绪板/草图/参考收集），再确定什么（主体图形、构图、色彩、质感、光线），最后怎么验证它真的传递了这两个词。请举一个你过去做过的类似转化的具体例子。",
+      "tags": [
+        "创意发想",
+        "概念转译",
+        "设计方法"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q016",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "画面诊断与改稿思路",
+      "content": "描述一个你见过的「信息很多但说不清重点」的设计画面（也可以是自己的旧作），说明它在层级、对比、对齐、留白上分别出了什么问题。如果只允许你改动三处、且不能删减任何信息内容，你会改哪三处？请讲清改动顺序和预期效果。",
+      "tags": [
+        "视觉层级",
+        "画面诊断",
+        "改稿能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "挑一个项目讲透",
+      "content": "请选一个你参与度最高的设计项目，按这个顺序讲：需求方是谁、他们真正想解决的问题是什么、你产出了哪些方案、最终上线/印刷的是哪版。重点说明你在过程中做过的至少一次关键取舍（比如为了可读性牺牲了某个视觉创意），以及事后你怎么评价这个取舍。",
+      "tags": [
+        "项目复盘",
+        "设计决策",
+        "经历深挖"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q018",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "需求方说不上来的需求",
+      "content": "回忆一次需求方表达模糊、只说「要高级一点、再大气一点」的经历。你当时用什么方法把模糊需求翻译成可执行的设计条件？中间做了几轮沟通、给了几版方案、结果如何？如果重来一次，你会在哪个环节做得不一样？",
+      "tags": [
+        "需求沟通",
+        "经历深挖",
+        "协作能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q019",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "作品被否后的重构",
+      "content": "讲一个你的设计方案被客户或上级整体否掉的案例。请具体说明：否掉的理由是什么、你当时的第一反应、你如何判断对方是「审美偏好不同」还是「你的方案确实没解决问题」，以及重构时你保留了什么、放弃了什么。最后这个项目的结果如何。",
+      "tags": [
+        "抗压能力",
+        "方案迭代",
+        "职业心态"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q020",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "软件里的真实工作流",
+      "content": "请描述你在做一个海报项目时，从建文件到导出的完整操作流程：画布尺寸与分辨率怎么定、图层如何组织与命名、素材如何管理、源文件与交付文件分别怎么保存。面试官可能会追问某个具体操作，请只讲你真正在用的做法。",
+      "tags": [
+        "软件技能",
+        "工作流",
+        "规范意识"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "文案与版面的冲突",
+      "content": "文案同事坚持要在一张 A4 海报上放 300 字正文，并认为「字太小就是不尊重内容」；而你判断这样会彻底破坏视觉层级。请现场演示你的沟通方式：你会先说什么、用什么依据说服他、如果他还是不同意，你会提出哪些折中方案。",
+      "tags": [
+        "跨岗协作",
+        "沟通说服",
+        "信息层级"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q022",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "上线前两小时改需求",
+      "content": "活动物料已定稿并交由印刷厂，活动前一天下午市场负责人要求更换主标题、替换主视觉颜色。请说明你会如何判断这件事可不可行、会向对方同步哪些代价（成本、工期、效果风险），以及你会争取怎样的处理方案。请给出具体的沟通话术要点。",
+      "tags": [
+        "突发应变",
+        "风险管理",
+        "抗压"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q023",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "和开发对接设计规范",
+      "content": "你负责的活动落地页设计稿要交给前端开发。开发反馈「间距和圆角不统一、有些效果实现不了」。请说明你会如何整理设计规范（栅格、间距体系、组件状态、切图与标注），以及当某个视觉效果确实实现成本过高时，你如何判断该坚持还是该调整。",
+      "tags": [
+        "跨领域协作",
+        "设计规范",
+        "落地能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q024",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "向非设计者讲方案",
+      "content": "请用不超过两分钟，向完全不懂设计的市场部同事解释你的一版海报设计：为什么主视觉放这里、为什么用这个颜色、为什么标题是这个字号。过程中不能使用「高级」「氛围感」「调性」这类抽象词，要让对方听懂并能复述给上级。",
+      "tags": [
+        "表达沟通",
+        "方案讲解",
+        "用户视角"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q025",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "作品集里最满意的一页",
+      "content": "请推荐你作品集里最能代表你水平的一个项目，并说明你选择它的理由。同时请诚实说出这个项目里你至今不满意的地方——是构思、执行还是落地效果，以及你现在会怎么改。我们更在意你对自己作品的判断力，而不是它是否完美。",
+      "tags": [
+        "自我认知",
+        "作品集",
+        "职业素养"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "节奏与成长预期",
+      "content": "设计岗在旺季常出现同时跟进三四个项目、频繁改稿的情况。请说说你在过去实习或项目中，怎样安排多任务优先级、如何避免因赶工而降低质量；以及未来两年你希望自己在哪个方向变强（如品牌视觉、包装、动效），为什么。",
+      "tags": [
+        "时间管理",
+        "职业规划",
+        "工作节奏"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q027",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "信息层级怎么排",
+      "content": "给你一张A4招聘海报的任务：主标题、一句副标、三条岗位要求、公司LOGO和二维码。请说明你会怎样用字号、字重、留白和对齐方式建立阅读顺序，视觉重心放在哪里，为什么这样处理。",
+      "tags": [
+        "版式",
+        "信息层级",
+        "构图"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q028",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "低饱和色系做促销",
+      "content": "某护肤品牌主色是低饱和莫兰迪灰粉，这次要做大促主视觉，运营要求「必须一眼看到折扣、要够炸」。请说明你会怎么在保持品牌调性的前提下处理色彩与对比关系，给出具体做法，而不是「平衡一下」。",
+      "tags": [
+        "色彩",
+        "品牌调性",
+        "商业诉求"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q029",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "画册印前交付检查",
+      "content": "你负责的48页画册已定稿，印刷厂反馈：部分图片是RGB、正文用了四色黑、封面专色未标注、有页面缺3mm出血。请分别说明这些会导致什么后果，以及你会在交付前建立一份怎样的文件检查清单。",
+      "tags": [
+        "印前规范",
+        "文件交付",
+        "CMYK"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q030",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "一套VI的延展一致性",
+      "content": "请从作品集里挑一套你做的品牌或活动视觉，说明除了主视觉，你还延展了哪些物料（如名片、易拉宝、社媒图）。你是靠什么规则，保证不同尺寸、不同材质上的视觉仍然统一？",
+      "tags": [
+        "VI延展",
+        "设计规范",
+        "作品集"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q031",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "项目里的关键决策",
+      "content": "挑一个你完整参与的设计项目，从接brief到最终落地。请讲清楚：需求方最初想要什么、你提出的方案与它有何不同、你基于什么判断做了取舍，最后这个项目用什么方式验证了效果。",
+      "tags": [
+        "项目复盘",
+        "设计决策",
+        "落地效果"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q032",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "被否三轮的改稿经历",
+      "content": "讲一次你的设计方案被需求方连续否定三轮以上的经历。请说明每轮对方给的理由是什么、你当时怎么改、现在回头看真正的问题出在哪里，以及再遇到类似情况你会怎么做。",
+      "tags": [
+        "改稿",
+        "问题归因",
+        "反思"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q033",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "文案超出版式怎么办",
+      "content": "海报版式已经排好，文案同事突然把主标题从8字加到20字，还说「字少了显得没内容」，发布节点不变。你会怎么和他以及市场负责人沟通？请说出具体处理步骤和话术方向。",
+      "tags": [
+        "跨部门协作",
+        "沟通",
+        "版式妥协"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q034",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "三小时紧急改稿",
+      "content": "周五下午5点，市场通知明早9点上线的主视觉要换主色和口号，只留给你3小时，而你手上还有一个下周交付的画册。请说明你会怎么排优先级、向谁同步什么信息，以及如何保证改完的文件不出错。",
+      "tags": [
+        "时间管理",
+        "突发需求",
+        "优先级"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q035",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "更想做哪类设计",
+      "content": "品牌向设计和电商运营向设计，你更愿意长期做哪一类？请结合你做过的项目说明原因，并谈谈接下来两年你希望把哪一项能力做到拿得出手、具体到什么程度。",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "方向偏好"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.visual-design-q036",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "最难接受的反馈",
+      "content": "你最近一段设计经历中，收到过最难接受的一条反馈是什么？你当时怎么处理，事后有没有改变你的工作习惯？另外，你判断一家公司值不值得长期待下去，最看重哪两点？",
+      "tags": [
+        "抗压",
+        "反馈处理",
+        "团队协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -399,7 +841,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

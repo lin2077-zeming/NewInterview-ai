@@ -276,6 +276,336 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "finance-econ.fund-asset-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "宏观数据与资产配置",
+      "content": "假设最新社融总量超预期但企业中长贷同比少增、M1-M2剪刀差走阔。请说明你会如何拆解这对权益、利率债和信用债的相对影响，并给出未来一个季度的配置倾斜及需要跟踪的验证指标。",
+      "tags": [
+        "宏观分析",
+        "资产配置"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.fund-asset-q012",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "回撤预警下的加仓分歧",
+      "content": "你协助管理的偏股组合回撤已达8%，触及内部预警线。投资经理建议短期加仓高波动成长行业博取反弹。请用风险预算、波动率目标和最大回撤约束评估该建议，并说明你会如何向投资经理提出替代方案。",
+      "tags": [
+        "组合风控",
+        "风险预算"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.fund-asset-q013",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "金融终端数据清洗",
+      "content": "你需要用Wind或Bloomberg构建行业景气跟踪表，但导出数据存在缺失值、单位不一致和停牌股异常值。请描述你的处理步骤、验证方法，以及如何用Excel或Python提高重复工作效率。",
+      "tags": [
+        "数据清洗",
+        "金融终端"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.fund-asset-q014",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "研究报告复盘与迭代",
+      "content": "请选取你写过的一份宏观、行业或个股研究报告，说明当时的数据来源、核心假设和投资建议。如果该建议后来被市场证伪，你会从哪些环节复盘？若重做一次，会如何调整分析框架或跟踪指标？",
+      "tags": [
+        "研究复盘",
+        "投研经历"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.fund-asset-q015",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "业绩归因偏差分析",
+      "content": "在实习或项目中，你是否遇到过组合收益与归因结果对不上？请以Brinson模型或持仓盈亏拆分为例，说明你如何区分行业配置、个股选择和交易贡献，定位数据口径或计算错误，并最终向投资经理解释偏差。",
+      "tags": [
+        "业绩归因",
+        "项目深挖"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.fund-asset-q016",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "多源数据口径统一",
+      "content": "请描述一次你使用Wind、Excel或Python处理金融数据的经历。当不同来源的营收、估值或持仓数据口径不一致时，你如何确认以哪个为准，并保证后续模型或报表可复现？",
+      "tags": [
+        "数据工具",
+        "实习经历"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.fund-asset-q017",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "路演材料与数据冲突",
+      "content": "投资经理要求你一小时内完成路演材料中的业绩归因页，但风控指出某产品持仓数据尚未更新，销售又在催版本。你会如何排序任务、协调风控与销售，并向投资经理同步风险与交付时间？",
+      "tags": [
+        "跨部门协作",
+        "应急处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.fund-asset-q018",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "交易价格偏离沟通",
+      "content": "你发现交易员执行指令的成交价明显偏离当日VWAP，可能影响组合成本，但交易员称已获投资经理口头授权。你如何核实、沟通并留痕，既控制风险又避免越级或激化矛盾？",
+      "tags": [
+        "交易执行",
+        "合规沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.fund-asset-q019",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "资管与银行offer选择",
+      "content": "如果你同时拿到基金公司投研助理和银行金融市场部的offer，请结合对基金与资产管理岗位工作节奏、考核方式和成长路径的理解，说明你的选择逻辑，以及未来三年希望积累哪些能力。",
+      "tags": [
+        "职业选择",
+        "行业认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.fund-asset-q020",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "跑输基准后的团队沟通",
+      "content": "假设你所在团队连续两个季度跑输基准，投资经理压力很大，晨会气氛紧张。作为研究助理，你会如何调整沟通方式、提供有效研究支持，并处理与投资经理在行业判断上的分歧？",
+      "tags": [
+        "团队沟通",
+        "抗压能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.fund-asset-q021",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "弱复苏下的股债配置",
+      "content": "当前宏观经济呈现弱复苏态势，利率中枢下移，信用利差收窄。假设你管理一只“固收+”产品，请说明你会如何调整股债配置比例，并选择哪些细分资产来增强收益，同时控制回撤？请给出具体逻辑和关键指标。",
+      "tags": [
+        "资产配置",
+        "固收+",
+        "宏观分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.fund-asset-q022",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "DCF估值关键假设",
+      "content": "请对一家处于成长期的新能源企业进行DCF估值。你会如何设定收入增长率、毛利率、折现率等关键假设？如何通过敏感性分析判断估值区间？并说明哪些风险因素可能导致估值大幅偏差。",
+      "tags": [
+        "财务建模",
+        "DCF",
+        "估值"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.fund-asset-q023",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "组合回撤与调仓决策",
+      "content": "你管理的股票组合近一个月回撤超过8%，投资经理仍要求加仓某高波动行业。请从组合风险预算、行业集中度、波动率目标等角度，说明你会如何评估这一指令，并提出你的调仓建议或风控措施。",
+      "tags": [
+        "组合管理",
+        "风险控制",
+        "回撤"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.fund-asset-q024",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "深度研究报告复盘",
+      "content": "请介绍一篇你独立完成或深度参与的研究报告。说明选题逻辑、分析框架、数据来源（如Wind、Bloomberg）、核心结论，以及后续市场表现是否验证了你的判断。如果判断错了，你如何归因？",
+      "tags": [
+        "研究报告",
+        "投资研究",
+        "归因"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.fund-asset-q025",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "交易执行经历细节",
+      "content": "请描述你曾参与过的一次交易执行或组合维护经历。你具体负责什么环节？如何确保指令准确、及时？遇到流动性不足或市场波动剧烈时，你如何调整执行策略并反馈？",
+      "tags": [
+        "交易执行",
+        "组合维护",
+        "沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.fund-asset-q026",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "数据分析工具应用",
+      "content": "请举例说明你如何使用Python、Wind或Bloomberg等工具处理金融数据，并得出对投资决策有价值的洞察。你清洗和分析了哪些数据？构建了什么指标或模型？结果如何被使用？",
+      "tags": [
+        "数据分析",
+        "金融终端",
+        "Python"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.fund-asset-q027",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "合规冲突下的协调",
+      "content": "投资经理要求你立即执行一笔大额买入，但风控部门提示该交易将突破组合的行业集中度限制。投资经理坚持认为机会难得。作为助理，你会如何与双方沟通并推动解决？请现场模拟你的处理方式。",
+      "tags": [
+        "合规风控",
+        "跨部门协作",
+        "应变"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.fund-asset-q028",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "路演材料合规沟通",
+      "content": "销售团队希望你在路演材料中突出产品近一年收益率，并暗示可以“适度”淡化最大回撤。你清楚这不符合合规要求。你会如何与销售沟通，既维护关系又坚守底线？请给出具体话术。",
+      "tags": [
+        "路演材料",
+        "合规",
+        "沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.fund-asset-q029",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "职业动机与规划",
+      "content": "你为什么选择基金与资产管理行业？结合你的实习或项目经历，谈谈你对买方投研工作的理解。未来3-5年，你希望在这个岗位上达到什么目标？为此你正在做哪些准备？",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "买方投研"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "finance-econ.fund-asset-q030",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "业绩压力下的协作",
+      "content": "资管行业业绩考核压力大，且需要与投资经理、交易员、销售等多方频繁协作。请分享一次你在高压下仍保证工作质量并推动团队合作的经历。你是如何管理情绪和优先级的？",
+      "tags": [
+        "抗压能力",
+        "团队协作",
+        "职业素养"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -395,7 +725,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

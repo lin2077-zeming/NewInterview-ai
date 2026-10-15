@@ -274,6 +274,448 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "media-culture.advertising-copy-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "咖啡馆电梯广告语",
+      "content": "为一家开在写字楼旁的独立咖啡馆写一句电梯广告语，要求20字以内，突出“手冲现磨、慢下来”的卖点，但不能写成“岁月静好”式的文艺腔，要能打动赶时间的上班族。请口述文案并说明为什么这样写。",
+      "tags": [
+        "广告语",
+        "受众洞察",
+        "调性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "高端护肤三八节文案",
+      "content": "某高端护肤品牌三八节要发一条社交媒体文案，品牌调性是“温柔而坚定”，明确要求避免“女王”“女神”“做自己的王”等套路表达。请现场写一条80字以内的文案，并说明你在用词和语气上做了哪些取舍。",
+      "tags": [
+        "品牌调性",
+        "文案撰写",
+        "取舍"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "热点借势值不值得做",
+      "content": "假设今天出现一个刷屏级社会热点，品牌方临时问你能不能借势。你会从哪几个维度判断这个热点值不值得跟？请给出你的判断清单，并针对其中一个维度说明如果踩线，你会怎么向品牌方解释。",
+      "tags": [
+        "热点借势",
+        "品牌安全",
+        "判断力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q014",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "详情页点击高转化低",
+      "content": "某护肤品详情页首屏文案点击率很高，但加购转化率明显低于同类竞品。请你根据这个数据现象，列出至少三种可能的原因，并针对其中一种给出具体的文案调整方案和验证思路。",
+      "tags": [
+        "数据反馈",
+        "转化优化",
+        "诊断"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q015",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "讲一个你写过的文案",
+      "content": "请挑一个你实际写过的文案作品，从接到需求、理解目标人群、撰写、修改到最终交付，完整讲一遍。重点说明：你改过几版？每次修改的原因是什么？最终效果如何？如果重做一次，你会改哪里？",
+      "tags": [
+        "经历真实性",
+        "文案流程",
+        "复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "传播活动你的角色",
+      "content": "简历中提到你参与过一次传播活动或项目，请具体说明：项目目标是什么？你在团队里承担了哪些工作？你的创意或文案对最终数据（曝光、互动、转化）贡献了什么？如果没有直接数据，你如何证明自己的价值？",
+      "tags": [
+        "项目深挖",
+        "贡献量化",
+        "协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "稿件被大幅删改时",
+      "content": "讲一次你的文案被领导、客户或甲方大幅删改甚至推翻重写的经历。请说明：当时你的第一反应是什么？你如何理解对方的修改意图？最后的结果你是否认同？这件事之后你调整了哪些工作习惯？",
+      "tags": [
+        "抗压",
+        "沟通",
+        "改稿"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q018",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "项目效果不及预期",
+      "content": "请举一个你参与的项目效果不及预期的例子。你当时看了哪些数据？你的第一判断是什么？做了哪些文案或内容上的调整？如果数据依然没起色，你如何判断是文案问题还是产品、渠道问题？",
+      "tags": [
+        "数据敏感",
+        "优化意识",
+        "归因"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q019",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "设计师说文案排不下",
+      "content": "你和设计师协作一张海报，设计师说你的主文案太长，排进画面会破坏视觉，建议砍掉一半。但你认为核心信息不能删。此时你会怎么沟通？请现场模拟你对他说的第一句话，并说明你的底线在哪里。",
+      "tags": [
+        "跨部门沟通",
+        "协作",
+        "妥协边界"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "两小时追不熟的热点",
+      "content": "运营临时通知你，两小时后要发一条某新品类（你不熟悉）的热点借势文案，没有brief，也没有产品资料。你会按什么顺序推进？会向谁要什么信息？如果信息始终不全，你怎么保证文案不出错？",
+      "tags": [
+        "应变",
+        "信息搜集",
+        "风险控制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "投放等素材怎么推动",
+      "content": "媒介已经定好明天上午投放，但设计素材还没确认，你手里的文案也还在等客户反馈。作为文案策划，你会怎么推动这件事？请列出你当天会做的三件事，并说明如何避免项目延期。",
+      "tags": [
+        "项目推进",
+        "跨部门协作",
+        "时间管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q022",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "第八版改稿与deadline",
+      "content": "客户已经让你改了八版文案，每次反馈都很模糊，比如“感觉不对”“再高级一点”，而项目deadline就在明天。你会如何与客户沟通？请说明你会问哪些具体问题来锁定需求，以及如果客户仍不满意，你的备选方案。",
+      "tags": [
+        "客户沟通",
+        "需求澄清",
+        "抗压"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "近期印象深刻的文案",
+      "content": "你平时会关注哪些品牌或账号的文案？请举一个最近让你印象深刻的案例，说明它好在哪里、打动了谁。如果让你为这个品牌写下一句文案，你会怎么写？",
+      "tags": [
+        "文案审美",
+        "行业关注",
+        "学习意识"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q024",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "如何看待改稿与追热点",
+      "content": "文案策划的日常有很多重复性工作：反复改稿、追热点、写相似的产品卖点。你如何看待这些工作？请结合你的经历，说明你用什么方法让自己在重复中保持输出质量和热情。",
+      "tags": [
+        "工作认知",
+        "心态",
+        "职业素养"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "实际工作与预期不符",
+      "content": "如果你入职后发现，实际工作内容和你面试时理解的差别很大，比如大量时间在做执行而非创意，你会怎么处理？请说出你前三个月会做的具体动作，以及你会向谁寻求反馈。",
+      "tags": [
+        "适应能力",
+        "沟通",
+        "预期管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q026",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "你希望加入什么团队",
+      "content": "你希望加入一个什么样的团队？请描述你理想中的协作方式。再举一个你过去在团队中主动补位或帮助同事的例子，说明你在团队里通常扮演什么角色。",
+      "tags": [
+        "团队协作",
+        "角色定位",
+        "动机"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q027",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "为品牌写广告语并说理由",
+      "content": "假设你为一家主打“温和提神、不心悸”的新锐咖啡品牌写一句电梯广告语，目标人群是熬夜加班的互联网人。请现场口述你的文案，并解释它如何平衡“提神”与“不焦虑”的品牌调性，以及你舍弃了哪些方向。",
+      "tags": [
+        "文案调性",
+        "广告语",
+        "消费者洞察"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q028",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "诊断并改写自嗨详情页",
+      "content": "某护肤品牌详情页写着“采用尖端生物科技，焕活细胞能量”。目标用户是敏感肌学生党。请指出这句话的问题，并现场改写成更打动目标人群的版本，说明改写依据。",
+      "tags": [
+        "文案润色",
+        "用户视角",
+        "转化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q029",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "热点借势的边界判断",
+      "content": "某高端宠物粮品牌想借“打工人自嘲”热点做社交媒体文案。请分析这个热点与品牌调性是否匹配，如果匹配给出一个具体创意方向；如果不匹配，说明你会如何说服市场部放弃，并提替代方案。",
+      "tags": [
+        "热点借势",
+        "品牌调性",
+        "策略思维"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q030",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "用数据复盘一次文案优化",
+      "content": "请挑一个你写过的文案/内容项目，说明当时的传播或转化目标。你如何设定衡量指标？上线后数据如何？如果点击率高但转化低，你做了哪些归因和迭代？请用具体数字说明。",
+      "tags": [
+        "数据复盘",
+        "转化优化",
+        "项目经历"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q031",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "与设计协作的冲突经历",
+      "content": "描述一次你与设计师或运营在文案呈现上意见不一致的经历。分歧点是什么？你如何沟通并推动落地？最终效果如何？如果重来一次，你会在哪个环节做得不同？",
+      "tags": [
+        "跨部门协作",
+        "冲突解决",
+        "项目执行"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q032",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "讲一个你提炼洞察的案例",
+      "content": "请分享一个你从用户评论、调研或社交讨论中提炼出洞察，并据此写出文案或策划活动的案例。你当时看到了什么现象？提炼出什么洞察？最终文案/活动是什么？效果如何？",
+      "tags": [
+        "消费者洞察",
+        "创意来源",
+        "经历深挖"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q033",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "临时插入紧急需求怎么办",
+      "content": "周五下午六点，运营突然说下周一要上线一个促销活动，需要你周末赶出三套不同渠道的文案，但设计资源还没确认。你会如何回应运营、协调资源、管理自己的时间？请具体说出沟通步骤和优先级判断。",
+      "tags": [
+        "紧急需求",
+        "沟通协调",
+        "时间管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q034",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "文案引发负面舆情如何应对",
+      "content": "你写的一句社交媒体文案被用户截图吐槽“冒犯女性”，话题开始发酵。市场部要求你立刻回应，法务提醒谨慎。作为文案策划，你会先做什么？对外声明/修改文案/内部复盘分别怎么处理？请给出行动顺序和理由。",
+      "tags": [
+        "舆情应对",
+        "危机沟通",
+        "文案风险"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q035",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么选择文案策划岗",
+      "content": "你之前有多个岗位方向可选，为什么最终选择广告与文案策划？你如何看待这个岗位日常需要大量改稿、追热点和面对数据压力的现实？请结合你的经历谈谈。",
+      "tags": [
+        "求职动机",
+        "职业认知",
+        "抗压"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.advertising-copy-q036",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "未来三年想成为什么样的文案",
+      "content": "如果入职，你希望未来三年在文案策划岗位上重点提升哪两项能力？你期望团队给你什么样的反馈和成长支持？当个人创意与客户/品牌需求冲突时，你会如何平衡？",
+      "tags": [
+        "职业规划",
+        "团队协作",
+        "成长预期"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -377,7 +819,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

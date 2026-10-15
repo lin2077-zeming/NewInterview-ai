@@ -273,6 +273,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "cs-it.frontend-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "三栏布局实现方案",
+      "content": "请手写一个三栏布局：左右两栏固定宽度200px，中间自适应，并保证中间内容区优先渲染。说明你使用的方案（float、flex还是grid）及其兼容性和适用场景。",
+      "tags": [
+        "CSS布局",
+        "Flex",
+        "兼容性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "手写防抖函数",
+      "content": "手写一个debounce函数，要求支持immediate立即执行选项，并返回可取消的方法。写完后说明它在搜索框输入联想、窗口resize两个场景下分别该如何配置参数。",
+      "tags": [
+        "JavaScript",
+        "手写代码",
+        "防抖"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "响应式原理与状态更新",
+      "content": "Vue3中ref与reactive的响应式原理是什么？React中直接修改state对象为什么不会触发更新？请从依赖收集和不可变数据角度对比两者设计差异，并举例说明如何避免踩坑。",
+      "tags": [
+        "Vue",
+        "React",
+        "响应式原理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q014",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "H5首屏性能优化",
+      "content": "某电商H5首屏在4G网络下LCP为4.2秒，用户跳出率很高。请给出你的性能排查路径（用什么工具、看哪些指标），并列出至少4条可落地的优化手段，说明预期收益和可能带来的副作用。",
+      "tags": [
+        "性能优化",
+        "LCP",
+        "首屏加载"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q015",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "最有参与度的前端项目",
+      "content": "请选一个你参与度最高的前端项目，说明项目背景、你负责的模块、技术栈选型理由，以及上线后的用户量或核心指标。重点讲清楚哪些代码是你亲手写的，而不是团队整体成果。",
+      "tags": [
+        "项目经历",
+        "技术选型",
+        "职责边界"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "接口联调不一致处理",
+      "content": "项目联调时，后端返回的字段名、分页格式或错误码与前端预期不一致，甚至接口在联调中途变更。请举一个真实例子，说明你当时如何定位问题、推动解决，以及后续如何减少这类沟通成本。",
+      "tags": [
+        "接口联调",
+        "协作",
+        "工程规范"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q017",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "最难定位的前端问题",
+      "content": "请描述你前端经历中最难定位的一个问题，比如内存泄漏、白屏、样式错乱或性能抖动。说明当时的排查思路、使用的工具、根因是什么，以及你做了哪些防止复发的措施。",
+      "tags": [
+        "问题排查",
+        "线上故障",
+        "复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q018",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "公共组件的抽象设计",
+      "content": "在项目里你如何决定一个UI模块要不要抽成公共组件？请结合你封装过的组件，说明你如何设计props、事件和插槽，以及当设计稿频繁变更时如何避免改一处崩多处。",
+      "tags": [
+        "组件化",
+        "抽象设计",
+        "可维护性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q019",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "发版前临时加需求",
+      "content": "产品经理在发版前一天临时增加一个交互需求，设计师也出了新稿，但后端接口还没准备好。你会怎么和产品、设计、后端沟通，并给出你的排期方案？",
+      "tags": [
+        "需求变更",
+        "沟通",
+        "排期"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "接口规范技术分歧",
+      "content": "你和后端对接口规范产生分歧：他坚持用200状态码加业务code表示错误，你认为应该用HTTP语义化状态码。请说明你会如何表达观点、寻找共识，最终怎么推进落地。",
+      "tags": [
+        "跨端协作",
+        "接口规范",
+        "技术分歧"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "线上白屏应急处理",
+      "content": "周五晚上收到告警：核心页面部分用户白屏，但你在本地无法复现。作为值班前端，请说明你的应急处理步骤、信息同步方式，以及事后如何写故障报告。",
+      "tags": [
+        "线上故障",
+        "应急响应",
+        "监控"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q022",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "跨端方案选型分歧",
+      "content": "公司要同时维护H5和小程序两套端，团队对是否引入Taro或uni-app产生分歧：有人担心性能和坑，有人认为重复开发成本太高。请给出你的技术选型分析框架和最终建议。",
+      "tags": [
+        "跨端方案",
+        "技术选型",
+        "权衡"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "选择前端的动机与方向",
+      "content": "你为什么选择前端作为职业方向？未来两年你希望自己在技术上达到什么水平，比如能独立负责一个业务模块还是深入某个框架源码？请结合具体行动说明。",
+      "tags": [
+        "求职动机",
+        "前端方向",
+        "自我认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "下一份工作的择业标准",
+      "content": "你选择下一份工作时最看重哪三点？如果一家公司业务发展快但流程较乱，另一家流程规范但技术挑战一般，你会怎么选？请说明你的判断标准。",
+      "tags": [
+        "择业标准",
+        "价值观",
+        "稳定性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "紧急节点主动承担经历",
+      "content": "前端岗位经常需要和产品、设计、后端并行推进，也难免遇到紧急发版和加班。请讲一次你为了项目节点主动承担额外工作的经历，以及你如何平衡交付质量和个人状态。",
+      "tags": [
+        "团队协作",
+        "责任心",
+        "抗压"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "薪资期望与离职决策",
+      "content": "你期望的薪资范围、到岗时间和工作地点是怎样的？如果当前公司给你加薪挽留，你会如何考虑？请坦诚说明你的决策因素。",
+      "tags": [
+        "薪资期望",
+        "到岗时间",
+        "离职决策"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q027",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "横向滚动条排查",
+      "content": "移动端 H5 上线后，部分机型页面出现横向滚动条且能左右拖动。请给出你的排查路径：如何用 DevTools 定位溢出元素，常见诱因有哪些（固定宽度、100vw、滚动条占位、负 margin），以及如何做兼容性修复。",
+      "tags": [
+        "CSS布局",
+        "移动端适配",
+        "调试"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q028",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "事件循环与渲染时机",
+      "content": "有一段代码：同步修改 DOM 后立刻 await 一个已 resolve 的 Promise，再修改 DOM。请说明浏览器会在哪一步触发渲染、微任务与宏任务如何穿插，以及为什么两次 DOM 修改可能被合并进同一帧。你如何用 Performance 面板验证？",
+      "tags": [
+        "事件循环",
+        "浏览器渲染",
+        "性能"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q029",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "并发请求调度器",
+      "content": "用 TypeScript 实现一个并发调度器：最多同时发起 3 个请求，支持任务队列、失败重试一次、可取消（AbortController），并在组件卸载时清理未完成任务。请说明关键数据结构、边界情况与内存泄漏风险。",
+      "tags": [
+        "TypeScript",
+        "异步编程",
+        "并发控制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q030",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "首屏性能优化复盘",
+      "content": "挑一个你深度参与的项目，说明首屏或长列表性能优化的完整过程：优化前指标（LCP、FPS、内存）、你做的具体改动（代码分割、懒加载、虚拟列表、缓存等）、每项改动贡献了多少，以及如何用数据验证效果。",
+      "tags": [
+        "性能优化",
+        "项目复盘",
+        "指标量化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q031",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "组件库升级与回归",
+      "content": "团队维护了一套内部组件库，多个业务线在引用。某次要升级核心组件（如表格、表单）的大版本，你如何评估影响面、设计灰度与回滚方案、控制各业务线的回归成本？请结合你做过的具体案例说明。",
+      "tags": [
+        "工程化",
+        "组件库",
+        "协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q032",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "线上白屏排查与复盘",
+      "content": "线上突然收到白屏告警，影响部分用户。请完整讲一次你参与或主导的排查：从监控与错误上报、Source Map 还原堆栈、复现与二分定位，到灰度回滚和根因修复，并说明事后如何防止同类问题再次发生。",
+      "tags": [
+        "故障排查",
+        "线上问题",
+        "监控"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q033",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "接口联调协作约定",
+      "content": "联调阶段后端接口字段频繁改名、返回结构不一致，导致前端反复返工。你会如何推动形成稳定的接口约定？请具体说明字段规范、Mock 方案、接口文档与变更通知机制，以及如何和对方负责人沟通。",
+      "tags": [
+        "接口联调",
+        "跨端协作",
+        "沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q034",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "设计稿还原分歧",
+      "content": "设计师认为页面还原度不够，你觉得自己已按标注实现，双方对间距、字号的理解存在出入。你会怎么推进解决？请说明如何用工具量化差异、界定优先级，并把结论沉淀为团队可复用的规范。",
+      "tags": [
+        "沟通协作",
+        "设计还原",
+        "流程"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q035",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "前端方向与规划",
+      "content": "你为什么选择前端作为职业方向？未来三年你希望在哪个技术领域深耕，例如框架原理、工程化、性能优化、可视化或跨端？为此你已经做了哪些投入，接下来一年有什么具体计划？",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "学习能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q036",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "技术方案分歧处理",
+      "content": "讲一次你和同事在技术方案上产生较大分歧的经历：双方各自的主张、你如何用数据或原型说服对方、最终结论是什么。如果最后采用了对方的方案，你如何调整心态并保证执行质量？",
+      "tags": [
+        "团队协作",
+        "技术分歧",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q037",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "手写响应式与依赖收集",
+      "content": "不借助框架，用 Proxy 实现一个约 20 行的响应式系统：支持 reactive(obj) 与 effect(fn)，能自动收集依赖并在属性变化时重新执行 effect。请说明 Vue3 为何从 Object.defineProperty 换成 Proxy，并指出现有实现对数组变更和新增属性会有什么问题。",
+      "tags": [
+        "框架原理",
+        "响应式",
+        "JavaScript"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q038",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "首页性能指标优化复盘",
+      "content": "挑一个你主导优化过的页面：优化前后 LCP、FCP 或首屏接口耗时分别是多少？你如何用 Lighthouse、Performance 面板或网络瀑布图定位瓶颈？具体做了哪些改动，比如资源体积、关键渲染路径、接口并行或骨架屏？如果改完仍不达标，你会怎么继续推进？",
+      "tags": [
+        "性能优化",
+        "项目复盘",
+        "指标量化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q039",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "接口字段变更的协作处理",
+      "content": "上线前一天，后端告知某个核心列表接口的字段名和嵌套结构都要改，而后端联调、设计稿和你的前端代码均已按原字段完成。你会怎么和产品、后端、测试同步这次改动？如果后端坚持当天就改，你会提出哪些前提条件？",
+      "tags": [
+        "跨端协作",
+        "沟通表达",
+        "风险管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.frontend-q040",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "技术选型与职业规划",
+      "content": "过去一年你主要在用什么技术栈，最熟悉的是哪一块？如果下个季度团队要从 Vue2 迁移到 Vue3 加 TypeScript，你会怎样规划自己的学习路径、评估迁移风险并推动落地？未来两年你更希望深耕业务方向还是技术基建，为什么？",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "技术选型"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -369,7 +879,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full",
     "dimensionSource": "project-authored"
   }

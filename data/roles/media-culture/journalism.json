@@ -294,6 +294,448 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "media-culture.journalism-q012",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "异味帖子的选题判断",
+      "content": "早上刷到本地论坛一条‘某小区凌晨闻到刺鼻气味’的帖子，仅零星回复，无官方通报。作为记者，你如何在30分钟内判断是否跟进、向哪些信源核实？请说出具体步骤和判断依据。",
+      "tags": [
+        "新闻敏感",
+        "核实",
+        "选题判断"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "匿名信源采访突破",
+      "content": "你需要采访一位不愿透露姓名的知情人，对方担心被报复，只愿在电话里简短回应。你如何在10分钟通话内建立信任、获取关键细节，同时保护其身份？请模拟开场和追问策略。",
+      "tags": [
+        "采访突破",
+        "信源保护",
+        "沟通技巧"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q014",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "加装电梯稿的取舍",
+      "content": "你采写一篇老旧小区加装电梯的深度稿，素材涵盖住户分歧、政策堵点、成功案例，原始稿3000字。编辑要求压缩到800字，突出矛盾与解决路径。你如何取舍素材、安排结构、处理冲突双方引语？",
+      "tags": [
+        "编辑加工",
+        "结构取舍",
+        "冲突呈现"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q015",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "内部文件的核查与使用",
+      "content": "采访对象给你一份内部文件，要求不公开来源，但文件涉及商业秘密和未公开数据。你如何交叉核实文件真实性、评估法律与伦理风险、决定是否引用及如何呈现？请说明操作流程。",
+      "tags": [
+        "事实核查",
+        "法律风险",
+        "伦理抉择"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q016",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "一次完整采写经历",
+      "content": "请分享一次你从发现线索到最终成稿的完整经历。重点说明：线索从哪来？你如何判断其新闻价值？采访了哪些信源？如何核实关键事实？最终稿件的传播效果如何？",
+      "tags": [
+        "经历深挖",
+        "选题来源",
+        "核实过程"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "数据新闻项目复盘",
+      "content": "你简历提到参与过数据新闻项目。请具体复盘一个：数据从哪些渠道获取？清洗时遇到什么陷阱？分析结论如何交叉验证？最终可视化呈现时如何避免误导受众？",
+      "tags": [
+        "数据新闻",
+        "项目细节",
+        "数据核实"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q018",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "稿件被删改的经历",
+      "content": "你是否有过稿件被编辑大幅删改、甚至临时撤稿的经历？请描述具体事件：原因是什么？你当时如何与编辑沟通？事后你做了哪些调整来提升稿件通过率？",
+      "tags": [
+        "稿件修改",
+        "抗压",
+        "编辑沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q019",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "最难的采访突破",
+      "content": "请回忆你做过的最难的一次采访。对方为何难突破？你当时用了哪些策略？最终获得了哪些关键信息？如果重来一次，你会在哪些环节改进？请用具体细节说明。",
+      "tags": [
+        "困难采访",
+        "突破策略",
+        "反思改进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q020",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "现场封锁的突破",
+      "content": "突发火灾，你被派往现场，但警戒线封锁、官方拒绝采访、围观群众说法不一。距离截稿还有2小时，你如何获取可核实信息？请列出你的行动顺序和信源选择。",
+      "tags": [
+        "突发应变",
+        "现场突破",
+        "沟通策略"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q021",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "多媒体稿的协作协调",
+      "content": "你负责一篇融媒体稿，需要摄影、视频、设计同事配合，但大家手头都有紧急任务，时间冲突。截稿时间不变，你如何协调资源、明确分工、确保按时发布？",
+      "tags": [
+        "跨部门协作",
+        "资源协调",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q022",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "发现上级稿件问题",
+      "content": "你发现上级或资深同事的稿件存在事实错误或伦理瑕疵，但对方资历深、态度强硬。你会如何沟通？如果对方不接受，你会采取什么步骤确保内容安全？",
+      "tags": [
+        "伦理把关",
+        "向上沟通",
+        "团队协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q023",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "稿件被断章取义后",
+      "content": "你采写的稿件在社交平台被断章取义，引发负面舆情，但原稿事实无误。领导要求你快速回应。你会如何澄清？是否发布完整原文？如何与平台、法务、公关协作？",
+      "tags": [
+        "舆情应对",
+        "危机处理",
+        "事实澄清"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么选择新闻行业",
+      "content": "你为什么选择新闻记者/编辑作为职业？在你的理解中，这个岗位最重要的价值是什么？请结合个人经历或触动你的一件事来谈。",
+      "tags": [
+        "求职动机",
+        "职业认同",
+        "新闻理想"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "未来三年的成长目标",
+      "content": "未来三年，你希望在新闻采编领域达到什么水平？你计划通过哪些具体方式提升选题、采访、写作或编辑能力？如果有机会，你希望深耕哪个领域？",
+      "tags": [
+        "职业规划",
+        "能力提升",
+        "成长路径"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "独立采写与团队协作",
+      "content": "你更适应独立采写还是团队协作？请举一个你与同事合作完成报道的例子，说明你承担的角色、遇到的摩擦以及如何解决。",
+      "tags": [
+        "团队协作",
+        "工作风格",
+        "合作案例"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q027",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "如何看待新闻行业的辛苦",
+      "content": "新闻行业常面临收入不高、作息不规律、突发加班等情况。你如何看待这些现实？如果入职后长期跑突发或夜班，你觉得自己能坚持多久？为什么？",
+      "tags": [
+        "期望管理",
+        "抗压能力",
+        "职业稳定性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q028",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "暴雨摆拍视频如何判断",
+      "content": "你在值班时看到一段“暴雨救援人员摆拍”的短视频，转发量很高。请说明你会如何判断这条线索的新闻价值，并列出跟进前必须核实的三个关键事实。",
+      "tags": [
+        "新闻敏感",
+        "事实核查",
+        "选题策划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q029",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "说服举报前员工受访",
+      "content": "你需采访一位因举报企业污染而离职的前员工，对方担心报复，拒绝当面交流。请设计你的沟通策略与采访提纲，并说明如何在报道中保护信源。",
+      "tags": [
+        "采访沟通",
+        "信源保护",
+        "突破能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q030",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "为社区食堂稿拟标题",
+      "content": "你收到一篇关于“社区食堂经营困难”的深度稿件，内容扎实但原标题《社区食堂调查》点击率低。请拟三个不同侧重点的标题，并说明分别适合纸媒、公众号还是短视频平台。",
+      "tags": [
+        "标题制作",
+        "编辑加工",
+        "平台适配"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q031",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "独立采访经历复盘",
+      "content": "请分享一次你独立完成的采访经历，从选题来源、联系对象到成稿，你做了哪些准备？过程中遇到的最大困难是什么，你如何解决？发稿后收到什么反馈？请具体说明。",
+      "tags": [
+        "经历深挖",
+        "采访流程",
+        "复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q032",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "一次事实核查经历",
+      "content": "请举一个你核实关键事实或发现并纠正错误的例子。你当时通过哪些渠道交叉验证？如果无法核实，你会如何处理稿件？请描述当时的时间压力和决策过程。",
+      "tags": [
+        "事实核查",
+        "职业习惯",
+        "案例"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q033",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "稿件被大幅删改之后",
+      "content": "你曾有一篇稿件被编辑大幅删改，甚至改变了原意。请描述当时的情况，你如何沟通？从中总结出哪些记者与编辑协作的经验？如果重来一次，你会怎么做？",
+      "tags": [
+        "编辑协作",
+        "沟通",
+        "经历深挖"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q034",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "采访遇阻挠如何应对",
+      "content": "你在事故现场采访时，遭到不明人员阻挠，对方扣留你的采访设备并要求删除素材。请说明你的应对步骤，以及事后如何向编辑部汇报并继续完成报道。",
+      "tags": [
+        "应变能力",
+        "现场采访",
+        "权益保护"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q035",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "融合报道中的团队分歧",
+      "content": "你负责一个融合报道的文字部分，视频团队认为应突出画面冲击力，而你坚持文字调查是核心。截止时间临近，你如何协调分歧并推进项目？请说明具体沟通策略。",
+      "tags": [
+        "跨团队协作",
+        "融合报道",
+        "沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q036",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为何选择新闻行业",
+      "content": "你为何选择新闻记者与编辑作为职业方向？在当下媒体环境下，你认为这个岗位最吸引你和最挑战你的地方分别是什么？请结合个人经历说明并举例。",
+      "tags": [
+        "求职动机",
+        "职业认知",
+        "媒体环境"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "media-culture.journalism-q037",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "截稿压力下的质量把关",
+      "content": "截稿时间迫在眉睫，但你对稿件中一个关键数据仍有疑问。此时你会如何处理？请结合你对新闻伦理与团队协作的理解，说明你的优先级和沟通方式。",
+      "tags": [
+        "职业素养",
+        "压力管理",
+        "伦理法规"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -413,7 +855,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

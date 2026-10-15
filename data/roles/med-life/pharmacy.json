@@ -281,6 +281,465 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "med-life.pharmacy-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "控释片能否掰开服用",
+      "content": "门诊一位老年高血压患者拿到硝苯地平控释片，抱怨药片太大难吞，问能不能掰开或碾碎后服用。请从剂型设计与药物释放机制的角度解释为什么不能这样做，并说明你会给他什么替代建议和服药提醒。",
+      "tags": [
+        "药剂学",
+        "剂型设计",
+        "患者教育"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "肾功能不全患者的医嘱审核",
+      "content": "呼吸科收治一位72岁患者，肌酐清除率约28 mL/min，医生开具莫西沙星0.4g qd静滴，同时口服胺碘酮。你在医嘱审核时会重点核查哪些内容？是否需要与医生沟通调整？请说明判断依据。",
+      "tags": [
+        "医嘱审核",
+        "药物相互作用",
+        "肾功能"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "CTD制剂模块的撰写",
+      "content": "某企业拟申报一个化药仿制药，由你负责撰写CTD格式中制剂处方与工艺开发相关部分。请说明你会如何组织这部分内容、需要研发部门提供哪些关键数据，以及哪些内容最容易被审评质疑。",
+      "tags": [
+        "药品注册",
+        "CTD格式",
+        "申报资料"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q014",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "万古霉素谷浓度超标处理",
+      "content": "一位MRSA肺炎患者使用万古霉素1.0g q12h静滴，第4天测得谷浓度26 mg/L，血肌酐较入院明显升高。请说明你如何解读该结果、如何重新计算并调整给药方案，以及需要向医生和护士交代哪些监测与护理要点。",
+      "tags": [
+        "治疗药物监测",
+        "万古霉素",
+        "用药安全"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "一次用药建议的完整复盘",
+      "content": "请举一个你在临床查房或实习中提出用药建议的具体例子：当时患者的基本情况、你的建议内容与循证依据、医生最终是否采纳。如果没有被采纳，你事后做了哪些补充查证或反思？",
+      "tags": [
+        "临床查房",
+        "用药建议",
+        "经历复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "注册申报项目的参与细节",
+      "content": "请详细介绍你参与过或了解最深的一个药品注册申报项目：品种类型、所处申报阶段、你负责的具体模块与交付物，以及你如何逐条核对资料与现行法规、指导原则的一致性。",
+      "tags": [
+        "注册申报",
+        "项目管理",
+        "资料撰写"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q017",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "文献检索与信息评价",
+      "content": "当临床遇到超说明书用药，或注册资料需要文献支持时，你会怎样检索和评价文献？请说出常用的数据库、你习惯的检索策略，以及你判断一篇文献能否作为用药或申报依据的具体标准。",
+      "tags": [
+        "文献检索",
+        "循证药学",
+        "信息评价"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q018",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "资料被退回后的补救",
+      "content": "请讲述一次你经手的申报资料被退回、被发补或方案被专家否决的经历：问题出在哪个环节、你如何定位根本原因、采取了什么补救动作，最终结果如何，你之后在流程上做了哪些改进。",
+      "tags": [
+        "问题复盘",
+        "细节管理",
+        "抗压能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q019",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "患者吸入装置使用教育",
+      "content": "一位哮喘患者拿到布地奈德福莫特罗吸入剂，演示时药粉撒了一手，说“吸了没感觉，不如吃药片方便”。请现场向他解释装置的正确使用要点和坚持吸入治疗的必要性，并说明你如何确认他真正掌握了。",
+      "tags": [
+        "患者教育",
+        "吸入制剂",
+        "沟通技巧"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "医生不采纳用药建议时",
+      "content": "查房时你发现一位肾功能不全患者的抗菌药物剂量偏高并建议调整，主管医生当着全组人说“按经验用，出事我负责”。此时你会怎样回应和跟进，既守住用药安全底线，又不激化与医生的关系？",
+      "tags": [
+        "跨专业沟通",
+        "用药安全",
+        "冲突处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "收到发补通知后的统筹",
+      "content": "你负责的注册申请收到药监部门发补通知，要求60个工作日内提交补充资料，涉及药学与非临床多个模块，其中部分试验需重新委托。请说明你如何拆解任务、排序优先级、协调内外部资源并控制节点风险。",
+      "tags": [
+        "应急响应",
+        "项目统筹",
+        "注册合规"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q022",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "营养液标签贴反的处置",
+      "content": "住院药房发药时你发现某患者的肠内营养液与静脉营养袋标签贴反，药品已送至病区但尚未输注。请说明你接下来10分钟内的处置步骤、需要上报的层级与记录要求，以及事后如何开展根因分析。",
+      "tags": [
+        "用药差错",
+        "应急处置",
+        "药品管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "两个方向如何选择",
+      "content": "临床药师和药品注册的工作形态差别很大：前者每天面对患者与医护，后者长期与资料和法规打交道。你更倾向哪个方向？如果入职后有机会轮岗，你希望前三年怎样安排自己的成长节奏？",
+      "tags": [
+        "求职动机",
+        "方向选择",
+        "成长路径"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q024",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "长期投入的耐心与标准",
+      "content": "注册岗可能连续几个月反复修改同一份申报资料，还要应对审评中不断出现的新问题。请结合你过往一段需要长期投入、反馈缓慢的经历，说明你如何保持专注与质量标准，不因琐碎而降低要求。",
+      "tags": [
+        "工作韧性",
+        "自我管理",
+        "质量意识"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q025",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "医院与药企offer比较",
+      "content": "如果同时拿到三甲医院临床药师岗和大型药企注册岗的offer，薪资结构、值班强度与稳定性都不一样，你会依据哪些因素做决定？请谈谈你对工作城市、加班强度、职称或资质考取的现实考虑。",
+      "tags": [
+        "期望管理",
+        "offer选择",
+        "稳定性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "被安排到非预期方向",
+      "content": "入职后因业务需要，你可能被安排到与预期不同的方向，例如临床药师转做注册资料撰写，或注册岗临时支援药物警戒。你会怎样在短时间内补齐知识短板、主动向前辈请教，同时不拖累团队节点？",
+      "tags": [
+        "适应能力",
+        "学习能力",
+        "节点意识"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q027",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "配药液前的注意事项",
+      "content": "配药液前应该注意些什么？",
+      "tags": [
+        "用药安全",
+        "操作规范"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "中公医考网《执业护士考试常见面试问题汇总》",
+        "url": "https://m.offcn.com/yixue/2023/0925/116643.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q028",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "肾功能不全万古霉素审核",
+      "content": "医师为一名肌酐清除率25 ml/min的MRSA肺炎患者开具万古霉素1g q12h静滴。请审核该处方，说明你的判断依据，并给出具体的剂量调整方案与后续监护要点。",
+      "tags": [
+        "处方审核",
+        "万古霉素",
+        "肾功能调整"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q029",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "创新药NDA申报资料要点",
+      "content": "某创新药完成III期临床，拟提交NDA。请简述CTD格式中模块3（质量）的核心内容，并列举两个常见的发补问题及你的应对思路。",
+      "tags": [
+        "药品注册",
+        "CTD",
+        "发补"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q030",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "地高辛中毒的识别与处理",
+      "content": "患者因心衰服用地高辛0.25mg qd，近两天出现恶心、黄视，血药浓度2.8 ng/mL，血钾3.2 mmol/L。请分析原因并给出紧急处理与后续用药建议。",
+      "tags": [
+        "治疗药物监测",
+        "地高辛",
+        "中毒处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q031",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "临床查房用药干预经历",
+      "content": "请分享一次你在临床查房中发现医嘱存在用药问题（如剂量、相互作用、重复用药）并成功干预的经历。你如何与医生沟通？最终结果如何？",
+      "tags": [
+        "临床查房",
+        "用药干预",
+        "沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q032",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "注册申报项目时间线管理",
+      "content": "假设你负责一个仿制药的ANDA申报，需协调药学、临床、注册等多部门。请描述你如何制定并管理申报时间线，遇到过哪些协作难点？",
+      "tags": [
+        "注册申报",
+        "项目管理",
+        "跨部门协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q033",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "患者用药教育实施经验",
+      "content": "请描述你曾为一位慢性病患者（如高血压、糖尿病）进行用药教育的经历。你如何评估其理解程度？用了哪些工具或方法？",
+      "tags": [
+        "患者教育",
+        "用药指导",
+        "沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q034",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "与医生用药意见分歧处理",
+      "content": "医生坚持为患者超说明书使用某药，你认为风险较高且缺乏证据，医生不耐烦并拒绝沟通。你会如何应对？请说明步骤与沟通策略。",
+      "tags": [
+        "用药争议",
+        "沟通策略",
+        "应变"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q035",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "注册数据错误与截止期冲突",
+      "content": "药品注册申报截止前3天，你发现同事提交的稳定性数据有一处关键错误，但重新实验已来不及。你会如何处理？请说明合规与协作考量。",
+      "tags": [
+        "注册申报",
+        "数据合规",
+        "团队协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q036",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "选择临床药师还是注册岗",
+      "content": "你为什么选择药学岗位？在临床药师与药品注册两个方向中，你更倾向于哪一个？请结合你的性格、经历和职业目标说明。",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "岗位选择"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.pharmacy-q037",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "不同工作节奏的适应与规划",
+      "content": "医院药师需应对临床突发与值班，药企注册岗常面临申报截止压力。你如何适应不同节奏？未来3-5年你的职业规划是什么？",
+      "tags": [
+        "适应能力",
+        "职业规划",
+        "压力管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -401,7 +860,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

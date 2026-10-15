@@ -277,6 +277,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "cs-it.data-analysis-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "SQL 日活口径与去重",
+      "content": "业务方要「日活跃用户数」，但日志表中同一用户同一天可能有多条记录，且存在测试账号。请写出 SQL 并说明：如何定义活跃、如何过滤异常账号，以及口径变化对趋势图的影响。",
+      "tags": [
+        "SQL",
+        "数据口径",
+        "去重"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q012",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "支付转化率下降归因",
+      "content": "某电商 App 支付转化率一周内从 5% 降到 4.2%，请你排查原因。你会按什么框架拆解？需要拉取哪些维度和数据？如何区分是数据采集问题还是真实业务下滑？",
+      "tags": [
+        "业务归因",
+        "指标体系",
+        "转化率"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "A/B 实验可信度评估",
+      "content": "产品团队做了 A/B 实验，实验组点击率提升 2%，p 值 0.04，但样本量只有 800。业务方想全量上线，你如何评估实验是否可信？还需要关注哪些指标和潜在偏差？",
+      "tags": [
+        "AB实验",
+        "统计显著性",
+        "样本量"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q014",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "Python 处理脏数据",
+      "content": "你收到一份包含缺失值、重复行和异常值的 CSV 数据，需要用 Python 清洗后做描述性统计。请描述你的处理步骤，并说明如何判断异常值该保留还是剔除。",
+      "tags": [
+        "Python",
+        "数据清洗",
+        "异常值"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "最有挑战的分析项目",
+      "content": "请介绍一个你做过的最有挑战的数据分析项目：业务背景是什么？你如何把模糊需求转化为可量化的分析框架？最终结论是什么？业务方采纳了吗？",
+      "tags": [
+        "项目经历",
+        "需求转化",
+        "业务落地"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q016",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "数据口径争议处理",
+      "content": "在过往项目中，你是否遇到过数据口径不一致导致结论冲突？请具体说明：冲突双方各是什么口径？你如何验证并推动统一？最后结果如何？",
+      "tags": [
+        "数据口径",
+        "沟通协作",
+        "冲突解决"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "复杂 SQL 优化经历",
+      "content": "请描述你写过的最复杂或最慢的 SQL：业务需求是什么？涉及哪些表和关联？你做了哪些优化（索引、分区、临时表等）？优化前后性能提升多少？",
+      "tags": [
+        "SQL优化",
+        "性能调优",
+        "项目经历"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q018",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "分析报告未被采纳",
+      "content": "你有过分析报告未被业务方采纳的经历吗？请说明当时背景、你的结论和对方顾虑。你事后如何复盘？如果重来一次，你会怎么改进？",
+      "tags": [
+        "分析报告",
+        "复盘",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "业务方质疑数据不对",
+      "content": "业务方说「你的数据不对，和我看到的不一样」，但你检查 SQL 和口径都没问题。你会如何一步步沟通，找出差异来源并让对方认可你的结论？",
+      "tags": [
+        "跨部门沟通",
+        "数据核对",
+        "表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "多部门需求排期冲突",
+      "content": "产品、运营、市场同时向你提数据需求，都要求本周交付，但你时间有限。你会如何排优先级？如何与各方沟通并达成一致？",
+      "tags": [
+        "优先级管理",
+        "沟通协调",
+        "需求管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q021",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "不利结论如何推动",
+      "content": "你的分析发现某个重点功能对留存有负面影响，但该功能是老板力推的项目，业务方不想听。你会如何呈现结论、推动决策，同时维护好合作关系？",
+      "tags": [
+        "影响力",
+        "向上沟通",
+        "业务决策"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q022",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "线上报表数据异常",
+      "content": "你负责的 BI 看板突然显示异常数字，业务方在群里追问。此时你正在忙另一个项目，你会如何快速响应？第一步做什么？如何避免类似问题？",
+      "tags": [
+        "应急处理",
+        "BI看板",
+        "数据监控"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为何选择数据分析师",
+      "content": "你为什么选择数据分析师这个职业方向，而不是数据工程师、产品经理或算法工程师？你觉得自己哪方面特质最适合做数据分析？",
+      "tags": [
+        "求职动机",
+        "职业选择",
+        "自我认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "未来三年职业规划",
+      "content": "未来三年，你希望在数据分析领域达到什么水平？你计划通过哪些方式提升自己的 SQL、统计和业务理解能力？",
+      "tags": [
+        "职业规划",
+        "学习成长",
+        "技能提升"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "理想的数据团队",
+      "content": "你理想中的数据团队协作模式是怎样的？你更希望做偏业务的分析还是偏技术的数据建设？为什么？",
+      "tags": [
+        "团队协作",
+        "岗位匹配",
+        "工作偏好"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "如何衡量分析价值",
+      "content": "你如何衡量数据分析师的工作价值？如果业务方说「分析报告没什么用」，你会怎么回应和调整自己的工作方式？",
+      "tags": [
+        "价值衡量",
+        "业务价值",
+        "自我驱动"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q027",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "统一活跃用户口径",
+      "content": "产品、运营和市场都要看“活跃用户数”，但产品认为打开App即活跃，运营认为有下单行为才算，市场希望按活动页访问去重。请说明你会如何梳理口径、选择主键和去重逻辑，并用SQL写出核心查询思路。",
+      "tags": [
+        "SQL",
+        "数据口径",
+        "指标定义"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q028",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "GMV下降归因分析",
+      "content": "某电商大盘GMV环比下降15%，老板要求你半天内给出原因和可行动建议。你会先确认哪些数据口径？如何按渠道、品类、用户分层拆解？请描述分析框架和优先级，并说明如何避免把相关性当因果。",
+      "tags": [
+        "业务归因",
+        "指标体系",
+        "拆解分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q029",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "AB实验不显著怎么办",
+      "content": "一个推荐算法AB实验，核心指标点击率提升2%但p值0.12，业务方认为趋势向好想全量上线。你如何评估样本量、实验功效和置信区间？会建议继续观测、扩大样本还是上线？请说明判断依据与风险。",
+      "tags": [
+        "AB实验",
+        "统计显著性",
+        "实验设计"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q030",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "SQL性能优化经历",
+      "content": "请讲一个你实际做过的SQL优化或数据清洗项目：原始数据量级、慢在哪里、用了哪些优化手段（如分区、索引、减少笛卡尔积、调整聚合顺序），优化前后耗时或资源消耗变化如何？你如何验证结果正确性？",
+      "tags": [
+        "SQL优化",
+        "项目经历",
+        "数据清洗"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q031",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "BI看板搭建与落地",
+      "content": "描述你搭过的一个BI看板：面向哪些业务方、包含哪些核心指标和维度、数据更新频率如何、你如何处理指标口径不一致？上线后业务使用情况怎样，有没有根据反馈迭代？请用数据说明看板带来的价值。",
+      "tags": [
+        "BI可视化",
+        "指标体系",
+        "项目复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q032",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "数据需求转化经历",
+      "content": "请举一个你把业务方模糊需求转化为可量化分析框架的例子。业务方最初怎么说的？你追问了哪些问题？最终确定了哪些指标、维度和分析口径？产出结论后业务是否采纳，效果如何？",
+      "tags": [
+        "需求分析",
+        "业务理解",
+        "项目经历"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q033",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "业务方质疑数据不准",
+      "content": "运营负责人看到报表后说“这数据肯定不对，和我感觉差很多”，并在群里@你要求立刻解释。你会如何沟通？请说明你会先核对哪些口径、如何展示排查过程，以及怎样避免陷入情绪对抗并推动问题解决。",
+      "tags": [
+        "跨部门沟通",
+        "数据口径",
+        "冲突处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q034",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "多部门需求冲突排期",
+      "content": "产品、运营、市场同时提了三个紧急数据需求：产品要埋点校验，运营要活动复盘，市场要竞品看板。你只有一天时间，且手头还有月度报告。你会如何评估优先级、与各方沟通预期并拆分交付？请给出具体决策逻辑。",
+      "tags": [
+        "优先级管理",
+        "跨部门协作",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q035",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么选择数据分析",
+      "content": "你为什么选择数据分析师作为职业方向？结合你的学习、实习或项目经历，说说你真正享受和擅长的部分是什么。如果入职后发现大量工作是取数和清洗，你会怎么看待？",
+      "tags": [
+        "求职动机",
+        "职业选择",
+        "自我认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q036",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "offer选择与入职目标",
+      "content": "如果你同时拿到两个offer，一个薪资更高但数据基础薄弱，一个薪资略低但数据团队成熟、业务空间大，你会如何选择？请说明你的判断标准，并谈谈入职后前三个月你希望达成哪些具体目标。",
+      "tags": [
+        "offer选择",
+        "职业规划",
+        "自我驱动"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q037",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "SQL口径差异排查",
+      "content": "业务方反馈两个报表的“上周新增用户数”相差20%，你手头有用户表（user_id, reg_time）、订单表（order_id, user_id, pay_time）和一份旧口径说明。请说明你会如何用SQL逐步排查差异来源，并给出统一口径的建议。考察点：SQL查询、数据口径定义、脏数据处理。",
+      "tags": [
+        "SQL查询",
+        "数据口径",
+        "数据清洗"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q038",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "指标异常归因分析",
+      "content": "请举一个你实际经历过的指标异常案例：你负责的核心指标突然下跌或上涨，你是如何拆解维度、提出假设并用数据验证的？请具体说明你用了哪些SQL/Python操作、最终定位到什么原因、结论如何被业务采纳，以及如果数据不支持你的假设你会怎么办。",
+      "tags": [
+        "业务归因",
+        "指标拆解",
+        "数据验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q039",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "业务方要求支持决策",
+      "content": "运营负责人认为某新功能上线后转化率下降，要求你立刻出一份数据报告支持他们下线该功能。但你初步看数据发现下降可能由季节性或大盘波动导致。你会如何与运营沟通、设计分析来验证原因，并给出最终建议？请说明你的沟通步骤和分析框架。",
+      "tags": [
+        "跨团队沟通",
+        "业务理解",
+        "数据严谨性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.data-analysis-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "取数多如何规划成长",
+      "content": "如果你入职后发现团队大量时间让你做临时取数，分析项目很少，你会如何与上级沟通、规划自己的成长路径，并保证取数工作也能体现价值？请结合你对数据分析师角色的理解谈谈。",
+      "tags": [
+        "职业规划",
+        "沟通表达",
+        "角色理解"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -381,7 +891,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full",
     "dimensionSource": "project-authored"
   }

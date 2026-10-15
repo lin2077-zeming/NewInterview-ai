@@ -259,6 +259,523 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "cs-it.product-manager-q010",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "需求优先级的冲突",
+      "content": "你负责的后台产品同时收到三个需求：销售承诺的报表定制、运营提效的数据看板、合规要求的权限改造。研发资源只够做一个半。请说明你会如何收集信息、用什么框架排序，并给出未来两周的排期建议。",
+      "tags": [
+        "需求优先级",
+        "资源分配",
+        "决策框架"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "指标下降归因",
+      "content": "某核心功能周活跃使用率连续三周下降 15%，老板要求你一周内给出原因和方案。你手头有埋点、用户访谈、客服工单和竞品动态。请描述你的分析路径、会优先看哪些数据，以及如何避免把相关性当因果。",
+      "tags": [
+        "数据分析",
+        "归因",
+        "用户研究"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q012",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "方案取舍与工程约束",
+      "content": "业务方要求两周上线一个审批流，但现有系统不支持多级条件分支。自研需一个月，配置第三方可一周但年费高且数据出境。请写出你的方案对比维度、推荐选择，并说明如何与业务方和研发沟通。",
+      "tags": [
+        "方案设计",
+        "取舍",
+        "沟通协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "定义上线成功指标",
+      "content": "团队准备上线一个面向内部销售的客户线索评分功能。请你在不增加开发成本的前提下，设计上线后 30 天的成功指标：至少一个结果指标、两个过程指标和一个反指标，并说明数据来源。",
+      "tags": [
+        "指标体系",
+        "数据决策",
+        "上线复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q014",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "深挖一次失败迭代",
+      "content": "请回忆你参与过的一个上线后效果不及预期的产品迭代。说明当时的目标、你负责的部分、实际数据与预期的差距，以及你事后复盘出的最关键一个原因。不要只讲流程，请给出具体数字和你的动作。",
+      "tags": [
+        "项目复盘",
+        "结果负责",
+        "数据验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "需求被研发挑战",
+      "content": "讲一个你的需求评审中被研发质疑“技术上没必要/成本过高”的经历。当时需求背景是什么？你如何判断对方是真有约束还是不愿做？最后改成了什么方案？请用 STAR 讲清决策依据。",
+      "tags": [
+        "需求评审",
+        "协作冲突",
+        "方案调整"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q016",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "从0到1项目推进",
+      "content": "请选一个你从0到1推动的产品或功能，说明当时资源少、时间紧、跨团队多的具体约束。重点讲你如何拆解里程碑、对齐各方目标、处理卡点，以及最后用哪两个数据证明它值得继续投入。",
+      "tags": [
+        "项目推动",
+        "从0到1",
+        "跨团队"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q017",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "用户访谈挖掘真需求",
+      "content": "请举一个你通过用户访谈改变原定产品方案的例子。当时用户原话是什么？你如何区分表面诉求和真实痛点？最终方案与最初设想有什么不同？如果没有真实经历，请说明你会怎么设计一次访谈。",
+      "tags": [
+        "用户访谈",
+        "需求洞察",
+        "方案调整"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q018",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "跨部门资源争夺",
+      "content": "你负责的需求与另一个业务线需求同时抢同一个设计资源，对方优先级由VP口头支持。你的上线时间也卡在合同节点。请现场模拟你如何与对方产品、设计和上级沟通，推动资源协调而不破坏长期关系。",
+      "tags": [
+        "跨部门协作",
+        "资源协调",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q019",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "线上突发故障沟通",
+      "content": "产品上线后一小时出现支付失败率飙升，研发正在排查，客服已被用户投诉淹没。作为产品经理，请说明接下来 30 分钟你会做哪四件事，以及如何向业务方同步信息，避免谣言和重复追问。",
+      "tags": [
+        "突发应对",
+        "危机沟通",
+        "项目推进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "需求变更应对",
+      "content": "开发进行到一半，业务负责人突然要求增加一个影响核心流程的字段，并坚持本期上线。研发表示会导致延期三天。请说明你如何评估变更影响、给出几种可选方案，并现场说服业务方接受你的建议。",
+      "tags": [
+        "需求变更",
+        "影响评估",
+        "谈判说服"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q021",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "跨文化远程协作冲突",
+      "content": "你的团队分布在北京和海外，海外研发认为需求文档不清晰、频繁变更，北京业务则抱怨进度慢。项目已延期两周。请设计一个改进协作机制的方案，包含沟通节奏、文档规范、决策权和冲突升级路径。",
+      "tags": [
+        "远程协作",
+        "流程机制",
+        "冲突解决"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q022",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么选择产品岗",
+      "content": "结合你过去做过的具体项目或实习，说明你为何选择产品经理而不是研发、运营或咨询。请给出一个你亲自做过的产品决策例子，并说明这个岗位最吸引你又最让你不适应的部分。",
+      "tags": [
+        "求职动机",
+        "自我认知",
+        "岗位匹配"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "职业规划与能力短板",
+      "content": "未来三年你希望在产品能力上达到什么水平？请用“用户洞察、数据分析、方案设计、项目推动”四个维度中至少两个，说明你的优势和最需要补的短板，以及你计划通过什么具体行动弥补。",
+      "tags": [
+        "职业规划",
+        "能力提升",
+        "自我评估"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "团队协作中的角色",
+      "content": "请讲一次你在团队中主动补位、推动事情前进的经历。当时没有明确负责人，你做了什么让团队避免卡住？你如何平衡“主动推进”和“不越权干预”之间的边界？",
+      "tags": [
+        "团队协作",
+        "主动补位",
+        "边界感"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "期望与抗压",
+      "content": "产品经理常面对需求被砍、上线延期和多方指责。请说一个你高压下仍保持判断力的真实经历。另外，你对下一份工作的团队氛围、汇报关系和成长空间有什么具体期待？哪些情况会让你考虑离开？",
+      "tags": [
+        "抗压能力",
+        "求职期望",
+        "稳定性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q026",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "用户说审批太慢，如何验证真需求",
+      "content": "某B端产品的用户集中反馈「审批流程太慢」，希望加急。请说明你会怎么拆解这个问题：需要看哪些数据、找哪些角色访谈、问什么关键问题，最后如何判断这是流程设计问题、权限配置问题，还是用户习惯问题？给出你的判断路径。",
+      "tags": [
+        "需求洞察",
+        "用户研究"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q027",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "只能做两个需求，怎么排优先级",
+      "content": "季度排期时你手里有5个候选需求：销售承诺的大客户定制、数据发现的流失预警、老板提的界面改版、运营要的活动工具、用户反馈最多的导出功能，但资源只够做2个。请说出你的排序结果和判断依据，以及如何向被砍掉的一方交代。",
+      "tags": [
+        "优先级",
+        "资源分配"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q028",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "新功能上线两周，核心指标没涨",
+      "content": "你主导的新功能上线两周，日活和转化率都没有明显变化。请描述你的归因步骤：先看什么、怎么区分「需求是伪命题」「方案有问题」「入口或埋点有问题」「样本量不足」这几种情况，以及分别对应什么决策。",
+      "tags": [
+        "数据分析",
+        "指标归因"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q029",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "从0到1做过的功能，讲清楚",
+      "content": "请挑一个你主导过的功能或模块，从需求来源讲起：你发现了什么问题、怎么验证、方案怎么定的、和谁协作、上线后数据如何。重点说清哪些决策是你自己做的，以及如果重来一次你会改哪个环节。",
+      "tags": [
+        "经历深挖",
+        "项目复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q030",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "讲一次你砍掉或推迟需求",
+      "content": "请举例说明你在项目里主动砍掉或推迟过一个需求。当时的背景是什么，你用什么依据判断它不该现在做，如何说服提出需求的人，事后来看这个决定对不对？重点讲你判断时的取舍逻辑。",
+      "tags": [
+        "需求取舍",
+        "决策依据"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q031",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "没有数据支撑时如何做决策",
+      "content": "很多早期需求没有历史数据可参考。请讲一个你在信息不充分、时间又紧的情况下做出产品决策的例子：你依据了什么、做了哪些假设、如何降低判断错误的成本，上线后的结果是否验证了你的假设。",
+      "tags": [
+        "产品决策",
+        "假设验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q032",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "上线前3天，核心功能只能做60%",
+      "content": "距离版本上线还有3天，工程师告诉你核心功能只能完成大约60%，完整做完需要再延期两周，而市场侧已经对外预告了上线时间。请说出你接下来24小时会做哪些事、先和谁沟通、备选方案是什么。",
+      "tags": [
+        "项目推进",
+        "风险应对"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q033",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "运营强推低价值需求，老板也支持",
+      "content": "运营要求在本次迭代插一个你认为价值很低的需求，理由是竞品有，且老板在会上点了头，而这个需求会挤掉你正在做的高价值优化。你会怎么处理？请说明如何验证运营的判断、如何跟老板沟通、以及可能的折中方案。",
+      "tags": [
+        "跨部门协作",
+        "向上沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q034",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "未来想深耕的产品方向与理由",
+      "content": "产品经理的路径差异很大，有人深耕B端行业，有人做C端增长，也有人转向数据或商业化。结合你过去的经历和优势，说说未来1到2年你想深耕哪个方向，为什么，为此你已经在做哪些准备。",
+      "tags": [
+        "方向选择",
+        "能力准备"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q035",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "选offer时你最看重什么",
+      "content": "如果你同时拿到两个产品经理offer：一个是大厂成熟业务线的细分岗位，一个是早期创业公司的核心产品岗，薪资接近。你会怎么选？请说出你的判断标准，以及你希望团队和直接上级具备什么特质。",
+      "tags": [
+        "求职动机",
+        "团队选择"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q036",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "B端SaaS多需求优先级排序",
+      "content": "你负责一款B端SaaS，季度初同时收到：大客户A要求定制审批流，可带来年收入200万但占用2名后端3周；数据看板显示80%用户吐槽导出慢，优化需1周但无直接收入；老板希望做AI摘要，需探索4周且方向不确定。团队共5人、8周。你如何评估与排序？请给出决策依据和沟通方案。",
+      "tags": [
+        "优先级排序",
+        "资源分配",
+        "B端产品"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q037",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "留存下降但满意度上升怎么查",
+      "content": "一款内容社区App发现新用户次日留存下降5%，但问卷满意度却上升。你会从哪些数据维度拆解问题？如何设计用户访谈来验证假设？最终会形成怎样的结论和迭代建议？请说明你的分析路径。",
+      "tags": [
+        "数据分析",
+        "用户研究",
+        "留存"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q038",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "深挖主导功能从0到1复盘",
+      "content": "请挑一个你主导过的产品功能，从需求发现到上线复盘完整讲一遍。重点说明：当时目标是什么、你如何验证需求真实性、方案设计中放弃了哪些备选做法、上线后数据是否达成目标，以及如果重来你会改哪一步。请给出量化指标。",
+      "tags": [
+        "项目复盘",
+        "需求定义",
+        "数据结果"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q039",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "上线前3天交互大改如何推进",
+      "content": "距离大版本上线3天，设计师提出核心流程交互需大改，工程师评估至少延期一周，运营已对外预告活动时间。你作为产品经理，如何组织决策、同步各方并推进项目？请说出具体步骤和优先级判断。",
+      "tags": [
+        "跨部门协作",
+        "风险管理",
+        "沟通推进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.product-manager-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么选择产品经理并保持动力",
+      "content": "你为什么选择产品经理作为职业？在过往经历中，哪件事让你确认自己适合做产品？如果入职后发现大量工作是写文档、跟进度、处理琐碎沟通，你如何保持动力？",
+      "tags": [
+        "求职动机",
+        "职业认知",
+        "抗压"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -361,7 +878,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full",
     "dimensionSource": "project-authored"
   }

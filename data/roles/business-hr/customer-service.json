@@ -258,6 +258,521 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "business-hr.customer-service-q010",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "不确定答案时的回应",
+      "content": "客户在服务群里抛出一个你不确定的功能细节问题，并@你要求尽快答复，此时距离你的下一场客户会议只剩10分钟。请说明你会怎么回应，以及后续如何跟进闭环。",
+      "tags": [
+        "沟通表达",
+        "响应时效",
+        "服务意识"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "情绪激动客户投诉处理",
+      "content": "一位客户因系统连续两次故障导致业务受影响，来电时情绪激动，指责你们“不专业”，并要求立刻给出赔偿方案。请现场还原你的前3句话，并说明如何把对话从情绪拉回问题本身。",
+      "tags": [
+        "共情",
+        "投诉处理",
+        "情绪管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "健康度下滑如何定位",
+      "content": "你负责的20家客户中，有3家近两个月登录频次下降40%、工单量归零。请说明你会调取哪些数据、如何判断是“客户业务淡季”还是“流失前兆”，并给出下一步动作。",
+      "tags": [
+        "数据分析",
+        "客户健康度",
+        "流失预警"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q013",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "续约压价与增购策略",
+      "content": "一家年费50万的核心客户合同到期前一个月，采购明确表示预算被砍，只能续30万，否则考虑换供应商。你了解到客户内部对产品实际使用效果是认可的。请给出你的续约策略与谈判步骤。",
+      "tags": [
+        "续约谈判",
+        "客户关系",
+        "增购"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q014",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "一次客户挽回经历",
+      "content": "请讲一个你从“客户明确表示要终止合作”到“最终留下或续约”的真实经历。请说明当时的背景、你判断的关键症结、你做的具体动作，以及最后结果用数字如何体现。",
+      "tags": [
+        "经历深挖",
+        "客户挽回"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "客户反馈推动内部改动",
+      "content": "请举一个你整理客户反馈并推动内部（产品/技术）改动的例子。你当时收集了多少条反馈、如何分类排序、被采纳的比例是多少、过程中遇到的最大阻力是什么？",
+      "tags": [
+        "需求推动",
+        "跨部门协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "用数据改善服务结果",
+      "content": "请分享一段你用数据改善客户服务结果的经历，比如降低流失率、缩短响应时长或提升续约率。请具体说明指标定义、你做的归因分析，以及最终改善幅度。",
+      "tags": [
+        "数据分析",
+        "结果量化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q017",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "最棘手服务事件复盘",
+      "content": "请复盘你处理过的最棘手的一次客户服务事件（如批量投诉、重大故障、客户高层施压）。当时你承担什么角色，做了哪些取舍，事后做了哪些机制上的改进来避免重演？",
+      "tags": [
+        "危机处理",
+        "复盘反思"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q018",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "研发排期靠后如何推进",
+      "content": "客户反馈的bug影响其本周上线，但研发告诉你排期在两周后，且对方不是你的直属同事。请说明你会如何沟通推进，并给出你具体会说的第一段话。",
+      "tags": [
+        "跨部门协作",
+        "推动力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "多线任务优先级排序",
+      "content": "同一个上午，你手上有：A客户系统报障、B客户要求今天签续约合同、上级要求你中午前交月度报表、C客户在群里连续催问。请排出你的处理顺序并说明排序依据。",
+      "tags": [
+        "优先级",
+        "时间管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "客户要求超范围承诺",
+      "content": "客户要求你承诺一个产品目前做不到的定制功能，并说“做得到我才续约”。你没有权限答应，也不确定研发能否实现。请说明你如何回应客户、如何与内部对齐，避免过度承诺。",
+      "tags": [
+        "期望管理",
+        "需求管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q021",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "客户高层质问的现场应对",
+      "content": "因你们的原因导致客户数据出现异常，客户CEO在会议上直接质问。你的直属领导正在休假。请说明你在会上的应对策略和会后两小时内的动作清单。",
+      "tags": [
+        "危机沟通",
+        "应变能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q022",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "客服工作最难熬的部分",
+      "content": "很多人对客服的想象是“接电话、解决问题”，但真实工作里大量时间是重复沟通、跟内部扯皮、处理客户情绪。你认为这份工作最难熬的部分是什么？你打算怎么应对？",
+      "tags": [
+        "岗位认知",
+        "求职动机"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q023",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "如何面对绩效落后的同事",
+      "content": "团队里有一位同事负责的客户流失率明显高于平均值，但他不愿意接受别人的帮助。作为同组同事，你会怎么做？请说明你的介入边界和具体做法。",
+      "tags": [
+        "团队协作",
+        "同事关系"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q024",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "负面情绪影响工作后如何恢复",
+      "content": "请描述一个你被负面情绪严重影响工作状态的时刻（不限客服场景），你当时用了什么方法让自己恢复？现在回看，这套方法是否还够用？如果没有，你会补充什么？",
+      "tags": [
+        "情绪管理",
+        "抗压能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q025",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "前半年重复工作中求成长",
+      "content": "如果入职后前半年，你每天大部分时间都在处理相似的问题和安抚客户情绪，你希望自己在这段时间积累到什么？请说说你衡量自己是否“有成长”的标准。",
+      "tags": [
+        "成长预期",
+        "职业动机"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q026",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "客户健康度下降如何干预",
+      "content": "你是客户成功经理，系统显示某重点客户近30天登录频次下降60%、工单数上升，但对接人回复仍客气。请说明你会如何诊断原因、制定干预方案：看哪些数据、与谁沟通、优先级怎么排，并给出两周内的具体动作。",
+      "tags": [
+        "数据分析",
+        "客户健康度",
+        "问题解决"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q027",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "安抚激动投诉客户",
+      "content": "客户因系统故障导致业务受影响，来电时情绪激动，要求立即赔偿并威胁终止合作。你作为客服/客户成功，第一步会怎么回应？请现场模拟前两轮对话，并说明后续如何跟进、如何协调内部资源。",
+      "tags": [
+        "共情沟通",
+        "投诉处理",
+        "情绪管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q028",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "预算收紧下的续约策略",
+      "content": "客户合同还有两个月到期，使用频率尚可，但对接人明确表示预算收紧、只考虑续约不增购，且提到竞品报价低20%。请你设计一套续约沟通策略：如何挖掘真实需求、呈现价值、处理价格异议，并给出可提升续约概率的动作。",
+      "tags": [
+        "续约增购",
+        "价值呈现",
+        "异议处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q029",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "协调多方解决客户问题",
+      "content": "请描述你过去（实习/项目/校园）中一次需要协调多方才能解决的客户或用户问题：背景是什么、你具体做了什么、结果如何、如果重来你会改哪一步？请尽量用数据说明结果和你个人的贡献。",
+      "tags": [
+        "经历深挖",
+        "问题解决",
+        "结果复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q030",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "主动回访挖掘需求",
+      "content": "请分享一次你主动回访客户或用户、并从中挖掘出需求或推动改进的经历。你如何设计回访问题、如何判断信息真伪、最终反馈给谁、产生了什么变化？如果无真实客户，可用社团或项目成员经历替代。",
+      "tags": [
+        "需求挖掘",
+        "主动回访",
+        "客户反馈"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q031",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "数据驱动客户分层运营",
+      "content": "如果你曾负责过一批用户或客户，请说明你如何做分层、用哪些指标判断健康度、针对不同层级采取什么动作，以及最终续约率、满意度或活跃度有什么变化。请具体到指标口径和你的个人贡献，避免只讲团队成果。",
+      "tags": [
+        "数据分析",
+        "客户分层",
+        "运营策略"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q032",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "跨部门争资源保客户",
+      "content": "客户急需一个功能修复，但产品排期已满、研发认为优先级低。你需要同时面对客户催促和内部资源不足。请说明你会如何与产品、研发沟通，如何给客户设定期望，并推动问题解决。请给出具体沟通顺序和话术要点。",
+      "tags": [
+        "跨部门协作",
+        "资源协调",
+        "期望管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q033",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "客户数据泄露应急沟通",
+      "content": "假设你负责的客户在周五下班前发现其数据可能被误操作泄露，客户非常愤怒，要求一小时内给出解释，否则公开投诉。你需要协调法务、安全、研发和上级。请说明你的应急处理步骤、对外沟通原则和内部协同方式。",
+      "tags": [
+        "危机处理",
+        "客户沟通",
+        "内部协同"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q034",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为何选择客户成功",
+      "content": "请结合你对客户成功岗位的理解，说明为什么选择这个方向而不是销售或产品岗位？你希望在这份工作中获得什么？未来1-2年你计划如何成长？请给出具体、可验证的规划。",
+      "tags": [
+        "求职动机",
+        "岗位认知",
+        "职业规划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q035",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "长期面对负面反馈的动力",
+      "content": "客户成功日常会接收大量抱怨和拒绝。请举一个你长期面对负面反馈仍保持投入的例子，说明你当时的调节方式、支持来源，以及你如何判断自己适合长期做客户服务。请真实描述你的情绪变化过程。",
+      "tags": [
+        "抗压能力",
+        "情绪管理",
+        "自我调节"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q036",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "模糊报错如何引导",
+      "content": "客户在服务群里发了一张“报表导出失败”的截图，没有提供账号、操作路径和报错时间，语气有些不耐烦。你会如何回复并逐步引导，既尽快定位问题，又避免让客户觉得你在推卸责任？请模拟你的沟通步骤。",
+      "tags": [
+        "客户咨询",
+        "提问引导",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q037",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "健康度下滑挽回",
+      "content": "你负责的SaaS客户近一个月登录频次下降50%，工单量上升，关键对接人回复变慢，合同还有两个月到期。请说明你会查看哪些健康度指标来判断流失原因，并设计接下来两周的沟通与挽回动作。",
+      "tags": [
+        "客户健康度",
+        "续约挽回",
+        "数据分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q038",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "从服务中挖增购",
+      "content": "请复盘一段你深度维护客户或项目的经历：你如何从日常沟通、使用数据或投诉反馈中发现续约/增购机会？当时协调了哪些内部资源，最终结果如何？请用具体数据说明你的贡献。",
+      "tags": [
+        "经历深挖",
+        "增购续约",
+        "数据复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q039",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "研发排期满的急单",
+      "content": "客户系统故障，影响其业务，要求明天前修复；但研发排期已满，销售已向客户承诺加急。你作为客户成功，会如何分别与客户、销售、研发沟通，既推动问题解决，又管理好各方预期？请给出具体步骤和话术要点。",
+      "tags": [
+        "跨部门协作",
+        "紧急事件",
+        "期望管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.customer-service-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "满意度高但续约低",
+      "content": "你如何理解客户成功岗位中“服务”与“续约/增购”的关系？如果你连续三个月客户满意度评分很高，但负责客户的续约率没有提升，你会怎么分析原因、调整动作？这反映了你怎样的职业规划？",
+      "tags": [
+        "岗位认知",
+        "续约动机",
+        "职业规划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -362,7 +877,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

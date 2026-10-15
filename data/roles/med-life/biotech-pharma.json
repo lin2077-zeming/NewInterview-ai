@@ -277,6 +277,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "med-life.biotech-pharma-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "细胞培养污染判断与处理",
+      "content": "细胞培养瓶中发现培养基浑浊、pH快速变黄，镜下细胞形态改变。请描述你如何判断是细菌、真菌还是支原体污染，会采取哪些紧急处理与预防措施，并说明为何不能直接加抗生素挽救。",
+      "tags": [
+        "细胞培养",
+        "无菌操作",
+        "污染排查"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "HPLC方法开发与验证",
+      "content": "你需要为一个小分子原料药建立有关物质HPLC方法。请说明如何选择色谱柱、流动相、检测波长，如何做专属性、线性、精密度、检测限/定量限和耐用性验证，并如何判断方法是否可转移。",
+      "tags": [
+        "分析方法",
+        "HPLC",
+        "方法验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "细胞株构建筛选策略",
+      "content": "用CHO细胞表达一个单抗，完成转染和加压筛选后，需要从数十个池中选出高产稳定克隆。请说明你会如何设计摇瓶筛选、补料分批评估、传代稳定性考察和VCD/滴度/质量指标，最终推荐哪个克隆进入后续开发。",
+      "tags": [
+        "细胞株构建",
+        "工艺开发",
+        "单抗"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q014",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "发酵纯化收率下降根因",
+      "content": "重组蛋白发酵纯化项目连续三批收率从65%降至40%，纯度合格但宿主蛋白略升。请用假设驱动方式，从发酵表达量、离心/复性、层析载量、缓冲液、柱效和检测方法等环节设计排查实验，并说明如何确认根因。",
+      "tags": [
+        "发酵纯化",
+        "根因分析",
+        "实验设计"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q015",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "简历项目技术细节追问",
+      "content": "请选一个你深度参与的研发项目，说明项目目标、你的具体角色、使用的关键实验技术（如PCR、ELISA、HPLC或细胞培养）和产出。重点讲你个人做了哪些操作、遇到的最大技术问题及如何解决。",
+      "tags": [
+        "项目经历",
+        "实验技能",
+        "问题解决"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "失败实验复盘与改进",
+      "content": "请讲一次你设计的实验未得到预期结果或重复性差的经历。你如何确认是操作误差、试剂问题还是假设错误？采取了哪些改进措施？最终数据如何？从中总结出什么可迁移的实验规范。",
+      "tags": [
+        "失败复盘",
+        "数据可靠性",
+        "科研思维"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "跨环节项目推进案例",
+      "content": "描述一个你从靶点/分子筛选到细胞或工艺评价全程参与的项目。你在关键节点如何设定优先级、协调资源、汇报数据？如果重来一次，你会改变哪个决策，为什么？",
+      "tags": [
+        "项目执行",
+        "节点管理",
+        "研发流程"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q018",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "文献与法规落地经历",
+      "content": "请举例说明你如何通过文献检索或法规指南（如ICH、药典）解决实验中的具体问题，比如方法建立、稳定性方案或安全性评价指标。你如何判断信息可靠并转化为可执行实验方案？",
+      "tags": [
+        "文献检索",
+        "法规理解",
+        "转化应用"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q019",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "跨部门数据冲突沟通",
+      "content": "你负责的分析方法在研发部通过，但生产或QA认为操作繁琐、重现性差。对方在会议上直接质疑你的数据。你会如何回应、澄清分歧并推动达成可执行方案？",
+      "tags": [
+        "跨部门沟通",
+        "数据解释",
+        "冲突处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "实验资源冲突协调",
+      "content": "项目关键节点前，你需要的HPLC和细胞培养间同时被其他项目占用，且你的样品有时效性。你会如何与相关同事、主管沟通，调整实验设计或排期，确保关键数据不缺失？",
+      "tags": [
+        "资源协调",
+        "优先级",
+        "沟通协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "突发设备故障应对",
+      "content": "深夜运行的关键纯化层析或细胞反应器报警，你不在现场且次日要汇报数据。你会如何远程判断风险、联系维修、保护样品并记录异常，以便后续偏差调查？",
+      "tags": [
+        "应急处置",
+        "设备故障",
+        "偏差记录"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q022",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "项目数据异常与压力",
+      "content": "你发现一批关键药效实验数据异常，可能推翻项目组已汇报的结论，但领导希望先按原结论推进。你会如何核实数据、评估风险并向上沟通？请说明你的原则和具体步骤。",
+      "tags": [
+        "科研诚信",
+        "风险沟通",
+        "数据核实"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "职业动机与岗位匹配",
+      "content": "你为什么选择生物技术与制药研发岗位？结合你的专业背景和实习/项目经历，说明你最适合药物发现、工艺开发、质量研究还是临床前评价，以及未来三年的能力提升计划。",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "岗位匹配"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "团队协作与冲突处理",
+      "content": "在实验室项目中，你与同事在实验方案或数据解读上产生分歧，对方资历更深。你会如何表达观点、用证据沟通并维护团队效率？请举一个真实例子。",
+      "tags": [
+        "团队协作",
+        "冲突处理",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "加班与项目紧急任务",
+      "content": "研发项目常因细胞培养、发酵或稳定性取样需要周末/夜间加班，且可能临时调整任务。你如何看待这种工作节奏？请结合过往经历说明你如何安排时间并保持实验质量。",
+      "tags": [
+        "抗压能力",
+        "时间管理",
+        "责任心"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q026",
+      "stage": "hr",
+      "difficulty": "hard",
+      "title": "职业规划与公司需求",
+      "content": "如果入职后公司把你从熟悉的分子生物学方向调到分析开发或临床前评价，短期内需要补大量法规和仪器知识，你如何应对？请说明你的学习路径、价值贡献和可能的风险。",
+      "tags": [
+        "职业规划",
+        "学习能力",
+        "组织需求"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q027",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "细胞培养状态判断",
+      "content": "你在开展细胞功能实验前，如何判断细胞状态是否适合实验？请从细胞形态、融合度、活力、支原体检测等方面说明你的标准操作流程，并举例说明遇到状态不佳时你会如何处理。",
+      "tags": [
+        "细胞培养",
+        "操作规范",
+        "质量控制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q028",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "HPLC分离度优化",
+      "content": "在开发某仿制药有关物质HPLC方法时，主峰与相邻杂质分离度始终在1.2左右，无法达到1.5。请阐述你的排查思路与优化策略，包括流动相、色谱柱、梯度、柱温等关键因素的调整逻辑。",
+      "tags": [
+        "分析方法",
+        "HPLC",
+        "方法验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q029",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "单抗聚体偏高排查",
+      "content": "单抗细胞株构建后，表达量达标但聚体比例偏高（>10%）。请从细胞培养工艺和纯化工艺两个角度提出排查与优化方案，并说明如何设计实验确认关键因素，以及如何评估优化后产品的质量属性。",
+      "tags": [
+        "工艺开发",
+        "细胞培养",
+        "纯化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q030",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "最熟练实验技术",
+      "content": "请介绍你最熟练的一项实验室技术（如PCR、ELISA、HPLC或细胞培养），包括你在哪个项目中用它解决了什么具体问题、关键操作要点，以及你如何处理该技术常见的异常结果。",
+      "tags": [
+        "实验技能",
+        "操作规范",
+        "项目应用"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q031",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "方法验证项目复盘",
+      "content": "你曾负责或参与过哪个分析方法开发/验证项目？请具体说明方法学验证中哪个参数最难达标，你如何调整实验条件，最终结果如何？若让你重新设计验证方案，会做哪些改进？",
+      "tags": [
+        "方法验证",
+        "数据分析",
+        "项目复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q032",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "关键实验反复失败",
+      "content": "请分享一个你主导或深度参与的研发项目，其中某个关键实验反复失败。你当时如何提出假设、设计排查实验、定位根本原因？最终如何解决？如果重来一次，你会如何优化实验设计？",
+      "tags": [
+        "项目经历",
+        "问题解决",
+        "实验设计"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q033",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "生产部门延迟供样",
+      "content": "你负责的分析方法开发需要生产部门提供三批中试样品，但对方因生产计划紧张一再延迟。项目节点临近，你如何与生产部门沟通并推动样品到位？请说明具体步骤和备选方案。",
+      "tags": [
+        "跨部门沟通",
+        "项目推进",
+        "冲突处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q034",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "CRO毒理实验异常",
+      "content": "某关键临床前毒理实验委托CRO进行，周末你收到CRO邮件称部分动物出现异常症状，可能影响实验数据完整性。你作为项目研发人员，如何评估并处理？请说明沟通与决策流程。",
+      "tags": [
+        "应急处理",
+        "临床前评价",
+        "沟通协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q035",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "选择研发职业动机",
+      "content": "你为什么选择生物技术与制药研发作为职业方向？在过往学习或实习中，哪段经历让你坚定了这个选择？请结合具体事例说明你对研发工作的理解。",
+      "tags": [
+        "求职动机",
+        "职业选择",
+        "自我认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q036",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "新技术平台学习规划",
+      "content": "公司有一个创新药项目处于临床前阶段，需要你在较短时间内补充学习新的技术平台（如某类细胞功能实验）。你如何规划学习路径、分配时间，并融入现有团队？",
+      "tags": [
+        "职业规划",
+        "学习能力",
+        "团队融入"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q037",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "稳定株表达量低排查",
+      "content": "你在CHO细胞稳定株构建中，经加压筛选后获得表达量仅0.2 g/L，远低于项目目标2 g/L。请说明你会从载体/基因拷贝、转录水平、分泌途径、培养工艺等哪些方面提出假设，并设计2-3组关键实验验证，如何设置对照和判定指标？",
+      "tags": [
+        "实验设计",
+        "细胞株构建",
+        "数据分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q038",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "项目节点延后应对",
+      "content": "你负责的抗体药工艺开发项目进入中试放大，原计划4周完成纯化工艺确认，但第2周发现HCP残留连续超标，且临床批生产排期不可改。请结合你的项目经历，说明如何定位原因、调整实验计划并与上下游/QA沟通，确保节点或降低影响。",
+      "tags": [
+        "项目执行",
+        "工艺开发",
+        "跨部门协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q039",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "跨部门数据冲突沟通",
+      "content": "分析方法验证中，你负责的HPLC有关物质方法在QC复核时重现性差，QC认为是方法本身不稳，你怀疑是操作或仪器差异。项目组要求24小时内给出结论。你会如何组织沟通、设计比对实验并推进解决？",
+      "tags": [
+        "跨部门沟通",
+        "方法验证",
+        "问题解决"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "med-life.biotech-pharma-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "重复工作与成长规划",
+      "content": "你希望未来3年在生物制药研发领域成长为怎样的角色？如果入职后前6个月主要做重复性较强的样品分析和数据整理，你如何保持动力并融入团队？请结合具体经历说明。",
+      "tags": [
+        "职业规划",
+        "团队协作",
+        "求职动机"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -370,7 +880,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

@@ -278,6 +278,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "business-hr.human-resources-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "简历筛选与电话初筛",
+      "content": "一天收到200份简历，其中50份投递同一岗位。你会设定哪些硬性筛选条件和加分项？电话初筛时，你必问哪三个问题来判断候选人是否值得约面？请说明判断逻辑。",
+      "tags": [
+        "简历筛选",
+        "电话初筛",
+        "招聘流程"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "模糊招聘需求澄清",
+      "content": "业务负责人只丢来一句“帮我招个靠谱的运营”，没有岗位说明书和明确画像。你会通过哪些步骤把需求拆解成可执行的招聘标准？若业务坚持“看眼缘”，你如何应对？",
+      "tags": [
+        "需求分析",
+        "岗位画像",
+        "业务沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "招聘漏斗数据定位",
+      "content": "你负责的岗位连续两个月到面率不足30%，入职率低于10%。请列出你会拉取哪些数据指标，并说明如何判断问题出在渠道、JD吸引力还是面试环节。",
+      "tags": [
+        "数据分析",
+        "招聘漏斗",
+        "渠道运营"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q014",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "试用期辞退风险处理",
+      "content": "业务经理认为某新员工“能力不行”，要求试用期最后一天立即辞退且不给补偿。作为HR你如何处理？请说明法律依据、沟通步骤、证据要求及替代方案。",
+      "tags": [
+        "劳动法",
+        "试用期",
+        "员工关系"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q015",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "独立完成的招聘闭环",
+      "content": "请分享一个你独立负责、从需求确认到候选人入职的完整招聘项目。你当时招的是什么岗位？过程中最关键的决策是什么？最终结果如何衡量？",
+      "tags": [
+        "招聘项目",
+        "经历深挖",
+        "结果导向"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "最难招岗位的寻访过程",
+      "content": "描述你遇到过的最难招的一个岗位。你用了哪些寻访手段？如何触达被动候选人？如果重来一次，你会在哪个环节做得不同？请给出具体细节。",
+      "tags": [
+        "人才寻访",
+        "渠道运营",
+        "复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "员工关系处理实例",
+      "content": "请举一个你处理过的员工关系案例，比如投诉、纠纷或离职面谈。你如何平衡员工诉求与公司规则？过程中是否涉及劳动法条款？结果如何？",
+      "tags": [
+        "员工关系",
+        "劳动法",
+        "沟通协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q018",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "用数据优化招聘流程",
+      "content": "你是否有过用数据发现招聘问题并推动改进的经历？请说明你分析了哪些指标、得出什么结论、如何说服业务部门配合调整，以及最终效果。",
+      "tags": [
+        "数据思维",
+        "流程优化",
+        "跨部门推动"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q019",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "面试官临时爽约处理",
+      "content": "候选人已到公司，业务面试官临时被叫去开会，预计迟到40分钟。候选人开始不耐烦。作为招聘专员，你会如何安抚候选人并协调后续安排？",
+      "tags": [
+        "突发情况",
+        "面试协调",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "跨部门推动培训方案",
+      "content": "你设计了一份新员工培训方案，但业务部门以“影响产出”为由拒绝配合。你会如何与业务负责人沟通？请说明你的说服策略和可让步的边界。",
+      "tags": [
+        "跨部门沟通",
+        "培训发展",
+        "影响力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "候选人负面评价应对",
+      "content": "一位候选人在社交平台发帖，抱怨公司面试流程混乱、面试官不专业，帖子被大量转发。作为HR，你会如何回应和处理？请说明短期与长期动作。",
+      "tags": [
+        "雇主品牌",
+        "危机处理",
+        "候选人体验"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q022",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "紧急裁撤团队的沟通",
+      "content": "业务要求你在一周内协助裁撤一个10人团队，预算只给N+1，且要求当天通知当天走。你会如何制定沟通方案？如何应对员工情绪与法律风险？",
+      "tags": [
+        "裁员沟通",
+        "劳动法",
+        "抗压能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "期望薪资与offer选择",
+      "content": "你目前手上有两个offer，一个薪资高但招聘岗位偏基础，一个薪资低但能接触全模块HR。你会如何选择？请说明你的判断标准，以及你对薪资的期望。",
+      "tags": [
+        "期望薪资",
+        "职业选择",
+        "求职动机"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q024",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "员工抱怨制度时的立场",
+      "content": "员工向你抱怨公司加班多、制度不合理，情绪激动。作为HR，你既要安抚员工，又要维护公司立场。你会如何回应？请说明具体话术和原则。",
+      "tags": [
+        "员工关系",
+        "沟通立场",
+        "情绪管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "团队分工冲突处理",
+      "content": "你和同事共同负责招聘，但对方总是把难沟通的候选人推给你，自己只做简单岗位。你会如何处理？请说明你会先做什么、如何与对方沟通。",
+      "tags": [
+        "团队协作",
+        "冲突处理",
+        "沟通协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "多任务优先级管理",
+      "content": "你同时面对：业务催入职、员工来问社保、经理要你半小时内交招聘报表。三件事都很急。你会如何排序？请说明你的判断依据和具体做法。",
+      "tags": [
+        "多任务处理",
+        "优先级",
+        "抗压能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q027",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "模糊招聘需求梳理",
+      "content": "业务部门提出招聘需求时只说‘招个有经验的运营’，没有具体职责和画像。你会通过哪些步骤把需求拆解成可执行的招聘标准？请结合一个具体岗位说明你会问业务方什么问题、如何确定硬性条件和加分项。",
+      "tags": [
+        "招聘需求",
+        "岗位画像",
+        "业务理解"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q028",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "结构化面试题设计",
+      "content": "针对‘招聘专员’岗位，请设计一道结构化面试题，用于考察候选人的‘抗压与多任务处理’能力。说明你会问什么、评分维度有哪些、如何区分高分与低分回答。要求问题具体，避免‘你抗压吗’这类无效提问。",
+      "tags": [
+        "结构化面试",
+        "人才评估",
+        "评分维度"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q029",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "试用期辞退合规处理",
+      "content": "一名员工试用期表现不达标，业务主管要求明天就让他走人，且不愿支付补偿。作为HR，你会如何与业务沟通并给出合法合规的处理方案？请说明法律依据、需要收集的证据以及可能的风险点。",
+      "tags": [
+        "劳动法",
+        "员工关系",
+        "试用期"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q030",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "独立招聘项目复盘",
+      "content": "请分享一次你独立负责的招聘项目：从需求确认、渠道选择、简历筛选到面试安排和入职跟进。你如何衡量这次招聘的效果？如果重来一次，你会在哪个环节改进？请用具体数据说明。",
+      "tags": [
+        "招聘全流程",
+        "项目复盘",
+        "数据分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q031",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "招聘渠道效果分析",
+      "content": "你过去用过哪些招聘渠道？请选一个你最熟悉的渠道，说明你是如何运营的、投入产出比如何、遇到过什么问题。如果让你为公司新增一个渠道，你会怎么评估和试点？",
+      "tags": [
+        "招聘渠道",
+        "渠道运营",
+        "投入产出"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q032",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "稀缺岗位人才寻访",
+      "content": "假设你要为一家AI公司招聘一名算法工程师，岗位稀缺且竞品抢人激烈。请描述你的寻访策略：如何绘制人才地图、用什么话术触达被动候选人、如何跟进并促成面试。请结合你实际做过的案例说明。",
+      "tags": [
+        "人才寻访",
+        "被动候选人",
+        "人才地图"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q033",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "推动业务面试官反馈",
+      "content": "业务面试官经常面试后不写评价、反馈拖延，导致候选人被其他公司抢走。你作为招聘专员，会如何与这位面试官沟通并建立机制？请说明你的沟通策略和可落地的流程改进。",
+      "tags": [
+        "跨部门沟通",
+        "面试流程",
+        "推动力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q034",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "候选人爽约应对",
+      "content": "你精心安排的面试，候选人在面试前半小时突然说临时有事不来了，而且没有提前告知。你会怎么处理？后续如何跟业务解释并降低类似情况再次发生？",
+      "tags": [
+        "应变能力",
+        "候选人管理",
+        "沟通协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q035",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "选择HR岗位的动机",
+      "content": "你为什么选择人力资源作为职业起点？在你看来，招聘专员日常工作中最枯燥和最有挑战的部分分别是什么？你打算如何度过前两年的成长期？",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "岗位认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q036",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "HR双重角色平衡",
+      "content": "HR常被夹在业务部门和员工之间：业务想快速招人、控制成本，员工希望福利更好、压力更小。请举一个你实际遇到或设想的两难情境，说明你会站在什么立场、如何平衡并推动解决。",
+      "tags": [
+        "角色定位",
+        "沟通协调",
+        "抗压能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q037",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "招聘全流程闭环设计",
+      "content": "业务部门只给一句“急招3名有经验Java开发，最好大厂背景”，预算低于市场20%，且要求两周到岗。请说明你如何完成需求澄清、渠道选择、简历筛选、面试安排、薪酬谈判与入职跟进，并给出你会跟踪的关键指标。",
+      "tags": [
+        "招聘全流程",
+        "需求澄清",
+        "渠道运营"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q038",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "最难招岗位经历复盘",
+      "content": "请举一个你亲自负责且最难招的岗位案例：岗位难在哪里、你做了哪些寻源动作、如何说服候选人、最终结果如何？如果重来一次，你会改动哪一步？请尽量给出当时的渠道转化数据或关键时间节点。",
+      "tags": [
+        "经历深挖",
+        "人才寻源",
+        "复盘改进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q039",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "招聘冲突与员工情绪处理",
+      "content": "你同时推进3个紧急岗位，业务主管面试后只说“不合适”却不给具体反馈，导致重复推荐；另一边有员工因社保基数问题在办公室情绪激动。请说明你如何分别沟通、推进招聘并安抚员工，同时守住合规底线。",
+      "tags": [
+        "跨部门沟通",
+        "冲突处理",
+        "多任务抗压"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "business-hr.human-resources-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "职业规划与基础期心态",
+      "content": "你未来2—3年希望深耕招聘模块还是转向HR全模块？请结合自身能力短板说明规划。如果入职后前三个月主要做入职离职办理、档案整理和招聘支持，你如何看待这段基础期？",
+      "tags": [
+        "职业规划",
+        "岗位认知",
+        "抗压心态"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -385,7 +895,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

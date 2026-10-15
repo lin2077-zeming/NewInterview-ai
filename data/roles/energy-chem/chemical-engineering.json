@@ -276,6 +276,515 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q011",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "单元操作与单元过程区别",
+      "content": "请解释化工中“单元操作”与“单元过程”的区别，并各举一个生产实例。进一步说明：在设计一个包含反应和精馏的工艺流程时，为什么通常把反应单元与分离单元分开考虑？这对物料衡算和热量集成有什么影响？",
+      "tags": [
+        "化工原理",
+        "单元操作",
+        "工艺设计"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "放热反应放大热点分析",
+      "content": "某液相放热反应在实验室间歇釜中收率良好，放大到工业连续操作后出现局部热点、副产物增加。你会从反应动力学、传热和混合三个角度如何分析？需要补充哪些实验或中试数据？如何选择CSTR、PFR或管式反应器？",
+      "tags": [
+        "反应工程",
+        "放大效应",
+        "反应器选型"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q013",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "精馏塔纯度不达标优化",
+      "content": "某精馏塔进料组成波动后，塔顶产品纯度不达标，再沸器负荷已接近上限。请说明你如何通过物料/能量衡算和Aspen Plus模拟定位问题，并给出至少两个可操作调整方案，分析各自对能耗、收率和安全的影响。",
+      "tags": [
+        "精馏模拟",
+        "工艺优化",
+        "能耗分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q014",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "放热反应失控风险与HAZOP",
+      "content": "你负责一个放热反应工艺的初步设计。请说明如何通过反应量热、绝热温升和泄放设计评估失控风险。若HAZOP分析提出“冷却水中断”偏差，你会采取哪些工程控制和管理措施？如何验证措施有效？",
+      "tags": [
+        "化工安全",
+        "HAZOP",
+        "热失控"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q015",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "流程模拟或中试项目",
+      "content": "请选一个你深度参与的工艺开发、流程模拟或中试放大项目，说明项目目标、规模与关键约束，以及你个人负责的具体计算或实验。重点讲一个你亲自发现并解决的技术问题，如收率、能耗或设备瓶颈。",
+      "tags": [
+        "项目经历",
+        "中试放大",
+        "问题解决"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "物料与能量衡算校验",
+      "content": "在项目中你如何建立物料与能量衡算？请举一个实际例子说明数据来源、平衡校验方法。当模拟值与中试数据偏差超过10%时，你会按什么顺序排查？请具体到组分、流量、温度或分析误差。",
+      "tags": [
+        "物料衡算",
+        "能量衡算",
+        "数据校验"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "模拟物性方法与设备选型",
+      "content": "你使用Aspen Plus或其他流程模拟软件做过哪个体系？请说明物性方法选择依据、关键参数如何回归或验证，模拟结果如何指导设备选型或操作条件优化。请避免只讲软件操作，重点讲工程判断。",
+      "tags": [
+        "流程模拟",
+        "物性方法",
+        "设备选型"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q018",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "放大失败与根因分析",
+      "content": "请讲一次你在放大或生产中遇到的失败或严重偏差，如收率下降、堵塞、飞温或产品不合格。你当时掌握哪些数据？如何做根因分析？最终措施是什么？复盘后你在工艺设计或操作上改变了什么？",
+      "tags": [
+        "放大失败",
+        "根因分析",
+        "生产优化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "反应釜温度异常应急沟通",
+      "content": "夜班操作工报告反应釜温度异常上升，但DCS趋势尚未触发联锁。你作为工艺工程师被电话叫醒，会先问哪些关键信息、下达什么临时指令？如何与生产、安全和维修人员沟通并记录决策？",
+      "tags": [
+        "应急响应",
+        "跨部门沟通",
+        "工艺安全"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "研发改配方与生产冲突",
+      "content": "研发部门希望修改配方以提高收率，生产部门担心影响稳定性和安全。你作为工艺工程师如何组织评估？会收集哪些实验或模拟证据？怎样推动双方形成可执行、可回退的变更方案？",
+      "tags": [
+        "跨部门协作",
+        "变更管理",
+        "工艺评估"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q021",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "废水COD超标应急排查",
+      "content": "在线监测显示废水COD突然超标，但生产负荷未变，环保部门要求2小时内答复。你如何联合分析、生产和EHS排查可能来源？在原因未确定前，你会建议减产还是继续生产？依据是什么？",
+      "tags": [
+        "环保合规",
+        "异常排查",
+        "决策沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q022",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "向管理层解释催化剂更换",
+      "content": "你需要向管理层解释为何更换催化剂虽增加成本，但能降低综合能耗。请现场模拟：用不超过3分钟、尽量少用专业术语，说明关键数据、投资回收期和主要风险，并回答“为什么不先维持现状”。",
+      "tags": [
+        "沟通表达",
+        "技术汇报",
+        "成本效益"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么选择化学工程师",
+      "content": "你为什么选择化学工程师作为职业方向？请结合你了解的一个化工行业趋势，如绿色化工、智能制造或新能源材料，说明它如何影响你的职业选择，以及你为此做了哪些准备。",
+      "tags": [
+        "求职动机",
+        "行业认知",
+        "职业选择"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q024",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "进度与安全审查冲突",
+      "content": "如果项目进度紧张，上级暗示可以“先跳过”某项安全审查或环保检测，你会怎么处理？请结合你对化工安全规范的理解，说明你的沟通方式、行动边界和可能寻求的支持。",
+      "tags": [
+        "安全意识",
+        "职业操守",
+        "冲突处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "技术分歧中的数据说服",
+      "content": "在团队中你通常扮演什么角色？请举一个你与同事意见不合的技术问题，说明你如何用数据或实验说服对方，或如何接受对方更优方案。最后你如何维护团队关系？",
+      "tags": [
+        "团队协作",
+        "数据说服",
+        "自我认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q026",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "现场工作与岗位适应",
+      "content": "化学工程师常需下现场、参与开停车或倒班调试，工作地点也可能在工业园区。你如何看待这类工作条件？请结合经历说明你如何保持学习、适应节奏并确保自身安全。",
+      "tags": [
+        "岗位匹配",
+        "抗压能力",
+        "职业期待"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q027",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "单元操作与单元过程的区别",
+      "content": "单元操作（unit operation）与单元过程（unit process）有什么区别？各举一例。",
+      "tags": [
+        "化工原理",
+        "基础概念"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q028",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "车间报警响起你该怎么做",
+      "content": "你在车间里，警报突然响起来，你会怎么做？请按顺序说明你的处置动作。",
+      "tags": [
+        "安全生产",
+        "应急处置"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "伊利诺伊大学《Technical Interviews》",
+        "url": "https://scs.illinois.edu/document/69",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q029",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "如何估算泵的效率",
+      "content": "你如何估算一台泵的效率？需要测量或知道哪些参数？",
+      "tags": [
+        "流体机械",
+        "工程计算"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "伊利诺伊大学《Technical Interviews》",
+        "url": "https://scs.illinois.edu/document/69",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q030",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "放热反应放大热点诊断",
+      "content": "某放热反应在小试中转化率90%、温升可控，中试放大后床层热点温度明显升高且选择性下降。请从反应动力学、移热速率、停留时间和返混角度分析可能原因，并说明你会补充哪些实验或模拟数据来验证。",
+      "tags": [
+        "反应工程",
+        "放大",
+        "传热"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q031",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "精馏塔产品不合格调参",
+      "content": "某精馏塔进料组成波动后，塔顶产品纯度不达标而塔底损失增加。你会如何在Aspen Plus中诊断？请说明热力学模型选择、灵敏度分析变量、回流比与进料位置调整思路，并判断是设备瓶颈还是操作参数问题。",
+      "tags": [
+        "精馏",
+        "流程模拟",
+        "热力学"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q032",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "循环流股总转化率计算",
+      "content": "某反应器单程转化率为80%，未反应原料全部循环，目的产物选择性为95%，新鲜进料100 kmol/h。请说明如何计算总转化率和目的产物收率，并指出若循环气中惰性组分累积，对工艺会有什么影响。",
+      "tags": [
+        "物料衡算",
+        "循环",
+        "收率"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q033",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "中试放大收率下降复盘",
+      "content": "请讲一个你参与中试放大或工艺调试的项目：当时收率/纯度低于预期，你承担什么角色？用了哪些数据（温度、压力、流量、色谱等）定位根因？如何验证并最终解决？请给出关键参数和量化结果。",
+      "tags": [
+        "项目经历",
+        "中试放大",
+        "根因分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q034",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "能耗与纯度权衡优化",
+      "content": "你主导过降低能耗或提高收率的工艺优化吗？若节能后产品纯度波动，你会如何设计DOE或建立数据模型，在设备能力、安全裕度和环保排放约束下寻找最优操作窗口？请说明变量、指标和验证方式。",
+      "tags": [
+        "工艺优化",
+        "DOE",
+        "数据分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q035",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "Aspen模拟项目细节",
+      "content": "请介绍一个你用Aspen Plus或类似软件完成的流程模拟项目：为什么选该物性方法？关键单元模块和收敛策略是什么？模拟值与实际生产/实验数据偏差多大？你做了哪些修正或参数回归？",
+      "tags": [
+        "流程模拟",
+        "物性方法",
+        "项目经历"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q036",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "报警与数据交付冲突",
+      "content": "你在车间跟踪一批新产品试生产，DCS出现可燃气体报警，值班主管担心停车影响交付，要求先完成取样记录；安全经理要求立即按预案停车撤离。作为现场工艺工程师，你会如何判断风险并推动双方达成一致？",
+      "tags": [
+        "安全优先",
+        "跨部门沟通",
+        "应急"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q037",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "设备选型争议推进",
+      "content": "工程公司项目中，设计院选定的换热器面积与你工艺模拟所需裕量不一致，采购又催着下单。作为工艺负责人，你会收集哪些数据、如何组织评审并向设计院和采购解释技术风险，推动方案落地？",
+      "tags": [
+        "跨部门协作",
+        "设备选型",
+        "沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q038",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "职业动机与三年规划",
+      "content": "你为什么选择化学工程师作为职业方向？未来3—5年，你希望在工艺设计、生产优化还是研发方向深耕？针对绿色化工和智能制造趋势，你计划通过哪些具体行动提升自己？",
+      "tags": [
+        "求职动机",
+        "职业规划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q039",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "与资深操作工意见分歧",
+      "content": "你提出的工艺参数调整方案与一位资深操作工的经验判断不一致，对方认为改动会带来安全风险。你会如何沟通、用哪些数据说服或修正方案？如果最终仍无法一致，你会怎样推进团队决策？",
+      "tags": [
+        "团队协作",
+        "沟通",
+        "工艺变更"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "energy-chem.chemical-engineering-q040",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "放热反应放大与飞温风险",
+      "content": "某放热反应在中试时依靠缓慢滴加控制温度，放大到2 m³反应釜后出现明显飞温趋势。请从反应动力学与移热能力两方面分析原因，列出你需要核算的至少三个关键参数（如单位体积移热面积、绝热温升等），并说明在Aspen Plus中你会如何建模验证改进方案。",
+      "tags": [
+        "工艺放大",
+        "反应工程",
+        "安全风险"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -377,7 +886,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

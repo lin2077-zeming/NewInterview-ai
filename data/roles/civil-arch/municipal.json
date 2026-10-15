@@ -276,6 +276,514 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "civil-arch.municipal-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "山区供水管网定线",
+      "content": "某山区县城需新建供水管网，地形高差约80米，要求保证最不利点自由水头不低于28米。请说明你会如何划分供水分区、选择管径与加压方式，并简述水力计算步骤和所用软件。",
+      "tags": [
+        "供水管网",
+        "水力计算",
+        "分区供水"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q012",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "老城区雨污分流改造",
+      "content": "老城区现状为合流制排水系统，雨天溢流污染严重，现需改造为分流制。但道路狭窄、地下管线密集、施工期不能中断交通。请给出总体改造思路，并说明如何确定截流倍数、调蓄池容积及施工期间临时排水措施。",
+      "tags": [
+        "雨污分流",
+        "合流制",
+        "溢流污染"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "暴雨强度公式选用",
+      "content": "某南方城市排水防涝设计，需选用暴雨强度公式。现有旧版公式和新版公式结果差异较大，且业主希望降低造价。请说明你如何依据规范确定重现期、降雨历时和公式版本，并论证取值的合理性。",
+      "tags": [
+        "暴雨强度",
+        "重现期",
+        "排水防涝"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q014",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "给水管埋深确定",
+      "content": "在北方某城市设计DN600给水干管，需穿越城市主干道。请说明确定管道埋深时需要考虑哪些因素，如冻土深度、地面荷载、与其他管线交叉等，并给出规范中最小覆土厚度的要求。",
+      "tags": [
+        "给水管",
+        "埋深",
+        "规范"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "泵站设计项目深挖",
+      "content": "请介绍你参与过的一个泵站设计项目，包括设计规模、水泵选型、集水池容积计算和主要控制方式。你在其中承担什么角色？遇到的最大技术难题是什么，如何解决的？",
+      "tags": [
+        "泵站设计",
+        "水泵选型",
+        "项目经历"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q016",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "施工图变更原因",
+      "content": "回忆一个你负责或参与的给排水项目，施工阶段因现场条件与图纸不符而发生了重大设计变更。请说明变更原因、你如何协调设计调整、对造价和工期的影响，以及你从中总结了哪些经验。",
+      "tags": [
+        "设计变更",
+        "现场协调",
+        "经验总结"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q017",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "CAD与鸿业使用",
+      "content": "请举例说明你在实际项目中如何使用CAD和鸿业等专业软件完成给排水设计。具体到某个项目，你建立了哪些图层、完成了哪些计算或出图工作？遇到过软件输出与手算不符的情况吗？",
+      "tags": [
+        "CAD",
+        "鸿业",
+        "专业软件"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q018",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "项目协调经历",
+      "content": "在某个市政给排水项目中，你需要与道路、结构、电气等专业配合。请描述一次具体的专业协调经历：出现了什么冲突？你如何沟通并达成一致？最终设计成果如何体现你的协调作用？",
+      "tags": [
+        "专业协调",
+        "市政项目",
+        "沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "现场与图纸不符",
+      "content": "施工方在现场开挖后发现设计管线与一条未标注的既有高压电缆冲突，要求你立即给出处理意见。你不在现场，手头只有电子图纸。你会如何核实情况、协调各方并给出安全可行的调整方案？",
+      "tags": [
+        "现场问题",
+        "管线冲突",
+        "应急处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "突发爆管应急",
+      "content": "某市政给水干管突发爆管，导致周边区域停水，交通中断。你作为技术负责人，需要同时协调抢修、交通、供水调度和居民通知。请说明你的处置优先级、沟通顺序和临时供水方案。",
+      "tags": [
+        "爆管应急",
+        "供水调度",
+        "协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q021",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "向非专业人士汇报",
+      "content": "社区对附近新建排水泵站有异味和噪声担忧，要求你向居民代表解释设计方案。你会如何用非专业语言说明泵站的除臭降噪措施、运行原理和应急保障，并回应他们的质疑？",
+      "tags": [
+        "公众沟通",
+        "泵站",
+        "解释方案"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q022",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "跨部门审批冲突",
+      "content": "你的排水规划方案在审批时，规划部门要求保留绿地，交通部门要求拓宽道路，环保部门要求增加调蓄池，三者用地冲突。作为项目负责人，你如何组织协调、提出折中方案并推动审批？",
+      "tags": [
+        "跨部门协调",
+        "审批",
+        "方案优化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "选择市政给排水原因",
+      "content": "你当初为什么选择市政与给排水工程作为职业方向？在入行后的实际工作中，哪些经历让你更坚定了在这个领域发展的想法？请结合具体事例谈谈。",
+      "tags": [
+        "职业动机",
+        "行业认知",
+        "个人经历"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q024",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "职业规划与注册考试",
+      "content": "未来五年，你对自己的职业发展有什么规划？是否计划考取注册公用设备工程师（给水排水）等执业资格？你认为一名优秀的市政给排水工程师需要具备哪些核心能力？",
+      "tags": [
+        "职业规划",
+        "注册考试",
+        "能力提升"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "驻场与出差接受度",
+      "content": "市政给排水项目常需要驻场或频繁出差，有时工作环境较艰苦。你如何平衡工作与生活？请举一个你此前克服类似困难的经历，并说明你对长期驻场工作的真实想法。",
+      "tags": [
+        "驻场",
+        "出差",
+        "工作适应"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q026",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "团队角色与责任",
+      "content": "在设计团队中，你通常扮演什么角色？如果团队中有人未按时完成图纸导致项目延期，你会怎么处理？请结合一次具体经历，说明你如何推动团队完成任务。",
+      "tags": [
+        "团队协作",
+        "责任心",
+        "推动执行"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q027",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "软土地基选什么基础",
+      "content": "在软土地基（如淤泥质土）上你会采用什么基础形式？为什么？需要注意哪些问题？",
+      "tags": [
+        "地基基础",
+        "专业判断"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q028",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "雷诺数与水力现象",
+      "content": "什么是雷诺数？它在给排水或水力学中有什么意义？什么是水跃？",
+      "tags": [
+        "水力学",
+        "专业基础"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q029",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "给水管网水力计算",
+      "content": "某新区给水管网规划，服务面积约5平方公里，地形高差30米，最高日最高时用水量1200立方米/小时。请说明你如何确定最不利点、计算管段流量与管径，并校核消防工况下的自由水头和水泵扬程。需列出关键公式与参数取值依据。",
+      "tags": [
+        "给水管网",
+        "水力计算",
+        "管径选型"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q030",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "雨水管道设计校核",
+      "content": "某市政道路雨水管设计，汇水面积8公顷，径流系数0.65，重现期取3年，地面集水时间10分钟。请阐述如何确定设计流量、管径和坡度，并校核流速、充满度及最小覆土厚度是否满足现行规范要求。",
+      "tags": [
+        "雨水管网",
+        "设计规范",
+        "水力校核"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q031",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "污水厂提标工艺选择",
+      "content": "某县城污水处理厂需从一级B提标到一级A，进水BOD约120mg/L、COD约250mg/L，冬季水温低至10℃。请比较两种可行工艺路线，说明脱氮除磷关键参数、占地面积和运行成本差异，并给出你的推荐方案及理由。",
+      "tags": [
+        "污水处理",
+        "提标改造",
+        "工艺选型"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q032",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "项目经历深挖",
+      "content": "请介绍一个你负责或深度参与的给排水设计项目，从方案到施工图。重点说明：你做了哪些关键设计决策？遇到的最大技术分歧是什么？最终如何依据规范或计算说服各方？如果重做你会改进哪里？",
+      "tags": [
+        "项目经历",
+        "设计决策",
+        "复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q033",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "图纸与现场不符",
+      "content": "施工时发现你设计的排水管与现场既有燃气管标高冲突，且原勘测资料未标注。施工队要求当场改线。请描述你的处理步骤：如何核实、协调哪些单位、变更依据是什么、如何避免类似问题再次发生。",
+      "tags": [
+        "现场协调",
+        "设计变更",
+        "管线冲突"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q034",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "基坑降水与沉降控制",
+      "content": "某泵站基坑开挖深度8米，周边30米有居民楼。请说明你会关注哪些降水与支护要点，如何控制地下水位和周边沉降，以及施工监测中哪些数据一旦异常必须立即停工处理。",
+      "tags": [
+        "基坑降水",
+        "施工监测",
+        "沉降控制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q035",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "多方协调排水施工",
+      "content": "你负责的排水管道施工导致附近小区雨天积水，居民投诉、施工单位称按图施工、水务集团要求暂停。作为设计方代表，你如何组织沟通、提出临时与永久方案，并平衡工期、成本与居民诉求？",
+      "tags": [
+        "跨部门协调",
+        "居民沟通",
+        "应急方案"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q036",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "暴雨内涝应急调度",
+      "content": "台风暴雨夜，你值班发现某下穿隧道泵站两台中一台故障，水位快速上涨，隧道内已有车辆。请说出你的应急判断顺序：先做什么、通知谁、如何调度移动泵车、何时封闭交通，以及事后需要提交哪些技术分析。",
+      "tags": [
+        "防洪排涝",
+        "应急调度",
+        "泵站故障"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q037",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "职业规划与动机",
+      "content": "你为什么选择市政与给排水工程作为职业方向？未来3到5年，你希望在专业设计、项目管理还是运维管理上重点发展？请结合你了解的这个岗位日常工作谈谈你的规划。",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "岗位认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q038",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "工期紧与意见冲突",
+      "content": "项目工期突然压缩一个月，业主、施工方和你的专业判断出现冲突，团队内部也有人抱怨。请举例说明你会如何沟通、排序任务并稳定团队情绪，同时保证设计质量不突破规范底线。",
+      "tags": [
+        "团队协作",
+        "抗压能力",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q039",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "老城区管网改造水力计算",
+      "content": "某老城区供水管网末端在高峰时段压力仅0.14MPa，现状为枝状管网、灰口铸铁管，近年多次爆管，要求不停水、不新建泵站完成改造。请说明你会如何确定节点流量与最不利点、选取比摩阻、设置哪些校核工况，并给出管材与管径的方案比选依据。",
+      "tags": [
+        "管网水力计算",
+        "方案比选"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.municipal-q040",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "从方案到施工图的项目复盘",
+      "content": "请挑一个你从方案到施工图全程参与的给排水项目，说明工程规模、你负责的具体部分、设计流量与关键参数的取值依据。重点讲一个争议最大的技术分歧：分歧点是什么、你依据什么定案、投运后效果如何、哪个参数你现在会重新核算。",
+      "tags": [
+        "项目经历",
+        "设计参数"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -395,7 +903,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

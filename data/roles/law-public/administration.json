@@ -276,6 +276,500 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "law-public.administration-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "公文写作：调整通知",
+      "content": "领导要求你起草一份《关于调整夏季办公时间的通知》，涉及各部门执行，需明确调整范围、生效日期和特殊情况处理。请你说说这份通知的结构和关键要素，并现场口述开头部分。",
+      "tags": [
+        "公文写作",
+        "信息提炼"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "会务组织与预算控制",
+      "content": "公司计划举办一场80人的年度总结会，场地、餐饮、物料总预算不超过2万元。你会如何策划？请从需求确认、供应商比价、现场分工和应急预案四个方面说明你的思路。",
+      "tags": [
+        "会务组织",
+        "成本控制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q013",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "固定资产盘点差异处理",
+      "content": "年度固定资产盘点时，你发现实际数量比台账少了3台笔记本电脑，且部分标签模糊无法对应。部门负责人表示不知情。作为行政专员，你会按什么步骤处理？如何避免类似问题再次发生？",
+      "tags": [
+        "固定资产",
+        "流程优化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q014",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "办公用品采购降本",
+      "content": "部门每月办公用品采购费用持续上涨，领导让你在保证正常使用的前提下降低10%的成本。你会从哪些方面入手？请列举至少三条具体措施。",
+      "tags": [
+        "采购管理",
+        "成本控制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "过往活动组织复盘",
+      "content": "请分享你过去组织过的一次会议或员工活动。当时规模多大？你负责哪些环节？遇到的最大挑战是什么？最后效果如何？请用具体数据说明你的贡献。",
+      "tags": [
+        "经历深挖",
+        "会务组织"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "跨部门协调真实案例",
+      "content": "回忆一次你需要协调多个部门配合的行政任务，比如信息收集、场地分配或物资领用。当时有哪些部门不配合？你具体用了什么沟通策略？最终结果怎样？",
+      "tags": [
+        "跨部门协调",
+        "沟通策略"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q017",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "流程优化与成本节约案例",
+      "content": "请举一个你主动发现行政流程中浪费或低效环节并推动优化的例子。你如何发现问题、提出方案、说服他人？优化后节省了多少时间或成本？如果没有，请说明你会如何设计。",
+      "tags": [
+        "流程优化",
+        "成本控制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q018",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "突发行政事务处理经历",
+      "content": "行政工作常遇到突发状况，比如临时接待、设备故障、紧急采购。请描述你亲身处理过的一次突发行政事务：当时情况如何？你第一时间做了什么？事后有没有复盘改进？",
+      "tags": [
+        "应变能力",
+        "经历深挖"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "会议室冲突现场协调",
+      "content": "两个部门同时预订了同一间会议室，双方都坚持自己先约，且会议即将开始，现场气氛紧张。作为行政人员，你如何快速协调？请现场模拟你会怎么说。",
+      "tags": [
+        "沟通协调",
+        "应变能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "跨部门信息收集受阻",
+      "content": "你需要收集各部门的年度行政需求以编制预算，但多个部门以“太忙”为由拖延。截止日期临近，领导也在催。你会采取哪些具体行动推进？如何平衡人情与效率？",
+      "tags": [
+        "跨部门协作",
+        "时间管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q021",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "重要接待准备不足应急",
+      "content": "重要客户提前一小时到访，原定接待方案中的会议室仍在布置、茶歇未到位、领导还在路上。作为现场行政负责人，你手头只有两名实习生。请说出你的应急处置步骤和优先级。",
+      "tags": [
+        "应急处理",
+        "接待统筹"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q022",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "员工抱怨办公环境",
+      "content": "有员工在内部群里抱怨空调温度太低、饮水机故障没人修，情绪比较激动，其他同事也跟着附和。你作为行政人员会如何回应和处理？请说明线上回应和线下跟进的具体做法。",
+      "tags": [
+        "服务意识",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "琐碎重复工作的心态",
+      "content": "行政工作包含大量琐碎、重复的事务，比如登记资产、整理档案、接听电话。你如何看待这些工作？如果长期做这些，你如何保持积极性和成就感？",
+      "tags": [
+        "服务意识",
+        "职业心态"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q024",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "团队协作中的分歧处理",
+      "content": "假如你与同事在行政物资采购标准上意见不一致，对方资历比你深，但你认为他的方案成本更高且不实用。你会怎么处理？请结合你过去的团队协作经历说明。",
+      "tags": [
+        "团队协作",
+        "沟通协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q025",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "对行政岗位价值的理解",
+      "content": "有人认为行政工作就是打杂、没有技术含量。你如何看待行政管理岗位在组织中的价值？请结合具体工作场景，谈谈你理解的服务意识体现在哪里。",
+      "tags": [
+        "岗位认知",
+        "服务意识"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "突发加班与工作安排",
+      "content": "行政岗常因临时会议、接待或突发事件需要加班，甚至打乱个人计划。你如何看待这种情况？如果频繁发生，你会如何与领导沟通，既保证工作又维护自己的节奏？",
+      "tags": [
+        "抗压能力",
+        "工作节奏"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q027",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "AI 辅助量刑与数字黑洞",
+      "content": "法院系统用 AI 辅助量刑，通过整合数据运用 AI 断案，律师担心这会带来「数字黑洞」。对此你怎么看？",
+      "tags": [
+        "司法改革",
+        "技术伦理"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "山东人才就业网《陕西省公务员面试（执法、公检法）真题》",
+        "url": "https://jiufengsw.com/index.php?a=shows&catid=166&id=55840",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q028",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "醉酒纠纷引发围观拍照",
+      "content": "有一酒醉人员与一餐馆老板之间产生矛盾纠纷，导致周边人群围观拍照。作为现场执法人员，你该怎么办？",
+      "tags": [
+        "现场执法",
+        "舆情处置"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "山东人才就业网《陕西省公务员面试（执法、公检法）真题》",
+        "url": "https://jiufengsw.com/index.php?a=shows&catid=166&id=55840",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q029",
+      "stage": "hr",
+      "difficulty": "hard",
+      "title": "律师朋友几年买房而公务员买不起",
+      "content": "你的朋友做律师，几年内就可以买车买房，你做公务员几年都买不起，请问你怎么看？",
+      "tags": [
+        "职业选择",
+        "价值观"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "华图教育《广东法检系统公务员面试真题》",
+        "url": "https://v.huatu.com/htnews/guangdong/gongwuyuan/mianshi/2011/0511/25409.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q030",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "起草会议通知与纪要",
+      "content": "假设周五下午要召开跨部门季度协调会，领导让你在半天内起草一份会议通知，并会后整理会议纪要。请说明通知应包含哪些关键要素，纪要如何提炼分工与时限，你会怎样避免信息遗漏或表述歧义。",
+      "tags": [
+        "公文写作",
+        "会议纪要",
+        "信息提炼"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q031",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "固定资产盘点差异处理",
+      "content": "年度固定资产盘点发现10台笔记本电脑账实不符：有的已报废未销账，有的被员工长期借用未登记。请你给出处理步骤，并说明如何借此完善资产领用、归还和报废流程，避免类似问题再次发生。",
+      "tags": [
+        "固定资产",
+        "盘点差异",
+        "流程优化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q032",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "行政预算削减后的优化方案",
+      "content": "公司要求行政年度预算削减15%，但办公环境维护、员工福利和会议活动不能明显降质。请结合采购、差旅、耗材、供应商谈判等环节，提出一套可落地的成本优化方案，并说明如何量化效果和争取各部门配合。",
+      "tags": [
+        "成本控制",
+        "预算管理",
+        "流程优化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q033",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "你组织过的一次会务",
+      "content": "请讲述你过去组织过的一次会议、培训或员工活动。说明活动规模、你的具体职责、遇到的最大困难以及最终效果。我们会追问其中的预算控制、人员分工和突发问题处理细节。",
+      "tags": [
+        "会务组织",
+        "经历深挖",
+        "活动策划"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q034",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "跨部门协调中的推诿经历",
+      "content": "请分享一次你协调多个部门完成任务，却遇到对方推诿或拖延的经历。你当时如何沟通、用了哪些方法推动进度？结果如何？如果重来一次，你会在流程设计上做什么改进？",
+      "tags": [
+        "跨部门协调",
+        "沟通推动",
+        "经历复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q035",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "采购或供应商管理经历",
+      "content": "请举一个你参与采购、供应商对接或办公物资管理的例子。说明你如何确定需求、比价议价、验收付款，以及如何处理质量或交期问题。你采取了哪些措施控制成本并保证合规？",
+      "tags": [
+        "采购管理",
+        "供应商对接",
+        "成本控制"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q036",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "多领导紧急任务排序",
+      "content": "周一上午，你同时接到三位部门负责人的紧急需求：A要立刻订会议室接待客户，B要你马上修改一份对外通知，C说办公室空调故障影响办公。你只有一个人，请说明你如何判断优先级、如何沟通协调并推进解决。",
+      "tags": [
+        "时间管理",
+        "多任务处理",
+        "沟通协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q037",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "重要会议前设备故障",
+      "content": "公司年度大会开始前20分钟，投影和音响突然故障，主讲人PPT还在你电脑里无法打开，部分参会领导已到场。请描述你从发现到会议开始的处置流程，包括人员分工、备用方案、对外沟通和事后复盘。",
+      "tags": [
+        "应急处理",
+        "会务保障",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q038",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么选择行政管理",
+      "content": "你为什么选择行政管理岗位？在你看来，行政工作常被看作琐碎、重复、不易出成绩，你如何理解这个岗位的价值？请结合你的性格、经历或职业期待来谈。",
+      "tags": [
+        "求职动机",
+        "岗位认知",
+        "价值观"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q039",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "琐碎工作中的动力与规划",
+      "content": "行政工作每天要处理大量琐碎事务，还可能临时被安排任务。你如何保持耐心和动力？未来三年你希望在这个岗位上获得哪些成长？如果同事抱怨行政工作没前途，你会怎样回应？",
+      "tags": [
+        "职业规划",
+        "抗压能力",
+        "团队协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.administration-q040",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "零散记录起草会议纪要",
+      "content": "部门专题会后，领导让你在两小时内，根据会议录音片段、手写笔记和微信群里的零散消息，整理一份正式会议纪要下发给各部门。记录中两个部门的责任分工表述不一致，三项待办只写了负责人、没写完成时间。请说说你会如何处理并成稿。",
+      "tags": [
+        "公文写作",
+        "信息提炼",
+        "细节管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -402,7 +896,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

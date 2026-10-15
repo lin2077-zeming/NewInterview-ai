@@ -294,6 +294,473 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "law-public.compliance-q012",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "三道防线职责划分",
+      "content": "请说明企业合规风控中“三道防线”各自承担什么职责，你应聘的合规与风控岗位通常属于第几道防线，并举例说明它与第一道防线在客户尽职调查环节如何分工协作。",
+      "tags": [
+        "三道防线",
+        "岗位认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "新规拆解与落地清单",
+      "content": "假设监管新发布《操作风险管理办法》，要求对合作机构实行名单制管理并每年至少现场检查一次。请说明你如何拆解新规条款、形成内部落地清单，并安排与业务、科技部门的推进节奏与验收标准。",
+      "tags": [
+        "法规解读",
+        "落地清单"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q014",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "异常数据中的风险信号",
+      "content": "某助贷渠道近三月投诉量上升40%、客户提前结清率异常走高、合作方注册地高度集中。请判断这些现象可能指向哪些合规或操作风险，说明你的验证顺序，以及需要向哪些部门调取什么数据。",
+      "tags": [
+        "风险识别",
+        "数据分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q015",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "咨询费返利举报核查",
+      "content": "收到匿名举报：某分公司以“咨询服务费”名义向客户返利以冲业绩。请设计初步核查方案，说明证据如何固定、访谈按什么顺序进行、如何做利益冲突回避与保密，以及何种情况应立即上报监管或移送。",
+      "tags": [
+        "违规调查",
+        "证据固定"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q016",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "制度修订或培训经历",
+      "content": "请介绍一次你参与过的合规制度修订或合规培训，你具体负责哪部分、依据是什么，最终产出哪些可复用的模板或材料，效果如何衡量、有无数据支撑。",
+      "tags": [
+        "经历深挖",
+        "成果量化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "合规检查项目复盘",
+      "content": "挑一个你主导或深度参与的合规检查、内控优化项目，说明你如何确定检查范围和抽样方法、发现的典型问题、整改如何闭环，以及如果重做一次你会改哪一步。",
+      "tags": [
+        "项目复盘",
+        "抽样方法"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q018",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "监管迎检准备分工",
+      "content": "请还原一次你参与的监管检查或问询应对：你的分工是什么、材料清单如何准备、当业务部门提供的数据与历史报送口径不一致时你怎么处理，事后做了哪些机制沉淀。",
+      "tags": [
+        "迎检应对",
+        "口径管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q019",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "风险报告的说服力",
+      "content": "请举一份你写过的风险提示或合规报告，说明你如何把专业结论转化为管理层可决策的语言，用了哪些量化指标，结论被采纳或否决后你如何跟进。",
+      "tags": [
+        "报告撰写",
+        "决策支持"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q020",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "推动多部门整改台账",
+      "content": "你需要两周内推动5个部门完成同一份整改台账，其中两个部门负责人不回邮件、不参会。请说明你的推进步骤，以及在不动用上级压力前你能做哪些尝试。",
+      "tags": [
+        "沟通协调",
+        "推动落地"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "业务要求先放行后审批",
+      "content": "业务负责人说“这单今天不放行就丢了，出了事我担着”，要求你跳过合规审查先放行后补材料。请说明你当场如何回应，事后如何既守住底线又不破坏协作关系。",
+      "tags": [
+        "职业操守",
+        "冲突处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q022",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "跨部门整改责任分歧",
+      "content": "法务、财务、科技三方对同一整改事项的责任归属争执不下，会议陷入僵局。作为合规方你如何梳理问题、推动定责，并在不越权的情况下把整改落到人和时间点。",
+      "tags": [
+        "跨部门协作",
+        "定责推进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q023",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "检查当日口径不一致",
+      "content": "监管现场检查当天，业务部门临时提交的数据与上月报送监管的口径明显不一致，且对方坚持“新口径更准确”。作为对接人，你如何在几小时内判断风险、统一口径并向上报告。",
+      "tags": [
+        "应急应变",
+        "监管沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "重复流程中的动力",
+      "content": "如果你入职后发现每天大量时间花在流程审查和填表上，与你想象的合规工作有落差，你如何保持动力和判断力？请结合你对这个岗位价值的理解来谈。",
+      "tags": [
+        "职业认知",
+        "心态调适"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q025",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "三年职业规划路径",
+      "content": "未来三年你希望成为“懂业务的合规”还是更偏监管政策的专家？请给出你的能力提升路径，以及你希望公司提供哪些资源、轮岗或培训机会。",
+      "tags": [
+        "职业规划",
+        "成长路径"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q026",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "顶住压力坚持原则",
+      "content": "合规工作常要做“说不”的人。请讲一次你坚持原则、但用对方能接受的方式表达的经历：当时压力来自谁，你具体怎么说、怎么做，结果如何。",
+      "tags": [
+        "职业操守",
+        "沟通技巧"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q027",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "低容错工作的节奏管理",
+      "content": "合规审查、台账更新等工作重复性高且容错率低。请说说你如何安排节奏避免出错和倦怠，并举例说明你曾用什么方法提升过同类工作的效率。",
+      "tags": [
+        "抗压能力",
+        "工作方法"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q028",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "谈谈对酒驾入罪的看法",
+      "content": "请你谈谈对酒驾入罪的看法。",
+      "tags": [
+        "立法观察",
+        "社会法治"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "华图教育《广东法检系统公务员面试真题》",
+        "url": "https://v.huatu.com/htnews/guangdong/gongwuyuan/mianshi/2011/0511/25409.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q029",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "新产品上线合规审查",
+      "content": "某金融机构拟上线一款面向老年客户的线上理财产品，涉及跨区域销售、客户信息采集与第三方引流合作。请说明你在上线前会做哪些合规审查：列出需核对的关键监管要求，并说明在什么条件下你会判断该模式不能放行。",
+      "tags": [
+        "合规审查",
+        "监管要求"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q030",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "异常数据中的风险信号",
+      "content": "你拿到某分公司季度数据：新单保费环比增长280%，同期退保率上升、客户平均年龄下降、投诉集中在同一批销售人员，且佣金支出增幅明显高于保费增幅。请判断可能存在哪几类风险，并说明你会调取哪些材料、按什么顺序去验证。",
+      "tags": [
+        "风险识别",
+        "数据分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q031",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "新规落地的内部转化",
+      "content": "监管部门新发布了一项与你所在行业密切相关的规定，两周后生效。请说明你会如何把这条规定转化为公司内部可执行的动作，包括识别影响范围、修订制度与流程、通知相关岗位等环节的先后顺序与理由。",
+      "tags": [
+        "法规解读",
+        "制度落地"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q032",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "一次内控流程优化经历",
+      "content": "请讲一个你参与设计或优化内部控制流程的实例。重点说明：原流程存在什么漏洞，你提出方案时依据了哪些规则，落地过程中遇到哪些部门阻力，最终你用什么方式验证流程确实有效。",
+      "tags": [
+        "内控设计",
+        "经历深挖"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q033",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "违规事件调查的完整过程",
+      "content": "请描述你参与过的一次违规线索调查或监管检查应对。说明线索从哪里来、你如何划定调查范围与取证方式、如何认定事实与责任，以及在证据不足或当事人不配合时你采取了什么办法。",
+      "tags": [
+        "合规调查",
+        "监管检查"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q034",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "你否决过的一次业务方案",
+      "content": "回顾你的实习或工作经历，讲一次你从合规角度提出反对意见、最终业务方案被修改或叫停的例子。你当时的核心依据是什么，事后有没有复盘过自己的判断是偏严还是偏松。",
+      "tags": [
+        "合规判断",
+        "经历复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q035",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "业绩压力下的先上线后补",
+      "content": "业务负责人找到你，说这个项目月底前必须上线，合规手续可以后补，并暗示这是管理层的意见。你并不认同。请说明你会如何沟通、走什么程序，以及如果对方仍然坚持，你的下一步动作是什么。",
+      "tags": [
+        "沟通协调",
+        "职业操守"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q036",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "监管现场检查发现档案缺失",
+      "content": "监管检查组已进驻，临时抽查某项业务档案，发现关键环节的审批签字与留痕缺失，检查人员当场询问原因。作为陪同的合规人员，你会如何回应、如何稳住现场，并组织后续的核查与补正。",
+      "tags": [
+        "应急处理",
+        "监管应对"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q037",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么选择合规风控",
+      "content": "很多人认为合规风控是「踩刹车」的岗位，容易得罪人，也常被认为不直接创造价值。你为什么仍然选择这个方向？请结合你的经历，说说你对这份工作日常状态的理解。",
+      "tags": [
+        "求职动机",
+        "岗位认知"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q038",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "被否决部门的日常相处",
+      "content": "假设你曾因合规原因否决过某部门的方案，之后还要长期与他们协作。你会如何维护工作关系又不放松标准？请结合你对未来三到五年职业发展的设想来谈。",
+      "tags": [
+        "职业规划",
+        "团队协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q039",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "助贷合作合规审查",
+      "content": "某持牌消费金融公司拟与外部助贷平台合作导流，协议约定平台负责初筛、收取服务费并承接逾期催收，业务部门要求本周上线。作为合规风控人员，你会从哪些监管规则和风险点进行审查？请说明识别信号、风险分级，以及暂缓或放行的条件。",
+      "tags": [
+        "助贷合规",
+        "风险识别",
+        "第三方管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.compliance-q040",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "口头同意先放行",
+      "content": "季度冲刺前，业务负责人称某笔大额交易“先放行、合同后补”，并暗示分管领导已口头同意，要求你补签审批。但制度明确无合同不得放款。你会如何现场回应、后续跟进，并推动流程整改？请说明沟通策略与职业底线。",
+      "tags": [
+        "越权审批",
+        "沟通协调",
+        "职业操守"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -413,7 +880,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

@@ -277,6 +277,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "cs-it.fullstack-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "短链服务接口与存储设计",
+      "content": "请为短链服务设计核心接口：创建短链、短码跳转、点击统计。说明长链与短码的映射存储选型（关系库还是 KV）、短码生成策略、跳转时用 301 还是 302、缓存如何设计，以及如何避免同一长链重复生成。",
+      "tags": [
+        "接口设计",
+        "数据建模",
+        "缓存"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q012",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "接口 P99 飙升的全链路排查",
+      "content": "线上订单查询接口 P99 从 200ms 涨到 2s，QPS 没有明显变化。请给出从前端、网关、应用、数据库到缓存的逐层排查思路，说明每层你会看哪些指标，以及如何快速区分是慢 SQL、连接池耗尽还是前端重复请求。",
+      "tags": [
+        "性能排查",
+        "慢SQL",
+        "链路分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "深分页与联合索引优化",
+      "content": "订单表有 5000 万行，前端要求按创建时间倒序分页并支持按用户筛选。请写出你的索引设计（字段顺序、是否覆盖索引）、limit 深翻页的优化方案，并解释 offset 很大时变慢的原因以及游标分页的取舍。",
+      "tags": [
+        "索引优化",
+        "分页",
+        "数据库"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q014",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "长列表渲染性能优化",
+      "content": "一个 React 页面要渲染 5000 行可编辑表格，滚动明显卡顿。请说明你的优化方案：虚拟列表、状态粒度拆分、memo 与 key 的使用、何时该把计算搬到 Web Worker，以及你如何量化优化前后的收益。",
+      "tags": [
+        "前端性能",
+        "React",
+        "虚拟列表"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "独立交付一个完整功能",
+      "content": "请挑一个你独立完成的功能，覆盖从数据库表设计、后端接口到前端页面的全过程：需求怎么拆解、接口契约怎么定、最大的阻塞点是什么、你如何验证端到端可用，以及上线后是否出现返工。",
+      "tags": [
+        "独立交付",
+        "项目掌控",
+        "端到端"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "接口契约变更导致的返工",
+      "content": "讲一次你经历的接口契约变更：是谁先发现的、变更原因是什么、已经写好的前后端代码返工了多少。之后你做了什么约定或工具，比如 OpenAPI、Mock、类型自动生成，来减少这类问题？",
+      "tags": [
+        "接口契约",
+        "协作",
+        "返工"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q017",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "一次线上故障的完整复盘",
+      "content": "描述你处理过最棘手的一次线上问题：故障现象、你的第一反应、如何在监控不完整的情况下缩小范围、最终根因是什么、修复花了多久，以及事后你补了哪些监控或防护措施。",
+      "tags": [
+        "线上故障",
+        "复盘",
+        "监控"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q018",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "你设计过的表结构",
+      "content": "讲一个你亲手设计的数据库表结构：为什么这样拆表、主键与外键怎么选、有没有加冗余字段、后来因为业务变化做过哪些字段或索引调整，以及现在回头看哪里设计得不好。",
+      "tags": [
+        "表设计",
+        "数据库",
+        "演进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "产品临时加需求的排期冲突",
+      "content": "迭代上线前三天，产品经理要插一个「小需求」，你评估后发现它会牵动前后端接口和数据库改动，实际要两天。你如何跟产品、测试沟通，既不硬顶也不无脑接？请给出具体做法。",
+      "tags": [
+        "跨部门协作",
+        "排期",
+        "需求管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "接口字段命名的技术分歧",
+      "content": "你和对接同事在接口字段命名、错误码规范上产生分歧，谁也说服不了谁。请说明你会怎么推进：先对齐标准、找第三方依据，还是用最小成本先跑通？你如何避免技术分歧演变成人际冲突？",
+      "tags": [
+        "技术分歧",
+        "沟通",
+        "接口规范"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q021",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "线上事故中的对外沟通",
+      "content": "你负责的模块出现故障，用户无法下单，客服和运营在群里持续追问原因和恢复时间，而你还没定位到根因。请说明你会怎么回复、如何分配精力（继续排查还是同步信息），以及事后怎么向业务方复盘。",
+      "tags": [
+        "应急沟通",
+        "事故处理",
+        "压力应对"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q022",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "快速上手一个陌生技术栈",
+      "content": "公司让你用一周时间上手一个没接触过的后端框架并交付一个小接口。请说明你的学习路径：先看什么、如何做最小验证、卡住了找谁、怎样判断自己已经可以放心修改线上代码。",
+      "tags": [
+        "技术栈",
+        "快速上手",
+        "自学路径"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "全栈方向的长期规划",
+      "content": "全栈工程师容易样样通、样样松。未来三到五年你想在前端、后端还是架构方向深挖？结合你目前的技术水平，说说你打算如何在保持广度的同时，建立一个真正有深度的方向。",
+      "tags": [
+        "职业规划",
+        "技术深度",
+        "成长"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q024",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "小团队全栈的节奏适应",
+      "content": "创业公司常是一个人既写页面又改接口，还要自己部署和 on-call，节奏快且边界模糊。你过去有没有类似经历？面对「没人给你兜底」的情况，你靠什么方法保证按时交付且质量可控？",
+      "tags": [
+        "工作节奏",
+        "独立负责",
+        "质量保障"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "如何评估自己的交付质量",
+      "content": "如果团队里没有代码评审、也没有专职测试，你如何保证自己交付的功能不出大问题？请说清楚你会在哪些节点自测、用什么手段兜底（自动化测试、灰度、回滚），以及你踩过的坑。",
+      "tags": [
+        "质量意识",
+        "自测",
+        "工程习惯"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q026",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "全栈 offer 的选择标准",
+      "content": "同时拿到两个 offer：一个薪资高 20% 但技术栈老旧、职责单一；另一个薪资一般但能独立负责完整模块。你会怎么选？请说出你的判断标准，以及你如何权衡全栈成长与短期收益。",
+      "tags": [
+        "offer选择",
+        "价值排序",
+        "期望"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q027",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "分页接口设计与优化",
+      "content": "给定一个订单列表页面，前端需要支持筛选、排序、分页。请设计 RESTful 接口，说明参数、响应结构，并讨论深分页性能问题及优化方案（如游标分页）。",
+      "tags": [
+        "接口设计",
+        "分页",
+        "性能优化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q028",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "全链路性能排查",
+      "content": "线上用户反馈“订单页加载超过5秒”，你作为全栈工程师，请描述从浏览器 Network 面板、Nginx 日志、Node 服务日志到数据库慢查询的完整排查路径，并说明每层可能的瓶颈与验证方法。",
+      "tags": [
+        "性能排查",
+        "全链路",
+        "线上问题"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q029",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "时区与时间处理",
+      "content": "用户在北京时间上午10点下单，前端显示正确，但后端日志和数据库存储的时间不一致。请解释可能原因（时区、序列化），并给出全栈层面的统一时间处理方案。",
+      "tags": [
+        "时间处理",
+        "数据一致性",
+        "前后端协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q030",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "独立交付功能经历",
+      "content": "请分享一个你独自完成从数据库设计、后端接口、前端页面到部署上线的功能。说明需求背景、技术选型、遇到的阻碍及如何解决，并给出上线后的效果数据。",
+      "tags": [
+        "独立交付",
+        "全栈项目",
+        "问题解决"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q031",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "接口变更与协作",
+      "content": "在项目中，你作为全栈工程师，后端接口字段需要变更，但前端已对接旧版本。请描述你如何设计接口版本管理、通知协作方、灰度过渡，并最终推动变更落地。",
+      "tags": [
+        "接口版本",
+        "协作沟通",
+        "灰度发布"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q032",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "慢查询优化实战",
+      "content": "你负责的模块有一个列表接口，随着数据量增长从 200ms 恶化到 3s。请详细说明你如何通过 EXPLAIN、索引、查询重构或缓存来优化，并对比优化前后指标。",
+      "tags": [
+        "数据库优化",
+        "索引",
+        "缓存"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q033",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "紧急需求应对",
+      "content": "产品经理在提测当天要求增加一个“导出 CSV”功能，并希望明天上线。你评估后端工作量大但前端可复用组件。请说明你如何与产品、测试沟通，拆分任务并给出可行方案。",
+      "tags": [
+        "需求变更",
+        "沟通协作",
+        "优先级"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q034",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "设计还原度分歧",
+      "content": "设计师认为你实现的页面与设计稿差距大，但你发现部分效果在低端安卓机上性能很差。请描述你如何用数据说服设计师，并给出兼顾还原与性能的折中方案。",
+      "tags": [
+        "跨职能沟通",
+        "性能权衡",
+        "前端实现"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q035",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "全栈职业动机",
+      "content": "你之前可能偏前端或偏后端，为什么现在选择全栈开发工程师岗位？请结合你对小团队端到端交付的理解，说明你的长期规划，以及为此做了哪些技术准备。",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "全栈发展"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q036",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "推动技术改进",
+      "content": "在以往团队中，你发现代码缺乏自动化测试和部署流程，但同事习惯手动操作。请举例说明你如何在不影响业务的前提下，推动团队引入 CI/CD 或测试覆盖。",
+      "tags": [
+        "团队协作",
+        "技术推动",
+        "工程效能"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q037",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "接口字段命名与分页设计",
+      "content": "产品要求订单列表接口支持按状态筛选、按时间排序并分页，前端用 React 表格展示。请你在 5 分钟内写出接口的 URL、请求参数与响应结构，并说明分页用 offset 还是游标、状态字段用枚举还是字符串、时间字段用什么格式。给出理由和可能的坑。",
+      "tags": [
+        "接口设计",
+        "数据建模",
+        "前后端协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q038",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "独立交付一个功能的全过程",
+      "content": "请挑一个你从零独立完成、已上线的完整功能，讲清楚：需求怎么拆到数据库表、接口怎么定义、前端怎么调用、怎么部署到服务器、上线后出过什么问题。重点说明哪些环节是你一个人做的，以及你当时用什么方式验证整条链路是通的。",
+      "tags": [
+        "端到端交付",
+        "项目掌控",
+        "部署运维"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q039",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "线上页面白屏的联合排查",
+      "content": "线上用户反馈某页面白屏，测试说后端接口正常，前端说本地跑没问题，运维说服务没挂。作为全栈你要牵头排查。请说明你按什么顺序查、看哪些日志和指标、如何快速判断是前端渲染、接口返回、Nginx 配置还是数据库问题，以及怎么和各方同步进展。",
+      "tags": [
+        "问题排查",
+        "跨角色协作",
+        "链路理解"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "cs-it.fullstack-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "小团队全栈的动机与规划",
+      "content": "我们团队规模小，全栈需要前端、后端、数据库、部署都自己来，有时还要临时接运维的活。请说说你为什么选择全栈方向，过去一年你主动补过哪块技术短板，以及未来一年你希望在哪一端做到更深。",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "学习能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -400,7 +910,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full",
     "dimensionSource": "project-authored"
   }

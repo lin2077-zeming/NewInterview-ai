@@ -276,6 +276,363 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "ee-telecom.embedded-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "触发器与锁存器的区别",
+      "content": "触发器（Flip-flop）与锁存器（Latch）有什么区别？各自适用于什么场景？",
+      "tags": [
+        "数字电路",
+        "基础概念"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.embedded-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "volatile与中断共享变量",
+      "content": "在一个STM32项目中，主循环读取由中断更新的全局变量 flag 来判断是否处理数据，但开启 -O2 后发现偶尔死循环。请分析 volatile 的作用、缺少它时编译器可能做的优化，以及是否还需要加内存屏障或关中断，并说明理由。",
+      "tags": [
+        "C语言",
+        "volatile",
+        "中断"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.embedded-q013",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "I2C总线无ACK排查",
+      "content": "某I2C温湿度传感器上电后读不到数据，逻辑分析仪显示主机发送地址后从机未拉低SDA产生ACK，SCL有波形。请给出排查步骤，覆盖上拉电阻、从机地址、电源与复位、总线电容/速率、时钟拉伸以及总线死锁恢复。",
+      "tags": [
+        "I2C",
+        "硬件调试",
+        "协议"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.embedded-q014",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "RTOS优先级反转处理",
+      "content": "在一个抢占式RTOS中，低优先级任务持有互斥量访问SPI Flash，中优先级任务就绪后导致高优先级任务长时间阻塞。请解释优先级反转成因，说明互斥量的优先级继承如何缓解，并给出任务划分或临界区设计的替代方案。",
+      "tags": [
+        "RTOS",
+        "优先级反转",
+        "互斥量"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.embedded-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "外设驱动调试复盘",
+      "content": "请选择一个你独立负责的外设驱动（如ADC+DMA、CAN、USB、以太网），说明你如何依据原理图和芯片数据手册完成寄存器配置，遇到的最棘手时序或稳定性问题是什么，如何用示波器或逻辑分析仪定位，最终改善指标如何。",
+      "tags": [
+        "项目深挖",
+        "驱动调试",
+        "外设"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.embedded-q016",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "低功耗项目优化取舍",
+      "content": "在电池供电的NB-IoT环境监测项目中，要求单节锂亚电池工作3年。请说明你如何测量各模式电流、划分睡眠与唤醒策略、处理外设漏电和GPIO状态、设计RTC唤醒与通信重传，并给出最终功耗数据与关键取舍。",
+      "tags": [
+        "低功耗",
+        "项目实践",
+        "功耗优化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.embedded-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "MCU内存与Flash优化",
+      "content": "请描述一次MCU的RAM或Flash接近极限时的优化经历：你如何用map文件定位大对象，是否调整链接脚本、堆栈大小、常量存放位置或内存池，以及如何验证优化后没有越界、栈溢出或实时性下降。",
+      "tags": [
+        "内存优化",
+        "链接脚本",
+        "项目实践"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.embedded-q018",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "软硬件不一致如何推进",
+      "content": "联调时你发现软件按数据手册配置正常，但硬件实测引脚电平与原理图标注相反。硬件工程师坚持原理图没错，项目节点临近。你会如何沟通、设计最小实验验证、推动临时与最终解决方案，并同步测试和项目经理？",
+      "tags": [
+        "跨部门协作",
+        "硬件联调",
+        "沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.embedded-q019",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "量产偶发死机排查组织",
+      "content": "产品已小批量出货，客户反馈设备偶发死机，现场无法复现，只能远程获取日志和复位原因寄存器。作为嵌入式负责人，你会如何组织排查、先做临时缓解、验证根因并管理客户预期与内部资源？",
+      "tags": [
+        "应急处理",
+        "量产问题",
+        "调试"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.embedded-q020",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "嵌入式方向与职业规划",
+      "content": "你为什么选择嵌入式开发方向？未来3年希望在MCU/RTOS、外设驱动、系统架构还是汽车电子等方向深耕？请结合一个具体经历说明你如何保持技术成长，以及期望在团队中承担什么角色。",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "成长"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.embedded-q021",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "跨职能补位与问题闭环",
+      "content": "在嵌入式项目中，软件、硬件、测试常并行推进。请分享一次你主动协调资源或补位推动问题闭环的经历：当时任务背景是什么，你具体做了什么，遇到哪些阻力，结果如何，你从中总结了什么协作方法？",
+      "tags": [
+        "团队协作",
+        "责任心",
+        "沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.embedded-q022",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "volatile 与编译器优化",
+      "content": "在 MCU 项目中，一个全局标志位由中断服务程序修改，主循环中轮询该标志。有同事说必须加 volatile，否则编译优化后循环可能永远读不到更新。请解释 volatile 的作用、不加可能产生的后果，并说明还有哪些场景必须使用它。",
+      "tags": [
+        "volatile",
+        "中断",
+        "编译器优化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.embedded-q023",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "结构体内存对齐与 DMA",
+      "content": "在 Cortex-M 上定义结构体用于 DMA 传输，成员依次为 char、uint32_t、uint16_t、uint8_t。请计算默认对齐下的 sizeof，说明如何重排成员减少 padding，并解释为什么 DMA 缓冲区通常要求地址和长度对齐，以及未对齐可能引发什么问题。",
+      "tags": [
+        "内存对齐",
+        "结构体",
+        "DMA"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.embedded-q024",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "I2C 与 SPI 选型及调试",
+      "content": "项目需要连接一片 EEPROM 和一颗高速 ADC。请从电气特性、时序、速率和引脚开销对比 I2C 与 SPI，给出选型理由；并描述用逻辑分析仪抓取 I2C 波形时，发现从机无应答，你会按什么顺序排查上拉电阻、地址和时序。",
+      "tags": [
+        "I2C",
+        "SPI",
+        "协议调试"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.embedded-q025",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "外设驱动开发与调试经历",
+      "content": "请描述你独立完成的一个外设驱动（如 UART DMA 接收、SPI 屏或 ADC 采样）。说明你如何阅读数据手册配置寄存器、遇到的最棘手问题、用示波器或逻辑分析仪定位的过程，以及最终如何验证驱动在长时间运行下的稳定性。",
+      "tags": [
+        "驱动开发",
+        "逻辑分析仪",
+        "稳定性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.embedded-q026",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "RTOS 任务划分与优先级反转",
+      "content": "在一个基于 FreeRTOS 的项目中，你如何划分任务优先级和栈大小？请举一个实际例子，说明是否遇到过优先级反转、栈溢出或死锁，当时如何定位，用了哪些 RTOS 提供的机制（如互斥量、优先级继承、任务通知）解决。",
+      "tags": [
+        "RTOS",
+        "优先级反转",
+        "任务调度"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.embedded-q027",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "低功耗项目优化经历",
+      "content": "请分享一个你负责的低功耗项目：设备使用电池供电，需要兼顾实时响应。说明你如何测量各模式电流、选择了哪些低功耗模式、如何设计唤醒源和外围电路控制，以及最终功耗降低了多少、期间踩过哪些坑。",
+      "tags": [
+        "低功耗",
+        "电源管理",
+        "唤醒源"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.embedded-q028",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "原理图与数据手册不符",
+      "content": "联调时你发现原理图标注的 I2C 从机地址与传感器数据手册不一致，硬件工程师坚持按原理图排查。你会如何用最小实验验证双方假设，并与硬件工程师、项目负责人沟通，推动问题闭环而不激化矛盾？",
+      "tags": [
+        "跨职能协作",
+        "I2C",
+        "沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.embedded-q029",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "低概率丢包与发布决策",
+      "content": "产品发布前一周，测试发现某通信链路在强干扰下约有千分之一的丢包率，复现困难。作为软件负责人，你如何评估风险、组织资源排查、与产品经理讨论是否带缺陷发布，并准备哪些降级或补救方案？",
+      "tags": [
+        "风险决策",
+        "通信可靠性",
+        "发布管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.embedded-q030",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "技术学习与兴趣",
+      "content": "嵌入式技术更新快，你在工作之外会通过哪些方式学习？请举一个最近主动学习并应用到工作中的技术点，说明学习过程、遇到的困难以及它如何帮助你更好地完成嵌入式开发任务。",
+      "tags": [
+        "学习能力",
+        "技术热情",
+        "自我驱动"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.embedded-q031",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "理想团队与求职动机",
+      "content": "你理想中的嵌入式研发团队是什么样的？在过往经历中，你更喜欢独立攻关还是与硬件、测试同事紧密协作？请结合具体事例说明你期望在下一份工作中获得怎样的成长与贡献。",
+      "tags": [
+        "求职动机",
+        "团队协作",
+        "职业期望"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -391,7 +748,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

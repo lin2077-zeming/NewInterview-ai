@@ -276,6 +276,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "ee-telecom.automation-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "一用一备泵轮换控制逻辑",
+      "content": "工艺要求两台水泵一用一备，每24小时自动轮换，运行泵故障时备用泵自动投入并报警。请说明PLC程序中需要设计哪些关键逻辑，包括互锁、故障检测、轮换计时和手动/自动切换，并指出容易出错的点。",
+      "tags": [
+        "PLC编程",
+        "控制逻辑",
+        "故障切换"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q012",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "输送线控制系统选型设计",
+      "content": "某输送线需控制5台电机、12个光电传感器、2个模拟量压力变送器，并预留20%备用点。请说明如何统计I/O点数、选择PLC型号与扩展模块，以及变频器和传感器的选型依据，并考虑现场干扰与后期扩展。",
+      "tags": [
+        "电气设计",
+        "硬件选型",
+        "I/O统计"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q013",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "设备偶发停机无报警排查",
+      "content": "产线设备运行中偶发无故停机，PLC无报警记录，复位后可继续运行，每天出现1-2次。请给出从电源、接地、干扰、程序扫描、通信到机械原因的排查步骤，并说明如何用万用表、示波器或PLC在线监控缩小范围。",
+      "tags": [
+        "故障排查",
+        "干扰",
+        "现场调试"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q014",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "现场总线选型与区别",
+      "content": "请对比Profinet、Modbus RTU/TCP和EtherNet/IP在实时性、拓扑、布线成本和诊断能力上的差异。如果一条包装线需要连接远程I/O、变频器和HMI，你会如何选择总线并说明理由。",
+      "tags": [
+        "工业网络",
+        "现场总线",
+        "通信协议"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "独立负责项目最大挑战",
+      "content": "请描述一个你从方案设计、电气选型、PLC编程到现场调试全程参与或独立负责的自动化项目。重点说明项目规模、你承担的具体工作、遇到的最大挑战，以及最终如何解决并验证效果。",
+      "tags": [
+        "项目经验",
+        "方案设计",
+        "现场调试"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q016",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "PLC程序动作异常定位",
+      "content": "回忆一次你调试PLC程序时设备动作不符合预期的经历。请说明你如何确认是程序逻辑、传感器信号、接线还是机械问题，用了哪些在线监控或强制手段，最后如何修改程序并防止同类问题再次发生。",
+      "tags": [
+        "PLC调试",
+        "问题定位",
+        "程序优化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q017",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "传感器或变频器选型依据",
+      "content": "请举一个你实际选型传感器或变频器的例子。说明当时工艺需求、环境条件、精度或负载要求是什么，你对比了哪些品牌和参数，为什么最终选择该型号，投用后是否达到预期，有无教训。",
+      "tags": [
+        "硬件选型",
+        "传感器",
+        "项目经历"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q018",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "项目中与机械工艺协作",
+      "content": "在项目执行中，你与机械或工艺人员发生过方案冲突吗？例如安装空间、动作节拍或检测位置不一致。请说明冲突背景、你如何沟通协调、是否调整设计，以及最终对项目进度和质量的影响。",
+      "tags": [
+        "工程协作",
+        "沟通协调",
+        "项目推进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q019",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "生产要求屏蔽安全联锁",
+      "content": "深夜产线故障，生产主管要求你临时屏蔽安全门联锁以快速恢复生产，并承诺后果自负。你会如何回应？请说明你如何评估风险、向上汇报、提供替代方案，同时避免与生产部门关系僵化。",
+      "tags": [
+        "安全联锁",
+        "生产压力",
+        "风险沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q020",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "工艺变更导致程序大改",
+      "content": "项目已进入现场调试阶段，工艺突然变更，要求增加三个工位和新的联锁逻辑，但工期只给两天。你如何与工艺、机械、生产沟通优先级，评估工作量，安排修改与测试，并管理各方对延期的预期？",
+      "tags": [
+        "变更管理",
+        "跨部门协作",
+        "工期"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q021",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "接线与图纸不符如何处理",
+      "content": "现场安装人员反馈实际接线与你的电气原理图不一致，但设备已部分上电。你会先做什么？请说明如何核对图纸与实物、评估风险、决定改线还是改图，并如何与安装队和甲方沟通记录变更。",
+      "tags": [
+        "现场应变",
+        "图纸识读",
+        "沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q022",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "驻厂调试沟通不畅",
+      "content": "你长期驻厂调试，但客户生产人员不配合停机测试，甚至隐瞒操作习惯。你如何建立信任、争取测试窗口、收集真实需求，并把沟通结果同步给项目经理和公司？请结合具体做法说明。",
+      "tags": [
+        "驻厂沟通",
+        "客户关系",
+        "现场协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "频繁出差驻厂的适应与选择",
+      "content": "我们的项目经常需要出差或驻厂调试，每次可能持续数周。请结合你的经历，说明你如何适应这种工作节奏，家人是否支持，以及你选择自动化与控制工程师岗位的主要原因是什么。",
+      "tags": [
+        "出差驻厂",
+        "求职动机",
+        "稳定性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q024",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "从PLC编程到系统集成成长",
+      "content": "如果你入职，未来三到五年你希望从PLC编程、电气设计、系统集成到项目负责哪个方向深耕？请给出具体学习计划和阶段目标，以及你希望公司提供哪些培训或项目机会。",
+      "tags": [
+        "职业规划",
+        "技术成长",
+        "学习路径"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "技术方案分歧如何处理",
+      "content": "如果你和同事在控制系统方案上意见不合，例如他主张用进口PLC，你认为国产方案足够且成本更低。你会如何推进讨论？请说明你如何用数据、风险和客户需求说服对方，同时保持团队合作。",
+      "tags": [
+        "团队协作",
+        "分歧处理",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q026",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "驻厂加班与薪资结构看法",
+      "content": "请谈谈你对薪资的期望，以及如何看待自动化岗位常见的加班、紧急抢修和长期驻厂。如果项目奖金与出差补贴占收入一定比例，你更关注固定薪资还是综合收入？为什么？",
+      "tags": [
+        "薪资期望",
+        "驻厂加班",
+        "稳定性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q027",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "PLC输入接线与传感器类型",
+      "content": "现场一台S7-1200 PLC的数字量输入模块公共端接24V DC，现有PNP三线制接近开关和NPN三线制接近开关各若干。请说明两种传感器分别应如何接线，源型/漏型输入如何区分，以及如果接错会出现什么现象。",
+      "tags": [
+        "PLC接线",
+        "传感器选型",
+        "数字量输入"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q028",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "电机联锁与防抖逻辑",
+      "content": "某产线电机M1启动需满足：到位传感器S1为ON且润滑油压P1≥0.2MPa；运行中P1低于阈值持续3秒则停机；急停复位后必须手动重新启动。请描述PLC程序结构和关键逻辑，并说明如何处理S1抖动导致误触发。",
+      "tags": [
+        "PLC编程",
+        "联锁逻辑",
+        "信号防抖"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q029",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "Profinet随机丢站排查",
+      "content": "一条包装线PLC通过Profinet连接8台变频器，生产时偶发站丢失并停机，复位后可恢复。请从网络拓扑、屏蔽与接地、交换机负载、GSD组态、更新时间与看门狗等角度，给出系统化排查步骤和临时保障措施。",
+      "tags": [
+        "工业网络",
+        "Profinet",
+        "故障排查"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q030",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "主导项目的程序架构",
+      "content": "请选一个你主导的PLC项目，说明PLC型号、IO点数、程序架构（主程序/子程序/中断/功能块）、关键联锁和HMI数据交互方式。如果项目由他人编写，你如何快速接手并保证可维护性？",
+      "tags": [
+        "项目经历",
+        "程序架构",
+        "PLC"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q031",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "现场调试最难故障",
+      "content": "请讲述一次现场调试中最难解决的故障：现象是什么，你如何分步隔离电气、程序、机械和工艺原因，最终根因及预防措施。若当时没有图纸和备件，你的排查顺序会怎样调整？",
+      "tags": [
+        "调试经历",
+        "故障定位",
+        "根因分析"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q032",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "电气图纸与IO核对",
+      "content": "在以往项目中，你如何根据电气原理图和IO清单核对现场接线？请举一个你发现图纸与实物不一致的例子，说明你如何确认、修改图纸并通知相关方，避免后续调试返工。",
+      "tags": [
+        "电气图纸",
+        "IO核对",
+        "项目经历"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q033",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "多方需求冲突推进",
+      "content": "调试中机械工程师要求改机械结构，工艺工程师要求改控制逻辑，生产主管催着立即开机。三边意见不一致且工期很紧，你作为自动化负责人会如何组织沟通、评估风险并推进决策？",
+      "tags": [
+        "跨部门协作",
+        "需求冲突",
+        "现场沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q034",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "安全回路旁路要求",
+      "content": "夜班驻厂时PLC突然停机，现场无备用安全模块。生产主管要求临时短接安全门锁和急停回路先恢复生产，并承诺后果自负。你会如何回应、如何处置，既保障安全又尽量减少停机损失？",
+      "tags": [
+        "安全规范",
+        "突发应变",
+        "现场沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q035",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "驻厂出差与职业规划",
+      "content": "该岗位经常需要出差或驻厂调试，项目紧急时可能连续数周在外。你如何看待这种工作节奏？未来三年你希望在自动化控制领域达到什么水平，计划通过哪些项目或学习实现？",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "出差驻厂"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q036",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "技术更新与团队纠偏",
+      "content": "工控技术更新较快，你平时通过什么方式学习PLC、总线或新器件？请举一个自学后应用到项目的例子。若同事不按图纸接线导致返工，你会如何沟通并推动团队改进？",
+      "tags": [
+        "学习能力",
+        "团队协作",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q037",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "气缸顺序控制与防抖",
+      "content": "某装配工位用PLC控制：工件到位传感器X0触发后，夹紧气缸Y0动作；夹紧到位X1后启动钻孔电机Y1；钻孔完成X2后停电机，延时0.5s松开Y2。请说明你的程序结构（如步进顺控/状态机），并给出传感器抖动、气缸未到位、急停复位时的处理思路。",
+      "tags": [
+        "PLC编程",
+        "顺序控制",
+        "防抖处理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q038",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "远程IO随机掉站排查",
+      "content": "你负责的项目中，PLC与远程IO站通过Profinet通讯，运行中偶发掉站导致产线停机，更换IO模块和交换机后仍复现。请按你的排查路径说明：如何从电气接地、网络拓扑、程序诊断、电磁干扰几个层面逐步定位？临时恢复和根治措施分别是什么？",
+      "tags": [
+        "现场总线",
+        "故障排查",
+        "项目复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q039",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "机械变更下的工期协调",
+      "content": "项目进入调试阶段，机械专业突然变更机构，导致你的电气图纸、IO点位和PLC程序都要调整，但生产部门坚持原定上线日期不变。你会如何与机械、工艺、生产沟通？请说明你如何评估影响、提出替代方案并推动达成一致。",
+      "tags": [
+        "跨部门协作",
+        "变更管理",
+        "工期沟通"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "ee-telecom.automation-q040",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "岗位理解与动机",
+      "content": "请谈谈你对自动化与控制工程师岗位的理解：你认为日常工作中最枯燥和最挑战的部分分别是什么？面对长期在现场调试、反复修改程序的状态，你靠什么保持投入和责任心？",
+      "tags": [
+        "岗位理解",
+        "求职动机",
+        "抗压能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -388,7 +898,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

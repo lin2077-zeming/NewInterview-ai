@@ -276,6 +276,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "law-public.lawyer-legal-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "民间借贷举证责任分析",
+      "content": "客户仅提供银行转账记录，无借条，对方抗辩该款项为投资款。请结合民间借贷司法解释，说明如何确定法律关系、分配举证责任、还需补充哪些证据，并预判诉讼风险与应对策略。",
+      "tags": [
+        "法律逻辑",
+        "举证责任",
+        "诉讼策略"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q012",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "软件采购合同风险审查",
+      "content": "业务部门提交一份对方起草的软件采购合同：签约后预付全款、验收标准模糊、知识产权归对方、争议由对方所在地法院管辖。请指出至少三项核心风险，并给出具体修改条款和谈判理由。",
+      "tags": [
+        "合同审查",
+        "风险防控",
+        "条款设计"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "预付费会员合规审查",
+      "content": "公司拟推出会员预充值活动，承诺年化8%消费返利，可随时提现，并鼓励员工向亲友推广。请识别其中可能涉及的非法集资、消费者权益及税务风险，并设计合规整改方案。",
+      "tags": [
+        "合规审查",
+        "风险识别",
+        "消费者权益"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q014",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "AI换脸广告法律检索",
+      "content": "客户想用AI换脸技术让明星形象出现在广告中，但未获授权。请说明你会从肖像权、著作权、个人信息保护、广告合规等角度如何检索法律依据，并形成一份法律意见要点。",
+      "tags": [
+        "法律检索",
+        "肖像权",
+        "广告合规"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "复杂合同审核经历",
+      "content": "请举一个你独立起草或审核复杂合同的经历。说明合同类型、你识别出的关键风险、提出的修改条款、与业务或对方谈判的过程，以及最终是否被采纳和落地结果。",
+      "tags": [
+        "经历深挖",
+        "合同审核",
+        "谈判落地"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q016",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "诉讼仲裁案件深挖",
+      "content": "请描述你参与过的最复杂诉讼或仲裁案件。包括争议焦点、你的具体角色、如何组织证据和法律检索、庭审或仲裁策略，以及结果和你复盘出的不足。",
+      "tags": [
+        "诉讼仲裁",
+        "证据组织",
+        "复盘反思"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "合规审查整改经历",
+      "content": "请分享一次你在合规审查中发现重大风险并推动整改的经历。说明风险场景、你如何评估法律后果、怎样向业务部门沟通，以及整改措施和后续效果。",
+      "tags": [
+        "合规整改",
+        "沟通推动",
+        "风险后果"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q018",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "商务谈判中的条款设计",
+      "content": "请举一次你参与商务谈判的经历。你如何在促成交易与守住法律底线之间取舍？具体设计了哪些条款或替代方案？对方最激烈的反对点是什么，你如何回应？",
+      "tags": [
+        "商务谈判",
+        "条款设计",
+        "取舍平衡"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "业务催批高风险合同",
+      "content": "业务负责人要求你两小时内批准一份高风险合同，否则客户将转向竞品。你发现付款与验收条款严重不利。请说明你会如何沟通、给出什么替代方案，并做好哪些留痕。",
+      "tags": [
+        "应急沟通",
+        "风险留痕",
+        "替代方案"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q020",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "开庭前证据丢失应急",
+      "content": "开庭前一天，你发现关键证据原件丢失，仅有复印件，对方可能否认真实性。作为代理律师，你会立即采取哪些补救措施？如何向客户和法庭说明并调整庭审策略？",
+      "tags": [
+        "应急应变",
+        "证据补救",
+        "庭审策略"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q021",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "与强势同事观点分歧",
+      "content": "你与一位强势同事对案件法律适用存在明显分歧，对方坚持按他的方案推进。你会如何表达专业意见、寻求依据，并在不破坏协作的前提下推动团队形成结论？",
+      "tags": [
+        "团队协作",
+        "观点分歧",
+        "沟通表达"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q022",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "客户舆情与媒体应对",
+      "content": "客户公司因涉嫌违规被媒体曝光，记者到公司采访，业务部门想直接否认。作为法务，你如何评估法律风险、统一对外口径，并协调公关与业务部门应对？",
+      "tags": [
+        "舆情应对",
+        "跨部门协调",
+        "风险口径"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "未来专业领域规划",
+      "content": "请谈谈你未来三到五年希望在哪个法律领域深耕，为什么？你计划通过哪些具体行动积累专业壁垒，以及你期望所在团队或律所提供什么支持？",
+      "tags": [
+        "职业规划",
+        "专业深耕",
+        "求职动机"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "跨部门协作风格",
+      "content": "法务常需与业务、财务、HR等部门协作。请举例说明你偏好的协作方式；当对方不理解法律风险时，你通常如何建立信任并推动事情落地？",
+      "tags": [
+        "团队协作",
+        "跨部门沟通",
+        "信任建立"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "利益冲突与保密处理",
+      "content": "如果你同时被要求服务两家存在竞争关系的客户，或发现同事泄露客户保密信息，你会如何处理？请说明你的判断依据、沟通对象和具体动作。",
+      "tags": [
+        "职业伦理",
+        "利益冲突",
+        "保密义务"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q026",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "法律知识更新习惯",
+      "content": "法律与监管变化很快。请介绍你日常获取新规、典型案例和行业动态的渠道，以及你如何把学到的新知识转化为合同模板、合规指引或内部培训。",
+      "tags": [
+        "学习能力",
+        "知识管理",
+        "专业更新"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q027",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "AI 辅助量刑与数字黑洞",
+      "content": "法院系统用 AI 辅助量刑，通过整合数据运用 AI 断案，律师担心这会带来「数字黑洞」。对此你怎么看？",
+      "tags": [
+        "司法改革",
+        "技术伦理"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "山东人才就业网《陕西省公务员面试（执法、公检法）真题》",
+        "url": "https://jiufengsw.com/index.php?a=shows&catid=166&id=55840",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q028",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "法要兼顾人情与群众找关系",
+      "content": "三句话：法要兼顾人情；法不外乎人情；群众遇到问题优先找关系而非法律。谈谈你的认识。",
+      "tags": [
+        "法理人情",
+        "法治现状"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "山东人才就业网《陕西省公务员面试（执法、公检法）真题》",
+        "url": "https://jiufengsw.com/index.php?a=shows&catid=166&id=55840",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q029",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "谈谈对酒驾入罪的看法",
+      "content": "请你谈谈对酒驾入罪的看法。",
+      "tags": [
+        "立法观察",
+        "社会法治"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "华图教育《广东法检系统公务员面试真题》",
+        "url": "https://v.huatu.com/htnews/guangdong/gongwuyuan/mianshi/2011/0511/25409.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q030",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "软件采购合同风险审查",
+      "content": "客户作为采购方拟签署一份500万元的定制软件开发合同，对方稿约定：验收合格后一次性付款、无限期保密、可单方解除、责任上限为合同总额10%。请指出对你方最不利的三项条款，说明法律依据，并给出可落地的修改方案与谈判底线。",
+      "tags": [
+        "合同审查",
+        "风险防控",
+        "谈判底线"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q031",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "股权转让连环纠纷分析",
+      "content": "甲将股权转让给乙，约定工商变更后付款；乙未付款即把股权转给不知情且支付合理对价的丙。甲要求乙付款，乙称应向丙追偿。请梳理各方法律关系与请求权基础，分析丙能否善意取得，并给出甲的救济路径。",
+      "tags": [
+        "公司法",
+        "案例分析",
+        "逻辑推理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q032",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "充值返佣合规审查",
+      "content": "公司拟推出“会员充值返现+推荐好友返佣”营销方案，预算较大，涉及大量个人用户。法务需审查是否触及非法集资、传销、预付卡等红线。请列出尽调清单、法律依据、风险等级及给业务部门的合规修改建议。",
+      "tags": [
+        "合规审查",
+        "风险识别",
+        "民商法"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q033",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "合同审查经历深挖",
+      "content": "请挑一份你独立或主导审查过的合同，说明交易背景、你识别出的最重大风险点、修改建议以及业务方是否接受。若业务方坚持不改，你如何留痕、升级并平衡商业目标？追问：该合同最终履行有无争议？",
+      "tags": [
+        "合同审查",
+        "项目经历",
+        "沟通协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q034",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "诉讼仲裁经历深挖",
+      "content": "描述你参与过的一起诉讼或仲裁案件：从事实梳理、证据清单、法律检索到庭审策略，你具体负责哪部分？遇到的最大困难是什么，如何解决，结果如何？追问：如果重来一次，你会改变哪个策略？",
+      "tags": [
+        "诉讼仲裁",
+        "证据梳理",
+        "经历深挖"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q035",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "法律检索研究经历",
+      "content": "请讲一次你做过的最复杂法律检索：要解决什么法律问题，用了哪些数据库与关键词，如何验证结论可靠性，最终输出什么成果？追问：若检索结论存在地区裁判分歧，你如何向业务或客户提示风险？",
+      "tags": [
+        "法律检索",
+        "研究方法",
+        "专业能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q036",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "争议解决条款谈判",
+      "content": "你代表公司与合作方谈判，对方律师坚持争议解决约定在其所在地法院且不接受仲裁，业务部门希望尽快签约。请设计谈判方案，说明第一轮沟通要点，并给出既控制诉讼成本又推动交易的替代条款建议。",
+      "tags": [
+        "谈判能力",
+        "争议解决",
+        "跨部门协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q037",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "签约前突发合规危机",
+      "content": "发布会前一小时，你发现合作方被列为失信被执行人，且其提供的授权文件疑似伪造。业务部门坚持先签约再补救，媒体已到场。作为法务负责人，你如何迅速核实、分级沟通并给出签或不签的决策建议？",
+      "tags": [
+        "应急应变",
+        "合规风险",
+        "沟通协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q038",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "求职动机与职业规划",
+      "content": "你为什么选择律师或法务方向？未来三年希望成为哪类法律人？如果短期案源压力与专业深耕冲突，你会如何取舍？请结合过往经历说明你的选择逻辑与抗压方式。",
+      "tags": [
+        "求职动机",
+        "职业规划",
+        "抗压能力"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q039",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "利益冲突与保密处理",
+      "content": "你同时服务两个客户，后发现他们在同一交易中利益直接冲突，其中一方还口头承诺给你个人报酬。你会如何处理？请说明保密义务、利益冲突审查、团队沟通及是否需要退出委托。",
+      "tags": [
+        "职业伦理",
+        "利益冲突",
+        "保密义务"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "law-public.lawyer-legal-q040",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "对赌条款的效力与风险审查",
+      "content": "你作为法务，审查一份投资协议，其中约定目标公司未按期上市则创始股东按年化12%回购投资方股权，且目标公司承担连带担保责任。请分析该条款的法律效力风险，并给出修改建议。",
+      "tags": [
+        "合同审查",
+        "对赌条款",
+        "风险防控"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -399,7 +909,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

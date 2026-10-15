@@ -277,6 +277,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "edu-research.training-institution-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "把难点讲成学生听得懂的话",
+      "content": "请从你擅长的学科中任选一个学生普遍觉得难的高频考点（如数学的函数单调性、英语的时态、物理的受力分析），假设面对的是基础中等偏下的初三学生，用3分钟把它讲明白。讲完后请说明：你会用什么方式当场判断学生是真懂了，而不是点头敷衍。",
+      "tags": [
+        "学科功底",
+        "知识讲授",
+        "学情判断"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q012",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "成绩下滑学员的四周提分方案",
+      "content": "假设你接手一名学员：入学测72分，最近两次周测降到58分、55分；作业正确率尚可但考试出错多，课上一问就懂、一做就错；家长已在群里表达不满。请给出未来4周的诊断思路和提分方案，并说明每周你会用什么数据向家长证明方案有效。",
+      "tags": [
+        "学情分析",
+        "提分方案",
+        "效果验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q013",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "一节90分钟课的完整备课过程",
+      "content": "请还原你从零准备一节90分钟课程的完整过程：拿到大纲后如何确定本节重难点、如何设计讲练比例与例题梯度、讲义和板书怎么准备、课后如何根据学生反应调整。请给出具体时间分配，并举例说明某次你因课堂反馈临时改动了原定内容。",
+      "tags": [
+        "备课教研",
+        "课程设计",
+        "经历深挖"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q014",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "提分最明显的学员辅导案例",
+      "content": "请讲一个你带过或辅导过的学员提分最明显的案例：他当时的基础和主要问题是什么，你采取了哪些具体动作，多久见效，最终分数或排名有什么变化。若没有直接带班经验，可讲教学实习、家教或助教中做过的最有成效的一次辅导。",
+      "tags": [
+        "提分案例",
+        "教学效果",
+        "经历深挖"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q015",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "课堂起冲突与消极学生的处理",
+      "content": "周六晚班课进行到一半，后排两名学生因换座位发生口角，声音影响到全班；同时一名学生低头刷手机完全不参与，你提醒后他回了一句“反正我也考不上”。此时你还有25分钟要完成本节核心知识点。请说说你现场怎么处理，每一步的理由是什么。",
+      "tags": [
+        "课堂控场",
+        "突发处理",
+        "情绪安抚"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q016",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "家长群质疑退费与续费承诺",
+      "content": "期中考试后，一位家长在微信群里公开质疑“上了两个月一点没进步”，要求退掉剩余课时；与此同时课程顾问希望你向家长承诺“期末考试一定提20分”以保住续费。请说明你会分别对家长、对顾问说什么、做什么，以及你的承诺边界在哪里。",
+      "tags": [
+        "家校沟通",
+        "承诺边界",
+        "跨岗协作"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q017",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "你怎么看教培的排课与续费压力",
+      "content": "教培讲师的真实节奏是：工作日晚上和整个周末排满课，寒暑假连轴转，除授课外还要承担续费率、转介绍等指标，部分机构还要求随时解答家长问题。请说说你对这种节奏的了解来自哪里，哪一点你最不能接受、准备怎么应对，以及你打算在这份工作上待多久。",
+      "tags": [
+        "求职动机",
+        "岗位认知",
+        "节奏适应"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q018",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "续费率不达标时的压力应对",
+      "content": "假设你连续三个月续费率未达标，主管找你谈话并暗示可能调整班量，同期你每周还有12节课和一套新教研任务要交。请描述你会怎样安排接下来一个月的优先级、向主管争取哪些资源，以及如何避免把压力传导给学生和家长。",
+      "tags": [
+        "抗压能力",
+        "优先级管理",
+        "职业心态"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q019",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "用生活化类比讲透抽象概念",
+      "content": "请用3分钟给一名初二学生讲清楚“函数”这个概念（或你任教学科的一个核心难点），要求不使用教材原话，并设计一道随堂检测题来判断他是否真懂。讲完后请说明：你选择这个类比或切入点的依据是什么？",
+      "tags": [
+        "学科功底",
+        "教学转化",
+        "课堂设计"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q020",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "分层教学与提分方案设计",
+      "content": "假设你接手一个20人班，入学测试成绩从30分到90分不等。机构要求一期课（16次）内班级平均提分15分，且续费率不低于80%。请口述你的分层教学与作业设计框架，包括：如何分组、如何设定不同目标、如何跟踪效果、如何向家长呈现进步。",
+      "tags": [
+        "分层教学",
+        "学情分析",
+        "提分方案"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q021",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "主观题批改与课堂讲评",
+      "content": "你布置了一道主观题，批改时发现学生答案五花八门：有人完全跑偏，有人步骤对但结论错，有人只写答案。你会在批改时分别给出什么批注？课堂上又该如何讲评才能让这三类学生都有收获？请说出至少3条具体做法。",
+      "tags": [
+        "作业批改",
+        "学情反馈",
+        "教学服务"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q022",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "学生当众质疑讲错怎么办",
+      "content": "你正在讲一道压轴题，一名学生突然大声说：“老师你讲错了，答案不是这个。”全班骚动。请现场模拟你的第一反应和后续处理步骤，包括：如何确认自己是否真错、如何保护该学生的表达欲、如何把意外转化为教学资源。",
+      "tags": [
+        "课堂控场",
+        "突发应对",
+        "学科自信"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q023",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "一次提分最成功的案例",
+      "content": "请举一个你带过的学员，从入学到结课成绩明显提升的具体案例。说清：初始学情（分数/薄弱点）、你采取的3个关键教学动作、可量化的结果、家长当时的反馈。如果学员中途想放弃，你做了什么？",
+      "tags": [
+        "提分案例",
+        "教学闭环",
+        "结果量化"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q024",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "上一份工作的备课流程",
+      "content": "描述你上一份教培工作中，从拿到教学大纲到走上讲台，完整的备课流程和时间分配。其中哪一步你认为最不能省？为什么？如果某天临时被通知代课，你只有30分钟准备，你会如何调整这个流程？",
+      "tags": [
+        "备课流程",
+        "教研意识",
+        "工作习惯"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q025",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "续费沟通的真实场景复盘",
+      "content": "回忆一次你参与的续费沟通：学员学习效果不错，但家长仍犹豫是否续报。你当时具体说了什么、提供了哪些材料（如学情报告、进步曲线、课堂表现记录）、最终结果如何？如果重来一次，你会改进哪一点？",
+      "tags": [
+        "续费沟通",
+        "家长说服",
+        "复盘反思"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q026",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "教研活动中的具体贡献",
+      "content": "你参与过哪次教研活动或课程优化？请说明你提出的具体修改建议、被采纳或拒绝的理由、以及实施后的效果数据或课堂反馈。如果没有真实经历，请说明你会如何从零发起一次教研改进。",
+      "tags": [
+        "教研贡献",
+        "课程优化",
+        "数据验证"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q027",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "家长深夜投诉如何回复",
+      "content": "晚上11点，一位家长在微信上长篇投诉孩子成绩没提高，要求换老师并退费。你明天还有早课，现在很疲惫。请描述你会如何回复、何时回复、以及后续24小时内的具体行动。注意：不能承诺你做不到的事。",
+      "tags": [
+        "家校沟通",
+        "投诉处理",
+        "情绪管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q028",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "与销售配合的预期管理",
+      "content": "销售同事为了成单，向家长承诺“包提20分”，你清楚这不可能。你会怎么和销售沟通，又怎么和家长铺垫合理预期？请分别说出你对销售、对家长的两段关键话术，并说明你的底线在哪里。",
+      "tags": [
+        "跨岗协作",
+        "预期管理",
+        "职业底线"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q029",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "课堂纪律崩坏的控场方案",
+      "content": "你接手一个“难管”的班，上课10分钟后仍有学生聊天、玩手机，甚至有人起哄。机构要求不能体罚、不能赶出教室。请现场设计一套5分钟内的控场方案，并说明长期纪律建设思路。重点说清第一步做什么、说什么。",
+      "tags": [
+        "课堂纪律",
+        "控场方案",
+        "长期建设"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q030",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "学员突然情绪崩溃的处理",
+      "content": "课前你发现一名高三学员趴在桌上哭，说“不想学了，反正考不上”。你只有5分钟就要开始全班上课。请说明你如何短时安抚、如何安排课后跟进，以及是否需要通知家长或班主任。考察共情与边界。",
+      "tags": [
+        "学员心理",
+        "应急安抚",
+        "后续跟进"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q031",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么选择教培而非公立",
+      "content": "你具备教师资格证，也有机会去公立学校。为什么选择教培机构？请结合你对续费、排课、家长沟通这些工作内容的真实认知来谈，不要只说“喜欢孩子”或“热爱教育”这类空话。",
+      "tags": [
+        "求职动机",
+        "行业认知",
+        "职业选择"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q032",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "续费压力下的职业倦怠",
+      "content": "教培行业续费率考核压力大，有讲师因长期高压产生倦怠甚至离职。你过去如何识别自己的倦怠信号？有哪些具体方法帮你恢复状态？如果连续两个月续费率不达标，你会怎么调整？",
+      "tags": [
+        "抗压能力",
+        "自我调节",
+        "职业倦怠"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q033",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "讲师到教学管理的规划",
+      "content": "如果入职，你未来2-3年希望走“名师路线”还是“教学管理路线”？请说出你的选择、当前能力差距（如教研、带教、数据运营），以及你打算在入职后前6个月如何弥补。请给出可检查的行动。",
+      "tags": [
+        "职业规划",
+        "能力差距",
+        "成长路径"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q034",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "期望薪资与排课接受度",
+      "content": "教培讲师薪资常由底薪+课时费+续费奖金构成，且周末、寒暑假是排课高峰。请谈谈你的期望薪资结构，以及你对周末上班、寒暑假集中的接受程度。如果底薪较低但课时充足，你能接受吗？",
+      "tags": [
+        "薪资期望",
+        "排课接受度",
+        "稳定性"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q035",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "学生向家长反映老师不耐烦",
+      "content": "有同学向家长反映，说他每次向数学老师问问题，老师都说「这么简单你也不会」。作为班主任，你会怎么办？",
+      "tags": [
+        "家校沟通",
+        "教师协作"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "欣瑞教育《教师招聘考试结构化面试试题（三）》",
+        "url": "https://www.xredu.cn/list_3677/312962_1.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q036",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "家长请数学老师讲题被怠慢",
+      "content": "家长让自己的孩子请教数学老师难题，数学老师非常不耐烦。作为班主任，你怎么办？",
+      "tags": [
+        "家校沟通",
+        "教师协作"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "欣瑞教育《教师招聘考试结构化面试试题（三）》",
+        "url": "https://www.xredu.cn/list_3677/312962_1.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q037",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "教案直接用网络上的怎么看",
+      "content": "许多老师教案直接用网络上的，你怎么看？",
+      "tags": [
+        "教育理念",
+        "教学设计"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "应届毕业生网《教师结构化面试》",
+        "url": "https://www.yjbys.com/qiuzhizhinan/show-62126.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q038",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "为什么选择教师这个行业",
+      "content": "为什么选择教师这个行业？你是怎么看教师这个工作的？",
+      "tags": [
+        "职业动机",
+        "岗位认知"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "应届毕业生网《教师结构化面试》",
+        "url": "https://www.yjbys.com/qiuzhizhinan/show-62126.html",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q039",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "谈谈你的缺点",
+      "content": "谈谈你的缺点。（注意：不宜说自己没缺点，也不宜说出严重影响所应聘职位的缺点。）",
+      "tags": [
+        "自我认知",
+        "职业素养"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "华图教育《中小学教师招聘考试面试》",
+        "url": "https://xuancheng.huatu.com/zt/snjszpmszt/",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "edu-research.training-institution-q040",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "讲透一次函数图像",
+      "content": "请用3分钟给一位基础薄弱、对数学有畏难情绪的初二学生讲清楚“一次函数图像与k、b的关系”，要求全程不用专业术语，并设计一个他能在生活中感知的例子。讲完后说明你会如何判断他是否真正听懂。",
+      "tags": [
+        "学科专业功底",
+        "课堂讲授",
+        "学情诊断"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -373,7 +883,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }

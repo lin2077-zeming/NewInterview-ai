@@ -272,6 +272,516 @@
         "name": "AI 批量生成草稿（DeepSeek）",
         "collectedAt": "2026-10-11"
       }
+    },
+    {
+      "id": "civil-arch.architecture-q011",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "狭长地块上的社区图书馆概念",
+      "content": "假设给你一块约60米×25米、西侧紧邻既有住宅、限高24米的场地，需建一座社区图书馆。请用三分钟说明你的概念从何而来，如何回应场地限制与日照矛盾，并给出一句话能概括的核心亮点。",
+      "tags": [
+        "方案构思",
+        "场地回应",
+        "设计逻辑"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q012",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "中庭防火分区与疏散距离",
+      "content": "某商业综合体三层设中庭，中庭与回廊连通。请说明你如何划分防火分区、设置防火卷帘与挡烟垂壁，中庭的疏散距离如何计算。若消防审查对连通面积提出异议，你有哪些调整手段？",
+      "tags": [
+        "防火规范",
+        "中庭",
+        "疏散距离"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q013",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "坡地高差下的剖面组织",
+      "content": "项目位于坡地，南北高差约6米，需同时布置地下车库与首层商业。请描述你如何组织剖面标高、处理挡土墙与地下室防水，并兼顾无障碍坡道衔接与商业面的采光，给出关键标高数字。",
+      "tags": [
+        "剖面设计",
+        "高差处理",
+        "构造防水"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q014",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "十分钟讲清一个总图方案",
+      "content": "如果只有十分钟向业主解释一个住宅组团的总图方案，你会画哪几张草图、标注哪些信息？请说明你选择手绘还是软件出图的理由，以及怎样让对方快速看懂交通组织与日照关系。",
+      "tags": [
+        "图纸表达",
+        "汇报能力",
+        "总图"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q015",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "把你最深的一个项目讲透",
+      "content": "请挑一个你参与最深的项目，说明它从概念到施工图经历了哪些阶段、你具体负责哪一部分。过程中方案被推翻或大改的真实原因是什么？你从中得到的最具体的一条经验是什么？",
+      "tags": [
+        "项目全流程",
+        "方案修改",
+        "经验复盘"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q016",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "方案被结构条件逼改的经历",
+      "content": "回忆一次你的方案因结构柱网、梁高或设备管井无法实现而被迫调整的经历：你如何拿到结构条件、怎么与结构工程师沟通、最终用什么手法保住设计意图？请给出具体的尺寸或数据。",
+      "tags": [
+        "专业协调",
+        "结构条件",
+        "设计取舍"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q017",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "一次报建或审图整改经历",
+      "content": "请描述你参与的图纸报建或第三方审图中被提出的问题，例如日照、消防或无障碍。具体是哪一条不满足？你如何修改？修改是否影响了已定的平面布局或立面效果？",
+      "tags": [
+        "报建审图",
+        "强制性条文",
+        "图纸修改"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q018",
+      "stage": "project",
+      "difficulty": "easy",
+      "title": "施工图出图前的自查清单",
+      "content": "施工图出图前你会逐项检查什么？请列出你个人的自查清单，至少覆盖图纸目录与索引、专业间对图、强条核对、材料做法标注五类内容，并说明哪一类最容易出错、你怎么防止。",
+      "tags": [
+        "施工图",
+        "自查习惯",
+        "出图质量"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q019",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "汇报前夜业主改需求",
+      "content": "明天上午向业主汇报，今晚十点业主要求把户型从四房改为三房，并增加商业面积。你只有一晚时间，会如何安排团队分工、取舍汇报内容，并在会上管理业主对其他未改部分的预期？",
+      "tags": [
+        "突发变更",
+        "汇报应变",
+        "时间管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q020",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "现场与图纸不符的十五厘米",
+      "content": "施工方在现场发现梁下净高比图纸少十五厘米，影响门洞与吊顶，要求你当场签字确认变更。你会怎么处理？需要核实哪些信息、通知哪些人、如何留下书面记录并界定责任？",
+      "tags": [
+        "现场配合",
+        "设计变更",
+        "责任边界"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q021",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "向不懂建筑的主管讲方案",
+      "content": "主管部门领导不熟悉建筑术语，却对方案外立面提出强烈意见，要求立刻改。你会如何用他能理解的语言回应，既守住专业底线又不激化矛盾？请模拟你开口讲的第一段话。",
+      "tags": [
+        "沟通表达",
+        "专业坚持",
+        "冲突化解"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q022",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "机电净高与业主底线的协调",
+      "content": "在BIM协调会上，机电专业需要的走管空间使走道净高损失四十厘米，业主要求净高不低于二点四米，结构又不愿降梁。作为建筑师，你如何主持这次协调并当场给出可执行的结论？",
+      "tags": [
+        "BIM协调",
+        "净高冲突",
+        "多方博弈"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q023",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "方案还是施工图方向",
+      "content": "建筑师的成长通常分方案与施工图两条路径，苦乐不同。你目前更倾向哪一条？请结合过去一年你实际投入时间最多的事情说明，并谈谈未来三年希望达到什么状态。",
+      "tags": [
+        "职业规划",
+        "方向选择",
+        "成长路径"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q024",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "什么支撑你熬过长周期",
+      "content": "一个大型项目从概念到竣工往往要三五年，中间反复修改、赶图加班。请举一个你亲身经历的低谷时刻，说明当时是什么支撑你坚持下来，以及你现在如何主动调节工作节奏。",
+      "tags": [
+        "职业热情",
+        "长期项目",
+        "自我调节"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q025",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "你如何跟进规范更新",
+      "content": "建筑规范与地方标准几乎每年更新。请说明你目前通过哪些渠道获取新规，最近一次主动学习的是什么，它怎样改变了你的具体做法，比如某个构造节点或平面布置的调整。",
+      "tags": [
+        "持续学习",
+        "规范更新",
+        "专业习惯"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q026",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "设计院、事务所还是甲方",
+      "content": "设计院、事务所与房地产公司对建筑师的要求差别很大。你更希望进入哪一类？请结合实习或项目经历说明理由，并谈谈你对工作强度与薪酬的预期底线在哪里。",
+      "tags": [
+        "平台选择",
+        "岗位匹配",
+        "期望管理"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q027",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "软土地基选什么基础",
+      "content": "在软土地基（如淤泥质土）上你会采用什么基础形式？为什么？需要注意哪些问题？",
+      "tags": [
+        "地基基础",
+        "专业判断"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q028",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "悬臂结构的支承条件",
+      "content": "悬臂梁的支承条件是什么？请画出它的弯矩图，并说明与简支梁的区别。",
+      "tags": [
+        "结构力学",
+        "内力分析"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q029",
+      "stage": "cross",
+      "difficulty": "hard",
+      "title": "如何做抗震结构设计",
+      "content": "你会如何设计抗震结构？请说明抗震设计的基本思路和关键措施。",
+      "tags": [
+        "抗震设计",
+        "结构安全"
+      ],
+      "source": {
+        "type": "public-post",
+        "name": "CATKing《Most Common Interview Questions for Engineers》",
+        "url": "https://catking.in/wp-content/uploads/2022/01/CATKing-Most-common-Interview-questions-for-Engineers.pdf",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q030",
+      "stage": "algorithm",
+      "difficulty": "medium",
+      "title": "社区图书馆概念构思",
+      "content": "某社区图书馆设计任务书：用地约3000㎡，限高18m，西侧有保留大树，西晒严重。请用15分钟提出设计概念，说明体块如何生成、主入口与阅览区朝向如何布置、怎样回应大树与西晒，并手绘一张草图辅助表达。",
+      "tags": [
+        "方案构思",
+        "场地回应",
+        "绿色设计"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q031",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "高层住宅核心筒强条",
+      "content": "一栋18层高层住宅，每层6户，含一户无障碍住房。请说明核心筒中剪刀楼梯、消防前室、消防电梯、无障碍住房的防火与无障碍强条要点；若审图提出前室短边不足，你会如何复核与修改？",
+      "tags": [
+        "防火规范",
+        "无障碍设计",
+        "核心筒"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q032",
+      "stage": "algorithm",
+      "difficulty": "easy",
+      "title": "坡屋顶体块推敲要点",
+      "content": "给出一套坡屋顶住宅的平面图，要求你用SketchUp或Rhino快速推敲体块。请说明你会重点控制哪些尺寸关系，如层高、檐口、天沟、窗台与立面开窗，并指出CAD平立剖之间最容易对不上的地方。",
+      "tags": [
+        "建筑制图",
+        "建模推敲",
+        "构造"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q033",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "深挖落地项目职责",
+      "content": "请选一个你参与最深、最好已落地或进入施工图的项目，说明你在概念、方案、初设、施工图中具体负责哪一段，交付了哪些图纸或模型，以及最难的跨专业协调问题是什么、如何解决。",
+      "tags": [
+        "项目经历",
+        "施工图",
+        "协调"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q034",
+      "stage": "project",
+      "difficulty": "medium",
+      "title": "压缩成本不降效果",
+      "content": "项目施工图阶段，业主突然要求压缩成本10%，但不降低容积率、不改变主要立面效果。请结合你真实经历，说明如何从材料、构造、结构选型、机电点位等方面调整，并评估对报规和工期的影响。",
+      "tags": [
+        "成本控制",
+        "设计落地",
+        "施工图"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q035",
+      "stage": "project",
+      "difficulty": "hard",
+      "title": "审图意见逐条回复",
+      "content": "你负责的施工图被审图意见指出：疏散楼梯首层直通室外距离不足、防火分区面积超限。请还原你如何核对规范条文、修改图纸、与结构和机电协调，并向审图机构逐条回复。",
+      "tags": [
+        "审图意见",
+        "防火分区",
+        "施工图修改"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q036",
+      "stage": "cross",
+      "difficulty": "medium",
+      "title": "中庭加层现场应对",
+      "content": "方案汇报会上，业主突然要求商业中庭由3层加到5层并取消两根柱。结构负责人当场说不可行，机电也提出管线需重排。作为建筑师，你如何现场回应业主、稳住团队并推进下一步？",
+      "tags": [
+        "汇报沟通",
+        "跨专业协调",
+        "应变"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q037",
+      "stage": "cross",
+      "difficulty": "easy",
+      "title": "现场净高冲突处理",
+      "content": "施工现场发现走廊梁下净高比图纸少200mm，影响吊顶和门洞安装，施工方停工等你答复。你作为设计方建筑师，会按什么步骤核实、协调和出具处理意见？",
+      "tags": [
+        "现场配合",
+        "净高冲突",
+        "设计变更"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q038",
+      "stage": "hr",
+      "difficulty": "easy",
+      "title": "建筑热情与三年规划",
+      "content": "建筑行业周期长、反复改图、加班多。请说说你过去靠什么保持对设计的热情？未来三年，你希望在设计能力、注册考试和项目角色上分别达到什么目标？",
+      "tags": [
+        "职业热情",
+        "职业规划",
+        "抗压"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q039",
+      "stage": "hr",
+      "difficulty": "medium",
+      "title": "设计院与事务所选择",
+      "content": "如果同时收到大型设计院和明星事务所的offer：前者项目类型稳定、流程规范，后者创意强但强度更大。你会如何选择？请说明你对平台、成长空间、收入与生活的排序及理由。",
+      "tags": [
+        "求职动机",
+        "平台选择",
+        "价值观"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "civil-arch.architecture-q040",
+      "stage": "algorithm",
+      "difficulty": "hard",
+      "title": "老城区狭窄地块的方案取舍",
+      "content": "某老城区改造项目，用地仅1800㎡，北侧距既有住宅6米，限高24米，任务书要求配建社区养老与商业。请你在10分钟内口述方案构思：如何布置体量满足日照与防火间距？如何组织老人与商业的流线？若业主要求增加一层，你会如何论证取舍？",
+      "tags": [
+        "设计思维",
+        "规范落地",
+        "方案取舍"
+      ],
+      "source": {
+        "type": "ai-generated",
+        "name": "AI 批量扩写（参考公开面经题型）",
+        "collectedAt": "2026-10-15"
+      }
     }
   ],
   "companies": [
@@ -372,7 +882,7 @@
   ],
   "meta": {
     "version": 1,
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-15",
     "completeness": "full"
   }
 }
